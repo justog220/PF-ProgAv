@@ -21,7 +21,8 @@ SOURCES += \
         graficador.cpp \
         imagen.cpp \
         main.cpp \
-        pixel.cpp
+        pixel.cpp \
+        sistema.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -36,4 +37,6 @@ HEADERS += \
     gestordeatajos.h \
     graficador.h \
     imagen.h \
-    pixel.h
+    pixel.h \
+    sistema.h
+

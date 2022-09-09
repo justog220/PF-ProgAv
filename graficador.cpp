@@ -1,8 +1,9 @@
 #include "graficador.h"
 
+#include "espaciodetrabajo.h"
+
 Graficador::Graficador()
 {
-
 }
 
 
@@ -91,7 +92,7 @@ void Graficador::graficarImagen()
 
 void Graficador::cargarImagen()
 {
-    string ruta = getRuta(opcDir, opcArch);
+    string ruta = espacio->getRuta(opcDir, opcArch);
 
     cout<<ruta;
 
@@ -105,53 +106,35 @@ void Graficador::cargarCarpetas()
     carpetas.push_back("grupo_imagenes_1/");
     carpetas.push_back("grupo_imagenes_2/");
     carpetas.push_back("grupo_imagenes_3_corruptas/");
-
-
-
-    carpeta_1.push_back("20210407111719.pgm");
-    carpeta_1.push_back("entre_rios_03.ppm");
-    carpeta_1.push_back("hospital-robot_01.pgm");
-    carpeta_1.push_back("test_01.pgm");
-    carpeta_1.push_back("test_02.ppm");
-    carpeta_1.push_back("tigre_01.pgm");
-
-    carpeta_2.push_back("entre_rios_01.pgm");
-    carpeta_2.push_back("entre_rios_02.ppm");
-    carpeta_2.push_back("predio_fi_uner_01.ppm");
-    carpeta_2.push_back("predio_fi_uner_01_0.961mXpixel_con_mucho_ruido.ppm");
-    carpeta_2.push_back("predio_fi_uner_01_0.961mXpixel_con_ruido.ppm");
-
-    carpeta_3.push_back("imagen_corrupta_01.pgm");
-    carpeta_3.push_back("imagen_corrupta_02.pgm");
-
-
 }
 
-string Graficador::getRuta(int opcDir, int opcArch)
+void Graficador::getListaDeArchivos(string ruta)
 {
-    cargarCarpetas();
-
-    string ruta;
-
-    ruta = raiz;
-
-    switch(opcDir)
+    vector<string> lista_de_archivos;
+    DIR *dir = opendir(ruta.c_str());
+    if (dir != NULL)
     {
-    case 1:
-        ruta = ruta.append(carpetas[opcDir-1]);
-        ruta = ruta.append(carpeta_1[opcArch-1]);
-        break;
-    case 2:
-        ruta = ruta.append(carpetas[opcDir-1]);
-        ruta = ruta.append(carpeta_2[opcArch-1]);
-        break;
-    case 3:
-        ruta = ruta.append(carpetas[opcDir-1]);
-        ruta = ruta.append(carpeta_3[opcArch-1]);
-        break;
+        string pto("."), ptopto("..");
+        struct dirent *entry;
+        while ((entry = readdir(dir)) != NULL)
+        {
+            if( entry->d_name != pto and entry->d_name != ptopto )
+            {
+                cout<<entry->d_name;
+                lista_de_archivos.push_back(entry->d_name);
+            }
+        }
+        closedir(dir);
+    }
+
+    for(unsigned int i = lista_de_archivos.size(); i > 0; i--)
+    {
+        listaDeArchivos.resize(lista_de_archivos.size());
+        listaDeArchivos[i] = lista_de_archivos[i];
+    }
 }
-    return ruta;
-}
+
+
 
 void Graficador::setOpciones(int dir, int arch)
 {
@@ -160,41 +143,31 @@ void Graficador::setOpciones(int dir, int arch)
     opcArch = arch;
 }
 
+void Graficador::setEspacio(EspacioDeTrabajo &esp)
+{
+    espacio = &esp;
+}
+
 void Graficador::keyPressEvent(QKeyEvent *event)
 {
-//    bool ctrl = event->key() == Qt::Key_Control;
-//    bool flecha_derecha=false;
-//    if(event->key() == Qt::Key_Right)
-//    {
-//        flecha_derecha = true;
-//    }
-
     bool flecha_derecha = event->key() == Qt::Key_Right;
     bool ctrl = event->modifiers() & Qt::ControlModifier;
-    bool flecha_izquierda=false;
-
-    if(event->key() == Qt::Key_Left)
-    {
-        flecha_izquierda = true;
-    }
+    bool flecha_izquierda= event->key() == Qt::Key_Left;;
 
     if(ctrl and flecha_derecha)
     {
         opcArch++;
-        if(opcArch > carpetas[opcDir-1].size())
-            opcArch = 0;
+        if(opcArch > espacio->getNroArchivos())
+            opcArch = 1;
         cargarImagen();
         repaint();
-//        cout<<"Funciona ";
-//        update();
     }
-
 
     if(ctrl and flecha_izquierda)
     {
         opcArch--;
         if(opcArch == 0)
-            opcArch = carpetas[opcDir-1].size();
+            opcArch = espacio->getNroArchivos();
         cargarImagen();
         repaint();
     }

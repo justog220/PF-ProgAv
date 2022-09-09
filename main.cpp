@@ -1,14 +1,14 @@
 #include <QApplication>
 
-#include "espaciodetrabajo.h"
+#include "sistema.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    EspacioDeTrabajo espacio;
+    Sistema sistema;
 
-    espacio.ejecutar(&a);
+    sistema.ejecutar(&a);
 
     return 0;
 }

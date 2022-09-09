@@ -7,8 +7,10 @@
 #include <QKeyEvent>
 #include <QWheelEvent>
 
+
 #include <iostream>
 
+#include "espaciodetrabajo.h"
 #include "imagen.h"
 #include "pixel.h"
 #include "archivospnm.h"
@@ -31,9 +33,13 @@ public:
     //nuevo
     void cargarCarpetas();
 
+    void getListaDeArchivos(string ruta);
+
     string getRuta(int opcDir, int opcArch);
 
     void setOpciones(int dir, int arch);
+
+    void setEspacio(EspacioDeTrabajo &esp);
 
 private:
     int anchoV, altoV;
@@ -43,19 +49,20 @@ private:
 
     Imagen imagen;
 
+    EspacioDeTrabajo *espacio;
+
     string raiz="./Imagenes/";
 
     //string raiz="/home/justo/PF_Garcia/Imagenes/";
 
     vector<string> carpetas;
 
-    vector<string> carpeta_1;
-    vector<string> carpeta_2;
-    vector<string> carpeta_3;
+    vector<string> listaDeArchivos; //solo de la carpeta en uso
 
     int opcDir;
 
     int opcArch;
+
 protected:
     void keyPressEvent(QKeyEvent *event) override;
 

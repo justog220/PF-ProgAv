@@ -1,15 +1,16 @@
 /*!
  *  \class      Imagen
  *  \brief      Permite la representacion de una imagen a partir de un arreglo de Pixeles
- *  \details    Es un arreglo bidimensional de Pixeles.
+ *  \details    Es un arreglo bidimensional de Pixeles. Conoce sus pixeles, su tamaño y el
+ *              rango de sus pixeles. Puede cambiar su tamaño o sus pixeles y puede informar
+ *              su tamaño y un pixel en espeifico. *
  *  \author     Justo Garcia
- *  \date       Fechca de última modificación: 10-09-2022
- *  \pre        Idealmente deben inicializarse solo para formar parte de la representacion
- *              de una imagen.
+ *  \date       Fecha de última modificación: 10-09-2022
+ *  \pre
  *  \bug        Cualquier error encontrado se anota aquí, por ejemplo, un fallo
  *              de acceso a disco, fallas en liberación de memoria,
  *              malfuncionamientos de rutinas que se hayan encontrado, etc.
- *  \warning
+ *  \warning    Debe evitarse realizar muchas instancias de ella porque se requiere de mucha memoria
 */
 #ifndef IMAGEN_H
 #define IMAGEN_H

@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('class_archivos_p_n_m.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
+<p>Clase capaz de gestionar los diferentes tipos de archivos PNM.  
+ <a href="class_archivos_p_n_m.html#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="archivospnm_8h_source.html">archivospnm.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de herencias de ArchivosPNM</div>
@@ -117,8 +120,14 @@ Atributos privados</h2></td></tr>
 <tr class="separator:add99f5595bf7c7af37ee9a89827ec7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock">
-<p class="definition">Definición en la línea <a class="el" href="archivospnm_8h_source.html#l00006">6</a> del archivo <a class="el" href="archivospnm_8h_source.html">archivospnm.h</a>.</p>
+<div class="textblock"><p>Clase capaz de gestionar los diferentes tipos de archivos PNM. </p>
+<p>Hereda de <a class="el" href="class_gestor_de_archivos.html">GestorDeArchivos</a> la capacidad de leer un archivo y de guardar otro. Tiene un archivo y almacena el identificador del tipo de archivo una vez que fue leido. </p><dl class="section author"><dt>Autor</dt><dd>Justo Garcia </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>Fecha de última modificación: 10-09-2022 </dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd></dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug:</a></b></dt><dd>No deberia conocerse de ante mano el tipo de archivo para asi implementar el polimorfismo? </dd></dl>
+<dl class="section warning"><dt>Atención</dt><dd>No se ha implementado ni testeado el guardar. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="archivospnm_8h_source.html#l00017">17</a> del archivo <a class="el" href="archivospnm_8h_source.html">archivospnm.h</a>.</p>
 </div><h2 class="groupheader">Documentación del constructor y destructor</h2>
 <a id="accebc41f3d1d9e7c3dc850d19bb8ca97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accebc41f3d1d9e7c3dc850d19bb8ca97">&#9670;&nbsp;</a></span>ArchivosPNM()</h2>
@@ -368,9 +377,9 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">return</span> img;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
-<div class="ttc" id="aclass_archivos_p_n_m_html_a87b39a9e915743d94732794e3bb78dd7"><div class="ttname"><a href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">ArchivosPNM::archi</a></div><div class="ttdeci">fstream archi</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8h_source.html#l00016">archivospnm.h:16</a></div></div>
-<div class="ttc" id="aclass_archivos_p_n_m_html_add99f5595bf7c7af37ee9a89827ec7b5"><div class="ttname"><a href="class_archivos_p_n_m.html#add99f5595bf7c7af37ee9a89827ec7b5">ArchivosPNM::identificador</a></div><div class="ttdeci">string identificador</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8h_source.html#l00018">archivospnm.h:18</a></div></div>
-<div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00022">imagen.h:23</a></div></div>
+<div class="ttc" id="aclass_archivos_p_n_m_html_a87b39a9e915743d94732794e3bb78dd7"><div class="ttname"><a href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">ArchivosPNM::archi</a></div><div class="ttdeci">fstream archi</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8h_source.html#l00027">archivospnm.h:27</a></div></div>
+<div class="ttc" id="aclass_archivos_p_n_m_html_add99f5595bf7c7af37ee9a89827ec7b5"><div class="ttname"><a href="class_archivos_p_n_m.html#add99f5595bf7c7af37ee9a89827ec7b5">ArchivosPNM::identificador</a></div><div class="ttdeci">string identificador</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8h_source.html#l00029">archivospnm.h:29</a></div></div>
+<div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00023">imagen.h:24</a></div></div>
 <div class="ttc" id="aclass_imagen_html_a116c67bb423f0de52bdb2e5c7e9ad29b"><div class="ttname"><a href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">Imagen::setPixel</a></div><div class="ttdeci">void setPixel(int f, int c, Pixel pixelNuevo)</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00017">imagen.cpp:17</a></div></div>
 <div class="ttc" id="aclass_imagen_html_a2f484fcbef63dfa2fe6c2ee418a7d856"><div class="ttname"><a href="class_imagen.html#a2f484fcbef63dfa2fe6c2ee418a7d856">Imagen::setColumnas</a></div><div class="ttdeci">void setColumnas(int c)</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00032">imagen.cpp:32</a></div></div>
 <div class="ttc" id="aclass_imagen_html_a310a7ee241a8c546a9d5345937a9f01f"><div class="ttname"><a href="class_imagen.html#a310a7ee241a8c546a9d5345937a9f01f">Imagen::setTamanio</a></div><div class="ttdeci">void setTamanio()</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00008">imagen.cpp:8</a></div></div>
@@ -381,9 +390,9 @@ Atributos privados</h2></td></tr>
 <div class="ttc" id="aclass_pixel_html_ab624ff85be3e3d7b6d5f3e139300c1ef"><div class="ttname"><a href="class_pixel.html#ab624ff85be3e3d7b6d5f3e139300c1ef">Pixel::setPixelMonocr</a></div><div class="ttdeci">void setPixelMonocr(int valor)</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00015">pixel.cpp:15</a></div></div>
 <div class="ttc" id="aclass_pixel_html_affd7e85713e18281b51e0e676485f704"><div class="ttname"><a href="class_pixel.html#affd7e85713e18281b51e0e676485f704">Pixel::setPixelEscala</a></div><div class="ttdeci">void setPixelEscala(int valor)</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00022">pixel.cpp:22</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="archivospnm_8h_source.html#l00016">archi</a>, <a class="el" href="archivospnm_8h_source.html#l00018">identificador</a>, <a class="el" href="imagen_8cpp_source.html#l00032">Imagen::setColumnas()</a>, <a class="el" href="imagen_8cpp_source.html#l00027">Imagen::setFilas()</a>, <a class="el" href="imagen_8cpp_source.html#l00017">Imagen::setPixel()</a>, <a class="el" href="pixel_8cpp_source.html#l00022">Pixel::setPixelEscala()</a>, <a class="el" href="pixel_8cpp_source.html#l00015">Pixel::setPixelMonocr()</a>, <a class="el" href="pixel_8cpp_source.html#l00008">Pixel::setPixelRGB()</a>, <a class="el" href="imagen_8cpp_source.html#l00037">Imagen::setRango()</a> y <a class="el" href="imagen_8cpp_source.html#l00008">Imagen::setTamanio()</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="archivospnm_8h_source.html#l00027">archi</a>, <a class="el" href="archivospnm_8h_source.html#l00029">identificador</a>, <a class="el" href="imagen_8cpp_source.html#l00032">Imagen::setColumnas()</a>, <a class="el" href="imagen_8cpp_source.html#l00027">Imagen::setFilas()</a>, <a class="el" href="imagen_8cpp_source.html#l00017">Imagen::setPixel()</a>, <a class="el" href="pixel_8cpp_source.html#l00022">Pixel::setPixelEscala()</a>, <a class="el" href="pixel_8cpp_source.html#l00015">Pixel::setPixelMonocr()</a>, <a class="el" href="pixel_8cpp_source.html#l00008">Pixel::setPixelRGB()</a>, <a class="el" href="imagen_8cpp_source.html#l00037">Imagen::setRango()</a> y <a class="el" href="imagen_8cpp_source.html#l00008">Imagen::setTamanio()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="graficador_8cpp_source.html#l00093">Graficador::cargarImagen()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="graficador_8cpp_source.html#l00094">Graficador::cargarImagen()</a>.</p>
 
 </div>
 </div>
@@ -408,7 +417,7 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="archivospnm_8h_source.html#l00016">16</a> del archivo <a class="el" href="archivospnm_8h_source.html">archivospnm.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="archivospnm_8h_source.html#l00027">27</a> del archivo <a class="el" href="archivospnm_8h_source.html">archivospnm.h</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="archivospnm_8cpp_source.html#l00008">leer()</a>.</p>
 
@@ -434,7 +443,7 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="archivospnm_8h_source.html#l00018">18</a> del archivo <a class="el" href="archivospnm_8h_source.html">archivospnm.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="archivospnm_8h_source.html#l00029">29</a> del archivo <a class="el" href="archivospnm_8h_source.html">archivospnm.h</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="archivospnm_8cpp_source.html#l00008">leer()</a>.</p>
 
@@ -450,7 +459,7 @@ Atributos privados</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_archivos_p_n_m.html">ArchivosPNM</a></li>
-    <li class="footer">Generado el Sábado, 10 de Septiembre de 2022 12:06:25 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Sábado, 10 de Septiembre de 2022 20:32:54 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

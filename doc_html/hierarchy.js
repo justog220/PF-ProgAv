@@ -1,6 +1,8 @@
 var hierarchy =
 [
+    [ "Espacio", "class_espacio.html", null ],
     [ "EspacioDeTrabajo", "class_espacio_de_trabajo.html", null ],
+    [ "Gestor", "class_gestor.html", null ],
     [ "GestorDeArchivos", "class_gestor_de_archivos.html", [
       [ "ArchivosAIC", "class_archivos_a_i_c.html", null ],
       [ "ArchivosPNM", "class_archivos_p_n_m.html", null ]

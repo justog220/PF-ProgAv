@@ -1,3 +1,16 @@
+/*!
+ *  \class      Graficador
+ *  \brief      Clase encargada de mostrar por pantalla una imagen y responder a eventos.
+ *  \details    Tiene una imagen, la cual es capaz de cargar. Conoce el ancho
+ *              y alto de la ventana y la escala utilizada. Se asocia con un
+ *              espacio de trabajo para conocer distintas rutas y archivos. Por
+ *              otro lado, es capaz de responder ante distintos eventos de mouse y teclado.
+ *  \author     Justo Garcia
+ *  \date       Fecha de última modificación: 10-09-2022
+ *  \pre
+ *  \bug        La ventana no se abre con el tamaño de la imagen.
+ *  \warning
+*/
 #ifndef GRAFICADOR_H
 #define GRAFICADOR_H
 
@@ -30,16 +43,9 @@ public:
 
     void cargarImagen();
 
-    //nuevo
-    void cargarCarpetas();
-
-    void getListaDeArchivos(string ruta);
-
-    string getRuta(int opcDir, int opcArch);
-
-    void setOpciones(int dir, int arch);
-
     void setEspacio(EspacioDeTrabajo &esp);
+
+    void setOpciones(int opcDir, int opcArch);
 
 private:
     int anchoV, altoV;
@@ -51,21 +57,10 @@ private:
 
     EspacioDeTrabajo *espacio;
 
-    string raiz="./Imagenes/";
-
-    //string raiz="/home/justo/PF_Garcia/Imagenes/";
-
-    vector<string> carpetas;
-
-    vector<string> listaDeArchivos; //solo de la carpeta en uso
-
-    int opcDir;
-
-    int opcArch;
-
 protected:
     void keyPressEvent(QKeyEvent *event) override;
 
+    int opcDir, opcArch;
 }
 
 ;

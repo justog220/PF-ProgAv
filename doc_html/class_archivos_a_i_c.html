@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('class_archivos_a_i_c.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
+<p>Clase capaz de gestionar los diferentes tipos de archivos AIC.  
+ <a href="class_archivos_a_i_c.html#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="archivosaic_8h_source.html">archivosaic.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de herencias de ArchivosAIC</div>
@@ -115,8 +118,14 @@ Atributos privados</h2></td></tr>
 <tr class="separator:a1450f875c280a2280515e97bc91b7f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock">
-<p class="definition">Definición en la línea <a class="el" href="archivosaic_8h_source.html#l00007">7</a> del archivo <a class="el" href="archivosaic_8h_source.html">archivosaic.h</a>.</p>
+<div class="textblock"><p>Clase capaz de gestionar los diferentes tipos de archivos AIC. </p>
+<p>Hereda de <a class="el" href="class_gestor_de_archivos.html">GestorDeArchivos</a> la capacidad de leer un archivo y de guardar otro. Tiene un archivo y almacena el identificador del tipo de archivo una vez que fue leido. </p><dl class="section author"><dt>Autor</dt><dd>Justo Garcia </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>Fecha de última modificación: 10-09-2022 </dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd></dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>No deberia conocerse de ante mano el tipo de archivo para asi implementar el polimorfismo? </dd></dl>
+<dl class="section warning"><dt>Atención</dt><dd>No se ha implementado ni testeado el guardar. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="archivosaic_8h_source.html#l00018">18</a> del archivo <a class="el" href="archivosaic_8h_source.html">archivosaic.h</a>.</p>
 </div><h2 class="groupheader">Documentación del constructor y destructor</h2>
 <a id="aa2f1498c3b0cdf84698ca51a1f279058"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2f1498c3b0cdf84698ca51a1f279058">&#9670;&nbsp;</a></span>ArchivosAIC()</h2>
@@ -236,10 +245,10 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> img;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="ttc" id="aclass_archivos_a_i_c_html_a1450f875c280a2280515e97bc91b7f16"><div class="ttname"><a href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">ArchivosAIC::archi</a></div><div class="ttdeci">fstream archi</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8h_source.html#l00017">archivosaic.h:17</a></div></div>
-<div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00022">imagen.h:23</a></div></div>
+<div class="ttc" id="aclass_archivos_a_i_c_html_a1450f875c280a2280515e97bc91b7f16"><div class="ttname"><a href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">ArchivosAIC::archi</a></div><div class="ttdeci">fstream archi</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8h_source.html#l00028">archivosaic.h:28</a></div></div>
+<div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00023">imagen.h:24</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="archivosaic_8h_source.html#l00017">archi</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="archivosaic_8h_source.html#l00028">archi</a>.</p>
 
 </div>
 </div>
@@ -264,7 +273,7 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="archivosaic_8h_source.html#l00017">17</a> del archivo <a class="el" href="archivosaic_8h_source.html">archivosaic.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="archivosaic_8h_source.html#l00028">28</a> del archivo <a class="el" href="archivosaic_8h_source.html">archivosaic.h</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="archivosaic_8cpp_source.html#l00008">leer()</a>.</p>
 
@@ -280,7 +289,7 @@ Atributos privados</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_archivos_a_i_c.html">ArchivosAIC</a></li>
-    <li class="footer">Generado el Sábado, 10 de Septiembre de 2022 12:06:25 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Sábado, 10 de Septiembre de 2022 20:32:54 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

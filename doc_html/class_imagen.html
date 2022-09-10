@@ -130,13 +130,13 @@ Atributos privados</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><p>Permite la representacion de una imagen a partir de un arreglo de Pixeles. </p>
-<p>Es un arreglo bidimensional de Pixeles. </p><dl class="section author"><dt>Autor</dt><dd>Justo Garcia </dd></dl>
-<dl class="section date"><dt>Fecha</dt><dd>Fechca de última modificación: 10-09-2022 </dd></dl>
-<dl class="section pre"><dt>Precondición</dt><dd>Idealmente deben inicializarse solo para formar parte de la representacion de una imagen. </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>Cualquier error encontrado se anota aquí, por ejemplo, un fallo de acceso a disco, fallas en liberación de memoria, malfuncionamientos de rutinas que se hayan encontrado, etc. </dd></dl>
-<dl class="section warning"><dt>Atención</dt><dd></dd></dl>
+<p>Es un arreglo bidimensional de Pixeles. Conoce sus pixeles, su tamaño y el rango de sus pixeles. Puede cambiar su tamaño o sus pixeles y puede informar su tamaño y un pixel en espeifico. * </p><dl class="section author"><dt>Autor</dt><dd>Justo Garcia </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>Fecha de última modificación: 10-09-2022 </dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd></dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000006">Bug:</a></b></dt><dd>Cualquier error encontrado se anota aquí, por ejemplo, un fallo de acceso a disco, fallas en liberación de memoria, malfuncionamientos de rutinas que se hayan encontrado, etc. </dd></dl>
+<dl class="section warning"><dt>Atención</dt><dd>Debe evitarse realizar muchas instancias de ella porque se requiere de mucha memoria </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="imagen_8h_source.html#l00022">22</a> del archivo <a class="el" href="imagen_8h_source.html">imagen.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="imagen_8h_source.html#l00023">23</a> del archivo <a class="el" href="imagen_8h_source.html">imagen.h</a>.</p>
 </div><h2 class="groupheader">Documentación del constructor y destructor</h2>
 <a id="ab2e649aa7a105155c7bfdb846abf0528"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2e649aa7a105155c7bfdb846abf0528">&#9670;&nbsp;</a></span>Imagen()</h2>
@@ -180,9 +180,9 @@ Atributos privados</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_imagen.html#af63de0598ca965ab3a30b54ee7e2cedc">columnas</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="ttc" id="aclass_imagen_html_af63de0598ca965ab3a30b54ee7e2cedc"><div class="ttname"><a href="class_imagen.html#af63de0598ca965ab3a30b54ee7e2cedc">Imagen::columnas</a></div><div class="ttdeci">int columnas</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00047">imagen.h:47</a></div></div>
+<div class="ttc" id="aclass_imagen_html_af63de0598ca965ab3a30b54ee7e2cedc"><div class="ttname"><a href="class_imagen.html#af63de0598ca965ab3a30b54ee7e2cedc">Imagen::columnas</a></div><div class="ttdeci">int columnas</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00048">imagen.h:48</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00047">columnas</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00048">columnas</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="graficador_8cpp_source.html#l00064">Graficador::graficarImagen()</a> y <a class="el" href="graficador_8cpp_source.html#l00037">Graficador::paintGL()</a>.</p>
 
@@ -207,9 +207,9 @@ Atributos privados</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_imagen.html#a7f15719f14cd934dfcbd68c287bbbe8b">filas</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="ttc" id="aclass_imagen_html_a7f15719f14cd934dfcbd68c287bbbe8b"><div class="ttname"><a href="class_imagen.html#a7f15719f14cd934dfcbd68c287bbbe8b">Imagen::filas</a></div><div class="ttdeci">int filas</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00047">imagen.h:47</a></div></div>
+<div class="ttc" id="aclass_imagen_html_a7f15719f14cd934dfcbd68c287bbbe8b"><div class="ttname"><a href="class_imagen.html#a7f15719f14cd934dfcbd68c287bbbe8b">Imagen::filas</a></div><div class="ttdeci">int filas</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00048">imagen.h:48</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00047">filas</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00048">filas</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="graficador_8cpp_source.html#l00064">Graficador::graficarImagen()</a> y <a class="el" href="graficador_8cpp_source.html#l00037">Graficador::paintGL()</a>.</p>
 
@@ -245,9 +245,9 @@ Atributos privados</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_imagen.html#a3253ba68ee7bba91e57b634a85047404">imag</a>[f][c];</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="ttc" id="aclass_imagen_html_a3253ba68ee7bba91e57b634a85047404"><div class="ttname"><a href="class_imagen.html#a3253ba68ee7bba91e57b634a85047404">Imagen::imag</a></div><div class="ttdeci">vector&lt; vector&lt; Pixel &gt; &gt; imag</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00046">imagen.h:46</a></div></div>
+<div class="ttc" id="aclass_imagen_html_a3253ba68ee7bba91e57b634a85047404"><div class="ttname"><a href="class_imagen.html#a3253ba68ee7bba91e57b634a85047404">Imagen::imag</a></div><div class="ttdeci">vector&lt; vector&lt; Pixel &gt; &gt; imag</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00047">imagen.h:47</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00046">imag</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00047">imag</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="graficador_8cpp_source.html#l00064">Graficador::graficarImagen()</a>.</p>
 
@@ -272,9 +272,9 @@ Atributos privados</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_imagen.html#ae2310ab74334e4f679d5c6b71fb7f0a4">rango</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="ttc" id="aclass_imagen_html_ae2310ab74334e4f679d5c6b71fb7f0a4"><div class="ttname"><a href="class_imagen.html#ae2310ab74334e4f679d5c6b71fb7f0a4">Imagen::rango</a></div><div class="ttdeci">float rango</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00048">imagen.h:48</a></div></div>
+<div class="ttc" id="aclass_imagen_html_ae2310ab74334e4f679d5c6b71fb7f0a4"><div class="ttname"><a href="class_imagen.html#ae2310ab74334e4f679d5c6b71fb7f0a4">Imagen::rango</a></div><div class="ttdeci">float rango</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00049">imagen.h:49</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00048">rango</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00049">rango</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="graficador_8cpp_source.html#l00064">Graficador::graficarImagen()</a>.</p>
 
@@ -301,7 +301,7 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_imagen.html#af63de0598ca965ab3a30b54ee7e2cedc">columnas</a>=c;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00047">columnas</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00048">columnas</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="archivospnm_8cpp_source.html#l00008">ArchivosPNM::leer()</a>.</p>
 
@@ -328,7 +328,7 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_imagen.html#a7f15719f14cd934dfcbd68c287bbbe8b">filas</a>=f;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00047">filas</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00048">filas</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="archivospnm_8cpp_source.html#l00008">ArchivosPNM::leer()</a>.</p>
 
@@ -371,7 +371,7 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_imagen.html#a3253ba68ee7bba91e57b634a85047404">imag</a>[f][c]=pixelNuevo;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00046">imag</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00047">imag</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="archivospnm_8cpp_source.html#l00008">ArchivosPNM::leer()</a>.</p>
 
@@ -398,7 +398,7 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_imagen.html#ae2310ab74334e4f679d5c6b71fb7f0a4">rango</a> = valor;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00048">rango</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00049">rango</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="archivospnm_8cpp_source.html#l00008">ArchivosPNM::leer()</a>.</p>
 
@@ -428,7 +428,7 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00047">columnas</a>, <a class="el" href="imagen_8h_source.html#l00047">filas</a> y <a class="el" href="imagen_8h_source.html#l00046">imag</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="imagen_8h_source.html#l00048">columnas</a>, <a class="el" href="imagen_8h_source.html#l00048">filas</a> y <a class="el" href="imagen_8h_source.html#l00047">imag</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="archivospnm_8cpp_source.html#l00008">ArchivosPNM::leer()</a>.</p>
 
@@ -455,7 +455,7 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="imagen_8h_source.html#l00047">47</a> del archivo <a class="el" href="imagen_8h_source.html">imagen.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="imagen_8h_source.html#l00048">48</a> del archivo <a class="el" href="imagen_8h_source.html">imagen.h</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="imagen_8cpp_source.html#l00047">getColumnas()</a>, <a class="el" href="imagen_8cpp_source.html#l00032">setColumnas()</a> y <a class="el" href="imagen_8cpp_source.html#l00008">setTamanio()</a>.</p>
 
@@ -481,7 +481,7 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="imagen_8h_source.html#l00047">47</a> del archivo <a class="el" href="imagen_8h_source.html">imagen.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="imagen_8h_source.html#l00048">48</a> del archivo <a class="el" href="imagen_8h_source.html">imagen.h</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="imagen_8cpp_source.html#l00042">getFilas()</a>, <a class="el" href="imagen_8cpp_source.html#l00027">setFilas()</a> y <a class="el" href="imagen_8cpp_source.html#l00008">setTamanio()</a>.</p>
 
@@ -507,7 +507,7 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="imagen_8h_source.html#l00046">46</a> del archivo <a class="el" href="imagen_8h_source.html">imagen.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="imagen_8h_source.html#l00047">47</a> del archivo <a class="el" href="imagen_8h_source.html">imagen.h</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="imagen_8cpp_source.html#l00022">getPixel()</a>, <a class="el" href="imagen_8cpp_source.html#l00017">setPixel()</a> y <a class="el" href="imagen_8cpp_source.html#l00008">setTamanio()</a>.</p>
 
@@ -533,7 +533,7 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="imagen_8h_source.html#l00048">48</a> del archivo <a class="el" href="imagen_8h_source.html">imagen.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="imagen_8h_source.html#l00049">49</a> del archivo <a class="el" href="imagen_8h_source.html">imagen.h</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="imagen_8cpp_source.html#l00052">getRango()</a> y <a class="el" href="imagen_8cpp_source.html#l00037">setRango()</a>.</p>
 
@@ -549,7 +549,7 @@ Atributos privados</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_imagen.html">Imagen</a></li>
-    <li class="footer">Generado el Sábado, 10 de Septiembre de 2022 12:06:25 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Sábado, 10 de Septiembre de 2022 20:32:54 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

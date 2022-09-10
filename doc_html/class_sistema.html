@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('class_sistema.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 
+<p>Clase capaz de ejecutar el sistema de procesamiento de imagenes.  
+ <a href="class_sistema.html#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="sistema_8h_source.html">sistema.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -108,8 +111,14 @@ Atributos privados</h2></td></tr>
 <tr class="separator:a01804de50f62487d80dcd46c8c59fd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock">
-<p class="definition">Definición en la línea <a class="el" href="sistema_8h_source.html#l00008">8</a> del archivo <a class="el" href="sistema_8h_source.html">sistema.h</a>.</p>
+<div class="textblock"><p>Clase capaz de ejecutar el sistema de procesamiento de imagenes. </p>
+<p>Es cappaz de ejecutar las diferentes acciones que son necesarias para el funcionamiento del software. Tiene un espacio de Trabajo y un <a class="el" href="class_graficador.html" title="Clase encargada de mostrar por pantalla una imagen y responder a eventos.">Graficador</a> </p><dl class="section author"><dt>Autor</dt><dd>Justo Garcia </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>Fecha de última modificación: 10-09-2022 </dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd></dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000008">Bug:</a></b></dt><dd></dd></dl>
+<dl class="section warning"><dt>Atención</dt><dd></dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema_8h_source.html#l00018">18</a> del archivo <a class="el" href="sistema_8h_source.html">sistema.h</a>.</p>
 </div><h2 class="groupheader">Documentación del constructor y destructor</h2>
 <a id="a815b07845ef6b03247b239333fe75e28"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a815b07845ef6b03247b239333fe75e28">&#9670;&nbsp;</a></span>Sistema()</h2>
@@ -130,11 +139,11 @@ Atributos privados</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="class_sistema.html#a01804de50f62487d80dcd46c8c59fd57">graf</a>.<a class="code" href="class_graficador.html#aef5b9b4ec296596d86e27761f643e04d">setEspacio</a>(<a class="code" href="class_sistema.html#a7f74f273e84c5c702129f72334155035">espDeTrabajo</a>);</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
-<div class="ttc" id="aclass_graficador_html_aef5b9b4ec296596d86e27761f643e04d"><div class="ttname"><a href="class_graficador.html#aef5b9b4ec296596d86e27761f643e04d">Graficador::setEspacio</a></div><div class="ttdeci">void setEspacio(EspacioDeTrabajo &amp;esp)</div><div class="ttdef"><b>Definition:</b> <a href="graficador_8cpp_source.html#l00144">graficador.cpp:144</a></div></div>
-<div class="ttc" id="aclass_sistema_html_a01804de50f62487d80dcd46c8c59fd57"><div class="ttname"><a href="class_sistema.html#a01804de50f62487d80dcd46c8c59fd57">Sistema::graf</a></div><div class="ttdeci">Graficador graf</div><div class="ttdef"><b>Definition:</b> <a href="sistema_8h_source.html#l00019">sistema.h:19</a></div></div>
-<div class="ttc" id="aclass_sistema_html_a7f74f273e84c5c702129f72334155035"><div class="ttname"><a href="class_sistema.html#a7f74f273e84c5c702129f72334155035">Sistema::espDeTrabajo</a></div><div class="ttdeci">EspacioDeTrabajo espDeTrabajo</div><div class="ttdef"><b>Definition:</b> <a href="sistema_8h_source.html#l00018">sistema.h:18</a></div></div>
+<div class="ttc" id="aclass_graficador_html_aef5b9b4ec296596d86e27761f643e04d"><div class="ttname"><a href="class_graficador.html#aef5b9b4ec296596d86e27761f643e04d">Graficador::setEspacio</a></div><div class="ttdeci">void setEspacio(EspacioDeTrabajo &amp;esp)</div><div class="ttdef"><b>Definition:</b> <a href="graficador_8cpp_source.html#l00110">graficador.cpp:110</a></div></div>
+<div class="ttc" id="aclass_sistema_html_a01804de50f62487d80dcd46c8c59fd57"><div class="ttname"><a href="class_sistema.html#a01804de50f62487d80dcd46c8c59fd57">Sistema::graf</a></div><div class="ttdeci">Graficador graf</div><div class="ttdef"><b>Definition:</b> <a href="sistema_8h_source.html#l00029">sistema.h:29</a></div></div>
+<div class="ttc" id="aclass_sistema_html_a7f74f273e84c5c702129f72334155035"><div class="ttname"><a href="class_sistema.html#a7f74f273e84c5c702129f72334155035">Sistema::espDeTrabajo</a></div><div class="ttdeci">EspacioDeTrabajo espDeTrabajo</div><div class="ttdef"><b>Definition:</b> <a href="sistema_8h_source.html#l00028">sistema.h:28</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="sistema_8h_source.html#l00018">espDeTrabajo</a>, <a class="el" href="sistema_8h_source.html#l00019">graf</a> y <a class="el" href="graficador_8cpp_source.html#l00144">Graficador::setEspacio()</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="sistema_8h_source.html#l00028">espDeTrabajo</a>, <a class="el" href="sistema_8h_source.html#l00029">graf</a> y <a class="el" href="graficador_8cpp_source.html#l00110">Graficador::setEspacio()</a>.</p>
 
 </div>
 </div>
@@ -189,7 +198,7 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    cin&gt;&gt;opcArch;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_sistema.html#a01804de50f62487d80dcd46c8c59fd57">graf</a>.<a class="code" href="class_graficador.html#aeb0f38e53bf6406655cfc76c71c94d8d">setOpciones</a>(opcDir, opcArch);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_sistema.html#a01804de50f62487d80dcd46c8c59fd57">graf</a>.<a class="code" href="class_graficador.html#aa7a7c9b05f0a628ac24b1571e00f63a8">setOpciones</a>(opcDir, opcArch);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_sistema.html#a01804de50f62487d80dcd46c8c59fd57">graf</a>.<a class="code" href="class_graficador.html#a51e2bae03a1c536cb88740db36bf1a04">cargarImagen</a>();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
@@ -202,16 +211,16 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    a-&gt;exec();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-<div class="ttc" id="aclass_archivos_p_n_m_html"><div class="ttname"><a href="class_archivos_p_n_m.html">ArchivosPNM</a></div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8h_source.html#l00006">archivospnm.h:7</a></div></div>
+<div class="ttc" id="aclass_archivos_p_n_m_html"><div class="ttname"><a href="class_archivos_p_n_m.html">ArchivosPNM</a></div><div class="ttdoc">Clase capaz de gestionar los diferentes tipos de archivos PNM.</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8h_source.html#l00017">archivospnm.h:18</a></div></div>
 <div class="ttc" id="aclass_espacio_de_trabajo_html_a19bc26e7349a719fb19e4495d2beed6e"><div class="ttname"><a href="class_espacio_de_trabajo.html#a19bc26e7349a719fb19e4495d2beed6e">EspacioDeTrabajo::getListaDeArchivos</a></div><div class="ttdeci">vector&lt; string &gt; getListaDeArchivos(string ruta)</div><div class="ttdef"><b>Definition:</b> <a href="espaciodetrabajo_8cpp_source.html#l00018">espaciodetrabajo.cpp:18</a></div></div>
 <div class="ttc" id="aclass_espacio_de_trabajo_html_a8ba67fb3805b2e366a8d80bee8f2b54e"><div class="ttname"><a href="class_espacio_de_trabajo.html#a8ba67fb3805b2e366a8d80bee8f2b54e">EspacioDeTrabajo::getRuta</a></div><div class="ttdeci">string getRuta(int opcDir, int opcArch=-8)</div><div class="ttdef"><b>Definition:</b> <a href="espaciodetrabajo_8cpp_source.html#l00040">espaciodetrabajo.cpp:40</a></div></div>
 <div class="ttc" id="aclass_espacio_de_trabajo_html_abc26ff85c54257a6073ee312fc0442e5"><div class="ttname"><a href="class_espacio_de_trabajo.html#abc26ff85c54257a6073ee312fc0442e5">EspacioDeTrabajo::cargarCarpetas</a></div><div class="ttdeci">void cargarCarpetas()</div><div class="ttdef"><b>Definition:</b> <a href="espaciodetrabajo_8cpp_source.html#l00009">espaciodetrabajo.cpp:9</a></div></div>
-<div class="ttc" id="aclass_graficador_html_a51e2bae03a1c536cb88740db36bf1a04"><div class="ttname"><a href="class_graficador.html#a51e2bae03a1c536cb88740db36bf1a04">Graficador::cargarImagen</a></div><div class="ttdeci">void cargarImagen()</div><div class="ttdef"><b>Definition:</b> <a href="graficador_8cpp_source.html#l00093">graficador.cpp:93</a></div></div>
-<div class="ttc" id="aclass_graficador_html_aeb0f38e53bf6406655cfc76c71c94d8d"><div class="ttname"><a href="class_graficador.html#aeb0f38e53bf6406655cfc76c71c94d8d">Graficador::setOpciones</a></div><div class="ttdeci">void setOpciones(int dir, int arch)</div><div class="ttdef"><b>Definition:</b> <a href="graficador_8cpp_source.html#l00137">graficador.cpp:137</a></div></div>
-<div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00022">imagen.h:23</a></div></div>
+<div class="ttc" id="aclass_graficador_html_a51e2bae03a1c536cb88740db36bf1a04"><div class="ttname"><a href="class_graficador.html#a51e2bae03a1c536cb88740db36bf1a04">Graficador::cargarImagen</a></div><div class="ttdeci">void cargarImagen()</div><div class="ttdef"><b>Definition:</b> <a href="graficador_8cpp_source.html#l00094">graficador.cpp:94</a></div></div>
+<div class="ttc" id="aclass_graficador_html_aa7a7c9b05f0a628ac24b1571e00f63a8"><div class="ttname"><a href="class_graficador.html#aa7a7c9b05f0a628ac24b1571e00f63a8">Graficador::setOpciones</a></div><div class="ttdeci">void setOpciones(int opcDir, int opcArch)</div><div class="ttdef"><b>Definition:</b> <a href="graficador_8cpp_source.html#l00103">graficador.cpp:103</a></div></div>
+<div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00023">imagen.h:24</a></div></div>
 <div class="ttc" id="aclass_sistema_html_a6a5ed28b40bb0c15c47b9ed4f56326b1"><div class="ttname"><a href="class_sistema.html#a6a5ed28b40bb0c15c47b9ed4f56326b1">Sistema::mostrarAtajos</a></div><div class="ttdeci">void mostrarAtajos()</div><div class="ttdef"><b>Definition:</b> <a href="sistema_8cpp_source.html#l00056">sistema.cpp:56</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="espaciodetrabajo_8cpp_source.html#l00009">EspacioDeTrabajo::cargarCarpetas()</a>, <a class="el" href="graficador_8cpp_source.html#l00093">Graficador::cargarImagen()</a>, <a class="el" href="sistema_8h_source.html#l00018">espDeTrabajo</a>, <a class="el" href="espaciodetrabajo_8cpp_source.html#l00018">EspacioDeTrabajo::getListaDeArchivos()</a>, <a class="el" href="espaciodetrabajo_8cpp_source.html#l00040">EspacioDeTrabajo::getRuta()</a>, <a class="el" href="sistema_8h_source.html#l00019">graf</a>, <a class="el" href="sistema_8cpp_source.html#l00056">mostrarAtajos()</a> y <a class="el" href="graficador_8cpp_source.html#l00137">Graficador::setOpciones()</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="espaciodetrabajo_8cpp_source.html#l00009">EspacioDeTrabajo::cargarCarpetas()</a>, <a class="el" href="graficador_8cpp_source.html#l00094">Graficador::cargarImagen()</a>, <a class="el" href="sistema_8h_source.html#l00028">espDeTrabajo</a>, <a class="el" href="espaciodetrabajo_8cpp_source.html#l00018">EspacioDeTrabajo::getListaDeArchivos()</a>, <a class="el" href="espaciodetrabajo_8cpp_source.html#l00040">EspacioDeTrabajo::getRuta()</a>, <a class="el" href="sistema_8h_source.html#l00029">graf</a>, <a class="el" href="sistema_8cpp_source.html#l00056">mostrarAtajos()</a> y <a class="el" href="graficador_8cpp_source.html#l00103">Graficador::setOpciones()</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="main_8cpp_source.html#l00005">main()</a>.</p>
 
@@ -278,7 +287,7 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sistema_8h_source.html#l00018">18</a> del archivo <a class="el" href="sistema_8h_source.html">sistema.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="sistema_8h_source.html#l00028">28</a> del archivo <a class="el" href="sistema_8h_source.html">sistema.h</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="sistema_8cpp_source.html#l00008">ejecutar()</a> y <a class="el" href="sistema_8cpp_source.html#l00003">Sistema()</a>.</p>
 
@@ -304,7 +313,7 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="sistema_8h_source.html#l00019">19</a> del archivo <a class="el" href="sistema_8h_source.html">sistema.h</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="sistema_8h_source.html#l00029">29</a> del archivo <a class="el" href="sistema_8h_source.html">sistema.h</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="sistema_8cpp_source.html#l00008">ejecutar()</a> y <a class="el" href="sistema_8cpp_source.html#l00003">Sistema()</a>.</p>
 
@@ -320,7 +329,7 @@ Atributos privados</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_sistema.html">Sistema</a></li>
-    <li class="footer">Generado el Sábado, 10 de Septiembre de 2022 12:06:25 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Sábado, 10 de Septiembre de 2022 20:32:54 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

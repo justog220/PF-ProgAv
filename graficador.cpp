@@ -65,6 +65,7 @@ void Graficador::graficarImagen()
 {
     Pixel pixel_aux;
 
+    //resizeGL(imagen.getColumnas(), imagen.getFilas());
     glPushMatrix();
     glTranslatef(desplx, desply, 0.0f);
     glScalef(escala, escala, 1.0f);
@@ -98,41 +99,6 @@ void Graficador::cargarImagen()
 
     imagen = archi.leer(ruta);
 }
-
-void Graficador::cargarCarpetas()
-{
-    carpetas.push_back("grupo_imagenes_1/");
-    carpetas.push_back("grupo_imagenes_2/");
-    carpetas.push_back("grupo_imagenes_3_corruptas/");
-}
-
-void Graficador::getListaDeArchivos(string ruta)
-{
-    vector<string> lista_de_archivos;
-    DIR *dir = opendir(ruta.c_str());
-    if (dir != NULL)
-    {
-        string pto("."), ptopto("..");
-        struct dirent *entry;
-        while ((entry = readdir(dir)) != NULL)
-        {
-            if( entry->d_name != pto and entry->d_name != ptopto )
-            {
-                cout<<entry->d_name;
-                lista_de_archivos.push_back(entry->d_name);
-            }
-        }
-        closedir(dir);
-    }
-
-    for(unsigned int i = lista_de_archivos.size(); i > 0; i--)
-    {
-        listaDeArchivos.resize(lista_de_archivos.size());
-        listaDeArchivos[i] = lista_de_archivos[i];
-    }
-}
-
-
 
 void Graficador::setOpciones(int dir, int arch)
 {

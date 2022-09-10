@@ -6,7 +6,7 @@
  *              rojo, verde y azul. Puede cambiar estos valores y devolverlos en caso de
  *              ser necesario.
  *  \author     Justo Garcia
- *  \date       Fechca de última modificación: 10-09-2022
+ *  \date       Fecha de última modificación: 10-09-2022
  *  \pre        Idealmente deben inicializarse solo para formar parte de la representacion
  *              de una imagen.
  *  \bug        Cualquier error encontrado se anota aquí, por ejemplo, un fallo

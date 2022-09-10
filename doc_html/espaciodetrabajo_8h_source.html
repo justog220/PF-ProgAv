@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Software de Procesamiento Digital de Imágenes - Garcia Justo: Fichero Fuente espaciodetrabajo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Software de Procesamiento Digital de Imágenes - Garcia Justo
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('espaciodetrabajo_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">espaciodetrabajo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="espaciodetrabajo_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ESPACIODETRABAJO_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ESPACIODETRABAJO_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="archivosaic_8h.html">archivosaic.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="archivospnm_8h.html">archivospnm.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;dirent.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_espacio_de_trabajo.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_espacio_de_trabajo.html">EspacioDeTrabajo</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_espacio_de_trabajo.html#aabf8692d51b116190f1b0a2292359b46">EspacioDeTrabajo</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_espacio_de_trabajo.html#abc26ff85c54257a6073ee312fc0442e5">cargarCarpetas</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    vector&lt;string&gt; <a class="code" href="class_espacio_de_trabajo.html#a19bc26e7349a719fb19e4495d2beed6e">getListaDeArchivos</a>(<span class="keywordtype">string</span> ruta);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_espacio_de_trabajo.html#a8ba67fb3805b2e366a8d80bee8f2b54e">getRuta</a>(<span class="keywordtype">int</span> opcDir, <span class="keywordtype">int</span> opcArch=-8);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_espacio_de_trabajo.html#a45307e1544c7fd91e19274b9d9e983c2">getNroArchivos</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_espacio_de_trabajo.html#ae5d04a173d44964e2913c32230260767">   26</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_espacio_de_trabajo.html#ae5d04a173d44964e2913c32230260767">raiz</a>=<span class="stringliteral">&quot;./Imagenes/&quot;</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_espacio_de_trabajo.html#abeb782ad9ad7c8ffe0213df5055047cd">   28</a></span>&#160;    vector&lt;string&gt; <a class="code" href="class_espacio_de_trabajo.html#abeb782ad9ad7c8ffe0213df5055047cd">carpetas</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_espacio_de_trabajo.html#a3ff0bbdddd884ff3c279f778ce5e443c">   30</a></span>&#160;    vector&lt;string&gt; <a class="code" href="class_espacio_de_trabajo.html#a3ff0bbdddd884ff3c279f778ce5e443c">listaDeArchivos</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ESPACIODETRABAJO_H</span></div>
+<div class="ttc" id="aarchivosaic_8h_html"><div class="ttname"><a href="archivosaic_8h.html">archivosaic.h</a></div></div>
+<div class="ttc" id="aarchivospnm_8h_html"><div class="ttname"><a href="archivospnm_8h.html">archivospnm.h</a></div></div>
+<div class="ttc" id="aclass_espacio_de_trabajo_html"><div class="ttname"><a href="class_espacio_de_trabajo.html">EspacioDeTrabajo</a></div><div class="ttdef"><b>Definition:</b> <a href="espaciodetrabajo_8h_source.html#l00012">espaciodetrabajo.h:13</a></div></div>
+<div class="ttc" id="aclass_espacio_de_trabajo_html_a19bc26e7349a719fb19e4495d2beed6e"><div class="ttname"><a href="class_espacio_de_trabajo.html#a19bc26e7349a719fb19e4495d2beed6e">EspacioDeTrabajo::getListaDeArchivos</a></div><div class="ttdeci">vector&lt; string &gt; getListaDeArchivos(string ruta)</div><div class="ttdef"><b>Definition:</b> <a href="espaciodetrabajo_8cpp_source.html#l00018">espaciodetrabajo.cpp:18</a></div></div>
+<div class="ttc" id="aclass_espacio_de_trabajo_html_a3ff0bbdddd884ff3c279f778ce5e443c"><div class="ttname"><a href="class_espacio_de_trabajo.html#a3ff0bbdddd884ff3c279f778ce5e443c">EspacioDeTrabajo::listaDeArchivos</a></div><div class="ttdeci">vector&lt; string &gt; listaDeArchivos</div><div class="ttdef"><b>Definition:</b> <a href="espaciodetrabajo_8h_source.html#l00030">espaciodetrabajo.h:30</a></div></div>
+<div class="ttc" id="aclass_espacio_de_trabajo_html_a45307e1544c7fd91e19274b9d9e983c2"><div class="ttname"><a href="class_espacio_de_trabajo.html#a45307e1544c7fd91e19274b9d9e983c2">EspacioDeTrabajo::getNroArchivos</a></div><div class="ttdeci">int getNroArchivos()</div><div class="ttdef"><b>Definition:</b> <a href="espaciodetrabajo_8cpp_source.html#l00074">espaciodetrabajo.cpp:74</a></div></div>
+<div class="ttc" id="aclass_espacio_de_trabajo_html_a8ba67fb3805b2e366a8d80bee8f2b54e"><div class="ttname"><a href="class_espacio_de_trabajo.html#a8ba67fb3805b2e366a8d80bee8f2b54e">EspacioDeTrabajo::getRuta</a></div><div class="ttdeci">string getRuta(int opcDir, int opcArch=-8)</div><div class="ttdef"><b>Definition:</b> <a href="espaciodetrabajo_8cpp_source.html#l00040">espaciodetrabajo.cpp:40</a></div></div>
+<div class="ttc" id="aclass_espacio_de_trabajo_html_aabf8692d51b116190f1b0a2292359b46"><div class="ttname"><a href="class_espacio_de_trabajo.html#aabf8692d51b116190f1b0a2292359b46">EspacioDeTrabajo::EspacioDeTrabajo</a></div><div class="ttdeci">EspacioDeTrabajo()</div><div class="ttdef"><b>Definition:</b> <a href="espaciodetrabajo_8cpp_source.html#l00003">espaciodetrabajo.cpp:3</a></div></div>
+<div class="ttc" id="aclass_espacio_de_trabajo_html_abc26ff85c54257a6073ee312fc0442e5"><div class="ttname"><a href="class_espacio_de_trabajo.html#abc26ff85c54257a6073ee312fc0442e5">EspacioDeTrabajo::cargarCarpetas</a></div><div class="ttdeci">void cargarCarpetas()</div><div class="ttdef"><b>Definition:</b> <a href="espaciodetrabajo_8cpp_source.html#l00009">espaciodetrabajo.cpp:9</a></div></div>
+<div class="ttc" id="aclass_espacio_de_trabajo_html_abeb782ad9ad7c8ffe0213df5055047cd"><div class="ttname"><a href="class_espacio_de_trabajo.html#abeb782ad9ad7c8ffe0213df5055047cd">EspacioDeTrabajo::carpetas</a></div><div class="ttdeci">vector&lt; string &gt; carpetas</div><div class="ttdef"><b>Definition:</b> <a href="espaciodetrabajo_8h_source.html#l00028">espaciodetrabajo.h:28</a></div></div>
+<div class="ttc" id="aclass_espacio_de_trabajo_html_ae5d04a173d44964e2913c32230260767"><div class="ttname"><a href="class_espacio_de_trabajo.html#ae5d04a173d44964e2913c32230260767">EspacioDeTrabajo::raiz</a></div><div class="ttdeci">string raiz</div><div class="ttdef"><b>Definition:</b> <a href="espaciodetrabajo_8h_source.html#l00026">espaciodetrabajo.h:26</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="espaciodetrabajo_8h.html">espaciodetrabajo.h</a></li>
+    <li class="footer">Generado el Sábado, 10 de Septiembre de 2022 12:06:25 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

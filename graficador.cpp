@@ -94,8 +94,6 @@ void Graficador::cargarImagen()
 {
     string ruta = espacio->getRuta(opcDir, opcArch);
 
-    cout<<ruta;
-
     ArchivosPNM archi;
 
     imagen = archi.leer(ruta);

@@ -11,6 +11,8 @@ public:
 
     void ejecutar(QApplication *a);
 
+    void mostrarAtajos();
+
 private:
     EspacioDeTrabajo espDeTrabajo;
     Graficador graf;

@@ -1,0 +1,40 @@
+Lista de atajos:
+	|__Mostrar imagen siguiente 
+	|	|__ctrl + ->
+	|
+	|__Mostrar imagen anterior 
+	|	|__ctrl + <-
+	|
+	|__Mostrar histograma
+	|	|__ ctrl + h
+	|
+	|__Hacer zoom
+	|	|__ ctrl + click izq y arrastrar sin soltar
+	|
+	|__Quitar zoom
+	|	|__ ctrl + click derecho
+	|
+	|__Almacenar la imagen
+	|	|__ ctrl + g
+	|
+	|__Aplicar pseudo coloreado:
+	|	|__ ctrl + nro de tabla
+	|		|__ 1)
+	|		|__ 2)
+	|__ Detectar area con el color o intensidad del pixel debajo del cursor
+	|	|__ ctr + click izq
+	|
+	|__ Aplicar filtro de suavizado
+	|	|__ ctrl + s
+	|
+	|__Aplicar filtro de mediana
+	|	|__ ctrl + m
+	|
+	|__Ajuste de contraste
+	|	|__ ctrl + c
+	|
+	|__Aumentar brillo
+	|	|__ ctrl + '+'
+	|
+	|__Disminuir brillo
+		|__ ctrl + '-' 

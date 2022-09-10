@@ -45,5 +45,31 @@ void Sistema::ejecutar(QApplication *a)
 
     graf.show();
 
+    system("clear");
+
+    mostrarAtajos();
+
     a->exec();
+
+}
+
+void Sistema::mostrarAtajos()
+{
+    ifstream archi;
+    archi.open("lista_de_atajos.txt");
+
+    string linea;
+
+    if(!archi.is_open())
+    {
+
+        cout<<"No se pudo abrir la lista de atajos";
+    }
+    else
+    {
+        while(!archi.eof()){
+            getline(archi, linea);
+            cout<<linea<<endl;
+        }
+    }
 }

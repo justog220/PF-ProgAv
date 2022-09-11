@@ -48,10 +48,13 @@ public:
     void setOpciones(int opcDir, int opcArch);
 
 private:
-    int anchoV, altoV;
+    int anchoV;
+
+    int altoV;
 
     float escala;
-    float desplx, desply;
+    float desplx;
+    float desply;
 
     Imagen imagen;
 

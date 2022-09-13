@@ -64,16 +64,6 @@ protected:
     /*!
      * \brief keyPressEvent
      * \param event
-     * Lista de eventos:
-     *    - Eventos de ratón:
-     *         -# Evento de movimiento de ratón.
-     *         -# Evento de clic con ratón\n
-     *            Más información relacionada al evento clic.
-     *         -# Evento de doble clic con ratón.
-     *    - Eventos de teclado:
-     *         1. Presionar una tecla.
-     *         2. Dejar de presionar una tecla.
-     *
   */
 
     void keyPressEvent(QKeyEvent *event) override;

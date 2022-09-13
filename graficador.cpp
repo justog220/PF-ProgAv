@@ -112,6 +112,7 @@ void Graficador::setEspacio(EspacioDeTrabajo &esp)
     espacio = &esp;
 }
 
+//NO es necesario que se llame keyPress, lo importante que
 void Graficador::keyPressEvent(QKeyEvent *event)
 {
     bool flecha_derecha = event->key() == Qt::Key_Right;

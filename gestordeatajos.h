@@ -1,3 +1,13 @@
+/*!
+ *  \class      Gestor de archivos
+ *  \brief
+ *  \details
+ *  \author     Justo Garcia
+ *  \date       Fecha de última modificación: 10-09-2022
+ *  \pre
+ *  \bug        No se utiliza en ningún momento
+ *  \warning
+*/
 #ifndef GESTORDEATAJOS_H
 #define GESTORDEATAJOS_H
 

@@ -103,7 +103,7 @@ private:
     */
     int columnas;
 
-    /*! \param rango Parámetro que almacena el valor del rango de la imágen.
+    /*! \param rango Parámetro que almacena el valor del rango de la imágen .
     */
     float rango;
 

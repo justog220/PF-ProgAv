@@ -70,15 +70,15 @@ public:
     float getB();
 
 private:
-    /*! \param r Parámetro que alamcena el valor de rojo.
+    /*! \param r Parámetro que almacena el valor de rojo.
     */
     float r;
 
-    /*! \param g Parámetro que alamcena el valor de verde.
+    /*! \param g Parámetro que almacena el valor de verde.
     */
     float g;
 
-    /*! \param b Parámetro que alamcena el valor de azul.
+    /*! \param b Parámetro que almacena el valor de azul.
     */
     float b;
 

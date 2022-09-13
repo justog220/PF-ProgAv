@@ -1,14 +1,12 @@
 /*!
  *  \class      Gestor de archivos
  *  \brief      Clase abstracta de la cual heredan metodos para leer y escribir archivos otras clases.
- *  \details    Tiene una imagen, la cual es capaz de cargar. Conoce el ancho
- *              y alto de la ventana y la escala utilizada. Se asocia con un
- *              espacio de trabajo para conocer distintas rutas y archivos. Por
- *              otro lado, es capaz de responder ante distintos eventos de mouse y teclado.
+ *  \details    Virtualiza metodos para leer y escribir archivos, que luego serán utilizados por sus clases
+ *              hijas.
  *  \author     Justo Garcia
  *  \date       Fecha de última modificación: 10-09-2022
  *  \pre
- *  \bug        La ventana no se abre con el tamaño de la imagen.
+ *  \bug
  *  \warning
 */
 #ifndef GESTORDEARCHIVOS_H

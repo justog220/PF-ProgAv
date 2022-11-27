@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['cargarcarpetas_10',['cargarCarpetas',['../class_espacio_de_trabajo.html#abc26ff85c54257a6073ee312fc0442e5',1,'EspacioDeTrabajo']]],
-  ['cargarimagen_11',['cargarImagen',['../class_graficador.html#a51e2bae03a1c536cb88740db36bf1a04',1,'Graficador']]],
-  ['carpetas_12',['carpetas',['../class_espacio_de_trabajo.html#abeb782ad9ad7c8ffe0213df5055047cd',1,'EspacioDeTrabajo']]],
-  ['columnas_13',['columnas',['../class_imagen.html#af63de0598ca965ab3a30b54ee7e2cedc',1,'Imagen']]]
+  ['b_451',['b',['../class_pixel.html#a94b067f3c79425c953631f7bf1c7536c',1,'Pixel']]],
+  ['borrarimagen_452',['borrarImagen',['../class_imagen.html#a166b16c639448c813f764b79ae9d3765',1,'Imagen']]]
 ];

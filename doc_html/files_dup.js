@@ -1,5 +1,11 @@
 var files_dup =
 [
+    [ "pEI", "dir_e2424d3e1c4802d1ecabd9a000e25fd4.html", "dir_e2424d3e1c4802d1ecabd9a000e25fd4" ],
+    [ "algoritmodelpintor.cpp", "algoritmodelpintor_8cpp.html", null ],
+    [ "algoritmodelpintor.h", "algoritmodelpintor_8h.html", [
+      [ "Posicion", "struct_posicion.html", "struct_posicion" ],
+      [ "AlgoritmoDelPintor", "class_algoritmo_del_pintor.html", "class_algoritmo_del_pintor" ]
+    ] ],
     [ "archivosaic.cpp", "archivosaic_8cpp.html", null ],
     [ "archivosaic.h", "archivosaic_8h.html", [
       [ "ArchivosAIC", "class_archivos_a_i_c.html", "class_archivos_a_i_c" ]
@@ -12,17 +18,23 @@ var files_dup =
     [ "espaciodetrabajo.h", "espaciodetrabajo_8h.html", [
       [ "EspacioDeTrabajo", "class_espacio_de_trabajo.html", "class_espacio_de_trabajo" ]
     ] ],
+    [ "ExcepcionArchivoCorrupto.h", "_excepcion_archivo_corrupto_8h.html", [
+      [ "ExcepcionArchivoCorrupto", "class_excepcion_archivo_corrupto.html", "class_excepcion_archivo_corrupto" ]
+    ] ],
+    [ "ExcepcionArchivoNoSoportado.h", "_excepcion_archivo_no_soportado_8h.html", [
+      [ "ExcepcionArchivoNoSoportado", "class_excepcion_archivo_no_soportado.html", "class_excepcion_archivo_no_soportado" ]
+    ] ],
+    [ "filtros.cpp", "filtros_8cpp.html", null ],
+    [ "filtros.h", "filtros_8h.html", [
+      [ "Filtros", "class_filtros.html", "class_filtros" ]
+    ] ],
     [ "gestordearchivos.cpp", "gestordearchivos_8cpp.html", null ],
     [ "gestordearchivos.h", "gestordearchivos_8h.html", [
       [ "GestorDeArchivos", "class_gestor_de_archivos.html", "class_gestor_de_archivos" ]
     ] ],
-    [ "gestordeatajos.cpp", "gestordeatajos_8cpp.html", null ],
-    [ "gestordeatajos.h", "gestordeatajos_8h.html", [
-      [ "GestorDeAtajos", "class_gestor_de_atajos.html", "class_gestor_de_atajos" ]
-    ] ],
-    [ "graficador.cpp", "graficador_8cpp.html", null ],
-    [ "graficador.h", "graficador_8h.html", [
-      [ "Graficador", "class_graficador.html", "class_graficador" ]
+    [ "graficadorhistograma.cpp", "graficadorhistograma_8cpp.html", null ],
+    [ "graficadorhistograma.h", "graficadorhistograma_8h.html", [
+      [ "GraficadorHistograma", "class_graficador_histograma.html", "class_graficador_histograma" ]
     ] ],
     [ "imagen.cpp", "imagen_8cpp.html", null ],
     [ "imagen.h", "imagen_8h.html", [
@@ -34,8 +46,20 @@ var files_dup =
     [ "pixel.h", "pixel_8h.html", [
       [ "Pixel", "class_pixel.html", "class_pixel" ]
     ] ],
+    [ "procesadorestadistico.cpp", "procesadorestadistico_8cpp.html", null ],
+    [ "procesadorestadistico.h", "procesadorestadistico_8h.html", [
+      [ "ProcesadorEstadistico", "class_procesador_estadistico.html", "class_procesador_estadistico" ]
+    ] ],
     [ "sistema.cpp", "sistema_8cpp.html", null ],
     [ "sistema.h", "sistema_8h.html", [
       [ "Sistema", "class_sistema.html", "class_sistema" ]
+    ] ],
+    [ "tablalut.cpp", "tablalut_8cpp.html", null ],
+    [ "tablalut.h", "tablalut_8h.html", [
+      [ "TablaLut", "class_tabla_lut.html", "class_tabla_lut" ]
+    ] ],
+    [ "ventanadegraficacion.cpp", "ventanadegraficacion_8cpp.html", null ],
+    [ "ventanadegraficacion.h", "ventanadegraficacion_8h.html", [
+      [ "VentanaDeGraficacion", "class_ventana_de_graficacion.html", "class_ventana_de_graficacion" ]
     ] ]
 ];

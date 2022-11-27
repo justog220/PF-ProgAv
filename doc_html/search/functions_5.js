@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['keypressevent_146',['keyPressEvent',['../class_gestor_de_atajos.html#ae64d268f17cc9b7e349840a4d2cb5bd9',1,'GestorDeAtajos::keyPressEvent()'],['../class_graficador.html#a5f04fd8c340da32117946048629a78a5',1,'Graficador::keyPressEvent()']]]
+  ['filtros_768',['Filtros',['../class_filtros.html#a5d4383dece49dcc80b3ce18da579a338',1,'Filtros']]],
+  ['formapartedelaimagen_769',['formaParteDeLaImagen',['../class_imagen.html#aa479341bc5a7d72733f1074a9b75ba3b',1,'Imagen']]]
 ];

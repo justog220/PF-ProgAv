@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['g_177',['g',['../class_pixel.html#a858d0d3935d9e8fd8bb10e39023d0125',1,'Pixel']]],
-  ['graf_178',['graf',['../class_sistema.html#a01804de50f62487d80dcd46c8c59fd57',1,'Sistema']]]
+  ['g_882',['g',['../class_pixel.html#a73515f179e3c1bd28156e434da111d05',1,'Pixel']]],
+  ['graf_883',['graf',['../class_sistema.html#af7caad92770751ab0b2b75d8dc4743fd',1,'Sistema']]]
 ];

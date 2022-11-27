@@ -88,6 +88,9 @@ $(document).ready(function(){initNavTree('class_gestor_de_archivos.html',''); in
 </div><!--header-->
 <div class="contents">
 
+<p>Clase abstracta de la cual heredan metodos para leer y escribir archivos otras clases.  
+ <a href="class_gestor_de_archivos.html#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="gestordearchivos_8h_source.html">gestordearchivos.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de herencias de GestorDeArchivos</div>
@@ -103,16 +106,24 @@ Diagrama de herencias de GestorDeArchivos</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
 <tr class="memitem:a656468aebffd8ad9f68723f6c8abf69f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_imagen.html">Imagen</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gestor_de_archivos.html#a656468aebffd8ad9f68723f6c8abf69f">leer</a> (string ruta)=0</td></tr>
+<tr class="memdesc:a656468aebffd8ad9f68723f6c8abf69f"><td class="mdescLeft">&#160;</td><td class="mdescRight">leer Método virtual que al ser redefinido permite leer una <a class="el" href="class_imagen.html" title="Permite la representacion de una imagen a partir de un arreglo de Pixeles.">Imagen</a>  <a href="class_gestor_de_archivos.html#a656468aebffd8ad9f68723f6c8abf69f">Más...</a><br /></td></tr>
 <tr class="separator:a656468aebffd8ad9f68723f6c8abf69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b34fee12458706a9d9bf46bac168569"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gestor_de_archivos.html#a3b34fee12458706a9d9bf46bac168569">guardar</a> (string ruta, <a class="el" href="class_imagen.html">Imagen</a> *img)=0</td></tr>
-<tr class="separator:a3b34fee12458706a9d9bf46bac168569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f950c7c54f9883b7863b9afe076cda"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gestor_de_archivos.html#ad2f950c7c54f9883b7863b9afe076cda">guardar</a> (<a class="el" href="class_imagen.html">Imagen</a> *img)=0</td></tr>
+<tr class="memdesc:ad2f950c7c54f9883b7863b9afe076cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">guardar Método virtual que al ser redefinido permite guardar una <a class="el" href="class_imagen.html" title="Permite la representacion de una imagen a partir de un arreglo de Pixeles.">Imagen</a>.  <a href="class_gestor_de_archivos.html#ad2f950c7c54f9883b7863b9afe076cda">Más...</a><br /></td></tr>
+<tr class="separator:ad2f950c7c54f9883b7863b9afe076cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock">
-<p class="definition">Definición en la línea <a class="el" href="gestordearchivos_8h_source.html#l00021">21</a> del archivo <a class="el" href="gestordearchivos_8h_source.html">gestordearchivos.h</a>.</p>
+<div class="textblock"><p>Clase abstracta de la cual heredan metodos para leer y escribir archivos otras clases. </p>
+<p>Virtualiza metodos para leer y escribir archivos, que luego serán utilizados por sus clases hijas. </p><dl class="section author"><dt>Autor</dt><dd>Justo Garcia </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>Fecha de última modificación: 10-09-2022 </dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd></dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000006">Bug:</a></b></dt><dd></dd></dl>
+<dl class="section warning"><dt>Atención</dt><dd></dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="gestordearchivos_8h_source.html#l00022">22</a> del archivo <a class="el" href="gestordearchivos_8h_source.html">gestordearchivos.h</a>.</p>
 </div><h2 class="groupheader">Documentación de las funciones miembro</h2>
-<a id="a3b34fee12458706a9d9bf46bac168569"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b34fee12458706a9d9bf46bac168569">&#9670;&nbsp;</a></span>guardar()</h2>
+<a id="ad2f950c7c54f9883b7863b9afe076cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2f950c7c54f9883b7863b9afe076cda">&#9670;&nbsp;</a></span>guardar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,19 +134,9 @@ Métodos públicos</h2></td></tr>
         <tr>
           <td class="memname">virtual void GestorDeArchivos::guardar </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>ruta</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="class_imagen.html">Imagen</a> *&#160;</td>
-          <td class="paramname"><em>img</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>img</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -145,7 +146,17 @@ Métodos públicos</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implementado en <a class="el" href="class_archivos_p_n_m.html#afc5d84ec12b995c95d991642a94615f4">ArchivosPNM</a> y <a class="el" href="class_archivos_a_i_c.html#ab8f2019301ac381856e150a32353bbea">ArchivosAIC</a>.</p>
+<p>guardar Método virtual que al ser redefinido permite guardar una <a class="el" href="class_imagen.html" title="Permite la representacion de una imagen a partir de un arreglo de Pixeles.">Imagen</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><a class="el" href="class_imagen.html" title="Permite la representacion de una imagen a partir de un arreglo de Pixeles.">Imagen</a> que se desea guardar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="class_archivos_p_n_m.html#ae0fbeb8d709ae2ae527a6aaa76e53386">ArchivosPNM</a> y <a class="el" href="class_archivos_a_i_c.html#acd84997137f85c271856a3d4108986bf">ArchivosAIC</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="espaciodetrabajo_8cpp_source.html#l00141">EspacioDeTrabajo::guardarImagen()</a>.</p>
 
 </div>
 </div>
@@ -173,7 +184,18 @@ Métodos públicos</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>leer Método virtual que al ser redefinido permite leer una <a class="el" href="class_imagen.html" title="Permite la representacion de una imagen a partir de un arreglo de Pixeles.">Imagen</a> </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ruta</td><td>Ruta donde está almacenada la <a class="el" href="class_imagen.html" title="Permite la representacion de una imagen a partir de un arreglo de Pixeles.">Imagen</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd><a class="el" href="class_imagen.html" title="Permite la representacion de una imagen a partir de un arreglo de Pixeles.">Imagen</a> leída. </dd></dl>
+
 <p>Implementado en <a class="el" href="class_archivos_p_n_m.html#a5ae7d9ed0f791ed5c4f841b7c12656bf">ArchivosPNM</a> y <a class="el" href="class_archivos_a_i_c.html#a39a61108e840cec24b4b39a8cbf071df">ArchivosAIC</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ventanadegraficacion_8cpp_source.html#l00126">VentanaDeGraficacion::cargarImagen()</a> y <a class="el" href="ventanadegraficacion_8cpp_source.html#l00147">VentanaDeGraficacion::recuperarImagen()</a>.</p>
 
 </div>
 </div>
@@ -186,7 +208,7 @@ Métodos públicos</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_gestor_de_archivos.html">GestorDeArchivos</a></li>
-    <li class="footer">Generado el Martes, 13 de Septiembre de 2022 09:29:49 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Domingo, 27 de Noviembre de 2022 16:15:04 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

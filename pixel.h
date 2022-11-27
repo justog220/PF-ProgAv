@@ -9,14 +9,15 @@
  *  \date       Fecha de última modificación: 10-09-2022
  *  \pre        Idealmente deben inicializarse solo para formar parte de la representacion
  *              de una imagen.
- *  \bug        Ingreso int pero mis parametros son flotantes. Al momento de la implementacion
- *              se penso en flotantes por operaciones que podrian realizarse luego (filtros, pseudocoloreado, etc)
- *              sin embargo de los archivos leo enteros.
+ *  \bug
  *  \warning
 */
 #ifndef PIXEL_H
 #define PIXEL_H
 
+#include <vector>
+
+using namespace std;
 
 class Pixel
 {
@@ -24,6 +25,7 @@ public:
     ///Constructor del objeto Pixel
     Pixel();
 
+    Pixel(int r, int green, int blue);
     /*!
      * \brief       setPixelRGB Método que permite cambiar los valores de R, G y B de un tipo de pixel RGB.
      * \param[in]   valor_r Es el valor de R que se quiere establecer.
@@ -53,34 +55,62 @@ public:
      * \return El método retorna como salida de un valor flotante de
      *         8 bytes
      */
-    float getR();
+    int getR();
 
     /*!
      * \brief getG Devuelve el valor de G.
      * \return El método retorna como salida de un valor flotante de
      *         8 bytes
      */
-    float getG();
+    int getG();
 
     /*!
      * \brief getB Devuelve el valor de B.
      * \return El método retorna como salida de un valor flotante de
      *         8 bytes
      */
-    float getB();
+    int getB();
+
+    /*!
+     * \brief getIntensidad Devuelve la intensidad del Pixel, si es de intensidades.
+     * \return Entero que representa la intensidad de un Pixel.
+     */
+    int getIntensidad();
+
+    /*!
+     * \brief aumentarBrillo Método que permite aumentar el brillo de un
+     * Pixel.
+     */
+    void aumentarBrillo();
+
+    /*!
+     * \brief reducirBrillo Método que permite reducir el brillo de
+     * un Pixel.
+     */
+    void reducirBrillo();
+
+    /*!
+     * \brief ajusteContraste Método que ajusta (R, G, B) para ajustar el contraste de una Imagen.
+     * \param[in] maximo_minimo_R Vector con el valor de máximo y mínimo de R.
+     * \param[in] maximo_minimo_G Vector con el valor de máximo y mínimo de G.
+     * \param[in] maximo_minimo_B Vector con el valor de máximo y mínimo de B.
+     * \param[in] rango Valor del rango de una Imagen.
+     */
+    void ajusteContraste(vector<int> maximo_minimo_R, vector<int> maximo_minimo_G, vector<int> maximo_minimo_B, int rango);
 
 private:
     /*! \param r Parámetro que almacena el valor de rojo.
     */
-    float r;
+    int r;
 
     /*! \param g Parámetro que almacena el valor de verde.
     */
-    float g;
+    int g;
 
     /*! \param b Parámetro que almacena el valor de azul.
     */
-    float b;
+    int b;
+
 
 };
 

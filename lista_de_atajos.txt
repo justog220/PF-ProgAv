@@ -19,8 +19,9 @@ Lista de atajos:
 	|
 	|__Aplicar pseudo coloreado:
 	|	|__ ctrl + nro de tabla
-	|		|__ 1)
-	|		|__ 2)
+	|		|__ 1) glow.lut
+	|		|__ 2) Turbo.lut
+	|
 	|__ Detectar area con el color o intensidad del pixel debajo del cursor
 	|	|__ ctr + click izq
 	|
@@ -37,4 +38,13 @@ Lista de atajos:
 	|	|__ ctrl + '+'
 	|
 	|__Disminuir brillo
-		|__ ctrl + '-' 
+	|	|__ ctrl + '-' 
+	|
+	|__Aplicar filtro Pasa Bajos
+	|	|__ctrl + p
+	|
+	|__Aplicar filtro Pasa Altos
+	|	|__ctrl + a
+	|
+	|__Aplicar negativo
+		|__ctrl + n

@@ -1,17 +1,18 @@
 var searchData=
 [
-  ['gestordeatajos_130',['GestorDeAtajos',['../class_gestor_de_atajos.html#a070f2f59de7ba3f206f3c30e748bd6c9',1,'GestorDeAtajos']]],
-  ['getb_131',['getB',['../class_pixel.html#ac02901ee5a49a57567604c4b8a1731b6',1,'Pixel']]],
-  ['getcolumnas_132',['getColumnas',['../class_imagen.html#a85f488958dd299a2c751efe5f390bf08',1,'Imagen']]],
-  ['getfilas_133',['getFilas',['../class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093',1,'Imagen']]],
-  ['getg_134',['getG',['../class_pixel.html#a50b393bee1d4717d541c298743d7527d',1,'Pixel']]],
-  ['getlistadearchivos_135',['getListaDeArchivos',['../class_espacio_de_trabajo.html#a19bc26e7349a719fb19e4495d2beed6e',1,'EspacioDeTrabajo']]],
-  ['getnroarchivos_136',['getNroArchivos',['../class_espacio_de_trabajo.html#a45307e1544c7fd91e19274b9d9e983c2',1,'EspacioDeTrabajo']]],
-  ['getpixel_137',['getPixel',['../class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6',1,'Imagen']]],
-  ['getr_138',['getR',['../class_pixel.html#aca9597dec0f29b9240ffa70c7d5f99a9',1,'Pixel']]],
-  ['getrango_139',['getRango',['../class_imagen.html#ab65e8f269da32338d3f2048407e63870',1,'Imagen']]],
-  ['getruta_140',['getRuta',['../class_espacio_de_trabajo.html#a8ba67fb3805b2e366a8d80bee8f2b54e',1,'EspacioDeTrabajo']]],
-  ['graficador_141',['Graficador',['../class_graficador.html#a62158abce60f946c3fd7893f2689e138',1,'Graficador']]],
-  ['graficarimagen_142',['graficarImagen',['../class_graficador.html#ab80e3391e431c598714f01db39ea5324',1,'Graficador']]],
-  ['guardar_143',['guardar',['../class_archivos_a_i_c.html#ab8f2019301ac381856e150a32353bbea',1,'ArchivosAIC::guardar()'],['../class_archivos_p_n_m.html#afc5d84ec12b995c95d991642a94615f4',1,'ArchivosPNM::guardar()'],['../class_gestor_de_archivos.html#a3b34fee12458706a9d9bf46bac168569',1,'GestorDeArchivos::guardar()']]]
+  ['devolverdesviacionestandarrgb_734',['devolverDesviacionEstandarRGB',['../class_procesador_estadistico.html#a8a6e326b6e33432262752744c2a67b77',1,'ProcesadorEstadistico']]],
+  ['devolverintensidadmedia_735',['devolverIntensidadMedia',['../class_procesador_estadistico.html#a887f9779ecec3a09b024129995abd59e',1,'ProcesadorEstadistico']]],
+  ['devolvermodab_736',['devolverModaB',['../class_procesador_estadistico.html#aaee42c43535a58db3a6773fb48095d3c',1,'ProcesadorEstadistico']]],
+  ['devolvermodag_737',['devolverModaG',['../class_procesador_estadistico.html#a6c9471d38886fd66cf6518efaabe6a8a',1,'ProcesadorEstadistico']]],
+  ['devolvermodar_738',['devolverModaR',['../class_procesador_estadistico.html#ae6dd1c3da8c418dab5d37277d99d136f',1,'ProcesadorEstadistico']]],
+  ['devolvermodargb_739',['devolverModaRGB',['../class_procesador_estadistico.html#a1bf1d5e592fc1724a6dda7b437e9741c',1,'ProcesadorEstadistico']]],
+  ['devolverpromediorgb_740',['devolverPromedioRGB',['../class_procesador_estadistico.html#af0aeba05688407d40254efe57ba8b418',1,'ProcesadorEstadistico']]],
+  ['devuelvebmasfrecuente_741',['devuelveBMasFrecuente',['../class_procesador_estadistico.html#ab5bcc0e6499b06fe6a9a580432f6a0b9',1,'ProcesadorEstadistico']]],
+  ['devuelvefrecuenciab_742',['devuelveFrecuenciaB',['../class_procesador_estadistico.html#ab89524875bd7094f966672761a597a8e',1,'ProcesadorEstadistico']]],
+  ['devuelvefrecuenciag_743',['devuelveFrecuenciaG',['../class_procesador_estadistico.html#ad3743c1b10e04d9f79096e1af3e82ba2',1,'ProcesadorEstadistico']]],
+  ['devuelvefrecuenciaintensidad_744',['devuelveFrecuenciaIntensidad',['../class_procesador_estadistico.html#a08860c60ac977b6c777f9423e281b326',1,'ProcesadorEstadistico']]],
+  ['devuelvefrecuenciar_745',['devuelveFrecuenciaR',['../class_procesador_estadistico.html#a069647af14c5007468ba4ba715eca6f2',1,'ProcesadorEstadistico']]],
+  ['devuelvegmasfrecuente_746',['devuelveGMasFrecuente',['../class_procesador_estadistico.html#acbfe2c4d56a3ebd82bab641ae348e822',1,'ProcesadorEstadistico']]],
+  ['devuelveintensidadmasfrecuente_747',['devuelveIntensidadMasFrecuente',['../class_procesador_estadistico.html#ab2eca08c6e29b4aaa68aedaea4476ab8',1,'ProcesadorEstadistico']]],
+  ['devuelvermasfrecuente_748',['devuelveRMasFrecuente',['../class_procesador_estadistico.html#aa98ee4c6275a1ff66aa720e5b842a19f',1,'ProcesadorEstadistico']]]
 ];

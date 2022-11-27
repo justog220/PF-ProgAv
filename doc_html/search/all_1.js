@@ -1,4 +1,27 @@
 var searchData=
 [
-  ['b_9',['b',['../class_pixel.html#ac5d50248055b8e6359f079e73bf74204',1,'Pixel']]]
+  ['ajustecontraste_427',['ajusteContraste',['../class_pixel.html#a9dde3af38cd1ba92d0cf210847f5f00f',1,'Pixel::ajusteContraste()'],['../class_filtros.html#a63261f70e0966c1c052aebc4f954d8a7',1,'Filtros::ajusteContraste()']]],
+  ['algoritmodelpintor_428',['AlgoritmoDelPintor',['../class_algoritmo_del_pintor.html',1,'AlgoritmoDelPintor'],['../class_algoritmo_del_pintor.html#a3c24d1efb8f7ac3a31617b6cde6e6e2d',1,'AlgoritmoDelPintor::AlgoritmoDelPintor()']]],
+  ['algoritmodelpintor_2ecpp_429',['algoritmodelpintor.cpp',['../algoritmodelpintor_8cpp.html',1,'']]],
+  ['algoritmodelpintor_2eh_430',['algoritmodelpintor.h',['../algoritmodelpintor_8h.html',1,'']]],
+  ['altov_431',['altoV',['../class_graficador_histograma.html#a06ad5e02dca4adbf07381eba085657d6',1,'GraficadorHistograma::altoV()'],['../class_ventana_de_graficacion.html#ab8e415cbdff0a5423dd32fa93577d6fc',1,'VentanaDeGraficacion::altoV()']]],
+  ['anchov_432',['anchoV',['../class_graficador_histograma.html#ae4b91c9e97db4bdd05c06ff7130a259c',1,'GraficadorHistograma::anchoV()'],['../class_ventana_de_graficacion.html#a8c7d6a6c6d0f3a90c5dff22d1f3e8801',1,'VentanaDeGraficacion::anchoV()']]],
+  ['apagar_433',['apagar',['../class_sistema.html#a43b0a0927beb1cebff365d547db87190',1,'Sistema']]],
+  ['aplicafiltromediana_434',['aplicaFiltroMediana',['../class_filtros.html#a33f5d192b88ca1d900f98ef1eda7754e',1,'Filtros']]],
+  ['aplicafiltromedianabordes_435',['aplicaFiltroMedianaBordes',['../class_filtros.html#ae8fb8f09698bfd91e5cb8d79b8a0060a',1,'Filtros']]],
+  ['aplicafiltromedianacentro_436',['aplicaFiltroMedianaCentro',['../class_filtros.html#a15e4819239658260b19b4162bc5b736d',1,'Filtros']]],
+  ['aplicafiltromedianaesquinas_437',['aplicaFiltroMedianaEsquinas',['../class_filtros.html#a5c74c0e0dd96188a3714da9c5b6477c1',1,'Filtros']]],
+  ['aplicafiltropasaaltos_438',['aplicaFiltroPasaAltos',['../class_filtros.html#abedc5916042417ab0989b04918524fba',1,'Filtros']]],
+  ['aplicafiltropasabajos_439',['aplicaFiltroPasaBajos',['../class_filtros.html#a38c6a83d1192148459e3afa45c9dfed8',1,'Filtros']]],
+  ['aplicanegativo_440',['aplicaNegativo',['../class_filtros.html#af3c9a06753ded89a03ce9335dec9973c',1,'Filtros']]],
+  ['aplicaralgoritmo_441',['aplicarAlgoritmo',['../class_algoritmo_del_pintor.html#af9d1b2a7a8ca75ccb92c3f280555e947',1,'AlgoritmoDelPintor']]],
+  ['appl_442',['appl',['../class_ventana_de_graficacion.html#a6edb764d43c8f46bbdca40a611babace',1,'VentanaDeGraficacion']]],
+  ['archi_443',['archi',['../class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16',1,'ArchivosAIC::archi()'],['../class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7',1,'ArchivosPNM::archi()']]],
+  ['archivosaic_444',['ArchivosAIC',['../class_archivos_a_i_c.html',1,'ArchivosAIC'],['../class_archivos_a_i_c.html#aa2f1498c3b0cdf84698ca51a1f279058',1,'ArchivosAIC::ArchivosAIC()']]],
+  ['archivosaic_2ecpp_445',['archivosaic.cpp',['../archivosaic_8cpp.html',1,'']]],
+  ['archivosaic_2eh_446',['archivosaic.h',['../archivosaic_8h.html',1,'']]],
+  ['archivospnm_447',['ArchivosPNM',['../class_archivos_p_n_m.html',1,'ArchivosPNM'],['../class_archivos_p_n_m.html#accebc41f3d1d9e7c3dc850d19bb8ca97',1,'ArchivosPNM::ArchivosPNM()']]],
+  ['archivospnm_2ecpp_448',['archivospnm.cpp',['../archivospnm_8cpp.html',1,'']]],
+  ['archivospnm_2eh_449',['archivospnm.h',['../archivospnm_8h.html',1,'']]],
+  ['aumentarbrillo_450',['aumentarBrillo',['../class_filtros.html#a04bd9f3b701c3a7b3762c9b0f1112a9f',1,'Filtros::aumentarBrillo()'],['../class_pixel.html#ab998b652604bc3a9a3464ea7f09b8153',1,'Pixel::aumentarBrillo()']]]
 ];

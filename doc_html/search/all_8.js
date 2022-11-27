@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['keypressevent_57',['keyPressEvent',['../class_gestor_de_atajos.html#ae64d268f17cc9b7e349840a4d2cb5bd9',1,'GestorDeAtajos::keyPressEvent()'],['../class_graficador.html#a5f04fd8c340da32117946048629a78a5',1,'Graficador::keyPressEvent()']]]
+  ['hallarmaximominimob_554',['hallarMaximoMinimoB',['../class_procesador_estadistico.html#a09a20392b98f5ca7b99e9aa3025c4237',1,'ProcesadorEstadistico']]],
+  ['hallarmaximominimog_555',['hallarMaximoMinimoG',['../class_procesador_estadistico.html#a1c525a96a0d7de0bb47531f4505e17f3',1,'ProcesadorEstadistico']]],
+  ['hallarmaximominimor_556',['hallarMaximoMinimoR',['../class_procesador_estadistico.html#a23eb4e684acd34b3a36a443257bb886b',1,'ProcesadorEstadistico']]],
+  ['histograma_557',['histograma',['../class_graficador_histograma.html#a0f65e7197f8ee1abaeeb0e45990b83ca',1,'GraficadorHistograma']]]
 ];

@@ -1,36 +1,12 @@
 /*! \mainpage
  *
- * El texto que Ud. est谩 leyendo se encuentra en el archivo "pagina_principal.h". El nombre del archivo puede variar si Ud. lo desea, pero la extensi贸n es recomendable que sea ".h" ya que Doxygen analiza la extensiones de los archivos para realizar su tarea :)
+
  *
- * Note que los comentarios que son capturados con Doxygen son de dos tipos:
- *  -# Uso de barra-asterisco-signoDeAdmiraci贸n /*! para comentarios multil铆nea (se debe cerrar con un asteriso-barra).
- *  -# Uso de tres barras contiguas /// para comentarios de una sola l铆nea.
- *  *
- * Texto antes de la primera secci贸n de la p谩gina principal.
+ * \section Ex醡en-Integrador-Programaci髇-Avanzada
  *
- * \section Nombre-de-secci贸n-SIN-espacios
+ * Se presenta este proyecto como soluci髇 al enunciado propuesto por la c醫edra como ex醡en integrador.
+ *Se propone un software de aplicaci髇 que permite a los usuarios realizar tareas de procesamiento digital de im醙enes
+ *de una forma r醦ida e intuitiva.
  *
- * Texto dentro de la primera secci贸n.
  *
- * \section T铆tulo-para-la-segunda-secci贸n
- *
- * Algunos items por si le interesa saber c贸mo se colocan:
- * * Item 1.
- * * Item 2.
- * * Item 3
- * * ...
- *
- * Otro tipo de lista de items por si tambi茅n le interesan:
- *
- * Lista de eventos:
- *    - Eventos de rat贸n:
- *         -# Evento de movimiento de rat贸n.
- *         -# Evento de clic con rat贸n\n
- *            M谩s informaci贸n relacionada al evento clic.
- *         -# Evento de doble clic con rat贸n.
- *    - Eventos de teclado:
- *         1. Presionar una tecla.
- *         2. Dejar de presionar una tecla.
- *
- *  Otro texto que se quiera agregar....
  */

@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Software de Procesamiento Digital de Imágenes - Garcia Justo: Fichero Fuente procesadorestadistico.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Software de Procesamiento Digital de Imágenes - Garcia Justo
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('procesadorestadistico_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">procesadorestadistico.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="procesadorestadistico_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef PROCESADORESTADISTICO_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define PROCESADORESTADISTICO_H</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imagen_8h.html">imagen.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_procesador_estadistico.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_procesador_estadistico.html">ProcesadorEstadistico</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_procesador_estadistico.html#aa6a9357c623868ceec93f2f32dc33a67">ProcesadorEstadistico</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    vector&lt;int&gt; <a class="code" href="class_procesador_estadistico.html#a069647af14c5007468ba4ba715eca6f2">devuelveFrecuenciaR</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    vector&lt;int&gt; <a class="code" href="class_procesador_estadistico.html#ad3743c1b10e04d9f79096e1af3e82ba2">devuelveFrecuenciaG</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    vector&lt;int&gt; <a class="code" href="class_procesador_estadistico.html#ab89524875bd7094f966672761a597a8e">devuelveFrecuenciaB</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    vector&lt;int&gt; <a class="code" href="class_procesador_estadistico.html#a08860c60ac977b6c777f9423e281b326">devuelveFrecuenciaIntensidad</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_procesador_estadistico.html#aa98ee4c6275a1ff66aa720e5b842a19f">devuelveRMasFrecuente</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_procesador_estadistico.html#acbfe2c4d56a3ebd82bab641ae348e822">devuelveGMasFrecuente</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_procesador_estadistico.html#ab5bcc0e6499b06fe6a9a580432f6a0b9">devuelveBMasFrecuente</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_procesador_estadistico.html#ab2eca08c6e29b4aaa68aedaea4476ab8">devuelveIntensidadMasFrecuente</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    vector&lt;int&gt; <a class="code" href="class_procesador_estadistico.html#a23eb4e684acd34b3a36a443257bb886b">hallarMaximoMinimoR</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    vector&lt;int&gt; <a class="code" href="class_procesador_estadistico.html#a1c525a96a0d7de0bb47531f4505e17f3">hallarMaximoMinimoG</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    vector&lt;int&gt; <a class="code" href="class_procesador_estadistico.html#a09a20392b98f5ca7b99e9aa3025c4237">hallarMaximoMinimoB</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_procesador_estadistico.html#a887f9779ecec3a09b024129995abd59e">devolverIntensidadMedia</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_procesador_estadistico.html#ae6dd1c3da8c418dab5d37277d99d136f">devolverModaR</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_procesador_estadistico.html#a6c9471d38886fd66cf6518efaabe6a8a">devolverModaG</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_procesador_estadistico.html#aaee42c43535a58db3a6773fb48095d3c">devolverModaB</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_procesador_estadistico.html#a331c39e9cfa2711dfb4419ef15b20eb3">informarDatosEstadisticos</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    vector&lt;float&gt; <a class="code" href="class_procesador_estadistico.html#af0aeba05688407d40254efe57ba8b418">devolverPromedioRGB</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="class_procesador_estadistico.html#a1bf1d5e592fc1724a6dda7b437e9741c">  124</a></span>&#160;    vector&lt;int&gt; <a class="code" href="class_procesador_estadistico.html#a1bf1d5e592fc1724a6dda7b437e9741c">devolverModaRGB</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    vector&lt;float&gt; <a class="code" href="class_procesador_estadistico.html#a8a6e326b6e33432262752744c2a67b77">devolverDesviacionEstandarRGB</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// PROCESADORESTADISTICO_H</span></div>
+<div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00022">imagen.h:23</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html"><div class="ttname"><a href="class_procesador_estadistico.html">ProcesadorEstadistico</a></div><div class="ttdoc">Objeto que permite realizar diversos cálculos estadísticos.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8h_source.html#l00018">procesadorestadistico.h:19</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_a069647af14c5007468ba4ba715eca6f2"><div class="ttname"><a href="class_procesador_estadistico.html#a069647af14c5007468ba4ba715eca6f2">ProcesadorEstadistico::devuelveFrecuenciaR</a></div><div class="ttdeci">vector&lt; int &gt; devuelveFrecuenciaR(Imagen &amp;img)</div><div class="ttdoc">devuelveFrecuenciaR Devuelve la frecuencia de los distintos niveles de R</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00010">procesadorestadistico.cpp:10</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_a08860c60ac977b6c777f9423e281b326"><div class="ttname"><a href="class_procesador_estadistico.html#a08860c60ac977b6c777f9423e281b326">ProcesadorEstadistico::devuelveFrecuenciaIntensidad</a></div><div class="ttdeci">vector&lt; int &gt; devuelveFrecuenciaIntensidad(Imagen &amp;img)</div><div class="ttdoc">devuelveFrecuenciaIntensidad Devuelve la frecuencia de los distintos niveles de intensidad.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00069">procesadorestadistico.cpp:69</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_a09a20392b98f5ca7b99e9aa3025c4237"><div class="ttname"><a href="class_procesador_estadistico.html#a09a20392b98f5ca7b99e9aa3025c4237">ProcesadorEstadistico::hallarMaximoMinimoB</a></div><div class="ttdeci">vector&lt; int &gt; hallarMaximoMinimoB(Imagen &amp;img)</div><div class="ttdoc">hallarMaximoMinimoB Halla el mínimo y máximo nivel de B que aparece en una Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00171">procesadorestadistico.cpp:171</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_a1bf1d5e592fc1724a6dda7b437e9741c"><div class="ttname"><a href="class_procesador_estadistico.html#a1bf1d5e592fc1724a6dda7b437e9741c">ProcesadorEstadistico::devolverModaRGB</a></div><div class="ttdeci">vector&lt; int &gt; devolverModaRGB(Imagen &amp;img)</div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_a1c525a96a0d7de0bb47531f4505e17f3"><div class="ttname"><a href="class_procesador_estadistico.html#a1c525a96a0d7de0bb47531f4505e17f3">ProcesadorEstadistico::hallarMaximoMinimoG</a></div><div class="ttdeci">vector&lt; int &gt; hallarMaximoMinimoG(Imagen &amp;img)</div><div class="ttdoc">hallarMaximoMinimoG Halla el mínimo y máximo nivel de G que aparece en una Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00148">procesadorestadistico.cpp:148</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_a23eb4e684acd34b3a36a443257bb886b"><div class="ttname"><a href="class_procesador_estadistico.html#a23eb4e684acd34b3a36a443257bb886b">ProcesadorEstadistico::hallarMaximoMinimoR</a></div><div class="ttdeci">vector&lt; int &gt; hallarMaximoMinimoR(Imagen &amp;img)</div><div class="ttdoc">hallarMaximoMinimoR Halla el mínimo y máximo nivel de R que aparece en una Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00125">procesadorestadistico.cpp:125</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_a331c39e9cfa2711dfb4419ef15b20eb3"><div class="ttname"><a href="class_procesador_estadistico.html#a331c39e9cfa2711dfb4419ef15b20eb3">ProcesadorEstadistico::informarDatosEstadisticos</a></div><div class="ttdeci">void informarDatosEstadisticos(Imagen &amp;img)</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00239">procesadorestadistico.cpp:239</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_a6c9471d38886fd66cf6518efaabe6a8a"><div class="ttname"><a href="class_procesador_estadistico.html#a6c9471d38886fd66cf6518efaabe6a8a">ProcesadorEstadistico::devolverModaG</a></div><div class="ttdeci">int devolverModaG(Imagen &amp;img)</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00228">procesadorestadistico.cpp:228</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_a887f9779ecec3a09b024129995abd59e"><div class="ttname"><a href="class_procesador_estadistico.html#a887f9779ecec3a09b024129995abd59e">ProcesadorEstadistico::devolverIntensidadMedia</a></div><div class="ttdeci">int devolverIntensidadMedia(Imagen &amp;img)</div><div class="ttdoc">devuelveIntensidadMedia Devuelve el valor medio de la intensidad de una Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00194">procesadorestadistico.cpp:194</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_a8a6e326b6e33432262752744c2a67b77"><div class="ttname"><a href="class_procesador_estadistico.html#a8a6e326b6e33432262752744c2a67b77">ProcesadorEstadistico::devolverDesviacionEstandarRGB</a></div><div class="ttdeci">vector&lt; float &gt; devolverDesviacionEstandarRGB(Imagen &amp;img)</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00282">procesadorestadistico.cpp:282</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_aa6a9357c623868ceec93f2f32dc33a67"><div class="ttname"><a href="class_procesador_estadistico.html#aa6a9357c623868ceec93f2f32dc33a67">ProcesadorEstadistico::ProcesadorEstadistico</a></div><div class="ttdeci">ProcesadorEstadistico()</div><div class="ttdoc">ProcesadorEstadistico Constructor de ProcesadorEstadistico.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00005">procesadorestadistico.cpp:5</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_aa98ee4c6275a1ff66aa720e5b842a19f"><div class="ttname"><a href="class_procesador_estadistico.html#aa98ee4c6275a1ff66aa720e5b842a19f">ProcesadorEstadistico::devuelveRMasFrecuente</a></div><div class="ttdeci">int devuelveRMasFrecuente(Imagen &amp;img)</div><div class="ttdoc">devuelveRMasFrecuente Devuelve el nivel de R que mas se repite.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00074">procesadorestadistico.cpp:74</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_aaee42c43535a58db3a6773fb48095d3c"><div class="ttname"><a href="class_procesador_estadistico.html#aaee42c43535a58db3a6773fb48095d3c">ProcesadorEstadistico::devolverModaB</a></div><div class="ttdeci">int devolverModaB(Imagen &amp;img)</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00233">procesadorestadistico.cpp:233</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_ab2eca08c6e29b4aaa68aedaea4476ab8"><div class="ttname"><a href="class_procesador_estadistico.html#ab2eca08c6e29b4aaa68aedaea4476ab8">ProcesadorEstadistico::devuelveIntensidadMasFrecuente</a></div><div class="ttdeci">int devuelveIntensidadMasFrecuente(Imagen &amp;img)</div><div class="ttdoc">devuelveRMasFrecuente Devuelve el nivel de intensidad que más se repite.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00118">procesadorestadistico.cpp:118</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_ab5bcc0e6499b06fe6a9a580432f6a0b9"><div class="ttname"><a href="class_procesador_estadistico.html#ab5bcc0e6499b06fe6a9a580432f6a0b9">ProcesadorEstadistico::devuelveBMasFrecuente</a></div><div class="ttdeci">int devuelveBMasFrecuente(Imagen &amp;img)</div><div class="ttdoc">devuelveRMasFrecuente Devuelve el nivel de B que más se repite.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00103">procesadorestadistico.cpp:103</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_ab89524875bd7094f966672761a597a8e"><div class="ttname"><a href="class_procesador_estadistico.html#ab89524875bd7094f966672761a597a8e">ProcesadorEstadistico::devuelveFrecuenciaB</a></div><div class="ttdeci">vector&lt; int &gt; devuelveFrecuenciaB(Imagen &amp;img)</div><div class="ttdoc">devuelveFrecuenciaB Devuelve la frecuencia de los distintos niveles de B</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00050">procesadorestadistico.cpp:50</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_acbfe2c4d56a3ebd82bab641ae348e822"><div class="ttname"><a href="class_procesador_estadistico.html#acbfe2c4d56a3ebd82bab641ae348e822">ProcesadorEstadistico::devuelveGMasFrecuente</a></div><div class="ttdeci">int devuelveGMasFrecuente(Imagen &amp;img)</div><div class="ttdoc">devuelveRMasFrecuente Devuelve el nivel de G que mas se repite.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00089">procesadorestadistico.cpp:89</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_ad3743c1b10e04d9f79096e1af3e82ba2"><div class="ttname"><a href="class_procesador_estadistico.html#ad3743c1b10e04d9f79096e1af3e82ba2">ProcesadorEstadistico::devuelveFrecuenciaG</a></div><div class="ttdeci">vector&lt; int &gt; devuelveFrecuenciaG(Imagen &amp;img)</div><div class="ttdoc">devuelveFrecuenciaG Devuelve la frecuencia de los distintos niveles de G.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00030">procesadorestadistico.cpp:30</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_ae6dd1c3da8c418dab5d37277d99d136f"><div class="ttname"><a href="class_procesador_estadistico.html#ae6dd1c3da8c418dab5d37277d99d136f">ProcesadorEstadistico::devolverModaR</a></div><div class="ttdeci">int devolverModaR(Imagen &amp;img)</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00223">procesadorestadistico.cpp:223</a></div></div>
+<div class="ttc" id="aclass_procesador_estadistico_html_af0aeba05688407d40254efe57ba8b418"><div class="ttname"><a href="class_procesador_estadistico.html#af0aeba05688407d40254efe57ba8b418">ProcesadorEstadistico::devolverPromedioRGB</a></div><div class="ttdeci">vector&lt; float &gt; devolverPromedioRGB(Imagen &amp;img)</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00257">procesadorestadistico.cpp:257</a></div></div>
+<div class="ttc" id="aimagen_8h_html"><div class="ttname"><a href="imagen_8h.html">imagen.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="procesadorestadistico_8h.html">procesadorestadistico.h</a></li>
+    <li class="footer">Generado el Domingo, 27 de Noviembre de 2022 16:15:04 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

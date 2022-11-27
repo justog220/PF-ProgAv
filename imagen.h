@@ -7,15 +7,14 @@
  *  \author     Justo Garcia
  *  \date       Fecha de última modificación: 10-09-2022
  *  \pre
- *  \bug        Cualquier error encontrado se anota aquí, por ejemplo, un fallo
- *              de acceso a disco, fallas en liberación de memoria,
- *              malfuncionamientos de rutinas que se hayan encontrado, etc.
+ *  \bug
  *  \warning    Debe evitarse realizar muchas instancias de ella porque se requiere de mucha memoria
 */
 #ifndef IMAGEN_H
 #define IMAGEN_H
 
 #include <vector>
+#include <string>
 #include "pixel.h"
 
 using namespace std;
@@ -23,6 +22,9 @@ using namespace std;
 class Imagen
 {
 public:
+    /*!
+     * \brief Imagen Constructor del objeto Imagen.
+     */
     Imagen();
 
     /*!
@@ -71,6 +73,12 @@ public:
     void setRango(int valor);
 
     /*!
+     * \brief setIdentificador Permite establecer el identificador de la Imagen.
+     * \param[in] id Nuevo identificador de la Imagen.
+     */
+    void setIdentificador(string id);
+
+    /*!
      * \brief getFilas Se utiliza para conocer el número de filas de la imágen.
      * \return Devuelve un entero de 4 bytes que representa el número de filas de la imágen.
      */
@@ -88,6 +96,58 @@ public:
      */
     int getRango();
 
+    /*!
+     * \brief getIdentificador Devuelve el identificador de la Imagen.
+     * \return string que representa el identificado de la Imagen.
+     */
+    string getIdentificador();
+
+    /*!
+     * \brief formaParteDeLaImagen Devuelve si una coordenada (f, c) está dentro
+     * de la Imagen o no.
+     * \param[in] f Valor de la fila.
+     * \param[in] c Valor de la columna.
+     * \return bool que indica si forma parte de la Imagen o no.
+     */
+    bool formaParteDeLaImagen(int f, int c);
+
+    /*!
+     * \brief elPixelEsEsquina Devuelve si un Pixel es esquina o no
+     * \param[in] f Valor de la fila.
+     * \param[in] c Valor de la columna.
+     * \return bool que indica si es esquina o no.
+     */
+    bool elPixelEsEsquina(int f, int c);
+
+    /*!
+     * \brief borrarImagen Método que permite vaciar el arreglo de Pixel.
+     */
+    void borrarImagen();
+
+    /*!
+     * \brief esDeIntensidades Devuelve si una imagen es de intensidades o no.
+     * \return bool que indica si una Imagen es de intensidades o no.
+     */
+    bool esDeIntensidades();
+
+    /*!
+     * \brief getNroPixeles Devuelve el número de Pixel de una Imagen.
+     * \return Número de pixeles.
+     */
+    int getNroPixeles();
+
+    /*!
+     * \brief getInformacion Devuelve la información de la Imagen.
+     * \return Información de la Imagen.
+     */
+    string getInformacion();
+
+    /*!
+     * \brief setInformacion Establece la información de la Imagen.
+     * \param value Nueva información de la Imagen.
+     */
+    void setInformacion(string value);
+
 private:
     /*! \param imag Es la imágen que se busca graficar.\n\n Es un arreglo
      *              bidimensional de Pixeles, cuyo tamaño estará dado por
@@ -95,17 +155,27 @@ private:
     */
     vector<vector<Pixel>> imag;
 
-    /*! \param filas Parámetro que representa la cantidad de filas de Pixeles que tiene la imágen.
+    /*! \param filas Atributo que representa la cantidad de filas de Pixeles que tiene la imágen.
     */
     int filas;
 
-    /*! \param columnas Parámetro que representa la cantidad de columnas de Pixeles que tiene la imágen.
+    /*! \param columnas Atributo que representa la cantidad de columnas de Pixeles que tiene la imágen.
     */
     int columnas;
 
-    /*! \param rango Parámetro que almacena el valor del rango de la imágen .
+    /*! \param rango Atributo que almacena el valor del rango de la imágen .
     */
     float rango;
+
+    /*!
+     * \param identificador Identificador de la Imagen.
+     */
+    string identificador;
+
+    /*!
+     * \param informacion Información de la Imagen.
+     */
+    string informacion;
 
 };
 

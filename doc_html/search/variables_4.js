@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['escala_173',['escala',['../class_graficador.html#a16c6ed48a726a4f747a9c1bb2ecb2a95',1,'Graficador']]],
-  ['espacio_174',['espacio',['../class_graficador.html#a56b174b268af7f415125d29db213aaae',1,'Graficador']]],
-  ['espdetrabajo_175',['espDeTrabajo',['../class_sistema.html#a7f74f273e84c5c702129f72334155035',1,'Sistema']]]
+  ['escala_873',['escala',['../class_graficador_histograma.html#aaaf8c0ae57525e5fb3f551e371b499de',1,'GraficadorHistograma::escala()'],['../class_ventana_de_graficacion.html#a028fb2c186d2f50a7b17dda794eb3f89',1,'VentanaDeGraficacion::escala()']]],
+  ['espacio_874',['espacio',['../class_ventana_de_graficacion.html#a21dcefa549bc1618476a1c156536b7bc',1,'VentanaDeGraficacion']]],
+  ['espdetrabajo_875',['espDeTrabajo',['../class_sistema.html#a7f74f273e84c5c702129f72334155035',1,'Sistema']]]
 ];

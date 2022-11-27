@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['qopenglfunctions_101',['QOpenGLFunctions',['../class_q_open_g_l_functions.html',1,'']]],
-  ['qopenglwidget_102',['QOpenGLWidget',['../class_q_open_g_l_widget.html',1,'']]]
+  ['pixel_672',['Pixel',['../class_pixel.html',1,'']]],
+  ['posicion_673',['Posicion',['../struct_posicion.html',1,'']]],
+  ['procesadorestadistico_674',['ProcesadorEstadistico',['../class_procesador_estadistico.html',1,'']]]
 ];

@@ -1,17 +1,28 @@
 var class_imagen =
 [
     [ "Imagen", "class_imagen.html#ab2e649aa7a105155c7bfdb846abf0528", null ],
+    [ "borrarImagen", "class_imagen.html#a166b16c639448c813f764b79ae9d3765", null ],
+    [ "elPixelEsEsquina", "class_imagen.html#a58c23a8f080935956c81dd2f5e24ca2a", null ],
+    [ "esDeIntensidades", "class_imagen.html#ae76fc902a7063373d645693be2a3fd67", null ],
+    [ "formaParteDeLaImagen", "class_imagen.html#aa479341bc5a7d72733f1074a9b75ba3b", null ],
     [ "getColumnas", "class_imagen.html#a85f488958dd299a2c751efe5f390bf08", null ],
     [ "getFilas", "class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093", null ],
+    [ "getIdentificador", "class_imagen.html#ab28b3e13c672139eada95427623a5828", null ],
+    [ "getInformacion", "class_imagen.html#a9863c0ebb50aeb19f5dc4d7906ed47d6", null ],
+    [ "getNroPixeles", "class_imagen.html#a80c236f9d60b2ed6776aece3aaf88bcc", null ],
     [ "getPixel", "class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6", null ],
     [ "getRango", "class_imagen.html#ab65e8f269da32338d3f2048407e63870", null ],
     [ "setColumnas", "class_imagen.html#a2f484fcbef63dfa2fe6c2ee418a7d856", null ],
     [ "setFilas", "class_imagen.html#a745584efb94c3a60c7d77017b2bfb512", null ],
+    [ "setIdentificador", "class_imagen.html#aae632c4cd001e04228aad5bf06599818", null ],
+    [ "setInformacion", "class_imagen.html#affda44cc73f0a8bf8cc7dc1021e47f25", null ],
     [ "setPixel", "class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b", null ],
     [ "setRango", "class_imagen.html#ac6be498c1eadda6e7a5bf603c7ababc3", null ],
     [ "setTamanio", "class_imagen.html#a310a7ee241a8c546a9d5345937a9f01f", null ],
     [ "columnas", "class_imagen.html#af63de0598ca965ab3a30b54ee7e2cedc", null ],
     [ "filas", "class_imagen.html#a7f15719f14cd934dfcbd68c287bbbe8b", null ],
+    [ "identificador", "class_imagen.html#a3862cbbf0bb7cf8d56c6f5b769806f38", null ],
     [ "imag", "class_imagen.html#a3253ba68ee7bba91e57b634a85047404", null ],
+    [ "informacion", "class_imagen.html#a27a72bf1ea6c01a6a4c3fd6ca3bc5264", null ],
     [ "rango", "class_imagen.html#ae2310ab74334e4f679d5c6b71fb7f0a4", null ]
 ];

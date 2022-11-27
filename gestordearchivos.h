@@ -1,5 +1,5 @@
 /*!
- *  \class      Gestor de archivos
+ *  \class      GestorDeArchivos
  *  \brief      Clase abstracta de la cual heredan metodos para leer y escribir archivos otras clases.
  *  \details    Virtualiza metodos para leer y escribir archivos, que luego serán utilizados por sus clases
  *              hijas.
@@ -15,17 +15,27 @@
 #include <string>
 #include "imagen.h"
 #include <iostream>
+#include "ExcepcionArchivoCorrupto.h"
 
 using namespace std;
 
 class GestorDeArchivos
 {
 public:
-    //GestorDeArchivos();
-
+    /*!
+     * \brief leer Método virtual que al ser redefinido permite
+     * leer una Imagen
+     * \param[in] ruta Ruta donde está almacenada la Imagen
+     * \return Imagen leída.
+     */
     virtual Imagen leer(string ruta) = 0;
 
-    virtual void guardar(string ruta, Imagen *img) = 0;
+    /*!
+     * \brief guardar Método virtual que al ser redefinido permite
+     * guardar una Imagen.
+     * \param[in] img Imagen que se desea guardar.
+     */
+    virtual void guardar(Imagen *img) = 0;
 };
 
 #endif // GESTORDEARCHIVOS_H

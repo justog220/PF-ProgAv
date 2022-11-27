@@ -86,56 +86,249 @@ $(document).ready(function(){initNavTree('archivosaic_8cpp_source.html',''); ini
 </div><!--header-->
 <div class="contents">
 <a href="archivosaic_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="archivosaic_8h.html">archivosaic.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_archivos_a_i_c.html#aa2f1498c3b0cdf84698ca51a1f279058">    3</a></span>&#160;<a class="code" href="class_archivos_a_i_c.html#aa2f1498c3b0cdf84698ca51a1f279058">ArchivosAIC::ArchivosAIC</a>()</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_archivos_a_i_c.html#a39a61108e840cec24b4b39a8cbf071df">    8</a></span>&#160;<a class="code" href="class_imagen.html">Imagen</a> <a class="code" href="class_archivos_a_i_c.html#a39a61108e840cec24b4b39a8cbf071df">ArchivosAIC::leer</a>(<span class="keywordtype">string</span> ruta)</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_imagen.html">Imagen</a> img;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.open(ruta, ios::in);</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_archivos_a_i_c.html#aa2f1498c3b0cdf84698ca51a1f279058">    4</a></span>&#160;<a class="code" href="class_archivos_a_i_c.html#aa2f1498c3b0cdf84698ca51a1f279058">ArchivosAIC::ArchivosAIC</a>()</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_archivos_a_i_c.html#a39a61108e840cec24b4b39a8cbf071df">    9</a></span>&#160;<a class="code" href="class_imagen.html">Imagen</a> <a class="code" href="class_archivos_a_i_c.html#a39a61108e840cec24b4b39a8cbf071df">ArchivosAIC::leer</a>(<span class="keywordtype">string</span> ruta)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.is_open()){</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;Error al abrir la imagen.&quot;</span>&lt;&lt;endl;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        cout&lt;&lt;ruta;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }<span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">string</span> linea;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        getline(<a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>, linea);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">while</span>(linea[0]!=<span class="charliteral">&#39;#&#39;</span>)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            getline(<a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>, linea);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">string</span> ocurrencia = <span class="stringliteral">&quot;escala:&quot;</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_imagen.html">Imagen</a> img;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.open(ruta, ios::in);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.is_open()){</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;Error al abrir la imagen.&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        cout&lt;&lt;ruta;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordtype">string</span> linea;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            getline(<a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>, linea);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">int</span> pos = linea.find(ocurrencia);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        cout&lt;&lt;pos;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="class_archivos_a_i_c.html#ab2c2c0b495012e23718e6161cbc17629">identificador</a> = linea.substr(0, 3);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            img.<a class="code" href="class_imagen.html#aae632c4cd001e04228aad5bf06599818">setIdentificador</a>(<a class="code" href="class_archivos_a_i_c.html#ab2c2c0b495012e23718e6161cbc17629">identificador</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            getline(<a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>, linea);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> img;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_archivos_a_i_c.html#ab8f2019301ac381856e150a32353bbea">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_a_i_c.html#ab8f2019301ac381856e150a32353bbea">ArchivosAIC::guardar</a>(<span class="keywordtype">string</span> ruta, <a class="code" href="class_imagen.html">Imagen</a> *img)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">int</span> auxPosicion = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">while</span>(linea[0]==<span class="charliteral">&#39;#&#39;</span>)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                img.<a class="code" href="class_imagen.html#affda44cc73f0a8bf8cc7dc1021e47f25">setInformacion</a>(linea);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                 auxPosicion = <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.tellg();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                getline(<a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>, linea);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.seekg(auxPosicion);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> filas = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> acumuladorColumnas = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">bool</span> seGuardoColumnas = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            vector&lt;int&gt; datosLinea;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">while</span>(!<a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.eof())</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                getline(<a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>, linea);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">if</span>(!seGuardoColumnas)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    <span class="keywordtype">int</span> tamanio = linea.length();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    <span class="keywordtype">char</span> linea_char[tamanio];</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    strcpy(linea_char, linea.c_str());</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    <span class="keywordtype">char</span> *split;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    split = strtok(linea_char, <span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    <span class="keywordflow">while</span> (split != NULL)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                      {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        datosLinea.push_back(stoi(split));</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        split = strtok (NULL, <span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                      }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    <span class="keywordflow">for</span>(<a class="code" href="tst__ei__autotest_8cpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> i=0; i &lt; datosLinea.size(); i++)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                        <span class="keywordflow">if</span> ((i+1)%2 == 0)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                            acumuladorColumnas += datosLinea[i];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    seGuardoColumnas = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                ++filas;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            img.<a class="code" href="class_imagen.html#a745584efb94c3a60c7d77017b2bfb512">setFilas</a>(filas);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            img.<a class="code" href="class_imagen.html#a2f484fcbef63dfa2fe6c2ee418a7d856">setColumnas</a>(acumuladorColumnas);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            img.<a class="code" href="class_imagen.html#a310a7ee241a8c546a9d5345937a9f01f">setTamanio</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            img.<a class="code" href="class_imagen.html#ac6be498c1eadda6e7a5bf603c7ababc3">setRango</a>(255);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.close();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.open(ruta, ios::in);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.seekg(auxPosicion);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            filas = 0;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            acumuladorColumnas = 0;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordtype">int</span> nivelDeGris, cantidadRepite;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="class_pixel.html">Pixel</a> pixelAux;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordtype">int</span> contadorPixeles = 0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">while</span>(getline(<a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>, linea))</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                datosLinea.clear();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                acumuladorColumnas = 0;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordtype">int</span> tamanio = linea.length();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordtype">char</span> linea_char[tamanio];</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                strcpy(linea_char, linea.c_str());</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <span class="keywordtype">char</span> *split;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                split = strtok(linea_char, <span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">while</span> (split != NULL)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                  {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    datosLinea.push_back(stoi(split));</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    split = strtok (NULL, <span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                  }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keywordflow">for</span>(<a class="code" href="tst__ei__autotest_8cpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> i = 0; i &lt; datosLinea.size(); i = i+2)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    nivelDeGris = datosLinea.at(i);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                    cantidadRepite = datosLinea.at(i+1);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> columna = 0; columna &lt; cantidadRepite; columna++)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        pixelAux.<a class="code" href="class_pixel.html#affd7e85713e18281b51e0e676485f704">setPixelEscala</a>(nivelDeGris);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                        img.<a class="code" href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">setPixel</a>(filas, columna+acumuladorColumnas, pixelAux);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                        contadorPixeles += 1;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                    acumuladorColumnas += cantidadRepite;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                ++filas;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">if</span> (contadorPixeles != img.<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>()*img.<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>())</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="keywordflow">throw</span> <a class="code" href="class_excepcion_archivo_corrupto.html">ExcepcionArchivoCorrupto</a>();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">return</span> img;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    } <span class="keywordflow">catch</span>(exception){</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_excepcion_archivo_corrupto.html">ExcepcionArchivoCorrupto</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="class_archivos_a_i_c.html#acd84997137f85c271856a3d4108986bf">  139</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_a_i_c.html#acd84997137f85c271856a3d4108986bf">ArchivosAIC::guardar</a>(<a class="code" href="class_imagen.html">Imagen</a> *img)</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;{</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">string</span> ruta = <a class="code" href="class_archivos_a_i_c.html#a35f900f9c3eb931e0f17cd82a6c699e1">obtieneRutaGuardado</a>();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.open(ruta, ios::out);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.is_open())</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;No se pudo abrir el archivo.&quot;</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <a class="code" href="class_archivos_a_i_c.html#a4027b286d7468c710d0489ce21f47a00">escribirEncabezado</a>(img);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <a class="code" href="class_archivos_a_i_c.html#a948b328f345c26b8c6784f5c496e4c13">escribirPixeles</a>(img, ruta);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="class_archivos_a_i_c.html#a35f900f9c3eb931e0f17cd82a6c699e1">  154</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_archivos_a_i_c.html#a35f900f9c3eb931e0f17cd82a6c699e1">ArchivosAIC::obtieneRutaGuardado</a>()</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;{</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    system(<span class="stringliteral">&quot;clear&quot;</span>);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">string</span> rutaGuardado = <span class="stringliteral">&quot;./Imagenes/Imagenes_guardadas/&quot;</span>, nombre;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;Ingrese el nombre con el cual desea guardar su imagen: &quot;</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    cin&gt;&gt;nombre;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> rutaGuardado+nombre+<span class="stringliteral">&quot;.aic&quot;</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="class_archivos_a_i_c.html#a948b328f345c26b8c6784f5c496e4c13">  164</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_a_i_c.html#a948b328f345c26b8c6784f5c496e4c13">ArchivosAIC::escribirPixeles</a>(<a class="code" href="class_imagen.html">Imagen</a> *img, <span class="keywordtype">string</span> ruta)</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.open(ruta, ios::out | ios::app);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">int</span> nivelDeGris, cantidadQueSeRepite, intensidadAnterior, acumuladorColumnas;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> fila = 0; fila &lt; img-&gt;<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(); fila++)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        acumuladorColumnas = 0;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        intensidadAnterior = img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(fila, 0).<a class="code" href="class_pixel.html#ae9494a22629e331242fd1e7508743655">getIntensidad</a>();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        cantidadQueSeRepite = 0;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> columna = 0; columna &lt; img-&gt;<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>(); columna++)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordflow">if</span> (img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(fila, columna).<a class="code" href="class_pixel.html#ae9494a22629e331242fd1e7508743655">getIntensidad</a>() != intensidadAnterior)</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>&lt;&lt;nivelDeGris&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;cantidadQueSeRepite&lt;&lt;<span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                acumuladorColumnas += cantidadQueSeRepite;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                nivelDeGris = img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(fila, columna).<a class="code" href="class_pixel.html#ae9494a22629e331242fd1e7508743655">getIntensidad</a>();</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                intensidadAnterior = nivelDeGris;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                cantidadQueSeRepite = 1;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                nivelDeGris = img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(fila, columna).<a class="code" href="class_pixel.html#ae9494a22629e331242fd1e7508743655">getIntensidad</a>();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                cantidadQueSeRepite += 1;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">if</span> (acumuladorColumnas != img-&gt;<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>())</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>&lt;&lt;nivelDeGris&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;cantidadQueSeRepite;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">if</span> (fila != img-&gt;<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>()-1)</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.close();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="class_archivos_a_i_c.html#a4027b286d7468c710d0489ce21f47a00">  204</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_a_i_c.html#a4027b286d7468c710d0489ce21f47a00">ArchivosAIC::escribirEncabezado</a>(<a class="code" href="class_imagen.html">Imagen</a> *img)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;{</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>&lt;&lt;img-&gt;<a class="code" href="class_imagen.html#ab28b3e13c672139eada95427623a5828">getIdentificador</a>()&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>&lt;&lt;img-&gt;<a class="code" href="class_imagen.html#a9863c0ebb50aeb19f5dc4d7906ed47d6">getInformacion</a>()&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.close();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
 <div class="ttc" id="aarchivosaic_8h_html"><div class="ttname"><a href="archivosaic_8h.html">archivosaic.h</a></div></div>
-<div class="ttc" id="aclass_archivos_a_i_c_html_a1450f875c280a2280515e97bc91b7f16"><div class="ttname"><a href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">ArchivosAIC::archi</a></div><div class="ttdeci">fstream archi</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8h_source.html#l00028">archivosaic.h:28</a></div></div>
-<div class="ttc" id="aclass_archivos_a_i_c_html_a39a61108e840cec24b4b39a8cbf071df"><div class="ttname"><a href="class_archivos_a_i_c.html#a39a61108e840cec24b4b39a8cbf071df">ArchivosAIC::leer</a></div><div class="ttdeci">Imagen leer(string ruta) override</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8cpp_source.html#l00008">archivosaic.cpp:8</a></div></div>
-<div class="ttc" id="aclass_archivos_a_i_c_html_aa2f1498c3b0cdf84698ca51a1f279058"><div class="ttname"><a href="class_archivos_a_i_c.html#aa2f1498c3b0cdf84698ca51a1f279058">ArchivosAIC::ArchivosAIC</a></div><div class="ttdeci">ArchivosAIC()</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8cpp_source.html#l00003">archivosaic.cpp:3</a></div></div>
-<div class="ttc" id="aclass_archivos_a_i_c_html_ab8f2019301ac381856e150a32353bbea"><div class="ttname"><a href="class_archivos_a_i_c.html#ab8f2019301ac381856e150a32353bbea">ArchivosAIC::guardar</a></div><div class="ttdeci">void guardar(string ruta, Imagen *img) override</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8cpp_source.html#l00035">archivosaic.cpp:35</a></div></div>
-<div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00023">imagen.h:24</a></div></div>
+<div class="ttc" id="aclass_archivos_a_i_c_html_a1450f875c280a2280515e97bc91b7f16"><div class="ttname"><a href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">ArchivosAIC::archi</a></div><div class="ttdeci">fstream archi</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8h_source.html#l00047">archivosaic.h:47</a></div></div>
+<div class="ttc" id="aclass_archivos_a_i_c_html_a35f900f9c3eb931e0f17cd82a6c699e1"><div class="ttname"><a href="class_archivos_a_i_c.html#a35f900f9c3eb931e0f17cd82a6c699e1">ArchivosAIC::obtieneRutaGuardado</a></div><div class="ttdeci">string obtieneRutaGuardado()</div><div class="ttdoc">obtieneRutaGuardado Método que permite obtener del usuario la ruta donde se guardará la imágen.</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8cpp_source.html#l00154">archivosaic.cpp:154</a></div></div>
+<div class="ttc" id="aclass_archivos_a_i_c_html_a39a61108e840cec24b4b39a8cbf071df"><div class="ttname"><a href="class_archivos_a_i_c.html#a39a61108e840cec24b4b39a8cbf071df">ArchivosAIC::leer</a></div><div class="ttdeci">Imagen leer(string ruta) override</div><div class="ttdoc">leer Se redefine el metodo heredado de GestorDeArchivos y que permite leer imágenes de un archivo AIC...</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8cpp_source.html#l00009">archivosaic.cpp:9</a></div></div>
+<div class="ttc" id="aclass_archivos_a_i_c_html_a4027b286d7468c710d0489ce21f47a00"><div class="ttname"><a href="class_archivos_a_i_c.html#a4027b286d7468c710d0489ce21f47a00">ArchivosAIC::escribirEncabezado</a></div><div class="ttdeci">void escribirEncabezado(Imagen *img)</div><div class="ttdoc">escribirEncabezado Método privado que escribe el encabezado (Identificador + Info) de una Imagen al s...</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8cpp_source.html#l00204">archivosaic.cpp:204</a></div></div>
+<div class="ttc" id="aclass_archivos_a_i_c_html_a948b328f345c26b8c6784f5c496e4c13"><div class="ttname"><a href="class_archivos_a_i_c.html#a948b328f345c26b8c6784f5c496e4c13">ArchivosAIC::escribirPixeles</a></div><div class="ttdeci">void escribirPixeles(Imagen *img, string ruta)</div><div class="ttdoc">escribirPixeles Método privado que escribe los Pixel de la Imagen</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8cpp_source.html#l00164">archivosaic.cpp:164</a></div></div>
+<div class="ttc" id="aclass_archivos_a_i_c_html_aa2f1498c3b0cdf84698ca51a1f279058"><div class="ttname"><a href="class_archivos_a_i_c.html#aa2f1498c3b0cdf84698ca51a1f279058">ArchivosAIC::ArchivosAIC</a></div><div class="ttdeci">ArchivosAIC()</div><div class="ttdoc">ArchivosAIC Constructor del objeto ArchivosAIC.</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8cpp_source.html#l00004">archivosaic.cpp:4</a></div></div>
+<div class="ttc" id="aclass_archivos_a_i_c_html_ab2c2c0b495012e23718e6161cbc17629"><div class="ttname"><a href="class_archivos_a_i_c.html#ab2c2c0b495012e23718e6161cbc17629">ArchivosAIC::identificador</a></div><div class="ttdeci">string identificador</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8h_source.html#l00052">archivosaic.h:52</a></div></div>
+<div class="ttc" id="aclass_archivos_a_i_c_html_acd84997137f85c271856a3d4108986bf"><div class="ttname"><a href="class_archivos_a_i_c.html#acd84997137f85c271856a3d4108986bf">ArchivosAIC::guardar</a></div><div class="ttdeci">void guardar(Imagen *img) override</div><div class="ttdoc">guardar Se redefine el método heredado de GestorDeArchivos y que permite guardar imágenes en formato ...</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8cpp_source.html#l00139">archivosaic.cpp:139</a></div></div>
+<div class="ttc" id="aclass_excepcion_archivo_corrupto_html"><div class="ttname"><a href="class_excepcion_archivo_corrupto.html">ExcepcionArchivoCorrupto</a></div><div class="ttdef"><b>Definition:</b> <a href="_excepcion_archivo_corrupto_8h_source.html#l00008">ExcepcionArchivoCorrupto.h:9</a></div></div>
+<div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00022">imagen.h:23</a></div></div>
+<div class="ttc" id="aclass_imagen_html_a116c67bb423f0de52bdb2e5c7e9ad29b"><div class="ttname"><a href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">Imagen::setPixel</a></div><div class="ttdeci">void setPixel(int f, int c, Pixel pixelNuevo)</div><div class="ttdoc">setPixel Método que permite modificar un Pixel de la imágen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00017">imagen.cpp:17</a></div></div>
+<div class="ttc" id="aclass_imagen_html_a2f484fcbef63dfa2fe6c2ee418a7d856"><div class="ttname"><a href="class_imagen.html#a2f484fcbef63dfa2fe6c2ee418a7d856">Imagen::setColumnas</a></div><div class="ttdeci">void setColumnas(int c)</div><div class="ttdoc">setColumnas Método que permite establecer el número de columnas de la imágen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00032">imagen.cpp:32</a></div></div>
+<div class="ttc" id="aclass_imagen_html_a310a7ee241a8c546a9d5345937a9f01f"><div class="ttname"><a href="class_imagen.html#a310a7ee241a8c546a9d5345937a9f01f">Imagen::setTamanio</a></div><div class="ttdeci">void setTamanio()</div><div class="ttdoc">setTamanio Método que permite cambiar el tamaño de una imágen cambia el valor de las columnas y filas...</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00008">imagen.cpp:8</a></div></div>
+<div class="ttc" id="aclass_imagen_html_a745584efb94c3a60c7d77017b2bfb512"><div class="ttname"><a href="class_imagen.html#a745584efb94c3a60c7d77017b2bfb512">Imagen::setFilas</a></div><div class="ttdeci">void setFilas(int f)</div><div class="ttdoc">setFilas Método que permite establecer el número de filas de la imágen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00027">imagen.cpp:27</a></div></div>
+<div class="ttc" id="aclass_imagen_html_a85f488958dd299a2c751efe5f390bf08"><div class="ttname"><a href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">Imagen::getColumnas</a></div><div class="ttdeci">int getColumnas()</div><div class="ttdoc">getColumnas Se utiliza para conocer el número de columnas de la imágen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00052">imagen.cpp:52</a></div></div>
+<div class="ttc" id="aclass_imagen_html_a9863c0ebb50aeb19f5dc4d7906ed47d6"><div class="ttname"><a href="class_imagen.html#a9863c0ebb50aeb19f5dc4d7906ed47d6">Imagen::getInformacion</a></div><div class="ttdeci">string getInformacion()</div><div class="ttdoc">getInformacion Devuelve la información de la Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00104">imagen.cpp:104</a></div></div>
+<div class="ttc" id="aclass_imagen_html_aae632c4cd001e04228aad5bf06599818"><div class="ttname"><a href="class_imagen.html#aae632c4cd001e04228aad5bf06599818">Imagen::setIdentificador</a></div><div class="ttdeci">void setIdentificador(string id)</div><div class="ttdoc">setIdentificador Permite establecer el identificador de la Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00042">imagen.cpp:42</a></div></div>
+<div class="ttc" id="aclass_imagen_html_ab28b3e13c672139eada95427623a5828"><div class="ttname"><a href="class_imagen.html#ab28b3e13c672139eada95427623a5828">Imagen::getIdentificador</a></div><div class="ttdeci">string getIdentificador()</div><div class="ttdoc">getIdentificador Devuelve el identificador de la Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00062">imagen.cpp:62</a></div></div>
+<div class="ttc" id="aclass_imagen_html_ac6be498c1eadda6e7a5bf603c7ababc3"><div class="ttname"><a href="class_imagen.html#ac6be498c1eadda6e7a5bf603c7ababc3">Imagen::setRango</a></div><div class="ttdeci">void setRango(int valor)</div><div class="ttdoc">setRango Define el rango leído de la imágen, para luego graficarla correctamente.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00037">imagen.cpp:37</a></div></div>
+<div class="ttc" id="aclass_imagen_html_ac9210700a20d35ca768f8c9c11b949a6"><div class="ttname"><a href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">Imagen::getPixel</a></div><div class="ttdeci">Pixel getPixel(int f, int c)</div><div class="ttdoc">getPixel Método que permite devolver un Pixel de la imágen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00022">imagen.cpp:22</a></div></div>
+<div class="ttc" id="aclass_imagen_html_af1f4833ddf4987c3ab0ff9c65d224093"><div class="ttname"><a href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">Imagen::getFilas</a></div><div class="ttdeci">int getFilas()</div><div class="ttdoc">getFilas Se utiliza para conocer el número de filas de la imágen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00047">imagen.cpp:47</a></div></div>
+<div class="ttc" id="aclass_imagen_html_affda44cc73f0a8bf8cc7dc1021e47f25"><div class="ttname"><a href="class_imagen.html#affda44cc73f0a8bf8cc7dc1021e47f25">Imagen::setInformacion</a></div><div class="ttdeci">void setInformacion(string value)</div><div class="ttdoc">setInformacion Establece la información de la Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00109">imagen.cpp:109</a></div></div>
+<div class="ttc" id="aclass_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">Modela un pixel de una imagen..</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00022">pixel.h:23</a></div></div>
+<div class="ttc" id="aclass_pixel_html_ae9494a22629e331242fd1e7508743655"><div class="ttname"><a href="class_pixel.html#ae9494a22629e331242fd1e7508743655">Pixel::getIntensidad</a></div><div class="ttdeci">int getIntensidad()</div><div class="ttdoc">getIntensidad Devuelve la intensidad del Pixel, si es de intensidades.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00051">pixel.cpp:51</a></div></div>
+<div class="ttc" id="aclass_pixel_html_affd7e85713e18281b51e0e676485f704"><div class="ttname"><a href="class_pixel.html#affd7e85713e18281b51e0e676485f704">Pixel::setPixelEscala</a></div><div class="ttdeci">void setPixelEscala(int valor)</div><div class="ttdoc">setPixelEscala Metodo que permite establecer los valores de R, G y B para un pixel que forme parte de...</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00029">pixel.cpp:29</a></div></div>
+<div class="ttc" id="atst__ei__autotest_8cpp_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="tst__ei__autotest_8cpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition:</b> <a href="tst__ei__autotest_8cpp_source.html#l00011">tst_ei_autotest.cpp:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="archivosaic_8cpp.html">archivosaic.cpp</a></li>
-    <li class="footer">Generado el Martes, 13 de Septiembre de 2022 09:29:49 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Domingo, 27 de Noviembre de 2022 16:15:04 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

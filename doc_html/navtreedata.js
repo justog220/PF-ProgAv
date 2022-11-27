@@ -25,15 +25,15 @@
 var NAVTREE =
 [
   [ "Software de Procesamiento Digital de Im谩genes - Garcia Justo", "index.html", [
-    [ "Nombre-de-secci贸n-SIN-espacios", "index.html#Nombre-de-secci贸n-SIN-espacios", null ],
-    [ "T铆tulo-para-la-segunda-secci贸n", "index.html#T铆tulo-para-la-segunda-secci贸n", null ],
+    [ "Ex醡en-Integrador-Programaci髇-Avanzada", "index.html#Ex醡en-Integrador-Programaci髇-Avanzada", null ],
+    [ "PEI-2021-2022", "md_p_e_i_pei_2021_2022_entrega_autotest_01__r_e_a_d_m_e.html", null ],
     [ "Lista de bugs", "bug.html", null ],
     [ "Estructuras de Datos", "annotated.html", [
       [ "Estructura de datos", "annotated.html", "annotated_dup" ],
       [ "脥ndice de estructura de datos", "classes.html", null ],
       [ "Jerarqu铆a de la clase", "hierarchy.html", "hierarchy" ],
       [ "Campos de datos", "functions.html", [
-        [ "Todo", "functions.html", null ],
+        [ "Todo", "functions.html", "functions_dup" ],
         [ "Funciones", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
@@ -41,8 +41,10 @@ var NAVTREE =
     [ "Archivos", "files.html", [
       [ "Lista de archivos", "files.html", "files_dup" ],
       [ "Globales", "globals.html", [
-        [ "Todo", "globals.html", null ],
-        [ "Funciones", "globals_func.html", null ]
+        [ "Todo", "globals.html", "globals_dup" ],
+        [ "Funciones", "globals_func.html", null ],
+        [ "typedefs", "globals_type.html", null ],
+        [ "defines", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ]
   ] ]
@@ -50,7 +52,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"_excepcion_archivo_corrupto_8h.html",
+"espaciodetrabajo_8cpp_source.html",
+"moc__predefs_8h.html#a6bb8315e719b7306f47cde3b4b30d91f",
+"pixel_8h_source.html"
 ];
 
 var SYNCONMSG = 'click en deshabilitar sincronizaci贸n';

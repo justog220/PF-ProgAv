@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Software de Procesamiento Digital de Imágenes - Garcia Justo: Fichero Fuente algoritmodelpintor.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Software de Procesamiento Digital de Imágenes - Garcia Justo
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('algoritmodelpintor_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">algoritmodelpintor.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="algoritmodelpintor_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="algoritmodelpintor_8h.html">algoritmodelpintor.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_algoritmo_del_pintor.html#a3c24d1efb8f7ac3a31617b6cde6e6e2d">    3</a></span>&#160;<a class="code" href="class_algoritmo_del_pintor.html#a3c24d1efb8f7ac3a31617b6cde6e6e2d">AlgoritmoDelPintor::AlgoritmoDelPintor</a>(<a class="code" href="class_imagen.html">Imagen</a> img)</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="class_algoritmo_del_pintor.html#a4767483323984d4dd296d7ad91e02a1d">imag</a> = img;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_algoritmo_del_pintor.html#af9d1b2a7a8ca75ccb92c3f280555e947">    8</a></span>&#160;<a class="code" href="class_imagen.html">Imagen</a> <a class="code" href="class_algoritmo_del_pintor.html#af9d1b2a7a8ca75ccb92c3f280555e947">AlgoritmoDelPintor::aplicarAlgoritmo</a>(<span class="keywordtype">int</span> f_0, <span class="keywordtype">int</span> c_0)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pixel_inicial = <a class="code" href="class_algoritmo_del_pintor.html#a4767483323984d4dd296d7ad91e02a1d">imag</a>.<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(f_0, c_0);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_algoritmo_del_pintor.html#aded5e3b53cabbc40d07a399b614da5c5">inicializarMatrizDeAnalisis</a>(<a class="code" href="class_algoritmo_del_pintor.html#a4767483323984d4dd296d7ad91e02a1d">imag</a>.<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(), <a class="code" href="class_algoritmo_del_pintor.html#a4767483323984d4dd296d7ad91e02a1d">imag</a>.<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>());</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> rango_tolerancia = <a class="code" href="class_algoritmo_del_pintor.html#a90f8c3e2dd27db2a6a6e9abbbe076cbc">preguntarRangoDeTolerancia</a>(<a class="code" href="class_algoritmo_del_pintor.html#a4767483323984d4dd296d7ad91e02a1d">imag</a>.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>());</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_algoritmo_del_pintor.html#adacb2f3c91fb1ed17711c66542a86efa">profundidad</a> = 0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_algoritmo_del_pintor.html#a22e7dbbc707435aeb00523292d1987aa">pintarVecinos</a>(f_0, c_0, pixel_inicial, rango_tolerancia);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_algoritmo_del_pintor.html#a4767483323984d4dd296d7ad91e02a1d">imag</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_algoritmo_del_pintor.html#a22e7dbbc707435aeb00523292d1987aa">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_algoritmo_del_pintor.html#a22e7dbbc707435aeb00523292d1987aa">AlgoritmoDelPintor::pintarVecinos</a>(<span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c, <a class="code" href="class_pixel.html">Pixel</a> pixelComparacion, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tolerancia)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    ++<a class="code" href="class_algoritmo_del_pintor.html#adacb2f3c91fb1ed17711c66542a86efa">profundidad</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_algoritmo_del_pintor.html#a4767483323984d4dd296d7ad91e02a1d">imag</a>.<a class="code" href="class_imagen.html#aa479341bc5a7d72733f1074a9b75ba3b">formaParteDeLaImagen</a>(f, c) and <a class="code" href="class_algoritmo_del_pintor.html#adacb2f3c91fb1ed17711c66542a86efa">profundidad</a> &lt; 58100){</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_algoritmo_del_pintor.html#a4815326da0502f08c38070030802cb79">esVecino</a>(pixelComparacion, <a class="code" href="class_algoritmo_del_pintor.html#a4767483323984d4dd296d7ad91e02a1d">imag</a>.<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(f, c), tolerancia)){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;           <span class="keywordflow">if</span>(!<a class="code" href="class_algoritmo_del_pintor.html#a642bc493f4c315a3f1793c5e82836d2b">fue_analizado</a>.at(f).at(c))</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;           {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <a class="code" href="class_algoritmo_del_pintor.html#a642bc493f4c315a3f1793c5e82836d2b">fue_analizado</a>[f][c] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> vecino = 0; vecino &lt; 8; vecino++){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    <a class="code" href="class_algoritmo_del_pintor.html#a22e7dbbc707435aeb00523292d1987aa">pintarVecinos</a>(f + <a class="code" href="class_algoritmo_del_pintor.html#afc4b3c9dfac6cf72371916fffb51ecf0">vecinos</a>[vecino].f, c + <a class="code" href="class_algoritmo_del_pintor.html#afc4b3c9dfac6cf72371916fffb51ecf0">vecinos</a>[vecino].c, pixelComparacion, tolerancia);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <a class="code" href="class_algoritmo_del_pintor.html#a4767483323984d4dd296d7ad91e02a1d">imag</a>.<a class="code" href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">setPixel</a>(f, c, <a class="code" href="class_pixel.html">Pixel</a>(0, 0, 255));}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    --<a class="code" href="class_algoritmo_del_pintor.html#adacb2f3c91fb1ed17711c66542a86efa">profundidad</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_algoritmo_del_pintor.html#a90f8c3e2dd27db2a6a6e9abbbe076cbc">   44</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_algoritmo_del_pintor.html#a90f8c3e2dd27db2a6a6e9abbbe076cbc">AlgoritmoDelPintor::preguntarRangoDeTolerancia</a>(<span class="keywordtype">int</span> maximo_rango_imag)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    system(<span class="stringliteral">&quot;clear&quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tolerancia;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;Ingrese el rango de tolerancia que desea considerar: &quot;</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    cin&gt;&gt;tolerancia;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">while</span>(tolerancia &lt; 0 or tolerancia &gt; maximo_rango_imag){</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\nIngrese un valor de tolerancia dentro del rango admitido por la imagen [0, &quot;</span>&lt;&lt;maximo_rango_imag&lt;&lt;<span class="stringliteral">&quot;]: &quot;</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        cin&gt;&gt;tolerancia;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> tolerancia;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_algoritmo_del_pintor.html#aded5e3b53cabbc40d07a399b614da5c5">   61</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_algoritmo_del_pintor.html#aded5e3b53cabbc40d07a399b614da5c5">AlgoritmoDelPintor::inicializarMatrizDeAnalisis</a>(<span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    vector&lt;vector&lt;bool&gt;&gt; matriz(f, vector&lt;bool&gt; (c, <span class="keyword">false</span>));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_algoritmo_del_pintor.html#a642bc493f4c315a3f1793c5e82836d2b">fue_analizado</a> = matriz;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_algoritmo_del_pintor.html#a4815326da0502f08c38070030802cb79">   68</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_algoritmo_del_pintor.html#a4815326da0502f08c38070030802cb79">AlgoritmoDelPintor::esVecino</a>(<a class="code" href="class_pixel.html">Pixel</a> pixel_pintado, <a class="code" href="class_pixel.html">Pixel</a> analisis, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tolerancia)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> rEnRango = analisis.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>() &lt;= pixel_pintado.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>()+int(tolerancia) and analisis.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>() &gt;= pixel_pintado.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>()- int(tolerancia);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> bEnRango = analisis.<a class="code" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">getB</a>() &lt;= pixel_pintado.<a class="code" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">getB</a>()+int(tolerancia) and analisis.<a class="code" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">getB</a>() &gt;= pixel_pintado.<a class="code" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">getB</a>()- int(tolerancia);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> gEnRango = analisis.<a class="code" href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">getG</a>() &lt;= pixel_pintado.<a class="code" href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">getG</a>()+int(tolerancia) and analisis.<a class="code" href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">getG</a>() &gt;= pixel_pintado.<a class="code" href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">getG</a>()- int(tolerancia);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (rEnRango and gEnRango and bEnRango){</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="ttc" id="aalgoritmodelpintor_8h_html"><div class="ttname"><a href="algoritmodelpintor_8h.html">algoritmodelpintor.h</a></div></div>
+<div class="ttc" id="aclass_algoritmo_del_pintor_html_a22e7dbbc707435aeb00523292d1987aa"><div class="ttname"><a href="class_algoritmo_del_pintor.html#a22e7dbbc707435aeb00523292d1987aa">AlgoritmoDelPintor::pintarVecinos</a></div><div class="ttdeci">void pintarVecinos(int f, int c, Pixel pixelComparacion, unsigned int tolerancia)</div><div class="ttdoc">pintarVecinos Método privado que permite pintar aquellos Pixel que sean vecinos.</div><div class="ttdef"><b>Definition:</b> <a href="algoritmodelpintor_8cpp_source.html#l00023">algoritmodelpintor.cpp:23</a></div></div>
+<div class="ttc" id="aclass_algoritmo_del_pintor_html_a3c24d1efb8f7ac3a31617b6cde6e6e2d"><div class="ttname"><a href="class_algoritmo_del_pintor.html#a3c24d1efb8f7ac3a31617b6cde6e6e2d">AlgoritmoDelPintor::AlgoritmoDelPintor</a></div><div class="ttdeci">AlgoritmoDelPintor(Imagen img)</div><div class="ttdoc">AlgoritmoDelPintor Constructor del objeto algoritmo del pintor.</div><div class="ttdef"><b>Definition:</b> <a href="algoritmodelpintor_8cpp_source.html#l00003">algoritmodelpintor.cpp:3</a></div></div>
+<div class="ttc" id="aclass_algoritmo_del_pintor_html_a4767483323984d4dd296d7ad91e02a1d"><div class="ttname"><a href="class_algoritmo_del_pintor.html#a4767483323984d4dd296d7ad91e02a1d">AlgoritmoDelPintor::imag</a></div><div class="ttdeci">Imagen imag</div><div class="ttdef"><b>Definition:</b> <a href="algoritmodelpintor_8h_source.html#l00050">algoritmodelpintor.h:50</a></div></div>
+<div class="ttc" id="aclass_algoritmo_del_pintor_html_a4815326da0502f08c38070030802cb79"><div class="ttname"><a href="class_algoritmo_del_pintor.html#a4815326da0502f08c38070030802cb79">AlgoritmoDelPintor::esVecino</a></div><div class="ttdeci">bool esVecino(Pixel pixel_pintado, Pixel analisis, unsigned int tolerancia)</div><div class="ttdoc">esVecino Método que devuelve si un pixel es vecino de otro o no.</div><div class="ttdef"><b>Definition:</b> <a href="algoritmodelpintor_8cpp_source.html#l00068">algoritmodelpintor.cpp:68</a></div></div>
+<div class="ttc" id="aclass_algoritmo_del_pintor_html_a642bc493f4c315a3f1793c5e82836d2b"><div class="ttname"><a href="class_algoritmo_del_pintor.html#a642bc493f4c315a3f1793c5e82836d2b">AlgoritmoDelPintor::fue_analizado</a></div><div class="ttdeci">vector&lt; vector&lt; bool &gt; &gt; fue_analizado</div><div class="ttdef"><b>Definition:</b> <a href="algoritmodelpintor_8h_source.html#l00073">algoritmodelpintor.h:73</a></div></div>
+<div class="ttc" id="aclass_algoritmo_del_pintor_html_a90f8c3e2dd27db2a6a6e9abbbe076cbc"><div class="ttname"><a href="class_algoritmo_del_pintor.html#a90f8c3e2dd27db2a6a6e9abbbe076cbc">AlgoritmoDelPintor::preguntarRangoDeTolerancia</a></div><div class="ttdeci">unsigned int preguntarRangoDeTolerancia(int maximo_rango_imag)</div><div class="ttdoc">preguntarRangoDeTolerancia Método que permite preguntarle al usuario el rango de tolerancia.</div><div class="ttdef"><b>Definition:</b> <a href="algoritmodelpintor_8cpp_source.html#l00044">algoritmodelpintor.cpp:44</a></div></div>
+<div class="ttc" id="aclass_algoritmo_del_pintor_html_adacb2f3c91fb1ed17711c66542a86efa"><div class="ttname"><a href="class_algoritmo_del_pintor.html#adacb2f3c91fb1ed17711c66542a86efa">AlgoritmoDelPintor::profundidad</a></div><div class="ttdeci">int profundidad</div><div class="ttdef"><b>Definition:</b> <a href="algoritmodelpintor_8h_source.html#l00100">algoritmodelpintor.h:100</a></div></div>
+<div class="ttc" id="aclass_algoritmo_del_pintor_html_aded5e3b53cabbc40d07a399b614da5c5"><div class="ttname"><a href="class_algoritmo_del_pintor.html#aded5e3b53cabbc40d07a399b614da5c5">AlgoritmoDelPintor::inicializarMatrizDeAnalisis</a></div><div class="ttdeci">void inicializarMatrizDeAnalisis(int f, int c)</div><div class="ttdoc">inicializarMatrizDeAnalisis Método que permite inicializar el atributo fue_analizado.</div><div class="ttdef"><b>Definition:</b> <a href="algoritmodelpintor_8cpp_source.html#l00061">algoritmodelpintor.cpp:61</a></div></div>
+<div class="ttc" id="aclass_algoritmo_del_pintor_html_af9d1b2a7a8ca75ccb92c3f280555e947"><div class="ttname"><a href="class_algoritmo_del_pintor.html#af9d1b2a7a8ca75ccb92c3f280555e947">AlgoritmoDelPintor::aplicarAlgoritmo</a></div><div class="ttdeci">Imagen aplicarAlgoritmo(int f_0, int c_0)</div><div class="ttdoc">aplicarAlgoritmo Método que permite aplicar el algoritmo.</div><div class="ttdef"><b>Definition:</b> <a href="algoritmodelpintor_8cpp_source.html#l00008">algoritmodelpintor.cpp:8</a></div></div>
+<div class="ttc" id="aclass_algoritmo_del_pintor_html_afc4b3c9dfac6cf72371916fffb51ecf0"><div class="ttname"><a href="class_algoritmo_del_pintor.html#afc4b3c9dfac6cf72371916fffb51ecf0">AlgoritmoDelPintor::vecinos</a></div><div class="ttdeci">vector&lt; Posicion &gt; vecinos</div><div class="ttdef"><b>Definition:</b> <a href="algoritmodelpintor_8h_source.html#l00098">algoritmodelpintor.h:98</a></div></div>
+<div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00022">imagen.h:23</a></div></div>
+<div class="ttc" id="aclass_imagen_html_a116c67bb423f0de52bdb2e5c7e9ad29b"><div class="ttname"><a href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">Imagen::setPixel</a></div><div class="ttdeci">void setPixel(int f, int c, Pixel pixelNuevo)</div><div class="ttdoc">setPixel Método que permite modificar un Pixel de la imágen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00017">imagen.cpp:17</a></div></div>
+<div class="ttc" id="aclass_imagen_html_a85f488958dd299a2c751efe5f390bf08"><div class="ttname"><a href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">Imagen::getColumnas</a></div><div class="ttdeci">int getColumnas()</div><div class="ttdoc">getColumnas Se utiliza para conocer el número de columnas de la imágen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00052">imagen.cpp:52</a></div></div>
+<div class="ttc" id="aclass_imagen_html_aa479341bc5a7d72733f1074a9b75ba3b"><div class="ttname"><a href="class_imagen.html#aa479341bc5a7d72733f1074a9b75ba3b">Imagen::formaParteDeLaImagen</a></div><div class="ttdeci">bool formaParteDeLaImagen(int f, int c)</div><div class="ttdoc">formaParteDeLaImagen Devuelve si una coordenada (f, c) está dentro de la Imagen o no.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00067">imagen.cpp:67</a></div></div>
+<div class="ttc" id="aclass_imagen_html_ab65e8f269da32338d3f2048407e63870"><div class="ttname"><a href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">Imagen::getRango</a></div><div class="ttdeci">int getRango()</div><div class="ttdoc">getRango Se utiliza para conocer el rango de los píxeles de la imágen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00057">imagen.cpp:57</a></div></div>
+<div class="ttc" id="aclass_imagen_html_ac9210700a20d35ca768f8c9c11b949a6"><div class="ttname"><a href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">Imagen::getPixel</a></div><div class="ttdeci">Pixel getPixel(int f, int c)</div><div class="ttdoc">getPixel Método que permite devolver un Pixel de la imágen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00022">imagen.cpp:22</a></div></div>
+<div class="ttc" id="aclass_imagen_html_af1f4833ddf4987c3ab0ff9c65d224093"><div class="ttname"><a href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">Imagen::getFilas</a></div><div class="ttdeci">int getFilas()</div><div class="ttdoc">getFilas Se utiliza para conocer el número de filas de la imágen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00047">imagen.cpp:47</a></div></div>
+<div class="ttc" id="aclass_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">Modela un pixel de una imagen..</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00022">pixel.h:23</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a1ddae752d300c31889bcabc9ecf4882a"><div class="ttname"><a href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">Pixel::getR</a></div><div class="ttdeci">int getR()</div><div class="ttdoc">getR Devuelve el valor de R.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00036">pixel.cpp:36</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a4fe71fb96079d8fa3756cb33b66581a3"><div class="ttname"><a href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">Pixel::getB</a></div><div class="ttdeci">int getB()</div><div class="ttdoc">getB Devuelve el valor de B.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00046">pixel.cpp:46</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a7d11df716ef5c30421210a7b2d61e697"><div class="ttname"><a href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">Pixel::getG</a></div><div class="ttdeci">int getG()</div><div class="ttdoc">getG Devuelve el valor de G.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00041">pixel.cpp:41</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="algoritmodelpintor_8cpp.html">algoritmodelpintor.cpp</a></li>
+    <li class="footer">Generado el Domingo, 27 de Noviembre de 2022 16:15:04 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

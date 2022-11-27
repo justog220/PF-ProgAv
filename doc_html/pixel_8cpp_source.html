@@ -92,54 +92,104 @@ $(document).ready(function(){initNavTree('pixel_8cpp_source.html',''); initResiz
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_pixel.html#a9c4c2037575b8c94c37e6f947fc2749d">    8</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pixel.html#a9c4c2037575b8c94c37e6f947fc2749d">Pixel::setPixelRGB</a>(<span class="keywordtype">int</span> valor_r, <span class="keywordtype">int</span> valor_g, <span class="keywordtype">int</span> valor_b)</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_pixel.html#a60d27338f9eff65b1c8f1333a73c7792">    8</a></span>&#160;<a class="code" href="class_pixel.html#a27ad99a2f705e635c42d242d530d4756">Pixel::Pixel</a>(<span class="keywordtype">int</span> red, <span class="keywordtype">int</span> green, <span class="keywordtype">int</span> blue)</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_pixel.html#a4cdeee50761a02b70723d3364e55aaa1">r</a>=valor_r;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_pixel.html#a858d0d3935d9e8fd8bb10e39023d0125">g</a>=valor_g;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_pixel.html#ac5d50248055b8e6359f079e73bf74204">b</a>=valor_b;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_pixel.html#a8bdcc8f589c30333ec3f88d2c26d4e3a">r</a> = red;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_pixel.html#a73515f179e3c1bd28156e434da111d05">g</a> = green;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_pixel.html#a94b067f3c79425c953631f7bf1c7536c">b</a> = blue;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_pixel.html#ab624ff85be3e3d7b6d5f3e139300c1ef">   15</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pixel.html#ab624ff85be3e3d7b6d5f3e139300c1ef">Pixel::setPixelMonocr</a>(<span class="keywordtype">int</span> valor)</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_pixel.html#a9c4c2037575b8c94c37e6f947fc2749d">   15</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pixel.html#a9c4c2037575b8c94c37e6f947fc2749d">Pixel::setPixelRGB</a>(<span class="keywordtype">int</span> valor_r, <span class="keywordtype">int</span> valor_g, <span class="keywordtype">int</span> valor_b)</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_pixel.html#a4cdeee50761a02b70723d3364e55aaa1">r</a>=valor;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_pixel.html#a858d0d3935d9e8fd8bb10e39023d0125">g</a>=valor;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_pixel.html#ac5d50248055b8e6359f079e73bf74204">b</a>=valor;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_pixel.html#a8bdcc8f589c30333ec3f88d2c26d4e3a">r</a>=valor_r;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_pixel.html#a73515f179e3c1bd28156e434da111d05">g</a>=valor_g;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_pixel.html#a94b067f3c79425c953631f7bf1c7536c">b</a>=valor_b;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_pixel.html#affd7e85713e18281b51e0e676485f704">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pixel.html#affd7e85713e18281b51e0e676485f704">Pixel::setPixelEscala</a>(<span class="keywordtype">int</span> valor)</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_pixel.html#ab624ff85be3e3d7b6d5f3e139300c1ef">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pixel.html#ab624ff85be3e3d7b6d5f3e139300c1ef">Pixel::setPixelMonocr</a>(<span class="keywordtype">int</span> valor)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_pixel.html#a4cdeee50761a02b70723d3364e55aaa1">r</a>=valor;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_pixel.html#a858d0d3935d9e8fd8bb10e39023d0125">g</a>=valor;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_pixel.html#ac5d50248055b8e6359f079e73bf74204">b</a>=valor;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_pixel.html#a8bdcc8f589c30333ec3f88d2c26d4e3a">r</a>=valor;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_pixel.html#a73515f179e3c1bd28156e434da111d05">g</a>=valor;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_pixel.html#a94b067f3c79425c953631f7bf1c7536c">b</a>=valor;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_pixel.html#aca9597dec0f29b9240ffa70c7d5f99a9">   29</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_pixel.html#aca9597dec0f29b9240ffa70c7d5f99a9">Pixel::getR</a>()</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_pixel.html#affd7e85713e18281b51e0e676485f704">   29</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pixel.html#affd7e85713e18281b51e0e676485f704">Pixel::setPixelEscala</a>(<span class="keywordtype">int</span> valor)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_pixel.html#a4cdeee50761a02b70723d3364e55aaa1">r</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_pixel.html#a50b393bee1d4717d541c298743d7527d">   34</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_pixel.html#a50b393bee1d4717d541c298743d7527d">Pixel::getG</a>()</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_pixel.html#a858d0d3935d9e8fd8bb10e39023d0125">g</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_pixel.html#ac02901ee5a49a57567604c4b8a1731b6">   39</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_pixel.html#ac02901ee5a49a57567604c4b8a1731b6">Pixel::getB</a>()</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_pixel.html#ac5d50248055b8e6359f079e73bf74204">b</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_pixel.html#a8bdcc8f589c30333ec3f88d2c26d4e3a">r</a>=valor;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_pixel.html#a73515f179e3c1bd28156e434da111d05">g</a>=valor;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_pixel.html#a94b067f3c79425c953631f7bf1c7536c">b</a>=valor;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">   36</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">Pixel::getR</a>()</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_pixel.html#a8bdcc8f589c30333ec3f88d2c26d4e3a">r</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">   41</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">Pixel::getG</a>()</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_pixel.html#a73515f179e3c1bd28156e434da111d05">g</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">   46</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">Pixel::getB</a>()</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_pixel.html#a94b067f3c79425c953631f7bf1c7536c">b</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_pixel.html#ae9494a22629e331242fd1e7508743655">   51</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_pixel.html#ae9494a22629e331242fd1e7508743655">Pixel::getIntensidad</a>()</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">getB</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_pixel.html#ab998b652604bc3a9a3464ea7f09b8153">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pixel.html#ab998b652604bc3a9a3464ea7f09b8153">Pixel::aumentarBrillo</a>()</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_pixel.html#a8bdcc8f589c30333ec3f88d2c26d4e3a">r</a>++;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_pixel.html#a73515f179e3c1bd28156e434da111d05">g</a>++;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_pixel.html#a94b067f3c79425c953631f7bf1c7536c">b</a>++;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_pixel.html#afc9781cd9b7a54b83e77010ccd40acf9">   63</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pixel.html#afc9781cd9b7a54b83e77010ccd40acf9">Pixel::reducirBrillo</a>()</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_pixel.html#a8bdcc8f589c30333ec3f88d2c26d4e3a">r</a>&gt;0 and <a class="code" href="class_pixel.html#a73515f179e3c1bd28156e434da111d05">g</a>&gt;0 and <a class="code" href="class_pixel.html#a94b067f3c79425c953631f7bf1c7536c">b</a>&gt;0){</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="class_pixel.html#a8bdcc8f589c30333ec3f88d2c26d4e3a">r</a>--;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="class_pixel.html#a73515f179e3c1bd28156e434da111d05">g</a>--;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_pixel.html#a94b067f3c79425c953631f7bf1c7536c">b</a>--;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_pixel.html#a9dde3af38cd1ba92d0cf210847f5f00f">   73</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pixel.html#a9dde3af38cd1ba92d0cf210847f5f00f">Pixel::ajusteContraste</a>(vector&lt;int&gt; maximo_minimo_R, vector&lt;int&gt; maximo_minimo_G, vector&lt;int&gt; maximo_minimo_B, <span class="keywordtype">int</span> rango)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">float</span> R, G, B;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    R = ((float(<a class="code" href="class_pixel.html#a8bdcc8f589c30333ec3f88d2c26d4e3a">r</a>)-float(maximo_minimo_R[1]))/(<span class="keywordtype">float</span>(maximo_minimo_R[0])-float(maximo_minimo_R[1])));</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_pixel.html#a8bdcc8f589c30333ec3f88d2c26d4e3a">r</a> = int(R*rango);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    G = ((float(<a class="code" href="class_pixel.html#a73515f179e3c1bd28156e434da111d05">g</a>)-float(maximo_minimo_G[1]))/(<span class="keywordtype">float</span>(maximo_minimo_G[0])-float(maximo_minimo_G[1])));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="class_pixel.html#a73515f179e3c1bd28156e434da111d05">g</a> = int(G*rango);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    B = ((float(<a class="code" href="class_pixel.html#a94b067f3c79425c953631f7bf1c7536c">b</a>)-float(maximo_minimo_B[1]))/(<span class="keywordtype">float</span>(maximo_minimo_B[0])-float(maximo_minimo_B[1])));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_pixel.html#a94b067f3c79425c953631f7bf1c7536c">b</a> = int(B*rango);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="ttc" id="aclass_pixel_html_a1ddae752d300c31889bcabc9ecf4882a"><div class="ttname"><a href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">Pixel::getR</a></div><div class="ttdeci">int getR()</div><div class="ttdoc">getR Devuelve el valor de R.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00036">pixel.cpp:36</a></div></div>
 <div class="ttc" id="aclass_pixel_html_a27ad99a2f705e635c42d242d530d4756"><div class="ttname"><a href="class_pixel.html#a27ad99a2f705e635c42d242d530d4756">Pixel::Pixel</a></div><div class="ttdeci">Pixel()</div><div class="ttdoc">Constructor del objeto Pixel.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00003">pixel.cpp:3</a></div></div>
-<div class="ttc" id="aclass_pixel_html_a4cdeee50761a02b70723d3364e55aaa1"><div class="ttname"><a href="class_pixel.html#a4cdeee50761a02b70723d3364e55aaa1">Pixel::r</a></div><div class="ttdeci">float r</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00075">pixel.h:75</a></div></div>
-<div class="ttc" id="aclass_pixel_html_a50b393bee1d4717d541c298743d7527d"><div class="ttname"><a href="class_pixel.html#a50b393bee1d4717d541c298743d7527d">Pixel::getG</a></div><div class="ttdeci">float getG()</div><div class="ttdoc">getG Devuelve el valor de G.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00034">pixel.cpp:34</a></div></div>
-<div class="ttc" id="aclass_pixel_html_a858d0d3935d9e8fd8bb10e39023d0125"><div class="ttname"><a href="class_pixel.html#a858d0d3935d9e8fd8bb10e39023d0125">Pixel::g</a></div><div class="ttdeci">float g</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00079">pixel.h:79</a></div></div>
-<div class="ttc" id="aclass_pixel_html_a9c4c2037575b8c94c37e6f947fc2749d"><div class="ttname"><a href="class_pixel.html#a9c4c2037575b8c94c37e6f947fc2749d">Pixel::setPixelRGB</a></div><div class="ttdeci">void setPixelRGB(int valor_r, int valor_g, int valor_b)</div><div class="ttdoc">setPixelRGB Método que permite cambiar los valores de R, G y B de un tipo de pixel RGB.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00008">pixel.cpp:8</a></div></div>
-<div class="ttc" id="aclass_pixel_html_ab624ff85be3e3d7b6d5f3e139300c1ef"><div class="ttname"><a href="class_pixel.html#ab624ff85be3e3d7b6d5f3e139300c1ef">Pixel::setPixelMonocr</a></div><div class="ttdeci">void setPixelMonocr(int valor)</div><div class="ttdoc">setPixelMonocr Método que permite establecer los valores de R, G y B de un tipo de pixel monocromátic...</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00015">pixel.cpp:15</a></div></div>
-<div class="ttc" id="aclass_pixel_html_ac02901ee5a49a57567604c4b8a1731b6"><div class="ttname"><a href="class_pixel.html#ac02901ee5a49a57567604c4b8a1731b6">Pixel::getB</a></div><div class="ttdeci">float getB()</div><div class="ttdoc">getB Devuelve el valor de B.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00039">pixel.cpp:39</a></div></div>
-<div class="ttc" id="aclass_pixel_html_ac5d50248055b8e6359f079e73bf74204"><div class="ttname"><a href="class_pixel.html#ac5d50248055b8e6359f079e73bf74204">Pixel::b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00083">pixel.h:83</a></div></div>
-<div class="ttc" id="aclass_pixel_html_aca9597dec0f29b9240ffa70c7d5f99a9"><div class="ttname"><a href="class_pixel.html#aca9597dec0f29b9240ffa70c7d5f99a9">Pixel::getR</a></div><div class="ttdeci">float getR()</div><div class="ttdoc">getR Devuelve el valor de R.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00029">pixel.cpp:29</a></div></div>
-<div class="ttc" id="aclass_pixel_html_affd7e85713e18281b51e0e676485f704"><div class="ttname"><a href="class_pixel.html#affd7e85713e18281b51e0e676485f704">Pixel::setPixelEscala</a></div><div class="ttdeci">void setPixelEscala(int valor)</div><div class="ttdoc">setPixelEscala Metodo que permite establecer los valores de R, G y B para un pixel que forme parte de...</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00022">pixel.cpp:22</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a4fe71fb96079d8fa3756cb33b66581a3"><div class="ttname"><a href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">Pixel::getB</a></div><div class="ttdeci">int getB()</div><div class="ttdoc">getB Devuelve el valor de B.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00046">pixel.cpp:46</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a73515f179e3c1bd28156e434da111d05"><div class="ttname"><a href="class_pixel.html#a73515f179e3c1bd28156e434da111d05">Pixel::g</a></div><div class="ttdeci">int g</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00108">pixel.h:108</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a7d11df716ef5c30421210a7b2d61e697"><div class="ttname"><a href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">Pixel::getG</a></div><div class="ttdeci">int getG()</div><div class="ttdoc">getG Devuelve el valor de G.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00041">pixel.cpp:41</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a8bdcc8f589c30333ec3f88d2c26d4e3a"><div class="ttname"><a href="class_pixel.html#a8bdcc8f589c30333ec3f88d2c26d4e3a">Pixel::r</a></div><div class="ttdeci">int r</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00104">pixel.h:104</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a94b067f3c79425c953631f7bf1c7536c"><div class="ttname"><a href="class_pixel.html#a94b067f3c79425c953631f7bf1c7536c">Pixel::b</a></div><div class="ttdeci">int b</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00112">pixel.h:112</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a9c4c2037575b8c94c37e6f947fc2749d"><div class="ttname"><a href="class_pixel.html#a9c4c2037575b8c94c37e6f947fc2749d">Pixel::setPixelRGB</a></div><div class="ttdeci">void setPixelRGB(int valor_r, int valor_g, int valor_b)</div><div class="ttdoc">setPixelRGB Método que permite cambiar los valores de R, G y B de un tipo de pixel RGB.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00015">pixel.cpp:15</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a9dde3af38cd1ba92d0cf210847f5f00f"><div class="ttname"><a href="class_pixel.html#a9dde3af38cd1ba92d0cf210847f5f00f">Pixel::ajusteContraste</a></div><div class="ttdeci">void ajusteContraste(vector&lt; int &gt; maximo_minimo_R, vector&lt; int &gt; maximo_minimo_G, vector&lt; int &gt; maximo_minimo_B, int rango)</div><div class="ttdoc">ajusteContraste Método que ajusta (R, G, B) para ajustar el contraste de una Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00073">pixel.cpp:73</a></div></div>
+<div class="ttc" id="aclass_pixel_html_ab624ff85be3e3d7b6d5f3e139300c1ef"><div class="ttname"><a href="class_pixel.html#ab624ff85be3e3d7b6d5f3e139300c1ef">Pixel::setPixelMonocr</a></div><div class="ttdeci">void setPixelMonocr(int valor)</div><div class="ttdoc">setPixelMonocr Método que permite establecer los valores de R, G y B de un tipo de pixel monocromátic...</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00022">pixel.cpp:22</a></div></div>
+<div class="ttc" id="aclass_pixel_html_ab998b652604bc3a9a3464ea7f09b8153"><div class="ttname"><a href="class_pixel.html#ab998b652604bc3a9a3464ea7f09b8153">Pixel::aumentarBrillo</a></div><div class="ttdeci">void aumentarBrillo()</div><div class="ttdoc">aumentarBrillo Método que permite aumentar el brillo de un Pixel.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00056">pixel.cpp:56</a></div></div>
+<div class="ttc" id="aclass_pixel_html_ae9494a22629e331242fd1e7508743655"><div class="ttname"><a href="class_pixel.html#ae9494a22629e331242fd1e7508743655">Pixel::getIntensidad</a></div><div class="ttdeci">int getIntensidad()</div><div class="ttdoc">getIntensidad Devuelve la intensidad del Pixel, si es de intensidades.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00051">pixel.cpp:51</a></div></div>
+<div class="ttc" id="aclass_pixel_html_afc9781cd9b7a54b83e77010ccd40acf9"><div class="ttname"><a href="class_pixel.html#afc9781cd9b7a54b83e77010ccd40acf9">Pixel::reducirBrillo</a></div><div class="ttdeci">void reducirBrillo()</div><div class="ttdoc">reducirBrillo Método que permite reducir el brillo de un Pixel.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00063">pixel.cpp:63</a></div></div>
+<div class="ttc" id="aclass_pixel_html_affd7e85713e18281b51e0e676485f704"><div class="ttname"><a href="class_pixel.html#affd7e85713e18281b51e0e676485f704">Pixel::setPixelEscala</a></div><div class="ttdeci">void setPixelEscala(int valor)</div><div class="ttdoc">setPixelEscala Metodo que permite establecer los valores de R, G y B para un pixel que forme parte de...</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00029">pixel.cpp:29</a></div></div>
 <div class="ttc" id="apixel_8h_html"><div class="ttname"><a href="pixel_8h.html">pixel.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -147,7 +197,7 @@ $(document).ready(function(){initNavTree('pixel_8cpp_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="pixel_8cpp.html">pixel.cpp</a></li>
-    <li class="footer">Generado el Martes, 13 de Septiembre de 2022 09:29:49 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Domingo, 27 de Noviembre de 2022 16:15:04 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

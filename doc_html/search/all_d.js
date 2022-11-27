@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['qopenglfunctions_71',['QOpenGLFunctions',['../class_q_open_g_l_functions.html',1,'']]],
-  ['qopenglwidget_72',['QOpenGLWidget',['../class_q_open_g_l_widget.html',1,'']]]
+  ['nosoportoanterior_586',['noSoportoAnterior',['../class_sistema.html#afae7cfb7e99dbf395ecb30855f3bd2e8',1,'Sistema']]]
 ];

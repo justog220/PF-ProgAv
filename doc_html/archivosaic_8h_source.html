@@ -91,28 +91,36 @@ $(document).ready(function(){initNavTree('archivosaic_8h_source.html',''); initR
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gestordearchivos_8h.html">gestordearchivos.h</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_archivos_a_i_c.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_archivos_a_i_c.html">ArchivosAIC</a> : <span class="keyword">public</span> <a class="code" href="class_gestor_de_archivos.html">GestorDeArchivos</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_archivos_a_i_c.html#aa2f1498c3b0cdf84698ca51a1f279058">ArchivosAIC</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_imagen.html">Imagen</a> <a class="code" href="class_archivos_a_i_c.html#a39a61108e840cec24b4b39a8cbf071df">leer</a>(<span class="keywordtype">string</span> ruta) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_archivos_a_i_c.html#ab8f2019301ac381856e150a32353bbea">guardar</a>(<span class="keywordtype">string</span> ruta, <a class="code" href="class_imagen.html">Imagen</a> *img) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_archivos_a_i_c.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_archivos_a_i_c.html">ArchivosAIC</a> : <span class="keyword">public</span> <a class="code" href="class_gestor_de_archivos.html">GestorDeArchivos</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_archivos_a_i_c.html">ArchivosAIC</a>();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">   28</a></span>&#160;    fstream <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ARCHIVOSAIC_H</span></div>
-<div class="ttc" id="aclass_archivos_a_i_c_html"><div class="ttname"><a href="class_archivos_a_i_c.html">ArchivosAIC</a></div><div class="ttdoc">Clase capaz de gestionar los diferentes tipos de archivos AIC.</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8h_source.html#l00018">archivosaic.h:19</a></div></div>
-<div class="ttc" id="aclass_archivos_a_i_c_html_a1450f875c280a2280515e97bc91b7f16"><div class="ttname"><a href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">ArchivosAIC::archi</a></div><div class="ttdeci">fstream archi</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8h_source.html#l00028">archivosaic.h:28</a></div></div>
-<div class="ttc" id="aclass_archivos_a_i_c_html_a39a61108e840cec24b4b39a8cbf071df"><div class="ttname"><a href="class_archivos_a_i_c.html#a39a61108e840cec24b4b39a8cbf071df">ArchivosAIC::leer</a></div><div class="ttdeci">Imagen leer(string ruta) override</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8cpp_source.html#l00008">archivosaic.cpp:8</a></div></div>
-<div class="ttc" id="aclass_archivos_a_i_c_html_aa2f1498c3b0cdf84698ca51a1f279058"><div class="ttname"><a href="class_archivos_a_i_c.html#aa2f1498c3b0cdf84698ca51a1f279058">ArchivosAIC::ArchivosAIC</a></div><div class="ttdeci">ArchivosAIC()</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8cpp_source.html#l00003">archivosaic.cpp:3</a></div></div>
-<div class="ttc" id="aclass_archivos_a_i_c_html_ab8f2019301ac381856e150a32353bbea"><div class="ttname"><a href="class_archivos_a_i_c.html#ab8f2019301ac381856e150a32353bbea">ArchivosAIC::guardar</a></div><div class="ttdeci">void guardar(string ruta, Imagen *img) override</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8cpp_source.html#l00035">archivosaic.cpp:35</a></div></div>
-<div class="ttc" id="aclass_gestor_de_archivos_html"><div class="ttname"><a href="class_gestor_de_archivos.html">GestorDeArchivos</a></div><div class="ttdef"><b>Definition:</b> <a href="gestordearchivos_8h_source.html#l00021">gestordearchivos.h:22</a></div></div>
-<div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00023">imagen.h:24</a></div></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_imagen.html">Imagen</a> leer(<span class="keywordtype">string</span> ruta) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> guardar(<a class="code" href="class_imagen.html">Imagen</a> *img) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">   47</a></span>&#160;    fstream <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_archivos_a_i_c.html#ab2c2c0b495012e23718e6161cbc17629">   52</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_archivos_a_i_c.html#ab2c2c0b495012e23718e6161cbc17629">identificador</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">string</span> obtieneRutaGuardado();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> escribirEncabezado(<a class="code" href="class_imagen.html">Imagen</a> *img);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> escribirPixeles(<a class="code" href="class_imagen.html">Imagen</a> *img, <span class="keywordtype">string</span> ruta);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ARCHIVOSAIC_H</span></div>
+<div class="ttc" id="aclass_archivos_a_i_c_html"><div class="ttname"><a href="class_archivos_a_i_c.html">ArchivosAIC</a></div><div class="ttdoc">Clase capaz de gestionar los diferentes tipos de archivos AIC.</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8h_source.html#l00019">archivosaic.h:20</a></div></div>
+<div class="ttc" id="aclass_archivos_a_i_c_html_a1450f875c280a2280515e97bc91b7f16"><div class="ttname"><a href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">ArchivosAIC::archi</a></div><div class="ttdeci">fstream archi</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8h_source.html#l00047">archivosaic.h:47</a></div></div>
+<div class="ttc" id="aclass_archivos_a_i_c_html_ab2c2c0b495012e23718e6161cbc17629"><div class="ttname"><a href="class_archivos_a_i_c.html#ab2c2c0b495012e23718e6161cbc17629">ArchivosAIC::identificador</a></div><div class="ttdeci">string identificador</div><div class="ttdef"><b>Definition:</b> <a href="archivosaic_8h_source.html#l00052">archivosaic.h:52</a></div></div>
+<div class="ttc" id="aclass_gestor_de_archivos_html"><div class="ttname"><a href="class_gestor_de_archivos.html">GestorDeArchivos</a></div><div class="ttdoc">Clase abstracta de la cual heredan metodos para leer y escribir archivos otras clases.</div><div class="ttdef"><b>Definition:</b> <a href="gestordearchivos_8h_source.html#l00022">gestordearchivos.h:23</a></div></div>
+<div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00022">imagen.h:23</a></div></div>
 <div class="ttc" id="agestordearchivos_8h_html"><div class="ttname"><a href="gestordearchivos_8h.html">gestordearchivos.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -120,7 +128,7 @@ $(document).ready(function(){initNavTree('archivosaic_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="archivosaic_8h.html">archivosaic.h</a></li>
-    <li class="footer">Generado el Martes, 13 de Septiembre de 2022 09:29:49 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Domingo, 27 de Noviembre de 2022 16:15:04 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['pagina_5fprincipal_2eh_66',['pagina_principal.h',['../pagina__principal_8h.html',1,'']]],
-  ['paintgl_67',['paintGL',['../class_graficador.html#ae4688453e2b0aaff457a17b0a29f1ba5',1,'Graficador']]],
-  ['pixel_68',['Pixel',['../class_pixel.html',1,'Pixel'],['../class_pixel.html#a27ad99a2f705e635c42d242d530d4756',1,'Pixel::Pixel()']]],
-  ['pixel_2ecpp_69',['pixel.cpp',['../pixel_8cpp.html',1,'']]],
-  ['pixel_2eh_70',['pixel.h',['../pixel_8h.html',1,'']]]
+  ['main_580',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
+  ['main_2ecpp_581',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['maximafrecuencia_582',['maximaFrecuencia',['../class_graficador_histograma.html#ac34463c6ba909660c4026641d2c134d8',1,'GraficadorHistograma']]],
+  ['moc_5fpredefs_2eh_583',['moc_predefs.h',['../moc__predefs_8h.html',1,'']]],
+  ['mostraratajos_584',['mostrarAtajos',['../class_sistema.html#a6a5ed28b40bb0c15c47b9ed4f56326b1',1,'Sistema']]],
+  ['mousepressevent_585',['mousePressEvent',['../class_ventana_de_graficacion.html#af57dc06f8c175214ff5597e388d46afc',1,'VentanaDeGraficacion']]]
 ];

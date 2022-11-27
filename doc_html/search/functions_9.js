@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resizegl_152',['resizeGL',['../class_graficador.html#a0325462a2df57cf15cd6791750f46937',1,'Graficador']]]
+  ['keypressevent_811',['keyPressEvent',['../class_ventana_de_graficacion.html#a384bc719c44d9ef95e10389e9aa8f8d1',1,'VentanaDeGraficacion']]]
 ];

@@ -7,54 +7,184 @@ Sistema::Sistema()
 
 void Sistema::ejecutar(QApplication *a)
 {
-    espDeTrabajo.cargarCarpetas();
-
     ArchivosPNM archi;
+
     Imagen img;
 
-    int opcDir, opcArch;
+    bool seGraficoUnaImagen = false;
+    while(true)
+    {
+        int opcDir = obtenerOpcDir();
 
-    cout<<"1)Carpeta 1\n"<<"2)Carpeta 2\n"<<"3)Carpeta 3\n"<<"4)Carpeta 4\n"<<"5)Carpeta 5\n"<<"Seleccione la carpeta: ";
+        if(opcDir == espDeTrabajo.getCarpetas().size()+1)
+        {
+            vector<int> opciones = recuperarOpciones();
+
+            if(opciones[0] != -10 and opciones[1] != -10)
+            {
+                mostrarAtajos();
+
+                iniciarGraficacion(a, opciones[0], opciones[1]);
+            }else{
+                noSoportoAnterior = true;
+                system("clear");
+                cout<<"No se pudo recuperar la ejecución previa dado que no se graficó ninguna imágen.\n";
+            }
+
+
+
+        }else if(opcDir == espDeTrabajo.getCarpetas().size()+2)
+        {
+            break;
+        }else{
+            string ruta = espDeTrabajo.getRuta(opcDir);
+
+            int opcArch = obtenerOpcArch(ruta);
+
+            if (opcArch != -1)
+            {
+                mostrarAtajos();
+
+                iniciarGraficacion(a, opcDir, opcArch);
+
+                seGraficoUnaImagen = true;
+            }
+        }
+    }
+
+    if (!seGraficoUnaImagen)
+        espDeTrabajo.llevarRegistro(-10, -10);
+
+
+}
+
+int Sistema::obtenerOpcDir()
+{
+
+    if(noSoportoAnterior == false)
+        system("clear");
+
+    unsigned int opcDir;
+
+    vector<string> opcCarpetas = espDeTrabajo.getCarpetas();
+
+    for(int i = 0; i < opcCarpetas.size(); i++)
+        cout<<i+1<<") "<<opcCarpetas[i]<<"\n";
+
+    cout<<opcCarpetas.size()+1<<") Recuperar ultima ejecucion\n";
+    cout<<opcCarpetas.size()+2<<") Cerrar el programa\n";
+
+    cout<<"Seleccione la opcion: ";
+
     cin>>opcDir;
 
-    while(opcDir<1 or opcDir>5)
+    while(opcDir < 1 or opcDir > opcCarpetas.size()+2)
     {
         cout<<"\nIngrese una opcion valida: ";
+
         cin>>opcDir;
     }
 
+    return opcDir;
+}
+
+
+
+int Sistema::obtenerOpcArch(string ruta)
+{
     system("clear");
 
-//    string ruta = raiz+carpetas[opcDir-1];
-
-//    getListaDeArchivos(ruta);
-
-    string ruta = espDeTrabajo.getRuta(opcDir);
+    unsigned int opcArch;
 
     vector<string> listaDeArchivos = espDeTrabajo.getListaDeArchivos(ruta);
 
     for(unsigned int i=0; i<listaDeArchivos.size(); i++)
         cout<<i+1<<") "<<listaDeArchivos[i]<<"\n";
-    cout<<"Seleccione el archivo: ";
+    cout<<listaDeArchivos.size()+1<<") Volver a la seleccion de carpetas\n";
+
+    cout<<"Seleccione una opcion: ";
 
     cin>>opcArch;
 
+    while(opcArch < 1 or opcArch > listaDeArchivos.size()+2)
+    {
+        if(typeid (opcArch).name() == "unsigned int")
+        {
+        cout<<"\nIngrese una opcion valida: ";
+
+        cin>>opcArch;
+        }else{
+            while(typeid (opcArch).name() != "unsigned int")
+            {
+                opcArch = 0;
+                cout<<"\nIngrese un numero válido: ";
+
+                cin>>opcArch;
+            }
+
+        }
+    }
+
+    if (opcArch == listaDeArchivos.size()+1)
+    {
+        noSoportoAnterior = false;
+        return -1;
+    }
+
+
+    return opcArch;
+}
+
+void Sistema::iniciarGraficacion(QApplication *a, int opcDir, int opcArch)
+{
     graf.setOpciones(opcDir, opcArch);
 
-    graf.cargarImagen();
+    try {
+        graf.cargarImagen();
 
-    graf.show();
+        graf.setApp(a);
 
-    system("clear");
+        graf.show();
 
-    mostrarAtajos();
+        noSoportoAnterior = false;
 
-    a->exec();
 
+        a->exec();
+
+
+    }  catch (ExcepcionArchivoNoSoportado &excepcion) {
+        system("clear");
+        a->closeAllWindows();
+        noSoportoAnterior = true;
+        cout<<excepcion.what()<<endl;
+    } catch (ExcepcionArchivoCorrupto &excepcion) {
+        system("clear");
+        a->closeAllWindows();
+        noSoportoAnterior = true;
+        cout<<excepcion.what()<<endl;
+    }
+
+}
+
+vector<int> Sistema::recuperarOpciones()
+{
+    vector<int> dir_arch(2);
+    ifstream archi;
+    archi.open("registro.txt");
+
+    string ruta;
+
+    archi>>dir_arch[0] >> dir_arch[1];
+
+    archi.close();
+
+    return dir_arch;
 }
 
 void Sistema::mostrarAtajos()
 {
+    system("clear");
+
     ifstream archi;
     archi.open("lista_de_atajos.txt");
 
@@ -73,3 +203,11 @@ void Sistema::mostrarAtajos()
         }
     }
 }
+
+void Sistema::apagar()
+{
+    corriendo = false;
+}
+
+
+

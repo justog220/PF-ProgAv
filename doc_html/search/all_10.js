@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['wheelevent_90',['wheelEvent',['../class_gestor_de_atajos.html#a845c177e894eb38c4775f66edf3f4a3a',1,'GestorDeAtajos']]]
+  ['qobject_606',['QObject',['../class_q_object.html',1,'']]],
+  ['qopenglfunctions_607',['QOpenGLFunctions',['../class_q_open_g_l_functions.html',1,'']]],
+  ['qopenglwidget_608',['QOpenGLWidget',['../class_q_open_g_l_widget.html',1,'']]]
 ];

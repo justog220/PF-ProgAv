@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['desplx_171',['desplx',['../class_graficador.html#a255400c5ed9831f5b3085884be30f162',1,'Graficador']]],
-  ['desply_172',['desply',['../class_graficador.html#a8577e92f0240825f09686d7f00ca8ad5',1,'Graficador']]]
+  ['desplx_871',['desplx',['../class_graficador_histograma.html#abee8871a0b6d725d531d3e11dee7c664',1,'GraficadorHistograma::desplx()'],['../class_ventana_de_graficacion.html#a09b97bb7c5647c56b63fdc351c45bfa1',1,'VentanaDeGraficacion::desplx()']]],
+  ['desply_872',['desply',['../class_graficador_histograma.html#a18e87d851c068bfa6fc6f073071cbee7',1,'GraficadorHistograma::desply()'],['../class_ventana_de_graficacion.html#acd503a7003d7a14c00fcae6178b15c0a',1,'VentanaDeGraficacion::desply()']]]
 ];

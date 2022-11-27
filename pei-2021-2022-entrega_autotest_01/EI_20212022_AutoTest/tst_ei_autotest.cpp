@@ -3,10 +3,9 @@
 // add necessary includes here
 #include <vector>
 #include <string>
-#include <fstream>
-#include <dirent.h>
-#include "/home/justo/PF_Garcia/espaciodetrabajo.h"
-
+#include "../../PF_Garcia/espaciodetrabajo.h"
+#include "../../PF_Garcia/procesadorestadistico.h"
+#include "../../PF_Garcia/filtros.h"
 
 typedef unsigned int uint;
 
@@ -166,10 +165,9 @@ vector<string> EI_AutoTest::listaDeArchivosDeImagen()
     vector<string> resultado;
 
     // Aquí el código de la prueba
+    EspacioDeTrabajo esp;
 
-    EspacioDeTrabajo espacio_de_trabajo;
-
-    resultado = espacio_de_trabajo.getListaDeArchivos(ruta);
+    resultado = esp.getListaDeArchivos(ruta);
 
     sort(resultado.begin(), resultado.end());
 
@@ -184,14 +182,22 @@ string EI_AutoTest::tipoDeArchivo01()
     */
 
     // Aquí el código de la prueba
+
     string ruta = "../grupo_imagenes_1/test_01.pgm";
 
-    fstream archi;
+    GestorDeArchivos* gestor_archivos;
+    EspacioDeTrabajo esp;
 
-    archi.open(ruta, ios::in);
+    if(esp.esPNM(ruta))
+        gestor_archivos = new ArchivosPNM;
+    else
+        gestor_archivos = new ArchivosAIC;
 
-    if(archi.is_open())
-        getline(archi, tipo);
+    Imagen img = gestor_archivos->leer(ruta);
+
+    tipo = img.getIdentificador();
+
+    img.borrarImagen();
 
     return tipo;
 }
@@ -205,16 +211,23 @@ string EI_AutoTest::tipoDeArchivo02()
      *  "grupo_imagenes_1/entre_rios_03.ppm"
     */
     // Aquí el código de la prueba
+
     string ruta = "../grupo_imagenes_1/entre_rios_03.ppm";
 
-    fstream archi;
+    GestorDeArchivos* gestor_archivos;
+    EspacioDeTrabajo esp;
 
-    archi.open(ruta, ios::in);
+    if(esp.esPNM(ruta))
+        gestor_archivos = new ArchivosPNM;
+    else
+        gestor_archivos = new ArchivosAIC;
 
-    if(archi.is_open())
-        getline(archi, tipo);
+    Imagen img = gestor_archivos->leer(ruta);
 
-    archi.close();
+    tipo = img.getIdentificador();
+
+    img.borrarImagen();
+
     return tipo;
 }
 
@@ -228,28 +241,21 @@ tuple<uint, uint> EI_AutoTest::getFilasYColumnas01()
 
     // Aquí el código de la prueba
     string ruta = "../grupo_imagenes_1/test_01.pgm";
-    string identificador;
 
-    fstream archi;
+    GestorDeArchivos* gestor_archivos;
+    EspacioDeTrabajo esp;
 
-    archi.open(ruta, ios::in);
+    if(esp.esPNM(ruta))
+        gestor_archivos = new ArchivosPNM;
+    else
+        gestor_archivos = new ArchivosAIC;
 
-    if(archi.is_open()){
-        getline(archi, identificador);
+    Imagen img = gestor_archivos->leer(ruta);
 
-        string comentario;
+    filas = img.getFilas();
+    columnas = img.getColumnas();
 
-        int pos_com = archi.tellg();
-
-        getline(archi, comentario);
-
-        if(comentario[0] != '#' and comentario[0] != '\n')
-        {
-            archi.seekg(pos_com);
-        }
-
-        archi>>columnas>>filas;
-    }
+    img.borrarImagen();
 
     return make_tuple(filas, columnas);
 }
@@ -264,7 +270,21 @@ uint EI_AutoTest::getIntensidadNivelDeGris01()
      */
 
     // Aquí el código de la prueba
+    string ruta = "../grupo_imagenes_1/test_01.pgm";
 
+    GestorDeArchivos* gestor_archivos;
+    EspacioDeTrabajo esp;
+
+    if(esp.esPNM(ruta))
+        gestor_archivos = new ArchivosPNM;
+    else
+        gestor_archivos = new ArchivosAIC;
+
+    Imagen img = gestor_archivos->leer(ruta);
+
+    nivelDeGris = img.getPixel(1, 3).getIntensidad();
+
+    img.borrarImagen();
 
     return nivelDeGris;
 }
@@ -279,7 +299,21 @@ uint EI_AutoTest::getIntensidadNivelDeGris02()
      */
 
     // Aquí el código de la prueba
+    string ruta = "../grupo_imagenes_1/test_01.pgm";
 
+    GestorDeArchivos* gestor_archivos;
+    EspacioDeTrabajo esp;
+
+    if(esp.esPNM(ruta))
+        gestor_archivos = new ArchivosPNM;
+    else
+        gestor_archivos = new ArchivosAIC;
+
+    Imagen img = gestor_archivos->leer(ruta);
+
+    nivelDeGris = img.getPixel(1, 2).getIntensidad();
+
+    img.borrarImagen();
 
     return nivelDeGris;
 }
@@ -295,7 +329,23 @@ tuple<uint, uint, uint> EI_AutoTest::getIntensidadesRGB01()
      */
 
     // Aquí el código de la prueba
+    string ruta = "../grupo_imagenes_1/test_02.ppm";
 
+    GestorDeArchivos* gestor_archivos;
+    EspacioDeTrabajo esp;
+
+    if(esp.esPNM(ruta))
+        gestor_archivos = new ArchivosPNM;
+    else
+        gestor_archivos = new ArchivosAIC;
+
+    Imagen img = gestor_archivos->leer(ruta);
+
+    R = img.getPixel(1, 3).getR();
+    G = img.getPixel(1, 3).getG();
+    B = img.getPixel(1, 3).getB();
+
+    img.borrarImagen();
 
     return make_tuple(R, G, B);
 }
@@ -311,7 +361,23 @@ tuple<uint, uint, uint> EI_AutoTest::getIntensidadesRGB02()
      */
 
     // Aquí el código de la prueba
+    string ruta = "../grupo_imagenes_1/test_02.ppm";
 
+    GestorDeArchivos* gestor_archivos;
+    EspacioDeTrabajo esp;
+
+    if(esp.esPNM(ruta))
+        gestor_archivos = new ArchivosPNM;
+    else
+        gestor_archivos = new ArchivosAIC;
+
+    Imagen img = gestor_archivos->leer(ruta);
+
+    R = img.getPixel(1, 2).getR();
+    G = img.getPixel(1, 2).getG();
+    B = img.getPixel(1, 2).getB();
+
+    img.borrarImagen();
 
     return make_tuple(R, G, B);
 }
@@ -327,7 +393,23 @@ tuple<uint, uint, uint> EI_AutoTest::getIntensidadesRGB03()
      */
 
     // Aquí el código de la prueba
+    string ruta = "../grupo_imagenes_1/entre_rios_03.ppm";
 
+    GestorDeArchivos* gestor_archivos;
+    EspacioDeTrabajo esp;
+
+    if(esp.esPNM(ruta))
+        gestor_archivos = new ArchivosPNM;
+    else
+        gestor_archivos = new ArchivosAIC;
+
+    Imagen img = gestor_archivos->leer(ruta);
+
+    R = img.getPixel(163, 401).getR();
+    G = img.getPixel(163, 401).getG();
+    B = img.getPixel(163, 401).getB();
+
+    img.borrarImagen();
 
     return make_tuple(R, G, B);
 }
@@ -343,7 +425,25 @@ tuple<int, uint> EI_AutoTest::getPixelGrisMasFrecuenteYSuCantidad01()
      */
 
     // Aquí el código de la prueba
+    string ruta = "../grupo_imagenes_1/tigre_01.pgm";
 
+    GestorDeArchivos* gestor_archivos;
+    EspacioDeTrabajo esp;
+
+    if(esp.esPNM(ruta))
+        gestor_archivos = new ArchivosPNM;
+    else
+        gestor_archivos = new ArchivosAIC;
+
+    Imagen img = gestor_archivos->leer(ruta);
+
+    ProcesadorEstadistico proce;
+
+    nivel = proce.devuelveIntensidadMasFrecuente(img);
+
+    vector<int> frecuencias = proce.devuelveFrecuenciaIntensidad(img);
+
+    cantidad = frecuencias[nivel];
 
     return make_tuple(nivel, cantidad);
 }
@@ -359,7 +459,25 @@ tuple<int, uint> EI_AutoTest::getPixelColorMasFrecuenteYSuCantidad01()
      */
 
     // Aquí el código de la prueba
+    string ruta = "../grupo_imagenes_2/predio_fi_uner_01.ppm";
 
+    GestorDeArchivos* gestor_archivos;
+    EspacioDeTrabajo esp;
+
+    if(esp.esPNM(ruta))
+        gestor_archivos = new ArchivosPNM;
+    else
+        gestor_archivos = new ArchivosAIC;
+
+    Imagen img = gestor_archivos->leer(ruta);
+
+    ProcesadorEstadistico proce;
+
+    nivelRojo = proce.devuelveRMasFrecuente(img);
+
+    vector<int> frecuencias = proce.devuelveFrecuenciaR(img);
+
+    cantidad = frecuencias[nivelRojo];
 
     return make_tuple(nivelRojo, cantidad);
 }
@@ -379,6 +497,31 @@ tuple<uint, uint, uint, uint> EI_AutoTest::getIntensidadMediaYLocalLuegoDeSuaviz
      */
 
     // Aquí el código de la prueba
+    string ruta = "../grupo_imagenes_1/hospital-robot_01.pgm";
+
+    GestorDeArchivos* gestor_archivos;
+    EspacioDeTrabajo esp;
+
+    if(esp.esPNM(ruta))
+        gestor_archivos = new ArchivosPNM;
+    else
+        gestor_archivos = new ArchivosAIC;
+
+    Imagen img = gestor_archivos->leer(ruta);
+
+    ProcesadorEstadistico proce;
+
+    intensidad_media_inicial = proce.devolverIntensidadMedia(img);
+
+    intensidad_local_inicial = img.getPixel(50, 60).getIntensidad();
+
+    Filtros filtros;
+
+    img = filtros.aplicaFiltroPasaBajos(img);
+
+    intensidad_media_final = proce.devolverIntensidadMedia(img);
+
+    intensidad_local_final = img.getPixel(50, 60).getIntensidad();
 
     return make_tuple(intensidad_media_inicial, intensidad_media_final, intensidad_local_inicial, intensidad_local_final);
 }

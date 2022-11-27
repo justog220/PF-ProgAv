@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Software de Procesamiento Digital de ImÃ¡genes - Garcia Justo", "index.html", [
     [ "Exámen-Integrador-Programación-Avanzada", "index.html#Exámen-Integrador-Programación-Avanzada", null ],
-    [ "PEI-2021-2022", "md_p_e_i_pei_2021_2022_entrega_autotest_01__r_e_a_d_m_e.html", null ],
+    [ "PEI-2021-2022", "md_pei_2021_2022_entrega_autotest_01__r_e_a_d_m_e.html", null ],
     [ "Lista de bugs", "bug.html", null ],
     [ "Estructuras de Datos", "annotated.html", [
       [ "Estructura de datos", "annotated.html", "annotated_dup" ],
@@ -52,10 +52,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_excepcion_archivo_corrupto_8h.html",
-"espaciodetrabajo_8cpp_source.html",
-"moc__predefs_8h.html#a6bb8315e719b7306f47cde3b4b30d91f",
-"pixel_8h_source.html"
+"_e_i__20212022___auto_test_2moc__predefs_8h.html",
+"_e_i__20212022___auto_test_2moc__predefs_8h.html#a8d57bedda11fe9ca16132e126d84669e",
+"build-_e_i__20212022___auto_test-_desktop___qt__5__12__10___g_c_c__64bit-_debug_2moc__predefs_8h.html#a1b27e3508a4c1e97875297882a95f503",
+"build-_e_i__20212022___auto_test-_desktop___qt__5__12__10___g_c_c__64bit-_debug_2moc__predefs_8h.html#aabced873a8a81a4917f36f7dfb722cc0",
+"class_imagen.html#a310a7ee241a8c546a9d5345937a9f01f"
 ];
 
 var SYNCONMSG = 'click en deshabilitar sincronizaciÃ³n';

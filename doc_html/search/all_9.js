@@ -8,10 +8,9 @@ var searchData=
   ['imagen_2ecpp_563',['imagen.cpp',['../imagen_8cpp.html',1,'']]],
   ['imagen_2eh_564',['imagen.h',['../imagen_8h.html',1,'']]],
   ['imagenanalisis_565',['imagenAnalisis',['../class_graficador_histograma.html#a35fea56cbd4e9ca930535771054beb04',1,'GraficadorHistograma']]],
-  ['includes_2eh_566',['includes.h',['../includes_8h.html',1,'']]],
-  ['informacion_567',['informacion',['../class_imagen.html#a27a72bf1ea6c01a6a4c3fd6ca3bc5264',1,'Imagen']]],
-  ['informardatosestadisticos_568',['informarDatosEstadisticos',['../class_procesador_estadistico.html#a331c39e9cfa2711dfb4419ef15b20eb3',1,'ProcesadorEstadistico']]],
-  ['inicializarmatrizdeanalisis_569',['inicializarMatrizDeAnalisis',['../class_algoritmo_del_pintor.html#aded5e3b53cabbc40d07a399b614da5c5',1,'AlgoritmoDelPintor']]],
-  ['iniciargraficacion_570',['iniciarGraficacion',['../class_sistema.html#a7e6d58ec7d28d4f773764353846db680',1,'Sistema']]],
-  ['initializegl_571',['initializeGL',['../class_graficador_histograma.html#aa737ae0d4f730366dac67ff310004a8b',1,'GraficadorHistograma::initializeGL()'],['../class_ventana_de_graficacion.html#ac206af6a2bc5d7a4dd4b56c4fcf90568',1,'VentanaDeGraficacion::initializeGL()']]]
+  ['informacion_566',['informacion',['../class_imagen.html#a27a72bf1ea6c01a6a4c3fd6ca3bc5264',1,'Imagen']]],
+  ['informardatosestadisticos_567',['informarDatosEstadisticos',['../class_procesador_estadistico.html#a331c39e9cfa2711dfb4419ef15b20eb3',1,'ProcesadorEstadistico']]],
+  ['inicializarmatrizdeanalisis_568',['inicializarMatrizDeAnalisis',['../class_algoritmo_del_pintor.html#aded5e3b53cabbc40d07a399b614da5c5',1,'AlgoritmoDelPintor']]],
+  ['iniciargraficacion_569',['iniciarGraficacion',['../class_sistema.html#a7e6d58ec7d28d4f773764353846db680',1,'Sistema']]],
+  ['initializegl_570',['initializeGL',['../class_graficador_histograma.html#aa737ae0d4f730366dac67ff310004a8b',1,'GraficadorHistograma::initializeGL()'],['../class_ventana_de_graficacion.html#ac206af6a2bc5d7a4dd4b56c4fcf90568',1,'VentanaDeGraficacion::initializeGL()']]]
 ];

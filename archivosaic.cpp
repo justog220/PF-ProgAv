@@ -153,9 +153,8 @@ void ArchivosAIC::guardar(Imagen *img)
 
 string ArchivosAIC::obtieneRutaGuardado()
 {
-    system("clear");
     string rutaGuardado = "./Imagenes/Imagenes_guardadas/", nombre;
-    cout<<"Ingrese el nombre con el cual desea guardar su imagen: ";
+    cout<<"\t  Ingrese nombre con el que desea guardar la imágen. (No utilice '/')\n\t\t>";
     cin>>nombre;
 
     return rutaGuardado+nombre+".aic";

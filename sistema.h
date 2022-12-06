@@ -67,10 +67,7 @@ public:
      */
     void mostrarAtajos();
 
-    /*!
-     * \brief apagar Método que permite apagar el sistema.
-     */
-    void apagar();
+
 
 private:
     /*!
@@ -82,11 +79,6 @@ private:
      * \brief graf Graficador que utiliza para graficar una Imagen.
      */
     VentanaDeGraficacion graf;
-
-    /*!
-     * \brief corriendo Booleano que indica si el sistema esta corriendo o no.
-     */
-    bool corriendo;
 
     /*!
      * \brief noSoportoAnterior Booleano que indica si el último archivo fue soportado o no.

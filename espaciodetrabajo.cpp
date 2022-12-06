@@ -1,5 +1,7 @@
 #include "espaciodetrabajo.h"
 #include <algorithm>
+#include <thread>
+
 EspacioDeTrabajo::EspacioDeTrabajo()
 {
   cargarCarpetas();
@@ -140,26 +142,76 @@ void EspacioDeTrabajo::llevarRegistro(int opcDir, int opcArch)
 
 void EspacioDeTrabajo::guardarImagen(Imagen *img)
 {
-    system("clear");
+
     char opcFormato;
-    cout<<">[P]NM\n>[A]IC\nSeleccione el formato de guardado:";
+    cout<<"\t|>[P]NM\n\t|>[A]IC\n\t  Seleccione el formato de guardado:";
     cin>>opcFormato;
 
     opcFormato= toupper(opcFormato);
 
     while (opcFormato != 'P' and opcFormato != 'A') {
-        cout<<"\nInserte una opcion valida: ";
+        cout<<"\t\t|__Inserte una opcion valida: ";
         cin>>opcFormato;
+        opcFormato = toupper(opcFormato);
     }
 
-    GestorDeArchivos* archi;
+    bool estaDeAcuerdo;
 
-    if(opcFormato == 'P')
-        archi = new ArchivosPNM;
-    else
+    if(opcFormato == 'A' and img->getIdentificador() != "P2" and img->getIdentificador() != "P2C" and img->getIdentificador() != "P5")
+    {
+        char acuerdo;
+        cout<<"\nSolo pueden ser almacenadas con formato AIC imágenes en escala de grises. Se procederá a guardar en formato PNM.\nPresione cualquier tecla para continuar.";
+        cout<<"\n¿Está de acuerdo?\n[S]i | [N]o: ";
+        cin>>acuerdo;
+
+        acuerdo = toupper(acuerdo);
+
+        while (acuerdo != 'S' and acuerdo != 'N') {
+            cout<<"\nInserte una opcion valida: ";
+            cin>>acuerdo;
+            acuerdo = toupper(acuerdo);
+        }
+
+
+        if(acuerdo == 'S')
+        {
+            estaDeAcuerdo = true;
+            opcFormato = 'P';
+        }
+        else
+            estaDeAcuerdo = false;
+
+        if(estaDeAcuerdo)
+        {
+            GestorDeArchivos* archi;
+
+            archi = new ArchivosPNM;
+
+
+            archi->guardar(img);
+        }else
+        {
+            cout<<"\n\t|__No se pudo guardar la Imagen.";
+            cout.flush();
+        }
+
+    }
+
+    GestorDeArchivos *archi;
+
+    if(opcFormato == 'A')
+    {
         archi = new ArchivosAIC;
 
-    archi->guardar(img);
+        archi->guardar(img);
+    }else
+    {
+        archi = new ArchivosPNM;
+
+        archi->guardar(img);
+    }
+
+
 }
 
 string EspacioDeTrabajo::getNombreArchivo(string ruta)

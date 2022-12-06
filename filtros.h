@@ -22,65 +22,67 @@ public:
     /*!
      * \brief Filtros Constructor del objeto Filtros
      */
-    Filtros();
+//    Filtros();
+
+    virtual Imagen aplicarFiltro(Imagen &imag) = 0;
 
     /*!
      * \brief aplicaFiltroPasaBajos Método que permite aplicarle el filtro de pasa bajos a una Imagen
      * \param[in] img Puntero a Imagen que se va a modificar.
      * \param[out] img Se modifica la imagen.
      */
-    Imagen aplicaFiltroPasaBajos(Imagen &img);
+//    Imagen aplicaFiltroPasaBajos(Imagen &img);
 
     /*!
      * \brief aplicaFiltroPasaAltos Método que permite aplicarle el filtro de pasa altos a una Imagen
      * \param[in] img Puntero a Imagen que se va a modificar.
      * \return Imagen con el filtro de pasa altos aplicado.
      */
-    Imagen aplicaFiltroPasaAltos(Imagen &pImg);
+//    Imagen aplicaFiltroPasaAltos(Imagen &pImg);
 
     /*!
      * \brief aplicaNegativo Método que permite obtener la negativa de la Imagen
      * \param[in] img Imagen a modificar.
      * \param[out] img Se modifica la Imagen.
      */
-    Imagen aplicaNegativo(Imagen &pImg);
+//    Imagen aplicaNegativo(Imagen &pImg);
 
     /*!
      * \brief ajusteContraste Método que permite ajustar el contraste de una Imagen
      * \param[in] img Imagen a la cual se le desea ajustar el contraste
      * \param[out] img Imagen ya modificada.
      */
-    void ajusteContraste(Imagen *img);
+//    void ajusteContraste(Imagen *img);
 
     /*!
      * \brief aumentarBrillo Método que permite aumentar el brillo de una Imagen.
      * \param[in] img Imagen a la cual se le desea aumentar el brillo.
      * \param[out] img Imagen modificada.
      */
-    void aumentarBrillo(Imagen *img);
+//    void aumentarBrillo(Imagen *img);
 
     /*!
      * \brief reducirBrillo Método que permite reducir el brillo de una Imagen
      * \param[in] img Imagen a la cual se le desea reducir el brillo.
      * \param[out] img Imagen modificada.
      */
-    void reducirBrillo(Imagen *img);
+//    void reducirBrillo(Imagen *img);
 
     /*!
      * \brief aplicaFiltroMediana Método que permite aplicar el filtro de la mediana.
      * \param[in] img Imagen a la cual se le desea aplicar el filtro de la mediana.
      * \param[out] img Imagen modificada.
      */
-    void aplicaFiltroMediana(Imagen *img);
+//    Imagen aplicaFiltroMediana(Imagen &img);
 
-protected:
+//protected:
     /*!
      * \brief aplicaFiltroMedianaEsquinas Método protegido auxiliar que permite aplicar el filtro de la mediana
      * en las esquinas de la Imagen.
      * \param[in] imag Imagen a la cual se le aplica el filtro de la mediana
      * \param[out] imag Imagen ya modificada.
      */
-    void aplicaFiltroMedianaEsquinas(Imagen *imag);
+//    Imagen aplicaFiltroMedianaEsquinas(Imagen &imag);
 
     /*!
      * \brief aplicaFiltroMedianaBordes Método protegido auxiliar que permite aplicar el filtro de la mediana
@@ -88,7 +90,7 @@ protected:
      * \param[in] imag Imagen a la cual se le aplica el filtro de la mediana
      * \param[out] imag Imagen ya modificada.
      */
-    void aplicaFiltroMedianaBordes(Imagen *imag);
+//    Imagen aplicaFiltroMedianaBordes(Imagen &imag);
 
     /*!
      * \brief aplicaFiltroMedianaCentro Método protegido auxiliar que permite aplicar el filtro de la mediana
@@ -96,9 +98,7 @@ protected:
      * \param[in] imag Imagen a la cual se le aplica el filtro de la mediana
      * \param[out] imag Imagen ya modificada.
      */
-    void aplicaFiltroMedianaCentro(Imagen *imag);
-
-
+//    Imagen aplicaFiltroFiMedianaCentro(Imagen &imag);
 
 };
 

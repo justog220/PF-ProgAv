@@ -55,12 +55,19 @@ OBJECTS_DIR   = ./
 SOURCES       = algoritmodelpintor.cpp \
 		archivosaic.cpp \
 		archivospnm.cpp \
+		binarizado.cpp \
+		brillo.cpp \
+		contraste.cpp \
 		espaciodetrabajo.cpp \
+		filtromediana.cpp \
+		filtropasaaltos.cpp \
+		filtropasabajos.cpp \
 		filtros.cpp \
 		gestordearchivos.cpp \
 		graficadorhistograma.cpp \
 		imagen.cpp \
 		main.cpp \
+		negativo.cpp \
 		pixel.cpp \
 		procesadorestadistico.cpp \
 		sistema.cpp \
@@ -69,12 +76,19 @@ SOURCES       = algoritmodelpintor.cpp \
 OBJECTS       = algoritmodelpintor.o \
 		archivosaic.o \
 		archivospnm.o \
+		binarizado.o \
+		brillo.o \
+		contraste.o \
 		espaciodetrabajo.o \
+		filtromediana.o \
+		filtropasaaltos.o \
+		filtropasabajos.o \
 		filtros.o \
 		gestordearchivos.o \
 		graficadorhistograma.o \
 		imagen.o \
 		main.o \
+		negativo.o \
 		pixel.o \
 		procesadorestadistico.o \
 		sistema.o \
@@ -279,11 +293,18 @@ DIST          = ../Qt5.12.10/5.12.10/gcc_64/mkspecs/features/spec_pre.prf \
 		algoritmodelpintor.h \
 		archivosaic.h \
 		archivospnm.h \
+		binarizado.h \
+		brillo.h \
+		contraste.h \
 		espaciodetrabajo.h \
+		filtromediana.h \
+		filtropasaaltos.h \
+		filtropasabajos.h \
 		filtros.h \
 		gestordearchivos.h \
 		graficadorhistograma.h \
 		imagen.h \
+		negativo.h \
 		pixel.h \
 		procesadorestadistico.h \
 		sistema.h \
@@ -291,12 +312,19 @@ DIST          = ../Qt5.12.10/5.12.10/gcc_64/mkspecs/features/spec_pre.prf \
 		ventanadegraficacion.h algoritmodelpintor.cpp \
 		archivosaic.cpp \
 		archivospnm.cpp \
+		binarizado.cpp \
+		brillo.cpp \
+		contraste.cpp \
 		espaciodetrabajo.cpp \
+		filtromediana.cpp \
+		filtropasaaltos.cpp \
+		filtropasabajos.cpp \
 		filtros.cpp \
 		gestordearchivos.cpp \
 		graficadorhistograma.cpp \
 		imagen.cpp \
 		main.cpp \
+		negativo.cpp \
 		pixel.cpp \
 		procesadorestadistico.cpp \
 		sistema.cpp \
@@ -719,8 +747,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../Qt5.12.10/5.12.10/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ExcepcionArchivoCorrupto.h ExcepcionArchivoNoSoportado.h algoritmodelpintor.h archivosaic.h archivospnm.h espaciodetrabajo.h filtros.h gestordearchivos.h graficadorhistograma.h imagen.h pixel.h procesadorestadistico.h sistema.h tablalut.h ventanadegraficacion.h $(DISTDIR)/
-	$(COPY_FILE) --parents algoritmodelpintor.cpp archivosaic.cpp archivospnm.cpp espaciodetrabajo.cpp filtros.cpp gestordearchivos.cpp graficadorhistograma.cpp imagen.cpp main.cpp pixel.cpp procesadorestadistico.cpp sistema.cpp tablalut.cpp ventanadegraficacion.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ExcepcionArchivoCorrupto.h ExcepcionArchivoNoSoportado.h algoritmodelpintor.h archivosaic.h archivospnm.h binarizado.h brillo.h contraste.h espaciodetrabajo.h filtromediana.h filtropasaaltos.h filtropasabajos.h filtros.h gestordearchivos.h graficadorhistograma.h imagen.h negativo.h pixel.h procesadorestadistico.h sistema.h tablalut.h ventanadegraficacion.h $(DISTDIR)/
+	$(COPY_FILE) --parents algoritmodelpintor.cpp archivosaic.cpp archivospnm.cpp binarizado.cpp brillo.cpp contraste.cpp espaciodetrabajo.cpp filtromediana.cpp filtropasaaltos.cpp filtropasabajos.cpp filtros.cpp gestordearchivos.cpp graficadorhistograma.cpp imagen.cpp main.cpp negativo.cpp pixel.cpp procesadorestadistico.cpp sistema.cpp tablalut.cpp ventanadegraficacion.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -789,6 +817,27 @@ archivospnm.o: archivospnm.cpp archivospnm.h \
 		ExcepcionArchivoCorrupto.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o archivospnm.o archivospnm.cpp
 
+binarizado.o: binarizado.cpp binarizado.h \
+		filtros.h \
+		imagen.h \
+		pixel.h \
+		procesadorestadistico.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o binarizado.o binarizado.cpp
+
+brillo.o: brillo.cpp brillo.h \
+		filtros.h \
+		imagen.h \
+		pixel.h \
+		procesadorestadistico.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o brillo.o brillo.cpp
+
+contraste.o: contraste.cpp contraste.h \
+		filtros.h \
+		imagen.h \
+		pixel.h \
+		procesadorestadistico.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o contraste.o contraste.cpp
+
 espaciodetrabajo.o: espaciodetrabajo.cpp espaciodetrabajo.h \
 		archivosaic.h \
 		gestordearchivos.h \
@@ -798,6 +847,27 @@ espaciodetrabajo.o: espaciodetrabajo.cpp espaciodetrabajo.h \
 		archivospnm.h \
 		ExcepcionArchivoNoSoportado.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o espaciodetrabajo.o espaciodetrabajo.cpp
+
+filtromediana.o: filtromediana.cpp filtromediana.h \
+		filtros.h \
+		imagen.h \
+		pixel.h \
+		procesadorestadistico.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o filtromediana.o filtromediana.cpp
+
+filtropasaaltos.o: filtropasaaltos.cpp filtropasaaltos.h \
+		filtros.h \
+		imagen.h \
+		pixel.h \
+		procesadorestadistico.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o filtropasaaltos.o filtropasaaltos.cpp
+
+filtropasabajos.o: filtropasabajos.cpp filtropasabajos.h \
+		filtros.h \
+		imagen.h \
+		pixel.h \
+		procesadorestadistico.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o filtropasabajos.o filtropasabajos.cpp
 
 filtros.o: filtros.cpp filtros.h \
 		imagen.h \
@@ -935,7 +1005,10 @@ graficadorhistograma.o: graficadorhistograma.cpp graficadorhistograma.h \
 		../Qt5.12.10/5.12.10/gcc_64/include/QtGui/qopenglcontext.h \
 		../Qt5.12.10/5.12.10/gcc_64/include/QtCore/QObject \
 		../Qt5.12.10/5.12.10/gcc_64/include/QtCore/QScopedPointer \
-		../Qt5.12.10/5.12.10/gcc_64/include/QtGui/qopenglversionfunctions.h
+		../Qt5.12.10/5.12.10/gcc_64/include/QtGui/qopenglversionfunctions.h \
+		imagen.h \
+		pixel.h \
+		procesadorestadistico.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o graficadorhistograma.o graficadorhistograma.cpp
 
 imagen.o: imagen.cpp imagen.h \
@@ -1082,8 +1155,22 @@ main.o: main.cpp ../Qt5.12.10/5.12.10/gcc_64/include/QtWidgets/QApplication \
 		procesadorestadistico.h \
 		graficadorhistograma.h \
 		algoritmodelpintor.h \
-		tablalut.h
+		tablalut.h \
+		filtromediana.h \
+		filtropasaaltos.h \
+		filtropasabajos.h \
+		contraste.h \
+		negativo.h \
+		brillo.h \
+		binarizado.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
+
+negativo.o: negativo.cpp negativo.h \
+		filtros.h \
+		imagen.h \
+		pixel.h \
+		procesadorestadistico.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o negativo.o negativo.cpp
 
 pixel.o: pixel.cpp pixel.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o pixel.o pixel.cpp
@@ -1233,7 +1320,14 @@ sistema.o: sistema.cpp sistema.h \
 		procesadorestadistico.h \
 		graficadorhistograma.h \
 		algoritmodelpintor.h \
-		tablalut.h
+		tablalut.h \
+		filtromediana.h \
+		filtropasaaltos.h \
+		filtropasabajos.h \
+		contraste.h \
+		negativo.h \
+		brillo.h \
+		binarizado.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sistema.o sistema.cpp
 
 tablalut.o: tablalut.cpp tablalut.h \
@@ -1380,7 +1474,14 @@ ventanadegraficacion.o: ventanadegraficacion.cpp ventanadegraficacion.h \
 		procesadorestadistico.h \
 		graficadorhistograma.h \
 		algoritmodelpintor.h \
-		tablalut.h
+		tablalut.h \
+		filtromediana.h \
+		filtropasaaltos.h \
+		filtropasabajos.h \
+		contraste.h \
+		negativo.h \
+		brillo.h \
+		binarizado.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ventanadegraficacion.o ventanadegraficacion.cpp
 
 ####### Install

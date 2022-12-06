@@ -241,13 +241,12 @@ void ProcesadorEstadistico::informarDatosEstadisticos(Imagen &img)
     vector<float> promediosRGB = devolverPromedioRGB(img);
     vector<int> maximoMinimoR = hallarMaximoMinimoR(img), maximoMinimoG = hallarMaximoMinimoG(img), maximoMinimoB = hallarMaximoMinimoB(img);
     vector<float> desviaciones = devolverDesviacionEstandarRGB(img);
-    system("clear");
-    cout<<"----Datos estadisticos----";
-    cout<<"\n---------Promedio---------\n\tR: "<<promediosRGB[0]<<"\n\tG: "<<promediosRGB[1]<<"\n\tB: "<<promediosRGB[2];
-    cout<<"\n---------Minimo---------\n\tR: "<<maximoMinimoR.at(1)<<"\n\tG: "<<maximoMinimoG.at(1)<<"\n\tB: "<<maximoMinimoB.at(1);
-    cout<<"\n---------Maximo---------\n\tR: "<<maximoMinimoR.at(0)<<"\n\tG: "<<maximoMinimoG.at(0)<<"\n\tB: "<<maximoMinimoB.at(0);
-    cout<<"\n---------Moda---------\n\tR: "<<devolverModaR(img)<<"\n\tG: "<<devolverModaG(img)<<"\n\tB: "<<devolverModaB(img);
-    cout<<"\n---------Desviaciones estandar---------\n\tR: "<<desviaciones.at(0)<<"\n\tG: "<<desviaciones.at(1)<<"\n\tB: "<<desviaciones.at(2);
+    cout<<"\t----Datos estadisticos----";
+    cout<<"\n\t---------Promedio---------\n\tR: "<<promediosRGB[0]<<"\n\tG: "<<promediosRGB[1]<<"\n\tB: "<<promediosRGB[2];
+    cout<<"\n\t---------Minimo---------\n\tR: "<<maximoMinimoR.at(1)<<"\n\tG: "<<maximoMinimoG.at(1)<<"\n\tB: "<<maximoMinimoB.at(1);
+    cout<<"\n\t---------Maximo---------\n\tR: "<<maximoMinimoR.at(0)<<"\n\tG: "<<maximoMinimoG.at(0)<<"\n\tB: "<<maximoMinimoB.at(0);
+    cout<<"\n\t---------Moda---------\n\tR: "<<devolverModaR(img)<<"\n\tG: "<<devolverModaG(img)<<"\n\tB: "<<devolverModaB(img);
+    cout<<"\n\t---------Desviaciones estandar---------\n\tR: "<<desviaciones.at(0)<<"\n\tG: "<<desviaciones.at(1)<<"\n\tB: "<<desviaciones.at(2);
 
 
 

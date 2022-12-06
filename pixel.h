@@ -81,7 +81,7 @@ public:
      * \brief aumentarBrillo Método que permite aumentar el brillo de un
      * Pixel.
      */
-    void aumentarBrillo();
+    void aumentarBrillo(int aumento);
 
     /*!
      * \brief reducirBrillo Método que permite reducir el brillo de

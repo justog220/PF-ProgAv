@@ -31,6 +31,13 @@
 #include "graficadorhistograma.h"
 #include "algoritmodelpintor.h"
 #include "tablalut.h"
+#include "filtromediana.h"
+#include "filtropasaaltos.h"
+#include "filtropasabajos.h"
+#include "contraste.h"
+#include "negativo.h"
+#include "brillo.h"
+#include "binarizado.h"
 
 class VentanaDeGraficacion: public QOpenGLWidget, protected QOpenGLFunctions
 {

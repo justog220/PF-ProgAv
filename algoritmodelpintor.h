@@ -97,6 +97,9 @@ private:
             5 4 3  */
     vector < Posicion > vecinos = {{-1,0},{-1,1},{0,1},{1,1},{1,0},{1,-1},{0,-1},{-1,-1}};
 
+    /*!
+     * \param profundidad Profundidad del método recursiva.
+     */
     int profundidad;
 
 };

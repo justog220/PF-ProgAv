@@ -197,7 +197,7 @@ void VentanaDeGraficacion::setEspacio(EspacioDeTrabajo &esp)
 //NO es necesario que se llame keyPress, lo importante que
 void VentanaDeGraficacion::keyPressEvent(QKeyEvent *event)
 {
-    Filtros filtros;
+    Filtros* filtros;
     bool flecha_derecha = event->key() == Qt::Key_Right;
     bool ctrl = event->modifiers() & Qt::ControlModifier;
     bool flecha_izquierda = event->key() == Qt::Key_Left;;
@@ -206,7 +206,7 @@ void VentanaDeGraficacion::keyPressEvent(QKeyEvent *event)
     bool s = event->key() == Qt::Key_S;
     bool m = event->key() == Qt::Key_M;
     bool c = event->key() == Qt::Key_C;
-    bool p = event->key() == Qt::Key_P;
+    bool b = event->key() == Qt::Key_B;
     bool n = event->key() == Qt::Key_N;
     bool a = event->key() == Qt::Key_A;
     bool mas = event->key() == Qt::Key_Plus;
@@ -238,50 +238,61 @@ void VentanaDeGraficacion::keyPressEvent(QKeyEvent *event)
 
     if(ctrl and mas)
     {
+        filtros = new Brillo(1);
         cout<<"Ctrl + '+': Aumentar brillo.\n";
         cout.flush();
-        filtros.aumentarBrillo(&imagen);
+        appl->closeAllWindows();
+        imagen = filtros->aplicarFiltro(imagen);
+        show();
         repaint();
     }
 
     if(ctrl and menos)
     {
+        filtros = new Brillo(2);
         cout<<"Ctrl + '-': Reducir brillo.\n";
         cout.flush();
-        filtros.reducirBrillo(&imagen);
+//        appl->closeAllWindows();
+        this->close();
+        imagen = filtros->aplicarFiltro(imagen);
+        show();
         repaint();
     }
 
     if(ctrl and c)
     {
+        filtros = new Contraste;
         cout<<"Ctrl + c: Ajuste de contraste.\n";
         cout.flush();
-        filtros.ajusteContraste(&imagen);
+        imagen = filtros->aplicarFiltro(imagen);
         repaint();
     }
 
-    if(ctrl and p)
+    if(ctrl and s)
     {
-        cout<<"Ctrl + p: Aplica filtro pasa bajos.\n";
+        filtros = new FiltroPasaBajos;
+        cout<<"Ctrl + s: Aplica filtro pasa bajos.\n";
         cout.flush();
-        imagen = filtros.aplicaFiltroPasaBajos(imagen);
+        imagen = filtros->aplicarFiltro(imagen);
         repaint();
 
     }
 
     if(ctrl and a)
     {
+        filtros = new FiltroPasaAltos;
         cout<<"Ctrl + a: Aplicar filtro pasa altos.\n";
         cout.flush();
-        imagen = filtros.aplicaFiltroPasaAltos(imagen);
+        imagen = filtros->aplicarFiltro(imagen);
         repaint();
     }
 
     if(ctrl and n)
     {
+        filtros = new Negativo;
         cout<<"Ctrl + n: Aplica negativo.\n";
         cout.flush();
-        imagen = filtros.aplicaNegativo(imagen);
+        imagen = filtros->aplicarFiltro(imagen);
         repaint();
     }
 
@@ -306,9 +317,10 @@ void VentanaDeGraficacion::keyPressEvent(QKeyEvent *event)
 
     if(ctrl and m)
     {
+        filtros = new FiltroMediana;
         cout<<"Ctrl + m: Aplica filtro de mediana.\n";
         cout.flush();
-        filtros.aplicaFiltroMediana(&imagen);
+        imagen = filtros->aplicarFiltro(imagen);
         repaint();
     }
 
@@ -332,13 +344,21 @@ void VentanaDeGraficacion::keyPressEvent(QKeyEvent *event)
         seGraficaPseudocoloreada = false;
         tablaDePseudocoloreo = 0;
     }
+
+    if (ctrl and b)
+    {
+        filtros = new Binarizado;
+        cout<<"Ctrl + b: Se binariza la Imagen\n";
+        appl->closeAllWindows();
+        imagen = filtros->aplicarFiltro(imagen);
+        show();
+        repaint();
+    }
 }
 
 void VentanaDeGraficacion::mousePressEvent(QMouseEvent *event)
 {
-    Filtros filtros;
     bool click_izq = event->button() == Qt::LeftButton;
-    bool click_der = event->button() == Qt::RightButton;
     bool ctrl = event->modifiers() == Qt::ControlModifier;
 
     if(ctrl and click_izq)
@@ -346,7 +366,6 @@ void VentanaDeGraficacion::mousePressEvent(QMouseEvent *event)
 
         cout<<"ctrl + Clic Izquierdo: Se aplica algoritmo del pintor.\n";
         cout.flush();
-        int alto_sin_titulo = altoV - 35;
 
         int f = altoV - ( QCursor::pos().y() - this->pos().y()) + 35;
         int c = QCursor::pos().x() - this->pos().x();
@@ -358,7 +377,9 @@ void VentanaDeGraficacion::mousePressEvent(QMouseEvent *event)
         f = imagen.getFilas()-1-f;
 
         AlgoritmoDelPintor algoritmo_del_pintor(imagen);
+        appl->closeAllWindows();
         imagen = algoritmo_del_pintor.aplicarAlgoritmo(f, c);
+        show();
         repaint();
 
     }

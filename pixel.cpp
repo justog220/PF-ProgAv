@@ -21,9 +21,17 @@ void Pixel::setPixelRGB(int valor_r, int valor_g, int valor_b)
 
 void Pixel::setPixelMonocr(int valor)
 {
-    r=valor;
-    g=valor;
-    b=valor;
+    if(valor == 0)
+    {
+        r=1;
+        g=1;
+        b=1;
+    }else{
+        r=0;
+        g=0;
+        b=0;
+    }
+
 }
 
 void Pixel::setPixelEscala(int valor)
@@ -53,11 +61,11 @@ int Pixel::getIntensidad()
     return getB();
 }
 
-void Pixel::aumentarBrillo()
+void Pixel::aumentarBrillo(int aumento)
 {
-    r++;
-    g++;
-    b++;
+    r += aumento;
+    g += aumento;
+    b += aumento;
 }
 
 void Pixel::reducirBrillo()

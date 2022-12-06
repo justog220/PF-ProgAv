@@ -80,6 +80,8 @@ int Sistema::obtenerOpcDir()
 
     while(opcDir < 1 or opcDir > opcCarpetas.size()+2)
     {
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout<<"\nIngrese una opcion valida: ";
 
         cin>>opcDir;
@@ -202,12 +204,10 @@ void Sistema::mostrarAtajos()
             cout<<linea<<endl;
         }
     }
+
 }
 
-void Sistema::apagar()
-{
-    corriendo = false;
-}
+
 
 
 

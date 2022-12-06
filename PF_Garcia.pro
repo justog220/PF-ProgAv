@@ -16,12 +16,19 @@ SOURCES += \
         algoritmodelpintor.cpp \
         archivosaic.cpp \
         archivospnm.cpp \
+        binarizado.cpp \
+        brillo.cpp \
+        contraste.cpp \
         espaciodetrabajo.cpp \
+        filtromediana.cpp \
+        filtropasaaltos.cpp \
+        filtropasabajos.cpp \
         filtros.cpp \
         gestordearchivos.cpp \
         graficadorhistograma.cpp \
         imagen.cpp \
         main.cpp \
+        negativo.cpp \
         pixel.cpp \
         procesadorestadistico.cpp \
         sistema.cpp \
@@ -39,11 +46,18 @@ HEADERS += \
     algoritmodelpintor.h \
     archivosaic.h \
     archivospnm.h \
+    binarizado.h \
+    brillo.h \
+    contraste.h \
     espaciodetrabajo.h \
+    filtromediana.h \
+    filtropasaaltos.h \
+    filtropasabajos.h \
     filtros.h \
     gestordearchivos.h \
     graficadorhistograma.h \
     imagen.h \
+    negativo.h \
     pixel.h \
     procesadorestadistico.h \
     sistema.h \

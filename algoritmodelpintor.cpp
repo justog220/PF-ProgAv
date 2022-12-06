@@ -43,15 +43,13 @@ void AlgoritmoDelPintor::pintarVecinos(int f, int c, Pixel pixelComparacion, uns
 
 unsigned int AlgoritmoDelPintor::preguntarRangoDeTolerancia(int maximo_rango_imag)
 {
-    system("clear");
-
     unsigned int tolerancia;
 
-    cout<<"Ingrese el rango de tolerancia que desea considerar: ";
+    cout<<"\t|__Ingrese el rango de tolerancia que desea considerar: ";
     cin>>tolerancia;
 
     while(tolerancia < 0 or tolerancia > maximo_rango_imag){
-        cout << "\nIngrese un valor de tolerancia dentro del rango admitido por la imagen [0, "<<maximo_rango_imag<<"]: ";
+        cout << "\t|__Ingrese un valor de tolerancia dentro del rango admitido por la imagen [0, "<<maximo_rango_imag<<"]: ";
         cin>>tolerancia;
     }
 

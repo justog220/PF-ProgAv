@@ -118,7 +118,7 @@ private:
      * \brief histograma Imagen que representa el Histograma.
      */
     Imagen histograma;
-protected:
+
     /*!
      * \brief construirHistograma Método protegido que permite la representacion de un Histograma como Imagen.
      */

@@ -61,6 +61,7 @@ Imagen ArchivosPNM::leer(string ruta)
 
         unsigned char r, g, b;
 
+
         int intEscala;
 
         int pos_final;
@@ -68,7 +69,7 @@ Imagen ArchivosPNM::leer(string ruta)
         switch(num_id)
         {
         case '1':
-            getline(archi, linea,'\n');
+            img.setRango(1);
             for(int j=0; j<filas_aux; j++)
             {
                 for(int i=0; i<columnas_aux; i++)
@@ -103,10 +104,12 @@ Imagen ArchivosPNM::leer(string ruta)
             {
                 for(int i=0; i<columnas_aux; i++)
                 {
-                    archi>>r>>g>>b;
-                    if((int)r>img.getRango() or (int)g>img.getRango() or (int)b>img.getRango())
+                    int R, G, B;
+                    archi>>R>>G>>B;
+
+                    if(R>img.getRango() or G>img.getRango() or B>img.getRango())
                         throw ExcepcionArchivoCorrupto();
-                    pix_aux.setPixelRGB((int)r, (int)g, (int)b);
+                    pix_aux.setPixelRGB(R, G, B);
                     img.setPixel(j, i, pix_aux);
                     contador_pixeles++;
                 }
@@ -114,9 +117,6 @@ Imagen ArchivosPNM::leer(string ruta)
             archi.close();
             break;
         case '4':
-
-
-            getline(archi, linea, '\n');
 
             for(int j=0; j<filas_aux; j++)
             {
@@ -274,28 +274,29 @@ void ArchivosPNM::escribeEncabezado(string rutaEscritura, Imagen *img)
 
 void ArchivosPNM::escribeP1(string rutaEscritura, Imagen *img)
 {
-//    archi.open(rutaEscritura, ios::out | ios::app);
+    archi.open(rutaEscritura, ios::out | ios::app);
 
-//    Pixel pix_aux;
+    Pixel pix_aux;
 
-//    unsigned char intEscala;
+    int intEscala;
 
-//    int filas_aux = img->getFilas(), columnas_aux = img->getColumnas();
+    int filas_aux = img->getFilas(), columnas_aux = img->getColumnas();
 
-//    for(int i=0; i<filas_aux; i++)
-//    {
-//        for(int j=0; j<columnas_aux-1; j++)
-//        {
-//          pix_aux = img->getPixel(i, j);
-//          intEscala = pix_aux.getR();
-//          archi<<intEscala<<" ";
-//        }
-//        pix_aux = img->getPixel(columnas_aux, j);
-//        intEscala = pix_aux.getR();
-//        archi<<intEscala<<" ";
-//        archi<<endl;
-//    }
-//    archi.close();
+    for(int i=0; i<filas_aux; i++)
+    {
+        for(int j=0; j<columnas_aux; j++)
+        {
+          pix_aux = img->getPixel(i, j);
+          intEscala = pix_aux.getR();
+          if(intEscala == 1)
+              intEscala = 0;
+          else
+              intEscala = 1;
+          archi<<intEscala<<" ";
+        }
+        archi<<"\n";
+    }
+    archi.close();
 }
 
 void ArchivosPNM::escribeP2(string rutaEscritura, Imagen *img)
@@ -304,17 +305,17 @@ void ArchivosPNM::escribeP2(string rutaEscritura, Imagen *img)
 
     Pixel pix_aux;
 
-    unsigned char intEscala;
+    int intEscala;
 
     int filas_aux = img->getFilas(), columnas_aux = img->getColumnas();
 
-    for(int j=0; j<filas_aux-1; j++)
+    for(int i=0; i<filas_aux; i++)
     {
-        for(int i=0; i<columnas_aux-1; i++)
+        for(int j=0; j<columnas_aux; j++)
         {
            pix_aux = img->getPixel(i, j);
            intEscala = pix_aux.getR();
-           archi<<intEscala;
+           archi<<intEscala<<" ";
         }
         archi<<endl;
     }
@@ -428,10 +429,8 @@ void ArchivosPNM::escribeP6(string rutaEscritura, Imagen *img)
 
 string ArchivosPNM::obtieneRutaGuardado(string idImagen)
 {
-    system("clear");
-
     string rutaGuardado = "./Imagenes/Imagenes_guardadas/", nombre;
-    cout<<"Ingrese nombre con el que desea guardar la imágen. (No utilice '/')\n";
+    cout<<"\t  Ingrese nombre con el que desea guardar la imágen. (No utilice '/')\n\t\t>";
     cin>>nombre;
 
     switch(idImagen[1])

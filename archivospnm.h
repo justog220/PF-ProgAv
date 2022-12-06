@@ -38,7 +38,26 @@ public:
      */
     void guardar(Imagen *img) override;
 
-protected:
+private:
+    /*! \param archi Archivo de entrada o sálida de
+     * tipo PNM.
+    */
+    fstream archi;
+
+    /*! \param identificador Parámetro que almacena el identificador del
+     * archivo.
+    */
+    string identificador;
+
+
+    /*!
+     * \brief       obtieneRutaGuardado Método privado auxiliar para el guardado
+     * de una imágen, permite consultarle al usuario el nombre, y por lo tanto la ruta en la que se guarda.
+     * \param[in]   idImagen Identificador de la imágen a guardar para determinar su extensión.
+     * \return      String que representa la ruta en la que se guardará.
+     */
+    string obtieneRutaGuardado(string idImagen);
+
     /*!
      * \brief       escribeEncabezado Método protegido auxiliar para el guardado
      * de una imágen, permite escribir el encabezado de un archivo PNM.
@@ -94,26 +113,6 @@ protected:
      * \param[in]   img Imagen por referencia, es la que se almacena.
      */
     void escribeP6(string rutaEscritura, Imagen *img);
-
-private:
-    /*! \param archi Archivo de entrada o sálida de
-     * tipo PNM.
-    */
-    fstream archi;
-
-    /*! \param identificador Parámetro que almacena el identificador del
-     * archivo.
-    */
-    string identificador;
-
-
-    /*!
-     * \brief       obtieneRutaGuardado Método privado auxiliar para el guardado
-     * de una imágen, permite consultarle al usuario el nombre, y por lo tanto la ruta en la que se guarda.
-     * \param[in]   idImagen Identificador de la imágen a guardar para determinar su extensión.
-     * \return      String que representa la ruta en la que se guardará.
-     */
-    string obtieneRutaGuardado(string idImagen);
 };
 
 #endif // ARCHIVOSPNM_H

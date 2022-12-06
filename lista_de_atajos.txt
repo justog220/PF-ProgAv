@@ -40,9 +40,6 @@ Lista de atajos:
 	|__Disminuir brillo
 	|	|__ ctrl + '-' 
 	|
-	|__Aplicar filtro Pasa Bajos
-	|	|__ctrl + p
-	|
 	|__Aplicar filtro Pasa Altos
 	|	|__ctrl + a
 	|

@@ -148,62 +148,62 @@ $(document).ready(function(){initNavTree('archivospnm_8cpp_source.html',''); ini
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, g, b;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">int</span> intEscala;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">int</span> pos_final;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">switch</span>(num_id)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;1&#39;</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            getline(<a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>, linea,<span class="charliteral">&#39;\n&#39;</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;filas_aux; j++)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;columnas_aux; i++)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                  <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&gt;&gt;intEscala;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                  pix_aux.<a class="code" href="class_pixel.html#ab624ff85be3e3d7b6d5f3e139300c1ef">setPixelMonocr</a>((<span class="keywordtype">int</span>)intEscala);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                  img.<a class="code" href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">setPixel</a>(j, i, pix_aux);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                  contador_pixeles++;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;2&#39;</span>:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            getline(<a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>, linea,<span class="charliteral">&#39;\n&#39;</span>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;filas_aux; j++)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;columnas_aux; i++)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                   <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&gt;&gt;intEscala;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                   <span class="keywordflow">if</span>((<span class="keywordtype">int</span>)intEscala&gt;img.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>())</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                       <span class="keywordflow">throw</span> <a class="code" href="class_excepcion_archivo_corrupto.html">ExcepcionArchivoCorrupto</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                   pix_aux.<a class="code" href="class_pixel.html#affd7e85713e18281b51e0e676485f704">setPixelEscala</a>((<span class="keywordtype">int</span>)intEscala);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                   img.<a class="code" href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">setPixel</a>(j, i, pix_aux);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                   contador_pixeles++;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;3&#39;</span>:</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;filas_aux; j++)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;columnas_aux; i++)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&gt;&gt;r&gt;&gt;g&gt;&gt;b;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    <span class="keywordflow">if</span>((<span class="keywordtype">int</span>)r&gt;img.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>() or (<span class="keywordtype">int</span>)g&gt;img.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>() or (<span class="keywordtype">int</span>)b&gt;img.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>())</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                        <span class="keywordflow">throw</span> <a class="code" href="class_excepcion_archivo_corrupto.html">ExcepcionArchivoCorrupto</a>();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    pix_aux.<a class="code" href="class_pixel.html#a9c4c2037575b8c94c37e6f947fc2749d">setPixelRGB</a>((<span class="keywordtype">int</span>)r, (<span class="keywordtype">int</span>)g, (<span class="keywordtype">int</span>)b);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    img.<a class="code" href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">setPixel</a>(j, i, pix_aux);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    contador_pixeles++;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;4&#39;</span>:</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            getline(<a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>, linea, <span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">int</span> intEscala;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">int</span> pos_final;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">switch</span>(num_id)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;1&#39;</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            img.<a class="code" href="class_imagen.html#ac6be498c1eadda6e7a5bf603c7ababc3">setRango</a>(1);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;filas_aux; j++)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;columnas_aux; i++)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                  <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&gt;&gt;intEscala;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                  pix_aux.<a class="code" href="class_pixel.html#ab624ff85be3e3d7b6d5f3e139300c1ef">setPixelMonocr</a>((<span class="keywordtype">int</span>)intEscala);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                  img.<a class="code" href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">setPixel</a>(j, i, pix_aux);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                  contador_pixeles++;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;2&#39;</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            getline(<a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>, linea,<span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;filas_aux; j++)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;columnas_aux; i++)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                   <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&gt;&gt;intEscala;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                   <span class="keywordflow">if</span>((<span class="keywordtype">int</span>)intEscala&gt;img.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>())</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                       <span class="keywordflow">throw</span> <a class="code" href="class_excepcion_archivo_corrupto.html">ExcepcionArchivoCorrupto</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                   pix_aux.<a class="code" href="class_pixel.html#affd7e85713e18281b51e0e676485f704">setPixelEscala</a>((<span class="keywordtype">int</span>)intEscala);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                   img.<a class="code" href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">setPixel</a>(j, i, pix_aux);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                   contador_pixeles++;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;3&#39;</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;filas_aux; j++)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;columnas_aux; i++)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    <span class="keywordtype">int</span> R, G, B;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&gt;&gt;R&gt;&gt;G&gt;&gt;B;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    <span class="keywordflow">if</span>(R&gt;img.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>() or G&gt;img.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>() or B&gt;img.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>())</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                        <span class="keywordflow">throw</span> <a class="code" href="class_excepcion_archivo_corrupto.html">ExcepcionArchivoCorrupto</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    pix_aux.<a class="code" href="class_pixel.html#a9c4c2037575b8c94c37e6f947fc2749d">setPixelRGB</a>(R, G, B);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    img.<a class="code" href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">setPixel</a>(j, i, pix_aux);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                    contador_pixeles++;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;4&#39;</span>:</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;filas_aux; j++)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            {</div>
@@ -361,205 +361,204 @@ $(document).ready(function(){initNavTree('archivospnm_8cpp_source.html',''); ini
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
 <div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="class_archivos_p_n_m.html#a1bb26b0901114866da19db7bf23c8825">  275</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_p_n_m.html#a1bb26b0901114866da19db7bf23c8825">ArchivosPNM::escribeP1</a>(<span class="keywordtype">string</span> rutaEscritura, <a class="code" href="class_imagen.html">Imagen</a> *img)</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;{</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">//    archi.open(rutaEscritura, ios::out | ios::app);</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.open(rutaEscritura, ios::out | ios::app);</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment">//    Pixel pix_aux;</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment">//    unsigned char intEscala;</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordtype">int</span> intEscala;</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment">//    int filas_aux = img-&gt;getFilas(), columnas_aux = img-&gt;getColumnas();</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordtype">int</span> filas_aux = img-&gt;<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(), columnas_aux = img-&gt;<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>();</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">//    for(int i=0; i&lt;filas_aux; i++)</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment">//    {</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">//        for(int j=0; j&lt;columnas_aux-1; j++)</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">//        {</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">//          pix_aux = img-&gt;getPixel(i, j);</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment">//          intEscala = pix_aux.getR();</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">//          archi&lt;&lt;intEscala&lt;&lt;&quot; &quot;;</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment">//        }</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">//        pix_aux = img-&gt;getPixel(columnas_aux, j);</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">//        intEscala = pix_aux.getR();</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">//        archi&lt;&lt;intEscala&lt;&lt;&quot; &quot;;</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">//        archi&lt;&lt;endl;</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">//    }</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">//    archi.close();</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;}</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
-<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="class_archivos_p_n_m.html#ac2005789de82eea06ec15cce630ec68b">  301</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_p_n_m.html#ac2005789de82eea06ec15cce630ec68b">ArchivosPNM::escribeP2</a>(<span class="keywordtype">string</span> rutaEscritura, <a class="code" href="class_imagen.html">Imagen</a> *img)</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;{</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.open(rutaEscritura, ios::out | ios::app);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> intEscala;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">int</span> filas_aux = img-&gt;<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(), columnas_aux = img-&gt;<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>();</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;filas_aux-1; j++)</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    {</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;columnas_aux-1; i++)</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        {</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;           pix_aux = img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;           intEscala = pix_aux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>();</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;           <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&lt;&lt;intEscala;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        }</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&lt;&lt;endl;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    }</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;}</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
-<div class="line"><a name="l00324"></a><span class="lineno"><a class="line" href="class_archivos_p_n_m.html#a3067dc6900e9f8cd62c813a64953d2f1">  324</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_p_n_m.html#a3067dc6900e9f8cd62c813a64953d2f1">ArchivosPNM::escribeP3</a>(<span class="keywordtype">string</span> rutaEscritura, <a class="code" href="class_imagen.html">Imagen</a> *img)</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;{</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.open(rutaEscritura, ios::out | ios::app);</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, g, b;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordtype">int</span> filas_aux = img-&gt;<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(), columnas_aux = img-&gt;<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>();</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;filas_aux; j++)</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    {</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;columnas_aux; i++)</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        {</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            pix_aux = img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            r = pix_aux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>();</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            g = pix_aux.<a class="code" href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">getG</a>();</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            b = pix_aux.<a class="code" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">getB</a>();</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&lt;&lt;r&lt;&lt;g&lt;&lt;b;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        }</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&lt;&lt;endl;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    }</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;}</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
-<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="class_archivos_p_n_m.html#a2b19442f76eb7b58a2a42ba82be7c511">  349</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_p_n_m.html#a2b19442f76eb7b58a2a42ba82be7c511">ArchivosPNM::escribeP4</a>(<span class="keywordtype">string</span> rutaEscritura, <a class="code" href="class_imagen.html">Imagen</a> *img)</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;{</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.open(rutaEscritura, ios::out | ios::binary |ios::app);</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordtype">int</span> filas_aux = img-&gt;<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(), columnas_aux = img-&gt;<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>();</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> escala;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;filas_aux; j++)</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    {</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;columnas_aux; i++)</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        {</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            pix_aux = img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            escala = pix_aux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>();</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.write((<span class="keywordtype">char</span>*)&amp;escala, <span class="keyword">sizeof</span>(escala));</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        }</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;}</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
-<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="class_archivos_p_n_m.html#ab091b820a7e61822d5ef2715714469c6">  371</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_p_n_m.html#ab091b820a7e61822d5ef2715714469c6">ArchivosPNM::escribeP5</a>(<span class="keywordtype">string</span> rutaEscritura, <a class="code" href="class_imagen.html">Imagen</a> *img)</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;{</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.open(rutaEscritura, ios::out | ios::binary |ios::app);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordtype">int</span> filas_aux = img-&gt;<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(), columnas_aux = img-&gt;<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>();</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> escala;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;filas_aux; i++)</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    {</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;columnas_aux; j++)</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        {</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            pix_aux = img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            escala = (<span class="keywordtype">unsigned</span> char)pix_aux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>();</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.write((<span class="keywordtype">char</span>*)&amp;(escala), <span class="keyword">sizeof</span>(escala));</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        }</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    }</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;}</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
-<div class="line"><a name="l00396"></a><span class="lineno"><a class="line" href="class_archivos_p_n_m.html#a2b0e12a9a30907af139040aad4d2a838">  396</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_p_n_m.html#a2b0e12a9a30907af139040aad4d2a838">ArchivosPNM::escribeP6</a>(<span class="keywordtype">string</span> rutaEscritura, <a class="code" href="class_imagen.html">Imagen</a> *img)</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;{</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.open(rutaEscritura, ios::out | ios::binary | ios::app);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keywordtype">int</span> filas_aux = img-&gt;<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(), columnas_aux = img-&gt;<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>();</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; </div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, g, b;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160; </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;filas_aux; i++)</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    {</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;columnas_aux; j++)</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        {</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            pix_aux = img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;            r = (<span class="keywordtype">unsigned</span> char)pix_aux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>();</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            g = (<span class="keywordtype">unsigned</span> char)pix_aux.<a class="code" href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">getG</a>();</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            b = (<span class="keywordtype">unsigned</span> char)pix_aux.<a class="code" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">getB</a>();</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160; </div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.write((<span class="keywordtype">char</span>*)&amp;r, <span class="keyword">sizeof</span>(r));</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.write((<span class="keywordtype">char</span>*)&amp;g, <span class="keyword">sizeof</span>(g));</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.write((<span class="keywordtype">char</span>*)&amp;b, <span class="keyword">sizeof</span>(b));</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        }</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    }</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;}</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
-<div class="line"><a name="l00429"></a><span class="lineno"><a class="line" href="class_archivos_p_n_m.html#ab18c2f63835fa6482204ca1d55783c53">  429</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_archivos_p_n_m.html#ab18c2f63835fa6482204ca1d55783c53">ArchivosPNM::obtieneRutaGuardado</a>(<span class="keywordtype">string</span> idImagen)</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;{</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    system(<span class="stringliteral">&quot;clear&quot;</span>);</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160; </div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordtype">string</span> rutaGuardado = <span class="stringliteral">&quot;./Imagenes/Imagenes_guardadas/&quot;</span>, nombre;</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;Ingrese nombre con el que desea guardar la imágen. (No utilice &#39;/&#39;)\n&quot;</span>;</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    cin&gt;&gt;nombre;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keywordflow">switch</span>(idImagen[1])</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    {</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;1&#39;</span>:</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        nombre = nombre + <span class="stringliteral">&quot;.pbm&quot;</span>;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;2&#39;</span>:</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        nombre = nombre + <span class="stringliteral">&quot;.pgm&quot;</span>;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;3&#39;</span>:</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        nombre = nombre + <span class="stringliteral">&quot;.ppm&quot;</span>;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;4&#39;</span>:</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        nombre = nombre + <span class="stringliteral">&quot;.pbm&quot;</span>;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;5&#39;</span>:</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        nombre = nombre + <span class="stringliteral">&quot;.pgm&quot;</span>;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;6&#39;</span>:</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        nombre = nombre + <span class="stringliteral">&quot;.ppm&quot;</span>;</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    }</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160; </div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    rutaGuardado = rutaGuardado + nombre;</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160; </div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <span class="keywordflow">return</span> rutaGuardado;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;}</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;filas_aux; i++)</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    {</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;columnas_aux; j++)</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;          pix_aux = img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;          intEscala = pix_aux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>();</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;          <span class="keywordflow">if</span>(intEscala == 1)</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;              intEscala = 0;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;          <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;              intEscala = 1;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;          <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&lt;&lt;intEscala&lt;&lt;<span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="class_archivos_p_n_m.html#ac2005789de82eea06ec15cce630ec68b">  302</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_p_n_m.html#ac2005789de82eea06ec15cce630ec68b">ArchivosPNM::escribeP2</a>(<span class="keywordtype">string</span> rutaEscritura, <a class="code" href="class_imagen.html">Imagen</a> *img)</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;{</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.open(rutaEscritura, ios::out | ios::app);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordtype">int</span> intEscala;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">int</span> filas_aux = img-&gt;<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(), columnas_aux = img-&gt;<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>();</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;filas_aux; i++)</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    {</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;columnas_aux; j++)</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        {</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;           pix_aux = img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;           intEscala = pix_aux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>();</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;           <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&lt;&lt;intEscala&lt;&lt;<span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        }</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&lt;&lt;endl;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    }</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;}</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
+<div class="line"><a name="l00325"></a><span class="lineno"><a class="line" href="class_archivos_p_n_m.html#a3067dc6900e9f8cd62c813a64953d2f1">  325</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_p_n_m.html#a3067dc6900e9f8cd62c813a64953d2f1">ArchivosPNM::escribeP3</a>(<span class="keywordtype">string</span> rutaEscritura, <a class="code" href="class_imagen.html">Imagen</a> *img)</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;{</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.open(rutaEscritura, ios::out | ios::app);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, g, b;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordtype">int</span> filas_aux = img-&gt;<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(), columnas_aux = img-&gt;<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>();</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;filas_aux; j++)</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;columnas_aux; i++)</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            pix_aux = img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            r = pix_aux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>();</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            g = pix_aux.<a class="code" href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">getG</a>();</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            b = pix_aux.<a class="code" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">getB</a>();</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&lt;&lt;r&lt;&lt;g&lt;&lt;b;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>&lt;&lt;endl;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;}</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
+<div class="line"><a name="l00350"></a><span class="lineno"><a class="line" href="class_archivos_p_n_m.html#a2b19442f76eb7b58a2a42ba82be7c511">  350</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_p_n_m.html#a2b19442f76eb7b58a2a42ba82be7c511">ArchivosPNM::escribeP4</a>(<span class="keywordtype">string</span> rutaEscritura, <a class="code" href="class_imagen.html">Imagen</a> *img)</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;{</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.open(rutaEscritura, ios::out | ios::binary |ios::app);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordtype">int</span> filas_aux = img-&gt;<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(), columnas_aux = img-&gt;<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>();</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> escala;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;filas_aux; j++)</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    {</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;columnas_aux; i++)</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        {</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            pix_aux = img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            escala = pix_aux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>();</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.write((<span class="keywordtype">char</span>*)&amp;escala, <span class="keyword">sizeof</span>(escala));</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        }</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;}</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
+<div class="line"><a name="l00372"></a><span class="lineno"><a class="line" href="class_archivos_p_n_m.html#ab091b820a7e61822d5ef2715714469c6">  372</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_p_n_m.html#ab091b820a7e61822d5ef2715714469c6">ArchivosPNM::escribeP5</a>(<span class="keywordtype">string</span> rutaEscritura, <a class="code" href="class_imagen.html">Imagen</a> *img)</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;{</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.open(rutaEscritura, ios::out | ios::binary |ios::app);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordtype">int</span> filas_aux = img-&gt;<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(), columnas_aux = img-&gt;<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>();</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> escala;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;filas_aux; i++)</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    {</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;columnas_aux; j++)</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        {</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            pix_aux = img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            escala = (<span class="keywordtype">unsigned</span> char)pix_aux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>();</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.write((<span class="keywordtype">char</span>*)&amp;(escala), <span class="keyword">sizeof</span>(escala));</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        }</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;}</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
+<div class="line"><a name="l00397"></a><span class="lineno"><a class="line" href="class_archivos_p_n_m.html#a2b0e12a9a30907af139040aad4d2a838">  397</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_archivos_p_n_m.html#a2b0e12a9a30907af139040aad4d2a838">ArchivosPNM::escribeP6</a>(<span class="keywordtype">string</span> rutaEscritura, <a class="code" href="class_imagen.html">Imagen</a> *img)</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;{</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.open(rutaEscritura, ios::out | ios::binary | ios::app);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="keywordtype">int</span> filas_aux = img-&gt;<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(), columnas_aux = img-&gt;<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>();</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> r, g, b;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;filas_aux; i++)</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    {</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;columnas_aux; j++)</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        {</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;            pix_aux = img-&gt;<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;            r = (<span class="keywordtype">unsigned</span> char)pix_aux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>();</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160; </div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;            g = (<span class="keywordtype">unsigned</span> char)pix_aux.<a class="code" href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">getG</a>();</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            b = (<span class="keywordtype">unsigned</span> char)pix_aux.<a class="code" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">getB</a>();</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.write((<span class="keywordtype">char</span>*)&amp;r, <span class="keyword">sizeof</span>(r));</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.write((<span class="keywordtype">char</span>*)&amp;g, <span class="keyword">sizeof</span>(g));</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;            <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.write((<span class="keywordtype">char</span>*)&amp;b, <span class="keyword">sizeof</span>(b));</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        }</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    }</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <a class="code" href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">archi</a>.close();</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;}</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
+<div class="line"><a name="l00430"></a><span class="lineno"><a class="line" href="class_archivos_p_n_m.html#ab18c2f63835fa6482204ca1d55783c53">  430</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_archivos_p_n_m.html#ab18c2f63835fa6482204ca1d55783c53">ArchivosPNM::obtieneRutaGuardado</a>(<span class="keywordtype">string</span> idImagen)</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;{</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keywordtype">string</span> rutaGuardado = <span class="stringliteral">&quot;./Imagenes/Imagenes_guardadas/&quot;</span>, nombre;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;\t  Ingrese nombre con el que desea guardar la imágen. (No utilice &#39;/&#39;)\n\t\t&gt;&quot;</span>;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    cin&gt;&gt;nombre;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160; </div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">switch</span>(idImagen[1])</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    {</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;1&#39;</span>:</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        nombre = nombre + <span class="stringliteral">&quot;.pbm&quot;</span>;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;2&#39;</span>:</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        nombre = nombre + <span class="stringliteral">&quot;.pgm&quot;</span>;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;3&#39;</span>:</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        nombre = nombre + <span class="stringliteral">&quot;.ppm&quot;</span>;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;4&#39;</span>:</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        nombre = nombre + <span class="stringliteral">&quot;.pbm&quot;</span>;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;5&#39;</span>:</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        nombre = nombre + <span class="stringliteral">&quot;.pgm&quot;</span>;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;6&#39;</span>:</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        nombre = nombre + <span class="stringliteral">&quot;.ppm&quot;</span>;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    }</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    rutaGuardado = rutaGuardado + nombre;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160; </div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="keywordflow">return</span> rutaGuardado;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;}</div>
 <div class="ttc" id="aarchivospnm_8h_html"><div class="ttname"><a href="archivospnm_8h.html">archivospnm.h</a></div></div>
 <div class="ttc" id="aclass_archivos_p_n_m_html_a1bb26b0901114866da19db7bf23c8825"><div class="ttname"><a href="class_archivos_p_n_m.html#a1bb26b0901114866da19db7bf23c8825">ArchivosPNM::escribeP1</a></div><div class="ttdeci">void escribeP1(string rutaEscritura, Imagen *img)</div><div class="ttdoc">escribeP1 Método protegido auxiliar para el guardado de una imágen, permite escribir una imágen,...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00275">archivospnm.cpp:275</a></div></div>
 <div class="ttc" id="aclass_archivos_p_n_m_html_a20f53f64db785802b51d27a92976f55c"><div class="ttname"><a href="class_archivos_p_n_m.html#a20f53f64db785802b51d27a92976f55c">ArchivosPNM::escribeEncabezado</a></div><div class="ttdeci">void escribeEncabezado(string rutaEscritura, Imagen *img)</div><div class="ttdoc">escribeEncabezado Método protegido auxiliar para el guardado de una imágen, permite escribir el encab...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00251">archivospnm.cpp:251</a></div></div>
-<div class="ttc" id="aclass_archivos_p_n_m_html_a2b0e12a9a30907af139040aad4d2a838"><div class="ttname"><a href="class_archivos_p_n_m.html#a2b0e12a9a30907af139040aad4d2a838">ArchivosPNM::escribeP6</a></div><div class="ttdeci">void escribeP6(string rutaEscritura, Imagen *img)</div><div class="ttdoc">escribeP1 Método protegido auxiliar para el guardado de una imágen, permite escribir una imágen,...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00396">archivospnm.cpp:396</a></div></div>
-<div class="ttc" id="aclass_archivos_p_n_m_html_a2b19442f76eb7b58a2a42ba82be7c511"><div class="ttname"><a href="class_archivos_p_n_m.html#a2b19442f76eb7b58a2a42ba82be7c511">ArchivosPNM::escribeP4</a></div><div class="ttdeci">void escribeP4(string rutaEscritura, Imagen *img)</div><div class="ttdoc">escribeP1 Método protegido auxiliar para el guardado de una imágen, permite escribir una imágen,...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00349">archivospnm.cpp:349</a></div></div>
-<div class="ttc" id="aclass_archivos_p_n_m_html_a3067dc6900e9f8cd62c813a64953d2f1"><div class="ttname"><a href="class_archivos_p_n_m.html#a3067dc6900e9f8cd62c813a64953d2f1">ArchivosPNM::escribeP3</a></div><div class="ttdeci">void escribeP3(string rutaEscritura, Imagen *img)</div><div class="ttdoc">escribeP1 Método protegido auxiliar para el guardado de una imágen, permite escribir una imágen,...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00324">archivospnm.cpp:324</a></div></div>
+<div class="ttc" id="aclass_archivos_p_n_m_html_a2b0e12a9a30907af139040aad4d2a838"><div class="ttname"><a href="class_archivos_p_n_m.html#a2b0e12a9a30907af139040aad4d2a838">ArchivosPNM::escribeP6</a></div><div class="ttdeci">void escribeP6(string rutaEscritura, Imagen *img)</div><div class="ttdoc">escribeP1 Método protegido auxiliar para el guardado de una imágen, permite escribir una imágen,...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00397">archivospnm.cpp:397</a></div></div>
+<div class="ttc" id="aclass_archivos_p_n_m_html_a2b19442f76eb7b58a2a42ba82be7c511"><div class="ttname"><a href="class_archivos_p_n_m.html#a2b19442f76eb7b58a2a42ba82be7c511">ArchivosPNM::escribeP4</a></div><div class="ttdeci">void escribeP4(string rutaEscritura, Imagen *img)</div><div class="ttdoc">escribeP1 Método protegido auxiliar para el guardado de una imágen, permite escribir una imágen,...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00350">archivospnm.cpp:350</a></div></div>
+<div class="ttc" id="aclass_archivos_p_n_m_html_a3067dc6900e9f8cd62c813a64953d2f1"><div class="ttname"><a href="class_archivos_p_n_m.html#a3067dc6900e9f8cd62c813a64953d2f1">ArchivosPNM::escribeP3</a></div><div class="ttdeci">void escribeP3(string rutaEscritura, Imagen *img)</div><div class="ttdoc">escribeP1 Método protegido auxiliar para el guardado de una imágen, permite escribir una imágen,...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00325">archivospnm.cpp:325</a></div></div>
 <div class="ttc" id="aclass_archivos_p_n_m_html_a5ae7d9ed0f791ed5c4f841b7c12656bf"><div class="ttname"><a href="class_archivos_p_n_m.html#a5ae7d9ed0f791ed5c4f841b7c12656bf">ArchivosPNM::leer</a></div><div class="ttdeci">Imagen leer(string ruta) override</div><div class="ttdoc">leer Se redefine el metodo heredado de GestorDeArchivos y que permite leer imágenes de un archivo PNM...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00008">archivospnm.cpp:8</a></div></div>
-<div class="ttc" id="aclass_archivos_p_n_m_html_a87b39a9e915743d94732794e3bb78dd7"><div class="ttname"><a href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">ArchivosPNM::archi</a></div><div class="ttdeci">fstream archi</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8h_source.html#l00102">archivospnm.h:102</a></div></div>
-<div class="ttc" id="aclass_archivos_p_n_m_html_ab091b820a7e61822d5ef2715714469c6"><div class="ttname"><a href="class_archivos_p_n_m.html#ab091b820a7e61822d5ef2715714469c6">ArchivosPNM::escribeP5</a></div><div class="ttdeci">void escribeP5(string rutaEscritura, Imagen *img)</div><div class="ttdoc">escribeP1 Método protegido auxiliar para el guardado de una imágen, permite escribir una imágen,...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00371">archivospnm.cpp:371</a></div></div>
-<div class="ttc" id="aclass_archivos_p_n_m_html_ab18c2f63835fa6482204ca1d55783c53"><div class="ttname"><a href="class_archivos_p_n_m.html#ab18c2f63835fa6482204ca1d55783c53">ArchivosPNM::obtieneRutaGuardado</a></div><div class="ttdeci">string obtieneRutaGuardado(string idImagen)</div><div class="ttdoc">obtieneRutaGuardado Método privado auxiliar para el guardado de una imágen, permite consultarle al us...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00429">archivospnm.cpp:429</a></div></div>
-<div class="ttc" id="aclass_archivos_p_n_m_html_ac2005789de82eea06ec15cce630ec68b"><div class="ttname"><a href="class_archivos_p_n_m.html#ac2005789de82eea06ec15cce630ec68b">ArchivosPNM::escribeP2</a></div><div class="ttdeci">void escribeP2(string rutaEscritura, Imagen *img)</div><div class="ttdoc">escribeP1 Método protegido auxiliar para el guardado de una imágen, permite escribir una imágen,...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00301">archivospnm.cpp:301</a></div></div>
+<div class="ttc" id="aclass_archivos_p_n_m_html_a87b39a9e915743d94732794e3bb78dd7"><div class="ttname"><a href="class_archivos_p_n_m.html#a87b39a9e915743d94732794e3bb78dd7">ArchivosPNM::archi</a></div><div class="ttdeci">fstream archi</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8h_source.html#l00045">archivospnm.h:45</a></div></div>
+<div class="ttc" id="aclass_archivos_p_n_m_html_ab091b820a7e61822d5ef2715714469c6"><div class="ttname"><a href="class_archivos_p_n_m.html#ab091b820a7e61822d5ef2715714469c6">ArchivosPNM::escribeP5</a></div><div class="ttdeci">void escribeP5(string rutaEscritura, Imagen *img)</div><div class="ttdoc">escribeP1 Método protegido auxiliar para el guardado de una imágen, permite escribir una imágen,...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00372">archivospnm.cpp:372</a></div></div>
+<div class="ttc" id="aclass_archivos_p_n_m_html_ab18c2f63835fa6482204ca1d55783c53"><div class="ttname"><a href="class_archivos_p_n_m.html#ab18c2f63835fa6482204ca1d55783c53">ArchivosPNM::obtieneRutaGuardado</a></div><div class="ttdeci">string obtieneRutaGuardado(string idImagen)</div><div class="ttdoc">obtieneRutaGuardado Método privado auxiliar para el guardado de una imágen, permite consultarle al us...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00430">archivospnm.cpp:430</a></div></div>
+<div class="ttc" id="aclass_archivos_p_n_m_html_ac2005789de82eea06ec15cce630ec68b"><div class="ttname"><a href="class_archivos_p_n_m.html#ac2005789de82eea06ec15cce630ec68b">ArchivosPNM::escribeP2</a></div><div class="ttdeci">void escribeP2(string rutaEscritura, Imagen *img)</div><div class="ttdoc">escribeP1 Método protegido auxiliar para el guardado de una imágen, permite escribir una imágen,...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00302">archivospnm.cpp:302</a></div></div>
 <div class="ttc" id="aclass_archivos_p_n_m_html_accebc41f3d1d9e7c3dc850d19bb8ca97"><div class="ttname"><a href="class_archivos_p_n_m.html#accebc41f3d1d9e7c3dc850d19bb8ca97">ArchivosPNM::ArchivosPNM</a></div><div class="ttdeci">ArchivosPNM()</div><div class="ttdoc">ArchivosPNM Constructor del objeto ArchivosPNM.</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00003">archivospnm.cpp:3</a></div></div>
-<div class="ttc" id="aclass_archivos_p_n_m_html_add99f5595bf7c7af37ee9a89827ec7b5"><div class="ttname"><a href="class_archivos_p_n_m.html#add99f5595bf7c7af37ee9a89827ec7b5">ArchivosPNM::identificador</a></div><div class="ttdeci">string identificador</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8h_source.html#l00107">archivospnm.h:107</a></div></div>
+<div class="ttc" id="aclass_archivos_p_n_m_html_add99f5595bf7c7af37ee9a89827ec7b5"><div class="ttname"><a href="class_archivos_p_n_m.html#add99f5595bf7c7af37ee9a89827ec7b5">ArchivosPNM::identificador</a></div><div class="ttdeci">string identificador</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8h_source.html#l00050">archivospnm.h:50</a></div></div>
 <div class="ttc" id="aclass_archivos_p_n_m_html_ae0fbeb8d709ae2ae527a6aaa76e53386"><div class="ttname"><a href="class_archivos_p_n_m.html#ae0fbeb8d709ae2ae527a6aaa76e53386">ArchivosPNM::guardar</a></div><div class="ttdeci">void guardar(Imagen *img) override</div><div class="ttdoc">guardar Se redefine el método heredado de GestorDeArchivos y que permite guardar imágenes en formato ...</div><div class="ttdef"><b>Definition:</b> <a href="archivospnm_8cpp_source.html#l00207">archivospnm.cpp:207</a></div></div>
 <div class="ttc" id="aclass_excepcion_archivo_corrupto_html"><div class="ttname"><a href="class_excepcion_archivo_corrupto.html">ExcepcionArchivoCorrupto</a></div><div class="ttdef"><b>Definition:</b> <a href="_excepcion_archivo_corrupto_8h_source.html#l00008">ExcepcionArchivoCorrupto.h:9</a></div></div>
 <div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00022">imagen.h:23</a></div></div>
@@ -576,20 +575,20 @@ $(document).ready(function(){initNavTree('archivospnm_8cpp_source.html',''); ini
 <div class="ttc" id="aclass_imagen_html_ac9210700a20d35ca768f8c9c11b949a6"><div class="ttname"><a href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">Imagen::getPixel</a></div><div class="ttdeci">Pixel getPixel(int f, int c)</div><div class="ttdoc">getPixel Método que permite devolver un Pixel de la imágen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00022">imagen.cpp:22</a></div></div>
 <div class="ttc" id="aclass_imagen_html_af1f4833ddf4987c3ab0ff9c65d224093"><div class="ttname"><a href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">Imagen::getFilas</a></div><div class="ttdeci">int getFilas()</div><div class="ttdoc">getFilas Se utiliza para conocer el número de filas de la imágen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00047">imagen.cpp:47</a></div></div>
 <div class="ttc" id="aclass_imagen_html_affda44cc73f0a8bf8cc7dc1021e47f25"><div class="ttname"><a href="class_imagen.html#affda44cc73f0a8bf8cc7dc1021e47f25">Imagen::setInformacion</a></div><div class="ttdeci">void setInformacion(string value)</div><div class="ttdoc">setInformacion Establece la información de la Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00109">imagen.cpp:109</a></div></div>
-<div class="ttc" id="aclass_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">Modela un pixel de una imagen..</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00022">pixel.h:23</a></div></div>
-<div class="ttc" id="aclass_pixel_html_a1ddae752d300c31889bcabc9ecf4882a"><div class="ttname"><a href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">Pixel::getR</a></div><div class="ttdeci">int getR()</div><div class="ttdoc">getR Devuelve el valor de R.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00036">pixel.cpp:36</a></div></div>
-<div class="ttc" id="aclass_pixel_html_a4fe71fb96079d8fa3756cb33b66581a3"><div class="ttname"><a href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">Pixel::getB</a></div><div class="ttdeci">int getB()</div><div class="ttdoc">getB Devuelve el valor de B.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00046">pixel.cpp:46</a></div></div>
-<div class="ttc" id="aclass_pixel_html_a7d11df716ef5c30421210a7b2d61e697"><div class="ttname"><a href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">Pixel::getG</a></div><div class="ttdeci">int getG()</div><div class="ttdoc">getG Devuelve el valor de G.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00041">pixel.cpp:41</a></div></div>
+<div class="ttc" id="aclass_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">Clase que modela un pixel de una imagen.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00022">pixel.h:23</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a1ddae752d300c31889bcabc9ecf4882a"><div class="ttname"><a href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">Pixel::getR</a></div><div class="ttdeci">int getR()</div><div class="ttdoc">getR Devuelve el valor de R.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00044">pixel.cpp:44</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a4fe71fb96079d8fa3756cb33b66581a3"><div class="ttname"><a href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">Pixel::getB</a></div><div class="ttdeci">int getB()</div><div class="ttdoc">getB Devuelve el valor de B.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00054">pixel.cpp:54</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a7d11df716ef5c30421210a7b2d61e697"><div class="ttname"><a href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">Pixel::getG</a></div><div class="ttdeci">int getG()</div><div class="ttdoc">getG Devuelve el valor de G.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00049">pixel.cpp:49</a></div></div>
 <div class="ttc" id="aclass_pixel_html_a9c4c2037575b8c94c37e6f947fc2749d"><div class="ttname"><a href="class_pixel.html#a9c4c2037575b8c94c37e6f947fc2749d">Pixel::setPixelRGB</a></div><div class="ttdeci">void setPixelRGB(int valor_r, int valor_g, int valor_b)</div><div class="ttdoc">setPixelRGB Método que permite cambiar los valores de R, G y B de un tipo de pixel RGB.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00015">pixel.cpp:15</a></div></div>
 <div class="ttc" id="aclass_pixel_html_ab624ff85be3e3d7b6d5f3e139300c1ef"><div class="ttname"><a href="class_pixel.html#ab624ff85be3e3d7b6d5f3e139300c1ef">Pixel::setPixelMonocr</a></div><div class="ttdeci">void setPixelMonocr(int valor)</div><div class="ttdoc">setPixelMonocr Método que permite establecer los valores de R, G y B de un tipo de pixel monocromátic...</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00022">pixel.cpp:22</a></div></div>
-<div class="ttc" id="aclass_pixel_html_affd7e85713e18281b51e0e676485f704"><div class="ttname"><a href="class_pixel.html#affd7e85713e18281b51e0e676485f704">Pixel::setPixelEscala</a></div><div class="ttdeci">void setPixelEscala(int valor)</div><div class="ttdoc">setPixelEscala Metodo que permite establecer los valores de R, G y B para un pixel que forme parte de...</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00029">pixel.cpp:29</a></div></div>
+<div class="ttc" id="aclass_pixel_html_affd7e85713e18281b51e0e676485f704"><div class="ttname"><a href="class_pixel.html#affd7e85713e18281b51e0e676485f704">Pixel::setPixelEscala</a></div><div class="ttdeci">void setPixelEscala(int valor)</div><div class="ttdoc">setPixelEscala Metodo que permite establecer los valores de R, G y B para un pixel que forme parte de...</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00037">pixel.cpp:37</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="archivospnm_8cpp.html">archivospnm.cpp</a></li>
-    <li class="footer">Generado el Domingo, 27 de Noviembre de 2022 16:16:26 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Lunes, 12 de Diciembre de 2022 16:51:17 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

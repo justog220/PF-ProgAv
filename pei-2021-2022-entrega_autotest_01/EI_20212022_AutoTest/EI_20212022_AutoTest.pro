@@ -10,35 +10,49 @@ CONFIG -= app_bundle
 TEMPLATE = app
 
 SOURCES +=  tst_ei_autotest.cpp \
-    ../../PF_Garcia/algoritmodelpintor.cpp \
-    ../../PF_Garcia/archivosaic.cpp \
-    ../../PF_Garcia/archivospnm.cpp \
-    ../../PF_Garcia/espaciodetrabajo.cpp \
-    ../../PF_Garcia/filtros.cpp \
-    ../../PF_Garcia/gestordearchivos.cpp \
-    ../../PF_Garcia/graficadorhistograma.cpp \
-    ../../PF_Garcia/imagen.cpp \
-    ../../PF_Garcia/pixel.cpp \
-    ../../PF_Garcia/procesadorestadistico.cpp \
-    ../../PF_Garcia/sistema.cpp \
-    ../../PF_Garcia/tablalut.cpp \
-    ../../PF_Garcia/ventanadegraficacion.cpp
+    ../../algoritmodelpintor.cpp \
+    ../../archivosaic.cpp \
+    ../../archivospnm.cpp \
+    ../../espaciodetrabajo.cpp \
+    ../../filtros.cpp \
+    ../../gestordearchivos.cpp \
+    ../../graficadorhistograma.cpp \
+    ../../imagen.cpp \
+    ../../pixel.cpp \
+    ../../procesadorestadistico.cpp \
+    ../../sistema.cpp \
+    ../../tablalut.cpp \
+    ../../ventanadegraficacion.cpp \
+    ../../binarizado.cpp \
+    ../../brillo.cpp \
+    ../../contraste.cpp \
+    ../../filtromediana.cpp \
+    ../../filtropasaaltos.cpp \
+    ../../filtropasabajos.cpp \
+    ../../negativo.cpp
 HEADERS += \
-    ../../PF_Garcia/ExcepcionArchivoCorrupto.h \
-    ../../PF_Garcia/ExcepcionArchivoNoSoportado.h \
-    ../../PF_Garcia/algoritmodelpintor.h \
-    ../../PF_Garcia/archivosaic.h \
-    ../../PF_Garcia/archivospnm.h \
-    ../../PF_Garcia/espaciodetrabajo.h \
-    ../../PF_Garcia/filtros.h \
-    ../../PF_Garcia/gestordearchivos.h \
-    ../../PF_Garcia/graficadorhistograma.h \
-    ../../PF_Garcia/imagen.h \
-    ../../PF_Garcia/pixel.h \
-    ../../PF_Garcia/procesadorestadistico.h \
-    ../../PF_Garcia/sistema.h \
-    ../../PF_Garcia/tablalut.h \
-    ../../PF_Garcia/ventanadegraficacion.h
+    ../../ExcepcionArchivoCorrupto.h \
+    ../../ExcepcionArchivoNoSoportado.h \
+    ../../algoritmodelpintor.h \
+    ../../archivosaic.h \
+    ../../archivospnm.h \
+    ../../espaciodetrabajo.h \
+    ../../filtros.h \
+    ../../gestordearchivos.h \
+    ../../graficadorhistograma.h \
+    ../../imagen.h \
+    ../../pixel.h \
+    ../../procesadorestadistico.h \
+    ../../sistema.h \
+    ../../tablalut.h \
+    ../../ventanadegraficacion.h \
+    ../../binarizado.h \
+    ../../brillo.h \
+    ../../contraste.h \
+    ../../filtromediana.h \
+    ../../filtropasaaltos.h \
+    ../../filtropasabajos.h \
+    ../../negativo.h
 
 DISTFILES += \
     ../../PF_Garcia/lista_de_atajos.txt \

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tablalut_678',['TablaLut',['../class_tabla_lut.html',1,'']]]
+  ['negativo_2673',['Negativo',['../class_negativo.html',1,'']]]
 ];

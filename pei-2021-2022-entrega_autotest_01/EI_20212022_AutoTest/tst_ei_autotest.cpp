@@ -3,9 +3,10 @@
 // add necessary includes here
 #include <vector>
 #include <string>
-#include "../../PF_Garcia/espaciodetrabajo.h"
-#include "../../PF_Garcia/procesadorestadistico.h"
-#include "../../PF_Garcia/filtros.h"
+#include "../../../PF_Garcia/espaciodetrabajo.h"
+#include "../../../PF_Garcia/procesadorestadistico.h"
+#include "../../../PF_Garcia/filtros.h"
+#include "../../../PF_Garcia/filtropasabajos.h"
 
 typedef unsigned int uint;
 
@@ -515,9 +516,11 @@ tuple<uint, uint, uint, uint> EI_AutoTest::getIntensidadMediaYLocalLuegoDeSuaviz
 
     intensidad_local_inicial = img.getPixel(50, 60).getIntensidad();
 
-    Filtros filtros;
+    Filtros *filtros;
 
-    img = filtros.aplicaFiltroPasaBajos(img);
+    filtros = new FiltroPasaBajos;
+
+    img = filtros->aplicarFiltro(img);
 
     intensidad_media_final = proce.devolverIntensidadMedia(img);
 

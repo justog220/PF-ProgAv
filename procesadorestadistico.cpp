@@ -71,6 +71,24 @@ vector<int> ProcesadorEstadistico::devuelveFrecuenciaIntensidad(Imagen &img)
     return devuelveFrecuenciaR(img);
 }
 
+vector<int> ProcesadorEstadistico::devolverFrecuenciaPromedio(Imagen &img)
+{
+    vector<int> frecuenciaR = devuelveFrecuenciaR(img);
+    vector<int> frecuenciaG = devuelveFrecuenciaG(img);
+    vector<int> frecuenciaB = devuelveFrecuenciaB(img);
+
+    vector<int> promedios;
+    int aux;
+
+    for(uint nivel = 0; nivel < frecuenciaR.size(); nivel++)
+    {
+        aux = frecuenciaR[nivel] + frecuenciaG[nivel] + frecuenciaB[nivel];
+        promedios.push_back(aux/3);
+    }
+
+    return promedios;
+}
+
 int ProcesadorEstadistico::devuelveRMasFrecuente(Imagen &img)
 {
     vector<int> frecuenciasR = devuelveFrecuenciaR(img);
@@ -220,21 +238,6 @@ int ProcesadorEstadistico::devolverIntensidadMedia(Imagen &img)
     return acumulador/pixeles;
 }
 
-int ProcesadorEstadistico::devolverModaR(Imagen &img)
-{
-    return devuelveRMasFrecuente(img);
-}
-
-int ProcesadorEstadistico::devolverModaG(Imagen &img)
-{
-    return devuelveGMasFrecuente(img);
-}
-
-int ProcesadorEstadistico::devolverModaB(Imagen &img)
-{
-    return devuelveBMasFrecuente(img);
-}
-
 
 void ProcesadorEstadistico::informarDatosEstadisticos(Imagen &img)
 {
@@ -245,8 +248,8 @@ void ProcesadorEstadistico::informarDatosEstadisticos(Imagen &img)
     cout<<"\n\t---------Promedio---------\n\tR: "<<promediosRGB[0]<<"\n\tG: "<<promediosRGB[1]<<"\n\tB: "<<promediosRGB[2];
     cout<<"\n\t---------Minimo---------\n\tR: "<<maximoMinimoR.at(1)<<"\n\tG: "<<maximoMinimoG.at(1)<<"\n\tB: "<<maximoMinimoB.at(1);
     cout<<"\n\t---------Maximo---------\n\tR: "<<maximoMinimoR.at(0)<<"\n\tG: "<<maximoMinimoG.at(0)<<"\n\tB: "<<maximoMinimoB.at(0);
-    cout<<"\n\t---------Moda---------\n\tR: "<<devolverModaR(img)<<"\n\tG: "<<devolverModaG(img)<<"\n\tB: "<<devolverModaB(img);
-    cout<<"\n\t---------Desviaciones estandar---------\n\tR: "<<desviaciones.at(0)<<"\n\tG: "<<desviaciones.at(1)<<"\n\tB: "<<desviaciones.at(2);
+    cout<<"\n\t---------Moda---------\n\tR: "<<devuelveRMasFrecuente(img)<<"\n\tG: "<<devuelveGMasFrecuente(img)<<"\n\tB: "<<devuelveBMasFrecuente(img);
+    cout<<"\n\t---------Desviaciones estandar---------\n\tR: "<<desviaciones.at(0)<<"\n\tG: "<<desviaciones.at(1)<<"\n\tB: "<<desviaciones.at(2)<<endl;
 
 
 

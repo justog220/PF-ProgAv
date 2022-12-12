@@ -8,12 +8,6 @@ Lista de atajos:
 	|__Mostrar histograma
 	|	|__ ctrl + h
 	|
-	|__Hacer zoom
-	|	|__ ctrl + click izq y arrastrar sin soltar
-	|
-	|__Quitar zoom
-	|	|__ ctrl + click derecho
-	|
 	|__Almacenar la imagen
 	|	|__ ctrl + g
 	|
@@ -44,4 +38,7 @@ Lista de atajos:
 	|	|__ctrl + a
 	|
 	|__Aplicar negativo
-		|__ctrl + n
+	|	|__ctrl + n
+	|
+	|__ Binarizar imagen
+		|__ ctrl + b

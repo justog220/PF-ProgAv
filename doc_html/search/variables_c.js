@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['opcarch_892',['opcArch',['../class_ventana_de_graficacion.html#a08d8e9f6cc2414e2f3f82d8a5e57f74d',1,'VentanaDeGraficacion']]],
-  ['opcdir_893',['opcDir',['../class_ventana_de_graficacion.html#ae39f47c78d1e0089c6a35e889999d51b',1,'VentanaDeGraficacion']]]
+  ['nosoportoanterior_4543',['noSoportoAnterior',['../class_sistema.html#afae7cfb7e99dbf395ecb30855f3bd2e8',1,'Sistema']]],
+  ['numbermultiplycross_4544',['numberMultiplyCross',['../class_q_c_p_axis_painter_private.html#a0deb7524009140f00a774dfd286d002c',1,'QCPAxisPainterPrivate']]]
 ];

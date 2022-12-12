@@ -1,6 +1,6 @@
 /*!
  *  \class      AlgoritmoDelPintor
- *  \brief      Objeto capaz de aplicarle el algoritmo del pintor a una Imagen.
+ *  \brief      Clase capaz de aplicarle el algoritmo del pintor a una Imagen.
  *  \details    A partir de un Pixel inicial, busca los vecinos de este teniendo en cuenta cierta
  *              nivel de tolerancia. Habiendo identificado un Pixel como vecino, lo pinta de azul.
  *  \author     Justo Garcia
@@ -98,7 +98,7 @@ private:
     vector < Posicion > vecinos = {{-1,0},{-1,1},{0,1},{1,1},{1,0},{1,-1},{0,-1},{-1,-1}};
 
     /*!
-     * \param profundidad Profundidad del método recursiva.
+     * \param profundidad Profundidad de la llamada al método recursiva.
      */
     int profundidad;
 

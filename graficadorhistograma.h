@@ -19,6 +19,8 @@
 #include "imagen.h"
 #include "procesadorestadistico.h"
 
+
+
 using namespace std;
 
 class GraficadorHistograma: public QOpenGLWidget, protected QOpenGLFunctions
@@ -61,6 +63,8 @@ private:
      */
     Imagen imagenAnalisis;
 
+    ProcesadorEstadistico procesadorEstad;
+
     /*!
      * \param frecuenciaR Vector que representa las frecuencias para los distintos
      * niveles de rojo. Cada posición equivale a un nivel de rojo y el entero almacenado la frecuencia
@@ -87,6 +91,8 @@ private:
      * de este nivel.
      */
     vector<int> frecuenciaB;
+
+    vector<int> frecuenciaPromedio;
 
     /*!
      * \param anchoV Ancho de la ventana.

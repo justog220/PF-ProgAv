@@ -1,6 +1,6 @@
 /*!
  *  \class      TablaLut
- *  \brief      Objeto que permite representar una Imagen pseudocolreada con una tabla LUT.
+ *  \brief      Clase que permite representar una Imagen pseudocolreada con una tabla LUT.
  *  \details    Obtiene un nivel de intensidad, y en base a esto, devuelve el Pixel con el cual
  * debe ser representado.
  *  \author     Justo Garcia

@@ -8,7 +8,7 @@ Brillo::Brillo(int opc)
     {
         seAumenta = true;
         seReduce = false;
-    }else
+    }else if(opc == 2)
     {
         seAumenta = false;
         seReduce = true;
@@ -18,74 +18,87 @@ Brillo::Brillo(int opc)
 Imagen Brillo::aplicarFiltro(Imagen &imagen)
 {
     if(seAumenta)
-        aumentarBrillo(&imagen);
+        aumentarBrillo(imagen);
 
     if(seReduce)
-        aumentarBrillo(&imagen);
+        reducirBrillo(imagen);
 
     return imagen;
 }
 
-void Brillo::aumentarBrillo(Imagen *imagen)
+void Brillo::aumentarBrillo(Imagen &imagen)
 {
     consultarDiferencia(imagen);
 
     int auxR, auxG, auxB;
     Pixel pix_aux;
 
-    for(int i = 0; i < imagen->getFilas(); i++)
-        for(int j = 0; j < imagen->getColumnas(); j++)
+    for(int i = 0; i < imagen.getFilas(); i++)
+        for(int j = 0; j < imagen.getColumnas(); j++)
         {
-            pix_aux = imagen->getPixel(i, j);
+            pix_aux = imagen.getPixel(i, j);
             auxR = pix_aux.getR() + diferencia;
-            if(auxR > imagen->getRango())
-                auxR = imagen->getRango();
+            if(auxR > imagen.getRango())
+                auxR = imagen.getRango();
 
             auxG = pix_aux.getG() + diferencia;
-            if(auxG > imagen->getRango())
-                auxG = imagen->getRango();
+            if(auxG > imagen.getRango())
+                auxG = imagen.getRango();
 
             auxB = pix_aux.getB() + diferencia;
-            if(auxB > imagen->getRango())
-                auxB = imagen->getRango();
+            if(auxB > imagen.getRango())
+                auxB = imagen.getRango();
 
             pix_aux.setPixelRGB(auxR, auxG, auxB);
 
-            imagen->setPixel(i, j, pix_aux);
+            imagen.setPixel(i, j, pix_aux);
         }
 
 }
 
-void Brillo::reducirBrillo(Imagen *imagen)
+void Brillo::reducirBrillo(Imagen &imagen)
 {
     consultarDiferencia(imagen);
 
     int auxR, auxG, auxB;
     Pixel pix_aux;
 
-    for(int i = 0; i < imagen->getFilas(); i++)
-        for(int j = 0; j < imagen->getColumnas(); j++)
+    for(int i = 0; i < imagen.getFilas(); i++)
+        for(int j = 0; j < imagen.getColumnas(); j++)
         {
-            pix_aux = imagen->getPixel(i, j);
+            pix_aux = imagen.getPixel(i, j);
             auxR = pix_aux.getR() - diferencia;
             if(auxR < 0)
-                auxR = imagen->getRango();
+                auxR = 0;
 
             auxG = pix_aux.getG() - diferencia;
             if(auxG < 0)
-                auxG = imagen->getRango();
+                auxG = 0;
 
             auxB = pix_aux.getB() - diferencia;
             if(auxB < 0)
-                auxB = imagen->getRango();
+                auxB = 0;
 
             pix_aux.setPixelRGB(auxR, auxG, auxB);
 
-            imagen->setPixel(i, j, pix_aux);
+            imagen.setPixel(i, j, pix_aux);
         }
 }
 
-void Brillo::consultarDiferencia(Imagen *imagen)
+void Brillo::cambiaOpcion()
+{
+    if(seAumenta)
+    {
+        seAumenta = false;
+        seReduce = true;
+    }else
+    {
+        seAumenta = true;
+        seReduce = false;
+    }
+}
+
+void Brillo::consultarDiferencia(Imagen &imagen)
 {
     char opc;
     cout<<"\t¿Desea especificar cuanto aumentar/reducir?\n\t|__[S]i\n\t|__[N]o\n\t\t>>";
@@ -109,11 +122,11 @@ void Brillo::consultarDiferencia(Imagen *imagen)
     {
         int cantidad;
         diferencia = -1;
-        while(diferencia <= 0 or diferencia >= imagen->getRango())
+        while(diferencia <= 0 or diferencia >= imagen.getRango())
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout<<"\tIngrese una cantidad dentro del rango [0, "<<imagen->getRango()<<"]: ";
+            cout<<"\tIngrese una cantidad dentro del rango [0, "<<imagen.getRango()<<"]: ";
             cout.flush();
             cin>>cantidad;
             diferencia = cantidad;

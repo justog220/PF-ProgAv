@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Software de Procesamiento Digital de Imágenes - Garcia Justo: Fichero Fuente brillo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Software de Procesamiento Digital de Imágenes - Garcia Justo
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('brillo_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">brillo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="brillo_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef BRILLO_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define BRILLO_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="filtros_8h.html">filtros.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_brillo.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_brillo.html">Brillo</a> : <span class="keyword">public</span> <a class="code" href="class_filtros.html">Filtros</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_brillo.html#a0629ffb7ad2c72be692525e3c765f86b">Brillo</a>(<span class="keywordtype">int</span> opc);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_imagen.html">Imagen</a> <a class="code" href="class_brillo.html#ae30ffa21b6e3b28c8450d292826c1668">aplicarFiltro</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;imagen) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_brillo.html#ab9e983182a225554b56ad7ac8376bef8">aumentarBrillo</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;imagen);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_brillo.html#ac12ad6683780291a8b7d0c31a4fd0e9e">reducirBrillo</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;imagen);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_brillo.html#a02c1ce6960082cc2e900af8f22fae325">cambiaOpcion</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">   56</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">diferencia</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_brillo.html#aed5bf732f20f221e5d1ffbd704594cfc">consultarDiferencia</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;imagen);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_brillo.html#a04f55effcd4ea3741f237d952efe8ea7">   68</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_brillo.html#a04f55effcd4ea3741f237d952efe8ea7">seAumenta</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_brillo.html#ace1446060d6299777425fb067e7efebe">   73</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_brillo.html#ace1446060d6299777425fb067e7efebe">seReduce</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// BRILLO_H</span></div>
+<div class="ttc" id="aclass_brillo_html"><div class="ttname"><a href="class_brillo.html">Brillo</a></div><div class="ttdoc">Clase que hereda de la clase Filtros métodos y los redefine para aumentar o reducir el brillo de una ...</div><div class="ttdef"><b>Definition:</b> <a href="brillo_8h_source.html#l00017">brillo.h:18</a></div></div>
+<div class="ttc" id="aclass_brillo_html_a02c1ce6960082cc2e900af8f22fae325"><div class="ttname"><a href="class_brillo.html#a02c1ce6960082cc2e900af8f22fae325">Brillo::cambiaOpcion</a></div><div class="ttdeci">void cambiaOpcion()</div><div class="ttdef"><b>Definition:</b> <a href="brillo_8cpp_source.html#l00088">brillo.cpp:88</a></div></div>
+<div class="ttc" id="aclass_brillo_html_a04f55effcd4ea3741f237d952efe8ea7"><div class="ttname"><a href="class_brillo.html#a04f55effcd4ea3741f237d952efe8ea7">Brillo::seAumenta</a></div><div class="ttdeci">bool seAumenta</div><div class="ttdef"><b>Definition:</b> <a href="brillo_8h_source.html#l00068">brillo.h:68</a></div></div>
+<div class="ttc" id="aclass_brillo_html_a0629ffb7ad2c72be692525e3c765f86b"><div class="ttname"><a href="class_brillo.html#a0629ffb7ad2c72be692525e3c765f86b">Brillo::Brillo</a></div><div class="ttdeci">Brillo(int opc)</div><div class="ttdoc">Brillo Constructor del objeto Brillo.</div><div class="ttdef"><b>Definition:</b> <a href="brillo_8cpp_source.html#l00005">brillo.cpp:5</a></div></div>
+<div class="ttc" id="aclass_brillo_html_a2c892778cd949ab42c8be9fe607f7a14"><div class="ttname"><a href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">Brillo::diferencia</a></div><div class="ttdeci">int diferencia</div><div class="ttdef"><b>Definition:</b> <a href="brillo_8h_source.html#l00056">brillo.h:56</a></div></div>
+<div class="ttc" id="aclass_brillo_html_ab9e983182a225554b56ad7ac8376bef8"><div class="ttname"><a href="class_brillo.html#ab9e983182a225554b56ad7ac8376bef8">Brillo::aumentarBrillo</a></div><div class="ttdeci">void aumentarBrillo(Imagen &amp;imagen)</div><div class="ttdoc">aumentarBrillo Método que permite aumentar el brillo de una Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="brillo_8cpp_source.html#l00029">brillo.cpp:29</a></div></div>
+<div class="ttc" id="aclass_brillo_html_ac12ad6683780291a8b7d0c31a4fd0e9e"><div class="ttname"><a href="class_brillo.html#ac12ad6683780291a8b7d0c31a4fd0e9e">Brillo::reducirBrillo</a></div><div class="ttdeci">void reducirBrillo(Imagen &amp;imagen)</div><div class="ttdoc">reducirBrillo Método que permite reducir el brillo de una Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="brillo_8cpp_source.html#l00059">brillo.cpp:59</a></div></div>
+<div class="ttc" id="aclass_brillo_html_ace1446060d6299777425fb067e7efebe"><div class="ttname"><a href="class_brillo.html#ace1446060d6299777425fb067e7efebe">Brillo::seReduce</a></div><div class="ttdeci">bool seReduce</div><div class="ttdef"><b>Definition:</b> <a href="brillo_8h_source.html#l00073">brillo.h:73</a></div></div>
+<div class="ttc" id="aclass_brillo_html_ae30ffa21b6e3b28c8450d292826c1668"><div class="ttname"><a href="class_brillo.html#ae30ffa21b6e3b28c8450d292826c1668">Brillo::aplicarFiltro</a></div><div class="ttdeci">Imagen aplicarFiltro(Imagen &amp;imagen) override</div><div class="ttdoc">aplicarFiltro Método heredado de la case Filtros, redefinido para la modificación del brillo.</div><div class="ttdef"><b>Definition:</b> <a href="brillo_8cpp_source.html#l00018">brillo.cpp:18</a></div></div>
+<div class="ttc" id="aclass_brillo_html_aed5bf732f20f221e5d1ffbd704594cfc"><div class="ttname"><a href="class_brillo.html#aed5bf732f20f221e5d1ffbd704594cfc">Brillo::consultarDiferencia</a></div><div class="ttdeci">void consultarDiferencia(Imagen &amp;imagen)</div><div class="ttdoc">consultarDiferencia Método privado que permite obtener la diferencia en la que se modifica el brillo.</div><div class="ttdef"><b>Definition:</b> <a href="brillo_8cpp_source.html#l00101">brillo.cpp:101</a></div></div>
+<div class="ttc" id="aclass_filtros_html"><div class="ttname"><a href="class_filtros.html">Filtros</a></div><div class="ttdoc">Clase que virtualiza métodos para la aplicacion de diversos filtros.</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8h_source.html#l00019">filtros.h:20</a></div></div>
+<div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00022">imagen.h:23</a></div></div>
+<div class="ttc" id="afiltros_8h_html"><div class="ttname"><a href="filtros_8h.html">filtros.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="brillo_8h.html">brillo.h</a></li>
+    <li class="footer">Generado el Lunes, 12 de Diciembre de 2022 16:51:17 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

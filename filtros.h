@@ -1,6 +1,6 @@
 /*!
  *  \class      Filtros
- *  \brief      Objeto capaz de aplicarle distintos filtros o modificaciones a una Imagen.
+ *  \brief      Clase que virtualiza métodos para la aplicacion de diversos filtros.
  *  \details    A partir de una Imagen, se le aplican distintas modificaciones.
  *  \author     Justo Garcia
  *  \date       Fecha de última modificación: 24-11-2022

@@ -7,7 +7,7 @@
  *  \date       Fecha de última modificación: 10-09-2022
  *  \pre
  *  \bug
- *  \warning    No se ha implementado ni testeado el guardar.
+ *  \warning
 */
 #ifndef ARCHIVOSPNM_H
 #define ARCHIVOSPNM_H

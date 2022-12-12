@@ -1,6 +1,6 @@
 /*!
  *  \class      ProcesadorEstadistico
- *  \brief      Objeto que permite realizar diversos cálculos estadísticos.
+ *  \brief      Clase que permite realizar diversos cálculos estadísticos.
  *  \details    Permite hacer diversos cálculo estadísticos como encontrar la frecuencia de R, G o B, devolver estos
  * valores más frecuentes o hallar los valores máximo y mínimos.
  *  \author     Justo Garcia
@@ -54,6 +54,14 @@ public:
      * la frecuencia con la que aparece este nivel.
      */
     vector<int> devuelveFrecuenciaIntensidad(Imagen &img);
+
+    /*!
+     * \brief devolverFrecuenciaPromedio Devuelve el promedio de la frecuencia de RGB para cada nivel de intensidad.
+     * \param[in] img Imagen de la cual se desea conocer la frecuencia promedio de las intensidades.
+     * \return vector de eneteros donde cada posición del vector es el nivel de intensidad y el entero almacenado
+     * la frecuencia con la que aparece este nivel.
+     */
+    vector<int> devolverFrecuenciaPromedio(Imagen &img);
 
     /*!
      * \brief devuelveRMasFrecuente Devuelve el nivel de R que mas se repite.
@@ -111,20 +119,27 @@ public:
      */
     int devolverIntensidadMedia(Imagen &img);
 
-    int devolverModaR(Imagen &img);
-
-    int devolverModaG(Imagen &img);
-
-    int devolverModaB(Imagen &img);
-
+    /*!
+     * \brief informarDatosEstadisticos Método que permite informar diversos datos
+     * estadísticos.
+     * \param[in] img Imagen de la cuál se desea conocer los datos estadísticos.
+     */
     void informarDatosEstadisticos(Imagen &img);
 
+    /*!
+     * \brief devolverPromedioRGB Método que devuelve el promedio de la intensidad de R, G y B
+     * en una Imagen
+     * \param[in] img Imagen de la cual se desea conocer el promedio de R, G y B
+     * \return vector que contiene el promedio de r (vector[0]), g (vector[1]) y b (vector[2])
+     */
     vector<float> devolverPromedioRGB(Imagen &img);
 
-    vector<int> devolverModaRGB(Imagen &img);
-
+    /*!
+     * \brief devolverDesviacionEstandarRGB Método que devuelve las desviaciones estandar de R, G y B.
+     * \param[in] img Imagen de la cual se desea conocer las desviaciones estandares.
+     * \return  Desviacion de R(vector[0]), G (vector[1]) y B (vector[2]).
+     */
     vector<float> devolverDesviacionEstandarRGB(Imagen &img);
-
 };
 
 #endif // PROCESADORESTADISTICO_H

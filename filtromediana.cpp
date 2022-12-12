@@ -7,15 +7,6 @@ FiltroMediana::FiltroMediana()
 
 Imagen FiltroMediana::aplicarFiltro(Imagen &imag)
 {
-    Imagen imagen = imag;
-
-    imagen = realizarOperaciones(imag);
-
-    return imagen;
-}
-
-Imagen FiltroMediana::realizarOperaciones(Imagen &imag)
-{
     Imagen img  = imag;
     unsigned int auxR, auxG, auxB;
     int medio;

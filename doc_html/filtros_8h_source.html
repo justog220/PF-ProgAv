@@ -97,46 +97,36 @@ $(document).ready(function(){initNavTree('filtros_8h_source.html',''); initResiz
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_filtros.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_filtros.html">Filtros</a></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_filtros.html#a5d4383dece49dcc80b3ce18da579a338">Filtros</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//    Filtros();</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_imagen.html">Imagen</a> <a class="code" href="class_filtros.html#a38c6a83d1192148459e3afa45c9dfed8">aplicaFiltroPasaBajos</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;img);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_imagen.html">Imagen</a> <a class="code" href="class_filtros.html#abedc5916042417ab0989b04918524fba">aplicaFiltroPasaAltos</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;pImg);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_imagen.html">Imagen</a> <a class="code" href="class_filtros.html#af3c9a06753ded89a03ce9335dec9973c">aplicaNegativo</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;pImg);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_filtros.html#a63261f70e0966c1c052aebc4f954d8a7">ajusteContraste</a>(<a class="code" href="class_imagen.html">Imagen</a> *img);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_filtros.html#a04bd9f3b701c3a7b3762c9b0f1112a9f">aumentarBrillo</a>(<a class="code" href="class_imagen.html">Imagen</a> *img);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_filtros.html#a8ae3c00218f15094a68afacc0b399ea8">reducirBrillo</a>(<a class="code" href="class_imagen.html">Imagen</a> *img);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_filtros.html#a33f5d192b88ca1d900f98ef1eda7754e">aplicaFiltroMediana</a>(<a class="code" href="class_imagen.html">Imagen</a> *img);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_filtros.html#a5c74c0e0dd96188a3714da9c5b6477c1">aplicaFiltroMedianaEsquinas</a>(<a class="code" href="class_imagen.html">Imagen</a> *imag);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_filtros.html#ae8fb8f09698bfd91e5cb8d79b8a0060a">aplicaFiltroMedianaBordes</a>(<a class="code" href="class_imagen.html">Imagen</a> *imag);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_filtros.html#a15e4819239658260b19b4162bc5b736d">aplicaFiltroMedianaCentro</a>(<a class="code" href="class_imagen.html">Imagen</a> *imag);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_filtros.html#a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82">   27</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_imagen.html">Imagen</a> <a class="code" href="class_filtros.html#a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82">aplicarFiltro</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;imag) = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//    Imagen aplicaFiltroPasaBajos(Imagen &amp;img);</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//    Imagen aplicaFiltroPasaAltos(Imagen &amp;pImg);</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">//    Imagen aplicaNegativo(Imagen &amp;pImg);</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">//    void ajusteContraste(Imagen *img);</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">//    void aumentarBrillo(Imagen *img);</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//    void reducirBrillo(Imagen *img);</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//    Imagen aplicaFiltroMediana(Imagen &amp;img);</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">//protected:</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"></span><span class="comment">//    Imagen aplicaFiltroMedianaEsquinas(Imagen &amp;imag);</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">//    Imagen aplicaFiltroMedianaBordes(Imagen &amp;imag);</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">//    Imagen aplicaFiltroFiMedianaCentro(Imagen &amp;imag);</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// FILTROS_H</span></div>
-<div class="ttc" id="aclass_filtros_html"><div class="ttname"><a href="class_filtros.html">Filtros</a></div><div class="ttdoc">Objeto capaz de aplicarle distintos filtros o modificaciones a una Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8h_source.html#l00019">filtros.h:20</a></div></div>
-<div class="ttc" id="aclass_filtros_html_a04bd9f3b701c3a7b3762c9b0f1112a9f"><div class="ttname"><a href="class_filtros.html#a04bd9f3b701c3a7b3762c9b0f1112a9f">Filtros::aumentarBrillo</a></div><div class="ttdeci">void aumentarBrillo(Imagen *img)</div><div class="ttdoc">aumentarBrillo Método que permite aumentar el brillo de una Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8cpp_source.html#l00621">filtros.cpp:621</a></div></div>
-<div class="ttc" id="aclass_filtros_html_a15e4819239658260b19b4162bc5b736d"><div class="ttname"><a href="class_filtros.html#a15e4819239658260b19b4162bc5b736d">Filtros::aplicaFiltroMedianaCentro</a></div><div class="ttdeci">void aplicaFiltroMedianaCentro(Imagen *imag)</div><div class="ttdoc">aplicaFiltroMedianaCentro Método protegido auxiliar que permite aplicar el filtro de la mediana en el...</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8cpp_source.html#l00557">filtros.cpp:557</a></div></div>
-<div class="ttc" id="aclass_filtros_html_a33f5d192b88ca1d900f98ef1eda7754e"><div class="ttname"><a href="class_filtros.html#a33f5d192b88ca1d900f98ef1eda7754e">Filtros::aplicaFiltroMediana</a></div><div class="ttdeci">void aplicaFiltroMediana(Imagen *img)</div><div class="ttdoc">aplicaFiltroMediana Método que permite aplicar el filtro de la mediana.</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8cpp_source.html#l00255">filtros.cpp:255</a></div></div>
-<div class="ttc" id="aclass_filtros_html_a38c6a83d1192148459e3afa45c9dfed8"><div class="ttname"><a href="class_filtros.html#a38c6a83d1192148459e3afa45c9dfed8">Filtros::aplicaFiltroPasaBajos</a></div><div class="ttdeci">Imagen aplicaFiltroPasaBajos(Imagen &amp;img)</div><div class="ttdoc">aplicaFiltroPasaBajos Método que permite aplicarle el filtro de pasa bajos a una Imagen</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8cpp_source.html#l00008">filtros.cpp:8</a></div></div>
-<div class="ttc" id="aclass_filtros_html_a5c74c0e0dd96188a3714da9c5b6477c1"><div class="ttname"><a href="class_filtros.html#a5c74c0e0dd96188a3714da9c5b6477c1">Filtros::aplicaFiltroMedianaEsquinas</a></div><div class="ttdeci">void aplicaFiltroMedianaEsquinas(Imagen *imag)</div><div class="ttdoc">aplicaFiltroMedianaEsquinas Método protegido auxiliar que permite aplicar el filtro de la mediana en ...</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8cpp_source.html#l00268">filtros.cpp:268</a></div></div>
-<div class="ttc" id="aclass_filtros_html_a5d4383dece49dcc80b3ce18da579a338"><div class="ttname"><a href="class_filtros.html#a5d4383dece49dcc80b3ce18da579a338">Filtros::Filtros</a></div><div class="ttdeci">Filtros()</div><div class="ttdoc">Filtros Constructor del objeto Filtros.</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8cpp_source.html#l00003">filtros.cpp:3</a></div></div>
-<div class="ttc" id="aclass_filtros_html_a63261f70e0966c1c052aebc4f954d8a7"><div class="ttname"><a href="class_filtros.html#a63261f70e0966c1c052aebc4f954d8a7">Filtros::ajusteContraste</a></div><div class="ttdeci">void ajusteContraste(Imagen *img)</div><div class="ttdoc">ajusteContraste Método que permite ajustar el contraste de una Imagen</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8cpp_source.html#l00223">filtros.cpp:223</a></div></div>
-<div class="ttc" id="aclass_filtros_html_a8ae3c00218f15094a68afacc0b399ea8"><div class="ttname"><a href="class_filtros.html#a8ae3c00218f15094a68afacc0b399ea8">Filtros::reducirBrillo</a></div><div class="ttdeci">void reducirBrillo(Imagen *img)</div><div class="ttdoc">reducirBrillo Método que permite reducir el brillo de una Imagen</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8cpp_source.html#l00242">filtros.cpp:242</a></div></div>
-<div class="ttc" id="aclass_filtros_html_abedc5916042417ab0989b04918524fba"><div class="ttname"><a href="class_filtros.html#abedc5916042417ab0989b04918524fba">Filtros::aplicaFiltroPasaAltos</a></div><div class="ttdeci">Imagen aplicaFiltroPasaAltos(Imagen &amp;pImg)</div><div class="ttdoc">aplicaFiltroPasaAltos Método que permite aplicarle el filtro de pasa altos a una Imagen</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8cpp_source.html#l00097">filtros.cpp:97</a></div></div>
-<div class="ttc" id="aclass_filtros_html_ae8fb8f09698bfd91e5cb8d79b8a0060a"><div class="ttname"><a href="class_filtros.html#ae8fb8f09698bfd91e5cb8d79b8a0060a">Filtros::aplicaFiltroMedianaBordes</a></div><div class="ttdeci">void aplicaFiltroMedianaBordes(Imagen *imag)</div><div class="ttdoc">aplicaFiltroMedianaBordes Método protegido auxiliar que permite aplicar el filtro de la mediana en lo...</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8cpp_source.html#l00394">filtros.cpp:394</a></div></div>
-<div class="ttc" id="aclass_filtros_html_af3c9a06753ded89a03ce9335dec9973c"><div class="ttname"><a href="class_filtros.html#af3c9a06753ded89a03ce9335dec9973c">Filtros::aplicaNegativo</a></div><div class="ttdeci">Imagen aplicaNegativo(Imagen &amp;pImg)</div><div class="ttdoc">aplicaNegativo Método que permite obtener la negativa de la Imagen</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8cpp_source.html#l00198">filtros.cpp:198</a></div></div>
+<div class="ttc" id="aclass_filtros_html"><div class="ttname"><a href="class_filtros.html">Filtros</a></div><div class="ttdoc">Clase que virtualiza métodos para la aplicacion de diversos filtros.</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8h_source.html#l00019">filtros.h:20</a></div></div>
+<div class="ttc" id="aclass_filtros_html_a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82"><div class="ttname"><a href="class_filtros.html#a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82">Filtros::aplicarFiltro</a></div><div class="ttdeci">virtual Imagen aplicarFiltro(Imagen &amp;imag)=0</div><div class="ttdoc">Filtros Constructor del objeto Filtros.</div></div>
 <div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00022">imagen.h:23</a></div></div>
 <div class="ttc" id="aimagen_8h_html"><div class="ttname"><a href="imagen_8h.html">imagen.h</a></div></div>
 <div class="ttc" id="aprocesadorestadistico_8h_html"><div class="ttname"><a href="procesadorestadistico_8h.html">procesadorestadistico.h</a></div></div>
@@ -146,7 +136,7 @@ $(document).ready(function(){initNavTree('filtros_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="filtros_8h.html">filtros.h</a></li>
-    <li class="footer">Generado el Domingo, 27 de Noviembre de 2022 16:16:26 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Lunes, 12 de Diciembre de 2022 16:51:17 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

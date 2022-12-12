@@ -1,6 +1,6 @@
 /*!
  *  \class      Pixel
- *  \brief      Modela un pixel de una imagen..
+ *  \brief      Clase que modela un pixel de una imagen.
  *  \details    Representa un pixel de los distintos tipos de imagen, indistintamente
  *              si es de intensidades, RGB o monocromatico. Tiene valores enteros para
  *              rojo, verde y azul. Puede cambiar estos valores y devolverlos en caso de

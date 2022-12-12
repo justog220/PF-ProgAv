@@ -3,7 +3,7 @@ var class_pixel =
     [ "Pixel", "class_pixel.html#a27ad99a2f705e635c42d242d530d4756", null ],
     [ "Pixel", "class_pixel.html#a60d27338f9eff65b1c8f1333a73c7792", null ],
     [ "ajusteContraste", "class_pixel.html#a9dde3af38cd1ba92d0cf210847f5f00f", null ],
-    [ "aumentarBrillo", "class_pixel.html#ab998b652604bc3a9a3464ea7f09b8153", null ],
+    [ "aumentarBrillo", "class_pixel.html#a4ab3587954826d764eb02b98d8e0f20f", null ],
     [ "getB", "class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3", null ],
     [ "getG", "class_pixel.html#a7d11df716ef5c30421210a7b2d61e697", null ],
     [ "getIntensidad", "class_pixel.html#ae9494a22629e331242fd1e7508743655", null ],

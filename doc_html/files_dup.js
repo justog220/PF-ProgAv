@@ -14,6 +14,18 @@ var files_dup =
     [ "archivospnm.h", "archivospnm_8h.html", [
       [ "ArchivosPNM", "class_archivos_p_n_m.html", "class_archivos_p_n_m" ]
     ] ],
+    [ "binarizado.cpp", "binarizado_8cpp.html", null ],
+    [ "binarizado.h", "binarizado_8h.html", [
+      [ "Binarizado", "class_binarizado.html", "class_binarizado" ]
+    ] ],
+    [ "brillo.cpp", "brillo_8cpp.html", null ],
+    [ "brillo.h", "brillo_8h.html", [
+      [ "Brillo", "class_brillo.html", "class_brillo" ]
+    ] ],
+    [ "contraste.cpp", "contraste_8cpp.html", null ],
+    [ "contraste.h", "contraste_8h.html", [
+      [ "Contraste", "class_contraste.html", "class_contraste" ]
+    ] ],
     [ "espaciodetrabajo.cpp", "espaciodetrabajo_8cpp.html", null ],
     [ "espaciodetrabajo.h", "espaciodetrabajo_8h.html", [
       [ "EspacioDeTrabajo", "class_espacio_de_trabajo.html", "class_espacio_de_trabajo" ]
@@ -23,6 +35,18 @@ var files_dup =
     ] ],
     [ "ExcepcionArchivoNoSoportado.h", "_excepcion_archivo_no_soportado_8h.html", [
       [ "ExcepcionArchivoNoSoportado", "class_excepcion_archivo_no_soportado.html", "class_excepcion_archivo_no_soportado" ]
+    ] ],
+    [ "filtromediana.cpp", "filtromediana_8cpp.html", null ],
+    [ "filtromediana.h", "filtromediana_8h.html", [
+      [ "FiltroMediana", "class_filtro_mediana.html", "class_filtro_mediana" ]
+    ] ],
+    [ "filtropasaaltos.cpp", "filtropasaaltos_8cpp.html", null ],
+    [ "filtropasaaltos.h", "filtropasaaltos_8h.html", [
+      [ "FiltroPasaAltos", "class_filtro_pasa_altos.html", "class_filtro_pasa_altos" ]
+    ] ],
+    [ "filtropasabajos.cpp", "filtropasabajos_8cpp.html", null ],
+    [ "filtropasabajos.h", "filtropasabajos_8h.html", [
+      [ "FiltroPasaBajos", "class_filtro_pasa_bajos.html", "class_filtro_pasa_bajos" ]
     ] ],
     [ "filtros.cpp", "filtros_8cpp.html", null ],
     [ "filtros.h", "filtros_8h.html", [
@@ -41,6 +65,12 @@ var files_dup =
       [ "Imagen", "class_imagen.html", "class_imagen" ]
     ] ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
+    [ "moc_predefs.h", "moc__predefs_8h.html", "moc__predefs_8h" ],
+    [ "moc_qcustomplot.cpp", "moc__qcustomplot_8cpp.html", "moc__qcustomplot_8cpp" ],
+    [ "negativo.cpp", "negativo_8cpp.html", null ],
+    [ "negativo.h", "negativo_8h.html", [
+      [ "Negativo", "class_negativo.html", "class_negativo" ]
+    ] ],
     [ "pagina_principal.h", "pagina__principal_8h.html", null ],
     [ "pixel.cpp", "pixel_8cpp.html", null ],
     [ "pixel.h", "pixel_8h.html", [
@@ -50,6 +80,8 @@ var files_dup =
     [ "procesadorestadistico.h", "procesadorestadistico_8h.html", [
       [ "ProcesadorEstadistico", "class_procesador_estadistico.html", "class_procesador_estadistico" ]
     ] ],
+    [ "qcustomplot.cpp", "qcustomplot_8cpp.html", null ],
+    [ "qcustomplot.h", "qcustomplot_8h.html", "qcustomplot_8h" ],
     [ "sistema.cpp", "sistema_8cpp.html", null ],
     [ "sistema.h", "sistema_8h.html", [
       [ "Sistema", "class_sistema.html", "class_sistema" ]

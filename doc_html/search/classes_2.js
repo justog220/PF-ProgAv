@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['cachedlabel_2659',['CachedLabel',['../struct_q_c_p_axis_painter_private_1_1_cached_label.html',1,'QCPAxisPainterPrivate::CachedLabel'],['../struct_q_c_p_label_painter_private_1_1_cached_label.html',1,'QCPLabelPainterPrivate::CachedLabel']]],
-  ['contraste_2660',['Contraste',['../class_contraste.html',1,'']]]
+  ['contraste_860',['Contraste',['../class_contraste.html',1,'']]]
 ];

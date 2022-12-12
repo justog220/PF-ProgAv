@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['labeldata_2672',['LabelData',['../struct_q_c_p_label_painter_private_1_1_label_data.html',1,'QCPLabelPainterPrivate']]]
+  ['negativo_872',['Negativo',['../class_negativo.html',1,'']]]
 ];

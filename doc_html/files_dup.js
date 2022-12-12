@@ -80,8 +80,6 @@ var files_dup =
     [ "procesadorestadistico.h", "procesadorestadistico_8h.html", [
       [ "ProcesadorEstadistico", "class_procesador_estadistico.html", "class_procesador_estadistico" ]
     ] ],
-    [ "qcustomplot.cpp", "qcustomplot_8cpp.html", null ],
-    [ "qcustomplot.h", "qcustomplot_8h.html", "qcustomplot_8h" ],
     [ "sistema.cpp", "sistema_8cpp.html", null ],
     [ "sistema.h", "sistema_8h.html", [
       [ "Sistema", "class_sistema.html", "class_sistema" ]

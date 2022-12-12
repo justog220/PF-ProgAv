@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['qcustomplot_2ecpp_2863',['qcustomplot.cpp',['../qcustomplot_8cpp.html',1,'']]],
-  ['qcustomplot_2eh_2864',['qcustomplot.h',['../qcustomplot_8h.html',1,'']]]
+  ['readme_2emd_978',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]]
 ];

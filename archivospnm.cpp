@@ -24,7 +24,6 @@ Imagen ArchivosPNM::leer(string ruta)
         int filas_aux, columnas_aux;
 
         int contador_pixeles = 0;
-        bool fuera_de_rango = false;
 
         int pos_com = archi.tellg();
 
@@ -48,9 +47,10 @@ Imagen ArchivosPNM::leer(string ruta)
         img.setTamanio();
 
 
+        int rango_aux;
+
         if(num_id!=1 and num_id!=4)
         {
-            int rango_aux;
             archi>>rango_aux;
             img.setRango(rango_aux);
         }
@@ -75,6 +75,10 @@ Imagen ArchivosPNM::leer(string ruta)
                 for(int i=0; i<columnas_aux; i++)
                 {
                   archi>>intEscala;
+
+                  if((int)intEscala>img.getRango())
+                      throw ExcepcionArchivoCorrupto();
+
                   pix_aux.setPixelMonocr((int)intEscala);
                   img.setPixel(j, i, pix_aux);
                   contador_pixeles++;
@@ -123,6 +127,10 @@ Imagen ArchivosPNM::leer(string ruta)
                 for(int i=0; i<columnas_aux; i++)
                 {
                     archi.read((char*)&r, sizeof(r));
+
+                    if((int)r>img.getRango())
+                        throw ExcepcionArchivoCorrupto();
+
                     pix_aux.setPixelMonocr((int)r);
                     img.setPixel(j, i, pix_aux);
                     contador_pixeles++;
@@ -218,7 +226,7 @@ void ArchivosPNM::guardar(Imagen *img)
         cout<<rutaGuardado;
     }else{
 
-        escribeEncabezado(rutaGuardado, img);
+        escribeEncabezado(img);
 
         switch(id[1])
         {
@@ -248,7 +256,7 @@ void ArchivosPNM::guardar(Imagen *img)
 }
 
 
-void ArchivosPNM::escribeEncabezado(string rutaEscritura, Imagen *img)
+void ArchivosPNM::escribeEncabezado(Imagen *img)
 {
     string id = img->getIdentificador();
 

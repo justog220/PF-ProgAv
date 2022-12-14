@@ -24,5 +24,5 @@ var class_imagen =
     [ "identificador", "class_imagen.html#a3862cbbf0bb7cf8d56c6f5b769806f38", null ],
     [ "imag", "class_imagen.html#a3253ba68ee7bba91e57b634a85047404", null ],
     [ "informacion", "class_imagen.html#a27a72bf1ea6c01a6a4c3fd6ca3bc5264", null ],
-    [ "rango", "class_imagen.html#ae2310ab74334e4f679d5c6b71fb7f0a4", null ]
+    [ "rango", "class_imagen.html#ae5b702987b1960f5a3ab6fc20e25cca0", null ]
 ];

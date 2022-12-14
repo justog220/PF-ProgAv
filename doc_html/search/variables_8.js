@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['identificador_1158',['identificador',['../class_archivos_a_i_c.html#ab2c2c0b495012e23718e6161cbc17629',1,'ArchivosAIC::identificador()'],['../class_archivos_p_n_m.html#add99f5595bf7c7af37ee9a89827ec7b5',1,'ArchivosPNM::identificador()'],['../class_imagen.html#a3862cbbf0bb7cf8d56c6f5b769806f38',1,'Imagen::identificador()']]],
-  ['imag_1159',['imag',['../class_algoritmo_del_pintor.html#a4767483323984d4dd296d7ad91e02a1d',1,'AlgoritmoDelPintor::imag()'],['../class_imagen.html#a3253ba68ee7bba91e57b634a85047404',1,'Imagen::imag()']]],
-  ['imagen_1160',['imagen',['../class_ventana_de_graficacion.html#afcd896ca9a84b65788c73424dc6afdbf',1,'VentanaDeGraficacion']]],
-  ['imagenanalisis_1161',['imagenAnalisis',['../class_graficador_histograma.html#a35fea56cbd4e9ca930535771054beb04',1,'GraficadorHistograma']]],
-  ['informacion_1162',['informacion',['../class_imagen.html#a27a72bf1ea6c01a6a4c3fd6ca3bc5264',1,'Imagen']]]
+  ['listadearchivos_924',['listaDeArchivos',['../class_espacio_de_trabajo.html#a3ff0bbdddd884ff3c279f778ce5e443c',1,'EspacioDeTrabajo']]],
+  ['luts_925',['luts',['../class_tabla_lut.html#a3b70ad7546c97d257172e448b10aebc4',1,'TablaLut']]]
 ];

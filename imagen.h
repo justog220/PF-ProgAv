@@ -165,7 +165,7 @@ private:
 
     /*! \param rango Atributo que almacena el valor del rango de la imágen .
     */
-    float rango;
+    int rango;
 
     /*!
      * \param identificador Identificador de la Imagen.

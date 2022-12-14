@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['opcarch_1167',['opcArch',['../class_ventana_de_graficacion.html#a08d8e9f6cc2414e2f3f82d8a5e57f74d',1,'VentanaDeGraficacion']]],
-  ['opcdir_1168',['opcDir',['../class_ventana_de_graficacion.html#ae39f47c78d1e0089c6a35e889999d51b',1,'VentanaDeGraficacion']]]
+  ['procesadorestad_930',['procesadorEstad',['../class_graficador_histograma.html#a2f0fb1fe6c5afef5f7793aeb6e3455d7',1,'GraficadorHistograma']]],
+  ['profundidad_931',['profundidad',['../class_algoritmo_del_pintor.html#adacb2f3c91fb1ed17711c66542a86efa',1,'AlgoritmoDelPintor']]]
 ];

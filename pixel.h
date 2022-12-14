@@ -22,10 +22,17 @@ using namespace std;
 class Pixel
 {
 public:
-    ///Constructor del objeto Pixel
+    ///Constructor de la clase Pixel sin darle valor a r, g y b.
     Pixel();
 
-    Pixel(int r, int green, int blue);
+    /*!
+     * \brief Pixel Constructor de la clase Pixel dando valor a r, g y b.
+     * \param red Valor de R.
+     * \param green Valor de G.
+     * \param blue Valor de B.
+     */
+    Pixel(int red, int green, int blue);
+
     /*!
      * \brief       setPixelRGB Método que permite cambiar los valores de R, G y B de un tipo de pixel RGB.
      * \param[in]   valor_r Es el valor de R que se quiere establecer.

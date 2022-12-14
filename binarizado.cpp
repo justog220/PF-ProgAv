@@ -40,8 +40,10 @@ int Binarizado::obtenerPuntoBinarizacion(Imagen &imagen)
     cout<<"\t|__Ingrese nivel a partir del cual se binariza [0, "<<imagen.getRango()<<"]: ";
     cin>>punto;
 
-    while(punto < 0 or punto > imagen.getRango())
+    while(punto < 0 or punto > imagen.getRango() or !cin.good())
     {
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout<<"\t|__Ingrese un nivel válido [0, "<<imagen.getRango()<<"]: ";
         cin>>punto;
     }

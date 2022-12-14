@@ -1,7 +1,6 @@
 var class_graficador_histograma =
 [
     [ "GraficadorHistograma", "class_graficador_histograma.html#a9d8479d16eeda28cea737d95f2777ebc", null ],
-    [ "construirHistograma", "class_graficador_histograma.html#afb2b95eb9c1d1baa5c490ffa3cc561ad", null ],
     [ "graficarHistograma", "class_graficador_histograma.html#a0fea2467b8ee53bc9ef00cab14eee93f", null ],
     [ "initializeGL", "class_graficador_histograma.html#aa737ae0d4f730366dac67ff310004a8b", null ],
     [ "paintGL", "class_graficador_histograma.html#a840da15e6339fcaf13547cb188458671", null ],
@@ -15,7 +14,6 @@ var class_graficador_histograma =
     [ "frecuenciaG", "class_graficador_histograma.html#a711b33992b1e18171a19e948405d7338", null ],
     [ "frecuenciaPromedio", "class_graficador_histograma.html#a167b2fc6dbe3c919e0f9da215aa5ffc7", null ],
     [ "frecuenciaR", "class_graficador_histograma.html#ab849d0da38d586b876b7c90d1b4c3e4e", null ],
-    [ "histograma", "class_graficador_histograma.html#a0f65e7197f8ee1abaeeb0e45990b83ca", null ],
     [ "imagenAnalisis", "class_graficador_histograma.html#a35fea56cbd4e9ca930535771054beb04", null ],
     [ "maximaFrecuencia", "class_graficador_histograma.html#ac34463c6ba909660c4026641d2c134d8", null ],
     [ "procesadorEstad", "class_graficador_histograma.html#a2f0fb1fe6c5afef5f7793aeb6e3455d7", null ]

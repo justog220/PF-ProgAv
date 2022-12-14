@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pixel_873',['Pixel',['../class_pixel.html',1,'']]],
-  ['posicion_874',['Posicion',['../struct_posicion.html',1,'']]],
-  ['procesadorestadistico_875',['ProcesadorEstadistico',['../class_procesador_estadistico.html',1,'']]]
+  ['pixel_694',['Pixel',['../class_pixel.html',1,'']]],
+  ['posicion_695',['Posicion',['../struct_posicion.html',1,'']]],
+  ['procesadorestadistico_696',['ProcesadorEstadistico',['../class_procesador_estadistico.html',1,'']]]
 ];

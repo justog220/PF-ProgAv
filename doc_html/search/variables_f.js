@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['r_1286',['r',['../class_pixel.html#a8bdcc8f589c30333ec3f88d2c26d4e3a',1,'Pixel']]],
-  ['raiz_1287',['raiz',['../class_espacio_de_trabajo.html#ae5d04a173d44964e2913c32230260767',1,'EspacioDeTrabajo']]],
-  ['rango_1288',['rango',['../class_imagen.html#ae2310ab74334e4f679d5c6b71fb7f0a4',1,'Imagen']]]
+  ['tabla_5fconversion_938',['tabla_conversion',['../class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260',1,'TablaLut']]],
+  ['tabladepseudocoloreo_939',['tablaDePseudocoloreo',['../class_ventana_de_graficacion.html#ac3bcbd57599467c3639088ddb7546f4d',1,'VentanaDeGraficacion']]]
 ];

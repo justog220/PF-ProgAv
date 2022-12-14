@@ -110,21 +110,12 @@ int Sistema::obtenerOpcArch(string ruta)
 
     while(opcArch < 1 or opcArch > listaDeArchivos.size()+2)
     {
-        if(typeid (opcArch).name() == "unsigned int")
-        {
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout<<"\nIngrese una opcion valida: ";
 
         cin>>opcArch;
-        }else{
-            while(typeid (opcArch).name() != "unsigned int")
-            {
-                opcArch = 0;
-                cout<<"\nIngrese un numero válido: ";
 
-                cin>>opcArch;
-            }
-
-        }
     }
 
     if (opcArch == listaDeArchivos.size()+1)

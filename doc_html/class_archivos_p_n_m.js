@@ -1,7 +1,7 @@
 var class_archivos_p_n_m =
 [
     [ "ArchivosPNM", "class_archivos_p_n_m.html#accebc41f3d1d9e7c3dc850d19bb8ca97", null ],
-    [ "escribeEncabezado", "class_archivos_p_n_m.html#a20f53f64db785802b51d27a92976f55c", null ],
+    [ "escribeEncabezado", "class_archivos_p_n_m.html#ad4643cce67487d8f015f0ac6e2bd1156", null ],
     [ "escribeP1", "class_archivos_p_n_m.html#a1bb26b0901114866da19db7bf23c8825", null ],
     [ "escribeP2", "class_archivos_p_n_m.html#ac2005789de82eea06ec15cce630ec68b", null ],
     [ "escribeP3", "class_archivos_p_n_m.html#a3067dc6900e9f8cd62c813a64953d2f1", null ],

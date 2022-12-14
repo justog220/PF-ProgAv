@@ -65,8 +65,6 @@ var files_dup =
       [ "Imagen", "class_imagen.html", "class_imagen" ]
     ] ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
-    [ "moc_predefs.h", "moc__predefs_8h.html", "moc__predefs_8h" ],
-    [ "moc_qcustomplot.cpp", "moc__qcustomplot_8cpp.html", "moc__qcustomplot_8cpp" ],
     [ "negativo.cpp", "negativo_8cpp.html", null ],
     [ "negativo.h", "negativo_8h.html", [
       [ "Negativo", "class_negativo.html", "class_negativo" ]

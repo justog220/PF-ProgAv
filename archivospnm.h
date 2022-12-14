@@ -64,7 +64,7 @@ private:
      * \param[in]   rutaEscritura Ruta en la que se almacena la imágen.
      * \param[in]   img Imagen por referencia, es la que se almacena.
      */
-    void escribeEncabezado(string rutaEscritura, Imagen *img);
+    void escribeEncabezado(Imagen *img);
 
     /*!
      * \brief       escribeP1 Método protegido auxiliar para el guardado

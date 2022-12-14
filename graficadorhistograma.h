@@ -92,6 +92,9 @@ private:
      */
     vector<int> frecuenciaB;
 
+    /*!
+     * \param frecuenciaPromedio Vector que representa la frecuencia con la que aparece cada promedio ( (R+G+B)/3 )
+     */
     vector<int> frecuenciaPromedio;
 
     /*!
@@ -119,16 +122,6 @@ private:
      * \param desply Atributo que representa cuanto se desplaza en y el histograma en la ventana
      */
     float desply;
-
-    /*!
-     * \brief histograma Imagen que representa el Histograma.
-     */
-    Imagen histograma;
-
-    /*!
-     * \brief construirHistograma Método protegido que permite la representacion de un Histograma como Imagen.
-     */
-    void construirHistograma();
 };
 
 #endif // GRAFICADORHISTOGRAMA_H

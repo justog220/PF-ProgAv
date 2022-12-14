@@ -90,29 +90,30 @@ $(document).ready(function(){initNavTree('binarizado_8h_source.html',''); initRe
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define BINARIZADO_H</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="filtros_8h.html">filtros.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_binarizado.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_binarizado.html">Binarizado</a> : <span class="keyword">public</span> <a class="code" href="class_filtros.html">Filtros</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_binarizado.html#ab8e32338414684209aeb653e8cb2b114">Binarizado</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_imagen.html">Imagen</a> <a class="code" href="class_binarizado.html#a6857f07c0bef21a7ebe041653026e4f5">aplicarFiltro</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;imagen) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_binarizado.html#a3313de80b14374324dcbdbdbcde387cc">sePuedeBinarizar</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;imagen);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_binarizado.html#a5adc370c96c8d0122a233d27bc84b475">obtenerPuntoBinarizacion</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;imagen);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_binarizado.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_binarizado.html">Binarizado</a> : <span class="keyword">public</span> <a class="code" href="class_filtros.html">Filtros</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_binarizado.html#ab8e32338414684209aeb653e8cb2b114">Binarizado</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_imagen.html">Imagen</a> <a class="code" href="class_binarizado.html#a6857f07c0bef21a7ebe041653026e4f5">aplicarFiltro</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;imagen) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_binarizado.html#a3313de80b14374324dcbdbdbcde387cc">sePuedeBinarizar</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;imagen);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_binarizado.html#a5adc370c96c8d0122a233d27bc84b475">obtenerPuntoBinarizacion</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;imagen);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// BINARIZADO_H</span></div>
-<div class="ttc" id="aclass_binarizado_html"><div class="ttname"><a href="class_binarizado.html">Binarizado</a></div><div class="ttdoc">Clase que hereda de la clase Filtros métodos y los redefine para binarizar una Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8h_source.html#l00016">binarizado.h:17</a></div></div>
-<div class="ttc" id="aclass_binarizado_html_a3313de80b14374324dcbdbdbcde387cc"><div class="ttname"><a href="class_binarizado.html#a3313de80b14374324dcbdbdbcde387cc">Binarizado::sePuedeBinarizar</a></div><div class="ttdeci">bool sePuedeBinarizar(Imagen &amp;imagen)</div><div class="ttdoc">sePuedeBinarizar Evalúa si una Imagen se puede binarizar.</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00029">binarizado.cpp:29</a></div></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// BINARIZADO_H</span></div>
+<div class="ttc" id="aclass_binarizado_html"><div class="ttname"><a href="class_binarizado.html">Binarizado</a></div><div class="ttdoc">Clase que hereda de la clase Filtros mÃ©todos y los redefine para binarizar una Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8h_source.html#l00017">binarizado.h:18</a></div></div>
+<div class="ttc" id="aclass_binarizado_html_a3313de80b14374324dcbdbdbcde387cc"><div class="ttname"><a href="class_binarizado.html#a3313de80b14374324dcbdbdbcde387cc">Binarizado::sePuedeBinarizar</a></div><div class="ttdeci">bool sePuedeBinarizar(Imagen &amp;imagen)</div><div class="ttdoc">sePuedeBinarizar EvalÃºa si una Imagen se puede binarizar.</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00029">binarizado.cpp:29</a></div></div>
 <div class="ttc" id="aclass_binarizado_html_a5adc370c96c8d0122a233d27bc84b475"><div class="ttname"><a href="class_binarizado.html#a5adc370c96c8d0122a233d27bc84b475">Binarizado::obtenerPuntoBinarizacion</a></div><div class="ttdeci">int obtenerPuntoBinarizacion(Imagen &amp;imagen)</div><div class="ttdoc">obtenerPuntoBinarizacion Obtiene el nivel a partir del cual binarizar.</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00037">binarizado.cpp:37</a></div></div>
-<div class="ttc" id="aclass_binarizado_html_a6857f07c0bef21a7ebe041653026e4f5"><div class="ttname"><a href="class_binarizado.html#a6857f07c0bef21a7ebe041653026e4f5">Binarizado::aplicarFiltro</a></div><div class="ttdeci">Imagen aplicarFiltro(Imagen &amp;imagen) override</div><div class="ttdoc">aplicarFiltro Método heredado de la case Filtros, redefinido para la aplicación del binarizado de una...</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00008">binarizado.cpp:8</a></div></div>
+<div class="ttc" id="aclass_binarizado_html_a6857f07c0bef21a7ebe041653026e4f5"><div class="ttname"><a href="class_binarizado.html#a6857f07c0bef21a7ebe041653026e4f5">Binarizado::aplicarFiltro</a></div><div class="ttdeci">Imagen aplicarFiltro(Imagen &amp;imagen) override</div><div class="ttdoc">aplicarFiltro MÃ©todo heredado de la case Filtros, redefinido para la aplicaciÃ³n del binarizado de u...</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00008">binarizado.cpp:8</a></div></div>
 <div class="ttc" id="aclass_binarizado_html_ab8e32338414684209aeb653e8cb2b114"><div class="ttname"><a href="class_binarizado.html#ab8e32338414684209aeb653e8cb2b114">Binarizado::Binarizado</a></div><div class="ttdeci">Binarizado()</div><div class="ttdoc">Binarizado Constructor del objeto Binarizado.</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00003">binarizado.cpp:3</a></div></div>
-<div class="ttc" id="aclass_filtros_html"><div class="ttname"><a href="class_filtros.html">Filtros</a></div><div class="ttdoc">Clase que virtualiza métodos para la aplicacion de diversos filtros.</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8h_source.html#l00019">filtros.h:20</a></div></div>
+<div class="ttc" id="aclass_filtros_html"><div class="ttname"><a href="class_filtros.html">Filtros</a></div><div class="ttdoc">Clase que virtualiza mÃ©todos para la aplicacion de diversos filtros.</div><div class="ttdef"><b>Definition:</b> <a href="filtros_8h_source.html#l00019">filtros.h:20</a></div></div>
 <div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00022">imagen.h:23</a></div></div>
 <div class="ttc" id="afiltros_8h_html"><div class="ttname"><a href="filtros_8h.html">filtros.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -121,7 +122,7 @@ $(document).ready(function(){initNavTree('binarizado_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="binarizado_8h.html">binarizado.h</a></li>
-    <li class="footer">Generado el Lunes, 12 de Diciembre de 2022 16:52:08 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Miércoles, 14 de Diciembre de 2022 19:19:24 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

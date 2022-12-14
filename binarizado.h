@@ -12,6 +12,7 @@
 #define BINARIZADO_H
 
 #include "filtros.h"
+#include <limits>
 
 class Binarizado : public Filtros
 {

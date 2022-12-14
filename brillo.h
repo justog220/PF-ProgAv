@@ -47,6 +47,9 @@ public:
      */
     void reducirBrillo(Imagen &imagen);
 
+    /*!
+     * \brief cambiaOpcion Método que permite cambiar entre aumentar o reducir el brillo.
+     */
     void cambiaOpcion();
 
 private:

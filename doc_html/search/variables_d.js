@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['procesadorestad_1169',['procesadorEstad',['../class_graficador_histograma.html#a2f0fb1fe6c5afef5f7793aeb6e3455d7',1,'GraficadorHistograma']]],
-  ['profundidad_1170',['profundidad',['../class_algoritmo_del_pintor.html#adacb2f3c91fb1ed17711c66542a86efa',1,'AlgoritmoDelPintor']]]
+  ['r_932',['r',['../class_pixel.html#a8bdcc8f589c30333ec3f88d2c26d4e3a',1,'Pixel']]],
+  ['raiz_933',['raiz',['../class_espacio_de_trabajo.html#ae5d04a173d44964e2913c32230260767',1,'EspacioDeTrabajo']]],
+  ['rango_934',['rango',['../class_imagen.html#ae5b702987b1960f5a3ab6fc20e25cca0',1,'Imagen']]]
 ];

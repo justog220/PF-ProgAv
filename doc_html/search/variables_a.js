@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['maximafrecuencia_1165',['maximaFrecuencia',['../class_graficador_histograma.html#ac34463c6ba909660c4026641d2c134d8',1,'GraficadorHistograma']]]
+  ['nosoportoanterior_927',['noSoportoAnterior',['../class_sistema.html#afae7cfb7e99dbf395ecb30855f3bd2e8',1,'Sistema']]]
 ];

@@ -70,7 +70,7 @@ private:
      * representa un Pixel de la Imagen y el booleano almacenado tiene cierto valor dependiendo
      * de si fue analizado o no.
      */
-    vector<vector<bool>> fue_analizado;
+    vector<vector<bool>> fueAnalizado;
 
     /*!
      * \brief       inicializarMatrizDeAnalisis Método que permite inicializar el

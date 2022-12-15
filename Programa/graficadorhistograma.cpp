@@ -51,12 +51,6 @@ void GraficadorHistograma::paintGL()
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    float relAncho = ((float)width())  / ((float)frecuenciaB.size());
-    float relAlto  = ((float)height()) / (float)maximaFrecuencia;
-
-    escala = 1.0f;
-    desplx = (width() - frecuenciaB.size()*escala)*0.5f;
-    desply = (height() - maximaFrecuencia*escala)*0.5f;
 
     graficarHistograma();
 }

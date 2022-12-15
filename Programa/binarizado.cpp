@@ -13,13 +13,14 @@ Imagen Binarizado::aplicarFiltro(Imagen &imagen)
     }else
     {
         int puntoBinarizacion = obtenerPuntoBinarizacion(imagen);
-        for(int i = 0; i < imagen.getFilas(); i++)
-            for(int j = 0; j < imagen.getColumnas(); j++)
+        for(int f = 0; f < imagen.getFilas(); f++)
+            for(int c = 0; c < imagen.getColumnas(); c++)
             {
-                if(imagen.getPixel(i, j).getIntensidad() >= puntoBinarizacion)
-                    imagen.setPixel(i, j, Pixel(imagen.getRango(), imagen.getRango(), imagen.getRango()));
+                if(imagen.getPixel(f, c).getIntensidad() >= puntoBinarizacion)
+                    imagen.setPixel(f, c, Pixel(imagen.getRango(), imagen.getRango(), imagen.getRango()));
                 else
-                    imagen.setPixel(i, j, Pixel(0, 0, 0));
+                    imagen.setPixel(f, c, Pixel(0, 0, 0));
+
             }
     }
 

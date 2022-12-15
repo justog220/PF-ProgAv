@@ -7,14 +7,14 @@ TablaLut::TablaLut(int opcion)
 
 Pixel TablaLut::pseudoColorear(int intensidad)
 {
-    return Pixel(tabla_conversion[intensidad][1], tabla_conversion[intensidad][2], tabla_conversion[intensidad][3]);
+    return Pixel(tablaConversion[intensidad][1], tablaConversion[intensidad][2], tablaConversion[intensidad][3]);
 }
 
 void TablaLut::cargarLUT(int opc)
 {
-    tabla_conversion.resize(256);
-    for (int i = 0; i < tabla_conversion.size(); i++)
-         tabla_conversion[i].resize(4);
+    tablaConversion.resize(256);
+    for (int i = 0; i < tablaConversion.size(); i++)
+         tablaConversion[i].resize(4);
 
     ifstream lut;
     lut.open(luts[opc-1]);
@@ -23,8 +23,8 @@ void TablaLut::cargarLUT(int opc)
 
     getline(lut, linea);
 
-    for (int i = 0; i < tabla_conversion.size(); i++){
-        lut>>tabla_conversion[i][0]>>tabla_conversion[i][1]>>tabla_conversion[i][2]>>tabla_conversion[i][3];
+    for (int i = 0; i < tablaConversion.size(); i++){
+        lut>>tablaConversion[i][0]>>tablaConversion[i][1]>>tablaConversion[i][2]>>tablaConversion[i][3];
     }
 
 }

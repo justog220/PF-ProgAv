@@ -58,7 +58,7 @@ int Pixel::getB()
 
 int Pixel::getIntensidad()
 {
-    return getB();
+    return (r+g+b)/3;
 }
 
 void Pixel::aumentarBrillo(int aumento)

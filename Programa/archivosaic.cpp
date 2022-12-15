@@ -35,7 +35,7 @@ Imagen ArchivosAIC::leer(string ruta)
                 getline(archi, linea);
             }
 
-            Pixel pix_aux;
+            Pixel pixAux;
 
 
             archi.seekg(auxPosicion);
@@ -55,10 +55,10 @@ Imagen ArchivosAIC::leer(string ruta)
                 if(!seGuardoColumnas)
                 {
                     int tamanio = linea.length();
-                    char linea_char[tamanio];
-                    strcpy(linea_char, linea.c_str());
+                    char lineaChar[tamanio];
+                    strcpy(lineaChar, linea.c_str());
                     char *split;
-                    split = strtok(linea_char, " ");
+                    split = strtok(lineaChar, " ");
                     while (split != NULL)
                       {
                         datosLinea.push_back(stoi(split));
@@ -98,10 +98,10 @@ Imagen ArchivosAIC::leer(string ruta)
                 acumuladorColumnas = 0;
 
                 int tamanio = linea.length();
-                char linea_char[tamanio];
-                strcpy(linea_char, linea.c_str());
+                char lineaChar[tamanio];
+                strcpy(lineaChar, linea.c_str());
                 char *split;
-                split = strtok(linea_char, " ");
+                split = strtok(lineaChar, " ");
                 while (split != NULL)
                   {
                     datosLinea.push_back(stoi(split));

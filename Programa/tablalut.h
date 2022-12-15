@@ -47,7 +47,7 @@ private:
      * \param tabla_conversion Vector de enteros que representa la tabla de conversion[i][j] donde i representa la intensidad
      * que se desea pseudocolorear y j toma distintos valores, 1 si es R, 2 si es G y 3 si es B.
      */
-    vector<vector<int>> tabla_conversion;
+    vector<vector<int>> tablaConversion;
 
     /*!
      * \brief cargarLUT Método que permite cargar la tabla LUT desde un archivo.

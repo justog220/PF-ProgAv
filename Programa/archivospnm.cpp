@@ -17,45 +17,45 @@ Imagen ArchivosPNM::leer(string ruta)
         getline(archi, identificador);
 
         img.setIdentificador(identificador);
-        char num_id;
-        num_id=identificador[1];
+        char numId;
+        numId=identificador[1];
 
         string comentario;
-        int filas_aux, columnas_aux;
+        int filasAux, columnasAux;
 
-        int contador_pixeles = 0;
+        int contadorPixeles = 0;
 
-        int pos_com = archi.tellg();
+        int posCom = archi.tellg();
 
         getline(archi, comentario);
 
         if(comentario[0] != '#' and comentario[0] != '\n')
         {
-            archi.seekg(pos_com);
+            archi.seekg(posCom);
         }else {
             img.setInformacion(comentario);
         }
 
-        archi>>columnas_aux>>filas_aux;
+        archi>>columnasAux>>filasAux;
 
-        if (columnas_aux == 0 or filas_aux == 0)
+        if (columnasAux == 0 or filasAux == 0)
             throw ExcepcionArchivoCorrupto();
 
-        img.setFilas(filas_aux);
-        img.setColumnas(columnas_aux);
+        img.setFilas(filasAux);
+        img.setColumnas(columnasAux);
 
         img.setTamanio();
 
 
-        int rango_aux;
+        int rangoAux;
 
-        if(num_id!=1 and num_id!=4)
+        if(numId!=1 and numId!=4)
         {
-            archi>>rango_aux;
-            img.setRango(rango_aux);
+            archi>>rangoAux;
+            img.setRango(rangoAux);
         }
 
-        Pixel pix_aux;
+        Pixel pixAux;
 
         string linea;
 
@@ -64,76 +64,76 @@ Imagen ArchivosPNM::leer(string ruta)
 
         int intEscala;
 
-        int pos_final;
+        int posFinal;
 
-        switch(num_id)
+        switch(numId)
         {
         case '1':
             img.setRango(1);
-            for(int j=0; j<filas_aux; j++)
+            for(int fila=0; fila<filasAux; fila++)
             {
-                for(int i=0; i<columnas_aux; i++)
+                for(int columna=0; columna<columnasAux; columna++)
                 {
                   archi>>intEscala;
 
                   if((int)intEscala>img.getRango())
                       throw ExcepcionArchivoCorrupto();
 
-                  pix_aux.setPixelMonocr((int)intEscala);
-                  img.setPixel(j, i, pix_aux);
-                  contador_pixeles++;
+                  pixAux.setPixelMonocr((int)intEscala);
+                  img.setPixel(fila, columna, pixAux);
+                  contadorPixeles++;
                 }
             }
             archi.close();
             break;
         case '2':
             getline(archi, linea,'\n');
-            for(int j=0; j<filas_aux; j++)
+            for(int fila=0; fila<filasAux; fila++)
             {
-                for(int i=0; i<columnas_aux; i++)
+                for(int columna=0; columna<columnasAux; columna++)
                 {
                    archi>>intEscala;
                    if((int)intEscala>img.getRango())
                        throw ExcepcionArchivoCorrupto();
-                   pix_aux.setPixelEscala((int)intEscala);
-                   img.setPixel(j, i, pix_aux);
-                   contador_pixeles++;
+                   pixAux.setPixelEscala((int)intEscala);
+                   img.setPixel(fila, columna, pixAux);
+                   contadorPixeles++;
 
                 }
             }
             archi.close();
             break;
         case '3':
-            for(int j=0; j<filas_aux; j++)
+            for(int fila=0; fila<filasAux; fila++)
             {
-                for(int i=0; i<columnas_aux; i++)
+                for(int columna=0; columna<columnasAux; columna++)
                 {
                     int R, G, B;
                     archi>>R>>G>>B;
-
                     if(R>img.getRango() or G>img.getRango() or B>img.getRango())
                         throw ExcepcionArchivoCorrupto();
-                    pix_aux.setPixelRGB(R, G, B);
-                    img.setPixel(j, i, pix_aux);
-                    contador_pixeles++;
+
+                    pixAux.setPixelRGB(R, G, B);
+                    img.setPixel(fila, columna, pixAux);
+                    contadorPixeles++;
                 }
             }
             archi.close();
             break;
         case '4':
 
-            for(int j=0; j<filas_aux; j++)
+            for(int fila=0; fila<filasAux; fila++)
             {
-                for(int i=0; i<columnas_aux; i++)
+                for(int columna=0; columna<columnasAux; columna++)
                 {
                     archi.read((char*)&r, sizeof(r));
 
                     if((int)r>img.getRango())
                         throw ExcepcionArchivoCorrupto();
 
-                    pix_aux.setPixelMonocr((int)r);
-                    img.setPixel(j, i, pix_aux);
-                    contador_pixeles++;
+                    pixAux.setPixelMonocr((int)r);
+                    img.setPixel(fila, columna, pixAux);
+                    contadorPixeles++;
                 }
             }
             archi.close();
@@ -143,25 +143,25 @@ Imagen ArchivosPNM::leer(string ruta)
 
             getline(archi, linea, '\n');
 
-            pos_final = archi.tellg();
+            posFinal = archi.tellg();
 
             archi.close();
             archi.open(ruta, ios::in | ios::binary);
 
-            archi.seekg(pos_final);
+            archi.seekg(posFinal);
 
-            for(int j=0; j<filas_aux; j++)
+            for(int fila=0; fila<filasAux; fila++)
             {
-                for(int i=0; i<columnas_aux; i++)
+                for(int columna=0; columna<columnasAux; columna++)
                 {
                     archi.read((char*)&r, sizeof(r));
 
                     if((int)r>img.getRango())
                         throw ExcepcionArchivoCorrupto();
 
-                    pix_aux.setPixelEscala((int)r);
-                    img.setPixel(j, i, pix_aux);
-                    contador_pixeles++;
+                    pixAux.setPixelEscala((int)r);
+                    img.setPixel(fila, columna, pixAux);
+                    contadorPixeles++;
                 }
             }
             archi.close();
@@ -171,16 +171,16 @@ Imagen ArchivosPNM::leer(string ruta)
 
             getline(archi, linea, '\n');
 
-            pos_final = archi.tellg();
+            posFinal = archi.tellg();
 
             archi.close();
             archi.open(ruta, ios::in | ios::binary);
 
-            archi.seekg(pos_final);
+            archi.seekg(posFinal);
 
-            for(int j=0; j<filas_aux; j++)
+            for(int fila=0; fila<filasAux; fila++)
             {
-                for(int i=0; i<columnas_aux; i++)
+                for(int columna=0; columna<columnasAux; columna++)
                 {
                     archi.read((char*)&r, sizeof(r));
 
@@ -191,10 +191,10 @@ Imagen ArchivosPNM::leer(string ruta)
                     if((int)r>img.getRango() or (int)g>img.getRango() or (int)b>img.getRango())
                         throw ExcepcionArchivoCorrupto();
 
-                    pix_aux.setPixelRGB((int)r, (int)g, (int)b);
+                    pixAux.setPixelRGB((int)r, (int)g, (int)b);
 
-                    img.setPixel(j, i, pix_aux);
-                    contador_pixeles++;
+                    img.setPixel(fila, columna, pixAux);
+                    contadorPixeles++;
                     }
                 }
 
@@ -205,7 +205,7 @@ Imagen ArchivosPNM::leer(string ruta)
 
         }
 
-        if(contador_pixeles != filas_aux*columnas_aux)
+        if(contadorPixeles != filasAux*columnasAux)
             throw ExcepcionArchivoCorrupto();
 
     }
@@ -262,19 +262,19 @@ void ArchivosPNM::escribeEncabezado(Imagen *img)
 
     archi<<id<<"\n";
 
-    char num_id;
-    num_id=id[1];
+    char numId;
+    numId=id[1];
 
     archi<<img->getInformacion()<<"\n";
 
-    int filas_aux = img->getFilas(), columnas_aux = img->getColumnas();
+    int filasAux = img->getFilas(), columnasAux = img->getColumnas();
 
-    archi<<columnas_aux<<" "<<filas_aux<<endl;
+    archi<<columnasAux<<" "<<filasAux<<endl;
 
-    if(num_id!=1 and num_id!=4)
+    if(numId!=1 and numId!=4)
     {
-        int rango_aux = img->getRango();
-        archi<<rango_aux<<endl;
+        int rangoAux = img->getRango();
+        archi<<rangoAux<<endl;
     }
 
     archi.close();
@@ -284,18 +284,18 @@ void ArchivosPNM::escribeP1(string rutaEscritura, Imagen *img)
 {
     archi.open(rutaEscritura, ios::out | ios::app);
 
-    Pixel pix_aux;
+    Pixel pixAux;
 
     int intEscala;
 
-    int filas_aux = img->getFilas(), columnas_aux = img->getColumnas();
+    int filasAux = img->getFilas(), columnasAux = img->getColumnas();
 
-    for(int i=0; i<filas_aux; i++)
+    for(int fila=0; fila<filasAux; fila++)
     {
-        for(int j=0; j<columnas_aux; j++)
+        for(int columna=0; columna<columnasAux; columna++)
         {
-          pix_aux = img->getPixel(i, j);
-          intEscala = pix_aux.getR();
+          pixAux = img->getPixel(fila, columna);
+          intEscala = pixAux.getR();
           if(intEscala == 1)
               intEscala = 0;
           else
@@ -311,18 +311,18 @@ void ArchivosPNM::escribeP2(string rutaEscritura, Imagen *img)
 {
     archi.open(rutaEscritura, ios::out | ios::app);
 
-    Pixel pix_aux;
+    Pixel pixAux;
 
     int intEscala;
 
-    int filas_aux = img->getFilas(), columnas_aux = img->getColumnas();
+    int filasAux = img->getFilas(), columnasAux = img->getColumnas();
 
-    for(int i=0; i<filas_aux; i++)
+    for(int fila=0; fila<filasAux; fila++)
     {
-        for(int j=0; j<columnas_aux; j++)
+        for(int columna=0; columna<columnasAux; columna++)
         {
-           pix_aux = img->getPixel(i, j);
-           intEscala = pix_aux.getR();
+           pixAux = img->getPixel(fila, columna);
+           intEscala = pixAux.getR();
            archi<<intEscala<<" ";
         }
         archi<<endl;
@@ -334,20 +334,20 @@ void ArchivosPNM::escribeP3(string rutaEscritura, Imagen *img)
 {
     archi.open(rutaEscritura, ios::out | ios::app);
 
-    Pixel pix_aux;
+    Pixel pixAux;
 
     unsigned char r, g, b;
 
-    int filas_aux = img->getFilas(), columnas_aux = img->getColumnas();
+    int filasAux = img->getFilas(), columnasAux = img->getColumnas();
 
-    for(int j=0; j<filas_aux; j++)
+    for(int fila=0; fila<filasAux; fila++)
     {
-        for(int i=0; i<columnas_aux; i++)
+        for(int columna=0; columna<columnasAux; columna++)
         {
-            pix_aux = img->getPixel(i, j);
-            r = pix_aux.getR();
-            g = pix_aux.getG();
-            b = pix_aux.getB();
+            pixAux = img->getPixel(columna, fila);
+            r = pixAux.getR();
+            g = pixAux.getG();
+            b = pixAux.getB();
             archi<<r<<g<<b;
         }
         archi<<endl;
@@ -359,18 +359,18 @@ void ArchivosPNM::escribeP4(string rutaEscritura, Imagen *img)
 {
     archi.open(rutaEscritura, ios::out | ios::binary |ios::app);
 
-    int filas_aux = img->getFilas(), columnas_aux = img->getColumnas();
+    int filasAux = img->getFilas(), columnasAux = img->getColumnas();
 
     unsigned char escala;
 
-    Pixel pix_aux;
+    Pixel pixAux;
 
-    for(int j=0; j<filas_aux; j++)
+    for(int fila=0; fila<filasAux; fila++)
     {
-        for(int i=0; i<columnas_aux; i++)
+        for(int columna=0; columna<columnasAux; columna++)
         {
-            pix_aux = img->getPixel(i, j);
-            escala = pix_aux.getR();
+            pixAux = img->getPixel(fila, columna);
+            escala = pixAux.getR();
             archi.write((char*)&escala, sizeof(escala));
         }
     }
@@ -381,19 +381,19 @@ void ArchivosPNM::escribeP5(string rutaEscritura, Imagen *img)
 {
     archi.open(rutaEscritura, ios::out | ios::binary |ios::app);
 
-    int filas_aux = img->getFilas(), columnas_aux = img->getColumnas();
+    int filasAux = img->getFilas(), columnasAux = img->getColumnas();
 
     unsigned char escala;
 
-    Pixel pix_aux;
+    Pixel pixAux;
 
-    for(int i=0; i<filas_aux; i++)
+    for(int fila=0; fila<filasAux; fila++)
     {
-        for(int j=0; j<columnas_aux; j++)
+        for(int columna=0; columna<columnasAux; columna++)
         {
-            pix_aux = img->getPixel(i, j);
+            pixAux = img->getPixel(fila, columna);
 
-            escala = (unsigned char)pix_aux.getR();
+            escala = (unsigned char)pixAux.getR();
 
             archi.write((char*)&(escala), sizeof(escala));
         }
@@ -406,24 +406,24 @@ void ArchivosPNM::escribeP6(string rutaEscritura, Imagen *img)
 {
     archi.open(rutaEscritura, ios::out | ios::binary | ios::app);
 
-    int filas_aux = img->getFilas(), columnas_aux = img->getColumnas();
+    int filasAux = img->getFilas(), columnasAux = img->getColumnas();
 
     unsigned char r, g, b;
 
-    Pixel pix_aux;
+    Pixel pixAux;
 
-    for(int i=0; i<filas_aux; i++)
+    for(int fila=0; fila<filasAux; fila++)
     {
-        for(int j=0; j<columnas_aux; j++)
+        for(int columna=0; columna<columnasAux; columna++)
         {
 
-            pix_aux = img->getPixel(i, j);
+            pixAux = img->getPixel(fila, columna);
 
-            r = (unsigned char)pix_aux.getR();
+            r = (unsigned char)pixAux.getR();
 
-            g = (unsigned char)pix_aux.getG();
+            g = (unsigned char)pixAux.getG();
 
-            b = (unsigned char)pix_aux.getB();
+            b = (unsigned char)pixAux.getB();
 
             archi.write((char*)&r, sizeof(r));
 

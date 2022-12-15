@@ -300,7 +300,7 @@ Definición en la línea 9 del archivo archivosaic.\+cpp.
 \DoxyCodeLine{35                 getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea);}
 \DoxyCodeLine{36             \}}
 \DoxyCodeLine{37 }
-\DoxyCodeLine{38             \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{38             \mbox{\hyperlink{class_pixel}{Pixel}} pixAux;}
 \DoxyCodeLine{39 }
 \DoxyCodeLine{40 }
 \DoxyCodeLine{41             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.seekg(auxPosicion);}
@@ -320,10 +320,10 @@ Definición en la línea 9 del archivo archivosaic.\+cpp.
 \DoxyCodeLine{55                 \textcolor{keywordflow}{if}(!seGuardoColumnas)}
 \DoxyCodeLine{56                 \{}
 \DoxyCodeLine{57                     \textcolor{keywordtype}{int} tamanio = linea.length();}
-\DoxyCodeLine{58                     \textcolor{keywordtype}{char} linea\_char[tamanio];}
-\DoxyCodeLine{59                     strcpy(linea\_char, linea.c\_str());}
+\DoxyCodeLine{58                     \textcolor{keywordtype}{char} lineaChar[tamanio];}
+\DoxyCodeLine{59                     strcpy(lineaChar, linea.c\_str());}
 \DoxyCodeLine{60                     \textcolor{keywordtype}{char} *split;}
-\DoxyCodeLine{61                     split = strtok(linea\_char, \textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{61                     split = strtok(lineaChar, \textcolor{stringliteral}{"{} "{}});}
 \DoxyCodeLine{62                     \textcolor{keywordflow}{while} (split != NULL)}
 \DoxyCodeLine{63                       \{}
 \DoxyCodeLine{64                         datosLinea.push\_back(stoi(split));}
@@ -363,10 +363,10 @@ Definición en la línea 9 del archivo archivosaic.\+cpp.
 \DoxyCodeLine{98                 acumuladorColumnas = 0;}
 \DoxyCodeLine{99 }
 \DoxyCodeLine{100                 \textcolor{keywordtype}{int} tamanio = linea.length();}
-\DoxyCodeLine{101                 \textcolor{keywordtype}{char} linea\_char[tamanio];}
-\DoxyCodeLine{102                 strcpy(linea\_char, linea.c\_str());}
+\DoxyCodeLine{101                 \textcolor{keywordtype}{char} lineaChar[tamanio];}
+\DoxyCodeLine{102                 strcpy(lineaChar, linea.c\_str());}
 \DoxyCodeLine{103                 \textcolor{keywordtype}{char} *split;}
-\DoxyCodeLine{104                 split = strtok(linea\_char, \textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{104                 split = strtok(lineaChar, \textcolor{stringliteral}{"{} "{}});}
 \DoxyCodeLine{105                 \textcolor{keywordflow}{while} (split != NULL)}
 \DoxyCodeLine{106                   \{}
 \DoxyCodeLine{107                     datosLinea.push\_back(stoi(split));}

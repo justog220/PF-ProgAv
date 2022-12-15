@@ -114,8 +114,8 @@ Métodos privados</h2></td></tr>
 Atributos privados</h2></td></tr>
 <tr class="memitem:a3b70ad7546c97d257172e448b10aebc4"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tabla_lut.html#a3b70ad7546c97d257172e448b10aebc4">luts</a> = {&quot;./grupo_luts/glow.lut&quot;, &quot;./grupo_luts/Turbo.lut&quot;}</td></tr>
 <tr class="separator:a3b70ad7546c97d257172e448b10aebc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb49ebf50266bc1623cc9195ea63f260"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260">tabla_conversion</a></td></tr>
-<tr class="separator:aeb49ebf50266bc1623cc9195ea63f260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2651e4d318b15104cd257884ac8c58d6"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tabla_lut.html#a2651e4d318b15104cd257884ac8c58d6">tablaConversion</a></td></tr>
+<tr class="separator:a2651e4d318b15104cd257884ac8c58d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><p>Clase que permite representar una <a class="el" href="class_imagen.html" title="Permite la representacion de una imagen a partir de un arreglo de Pixeles.">Imagen</a> pseudocolreada con una tabla LUT. </p>
@@ -196,9 +196,9 @@ Atributos privados</h2></td></tr>
 
 <p class="definition">Definición en la línea <a class="el" href="tablalut_8cpp_source.html#l00013">13</a> del archivo <a class="el" href="tablalut_8cpp_source.html">tablalut.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260">tabla_conversion</a>.resize(256);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260">tabla_conversion</a>.size(); i++)</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;         <a class="code" href="class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260">tabla_conversion</a>[i].resize(4);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_tabla_lut.html#a2651e4d318b15104cd257884ac8c58d6">tablaConversion</a>.resize(256);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_tabla_lut.html#a2651e4d318b15104cd257884ac8c58d6">tablaConversion</a>.size(); i++)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;         <a class="code" href="class_tabla_lut.html#a2651e4d318b15104cd257884ac8c58d6">tablaConversion</a>[i].resize(4);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    ifstream lut;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    lut.open(<a class="code" href="class_tabla_lut.html#a3b70ad7546c97d257172e448b10aebc4">luts</a>[opc-1]);</div>
@@ -207,15 +207,15 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    getline(lut, linea);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260">tabla_conversion</a>.size(); i++){</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        lut&gt;&gt;<a class="code" href="class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260">tabla_conversion</a>[i][0]&gt;&gt;<a class="code" href="class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260">tabla_conversion</a>[i][1]&gt;&gt;<a class="code" href="class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260">tabla_conversion</a>[i][2]&gt;&gt;<a class="code" href="class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260">tabla_conversion</a>[i][3];</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_tabla_lut.html#a2651e4d318b15104cd257884ac8c58d6">tablaConversion</a>.size(); i++){</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        lut&gt;&gt;<a class="code" href="class_tabla_lut.html#a2651e4d318b15104cd257884ac8c58d6">tablaConversion</a>[i][0]&gt;&gt;<a class="code" href="class_tabla_lut.html#a2651e4d318b15104cd257884ac8c58d6">tablaConversion</a>[i][1]&gt;&gt;<a class="code" href="class_tabla_lut.html#a2651e4d318b15104cd257884ac8c58d6">tablaConversion</a>[i][2]&gt;&gt;<a class="code" href="class_tabla_lut.html#a2651e4d318b15104cd257884ac8c58d6">tablaConversion</a>[i][3];</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="ttc" id="aclass_tabla_lut_html_a2651e4d318b15104cd257884ac8c58d6"><div class="ttname"><a href="class_tabla_lut.html#a2651e4d318b15104cd257884ac8c58d6">TablaLut::tablaConversion</a></div><div class="ttdeci">vector&lt; vector&lt; int &gt; &gt; tablaConversion</div><div class="ttdef"><b>Definition:</b> <a href="tablalut_8h_source.html#l00050">tablalut.h:50</a></div></div>
 <div class="ttc" id="aclass_tabla_lut_html_a3b70ad7546c97d257172e448b10aebc4"><div class="ttname"><a href="class_tabla_lut.html#a3b70ad7546c97d257172e448b10aebc4">TablaLut::luts</a></div><div class="ttdeci">vector&lt; string &gt; luts</div><div class="ttdef"><b>Definition:</b> <a href="tablalut_8h_source.html#l00044">tablalut.h:44</a></div></div>
-<div class="ttc" id="aclass_tabla_lut_html_aeb49ebf50266bc1623cc9195ea63f260"><div class="ttname"><a href="class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260">TablaLut::tabla_conversion</a></div><div class="ttdeci">vector&lt; vector&lt; int &gt; &gt; tabla_conversion</div><div class="ttdef"><b>Definition:</b> <a href="tablalut_8h_source.html#l00050">tablalut.h:50</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="tablalut_8h_source.html#l00044">luts</a> y <a class="el" href="tablalut_8h_source.html#l00050">tabla_conversion</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="tablalut_8h_source.html#l00044">luts</a> y <a class="el" href="tablalut_8h_source.html#l00050">tablaConversion</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="tablalut_8cpp_source.html#l00003">TablaLut()</a>.</p>
 
@@ -248,11 +248,11 @@ Atributos privados</h2></td></tr>
 
 <p class="definition">Definición en la línea <a class="el" href="tablalut_8cpp_source.html#l00008">8</a> del archivo <a class="el" href="tablalut_8cpp_source.html">tablalut.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_pixel.html">Pixel</a>(<a class="code" href="class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260">tabla_conversion</a>[intensidad][1], <a class="code" href="class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260">tabla_conversion</a>[intensidad][2], <a class="code" href="class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260">tabla_conversion</a>[intensidad][3]);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_pixel.html">Pixel</a>(<a class="code" href="class_tabla_lut.html#a2651e4d318b15104cd257884ac8c58d6">tablaConversion</a>[intensidad][1], <a class="code" href="class_tabla_lut.html#a2651e4d318b15104cd257884ac8c58d6">tablaConversion</a>[intensidad][2], <a class="code" href="class_tabla_lut.html#a2651e4d318b15104cd257884ac8c58d6">tablaConversion</a>[intensidad][3]);</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
 <div class="ttc" id="aclass_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">Clase que modela un pixel de una imagen.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00022">pixel.h:23</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="tablalut_8h_source.html#l00050">tabla_conversion</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="tablalut_8h_source.html#l00050">tablaConversion</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="ventanadegraficacion_8cpp_source.html#l00096">VentanaDeGraficacion::graficarImagenPseudocoloreada()</a>.</p>
 
@@ -291,8 +291,8 @@ Atributos privados</h2></td></tr>
 
 </div>
 </div>
-<a id="aeb49ebf50266bc1623cc9195ea63f260"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb49ebf50266bc1623cc9195ea63f260">&#9670;&nbsp;</a></span>tabla_conversion</h2>
+<a id="a2651e4d318b15104cd257884ac8c58d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2651e4d318b15104cd257884ac8c58d6">&#9670;&nbsp;</a></span>tablaConversion</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,7 +301,7 @@ Atributos privados</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;vector&lt;int&gt; &gt; TablaLut::tabla_conversion</td>
+          <td class="memname">vector&lt;vector&lt;int&gt; &gt; TablaLut::tablaConversion</td>
         </tr>
       </table>
   </td>
@@ -333,7 +333,7 @@ Atributos privados</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_tabla_lut.html">TablaLut</a></li>
-    <li class="footer">Generado el Jueves, 15 de Diciembre de 2022 16:37:25 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Jueves, 15 de Diciembre de 2022 18:32:24 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

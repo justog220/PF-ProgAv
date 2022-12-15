@@ -128,19 +128,19 @@ Definición en la línea 259 del archivo archivospnm.\+cpp.
 \DoxyCodeLine{262 }
 \DoxyCodeLine{263     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<\textcolor{keywordtype}{id}<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
 \DoxyCodeLine{264 }
-\DoxyCodeLine{265     \textcolor{keywordtype}{char} num\_id;}
-\DoxyCodeLine{266     num\_id=\textcolor{keywordtype}{id}[1];}
+\DoxyCodeLine{265     \textcolor{keywordtype}{char} numId;}
+\DoxyCodeLine{266     numId=\textcolor{keywordtype}{id}[1];}
 \DoxyCodeLine{267 }
 \DoxyCodeLine{268     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<img-\/>\mbox{\hyperlink{class_imagen_a9863c0ebb50aeb19f5dc4d7906ed47d6}{getInformacion}}()<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
 \DoxyCodeLine{269 }
-\DoxyCodeLine{270     \textcolor{keywordtype}{int} filas\_aux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnas\_aux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{270     \textcolor{keywordtype}{int} filasAux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnasAux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
 \DoxyCodeLine{271 }
-\DoxyCodeLine{272     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<columnas\_aux<<\textcolor{stringliteral}{"{} "{}}<<filas\_aux<<endl;}
+\DoxyCodeLine{272     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<columnasAux<<\textcolor{stringliteral}{"{} "{}}<<filasAux<<endl;}
 \DoxyCodeLine{273 }
-\DoxyCodeLine{274     \textcolor{keywordflow}{if}(num\_id!=1 and num\_id!=4)}
+\DoxyCodeLine{274     \textcolor{keywordflow}{if}(numId!=1 and numId!=4)}
 \DoxyCodeLine{275     \{}
-\DoxyCodeLine{276         \textcolor{keywordtype}{int} rango\_aux = img-\/>\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}();}
-\DoxyCodeLine{277         \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<rango\_aux<<endl;}
+\DoxyCodeLine{276         \textcolor{keywordtype}{int} rangoAux = img-\/>\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}();}
+\DoxyCodeLine{277         \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<rangoAux<<endl;}
 \DoxyCodeLine{278     \}}
 \DoxyCodeLine{279 }
 \DoxyCodeLine{280     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
@@ -181,18 +181,18 @@ Definición en la línea 283 del archivo archivospnm.\+cpp.
 \DoxyCodeLine{284 \{}
 \DoxyCodeLine{285     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(rutaEscritura, ios::out | ios::app);}
 \DoxyCodeLine{286 }
-\DoxyCodeLine{287     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{287     \mbox{\hyperlink{class_pixel}{Pixel}} pixAux;}
 \DoxyCodeLine{288 }
 \DoxyCodeLine{289     \textcolor{keywordtype}{int} intEscala;}
 \DoxyCodeLine{290 }
-\DoxyCodeLine{291     \textcolor{keywordtype}{int} filas\_aux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnas\_aux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{291     \textcolor{keywordtype}{int} filasAux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnasAux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
 \DoxyCodeLine{292 }
-\DoxyCodeLine{293     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<filas\_aux; i++)}
+\DoxyCodeLine{293     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} fila=0; fila<filasAux; fila++)}
 \DoxyCodeLine{294     \{}
-\DoxyCodeLine{295         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<columnas\_aux; j++)}
+\DoxyCodeLine{295         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna=0; columna<columnasAux; columna++)}
 \DoxyCodeLine{296         \{}
-\DoxyCodeLine{297           pix\_aux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
-\DoxyCodeLine{298           intEscala = pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
+\DoxyCodeLine{297           pixAux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, columna);}
+\DoxyCodeLine{298           intEscala = pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
 \DoxyCodeLine{299           \textcolor{keywordflow}{if}(intEscala == 1)}
 \DoxyCodeLine{300               intEscala = 0;}
 \DoxyCodeLine{301           \textcolor{keywordflow}{else}}
@@ -239,18 +239,18 @@ Definición en la línea 310 del archivo archivospnm.\+cpp.
 \DoxyCodeLine{311 \{}
 \DoxyCodeLine{312     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(rutaEscritura, ios::out | ios::app);}
 \DoxyCodeLine{313 }
-\DoxyCodeLine{314     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{314     \mbox{\hyperlink{class_pixel}{Pixel}} pixAux;}
 \DoxyCodeLine{315 }
 \DoxyCodeLine{316     \textcolor{keywordtype}{int} intEscala;}
 \DoxyCodeLine{317 }
-\DoxyCodeLine{318     \textcolor{keywordtype}{int} filas\_aux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnas\_aux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{318     \textcolor{keywordtype}{int} filasAux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnasAux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
 \DoxyCodeLine{319 }
-\DoxyCodeLine{320     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<filas\_aux; i++)}
+\DoxyCodeLine{320     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} fila=0; fila<filasAux; fila++)}
 \DoxyCodeLine{321     \{}
-\DoxyCodeLine{322         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<columnas\_aux; j++)}
+\DoxyCodeLine{322         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna=0; columna<columnasAux; columna++)}
 \DoxyCodeLine{323         \{}
-\DoxyCodeLine{324            pix\_aux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
-\DoxyCodeLine{325            intEscala = pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
+\DoxyCodeLine{324            pixAux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, columna);}
+\DoxyCodeLine{325            intEscala = pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
 \DoxyCodeLine{326            \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<intEscala<<\textcolor{stringliteral}{"{} "{}};}
 \DoxyCodeLine{327         \}}
 \DoxyCodeLine{328         \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<endl;}
@@ -293,20 +293,20 @@ Definición en la línea 333 del archivo archivospnm.\+cpp.
 \DoxyCodeLine{334 \{}
 \DoxyCodeLine{335     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(rutaEscritura, ios::out | ios::app);}
 \DoxyCodeLine{336 }
-\DoxyCodeLine{337     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{337     \mbox{\hyperlink{class_pixel}{Pixel}} pixAux;}
 \DoxyCodeLine{338 }
 \DoxyCodeLine{339     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} r, g, b;}
 \DoxyCodeLine{340 }
-\DoxyCodeLine{341     \textcolor{keywordtype}{int} filas\_aux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnas\_aux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{341     \textcolor{keywordtype}{int} filasAux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnasAux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
 \DoxyCodeLine{342 }
-\DoxyCodeLine{343     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{343     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} fila=0; fila<filasAux; fila++)}
 \DoxyCodeLine{344     \{}
-\DoxyCodeLine{345         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{345         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna=0; columna<columnasAux; columna++)}
 \DoxyCodeLine{346         \{}
-\DoxyCodeLine{347             pix\_aux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
-\DoxyCodeLine{348             r = pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
-\DoxyCodeLine{349             g = pix\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}();}
-\DoxyCodeLine{350             b = pix\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}();}
+\DoxyCodeLine{347             pixAux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(columna, fila);}
+\DoxyCodeLine{348             r = pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
+\DoxyCodeLine{349             g = pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}();}
+\DoxyCodeLine{350             b = pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}();}
 \DoxyCodeLine{351             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<r<<g<<b;}
 \DoxyCodeLine{352         \}}
 \DoxyCodeLine{353         \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<endl;}
@@ -349,18 +349,18 @@ Definición en la línea 358 del archivo archivospnm.\+cpp.
 \DoxyCodeLine{359 \{}
 \DoxyCodeLine{360     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(rutaEscritura, ios::out | ios::binary |ios::app);}
 \DoxyCodeLine{361 }
-\DoxyCodeLine{362     \textcolor{keywordtype}{int} filas\_aux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnas\_aux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{362     \textcolor{keywordtype}{int} filasAux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnasAux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
 \DoxyCodeLine{363 }
 \DoxyCodeLine{364     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} escala;}
 \DoxyCodeLine{365 }
-\DoxyCodeLine{366     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{366     \mbox{\hyperlink{class_pixel}{Pixel}} pixAux;}
 \DoxyCodeLine{367 }
-\DoxyCodeLine{368     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{368     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} fila=0; fila<filasAux; fila++)}
 \DoxyCodeLine{369     \{}
-\DoxyCodeLine{370         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{370         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna=0; columna<columnasAux; columna++)}
 \DoxyCodeLine{371         \{}
-\DoxyCodeLine{372             pix\_aux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
-\DoxyCodeLine{373             escala = pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
+\DoxyCodeLine{372             pixAux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, columna);}
+\DoxyCodeLine{373             escala = pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
 \DoxyCodeLine{374             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.write((\textcolor{keywordtype}{char}*)\&escala, \textcolor{keyword}{sizeof}(escala));}
 \DoxyCodeLine{375         \}}
 \DoxyCodeLine{376     \}}
@@ -402,19 +402,19 @@ Definición en la línea 380 del archivo archivospnm.\+cpp.
 \DoxyCodeLine{381 \{}
 \DoxyCodeLine{382     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(rutaEscritura, ios::out | ios::binary |ios::app);}
 \DoxyCodeLine{383 }
-\DoxyCodeLine{384     \textcolor{keywordtype}{int} filas\_aux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnas\_aux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{384     \textcolor{keywordtype}{int} filasAux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnasAux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
 \DoxyCodeLine{385 }
 \DoxyCodeLine{386     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} escala;}
 \DoxyCodeLine{387 }
-\DoxyCodeLine{388     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{388     \mbox{\hyperlink{class_pixel}{Pixel}} pixAux;}
 \DoxyCodeLine{389 }
-\DoxyCodeLine{390     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<filas\_aux; i++)}
+\DoxyCodeLine{390     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} fila=0; fila<filasAux; fila++)}
 \DoxyCodeLine{391     \{}
-\DoxyCodeLine{392         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<columnas\_aux; j++)}
+\DoxyCodeLine{392         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna=0; columna<columnasAux; columna++)}
 \DoxyCodeLine{393         \{}
-\DoxyCodeLine{394             pix\_aux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{394             pixAux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, columna);}
 \DoxyCodeLine{395 }
-\DoxyCodeLine{396             escala = (\textcolor{keywordtype}{unsigned} char)pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
+\DoxyCodeLine{396             escala = (\textcolor{keywordtype}{unsigned} char)pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
 \DoxyCodeLine{397 }
 \DoxyCodeLine{398             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.write((\textcolor{keywordtype}{char}*)\&(escala), \textcolor{keyword}{sizeof}(escala));}
 \DoxyCodeLine{399         \}}
@@ -458,24 +458,24 @@ Definición en la línea 405 del archivo archivospnm.\+cpp.
 \DoxyCodeLine{406 \{}
 \DoxyCodeLine{407     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(rutaEscritura, ios::out | ios::binary | ios::app);}
 \DoxyCodeLine{408 }
-\DoxyCodeLine{409     \textcolor{keywordtype}{int} filas\_aux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnas\_aux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{409     \textcolor{keywordtype}{int} filasAux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnasAux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
 \DoxyCodeLine{410 }
 \DoxyCodeLine{411     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} r, g, b;}
 \DoxyCodeLine{412 }
-\DoxyCodeLine{413     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{413     \mbox{\hyperlink{class_pixel}{Pixel}} pixAux;}
 \DoxyCodeLine{414 }
-\DoxyCodeLine{415     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<filas\_aux; i++)}
+\DoxyCodeLine{415     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} fila=0; fila<filasAux; fila++)}
 \DoxyCodeLine{416     \{}
-\DoxyCodeLine{417         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<columnas\_aux; j++)}
+\DoxyCodeLine{417         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna=0; columna<columnasAux; columna++)}
 \DoxyCodeLine{418         \{}
 \DoxyCodeLine{419 }
-\DoxyCodeLine{420             pix\_aux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{420             pixAux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, columna);}
 \DoxyCodeLine{421 }
-\DoxyCodeLine{422             r = (\textcolor{keywordtype}{unsigned} char)pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
+\DoxyCodeLine{422             r = (\textcolor{keywordtype}{unsigned} char)pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
 \DoxyCodeLine{423 }
-\DoxyCodeLine{424             g = (\textcolor{keywordtype}{unsigned} char)pix\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}();}
+\DoxyCodeLine{424             g = (\textcolor{keywordtype}{unsigned} char)pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}();}
 \DoxyCodeLine{425 }
-\DoxyCodeLine{426             b = (\textcolor{keywordtype}{unsigned} char)pix\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}();}
+\DoxyCodeLine{426             b = (\textcolor{keywordtype}{unsigned} char)pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}();}
 \DoxyCodeLine{427 }
 \DoxyCodeLine{428             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.write((\textcolor{keywordtype}{char}*)\&r, \textcolor{keyword}{sizeof}(r));}
 \DoxyCodeLine{429 }
@@ -610,45 +610,45 @@ Definición en la línea 8 del archivo archivospnm.\+cpp.
 \DoxyCodeLine{17         getline(\mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}, \mbox{\hyperlink{class_archivos_p_n_m_add99f5595bf7c7af37ee9a89827ec7b5}{identificador}});}
 \DoxyCodeLine{18 }
 \DoxyCodeLine{19         img.\mbox{\hyperlink{class_imagen_aae632c4cd001e04228aad5bf06599818}{setIdentificador}}(\mbox{\hyperlink{class_archivos_p_n_m_add99f5595bf7c7af37ee9a89827ec7b5}{identificador}});}
-\DoxyCodeLine{20         \textcolor{keywordtype}{char} num\_id;}
-\DoxyCodeLine{21         num\_id=\mbox{\hyperlink{class_archivos_p_n_m_add99f5595bf7c7af37ee9a89827ec7b5}{identificador}}[1];}
+\DoxyCodeLine{20         \textcolor{keywordtype}{char} numId;}
+\DoxyCodeLine{21         numId=\mbox{\hyperlink{class_archivos_p_n_m_add99f5595bf7c7af37ee9a89827ec7b5}{identificador}}[1];}
 \DoxyCodeLine{22 }
 \DoxyCodeLine{23         \textcolor{keywordtype}{string} comentario;}
-\DoxyCodeLine{24         \textcolor{keywordtype}{int} filas\_aux, columnas\_aux;}
+\DoxyCodeLine{24         \textcolor{keywordtype}{int} filasAux, columnasAux;}
 \DoxyCodeLine{25 }
-\DoxyCodeLine{26         \textcolor{keywordtype}{int} contador\_pixeles = 0;}
+\DoxyCodeLine{26         \textcolor{keywordtype}{int} contadorPixeles = 0;}
 \DoxyCodeLine{27 }
-\DoxyCodeLine{28         \textcolor{keywordtype}{int} pos\_com = \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.tellg();}
+\DoxyCodeLine{28         \textcolor{keywordtype}{int} posCom = \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.tellg();}
 \DoxyCodeLine{29 }
 \DoxyCodeLine{30         getline(\mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}, comentario);}
 \DoxyCodeLine{31 }
 \DoxyCodeLine{32         \textcolor{keywordflow}{if}(comentario[0] != \textcolor{charliteral}{'\#'} and comentario[0] != \textcolor{charliteral}{'\(\backslash\)n'})}
 \DoxyCodeLine{33         \{}
-\DoxyCodeLine{34             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.seekg(pos\_com);}
+\DoxyCodeLine{34             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.seekg(posCom);}
 \DoxyCodeLine{35         \}\textcolor{keywordflow}{else} \{}
 \DoxyCodeLine{36             img.\mbox{\hyperlink{class_imagen_affda44cc73f0a8bf8cc7dc1021e47f25}{setInformacion}}(comentario);}
 \DoxyCodeLine{37         \}}
 \DoxyCodeLine{38 }
-\DoxyCodeLine{39         \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}>>columnas\_aux>>filas\_aux;}
+\DoxyCodeLine{39         \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}>>columnasAux>>filasAux;}
 \DoxyCodeLine{40 }
-\DoxyCodeLine{41         \textcolor{keywordflow}{if} (columnas\_aux == 0 or filas\_aux == 0)}
+\DoxyCodeLine{41         \textcolor{keywordflow}{if} (columnasAux == 0 or filasAux == 0)}
 \DoxyCodeLine{42             \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
 \DoxyCodeLine{43 }
-\DoxyCodeLine{44         img.\mbox{\hyperlink{class_imagen_a745584efb94c3a60c7d77017b2bfb512}{setFilas}}(filas\_aux);}
-\DoxyCodeLine{45         img.\mbox{\hyperlink{class_imagen_a2f484fcbef63dfa2fe6c2ee418a7d856}{setColumnas}}(columnas\_aux);}
+\DoxyCodeLine{44         img.\mbox{\hyperlink{class_imagen_a745584efb94c3a60c7d77017b2bfb512}{setFilas}}(filasAux);}
+\DoxyCodeLine{45         img.\mbox{\hyperlink{class_imagen_a2f484fcbef63dfa2fe6c2ee418a7d856}{setColumnas}}(columnasAux);}
 \DoxyCodeLine{46 }
 \DoxyCodeLine{47         img.\mbox{\hyperlink{class_imagen_a310a7ee241a8c546a9d5345937a9f01f}{setTamanio}}();}
 \DoxyCodeLine{48 }
 \DoxyCodeLine{49 }
-\DoxyCodeLine{50         \textcolor{keywordtype}{int} rango\_aux;}
+\DoxyCodeLine{50         \textcolor{keywordtype}{int} rangoAux;}
 \DoxyCodeLine{51 }
-\DoxyCodeLine{52         \textcolor{keywordflow}{if}(num\_id!=1 and num\_id!=4)}
+\DoxyCodeLine{52         \textcolor{keywordflow}{if}(numId!=1 and numId!=4)}
 \DoxyCodeLine{53         \{}
-\DoxyCodeLine{54             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}>>rango\_aux;}
-\DoxyCodeLine{55             img.\mbox{\hyperlink{class_imagen_ac6be498c1eadda6e7a5bf603c7ababc3}{setRango}}(rango\_aux);}
+\DoxyCodeLine{54             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}>>rangoAux;}
+\DoxyCodeLine{55             img.\mbox{\hyperlink{class_imagen_ac6be498c1eadda6e7a5bf603c7ababc3}{setRango}}(rangoAux);}
 \DoxyCodeLine{56         \}}
 \DoxyCodeLine{57 }
-\DoxyCodeLine{58         \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{58         \mbox{\hyperlink{class_pixel}{Pixel}} pixAux;}
 \DoxyCodeLine{59 }
 \DoxyCodeLine{60         \textcolor{keywordtype}{string} linea;}
 \DoxyCodeLine{61 }
@@ -657,76 +657,76 @@ Definición en la línea 8 del archivo archivospnm.\+cpp.
 \DoxyCodeLine{64 }
 \DoxyCodeLine{65         \textcolor{keywordtype}{int} intEscala;}
 \DoxyCodeLine{66 }
-\DoxyCodeLine{67         \textcolor{keywordtype}{int} pos\_final;}
+\DoxyCodeLine{67         \textcolor{keywordtype}{int} posFinal;}
 \DoxyCodeLine{68 }
-\DoxyCodeLine{69         \textcolor{keywordflow}{switch}(num\_id)}
+\DoxyCodeLine{69         \textcolor{keywordflow}{switch}(numId)}
 \DoxyCodeLine{70         \{}
 \DoxyCodeLine{71         \textcolor{keywordflow}{case} \textcolor{charliteral}{'1'}:}
 \DoxyCodeLine{72             img.\mbox{\hyperlink{class_imagen_ac6be498c1eadda6e7a5bf603c7ababc3}{setRango}}(1);}
-\DoxyCodeLine{73             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{73             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} fila=0; fila<filasAux; fila++)}
 \DoxyCodeLine{74             \{}
-\DoxyCodeLine{75                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna=0; columna<columnasAux; columna++)}
 \DoxyCodeLine{76                 \{}
 \DoxyCodeLine{77                   \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}>>intEscala;}
 \DoxyCodeLine{78 }
 \DoxyCodeLine{79                   \textcolor{keywordflow}{if}((\textcolor{keywordtype}{int})intEscala>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
 \DoxyCodeLine{80                       \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
 \DoxyCodeLine{81 }
-\DoxyCodeLine{82                   pix\_aux.\mbox{\hyperlink{class_pixel_ab624ff85be3e3d7b6d5f3e139300c1ef}{setPixelMonocr}}((\textcolor{keywordtype}{int})intEscala);}
-\DoxyCodeLine{83                   img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(j, i, pix\_aux);}
-\DoxyCodeLine{84                   contador\_pixeles++;}
+\DoxyCodeLine{82                   pixAux.\mbox{\hyperlink{class_pixel_ab624ff85be3e3d7b6d5f3e139300c1ef}{setPixelMonocr}}((\textcolor{keywordtype}{int})intEscala);}
+\DoxyCodeLine{83                   img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(fila, columna, pixAux);}
+\DoxyCodeLine{84                   contadorPixeles++;}
 \DoxyCodeLine{85                 \}}
 \DoxyCodeLine{86             \}}
 \DoxyCodeLine{87             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
 \DoxyCodeLine{88             \textcolor{keywordflow}{break};}
 \DoxyCodeLine{89         \textcolor{keywordflow}{case} \textcolor{charliteral}{'2'}:}
 \DoxyCodeLine{90             getline(\mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}, linea,\textcolor{charliteral}{'\(\backslash\)n'});}
-\DoxyCodeLine{91             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{91             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} fila=0; fila<filasAux; fila++)}
 \DoxyCodeLine{92             \{}
-\DoxyCodeLine{93                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{93                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna=0; columna<columnasAux; columna++)}
 \DoxyCodeLine{94                 \{}
 \DoxyCodeLine{95                    \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}>>intEscala;}
 \DoxyCodeLine{96                    \textcolor{keywordflow}{if}((\textcolor{keywordtype}{int})intEscala>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
 \DoxyCodeLine{97                        \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
-\DoxyCodeLine{98                    pix\_aux.\mbox{\hyperlink{class_pixel_affd7e85713e18281b51e0e676485f704}{setPixelEscala}}((\textcolor{keywordtype}{int})intEscala);}
-\DoxyCodeLine{99                    img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(j, i, pix\_aux);}
-\DoxyCodeLine{100                    contador\_pixeles++;}
+\DoxyCodeLine{98                    pixAux.\mbox{\hyperlink{class_pixel_affd7e85713e18281b51e0e676485f704}{setPixelEscala}}((\textcolor{keywordtype}{int})intEscala);}
+\DoxyCodeLine{99                    img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(fila, columna, pixAux);}
+\DoxyCodeLine{100                    contadorPixeles++;}
 \DoxyCodeLine{101 }
 \DoxyCodeLine{102                 \}}
 \DoxyCodeLine{103             \}}
 \DoxyCodeLine{104             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
 \DoxyCodeLine{105             \textcolor{keywordflow}{break};}
 \DoxyCodeLine{106         \textcolor{keywordflow}{case} \textcolor{charliteral}{'3'}:}
-\DoxyCodeLine{107             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{107             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} fila=0; fila<filasAux; fila++)}
 \DoxyCodeLine{108             \{}
-\DoxyCodeLine{109                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{109                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna=0; columna<columnasAux; columna++)}
 \DoxyCodeLine{110                 \{}
 \DoxyCodeLine{111                     \textcolor{keywordtype}{int} R, G, B;}
 \DoxyCodeLine{112                     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}>>R>>G>>B;}
-\DoxyCodeLine{113 }
-\DoxyCodeLine{114                     \textcolor{keywordflow}{if}(R>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() or G>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() or B>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
-\DoxyCodeLine{115                         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
-\DoxyCodeLine{116                     pix\_aux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}(R, G, B);}
-\DoxyCodeLine{117                     img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(j, i, pix\_aux);}
-\DoxyCodeLine{118                     contador\_pixeles++;}
+\DoxyCodeLine{113                     \textcolor{keywordflow}{if}(R>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() or G>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() or B>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
+\DoxyCodeLine{114                         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116                     pixAux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}(R, G, B);}
+\DoxyCodeLine{117                     img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(fila, columna, pixAux);}
+\DoxyCodeLine{118                     contadorPixeles++;}
 \DoxyCodeLine{119                 \}}
 \DoxyCodeLine{120             \}}
 \DoxyCodeLine{121             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
 \DoxyCodeLine{122             \textcolor{keywordflow}{break};}
 \DoxyCodeLine{123         \textcolor{keywordflow}{case} \textcolor{charliteral}{'4'}:}
 \DoxyCodeLine{124 }
-\DoxyCodeLine{125             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{125             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} fila=0; fila<filasAux; fila++)}
 \DoxyCodeLine{126             \{}
-\DoxyCodeLine{127                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{127                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna=0; columna<columnasAux; columna++)}
 \DoxyCodeLine{128                 \{}
 \DoxyCodeLine{129                     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.read((\textcolor{keywordtype}{char}*)\&r, \textcolor{keyword}{sizeof}(r));}
 \DoxyCodeLine{130 }
 \DoxyCodeLine{131                     \textcolor{keywordflow}{if}((\textcolor{keywordtype}{int})r>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
 \DoxyCodeLine{132                         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
 \DoxyCodeLine{133 }
-\DoxyCodeLine{134                     pix\_aux.\mbox{\hyperlink{class_pixel_ab624ff85be3e3d7b6d5f3e139300c1ef}{setPixelMonocr}}((\textcolor{keywordtype}{int})r);}
-\DoxyCodeLine{135                     img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(j, i, pix\_aux);}
-\DoxyCodeLine{136                     contador\_pixeles++;}
+\DoxyCodeLine{134                     pixAux.\mbox{\hyperlink{class_pixel_ab624ff85be3e3d7b6d5f3e139300c1ef}{setPixelMonocr}}((\textcolor{keywordtype}{int})r);}
+\DoxyCodeLine{135                     img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(fila, columna, pixAux);}
+\DoxyCodeLine{136                     contadorPixeles++;}
 \DoxyCodeLine{137                 \}}
 \DoxyCodeLine{138             \}}
 \DoxyCodeLine{139             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
@@ -736,25 +736,25 @@ Definición en la línea 8 del archivo archivospnm.\+cpp.
 \DoxyCodeLine{143 }
 \DoxyCodeLine{144             getline(\mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}, linea, \textcolor{charliteral}{'\(\backslash\)n'});}
 \DoxyCodeLine{145 }
-\DoxyCodeLine{146             pos\_final = \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.tellg();}
+\DoxyCodeLine{146             posFinal = \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.tellg();}
 \DoxyCodeLine{147 }
 \DoxyCodeLine{148             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
 \DoxyCodeLine{149             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(ruta, ios::in | ios::binary);}
 \DoxyCodeLine{150 }
-\DoxyCodeLine{151             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.seekg(pos\_final);}
+\DoxyCodeLine{151             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.seekg(posFinal);}
 \DoxyCodeLine{152 }
-\DoxyCodeLine{153             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{153             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} fila=0; fila<filasAux; fila++)}
 \DoxyCodeLine{154             \{}
-\DoxyCodeLine{155                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{155                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna=0; columna<columnasAux; columna++)}
 \DoxyCodeLine{156                 \{}
 \DoxyCodeLine{157                     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.read((\textcolor{keywordtype}{char}*)\&r, \textcolor{keyword}{sizeof}(r));}
 \DoxyCodeLine{158 }
 \DoxyCodeLine{159                     \textcolor{keywordflow}{if}((\textcolor{keywordtype}{int})r>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
 \DoxyCodeLine{160                         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
 \DoxyCodeLine{161 }
-\DoxyCodeLine{162                     pix\_aux.\mbox{\hyperlink{class_pixel_affd7e85713e18281b51e0e676485f704}{setPixelEscala}}((\textcolor{keywordtype}{int})r);}
-\DoxyCodeLine{163                     img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(j, i, pix\_aux);}
-\DoxyCodeLine{164                     contador\_pixeles++;}
+\DoxyCodeLine{162                     pixAux.\mbox{\hyperlink{class_pixel_affd7e85713e18281b51e0e676485f704}{setPixelEscala}}((\textcolor{keywordtype}{int})r);}
+\DoxyCodeLine{163                     img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(fila, columna, pixAux);}
+\DoxyCodeLine{164                     contadorPixeles++;}
 \DoxyCodeLine{165                 \}}
 \DoxyCodeLine{166             \}}
 \DoxyCodeLine{167             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
@@ -764,16 +764,16 @@ Definición en la línea 8 del archivo archivospnm.\+cpp.
 \DoxyCodeLine{171 }
 \DoxyCodeLine{172             getline(\mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}, linea, \textcolor{charliteral}{'\(\backslash\)n'});}
 \DoxyCodeLine{173 }
-\DoxyCodeLine{174             pos\_final = \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.tellg();}
+\DoxyCodeLine{174             posFinal = \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.tellg();}
 \DoxyCodeLine{175 }
 \DoxyCodeLine{176             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
 \DoxyCodeLine{177             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(ruta, ios::in | ios::binary);}
 \DoxyCodeLine{178 }
-\DoxyCodeLine{179             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.seekg(pos\_final);}
+\DoxyCodeLine{179             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.seekg(posFinal);}
 \DoxyCodeLine{180 }
-\DoxyCodeLine{181             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{181             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} fila=0; fila<filasAux; fila++)}
 \DoxyCodeLine{182             \{}
-\DoxyCodeLine{183                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{183                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna=0; columna<columnasAux; columna++)}
 \DoxyCodeLine{184                 \{}
 \DoxyCodeLine{185                     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.read((\textcolor{keywordtype}{char}*)\&r, \textcolor{keyword}{sizeof}(r));}
 \DoxyCodeLine{186 }
@@ -784,10 +784,10 @@ Definición en la línea 8 del archivo archivospnm.\+cpp.
 \DoxyCodeLine{191                     \textcolor{keywordflow}{if}((\textcolor{keywordtype}{int})r>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() or (\textcolor{keywordtype}{int})g>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() or (\textcolor{keywordtype}{int})b>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
 \DoxyCodeLine{192                         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
 \DoxyCodeLine{193 }
-\DoxyCodeLine{194                     pix\_aux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}((\textcolor{keywordtype}{int})r, (\textcolor{keywordtype}{int})g, (\textcolor{keywordtype}{int})b);}
+\DoxyCodeLine{194                     pixAux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}((\textcolor{keywordtype}{int})r, (\textcolor{keywordtype}{int})g, (\textcolor{keywordtype}{int})b);}
 \DoxyCodeLine{195 }
-\DoxyCodeLine{196                     img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(j, i, pix\_aux);}
-\DoxyCodeLine{197                     contador\_pixeles++;}
+\DoxyCodeLine{196                     img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(fila, columna, pixAux);}
+\DoxyCodeLine{197                     contadorPixeles++;}
 \DoxyCodeLine{198                     \}}
 \DoxyCodeLine{199                 \}}
 \DoxyCodeLine{200 }
@@ -798,7 +798,7 @@ Definición en la línea 8 del archivo archivospnm.\+cpp.
 \DoxyCodeLine{205 }
 \DoxyCodeLine{206         \}}
 \DoxyCodeLine{207 }
-\DoxyCodeLine{208         \textcolor{keywordflow}{if}(contador\_pixeles != filas\_aux*columnas\_aux)}
+\DoxyCodeLine{208         \textcolor{keywordflow}{if}(contadorPixeles != filasAux*columnasAux)}
 \DoxyCodeLine{209             \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
 \DoxyCodeLine{210 }
 \DoxyCodeLine{211     \}}

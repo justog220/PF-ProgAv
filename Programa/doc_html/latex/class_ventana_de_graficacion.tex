@@ -571,27 +571,28 @@ Definición en la línea 359 del archivo ventanadegraficacion.\+cpp.
 \DoxyCodeLine{370         \textcolor{keywordtype}{int} f = \mbox{\hyperlink{class_ventana_de_graficacion_ab8e415cbdff0a5423dd32fa93577d6fc}{altoV}} -\/ ( QCursor::pos().y() -\/ this-\/>pos().y()) + 35;}
 \DoxyCodeLine{371         \textcolor{keywordtype}{int} c = QCursor::pos().x() -\/ this-\/>pos().x();}
 \DoxyCodeLine{372 }
-\DoxyCodeLine{373         c = c/\mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}};}
-\DoxyCodeLine{374         f = f -\/ \mbox{\hyperlink{class_ventana_de_graficacion_acd503a7003d7a14c00fcae6178b15c0a}{desply}};}
-\DoxyCodeLine{375         f = f/\mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}};}
-\DoxyCodeLine{376 }
-\DoxyCodeLine{377         f = \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/1-\/f;}
-\DoxyCodeLine{378 }
-\DoxyCodeLine{379         \mbox{\hyperlink{class_algoritmo_del_pintor}{AlgoritmoDelPintor}} algoritmo\_del\_pintor(\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}});}
-\DoxyCodeLine{380         \mbox{\hyperlink{class_ventana_de_graficacion_a6edb764d43c8f46bbdca40a611babace}{appl}}-\/>closeAllWindows();}
-\DoxyCodeLine{381         \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}} = algoritmo\_del\_pintor.aplicarAlgoritmo(f, c);}
-\DoxyCodeLine{382         show();}
-\DoxyCodeLine{383         repaint();}
-\DoxyCodeLine{384 }
-\DoxyCodeLine{385     \}}
-\DoxyCodeLine{386 }
+\DoxyCodeLine{373         c -\/= \mbox{\hyperlink{class_ventana_de_graficacion_a09b97bb7c5647c56b63fdc351c45bfa1}{desplx}};}
+\DoxyCodeLine{374         c = c/\mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}};}
+\DoxyCodeLine{375         f -\/= \mbox{\hyperlink{class_ventana_de_graficacion_acd503a7003d7a14c00fcae6178b15c0a}{desply}};}
+\DoxyCodeLine{376         f = f/\mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}};}
+\DoxyCodeLine{377 }
+\DoxyCodeLine{378         f = \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/1-\/f;}
+\DoxyCodeLine{379 }
+\DoxyCodeLine{380         \mbox{\hyperlink{class_algoritmo_del_pintor}{AlgoritmoDelPintor}} algoritmoDelPintor(\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}});}
+\DoxyCodeLine{381         \mbox{\hyperlink{class_ventana_de_graficacion_a6edb764d43c8f46bbdca40a611babace}{appl}}-\/>closeAllWindows();}
+\DoxyCodeLine{382         \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}} = algoritmoDelPintor.aplicarAlgoritmo(f, c);}
+\DoxyCodeLine{383         show();}
+\DoxyCodeLine{384         repaint();}
+\DoxyCodeLine{385 }
+\DoxyCodeLine{386     \}}
 \DoxyCodeLine{387 }
-\DoxyCodeLine{388 \}}
+\DoxyCodeLine{388 }
+\DoxyCodeLine{389 \}}
 
 \end{DoxyCode}
 
 
-Hace referencia a altoV, Algoritmo\+Del\+Pintor\+::aplicar\+Algoritmo(), appl, desply, escala, Imagen\+::get\+Filas() y imagen.
+Hace referencia a altoV, Algoritmo\+Del\+Pintor\+::aplicar\+Algoritmo(), appl, desplx, desply, escala, Imagen\+::get\+Filas() y imagen.
 
 \mbox{\Hypertarget{class_ventana_de_graficacion_ae9cad487723447a039460f4fdd51ed44}\label{class_ventana_de_graficacion_ae9cad487723447a039460f4fdd51ed44}} 
 \index{VentanaDeGraficacion@{VentanaDeGraficacion}!paintGL@{paintGL}}
@@ -911,7 +912,7 @@ Definición en la línea 136 del archivo ventanadegraficacion.\+h.
 
 
 
-Referenciado por graficar\+Imagen(), graficar\+Imagen\+Pseudocoloreada() y paint\+GL().
+Referenciado por graficar\+Imagen(), graficar\+Imagen\+Pseudocoloreada(), mouse\+Press\+Event() y paint\+GL().
 
 \mbox{\Hypertarget{class_ventana_de_graficacion_acd503a7003d7a14c00fcae6178b15c0a}\label{class_ventana_de_graficacion_acd503a7003d7a14c00fcae6178b15c0a}} 
 \index{VentanaDeGraficacion@{VentanaDeGraficacion}!desply@{desply}}

@@ -19,5 +19,5 @@ var searchData=
   ['frecuenciag_92',['frecuenciaG',['../class_graficador_histograma.html#a711b33992b1e18171a19e948405d7338',1,'GraficadorHistograma']]],
   ['frecuenciapromedio_93',['frecuenciaPromedio',['../class_graficador_histograma.html#a167b2fc6dbe3c919e0f9da215aa5ffc7',1,'GraficadorHistograma']]],
   ['frecuenciar_94',['frecuenciaR',['../class_graficador_histograma.html#ab849d0da38d586b876b7c90d1b4c3e4e',1,'GraficadorHistograma']]],
-  ['fue_5fanalizado_95',['fue_analizado',['../class_algoritmo_del_pintor.html#a642bc493f4c315a3f1793c5e82836d2b',1,'AlgoritmoDelPintor']]]
+  ['fueanalizado_95',['fueAnalizado',['../class_algoritmo_del_pintor.html#afd064bfc95600b1411204961aaf88c08',1,'AlgoritmoDelPintor']]]
 ];

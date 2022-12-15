@@ -140,67 +140,67 @@ graficar\+Histograma Permite la representaciÃ³n grÃ¡fica del histograma haci
 
 
 
-Definición en la línea 65 del archivo graficadorhistograma.\+cpp.
+Definición en la línea 59 del archivo graficadorhistograma.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{66 \{}
-\DoxyCodeLine{67     \textcolor{keywordtype}{char} bandera = \textcolor{charliteral}{'r'};}
-\DoxyCodeLine{68     glPushMatrix();}
-\DoxyCodeLine{69 }
-\DoxyCodeLine{70     glScalef(width()*1.0f/256.0f, height()*1.0f/\mbox{\hyperlink{class_graficador_histograma_ac34463c6ba909660c4026641d2c134d8}{maximaFrecuencia}}*1.0f, 0.0f);}
-\DoxyCodeLine{71 }
+\DoxyCodeLine{60 \{}
+\DoxyCodeLine{61     \textcolor{keywordtype}{char} bandera = \textcolor{charliteral}{'r'};}
+\DoxyCodeLine{62     glPushMatrix();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     glScalef(width()*1.0f/256.0f, height()*1.0f/\mbox{\hyperlink{class_graficador_histograma_ac34463c6ba909660c4026641d2c134d8}{maximaFrecuencia}}*1.0f, 0.0f);}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67     glBegin(GL\_LINE\_STRIP);}
+\DoxyCodeLine{68         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} nivel = 0; nivel < \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}.size(); nivel++)}
+\DoxyCodeLine{69         \{}
+\DoxyCodeLine{70             glColor4f(1.0f, 0.0f, 0.0f, 0.8f);}
+\DoxyCodeLine{71             glVertex3i(nivel, \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}[nivel], 1);}
 \DoxyCodeLine{72 }
-\DoxyCodeLine{73     glBegin(GL\_LINE\_STRIP);}
-\DoxyCodeLine{74         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} nivel = 0; nivel < \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}.size(); nivel++)}
-\DoxyCodeLine{75         \{}
-\DoxyCodeLine{76             glColor4f(1.0f, 0.0f, 0.0f, 0.8f);}
-\DoxyCodeLine{77             glVertex3i(nivel, \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}[nivel], 1);}
-\DoxyCodeLine{78 }
-\DoxyCodeLine{79         \}}
-\DoxyCodeLine{80     glEnd();}
-\DoxyCodeLine{81 }
-\DoxyCodeLine{82     glBegin(GL\_LINE\_STRIP);}
-\DoxyCodeLine{83         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} nivel = 0; nivel < \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}.size(); nivel++)}
-\DoxyCodeLine{84         \{}
-\DoxyCodeLine{85             glColor4f(0.0f, 1.0f, 0.0f, 0.8f);}
-\DoxyCodeLine{86             glVertex3i(nivel, \mbox{\hyperlink{class_graficador_histograma_a711b33992b1e18171a19e948405d7338}{frecuenciaG}}[nivel], 0);}
-\DoxyCodeLine{87         \}}
-\DoxyCodeLine{88     glEnd();}
-\DoxyCodeLine{89 }
-\DoxyCodeLine{90     glBegin(GL\_LINE\_STRIP);}
-\DoxyCodeLine{91         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} nivel = 0; nivel < \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}.size(); nivel++)}
-\DoxyCodeLine{92         \{}
-\DoxyCodeLine{93             glColor4f(0.0f, 0.0f, 1.0f, 0.8f);}
-\DoxyCodeLine{94             glVertex3i(nivel, \mbox{\hyperlink{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}{frecuenciaB}}[nivel], -\/1);}
-\DoxyCodeLine{95         \}}
-\DoxyCodeLine{96     glEnd();}
-\DoxyCodeLine{97 }
-\DoxyCodeLine{98 }
-\DoxyCodeLine{99     glBegin(GL\_LINE\_STRIP);}
-\DoxyCodeLine{100         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} nivel = 0; nivel < \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}.size(); nivel++)}
-\DoxyCodeLine{101         \{}
-\DoxyCodeLine{102             \textcolor{keywordflow}{if}(bandera == \textcolor{charliteral}{'r'})}
-\DoxyCodeLine{103             \{}
-\DoxyCodeLine{104                 glColor4f(1.0f, 0.0f, 0.0f, 0.8f);}
-\DoxyCodeLine{105                 bandera = \textcolor{charliteral}{'g'};}
-\DoxyCodeLine{106             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(bandera == \textcolor{charliteral}{'g'})\{}
-\DoxyCodeLine{107                 glColor4f(0.0f, 1.0f, 0.0f, 0.8f);}
-\DoxyCodeLine{108                 bandera = \textcolor{charliteral}{'b'};}
-\DoxyCodeLine{109             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(bandera == \textcolor{charliteral}{'b'})\{}
-\DoxyCodeLine{110                 glColor4f(0.0f, 0.0f, 1.0f, 0.8f);}
-\DoxyCodeLine{111                 bandera = \textcolor{charliteral}{'r'};}
-\DoxyCodeLine{112             \}}
-\DoxyCodeLine{113 }
-\DoxyCodeLine{114             glVertex3i(nivel, \mbox{\hyperlink{class_graficador_histograma_a167b2fc6dbe3c919e0f9da215aa5ffc7}{frecuenciaPromedio}}[nivel], 1);}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74     glEnd();}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     glBegin(GL\_LINE\_STRIP);}
+\DoxyCodeLine{77         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} nivel = 0; nivel < \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}.size(); nivel++)}
+\DoxyCodeLine{78         \{}
+\DoxyCodeLine{79             glColor4f(0.0f, 1.0f, 0.0f, 0.8f);}
+\DoxyCodeLine{80             glVertex3i(nivel, \mbox{\hyperlink{class_graficador_histograma_a711b33992b1e18171a19e948405d7338}{frecuenciaG}}[nivel], 0);}
+\DoxyCodeLine{81         \}}
+\DoxyCodeLine{82     glEnd();}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84     glBegin(GL\_LINE\_STRIP);}
+\DoxyCodeLine{85         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} nivel = 0; nivel < \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}.size(); nivel++)}
+\DoxyCodeLine{86         \{}
+\DoxyCodeLine{87             glColor4f(0.0f, 0.0f, 1.0f, 0.8f);}
+\DoxyCodeLine{88             glVertex3i(nivel, \mbox{\hyperlink{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}{frecuenciaB}}[nivel], -\/1);}
+\DoxyCodeLine{89         \}}
+\DoxyCodeLine{90     glEnd();}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93     glBegin(GL\_LINE\_STRIP);}
+\DoxyCodeLine{94         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} nivel = 0; nivel < \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}.size(); nivel++)}
+\DoxyCodeLine{95         \{}
+\DoxyCodeLine{96             \textcolor{keywordflow}{if}(bandera == \textcolor{charliteral}{'r'})}
+\DoxyCodeLine{97             \{}
+\DoxyCodeLine{98                 glColor4f(1.0f, 0.0f, 0.0f, 0.8f);}
+\DoxyCodeLine{99                 bandera = \textcolor{charliteral}{'g'};}
+\DoxyCodeLine{100             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(bandera == \textcolor{charliteral}{'g'})\{}
+\DoxyCodeLine{101                 glColor4f(0.0f, 1.0f, 0.0f, 0.8f);}
+\DoxyCodeLine{102                 bandera = \textcolor{charliteral}{'b'};}
+\DoxyCodeLine{103             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(bandera == \textcolor{charliteral}{'b'})\{}
+\DoxyCodeLine{104                 glColor4f(0.0f, 0.0f, 1.0f, 0.8f);}
+\DoxyCodeLine{105                 bandera = \textcolor{charliteral}{'r'};}
+\DoxyCodeLine{106             \}}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108             glVertex3i(nivel, \mbox{\hyperlink{class_graficador_histograma_a167b2fc6dbe3c919e0f9da215aa5ffc7}{frecuenciaPromedio}}[nivel], 1);}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110         \}}
+\DoxyCodeLine{111     glEnd();}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113        glPopMatrix();}
+\DoxyCodeLine{114 }
 \DoxyCodeLine{115 }
-\DoxyCodeLine{116         \}}
-\DoxyCodeLine{117     glEnd();}
-\DoxyCodeLine{118 }
-\DoxyCodeLine{119        glPopMatrix();}
-\DoxyCodeLine{120 }
-\DoxyCodeLine{121 }
-\DoxyCodeLine{122 \}}
+\DoxyCodeLine{116 \}}
 
 \end{DoxyCode}
 
@@ -254,20 +254,14 @@ Definición en la línea 48 del archivo graficadorhistograma.\+cpp.
 \DoxyCodeLine{51 }
 \DoxyCodeLine{52     glClear(GL\_COLOR\_BUFFER\_BIT | GL\_DEPTH\_BUFFER\_BIT);}
 \DoxyCodeLine{53 }
-\DoxyCodeLine{54     \textcolor{keywordtype}{float} relAncho = ((float)width())  / ((\textcolor{keywordtype}{float})\mbox{\hyperlink{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}{frecuenciaB}}.size());}
-\DoxyCodeLine{55     \textcolor{keywordtype}{float} relAlto  = ((float)height()) / (\textcolor{keywordtype}{float})\mbox{\hyperlink{class_graficador_histograma_ac34463c6ba909660c4026641d2c134d8}{maximaFrecuencia}};}
-\DoxyCodeLine{56 }
-\DoxyCodeLine{57     \mbox{\hyperlink{class_graficador_histograma_aaaf8c0ae57525e5fb3f551e371b499de}{escala}} = 1.0f;}
-\DoxyCodeLine{58     \mbox{\hyperlink{class_graficador_histograma_abee8871a0b6d725d531d3e11dee7c664}{desplx}} = (width() -\/ \mbox{\hyperlink{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}{frecuenciaB}}.size()*\mbox{\hyperlink{class_graficador_histograma_aaaf8c0ae57525e5fb3f551e371b499de}{escala}})*0.5f;}
-\DoxyCodeLine{59     \mbox{\hyperlink{class_graficador_histograma_a18e87d851c068bfa6fc6f073071cbee7}{desply}} = (height() -\/ \mbox{\hyperlink{class_graficador_histograma_ac34463c6ba909660c4026641d2c134d8}{maximaFrecuencia}}*\mbox{\hyperlink{class_graficador_histograma_aaaf8c0ae57525e5fb3f551e371b499de}{escala}})*0.5f;}
-\DoxyCodeLine{60 }
-\DoxyCodeLine{61     \mbox{\hyperlink{class_graficador_histograma_a0fea2467b8ee53bc9ef00cab14eee93f}{graficarHistograma}}();}
-\DoxyCodeLine{62 \}}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \mbox{\hyperlink{class_graficador_histograma_a0fea2467b8ee53bc9ef00cab14eee93f}{graficarHistograma}}();}
+\DoxyCodeLine{56 \}}
 
 \end{DoxyCode}
 
 
-Hace referencia a desplx, desply, escala, frecuenciaB, graficar\+Histograma() y maxima\+Frecuencia.
+Hace referencia a graficar\+Histograma().
 
 \mbox{\Hypertarget{class_graficador_histograma_a3e9f50e51ff5d13c6d8b44ffb09ed787}\label{class_graficador_histograma_a3e9f50e51ff5d13c6d8b44ffb09ed787}} 
 \index{GraficadorHistograma@{GraficadorHistograma}!resizeGL@{resizeGL}}
@@ -371,10 +365,6 @@ Referenciado por resize\+GL().
 
 Definición en la línea 119 del archivo graficadorhistograma.\+h.
 
-
-
-Referenciado por paint\+GL().
-
 \mbox{\Hypertarget{class_graficador_histograma_a18e87d851c068bfa6fc6f073071cbee7}\label{class_graficador_histograma_a18e87d851c068bfa6fc6f073071cbee7}} 
 \index{GraficadorHistograma@{GraficadorHistograma}!desply@{desply}}
 \index{desply@{desply}!GraficadorHistograma@{GraficadorHistograma}}
@@ -390,10 +380,6 @@ Referenciado por paint\+GL().
 
 Definición en la línea 124 del archivo graficadorhistograma.\+h.
 
-
-
-Referenciado por paint\+GL().
-
 \mbox{\Hypertarget{class_graficador_histograma_aaaf8c0ae57525e5fb3f551e371b499de}\label{class_graficador_histograma_aaaf8c0ae57525e5fb3f551e371b499de}} 
 \index{GraficadorHistograma@{GraficadorHistograma}!escala@{escala}}
 \index{escala@{escala}!GraficadorHistograma@{GraficadorHistograma}}
@@ -408,10 +394,6 @@ Referenciado por paint\+GL().
 
 
 Definición en la línea 114 del archivo graficadorhistograma.\+h.
-
-
-
-Referenciado por paint\+GL().
 
 \mbox{\Hypertarget{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}\label{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}} 
 \index{GraficadorHistograma@{GraficadorHistograma}!frecuenciaB@{frecuenciaB}}
@@ -430,7 +412,7 @@ Definición en la línea 93 del archivo graficadorhistograma.\+h.
 
 
 
-Referenciado por Graficador\+Histograma(), graficar\+Histograma() y paint\+GL().
+Referenciado por Graficador\+Histograma() y graficar\+Histograma().
 
 \mbox{\Hypertarget{class_graficador_histograma_a711b33992b1e18171a19e948405d7338}\label{class_graficador_histograma_a711b33992b1e18171a19e948405d7338}} 
 \index{GraficadorHistograma@{GraficadorHistograma}!frecuenciaG@{frecuenciaG}}
@@ -525,7 +507,7 @@ Definición en la línea 86 del archivo graficadorhistograma.\+h.
 
 
 
-Referenciado por Graficador\+Histograma(), graficar\+Histograma() y paint\+GL().
+Referenciado por Graficador\+Histograma() y graficar\+Histograma().
 
 \mbox{\Hypertarget{class_graficador_histograma_a2f0fb1fe6c5afef5f7793aeb6e3455d7}\label{class_graficador_histograma_a2f0fb1fe6c5afef5f7793aeb6e3455d7}} 
 \index{GraficadorHistograma@{GraficadorHistograma}!procesadorEstad@{procesadorEstad}}

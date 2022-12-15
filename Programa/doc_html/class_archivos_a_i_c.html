@@ -432,7 +432,7 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                getline(<a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>, linea);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="class_pixel.html">Pixel</a> pixAux;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="class_archivos_a_i_c.html#a1450f875c280a2280515e97bc91b7f16">archi</a>.seekg(auxPosicion);</div>
@@ -452,10 +452,10 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">if</span>(!seGuardoColumnas)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    <span class="keywordtype">int</span> tamanio = linea.length();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    <span class="keywordtype">char</span> linea_char[tamanio];</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    strcpy(linea_char, linea.c_str());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    <span class="keywordtype">char</span> lineaChar[tamanio];</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    strcpy(lineaChar, linea.c_str());</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    <span class="keywordtype">char</span> *split;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    split = strtok(linea_char, <span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    split = strtok(lineaChar, <span class="stringliteral">&quot; &quot;</span>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    <span class="keywordflow">while</span> (split != NULL)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                      {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        datosLinea.push_back(stoi(split));</div>
@@ -495,10 +495,10 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                acumuladorColumnas = 0;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordtype">int</span> tamanio = linea.length();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordtype">char</span> linea_char[tamanio];</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                strcpy(linea_char, linea.c_str());</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordtype">char</span> lineaChar[tamanio];</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                strcpy(lineaChar, linea.c_str());</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <span class="keywordtype">char</span> *split;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                split = strtok(linea_char, <span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                split = strtok(lineaChar, <span class="stringliteral">&quot; &quot;</span>);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">while</span> (split != NULL)</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                  {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    datosLinea.push_back(stoi(split));</div>
@@ -663,7 +663,7 @@ Atributos privados</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_archivos_a_i_c.html">ArchivosAIC</a></li>
-    <li class="footer">Generado el Jueves, 15 de Diciembre de 2022 16:37:24 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Jueves, 15 de Diciembre de 2022 18:32:23 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

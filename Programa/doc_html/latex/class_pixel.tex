@@ -235,7 +235,7 @@ Hace referencia a b.
 
 
 
-Referenciado por Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::aplicar\+Filtro(), Filtro\+Pasa\+Bajos\+::aplicar\+Filtro(), Negativo\+::aplicar\+Filtro(), Brillo\+::aumentar\+Brillo(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+B(), Archivos\+PNM\+::escribe\+P3(), Archivos\+PNM\+::escribe\+P6(), Algoritmo\+Del\+Pintor\+::es\+Vecino(), get\+Intensidad(), Ventana\+De\+Graficacion\+::graficar\+Imagen(), Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+B() y Brillo\+::reducir\+Brillo().
+Referenciado por Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::aplicar\+Filtro(), Filtro\+Pasa\+Bajos\+::aplicar\+Filtro(), Negativo\+::aplicar\+Filtro(), Brillo\+::aumentar\+Brillo(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+B(), Archivos\+PNM\+::escribe\+P3(), Archivos\+PNM\+::escribe\+P6(), Algoritmo\+Del\+Pintor\+::es\+Vecino(), Ventana\+De\+Graficacion\+::graficar\+Imagen(), Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+B() y Brillo\+::reducir\+Brillo().
 
 \mbox{\Hypertarget{class_pixel_a7d11df716ef5c30421210a7b2d61e697}\label{class_pixel_a7d11df716ef5c30421210a7b2d61e697}} 
 \index{Pixel@{Pixel}!getG@{getG}}
@@ -289,13 +289,13 @@ Definición en la línea 59 del archivo pixel.\+cpp.
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{60 \{}
-\DoxyCodeLine{61     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}();}
+\DoxyCodeLine{61     \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}+\mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}+\mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}})/3;}
 \DoxyCodeLine{62 \}}
 
 \end{DoxyCode}
 
 
-Hace referencia a get\+B().
+Hace referencia a b, g y r.
 
 
 
@@ -508,7 +508,7 @@ Definición en la línea 119 del archivo pixel.\+h.
 
 
 
-Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+B(), Pixel(), reducir\+Brillo(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
+Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+B(), get\+Intensidad(), Pixel(), reducir\+Brillo(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
 
 \mbox{\Hypertarget{class_pixel_a73515f179e3c1bd28156e434da111d05}\label{class_pixel_a73515f179e3c1bd28156e434da111d05}} 
 \index{Pixel@{Pixel}!g@{g}}
@@ -527,7 +527,7 @@ Definición en la línea 115 del archivo pixel.\+h.
 
 
 
-Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+G(), Pixel(), reducir\+Brillo(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
+Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+G(), get\+Intensidad(), Pixel(), reducir\+Brillo(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
 
 \mbox{\Hypertarget{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}\label{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}} 
 \index{Pixel@{Pixel}!r@{r}}
@@ -546,7 +546,7 @@ Definición en la línea 111 del archivo pixel.\+h.
 
 
 
-Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+R(), Pixel(), reducir\+Brillo(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
+Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+Intensidad(), get\+R(), Pixel(), reducir\+Brillo(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
 
 
 

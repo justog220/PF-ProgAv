@@ -179,27 +179,27 @@ Definición en la línea 29 del archivo brillo.\+cpp.
 \DoxyCodeLine{31     \mbox{\hyperlink{class_brillo_aed5bf732f20f221e5d1ffbd704594cfc}{consultarDiferencia}}(imagen);}
 \DoxyCodeLine{32 }
 \DoxyCodeLine{33     \textcolor{keywordtype}{int} auxR, auxG, auxB;}
-\DoxyCodeLine{34     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_pixel}{Pixel}} pixAux;}
 \DoxyCodeLine{35 }
 \DoxyCodeLine{36     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < imagen.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(); i++)}
 \DoxyCodeLine{37         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < imagen.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}(); j++)}
 \DoxyCodeLine{38         \{}
-\DoxyCodeLine{39             pix\_aux = imagen.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
-\DoxyCodeLine{40             auxR = pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}() + \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
+\DoxyCodeLine{39             pixAux = imagen.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{40             auxR = pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}() + \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
 \DoxyCodeLine{41             \textcolor{keywordflow}{if}(auxR > imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
 \DoxyCodeLine{42                 auxR = imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}();}
 \DoxyCodeLine{43 }
-\DoxyCodeLine{44             auxG = pix\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}() + \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
+\DoxyCodeLine{44             auxG = pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}() + \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
 \DoxyCodeLine{45             \textcolor{keywordflow}{if}(auxG > imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
 \DoxyCodeLine{46                 auxG = imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}();}
 \DoxyCodeLine{47 }
-\DoxyCodeLine{48             auxB = pix\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}() + \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
+\DoxyCodeLine{48             auxB = pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}() + \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
 \DoxyCodeLine{49             \textcolor{keywordflow}{if}(auxB > imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
 \DoxyCodeLine{50                 auxB = imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}();}
 \DoxyCodeLine{51 }
-\DoxyCodeLine{52             pix\_aux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}(auxR, auxG, auxB);}
+\DoxyCodeLine{52             pixAux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}(auxR, auxG, auxB);}
 \DoxyCodeLine{53 }
-\DoxyCodeLine{54             imagen.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(i, j, pix\_aux);}
+\DoxyCodeLine{54             imagen.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(i, j, pixAux);}
 \DoxyCodeLine{55         \}}
 \DoxyCodeLine{56 }
 \DoxyCodeLine{57 \}}
@@ -294,7 +294,7 @@ Definición en la línea 101 del archivo brillo.\+cpp.
 \DoxyCodeLine{126         \{}
 \DoxyCodeLine{127             cin.clear();}
 \DoxyCodeLine{128             cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
-\DoxyCodeLine{129             cout<<\textcolor{stringliteral}{"{}\(\backslash\)tIngrese una cantidad dentro del rango [0, "{}}<<imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}()<<\textcolor{stringliteral}{"{}]: "{}};}
+\DoxyCodeLine{129             cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese una cantidad dentro del rango [0, "{}}<<imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}()<<\textcolor{stringliteral}{"{}]: "{}};}
 \DoxyCodeLine{130             cout.flush();}
 \DoxyCodeLine{131             cin>>cantidad;}
 \DoxyCodeLine{132             \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}} = cantidad;}
@@ -338,27 +338,27 @@ Definición en la línea 59 del archivo brillo.\+cpp.
 \DoxyCodeLine{61     \mbox{\hyperlink{class_brillo_aed5bf732f20f221e5d1ffbd704594cfc}{consultarDiferencia}}(imagen);}
 \DoxyCodeLine{62 }
 \DoxyCodeLine{63     \textcolor{keywordtype}{int} auxR, auxG, auxB;}
-\DoxyCodeLine{64     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{64     \mbox{\hyperlink{class_pixel}{Pixel}} pixAux;}
 \DoxyCodeLine{65 }
 \DoxyCodeLine{66     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < imagen.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(); i++)}
 \DoxyCodeLine{67         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < imagen.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}(); j++)}
 \DoxyCodeLine{68         \{}
-\DoxyCodeLine{69             pix\_aux = imagen.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
-\DoxyCodeLine{70             auxR = pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}() -\/ \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
+\DoxyCodeLine{69             pixAux = imagen.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{70             auxR = pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}() -\/ \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
 \DoxyCodeLine{71             \textcolor{keywordflow}{if}(auxR < 0)}
 \DoxyCodeLine{72                 auxR = 0;}
 \DoxyCodeLine{73 }
-\DoxyCodeLine{74             auxG = pix\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}() -\/ \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
+\DoxyCodeLine{74             auxG = pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}() -\/ \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
 \DoxyCodeLine{75             \textcolor{keywordflow}{if}(auxG < 0)}
 \DoxyCodeLine{76                 auxG = 0;}
 \DoxyCodeLine{77 }
-\DoxyCodeLine{78             auxB = pix\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}() -\/ \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
+\DoxyCodeLine{78             auxB = pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}() -\/ \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
 \DoxyCodeLine{79             \textcolor{keywordflow}{if}(auxB < 0)}
 \DoxyCodeLine{80                 auxB = 0;}
 \DoxyCodeLine{81 }
-\DoxyCodeLine{82             pix\_aux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}(auxR, auxG, auxB);}
+\DoxyCodeLine{82             pixAux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}(auxR, auxG, auxB);}
 \DoxyCodeLine{83 }
-\DoxyCodeLine{84             imagen.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(i, j, pix\_aux);}
+\DoxyCodeLine{84             imagen.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(i, j, pixAux);}
 \DoxyCodeLine{85         \}}
 \DoxyCodeLine{86 \}}
 

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tabla_5fconversion_445',['tabla_conversion',['../class_tabla_lut.html#aeb49ebf50266bc1623cc9195ea63f260',1,'TablaLut']]],
+  ['tablaconversion_445',['tablaConversion',['../class_tabla_lut.html#a2651e4d318b15104cd257884ac8c58d6',1,'TablaLut']]],
   ['tabladepseudocoloreo_446',['tablaDePseudocoloreo',['../class_ventana_de_graficacion.html#ac3bcbd57599467c3639088ddb7546f4d',1,'VentanaDeGraficacion']]]
 ];

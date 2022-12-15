@@ -85,7 +85,7 @@ Definición en la línea 8 del archivo filtropasaaltos.\+cpp.
 \DoxyCodeLine{12     \textcolor{comment}{//        * | -\/1   5  -\/1 |}}
 \DoxyCodeLine{13     \textcolor{comment}{//        * | 0   -\/1   0 |}}
 \DoxyCodeLine{14     \textcolor{comment}{//         */}}
-\DoxyCodeLine{15             \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{15             \mbox{\hyperlink{class_pixel}{Pixel}} pixAux;}
 \DoxyCodeLine{16 }
 \DoxyCodeLine{17             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} auxR, auxG, auxB;}
 \DoxyCodeLine{18 }
@@ -97,46 +97,46 @@ Definición en la línea 8 del archivo filtropasaaltos.\+cpp.
 \DoxyCodeLine{24             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < filas; i++)}
 \DoxyCodeLine{25                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < columnas; j++)}
 \DoxyCodeLine{26                 \{}
-\DoxyCodeLine{27                     pix\_aux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
-\DoxyCodeLine{28                     auxR = pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()*5;}
-\DoxyCodeLine{29                     auxG = pix\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()*5;}
-\DoxyCodeLine{30                     auxB = pix\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()*5;}
+\DoxyCodeLine{27                     pixAux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{28                     auxR = pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()*5;}
+\DoxyCodeLine{29                     auxG = pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()*5;}
+\DoxyCodeLine{30                     auxB = pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()*5;}
 \DoxyCodeLine{31 }
 \DoxyCodeLine{32                     \textcolor{keywordflow}{if}(imag.\mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{formaParteDeLaImagen}}(i, j-\/1))}
 \DoxyCodeLine{33                     \{}
-\DoxyCodeLine{34                         pix\_aux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j-\/1);}
-\DoxyCodeLine{35                         auxR += pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()*(-\/1);}
-\DoxyCodeLine{36                         auxG += pix\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()*(-\/1);}
-\DoxyCodeLine{37                         auxB += pix\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()*(-\/1);}
+\DoxyCodeLine{34                         pixAux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j-\/1);}
+\DoxyCodeLine{35                         auxR += pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()*(-\/1);}
+\DoxyCodeLine{36                         auxG += pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()*(-\/1);}
+\DoxyCodeLine{37                         auxB += pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()*(-\/1);}
 \DoxyCodeLine{38                     \}}
 \DoxyCodeLine{39 }
 \DoxyCodeLine{40                     \textcolor{keywordflow}{if}(imag.\mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{formaParteDeLaImagen}}(i+1, j))}
 \DoxyCodeLine{41                     \{}
-\DoxyCodeLine{42                         pix\_aux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i+1, j);}
-\DoxyCodeLine{43                         auxR += pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()*(-\/1);}
-\DoxyCodeLine{44                         auxG += pix\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()*(-\/1);}
-\DoxyCodeLine{45                         auxB += pix\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()*(-\/1);}
+\DoxyCodeLine{42                         pixAux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i+1, j);}
+\DoxyCodeLine{43                         auxR += pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()*(-\/1);}
+\DoxyCodeLine{44                         auxG += pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()*(-\/1);}
+\DoxyCodeLine{45                         auxB += pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()*(-\/1);}
 \DoxyCodeLine{46                     \}}
 \DoxyCodeLine{47 }
 \DoxyCodeLine{48                     \textcolor{keywordflow}{if}(imag.\mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{formaParteDeLaImagen}}(i, j+1))}
 \DoxyCodeLine{49                     \{}
-\DoxyCodeLine{50                         pix\_aux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j+1);}
-\DoxyCodeLine{51                         auxR += pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()*(-\/1);}
-\DoxyCodeLine{52                         auxG += pix\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()*(-\/1);}
-\DoxyCodeLine{53                         auxB += pix\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()*(-\/1);}
+\DoxyCodeLine{50                         pixAux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j+1);}
+\DoxyCodeLine{51                         auxR += pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()*(-\/1);}
+\DoxyCodeLine{52                         auxG += pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()*(-\/1);}
+\DoxyCodeLine{53                         auxB += pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()*(-\/1);}
 \DoxyCodeLine{54                     \}}
 \DoxyCodeLine{55 }
 \DoxyCodeLine{56                     \textcolor{keywordflow}{if}(imag.\mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{formaParteDeLaImagen}}(i-\/1, j))}
 \DoxyCodeLine{57                     \{}
-\DoxyCodeLine{58                         pix\_aux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i-\/1, j);}
-\DoxyCodeLine{59                         auxR += pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()*(-\/1);}
-\DoxyCodeLine{60                         auxG += pix\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()*(-\/1);}
-\DoxyCodeLine{61                         auxB += pix\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()*(-\/1);}
+\DoxyCodeLine{58                         pixAux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i-\/1, j);}
+\DoxyCodeLine{59                         auxR += pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()*(-\/1);}
+\DoxyCodeLine{60                         auxG += pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()*(-\/1);}
+\DoxyCodeLine{61                         auxB += pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()*(-\/1);}
 \DoxyCodeLine{62                     \}}
 \DoxyCodeLine{63 }
-\DoxyCodeLine{64                     pix\_aux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}(auxR, auxG, auxB);}
+\DoxyCodeLine{64                     pixAux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}(auxR, auxG, auxB);}
 \DoxyCodeLine{65 }
-\DoxyCodeLine{66                     img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(i, j, pix\_aux);}
+\DoxyCodeLine{66                     img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(i, j, pixAux);}
 \DoxyCodeLine{67 }
 \DoxyCodeLine{68                 \}}
 \DoxyCodeLine{69 }

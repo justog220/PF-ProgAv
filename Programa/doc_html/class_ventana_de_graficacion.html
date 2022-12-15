@@ -310,11 +310,11 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
 <div class="ttc" id="aclass_graficador_histograma_html"><div class="ttname"><a href="class_graficador_histograma.html">GraficadorHistograma</a></div><div class="ttdoc">Clase encargada de mostrar por pantalla el histograma de una Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8h_source.html#l00026">graficadorhistograma.h:27</a></div></div>
-<div class="ttc" id="aclass_graficador_histograma_html_a0fea2467b8ee53bc9ef00cab14eee93f"><div class="ttname"><a href="class_graficador_histograma.html#a0fea2467b8ee53bc9ef00cab14eee93f">GraficadorHistograma::graficarHistograma</a></div><div class="ttdeci">void graficarHistograma()</div><div class="ttdoc">graficarHistograma Permite la representaciÃ³n grÃ¡fica del histograma haciendo uso de la librerÃ­a Op...</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8cpp_source.html#l00065">graficadorhistograma.cpp:65</a></div></div>
+<div class="ttc" id="aclass_graficador_histograma_html_a0fea2467b8ee53bc9ef00cab14eee93f"><div class="ttname"><a href="class_graficador_histograma.html#a0fea2467b8ee53bc9ef00cab14eee93f">GraficadorHistograma::graficarHistograma</a></div><div class="ttdeci">void graficarHistograma()</div><div class="ttdoc">graficarHistograma Permite la representaciÃ³n grÃ¡fica del histograma haciendo uso de la librerÃ­a Op...</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8cpp_source.html#l00059">graficadorhistograma.cpp:59</a></div></div>
 <div class="ttc" id="aclass_procesador_estadistico_html"><div class="ttname"><a href="class_procesador_estadistico.html">ProcesadorEstadistico</a></div><div class="ttdoc">Clase que permite realizar diversos cÃ¡lculos estadÃ­sticos.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8h_source.html#l00018">procesadorestadistico.h:19</a></div></div>
 <div class="ttc" id="aclass_procesador_estadistico_html_a331c39e9cfa2711dfb4419ef15b20eb3"><div class="ttname"><a href="class_procesador_estadistico.html#a331c39e9cfa2711dfb4419ef15b20eb3">ProcesadorEstadistico::informarDatosEstadisticos</a></div><div class="ttdeci">void informarDatosEstadisticos(Imagen &amp;img)</div><div class="ttdoc">informarDatosEstadisticos MÃ©todo que permite informar diversos datos estadÃ­sticos.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00242">procesadorestadistico.cpp:242</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="graficadorhistograma_8cpp_source.html#l00065">GraficadorHistograma::graficarHistograma()</a>, <a class="el" href="ventanadegraficacion_8h_source.html#l00146">imagen</a> y <a class="el" href="procesadorestadistico_8cpp_source.html#l00242">ProcesadorEstadistico::informarDatosEstadisticos()</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="graficadorhistograma_8cpp_source.html#l00059">GraficadorHistograma::graficarHistograma()</a>, <a class="el" href="ventanadegraficacion_8h_source.html#l00146">imagen</a> y <a class="el" href="procesadorestadistico_8cpp_source.html#l00242">ProcesadorEstadistico::informarDatosEstadisticos()</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="ventanadegraficacion_8cpp_source.html#l00198">keyPressEvent()</a>.</p>
 
@@ -730,26 +730,27 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="keywordtype">int</span> f = <a class="code" href="class_ventana_de_graficacion.html#ab8e415cbdff0a5423dd32fa93577d6fc">altoV</a> - ( QCursor::pos().y() - this-&gt;pos().y()) + 35;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keywordtype">int</span> c = QCursor::pos().x() - this-&gt;pos().x();</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        c = c/<a class="code" href="class_ventana_de_graficacion.html#a028fb2c186d2f50a7b17dda794eb3f89">escala</a>;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        f = f - <a class="code" href="class_ventana_de_graficacion.html#acd503a7003d7a14c00fcae6178b15c0a">desply</a>;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        f = f/<a class="code" href="class_ventana_de_graficacion.html#a028fb2c186d2f50a7b17dda794eb3f89">escala</a>;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        f = <a class="code" href="class_ventana_de_graficacion.html#afcd896ca9a84b65788c73424dc6afdbf">imagen</a>.<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>()-1-f;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <a class="code" href="class_algoritmo_del_pintor.html">AlgoritmoDelPintor</a> algoritmo_del_pintor(<a class="code" href="class_ventana_de_graficacion.html#afcd896ca9a84b65788c73424dc6afdbf">imagen</a>);</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <a class="code" href="class_ventana_de_graficacion.html#a6edb764d43c8f46bbdca40a611babace">appl</a>-&gt;closeAllWindows();</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <a class="code" href="class_ventana_de_graficacion.html#afcd896ca9a84b65788c73424dc6afdbf">imagen</a> = algoritmo_del_pintor.aplicarAlgoritmo(f, c);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        show();</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        repaint();</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    }</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        c -= <a class="code" href="class_ventana_de_graficacion.html#a09b97bb7c5647c56b63fdc351c45bfa1">desplx</a>;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        c = c/<a class="code" href="class_ventana_de_graficacion.html#a028fb2c186d2f50a7b17dda794eb3f89">escala</a>;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        f -= <a class="code" href="class_ventana_de_graficacion.html#acd503a7003d7a14c00fcae6178b15c0a">desply</a>;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        f = f/<a class="code" href="class_ventana_de_graficacion.html#a028fb2c186d2f50a7b17dda794eb3f89">escala</a>;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        f = <a class="code" href="class_ventana_de_graficacion.html#afcd896ca9a84b65788c73424dc6afdbf">imagen</a>.<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>()-1-f;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <a class="code" href="class_algoritmo_del_pintor.html">AlgoritmoDelPintor</a> algoritmoDelPintor(<a class="code" href="class_ventana_de_graficacion.html#afcd896ca9a84b65788c73424dc6afdbf">imagen</a>);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <a class="code" href="class_ventana_de_graficacion.html#a6edb764d43c8f46bbdca40a611babace">appl</a>-&gt;closeAllWindows();</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <a class="code" href="class_ventana_de_graficacion.html#afcd896ca9a84b65788c73424dc6afdbf">imagen</a> = algoritmoDelPintor.aplicarAlgoritmo(f, c);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        show();</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        repaint();</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    }</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;}</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;}</div>
 <div class="ttc" id="aclass_algoritmo_del_pintor_html"><div class="ttname"><a href="class_algoritmo_del_pintor.html">AlgoritmoDelPintor</a></div><div class="ttdoc">Clase capaz de aplicarle el algoritmo del pintor a una Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="algoritmodelpintor_8h_source.html#l00027">algoritmodelpintor.h:28</a></div></div>
 <div class="ttc" id="aclass_ventana_de_graficacion_html_ab8e415cbdff0a5423dd32fa93577d6fc"><div class="ttname"><a href="class_ventana_de_graficacion.html#ab8e415cbdff0a5423dd32fa93577d6fc">VentanaDeGraficacion::altoV</a></div><div class="ttdeci">int altoV</div><div class="ttdef"><b>Definition:</b> <a href="ventanadegraficacion_8h_source.html#l00125">ventanadegraficacion.h:125</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="ventanadegraficacion_8h_source.html#l00125">altoV</a>, <a class="el" href="algoritmodelpintor_8cpp_source.html#l00008">AlgoritmoDelPintor::aplicarAlgoritmo()</a>, <a class="el" href="ventanadegraficacion_8h_source.html#l00156">appl</a>, <a class="el" href="ventanadegraficacion_8h_source.html#l00141">desply</a>, <a class="el" href="ventanadegraficacion_8h_source.html#l00131">escala</a>, <a class="el" href="imagen_8cpp_source.html#l00047">Imagen::getFilas()</a> y <a class="el" href="ventanadegraficacion_8h_source.html#l00146">imagen</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="ventanadegraficacion_8h_source.html#l00125">altoV</a>, <a class="el" href="algoritmodelpintor_8cpp_source.html#l00009">AlgoritmoDelPintor::aplicarAlgoritmo()</a>, <a class="el" href="ventanadegraficacion_8h_source.html#l00156">appl</a>, <a class="el" href="ventanadegraficacion_8h_source.html#l00136">desplx</a>, <a class="el" href="ventanadegraficacion_8h_source.html#l00141">desply</a>, <a class="el" href="ventanadegraficacion_8h_source.html#l00131">escala</a>, <a class="el" href="imagen_8cpp_source.html#l00047">Imagen::getFilas()</a> y <a class="el" href="ventanadegraficacion_8h_source.html#l00146">imagen</a>.</p>
 
 </div>
 </div>
@@ -1150,7 +1151,7 @@ Atributos privados</h2></td></tr>
 
 <p class="definition">Definición en la línea <a class="el" href="ventanadegraficacion_8h_source.html#l00136">136</a> del archivo <a class="el" href="ventanadegraficacion_8h_source.html">ventanadegraficacion.h</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="ventanadegraficacion_8cpp_source.html#l00067">graficarImagen()</a>, <a class="el" href="ventanadegraficacion_8cpp_source.html#l00096">graficarImagenPseudocoloreada()</a> y <a class="el" href="ventanadegraficacion_8cpp_source.html#l00037">paintGL()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="ventanadegraficacion_8cpp_source.html#l00067">graficarImagen()</a>, <a class="el" href="ventanadegraficacion_8cpp_source.html#l00096">graficarImagenPseudocoloreada()</a>, <a class="el" href="ventanadegraficacion_8cpp_source.html#l00359">mousePressEvent()</a> y <a class="el" href="ventanadegraficacion_8cpp_source.html#l00037">paintGL()</a>.</p>
 
 </div>
 </div>
@@ -1420,7 +1421,7 @@ Atributos privados</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_ventana_de_graficacion.html">VentanaDeGraficacion</a></li>
-    <li class="footer">Generado el Jueves, 15 de Diciembre de 2022 16:37:25 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Jueves, 15 de Diciembre de 2022 18:32:24 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

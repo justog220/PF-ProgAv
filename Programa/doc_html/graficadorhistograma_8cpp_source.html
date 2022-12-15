@@ -138,81 +138,74 @@ $(document).ready(function(){initNavTree('graficadorhistograma_8cpp_source.html'
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">float</span> relAncho = ((float)width())  / ((<span class="keywordtype">float</span>)<a class="code" href="class_graficador_histograma.html#a739cde89f10f6c1d8d3188a5ae11ce2a">frecuenciaB</a>.size());</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">float</span> relAlto  = ((float)height()) / (<span class="keywordtype">float</span>)<a class="code" href="class_graficador_histograma.html#ac34463c6ba909660c4026641d2c134d8">maximaFrecuencia</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_graficador_histograma.html#aaaf8c0ae57525e5fb3f551e371b499de">escala</a> = 1.0f;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_graficador_histograma.html#abee8871a0b6d725d531d3e11dee7c664">desplx</a> = (width() - <a class="code" href="class_graficador_histograma.html#a739cde89f10f6c1d8d3188a5ae11ce2a">frecuenciaB</a>.size()*<a class="code" href="class_graficador_histograma.html#aaaf8c0ae57525e5fb3f551e371b499de">escala</a>)*0.5f;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_graficador_histograma.html#a18e87d851c068bfa6fc6f073071cbee7">desply</a> = (height() - <a class="code" href="class_graficador_histograma.html#ac34463c6ba909660c4026641d2c134d8">maximaFrecuencia</a>*<a class="code" href="class_graficador_histograma.html#aaaf8c0ae57525e5fb3f551e371b499de">escala</a>)*0.5f;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="class_graficador_histograma.html#a0fea2467b8ee53bc9ef00cab14eee93f">graficarHistograma</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_graficador_histograma.html#a0fea2467b8ee53bc9ef00cab14eee93f">graficarHistograma</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_graficador_histograma.html#a0fea2467b8ee53bc9ef00cab14eee93f">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_graficador_histograma.html#a0fea2467b8ee53bc9ef00cab14eee93f">GraficadorHistograma::graficarHistograma</a>()</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">char</span> bandera = <span class="charliteral">&#39;r&#39;</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    glPushMatrix();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_graficador_histograma.html#a0fea2467b8ee53bc9ef00cab14eee93f">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_graficador_histograma.html#a0fea2467b8ee53bc9ef00cab14eee93f">GraficadorHistograma::graficarHistograma</a>()</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">char</span> bandera = <span class="charliteral">&#39;r&#39;</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    glPushMatrix();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    glScalef(width()*1.0f/256.0f, height()*1.0f/<a class="code" href="class_graficador_histograma.html#ac34463c6ba909660c4026641d2c134d8">maximaFrecuencia</a>*1.0f, 0.0f);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    glScalef(width()*1.0f/256.0f, height()*1.0f/<a class="code" href="class_graficador_histograma.html#ac34463c6ba909660c4026641d2c134d8">maximaFrecuencia</a>*1.0f, 0.0f);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    glBegin(GL_LINE_STRIP);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> nivel = 0; nivel &lt; <a class="code" href="class_graficador_histograma.html#ab849d0da38d586b876b7c90d1b4c3e4e">frecuenciaR</a>.size(); nivel++)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            glColor4f(1.0f, 0.0f, 0.0f, 0.8f);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            glVertex3i(nivel, <a class="code" href="class_graficador_histograma.html#ab849d0da38d586b876b7c90d1b4c3e4e">frecuenciaR</a>[nivel], 1);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    glBegin(GL_LINE_STRIP);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> nivel = 0; nivel &lt; <a class="code" href="class_graficador_histograma.html#ab849d0da38d586b876b7c90d1b4c3e4e">frecuenciaR</a>.size(); nivel++)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            glColor4f(1.0f, 0.0f, 0.0f, 0.8f);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            glVertex3i(nivel, <a class="code" href="class_graficador_histograma.html#ab849d0da38d586b876b7c90d1b4c3e4e">frecuenciaR</a>[nivel], 1);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    glEnd();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    glBegin(GL_LINE_STRIP);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> nivel = 0; nivel &lt; <a class="code" href="class_graficador_histograma.html#ab849d0da38d586b876b7c90d1b4c3e4e">frecuenciaR</a>.size(); nivel++)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            glColor4f(0.0f, 1.0f, 0.0f, 0.8f);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            glVertex3i(nivel, <a class="code" href="class_graficador_histograma.html#a711b33992b1e18171a19e948405d7338">frecuenciaG</a>[nivel], 0);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    glEnd();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    glBegin(GL_LINE_STRIP);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> nivel = 0; nivel &lt; <a class="code" href="class_graficador_histograma.html#ab849d0da38d586b876b7c90d1b4c3e4e">frecuenciaR</a>.size(); nivel++)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            glColor4f(0.0f, 0.0f, 1.0f, 0.8f);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            glVertex3i(nivel, <a class="code" href="class_graficador_histograma.html#a739cde89f10f6c1d8d3188a5ae11ce2a">frecuenciaB</a>[nivel], -1);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    glEnd();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    glBegin(GL_LINE_STRIP);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> nivel = 0; nivel &lt; <a class="code" href="class_graficador_histograma.html#ab849d0da38d586b876b7c90d1b4c3e4e">frecuenciaR</a>.size(); nivel++)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">if</span>(bandera == <span class="charliteral">&#39;r&#39;</span>)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                glColor4f(1.0f, 0.0f, 0.0f, 0.8f);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                bandera = <span class="charliteral">&#39;g&#39;</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(bandera == <span class="charliteral">&#39;g&#39;</span>){</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                glColor4f(0.0f, 1.0f, 0.0f, 0.8f);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                bandera = <span class="charliteral">&#39;b&#39;</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(bandera == <span class="charliteral">&#39;b&#39;</span>){</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                glColor4f(0.0f, 0.0f, 1.0f, 0.8f);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                bandera = <span class="charliteral">&#39;r&#39;</span>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            glVertex3i(nivel, <a class="code" href="class_graficador_histograma.html#a167b2fc6dbe3c919e0f9da215aa5ffc7">frecuenciaPromedio</a>[nivel], 1);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    glEnd();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    glBegin(GL_LINE_STRIP);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> nivel = 0; nivel &lt; <a class="code" href="class_graficador_histograma.html#ab849d0da38d586b876b7c90d1b4c3e4e">frecuenciaR</a>.size(); nivel++)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            glColor4f(0.0f, 1.0f, 0.0f, 0.8f);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            glVertex3i(nivel, <a class="code" href="class_graficador_histograma.html#a711b33992b1e18171a19e948405d7338">frecuenciaG</a>[nivel], 0);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    glEnd();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    glBegin(GL_LINE_STRIP);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> nivel = 0; nivel &lt; <a class="code" href="class_graficador_histograma.html#ab849d0da38d586b876b7c90d1b4c3e4e">frecuenciaR</a>.size(); nivel++)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            glColor4f(0.0f, 0.0f, 1.0f, 0.8f);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            glVertex3i(nivel, <a class="code" href="class_graficador_histograma.html#a739cde89f10f6c1d8d3188a5ae11ce2a">frecuenciaB</a>[nivel], -1);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    glEnd();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    glBegin(GL_LINE_STRIP);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> nivel = 0; nivel &lt; <a class="code" href="class_graficador_histograma.html#ab849d0da38d586b876b7c90d1b4c3e4e">frecuenciaR</a>.size(); nivel++)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">if</span>(bandera == <span class="charliteral">&#39;r&#39;</span>)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                glColor4f(1.0f, 0.0f, 0.0f, 0.8f);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                bandera = <span class="charliteral">&#39;g&#39;</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(bandera == <span class="charliteral">&#39;g&#39;</span>){</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                glColor4f(0.0f, 1.0f, 0.0f, 0.8f);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                bandera = <span class="charliteral">&#39;b&#39;</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(bandera == <span class="charliteral">&#39;b&#39;</span>){</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                glColor4f(0.0f, 0.0f, 1.0f, 0.8f);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                bandera = <span class="charliteral">&#39;r&#39;</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            glVertex3i(nivel, <a class="code" href="class_graficador_histograma.html#a167b2fc6dbe3c919e0f9da215aa5ffc7">frecuenciaPromedio</a>[nivel], 1);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    glEnd();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;       glPopMatrix();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    glEnd();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;       glPopMatrix();</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
 <div class="ttc" id="aclass_graficador_histograma_html_a06ad5e02dca4adbf07381eba085657d6"><div class="ttname"><a href="class_graficador_histograma.html#a06ad5e02dca4adbf07381eba085657d6">GraficadorHistograma::altoV</a></div><div class="ttdeci">int altoV</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8h_source.html#l00108">graficadorhistograma.h:108</a></div></div>
-<div class="ttc" id="aclass_graficador_histograma_html_a0fea2467b8ee53bc9ef00cab14eee93f"><div class="ttname"><a href="class_graficador_histograma.html#a0fea2467b8ee53bc9ef00cab14eee93f">GraficadorHistograma::graficarHistograma</a></div><div class="ttdeci">void graficarHistograma()</div><div class="ttdoc">graficarHistograma Permite la representaciÃ³n grÃ¡fica del histograma haciendo uso de la librerÃ­a Op...</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8cpp_source.html#l00065">graficadorhistograma.cpp:65</a></div></div>
+<div class="ttc" id="aclass_graficador_histograma_html_a0fea2467b8ee53bc9ef00cab14eee93f"><div class="ttname"><a href="class_graficador_histograma.html#a0fea2467b8ee53bc9ef00cab14eee93f">GraficadorHistograma::graficarHistograma</a></div><div class="ttdeci">void graficarHistograma()</div><div class="ttdoc">graficarHistograma Permite la representaciÃ³n grÃ¡fica del histograma haciendo uso de la librerÃ­a Op...</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8cpp_source.html#l00059">graficadorhistograma.cpp:59</a></div></div>
 <div class="ttc" id="aclass_graficador_histograma_html_a167b2fc6dbe3c919e0f9da215aa5ffc7"><div class="ttname"><a href="class_graficador_histograma.html#a167b2fc6dbe3c919e0f9da215aa5ffc7">GraficadorHistograma::frecuenciaPromedio</a></div><div class="ttdeci">vector&lt; int &gt; frecuenciaPromedio</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8h_source.html#l00098">graficadorhistograma.h:98</a></div></div>
-<div class="ttc" id="aclass_graficador_histograma_html_a18e87d851c068bfa6fc6f073071cbee7"><div class="ttname"><a href="class_graficador_histograma.html#a18e87d851c068bfa6fc6f073071cbee7">GraficadorHistograma::desply</a></div><div class="ttdeci">float desply</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8h_source.html#l00124">graficadorhistograma.h:124</a></div></div>
 <div class="ttc" id="aclass_graficador_histograma_html_a2f0fb1fe6c5afef5f7793aeb6e3455d7"><div class="ttname"><a href="class_graficador_histograma.html#a2f0fb1fe6c5afef5f7793aeb6e3455d7">GraficadorHistograma::procesadorEstad</a></div><div class="ttdeci">ProcesadorEstadistico procesadorEstad</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8h_source.html#l00066">graficadorhistograma.h:66</a></div></div>
 <div class="ttc" id="aclass_graficador_histograma_html_a35fea56cbd4e9ca930535771054beb04"><div class="ttname"><a href="class_graficador_histograma.html#a35fea56cbd4e9ca930535771054beb04">GraficadorHistograma::imagenAnalisis</a></div><div class="ttdeci">Imagen imagenAnalisis</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8h_source.html#l00064">graficadorhistograma.h:64</a></div></div>
 <div class="ttc" id="aclass_graficador_histograma_html_a3e9f50e51ff5d13c6d8b44ffb09ed787"><div class="ttname"><a href="class_graficador_histograma.html#a3e9f50e51ff5d13c6d8b44ffb09ed787">GraficadorHistograma::resizeGL</a></div><div class="ttdeci">void resizeGL(int pAncho, int pAlto)</div><div class="ttdoc">resizeGL Se modifica el tamaÃ±o cuando se modifica el tamaÃ±o de la ventana.</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8cpp_source.html#l00029">graficadorhistograma.cpp:29</a></div></div>
@@ -221,9 +214,7 @@ $(document).ready(function(){initNavTree('graficadorhistograma_8cpp_source.html'
 <div class="ttc" id="aclass_graficador_histograma_html_a840da15e6339fcaf13547cb188458671"><div class="ttname"><a href="class_graficador_histograma.html#a840da15e6339fcaf13547cb188458671">GraficadorHistograma::paintGL</a></div><div class="ttdeci">void paintGL()</div><div class="ttdoc">paintGL Permite graficar.</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8cpp_source.html#l00048">graficadorhistograma.cpp:48</a></div></div>
 <div class="ttc" id="aclass_graficador_histograma_html_a9d8479d16eeda28cea737d95f2777ebc"><div class="ttname"><a href="class_graficador_histograma.html#a9d8479d16eeda28cea737d95f2777ebc">GraficadorHistograma::GraficadorHistograma</a></div><div class="ttdeci">GraficadorHistograma(Imagen &amp;img)</div><div class="ttdoc">GraficadorHistograma Constructor del objeto GraficadorHistograma.</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8cpp_source.html#l00004">graficadorhistograma.cpp:4</a></div></div>
 <div class="ttc" id="aclass_graficador_histograma_html_aa737ae0d4f730366dac67ff310004a8b"><div class="ttname"><a href="class_graficador_histograma.html#aa737ae0d4f730366dac67ff310004a8b">GraficadorHistograma::initializeGL</a></div><div class="ttdeci">void initializeGL()</div><div class="ttdoc">initializeGL Inicializa los recursos necesarios para utilizar OpenGL.</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8cpp_source.html#l00023">graficadorhistograma.cpp:23</a></div></div>
-<div class="ttc" id="aclass_graficador_histograma_html_aaaf8c0ae57525e5fb3f551e371b499de"><div class="ttname"><a href="class_graficador_histograma.html#aaaf8c0ae57525e5fb3f551e371b499de">GraficadorHistograma::escala</a></div><div class="ttdeci">float escala</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8h_source.html#l00114">graficadorhistograma.h:114</a></div></div>
 <div class="ttc" id="aclass_graficador_histograma_html_ab849d0da38d586b876b7c90d1b4c3e4e"><div class="ttname"><a href="class_graficador_histograma.html#ab849d0da38d586b876b7c90d1b4c3e4e">GraficadorHistograma::frecuenciaR</a></div><div class="ttdeci">vector&lt; int &gt; frecuenciaR</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8h_source.html#l00073">graficadorhistograma.h:73</a></div></div>
-<div class="ttc" id="aclass_graficador_histograma_html_abee8871a0b6d725d531d3e11dee7c664"><div class="ttname"><a href="class_graficador_histograma.html#abee8871a0b6d725d531d3e11dee7c664">GraficadorHistograma::desplx</a></div><div class="ttdeci">float desplx</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8h_source.html#l00119">graficadorhistograma.h:119</a></div></div>
 <div class="ttc" id="aclass_graficador_histograma_html_ac34463c6ba909660c4026641d2c134d8"><div class="ttname"><a href="class_graficador_histograma.html#ac34463c6ba909660c4026641d2c134d8">GraficadorHistograma::maximaFrecuencia</a></div><div class="ttdeci">int maximaFrecuencia</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8h_source.html#l00086">graficadorhistograma.h:86</a></div></div>
 <div class="ttc" id="aclass_graficador_histograma_html_ae4b91c9e97db4bdd05c06ff7130a259c"><div class="ttname"><a href="class_graficador_histograma.html#ae4b91c9e97db4bdd05c06ff7130a259c">GraficadorHistograma::anchoV</a></div><div class="ttdeci">int anchoV</div><div class="ttdef"><b>Definition:</b> <a href="graficadorhistograma_8h_source.html#l00103">graficadorhistograma.h:103</a></div></div>
 <div class="ttc" id="aclass_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Permite la representacion de una imagen a partir de un arreglo de Pixeles.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00022">imagen.h:23</a></div></div>
@@ -238,7 +229,7 @@ $(document).ready(function(){initNavTree('graficadorhistograma_8cpp_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="graficadorhistograma_8cpp.html">graficadorhistograma.cpp</a></li>
-    <li class="footer">Generado el Jueves, 15 de Diciembre de 2022 16:37:23 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Jueves, 15 de Diciembre de 2022 18:32:23 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

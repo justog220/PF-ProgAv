@@ -26,7 +26,7 @@ void \mbox{\hyperlink{class_tabla_lut_a12354aac4305cfcb905cc602aa5a69cf}{cargar\
 \item 
 vector$<$ string $>$ \mbox{\hyperlink{class_tabla_lut_a3b70ad7546c97d257172e448b10aebc4}{luts}} = \{\char`\"{}./grupo\+\_\+luts/glow.\+lut\char`\"{}, \char`\"{}./grupo\+\_\+luts/Turbo.\+lut\char`\"{}\}
 \item 
-vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\+\_\+conversion}}
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tabla\+Conversion}}
 \end{DoxyCompactItemize}
 
 
@@ -109,9 +109,9 @@ Definición en la línea 13 del archivo tablalut.\+cpp.
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{14 \{}
-\DoxyCodeLine{15     \mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}.resize(256);}
-\DoxyCodeLine{16     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}.size(); i++)}
-\DoxyCodeLine{17          \mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[i].resize(4);}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}.resize(256);}
+\DoxyCodeLine{16     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}.size(); i++)}
+\DoxyCodeLine{17          \mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[i].resize(4);}
 \DoxyCodeLine{18 }
 \DoxyCodeLine{19     ifstream lut;}
 \DoxyCodeLine{20     lut.open(\mbox{\hyperlink{class_tabla_lut_a3b70ad7546c97d257172e448b10aebc4}{luts}}[opc-\/1]);}
@@ -120,8 +120,8 @@ Definición en la línea 13 del archivo tablalut.\+cpp.
 \DoxyCodeLine{23 }
 \DoxyCodeLine{24     getline(lut, linea);}
 \DoxyCodeLine{25 }
-\DoxyCodeLine{26     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}.size(); i++)\{}
-\DoxyCodeLine{27         lut>>\mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[i][0]>>\mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[i][1]>>\mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[i][2]>>\mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[i][3];}
+\DoxyCodeLine{26     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}.size(); i++)\{}
+\DoxyCodeLine{27         lut>>\mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[i][0]>>\mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[i][1]>>\mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[i][2]>>\mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[i][3];}
 \DoxyCodeLine{28     \}}
 \DoxyCodeLine{29 }
 \DoxyCodeLine{30 \}}
@@ -129,7 +129,7 @@ Definición en la línea 13 del archivo tablalut.\+cpp.
 \end{DoxyCode}
 
 
-Hace referencia a luts y tabla\+\_\+conversion.
+Hace referencia a luts y tabla\+Conversion.
 
 
 
@@ -160,13 +160,13 @@ Definición en la línea 8 del archivo tablalut.\+cpp.
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{9 \{}
-\DoxyCodeLine{10     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pixel}{Pixel}}(\mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[intensidad][1], \mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[intensidad][2], \mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[intensidad][3]);}
+\DoxyCodeLine{10     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pixel}{Pixel}}(\mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[intensidad][1], \mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[intensidad][2], \mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[intensidad][3]);}
 \DoxyCodeLine{11 \}}
 
 \end{DoxyCode}
 
 
-Hace referencia a tabla\+\_\+conversion.
+Hace referencia a tabla\+Conversion.
 
 
 
@@ -194,11 +194,11 @@ Definición en la línea 44 del archivo tablalut.\+h.
 
 Referenciado por cargar\+LUT().
 
-\mbox{\Hypertarget{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}\label{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}} 
-\index{TablaLut@{TablaLut}!tabla\_conversion@{tabla\_conversion}}
-\index{tabla\_conversion@{tabla\_conversion}!TablaLut@{TablaLut}}
-\doxyparagraph{\texorpdfstring{tabla\_conversion}{tabla\_conversion}}
-{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ Tabla\+Lut\+::tabla\+\_\+conversion\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}\label{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}} 
+\index{TablaLut@{TablaLut}!tablaConversion@{tablaConversion}}
+\index{tablaConversion@{tablaConversion}!TablaLut@{TablaLut}}
+\doxyparagraph{\texorpdfstring{tablaConversion}{tablaConversion}}
+{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ Tabla\+Lut\+::tabla\+Conversion\hspace{0.3cm}{\ttfamily [private]}}
 
 
 \begin{DoxyParams}{Parámetros}

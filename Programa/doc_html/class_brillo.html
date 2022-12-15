@@ -273,27 +273,27 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_brillo.html#aed5bf732f20f221e5d1ffbd704594cfc">consultarDiferencia</a>(imagen);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> auxR, auxG, auxB;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pixAux;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; imagen.<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(); i++)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; imagen.<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>(); j++)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            pix_aux = imagen.<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            auxR = pix_aux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>() + <a class="code" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">diferencia</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            pixAux = imagen.<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            auxR = pixAux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>() + <a class="code" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">diferencia</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">if</span>(auxR &gt; imagen.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>())</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                auxR = imagen.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            auxG = pix_aux.<a class="code" href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">getG</a>() + <a class="code" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">diferencia</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            auxG = pixAux.<a class="code" href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">getG</a>() + <a class="code" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">diferencia</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">if</span>(auxG &gt; imagen.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>())</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                auxG = imagen.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>();</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            auxB = pix_aux.<a class="code" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">getB</a>() + <a class="code" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">diferencia</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            auxB = pixAux.<a class="code" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">getB</a>() + <a class="code" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">diferencia</a>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">if</span>(auxB &gt; imagen.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>())</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                auxB = imagen.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            pix_aux.<a class="code" href="class_pixel.html#a9c4c2037575b8c94c37e6f947fc2749d">setPixelRGB</a>(auxR, auxG, auxB);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            pixAux.<a class="code" href="class_pixel.html#a9c4c2037575b8c94c37e6f947fc2749d">setPixelRGB</a>(auxR, auxG, auxB);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            imagen.<a class="code" href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">setPixel</a>(i, j, pix_aux);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            imagen.<a class="code" href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">setPixel</a>(i, j, pixAux);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
@@ -410,7 +410,7 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        {</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            cin.clear();</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            cin.ignore(numeric_limits&lt;streamsize&gt;::max(), <span class="charliteral">&#39;\n&#39;</span>);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            cout&lt;&lt;<span class="stringliteral">&quot;\tIngrese una cantidad dentro del rango [0, &quot;</span>&lt;&lt;imagen.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>()&lt;&lt;<span class="stringliteral">&quot;]: &quot;</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            cout&lt;&lt;<span class="stringliteral">&quot;\t|__Ingrese una cantidad dentro del rango [0, &quot;</span>&lt;&lt;imagen.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>()&lt;&lt;<span class="stringliteral">&quot;]: &quot;</span>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            cout.flush();</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            cin&gt;&gt;cantidad;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <a class="code" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">diferencia</a> = cantidad;</div>
@@ -454,27 +454,27 @@ Atributos privados</h2></td></tr>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="class_brillo.html#aed5bf732f20f221e5d1ffbd704594cfc">consultarDiferencia</a>(imagen);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> auxR, auxG, auxB;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pix_aux;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pixAux;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; imagen.<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(); i++)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; imagen.<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>(); j++)</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            pix_aux = imagen.<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            auxR = pix_aux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>() - <a class="code" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">diferencia</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            pixAux = imagen.<a class="code" href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">getPixel</a>(i, j);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            auxR = pixAux.<a class="code" href="class_pixel.html#a1ddae752d300c31889bcabc9ecf4882a">getR</a>() - <a class="code" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">diferencia</a>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">if</span>(auxR &lt; 0)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                auxR = 0;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            auxG = pix_aux.<a class="code" href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">getG</a>() - <a class="code" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">diferencia</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            auxG = pixAux.<a class="code" href="class_pixel.html#a7d11df716ef5c30421210a7b2d61e697">getG</a>() - <a class="code" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">diferencia</a>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">if</span>(auxG &lt; 0)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                auxG = 0;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            auxB = pix_aux.<a class="code" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">getB</a>() - <a class="code" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">diferencia</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            auxB = pixAux.<a class="code" href="class_pixel.html#a4fe71fb96079d8fa3756cb33b66581a3">getB</a>() - <a class="code" href="class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14">diferencia</a>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">if</span>(auxB &lt; 0)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                auxB = 0;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            pix_aux.<a class="code" href="class_pixel.html#a9c4c2037575b8c94c37e6f947fc2749d">setPixelRGB</a>(auxR, auxG, auxB);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            pixAux.<a class="code" href="class_pixel.html#a9c4c2037575b8c94c37e6f947fc2749d">setPixelRGB</a>(auxR, auxG, auxB);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            imagen.<a class="code" href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">setPixel</a>(i, j, pix_aux);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            imagen.<a class="code" href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">setPixel</a>(i, j, pixAux);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 </div><!-- fragment -->
@@ -591,7 +591,7 @@ Atributos privados</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_brillo.html">Brillo</a></li>
-    <li class="footer">Generado el Jueves, 15 de Diciembre de 2022 16:37:24 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Jueves, 15 de Diciembre de 2022 18:32:23 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

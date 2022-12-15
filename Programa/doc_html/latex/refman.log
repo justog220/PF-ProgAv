@@ -1,25 +1,24 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.12.15)  15 DEC 2022 16:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.12.15)  15 DEC 2022 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**refman.tex
+**refman
 (./refman.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
-(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
-\c@chapter=\count186
-\c@section=\count187
-\c@subsection=\count188
-\c@subsubsection=\count189
-\c@paragraph=\count190
-\c@subparagraph=\count191
-\c@figure=\count192
-\c@table=\count193
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
@@ -56,20 +55,20 @@ Package: alltt 2021/01/29 v2.0g defines alltt environment
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count194
-\calc@Bcount=\count195
+\calc@Acount=\count193
+\calc@Bcount=\count194
 \calc@Adimen=\dimen141
 \calc@Bdimen=\dimen142
 \calc@Askip=\skip51
 \calc@Bskip=\skip52
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count196
+\calc@Ccount=\count195
 \calc@Cskip=\skip53
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count197
+\c@float@type=\count196
 \float@exts=\toks17
 \float@box=\box50
 \@float@everytoks=\toks18
@@ -97,7 +96,7 @@ Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks21
 \minrowclearance=\skip54
 )
-\rownum=\count198
+\rownum=\count197
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
 Package xcolor Info: Model `RGB' extended on input line 1368.
@@ -115,16 +114,16 @@ ozen version for doxygen
 \LTright=\skip56
 \LTpre=\skip57
 \LTpost=\skip58
-\LTchunksize=\count199
+\LTchunksize=\count198
 \LTcapwidth=\dimen143
 \LT@head=\box52
 \LT@firsthead=\box53
 \LT@foot=\box54
 \LT@lastfoot=\box55
-\LT@cols=\count266
-\LT@rows=\count267
-\c@LT@tables=\count268
-\c@LT@chunks=\count269
+\LT@cols=\count199
+\LT@rows=\count266
+\c@LT@tables=\count267
+\c@LT@chunks=\count268
 \LT@p@ftn=\toks22
 ) (./tabu_doxygen.sty
 Package: tabu_doxygen 2011/02/26 v2.8 - flexible LaTeX tabulars (FC), frozen ve
@@ -133,16 +132,16 @@ rsion for doxygen
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box56
-\sift@deathcycles=\count270
+\sift@deathcycles=\count269
 \@vwid@loff=\dimen144
 \@vwid@roff=\dimen145
 )
-\c@taburow=\count271
-\tabu@nbcols=\count272
-\tabu@cnt=\count273
-\tabu@Xcol=\count274
-\tabu@alloc=\count275
-\tabu@nested=\count276
+\c@taburow=\count270
+\tabu@nbcols=\count271
+\tabu@cnt=\count272
+\tabu@Xcol=\count273
+\tabu@alloc=\count274
+\tabu@nested=\count275
 \tabu@target=\dimen146
 \tabu@spreadtarget=\dimen147
 \tabu@naturalX=\dimen148
@@ -167,11 +166,11 @@ Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks25
 )
-\FV@CodeLineNo=\count277
+\FV@CodeLineNo=\count276
 \FV@InFile=\read3
 \FV@TabBox=\box61
-\c@FancyVerbLine=\count278
-\FV@StepNumber=\count279
+\c@FancyVerbLine=\count277
+\FV@StepNumber=\count278
 \FV@OutFile=\write3
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
@@ -181,19 +180,19 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@old@col=\dimen157
 \TX@target=\dimen158
 \TX@delta=\dimen159
-\TX@cols=\count280
+\TX@cols=\count279
 \TX@ftn=\toks26
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
-\c@tracingmulticols=\count281
+\c@tracingmulticols=\count280
 \mult@box=\box62
 \multicol@leftmargin=\dimen160
-\c@unbalance=\count282
-\c@collectmore=\count283
-\doublecol@number=\count284
-\multicoltolerance=\count285
-\multicolpretolerance=\count286
+\c@unbalance=\count281
+\c@collectmore=\count282
+\doublecol@number=\count283
+\multicoltolerance=\count284
+\multicolpretolerance=\count285
 \full@width=\dimen161
 \page@free=\dimen162
 \premulticols=\dimen163
@@ -243,20 +242,20 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \@tempa=\box102
 \@tempa=\box103
 \@tempa=\box104
-\c@minrows=\count287
-\c@columnbadness=\count288
-\c@finalcolumnbadness=\count289
+\c@minrows=\count286
+\c@columnbadness=\count287
+\c@finalcolumnbadness=\count288
 \last@try=\dimen166
 \multicolovershoot=\dimen167
 \multicolundershoot=\dimen168
 \mult@nat@firstbox=\box105
 \colbreak@box=\box106
-\mc@col@check@num=\count290
+\mc@col@check@num=\count289
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip62
-\multirow@cntb=\count291
+\multirow@cntb=\count290
 \multirow@dima=\skip63
 \bigstrutjot=\dimen169
 )
@@ -288,7 +287,7 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 \XKV@toks=\toks27
 \XKV@tempa@toks=\toks28
 )
-\XKV@depth=\count292
+\XKV@depth=\count291
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -339,7 +338,7 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count293
+\c@checkoddpage=\count292
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -359,17 +358,17 @@ ways
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count294
+\etb@tempcnta=\count293
 )
 (/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
 (/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
-\loi_cnt_foreach_nest=\count295
-\loi_nestcnt=\count296
+\loi_cnt_foreach_nest=\count294
+\loi_nestcnt=\count295
 )
 Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
 sep char (CT)
 )
-\c@@stackindex=\count297
+\c@@stackindex=\count296
 \@boxshift=\skip72
 \stack@tmplength=\skip73
 \temp@stkl=\skip74
@@ -380,7 +379,7 @@ sep char (CT)
 \se@backgroundbox=\box111
 \stackedbox=\box112
 \@centerbox=\box113
-\c@ROWcellindex@=\count298
+\c@ROWcellindex@=\count297
 )
 (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box114
@@ -388,7 +387,7 @@ sep char (CT)
 \UL@skip=\skip76
 \UL@hook=\toks30
 \UL@height=\dimen184
-\UL@pe=\count299
+\UL@pe=\count298
 \UL@pixel=\dimen185
 \ULC@box=\box116
 Package: ulem 2019/11/18
@@ -422,18 +421,18 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2022/01/26 3.70 The Babel package
-\babel@savecnt=\count300
+\babel@savecnt=\count299
 \U@D=\dimen187
 \l@unhyphenated=\language13
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
-\bbl@dirlevel=\count301
+\bbl@dirlevel=\count300
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks33
-\es@quotdepth=\count302
+\es@quotdepth=\count301
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
@@ -466,9 +465,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count303
-\Gm@cntv=\count304
-\c@Gm@tempcnt=\count305
+\Gm@cnth=\count302
+\Gm@cntv=\count303
+\c@Gm@tempcnt=\count304
 \Gm@bindingoffset=\dimen188
 \Gm@wd@mp=\dimen189
 \Gm@odd@mp=\dimen190
@@ -497,47 +496,44 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip90
 \bibsep=\skip91
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count306
+\c@NAT@ctr=\count305
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
-Package tocloft Info: The document has chapter divisions on input line 51.
+Package tocloft Info: The document has section divisions on input line 51.
 \cftparskip=\skip92
 \cftbeforetoctitleskip=\skip93
 \cftaftertoctitleskip=\skip94
 \cftbeforepartskip=\skip95
 \cftpartnumwidth=\skip96
 \cftpartindent=\skip97
-\cftbeforechapskip=\skip98
-\cftchapindent=\skip99
-\cftchapnumwidth=\skip100
-\cftbeforesecskip=\skip101
-\cftsecindent=\skip102
-\cftsecnumwidth=\skip103
-\cftbeforesubsecskip=\skip104
-\cftsubsecindent=\skip105
-\cftsubsecnumwidth=\skip106
-\cftbeforesubsubsecskip=\skip107
-\cftsubsubsecindent=\skip108
-\cftsubsubsecnumwidth=\skip109
-\cftbeforeparaskip=\skip110
-\cftparaindent=\skip111
-\cftparanumwidth=\skip112
-\cftbeforesubparaskip=\skip113
-\cftsubparaindent=\skip114
-\cftsubparanumwidth=\skip115
-\cftbeforeloftitleskip=\skip116
-\cftafterloftitleskip=\skip117
-\cftbeforefigskip=\skip118
-\cftfigindent=\skip119
-\cftfignumwidth=\skip120
-\c@lofdepth=\count307
-\c@lotdepth=\count308
-\cftbeforelottitleskip=\skip121
-\cftafterlottitleskip=\skip122
-\cftbeforetabskip=\skip123
-\cfttabindent=\skip124
-\cfttabnumwidth=\skip125
+\cftbeforesecskip=\skip98
+\cftsecindent=\skip99
+\cftsecnumwidth=\skip100
+\cftbeforesubsecskip=\skip101
+\cftsubsecindent=\skip102
+\cftsubsecnumwidth=\skip103
+\cftbeforesubsubsecskip=\skip104
+\cftsubsubsecindent=\skip105
+\cftsubsubsecnumwidth=\skip106
+\cftbeforeparaskip=\skip107
+\cftparaindent=\skip108
+\cftparanumwidth=\skip109
+\cftbeforesubparaskip=\skip110
+\cftsubparaindent=\skip111
+\cftsubparanumwidth=\skip112
+\cftbeforeloftitleskip=\skip113
+\cftafterloftitleskip=\skip114
+\cftbeforefigskip=\skip115
+\cftfigindent=\skip116
+\cftfignumwidth=\skip117
+\c@lofdepth=\count306
+\c@lotdepth=\count307
+\cftbeforelottitleskip=\skip118
+\cftafterlottitleskip=\skip119
+\cftbeforetabskip=\skip120
+\cfttabindent=\skip121
+\cfttabnumwidth=\skip122
 )
 \@indexfile=\write4
 \openout4 = `refman.idx'.
@@ -548,11 +544,11 @@ Writing index file refman.idx
 Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
 )
 
-Package newunicodechar Warning: Redefining Unicode character on input line 117.
+Package newunicodechar Warning: Redefining Unicode character on input line 114.
 
 
 
-Package newunicodechar Warning: Redefining Unicode character on input line 118.
+Package newunicodechar Warning: Redefining Unicode character on input line 115.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -594,8 +590,8 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen196
-\Hy@linkcounter=\count309
-\Hy@pagecounter=\count310
+\Hy@linkcounter=\count308
+\Hy@pagecounter=\count309
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
@@ -612,7 +608,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count311
+\Hy@SavedSpaceFactor=\count310
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
@@ -648,7 +644,7 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 ))
-\c@Hy@tempcnt=\count312
+\c@Hy@tempcnt=\count311
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
@@ -660,7 +656,7 @@ LaTeX Info: Redefining \url on input line 4804.
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 )
-\Fld@menulength=\count313
+\Fld@menulength=\count312
 \Field@Width=\dimen198
 \Fld@charsize=\dimen199
 Package hyperref Info: Hyper figures OFF on input line 6076.
@@ -677,9 +673,9 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count314
-\c@Item=\count315
-\c@Hfootnote=\count316
+\Hy@abspage=\count313
+\c@Item=\count314
+\c@Hfootnote=\count315
 
 
 LaTeX Warning: Command \LT@p@ftntext  has changed.
@@ -689,12 +685,12 @@ LaTeX Warning: Command \LT@p@ftntext  has changed.
 Package hyperref Info: Driver: hpdftex.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
-\Fld@listcount=\count317
-\c@bookmark@seq@number=\count318
-\Hy@SectionHShift=\skip126
+\Fld@listcount=\count316
+\c@bookmark@seq@number=\count317
+\Hy@SectionHShift=\skip123
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 136.
-Package hyperref Info: Option `unicode' set `true' on input line 136.
+Package hyperref Info: Option `colorlinks' set `true' on input line 133.
+Package hyperref Info: Option `unicode' set `true' on input line 133.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
@@ -710,8 +706,8 @@ Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \caption@hangindent=\dimen262
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count319
-\c@continuedfloat=\count320
+\c@caption@flags=\count318
+\c@continuedfloat=\count319
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -722,62 +718,58 @@ Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/etoc/etoc.sty
 Package: etoc 2021/09/23 v1.09e Completely customisable TOCs (JFB)
 \Etoc@toctoks=\toks35
-\c@etoc@tocid=\count321
-\c@etoc@tocdepth=\count322
+\c@etoc@tocid=\count320
+\c@etoc@tocdepth=\count321
 \etoc@framed@titlebox=\box118
 \etoc@framed@contentsbox=\box119
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 15
-1.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 14
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 151.
+(Font)              scaled to size 8.99994pt on input line 148.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count323
+\l__color_backend_stack_int=\count322
 \l__pdf_internal_box=\box120
 )
-(./refman.aux
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
-)
+No file refman.aux.
 \openout1 = `refman.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count324
+\scratchcounter=\count323
 \scratchdimen=\dimen263
 \scratchbox=\box121
-\nofMPsegments=\count325
-\nofMParguments=\count326
+\nofMPsegments=\count324
+\nofMParguments=\count325
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count327
+\MPscratchCnt=\count326
 \MPscratchDim=\dimen264
-\MPnumerator=\count328
-\makeMPintoPDFobject=\count329
+\MPnumerator=\count327
+\makeMPintoPDFobject=\count328
 \everyMPtoPDFconversion=\toks37
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -788,8 +780,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \. on input line 151.
-LaTeX Info: Redefining \% on input line 151.
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -807,13 +799,13 @@ LaTeX Info: Redefining \% on input line 151.
 * \textheight=702.78308pt
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
-* \topmargin=-31.2056pt
+* \topmargin=-38.1381pt
 * \headheight=12.0pt
-* \headsep=18.06749pt
+* \headsep=25.0pt
 * \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
+* \footskip=30.0pt
+* \marginparwidth=121.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
@@ -825,7 +817,7 @@ LaTeX Info: Redefining \% on input line 151.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 151.
+Package hyperref Info: Link coloring ON on input line 148.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -835,59 +827,44 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count330
+\c@section@level=\count329
 )
-LaTeX Info: Redefining \ref on input line 151.
-LaTeX Info: Redefining \pageref on input line 151.
-LaTeX Info: Redefining \nameref on input line 151.
-
-(./refman.out) (./refman.out)
+LaTeX Info: Redefining \ref on input line 148.
+LaTeX Info: Redefining \pageref on input line 148.
+LaTeX Info: Redefining \nameref on input line 148.
 \@outlinefile=\write5
 \openout5 = `refman.out'.
 
-Package backref Info: ** backref set up for natbib ** on input line 151.
+Package backref Info: ** backref set up for natbib ** on input line 148.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-\Etoc@tf=\read5
-Package hyperref Info: Option `pageanchor' set `false' on input line 158.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 158.
 
-Package hyperref Info: Option `unicode' set `true' on input line 158.
+No file refman.toc.
+Package hyperref Info: Option `pageanchor' set `false' on input line 155.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 155.
+
+Package hyperref Info: Option `unicode' set `true' on input line 155.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 163.
+(Font)              scaled to size 12.9599pt on input line 160.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 165.
- [1
+(Font)              scaled to size 10.79993pt on input line 162.
+[1
 
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
-
-]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 \tf@toc=\write6
 \openout6 = `refman.toc'.
 
-Package hyperref Info: Option `pageanchor' set `true' on input line 173.
-
-Cap\'{\i }tulo 1.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 176.
+Package hyperref Info: Option `pageanchor' set `true' on input line 168.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 176.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 18.66588pt on input line 176.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 22.39185pt on input line 176.
+(Font)              scaled to size 12.9599pt on input line 171.
+ (./index.tex
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 176.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 22.39185pt on input line 176.
-(./index.tex
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 1.
+(Font)              scaled to size 10.79993pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 1.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
@@ -900,22 +877,11 @@ LaTeX Font Info:    Trying to load font information for U+wasy on input line 1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-))
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 178.
- [1
-
-
-]
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
- [2
-
-]
-Cap\'{\i }tulo 2.
-(./bug.tex
+)) (./bug.tex
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 6.29996pt on input line 3.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--6
 
@@ -1006,127 +972,124 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--65
 
  []
 
-[3])
-LaTeX Info: Redefining \. on input line 182.
-LaTeX Info: Redefining \% on input line 182.
- [4]
-Cap\'{\i }tulo 3.
-(./hierarchy.tex
+) (./hierarchy.tex
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+ [1]
 
-LaTeX Warning: Reference `class_espacio_de_trabajo' on page 5 undefined on inpu
+LaTeX Warning: Reference `class_algoritmo_del_pintor' on page 2 undefined on in
+put line 3.
+
+
+LaTeX Warning: Reference `class_espacio_de_trabajo' on page 2 undefined on inpu
 t line 4.
 
 
-LaTeX Warning: Reference `class_excepcion_archivo_corrupto' on page 5 undefined
+LaTeX Warning: Reference `class_excepcion_archivo_corrupto' on page 2 undefined
  on input line 7.
 
 
-LaTeX Warning: Reference `class_excepcion_archivo_no_soportado' on page 5 undef
+LaTeX Warning: Reference `class_excepcion_archivo_no_soportado' on page 2 undef
 ined on input line 8.
 
 
-LaTeX Warning: Reference `class_filtros' on page 5 undefined on input line 11.
+LaTeX Warning: Reference `class_filtros' on page 2 undefined on input line 11.
 
 
-LaTeX Warning: Reference `class_binarizado' on page 5 undefined on input line 1
+LaTeX Warning: Reference `class_binarizado' on page 2 undefined on input line 1
 3.
 
 
-LaTeX Warning: Reference `class_brillo' on page 5 undefined on input line 14.
+LaTeX Warning: Reference `class_brillo' on page 2 undefined on input line 14.
 
 
-LaTeX Warning: Reference `class_contraste' on page 5 undefined on input line 15
+LaTeX Warning: Reference `class_contraste' on page 2 undefined on input line 15
 .
 
 
-LaTeX Warning: Reference `class_filtro_mediana' on page 5 undefined on input li
+LaTeX Warning: Reference `class_filtro_mediana' on page 2 undefined on input li
 ne 16.
 
 
-LaTeX Warning: Reference `class_filtro_pasa_altos' on page 5 undefined on input
+LaTeX Warning: Reference `class_filtro_pasa_altos' on page 2 undefined on input
  line 17.
 
 
-LaTeX Warning: Reference `class_filtro_pasa_bajos' on page 5 undefined on input
+LaTeX Warning: Reference `class_filtro_pasa_bajos' on page 2 undefined on input
  line 18.
 
 
-LaTeX Warning: Reference `class_negativo' on page 5 undefined on input line 19.
+LaTeX Warning: Reference `class_negativo' on page 2 undefined on input line 19.
 
 
 
-LaTeX Warning: Reference `class_gestor_de_archivos' on page 5 undefined on inpu
+LaTeX Warning: Reference `class_gestor_de_archivos' on page 2 undefined on inpu
 t line 21.
 
 
-LaTeX Warning: Reference `class_archivos_a_i_c' on page 5 undefined on input li
+LaTeX Warning: Reference `class_archivos_a_i_c' on page 2 undefined on input li
 ne 23.
 
 
-LaTeX Warning: Reference `class_archivos_p_n_m' on page 5 undefined on input li
+LaTeX Warning: Reference `class_archivos_p_n_m' on page 2 undefined on input li
 ne 24.
 
 
-LaTeX Warning: Reference `class_imagen' on page 5 undefined on input line 26.
+LaTeX Warning: Reference `class_imagen' on page 2 undefined on input line 26.
 
 
-LaTeX Warning: Reference `class_pixel' on page 5 undefined on input line 27.
+LaTeX Warning: Reference `class_pixel' on page 2 undefined on input line 27.
 
 
-LaTeX Warning: Reference `struct_posicion' on page 5 undefined on input line 28
+LaTeX Warning: Reference `struct_posicion' on page 2 undefined on input line 28
 .
 
 
-LaTeX Warning: Reference `class_procesador_estadistico' on page 5 undefined on 
+LaTeX Warning: Reference `class_procesador_estadistico' on page 2 undefined on 
 input line 29.
 
 
-LaTeX Warning: Reference `class_q_open_g_l_functions' on page 5 undefined on in
+LaTeX Warning: Reference `class_q_open_g_l_functions' on page 2 undefined on in
 put line 30.
 
 
-LaTeX Warning: Reference `class_graficador_histograma' on page 5 undefined on i
+LaTeX Warning: Reference `class_graficador_histograma' on page 2 undefined on i
 nput line 32.
 
 
-LaTeX Warning: Reference `class_ventana_de_graficacion' on page 5 undefined on 
+LaTeX Warning: Reference `class_ventana_de_graficacion' on page 2 undefined on 
 input line 33.
 
 
-LaTeX Warning: Reference `class_q_open_g_l_widget' on page 5 undefined on input
+LaTeX Warning: Reference `class_q_open_g_l_widget' on page 2 undefined on input
  line 35.
 
 
-LaTeX Warning: Reference `class_graficador_histograma' on page 5 undefined on i
+LaTeX Warning: Reference `class_graficador_histograma' on page 2 undefined on i
 nput line 37.
 
 
-LaTeX Warning: Reference `class_ventana_de_graficacion' on page 5 undefined on 
+LaTeX Warning: Reference `class_ventana_de_graficacion' on page 2 undefined on 
 input line 38.
 
 
-LaTeX Warning: Reference `class_sistema' on page 5 undefined on input line 40.
+LaTeX Warning: Reference `class_sistema' on page 2 undefined on input line 40.
 
 
-LaTeX Warning: Reference `class_tabla_lut' on page 5 undefined on input line 41
+LaTeX Warning: Reference `class_tabla_lut' on page 2 undefined on input line 41
 .
 
-) [5
+) (./annotated.tex [2]
 
-]
-LaTeX Info: Redefining \. on input line 184.
-LaTeX Info: Redefining \% on input line 184.
- [6
+LaTeX Warning: Reference `class_algoritmo_del_pintor' on page 3 undefined on in
+put line 3.
 
-]
-Cap\'{\i }tulo 4.
-(./annotated.tex
 
-LaTeX Warning: Reference `class_archivos_a_i_c' on page 7 undefined on input li
+LaTeX Warning: Reference `class_archivos_a_i_c' on page 3 undefined on input li
 ne 4.
 
 
-LaTeX Warning: Reference `class_archivos_p_n_m' on page 7 undefined on input li
+LaTeX Warning: Reference `class_archivos_p_n_m' on page 3 undefined on input li
 ne 5.
 
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
@@ -1134,1699 +1097,269 @@ LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
-LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+LaTeX Font Info:    Font shape `TS1/phv/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 6.
 
 
-LaTeX Warning: Reference `class_binarizado' on page 7 undefined on input line 6
+LaTeX Warning: Reference `class_binarizado' on page 3 undefined on input line 6
 .
 
 
-LaTeX Warning: Reference `class_brillo' on page 7 undefined on input line 7.
+LaTeX Warning: Reference `class_brillo' on page 3 undefined on input line 7.
 
 
-LaTeX Warning: Reference `class_contraste' on page 7 undefined on input line 8.
+LaTeX Warning: Reference `class_contraste' on page 3 undefined on input line 8.
 
 
 
-LaTeX Warning: Reference `class_espacio_de_trabajo' on page 7 undefined on inpu
+LaTeX Warning: Reference `class_espacio_de_trabajo' on page 3 undefined on inpu
 t line 9.
 
 
-LaTeX Warning: Reference `class_excepcion_archivo_corrupto' on page 7 undefined
+LaTeX Warning: Reference `class_excepcion_archivo_corrupto' on page 3 undefined
  on input line 10.
 
 
-LaTeX Warning: Reference `class_excepcion_archivo_no_soportado' on page 7 undef
+LaTeX Warning: Reference `class_excepcion_archivo_no_soportado' on page 3 undef
 ined on input line 11.
 
 
-LaTeX Warning: Reference `class_filtro_mediana' on page 7 undefined on input li
+LaTeX Warning: Reference `class_filtro_mediana' on page 3 undefined on input li
 ne 12.
 
 
-LaTeX Warning: Reference `class_filtro_pasa_altos' on page 7 undefined on input
+LaTeX Warning: Reference `class_filtro_pasa_altos' on page 3 undefined on input
  line 13.
 
 
-LaTeX Warning: Reference `class_filtro_pasa_bajos' on page 7 undefined on input
+LaTeX Warning: Reference `class_filtro_pasa_bajos' on page 3 undefined on input
  line 14.
 
 
-LaTeX Warning: Reference `class_filtros' on page 7 undefined on input line 15.
+LaTeX Warning: Reference `class_filtros' on page 3 undefined on input line 15.
 
 
-LaTeX Warning: Reference `class_gestor_de_archivos' on page 7 undefined on inpu
+LaTeX Warning: Reference `class_gestor_de_archivos' on page 3 undefined on inpu
 t line 16.
 
 
-LaTeX Warning: Reference `class_graficador_histograma' on page 7 undefined on i
+LaTeX Warning: Reference `class_graficador_histograma' on page 3 undefined on i
 nput line 17.
 
 
-LaTeX Warning: Reference `class_imagen' on page 7 undefined on input line 18.
+LaTeX Warning: Reference `class_imagen' on page 3 undefined on input line 18.
 
 
-LaTeX Warning: Reference `class_negativo' on page 7 undefined on input line 19.
+LaTeX Warning: Reference `class_negativo' on page 3 undefined on input line 19.
 
 
 
-LaTeX Warning: Reference `class_pixel' on page 7 undefined on input line 20.
+LaTeX Warning: Reference `class_pixel' on page 3 undefined on input line 20.
 
 
-LaTeX Warning: Reference `struct_posicion' on page 7 undefined on input line 21
+LaTeX Warning: Reference `struct_posicion' on page 3 undefined on input line 21
 .
 
 
-LaTeX Warning: Reference `class_procesador_estadistico' on page 7 undefined on 
+LaTeX Warning: Reference `class_procesador_estadistico' on page 3 undefined on 
 input line 22.
 
-[7]
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+[3]
 
-LaTeX Warning: Reference `class_q_open_g_l_functions' on page 8 undefined on in
+LaTeX Warning: Reference `class_q_open_g_l_functions' on page 4 undefined on in
 put line 23.
 
 
-LaTeX Warning: Reference `class_q_open_g_l_widget' on page 8 undefined on input
+LaTeX Warning: Reference `class_q_open_g_l_widget' on page 4 undefined on input
  line 24.
 
 
-LaTeX Warning: Reference `class_sistema' on page 8 undefined on input line 25.
+LaTeX Warning: Reference `class_sistema' on page 4 undefined on input line 25.
 
 
-LaTeX Warning: Reference `class_tabla_lut' on page 8 undefined on input line 26
+LaTeX Warning: Reference `class_tabla_lut' on page 4 undefined on input line 26
 .
 
 
-LaTeX Warning: Reference `class_ventana_de_graficacion' on page 8 undefined on 
+LaTeX Warning: Reference `class_ventana_de_graficacion' on page 4 undefined on 
 input line 27.
 
-)
-LaTeX Info: Redefining \. on input line 186.
-LaTeX Info: Redefining \% on input line 186.
- [8]
-Cap\'{\i }tulo 5.
-(./files.tex
+) (./files.tex
 
-LaTeX Warning: Reference `algoritmodelpintor_8cpp' on page 9 undefined on input
+LaTeX Warning: Reference `algoritmodelpintor_8cpp' on page 4 undefined on input
  line 3.
 
 
-LaTeX Warning: Reference `algoritmodelpintor_8h' on page 9 undefined on input l
+LaTeX Warning: Reference `algoritmodelpintor_8h' on page 4 undefined on input l
 ine 4.
 
 
-LaTeX Warning: Reference `archivosaic_8cpp' on page 9 undefined on input line 5
+LaTeX Warning: Reference `archivosaic_8cpp' on page 4 undefined on input line 5
 .
 
 
-LaTeX Warning: Reference `archivosaic_8h' on page 9 undefined on input line 6.
+LaTeX Warning: Reference `archivosaic_8h' on page 4 undefined on input line 6.
 
 
-LaTeX Warning: Reference `archivospnm_8cpp' on page 9 undefined on input line 7
+LaTeX Warning: Reference `archivospnm_8cpp' on page 4 undefined on input line 7
 .
 
 
-LaTeX Warning: Reference `archivospnm_8h' on page 9 undefined on input line 8.
+LaTeX Warning: Reference `archivospnm_8h' on page 4 undefined on input line 8.
 
 
-LaTeX Warning: Reference `binarizado_8cpp' on page 9 undefined on input line 9.
-
-
-
-LaTeX Warning: Reference `binarizado_8h' on page 9 undefined on input line 10.
-
-
-LaTeX Warning: Reference `brillo_8cpp' on page 9 undefined on input line 11.
-
-
-LaTeX Warning: Reference `brillo_8h' on page 9 undefined on input line 12.
-
-
-LaTeX Warning: Reference `contraste_8cpp' on page 9 undefined on input line 13.
+LaTeX Warning: Reference `binarizado_8cpp' on page 4 undefined on input line 9.
 
 
 
-LaTeX Warning: Reference `contraste_8h' on page 9 undefined on input line 14.
+LaTeX Warning: Reference `binarizado_8h' on page 4 undefined on input line 10.
 
 
-LaTeX Warning: Reference `espaciodetrabajo_8cpp' on page 9 undefined on input l
+LaTeX Warning: Reference `brillo_8cpp' on page 4 undefined on input line 11.
+
+
+LaTeX Warning: Reference `brillo_8h' on page 4 undefined on input line 12.
+
+
+LaTeX Warning: Reference `contraste_8cpp' on page 4 undefined on input line 13.
+
+
+
+LaTeX Warning: Reference `contraste_8h' on page 4 undefined on input line 14.
+
+
+LaTeX Warning: Reference `espaciodetrabajo_8cpp' on page 4 undefined on input l
 ine 15.
 
 
-LaTeX Warning: Reference `espaciodetrabajo_8h' on page 9 undefined on input lin
+LaTeX Warning: Reference `espaciodetrabajo_8h' on page 4 undefined on input lin
 e 16.
 
 
-LaTeX Warning: Reference `_excepcion_archivo_corrupto_8h' on page 9 undefined o
+LaTeX Warning: Reference `_excepcion_archivo_corrupto_8h' on page 4 undefined o
 n input line 17.
 
 
-LaTeX Warning: Reference `_excepcion_archivo_no_soportado_8h' on page 9 undefin
+LaTeX Warning: Reference `_excepcion_archivo_no_soportado_8h' on page 4 undefin
 ed on input line 18.
 
 
-LaTeX Warning: Reference `filtromediana_8cpp' on page 9 undefined on input line
+LaTeX Warning: Reference `filtromediana_8cpp' on page 4 undefined on input line
  19.
 
 
-LaTeX Warning: Reference `filtromediana_8h' on page 9 undefined on input line 2
+LaTeX Warning: Reference `filtromediana_8h' on page 4 undefined on input line 2
 0.
 
 
-LaTeX Warning: Reference `filtropasaaltos_8cpp' on page 9 undefined on input li
+LaTeX Warning: Reference `filtropasaaltos_8cpp' on page 4 undefined on input li
 ne 21.
 
+[4]
 
-LaTeX Warning: Reference `filtropasaaltos_8h' on page 9 undefined on input line
+LaTeX Warning: Reference `filtropasaaltos_8h' on page 5 undefined on input line
  22.
 
 
-LaTeX Warning: Reference `filtropasabajos_8cpp' on page 9 undefined on input li
+LaTeX Warning: Reference `filtropasabajos_8cpp' on page 5 undefined on input li
 ne 23.
 
 
-LaTeX Warning: Reference `filtropasabajos_8h' on page 9 undefined on input line
+LaTeX Warning: Reference `filtropasabajos_8h' on page 5 undefined on input line
  24.
 
 
-LaTeX Warning: Reference `filtros_8cpp' on page 9 undefined on input line 25.
+LaTeX Warning: Reference `filtros_8cpp' on page 5 undefined on input line 25.
 
 
-LaTeX Warning: Reference `filtros_8h' on page 9 undefined on input line 26.
+LaTeX Warning: Reference `filtros_8h' on page 5 undefined on input line 26.
 
 
-LaTeX Warning: Reference `gestordearchivos_8cpp' on page 9 undefined on input l
+LaTeX Warning: Reference `gestordearchivos_8cpp' on page 5 undefined on input l
 ine 27.
 
 
-LaTeX Warning: Reference `gestordearchivos_8h' on page 9 undefined on input lin
+LaTeX Warning: Reference `gestordearchivos_8h' on page 5 undefined on input lin
 e 28.
 
 
-LaTeX Warning: Reference `graficadorhistograma_8cpp' on page 9 undefined on inp
+LaTeX Warning: Reference `graficadorhistograma_8cpp' on page 5 undefined on inp
 ut line 29.
 
 
-LaTeX Warning: Reference `graficadorhistograma_8h' on page 9 undefined on input
+LaTeX Warning: Reference `graficadorhistograma_8h' on page 5 undefined on input
  line 30.
 
 
-LaTeX Warning: Reference `imagen_8cpp' on page 9 undefined on input line 31.
+LaTeX Warning: Reference `imagen_8cpp' on page 5 undefined on input line 31.
 
 
-LaTeX Warning: Reference `imagen_8h' on page 9 undefined on input line 32.
+LaTeX Warning: Reference `imagen_8h' on page 5 undefined on input line 32.
 
 
-LaTeX Warning: Reference `main_8cpp' on page 9 undefined on input line 33.
+LaTeX Warning: Reference `main_8cpp' on page 5 undefined on input line 33.
 
 
-LaTeX Warning: Reference `negativo_8cpp' on page 9 undefined on input line 34.
+LaTeX Warning: Reference `negativo_8cpp' on page 5 undefined on input line 34.
 
 
-LaTeX Warning: Reference `negativo_8h' on page 9 undefined on input line 35.
+LaTeX Warning: Reference `negativo_8h' on page 5 undefined on input line 35.
 
 
-LaTeX Warning: Reference `pagina__principal_8h' on page 9 undefined on input li
+LaTeX Warning: Reference `pagina__principal_8h' on page 5 undefined on input li
 ne 36.
 
 
-LaTeX Warning: Reference `pixel_8cpp' on page 9 undefined on input line 37.
+LaTeX Warning: Reference `pixel_8cpp' on page 5 undefined on input line 37.
 
 
-LaTeX Warning: Reference `pixel_8h' on page 9 undefined on input line 38.
+LaTeX Warning: Reference `pixel_8h' on page 5 undefined on input line 38.
 
 
-LaTeX Warning: Reference `procesadorestadistico_8cpp' on page 9 undefined on in
+LaTeX Warning: Reference `procesadorestadistico_8cpp' on page 5 undefined on in
 put line 39.
 
 
-LaTeX Warning: Reference `procesadorestadistico_8h' on page 9 undefined on inpu
+LaTeX Warning: Reference `procesadorestadistico_8h' on page 5 undefined on inpu
 t line 40.
 
 
-LaTeX Warning: Reference `sistema_8cpp' on page 9 undefined on input line 41.
-
-[9
-
-]
-
-LaTeX Warning: Reference `sistema_8h' on page 10 undefined on input line 42.
+LaTeX Warning: Reference `sistema_8cpp' on page 5 undefined on input line 41.
 
 
-LaTeX Warning: Reference `tablalut_8cpp' on page 10 undefined on input line 43.
+LaTeX Warning: Reference `sistema_8h' on page 5 undefined on input line 42.
 
 
-
-LaTeX Warning: Reference `tablalut_8h' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Reference `ventanadegraficacion_8cpp' on page 10 undefined on in
-put line 45.
+LaTeX Warning: Reference `tablalut_8cpp' on page 5 undefined on input line 43.
 
 
-LaTeX Warning: Reference `ventanadegraficacion_8h' on page 10 undefined on inpu
-t line 46.
+LaTeX Warning: Reference `tablalut_8h' on page 5 undefined on input line 44.
 
-)
-LaTeX Info: Redefining \. on input line 188.
-LaTeX Info: Redefining \% on input line 188.
- [10]
-Cap\'{\i }tulo 6.
-(./class_algoritmo_del_pintor.tex
+
+LaTeX Warning: Reference `ventanadegraficacion_8cpp' on page 5 undefined on inp
+ut line 45.
+
+
+LaTeX Warning: Reference `ventanadegraficacion_8h' on page 5 undefined on input
+ line 46.
+
+) (./class_algoritmo_del_pintor.tex
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.09995pt on input line 16.
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
+ [5]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 16.
-LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 18.
-LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 18.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 46.
-
-Underfull \hbox (badness 10000) detected at line 46
-[][][]
- []
-
-[11
-
-]
-Underfull \hbox (badness 10000) detected at line 49
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 52
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 57
-[][][]
- []
-
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 71.
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 71.
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 6.1 on input line 81.
-
-LaTeX Info: Redefining \. on input line 103.
-LaTeX Info: Redefining \% on input line 103.
-[12]
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 104.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 6.2 on input line 116.
-
-
-Underfull \hbox (badness 10000) detected at line 117
-[][][]
- []
-
-
-Underfull \hbox (badness 764) in paragraph at lines 143--144
-[]\T1/phv/m/n/10 Hace re-fe-ren-cia a Imagen[]::get[]Columnas(), Imagen[]::get[
-]Filas(), Imagen[]::get[]Pixel(), Imagen[]::get[]Rango(), imag,
- []
-
-LaTeX Info: Redefining \. on input line 165.
-LaTeX Info: Redefining \% on input line 165.
-[13]
-Underfull \hbox (badness 10000) detected at line 166
-[][][]
- []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 6.4 on input line 213.
-
-
-! LaTeX Error: \begin{DoxyCode} on input line 219 ended by \end{quoting}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.221 ...<bool> (c, \textcolor{keyword}{false}));}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.221 ...<bool> (c, \textcolor{keyword}{false}));}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Too many }'s.
-\DoxyCodeLine ...hangpara {\DoxyCodeWidth }{1}{#1}
-                                                  \par 
-l.221 ...<bool> (c, \textcolor{keyword}{false}));}
-                                                  
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-
-! LaTeX Error: \begin{document} ended by \end{DoxyCode}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.225 \end{DoxyCode}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.225 \end{DoxyCode}
-                    
-Things are pretty mixed up, but I think the worst is over.
-
-LaTeX Info: Redefining \. on input line 239.
-LaTeX Info: Redefining \% on input line 239.
-[14]
-LaTeX Info: Redefining \. on input line 305.
-LaTeX Info: Redefining \% on input line 305.
- [15]
-Underfull \hbox (badness 10000) detected at line 305
-[][][]
- []
-
-! Extra }, or forgotten \endgroup.
-\DoxyCodeLine ...hangpara {\DoxyCodeWidth }{1}{#1}
-                                                  \par 
-l.317 ...e tolerancia que desea considerar: "{}};}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.318 \DoxyCodeLine{49     cin>>tolerancia;}
-                                            
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra }, or forgotten \endgroup.
-\DoxyCodeLine ...hangpara {\DoxyCodeWidth }{1}{#1}
-                                                  \par 
-l.321 ...g<<\textcolor{stringliteral}{"{}]: "{}};}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.322 \DoxyCodeLine{53         cin>>tolerancia;}
-                                                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra }, or forgotten \endgroup.
-\DoxyCodeLine ...hangpara {\DoxyCodeWidth }{1}{#1}
-                                                  \par 
-l.322 \DoxyCodeLine{53         cin>>tolerancia;}
-                                                
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-! LaTeX Error: \begin{quoting} on input line 321 ended by \end{DoxyCode}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.328 \end{DoxyCode}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 335.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 335.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 335.
-
-! Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.346 \end{DoxyParams}
-                      
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \discretionary 
-l.346 \end{DoxyParams}
-                      
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \discretionary 
-l.346 \end{DoxyParams}
-                      
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \discretionary 
-l.346 \end{DoxyParams}
-                      
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-! Package calc Error: `\discretionary ' invalid at this point.
-
-See the calc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.346 \end{DoxyParams}
-                      
-
-I expected to see one of: + - * / )
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \discretionary 
-l.346 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \series@b@ 
-l.346 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \discretionary 
-l.346 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \series@b@ 
-l.346 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \discretionary 
-l.346 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-<argument> ...\kern \fontdimen 2\font }\endcsname 
-                                                  {\discretionary {}{\kern \...
-l.346 \end{DoxyParams}
-                      
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Argument of \series@drop@one@m has an extra }.
-<inserted text> 
-                \par 
-l.346 \end{DoxyParams}
-                      
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-\series@drop@one@m 
-! Paragraph ended before \series@drop@one@m was complete.
-<to be read again> 
-                   \par 
-l.346 \end{DoxyParams}
-                      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \scan_stop: 
-l.346 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\font@name ..._unskip:D \tex_par:D /n/7\endcsname 
-                                                  
-l.346 \end{DoxyParams}
-                      
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing endcsname inserted.
-<to be read again> 
-                   scan_stop: 
-l.346 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-
-! LaTeX Error: Command guillemotright unavailable in encoding T1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.346 \end{DoxyParams}
-                      
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra endcsname.
-define@newfont ...csname curr@fontshape endcsname 
-                                                  relax wrong@fontshape else...
-l.346 \end{DoxyParams}
-                      
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing endcsname inserted.
-<to be read again> 
-                   scan_stop: 
-l.346 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing endcsname inserted.
-<to be read again> 
-                   scan_stop: 
-l.346 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-
-! LaTeX Error: Command guillemotright unavailable in encoding T1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.346 \end{DoxyParams}
-                      
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra endcsname.
-wrong@fontshape ...sname curr@fontshape endcsname 
-                                                  relax let f@series default...
-l.346 \end{DoxyParams}
-                      
-I'm ignoring this, since I wasn't doing a \csname.
-
-
-! LaTeX Error: Command guillemotright unavailable in encoding T1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.346 \end{DoxyParams}
-                      
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra endcsname.
-reserved@a ... tex_unskip:D tex_par:D /nendcsname 
-                                                  
-l.346 \end{DoxyParams}
-                      
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Extra \endcsname.
-\font@name ->\T1/pcr/m/n/7 \endcsname 
-                                      
-l.346 \end{DoxyParams}
-                      
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Extra }, or forgotten \endgroup.
-l.1 ...}\selectfont \color {darkgray} Parámetros}
-                                                  \\[1ex]\hline \endfirsthea...
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.346 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.346 \end{DoxyParams}
-                      
-(That makes 100 errors; please try again.) 
-Here is how much of TeX's memory you used:
- 18835 strings out of 480097
- 301884 string characters out of 5891009
- 627370 words of memory out of 5000000
- 36308 multiletter control sequences out of 15000+600000
- 527544 words of font info for 99 fonts, out of 8000000 for 9000
- 62 hyphenation exceptions out of 8191
- 99i,15n,117p,638b,809s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-!  ==> Fatal error occurred, no output PDF file produced!
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16

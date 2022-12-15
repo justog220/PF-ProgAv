@@ -1,4 +1,4 @@
-\hypertarget{class_archivos_a_i_c}{}\doxysection{Referencia de la Clase Archivos\+AIC}
+\hypertarget{class_archivos_a_i_c}{}\doxysubsection{Referencia de la Clase Archivos\+AIC}
 \label{class_archivos_a_i_c}\index{ArchivosAIC@{ArchivosAIC}}
 
 
@@ -15,7 +15,7 @@ Diagrama de herencias de Archivos\+AIC\begin{figure}[H]
 \includegraphics[height=2.000000cm]{class_archivos_a_i_c}
 \end{center}
 \end{figure}
-\doxysubsection*{Métodos públicos}
+\doxysubsubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_archivos_a_i_c_aa2f1498c3b0cdf84698ca51a1f279058}{Archivos\+AIC}} ()
@@ -24,7 +24,7 @@ Diagrama de herencias de Archivos\+AIC\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em leer Se redefine el metodo heredado de \mbox{\hyperlink{class_gestor_de_archivos}{Gestor\+De\+Archivos}} y que permite leer imÃ¡genes de un archivo AIC. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_archivos_a_i_c_acd84997137f85c271856a3d4108986bf}{guardar}} (\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img) override
 \begin{DoxyCompactList}\small\item\em guardar Se redefine el mÃ©todo heredado de \mbox{\hyperlink{class_gestor_de_archivos}{Gestor\+De\+Archivos}} y que permite guardar imÃ¡genes en formato AIC. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Métodos privados}
+\doxysubsubsection*{Métodos privados}
 \begin{DoxyCompactItemize}
 \item 
 string \mbox{\hyperlink{class_archivos_a_i_c_a35f900f9c3eb931e0f17cd82a6c699e1}{obtiene\+Ruta\+Guardado}} ()
@@ -33,7 +33,7 @@ void \mbox{\hyperlink{class_archivos_a_i_c_a4027b286d7468c710d0489ce21f47a00}{es
 \begin{DoxyCompactList}\small\item\em escribir\+Encabezado MÃ©todo privado que escribe el encabezado (Identificador + Info) de una \mbox{\hyperlink{class_imagen}{Imagen}} al ser guardada \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_archivos_a_i_c_a948b328f345c26b8c6784f5c496e4c13}{escribir\+Pixeles}} (\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img, string ruta)
 \begin{DoxyCompactList}\small\item\em escribir\+Pixeles MÃ©todo privado que escribe los \mbox{\hyperlink{class_pixel}{Pixel}} de la \mbox{\hyperlink{class_imagen}{Imagen}} \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Atributos privados}
+\doxysubsubsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
 fstream \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}
@@ -42,7 +42,7 @@ string \mbox{\hyperlink{class_archivos_a_i_c_ab2c2c0b495012e23718e6161cbc17629}{
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Descripción detallada}
+\doxysubsubsection{Descripción detallada}
 Clase capaz de gestionar los diferentes tipos de archivos AIC. 
 
 Hereda de \mbox{\hyperlink{class_gestor_de_archivos}{Gestor\+De\+Archivos}} la capacidad de leer un archivo y de guardar otro. Tiene un archivo y almacena el identificador del tipo de archivo una vez que fue leido. \begin{DoxyAuthor}{Autor}
@@ -65,11 +65,11 @@ Definición en la línea 19 del archivo archivosaic.\+h.
 
 
 
-\doxysubsection{Documentación del constructor y destructor}
+\doxysubsubsection{Documentación del constructor y destructor}
 \mbox{\Hypertarget{class_archivos_a_i_c_aa2f1498c3b0cdf84698ca51a1f279058}\label{class_archivos_a_i_c_aa2f1498c3b0cdf84698ca51a1f279058}} 
 \index{ArchivosAIC@{ArchivosAIC}!ArchivosAIC@{ArchivosAIC}}
 \index{ArchivosAIC@{ArchivosAIC}!ArchivosAIC@{ArchivosAIC}}
-\doxysubsubsection{\texorpdfstring{ArchivosAIC()}{ArchivosAIC()}}
+\doxyparagraph{\texorpdfstring{ArchivosAIC()}{ArchivosAIC()}}
 {\footnotesize\ttfamily Archivos\+AIC\+::\+Archivos\+AIC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -89,11 +89,11 @@ Definición en la línea 4 del archivo archivosaic.\+cpp.
 \end{DoxyCode}
 
 
-\doxysubsection{Documentación de las funciones miembro}
+\doxysubsubsection{Documentación de las funciones miembro}
 \mbox{\Hypertarget{class_archivos_a_i_c_a4027b286d7468c710d0489ce21f47a00}\label{class_archivos_a_i_c_a4027b286d7468c710d0489ce21f47a00}} 
 \index{ArchivosAIC@{ArchivosAIC}!escribirEncabezado@{escribirEncabezado}}
 \index{escribirEncabezado@{escribirEncabezado}!ArchivosAIC@{ArchivosAIC}}
-\doxysubsubsection{\texorpdfstring{escribirEncabezado()}{escribirEncabezado()}}
+\doxyparagraph{\texorpdfstring{escribirEncabezado()}{escribirEncabezado()}}
 {\footnotesize\ttfamily void Archivos\+AIC\+::escribir\+Encabezado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -130,7 +130,7 @@ Referenciado por guardar().
 \mbox{\Hypertarget{class_archivos_a_i_c_a948b328f345c26b8c6784f5c496e4c13}\label{class_archivos_a_i_c_a948b328f345c26b8c6784f5c496e4c13}} 
 \index{ArchivosAIC@{ArchivosAIC}!escribirPixeles@{escribirPixeles}}
 \index{escribirPixeles@{escribirPixeles}!ArchivosAIC@{ArchivosAIC}}
-\doxysubsubsection{\texorpdfstring{escribirPixeles()}{escribirPixeles()}}
+\doxyparagraph{\texorpdfstring{escribirPixeles()}{escribirPixeles()}}
 {\footnotesize\ttfamily void Archivos\+AIC\+::escribir\+Pixeles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img,  }\item[{string}]{ruta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -200,7 +200,7 @@ Referenciado por guardar().
 \mbox{\Hypertarget{class_archivos_a_i_c_acd84997137f85c271856a3d4108986bf}\label{class_archivos_a_i_c_acd84997137f85c271856a3d4108986bf}} 
 \index{ArchivosAIC@{ArchivosAIC}!guardar@{guardar}}
 \index{guardar@{guardar}!ArchivosAIC@{ArchivosAIC}}
-\doxysubsubsection{\texorpdfstring{guardar()}{guardar()}}
+\doxyparagraph{\texorpdfstring{guardar()}{guardar()}}
 {\footnotesize\ttfamily void Archivos\+AIC\+::guardar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -247,7 +247,7 @@ Hace referencia a archi, escribir\+Encabezado(), escribir\+Pixeles() y obtiene\+
 \mbox{\Hypertarget{class_archivos_a_i_c_a39a61108e840cec24b4b39a8cbf071df}\label{class_archivos_a_i_c_a39a61108e840cec24b4b39a8cbf071df}} 
 \index{ArchivosAIC@{ArchivosAIC}!leer@{leer}}
 \index{leer@{leer}!ArchivosAIC@{ArchivosAIC}}
-\doxysubsubsection{\texorpdfstring{leer()}{leer()}}
+\doxyparagraph{\texorpdfstring{leer()}{leer()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_imagen}{Imagen}} Archivos\+AIC\+::leer (\begin{DoxyParamCaption}\item[{string}]{ruta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -409,7 +409,7 @@ Hace referencia a archi, Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), iden
 \mbox{\Hypertarget{class_archivos_a_i_c_a35f900f9c3eb931e0f17cd82a6c699e1}\label{class_archivos_a_i_c_a35f900f9c3eb931e0f17cd82a6c699e1}} 
 \index{ArchivosAIC@{ArchivosAIC}!obtieneRutaGuardado@{obtieneRutaGuardado}}
 \index{obtieneRutaGuardado@{obtieneRutaGuardado}!ArchivosAIC@{ArchivosAIC}}
-\doxysubsubsection{\texorpdfstring{obtieneRutaGuardado()}{obtieneRutaGuardado()}}
+\doxyparagraph{\texorpdfstring{obtieneRutaGuardado()}{obtieneRutaGuardado()}}
 {\footnotesize\ttfamily string Archivos\+AIC\+::obtiene\+Ruta\+Guardado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -440,11 +440,11 @@ Referenciado por guardar().
 
 
 
-\doxysubsection{Documentación de los campos}
+\doxysubsubsection{Documentación de los campos}
 \mbox{\Hypertarget{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}\label{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}} 
 \index{ArchivosAIC@{ArchivosAIC}!archi@{archi}}
 \index{archi@{archi}!ArchivosAIC@{ArchivosAIC}}
-\doxysubsubsection{\texorpdfstring{archi}{archi}}
+\doxyparagraph{\texorpdfstring{archi}{archi}}
 {\footnotesize\ttfamily fstream Archivos\+AIC\+::archi\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -463,7 +463,7 @@ Referenciado por escribir\+Encabezado(), escribir\+Pixeles(), guardar() y leer()
 \mbox{\Hypertarget{class_archivos_a_i_c_ab2c2c0b495012e23718e6161cbc17629}\label{class_archivos_a_i_c_ab2c2c0b495012e23718e6161cbc17629}} 
 \index{ArchivosAIC@{ArchivosAIC}!identificador@{identificador}}
 \index{identificador@{identificador}!ArchivosAIC@{ArchivosAIC}}
-\doxysubsubsection{\texorpdfstring{identificador}{identificador}}
+\doxyparagraph{\texorpdfstring{identificador}{identificador}}
 {\footnotesize\ttfamily string Archivos\+AIC\+::identificador\hspace{0.3cm}{\ttfamily [private]}}
 
 

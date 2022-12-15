@@ -1,4 +1,4 @@
-\hypertarget{class_pixel}{}\doxysection{Referencia de la Clase Pixel}
+\hypertarget{class_pixel}{}\doxysubsection{Referencia de la Clase Pixel}
 \label{class_pixel}\index{Pixel@{Pixel}}
 
 
@@ -9,7 +9,7 @@ Clase que modela un pixel de una imagen.
 
 {\ttfamily \#include $<$pixel.\+h$>$}
 
-\doxysubsection*{Métodos públicos}
+\doxysubsubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_pixel_a27ad99a2f705e635c42d242d530d4756}{Pixel}} ()
@@ -36,7 +36,7 @@ void \mbox{\hyperlink{class_pixel_afc9781cd9b7a54b83e77010ccd40acf9}{reducir\+Br
 \begin{DoxyCompactList}\small\item\em reducir\+Brillo MÃ©todo que permite reducir el brillo de un \mbox{\hyperlink{class_pixel}{Pixel}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_pixel_a9dde3af38cd1ba92d0cf210847f5f00f}{ajuste\+Contraste}} (vector$<$ int $>$ maximo\+\_\+minimo\+\_\+R, vector$<$ int $>$ maximo\+\_\+minimo\+\_\+G, vector$<$ int $>$ maximo\+\_\+minimo\+\_\+B, int rango)
 \begin{DoxyCompactList}\small\item\em ajuste\+Contraste MÃ©todo que ajusta (R, G, B) para ajustar el contraste de una \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Atributos privados}
+\doxysubsubsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}
@@ -47,7 +47,7 @@ int \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Descripción detallada}
+\doxysubsubsection{Descripción detallada}
 Clase que modela un pixel de una imagen. 
 
 Representa un pixel de los distintos tipos de imagen, indistintamente si es de intensidades, RGB o monocromatico. Tiene valores enteros para rojo, verde y azul. Puede cambiar estos valores y devolverlos en caso de ser necesario. \begin{DoxyAuthor}{Autor}
@@ -70,11 +70,11 @@ Definición en la línea 22 del archivo pixel.\+h.
 
 
 
-\doxysubsection{Documentación del constructor y destructor}
+\doxysubsubsection{Documentación del constructor y destructor}
 \mbox{\Hypertarget{class_pixel_a27ad99a2f705e635c42d242d530d4756}\label{class_pixel_a27ad99a2f705e635c42d242d530d4756}} 
 \index{Pixel@{Pixel}!Pixel@{Pixel}}
 \index{Pixel@{Pixel}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{Pixel()}{Pixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxyparagraph{\texorpdfstring{Pixel()}{Pixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Pixel\+::\+Pixel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -95,7 +95,7 @@ Definición en la línea 3 del archivo pixel.\+cpp.
 \mbox{\Hypertarget{class_pixel_a49bf81f6c49e9ac9a963ffcbf4e03576}\label{class_pixel_a49bf81f6c49e9ac9a963ffcbf4e03576}} 
 \index{Pixel@{Pixel}!Pixel@{Pixel}}
 \index{Pixel@{Pixel}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{Pixel()}{Pixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxyparagraph{\texorpdfstring{Pixel()}{Pixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Pixel\+::\+Pixel (\begin{DoxyParamCaption}\item[{int}]{red,  }\item[{int}]{green,  }\item[{int}]{blue }\end{DoxyParamCaption})}
 
 
@@ -130,11 +130,11 @@ Hace referencia a b, g y r.
 
 
 
-\doxysubsection{Documentación de las funciones miembro}
+\doxysubsubsection{Documentación de las funciones miembro}
 \mbox{\Hypertarget{class_pixel_a9dde3af38cd1ba92d0cf210847f5f00f}\label{class_pixel_a9dde3af38cd1ba92d0cf210847f5f00f}} 
 \index{Pixel@{Pixel}!ajusteContraste@{ajusteContraste}}
 \index{ajusteContraste@{ajusteContraste}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{ajusteContraste()}{ajusteContraste()}}
+\doxyparagraph{\texorpdfstring{ajusteContraste()}{ajusteContraste()}}
 {\footnotesize\ttfamily void Pixel\+::ajuste\+Contraste (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{maximo\+\_\+minimo\+\_\+R,  }\item[{vector$<$ int $>$}]{maximo\+\_\+minimo\+\_\+G,  }\item[{vector$<$ int $>$}]{maximo\+\_\+minimo\+\_\+B,  }\item[{int}]{rango }\end{DoxyParamCaption})}
 
 
@@ -181,7 +181,7 @@ Referenciado por Contraste\+::aplicar\+Filtro().
 \mbox{\Hypertarget{class_pixel_a4ab3587954826d764eb02b98d8e0f20f}\label{class_pixel_a4ab3587954826d764eb02b98d8e0f20f}} 
 \index{Pixel@{Pixel}!aumentarBrillo@{aumentarBrillo}}
 \index{aumentarBrillo@{aumentarBrillo}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{aumentarBrillo()}{aumentarBrillo()}}
+\doxyparagraph{\texorpdfstring{aumentarBrillo()}{aumentarBrillo()}}
 {\footnotesize\ttfamily void Pixel\+::aumentar\+Brillo (\begin{DoxyParamCaption}\item[{int}]{aumento }\end{DoxyParamCaption})}
 
 
@@ -208,7 +208,7 @@ Hace referencia a b, g y r.
 \mbox{\Hypertarget{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}\label{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}} 
 \index{Pixel@{Pixel}!getB@{getB}}
 \index{getB@{getB}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{getB()}{getB()}}
+\doxyparagraph{\texorpdfstring{getB()}{getB()}}
 {\footnotesize\ttfamily int Pixel\+::getB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -240,7 +240,7 @@ Referenciado por Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::ap
 \mbox{\Hypertarget{class_pixel_a7d11df716ef5c30421210a7b2d61e697}\label{class_pixel_a7d11df716ef5c30421210a7b2d61e697}} 
 \index{Pixel@{Pixel}!getG@{getG}}
 \index{getG@{getG}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{getG()}{getG()}}
+\doxyparagraph{\texorpdfstring{getG()}{getG()}}
 {\footnotesize\ttfamily int Pixel\+::getG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -272,7 +272,7 @@ Referenciado por Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::ap
 \mbox{\Hypertarget{class_pixel_ae9494a22629e331242fd1e7508743655}\label{class_pixel_ae9494a22629e331242fd1e7508743655}} 
 \index{Pixel@{Pixel}!getIntensidad@{getIntensidad}}
 \index{getIntensidad@{getIntensidad}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{getIntensidad()}{getIntensidad()}}
+\doxyparagraph{\texorpdfstring{getIntensidad()}{getIntensidad()}}
 {\footnotesize\ttfamily int Pixel\+::get\+Intensidad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -304,7 +304,7 @@ Referenciado por Binarizado\+::aplicar\+Filtro(), Procesador\+Estadistico\+::dev
 \mbox{\Hypertarget{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}\label{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}} 
 \index{Pixel@{Pixel}!getR@{getR}}
 \index{getR@{getR}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{getR()}{getR()}}
+\doxyparagraph{\texorpdfstring{getR()}{getR()}}
 {\footnotesize\ttfamily int Pixel\+::getR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -336,7 +336,7 @@ Referenciado por Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::ap
 \mbox{\Hypertarget{class_pixel_afc9781cd9b7a54b83e77010ccd40acf9}\label{class_pixel_afc9781cd9b7a54b83e77010ccd40acf9}} 
 \index{Pixel@{Pixel}!reducirBrillo@{reducirBrillo}}
 \index{reducirBrillo@{reducirBrillo}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{reducirBrillo()}{reducirBrillo()}}
+\doxyparagraph{\texorpdfstring{reducirBrillo()}{reducirBrillo()}}
 {\footnotesize\ttfamily void Pixel\+::reducir\+Brillo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -366,7 +366,7 @@ Hace referencia a b, g y r.
 \mbox{\Hypertarget{class_pixel_affd7e85713e18281b51e0e676485f704}\label{class_pixel_affd7e85713e18281b51e0e676485f704}} 
 \index{Pixel@{Pixel}!setPixelEscala@{setPixelEscala}}
 \index{setPixelEscala@{setPixelEscala}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{setPixelEscala()}{setPixelEscala()}}
+\doxyparagraph{\texorpdfstring{setPixelEscala()}{setPixelEscala()}}
 {\footnotesize\ttfamily void Pixel\+::set\+Pixel\+Escala (\begin{DoxyParamCaption}\item[{int}]{valor }\end{DoxyParamCaption})}
 
 
@@ -405,7 +405,7 @@ Referenciado por Archivos\+AIC\+::leer() y Archivos\+PNM\+::leer().
 \mbox{\Hypertarget{class_pixel_ab624ff85be3e3d7b6d5f3e139300c1ef}\label{class_pixel_ab624ff85be3e3d7b6d5f3e139300c1ef}} 
 \index{Pixel@{Pixel}!setPixelMonocr@{setPixelMonocr}}
 \index{setPixelMonocr@{setPixelMonocr}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{setPixelMonocr()}{setPixelMonocr()}}
+\doxyparagraph{\texorpdfstring{setPixelMonocr()}{setPixelMonocr()}}
 {\footnotesize\ttfamily void Pixel\+::set\+Pixel\+Monocr (\begin{DoxyParamCaption}\item[{int}]{valor }\end{DoxyParamCaption})}
 
 
@@ -452,7 +452,7 @@ Referenciado por Archivos\+PNM\+::leer().
 \mbox{\Hypertarget{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}\label{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}} 
 \index{Pixel@{Pixel}!setPixelRGB@{setPixelRGB}}
 \index{setPixelRGB@{setPixelRGB}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{setPixelRGB()}{setPixelRGB()}}
+\doxyparagraph{\texorpdfstring{setPixelRGB()}{setPixelRGB()}}
 {\footnotesize\ttfamily void Pixel\+::set\+Pixel\+RGB (\begin{DoxyParamCaption}\item[{int}]{valor\+\_\+r,  }\item[{int}]{valor\+\_\+g,  }\item[{int}]{valor\+\_\+b }\end{DoxyParamCaption})}
 
 
@@ -490,11 +490,11 @@ Referenciado por Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::ap
 
 
 
-\doxysubsection{Documentación de los campos}
+\doxysubsubsection{Documentación de los campos}
 \mbox{\Hypertarget{class_pixel_a94b067f3c79425c953631f7bf1c7536c}\label{class_pixel_a94b067f3c79425c953631f7bf1c7536c}} 
 \index{Pixel@{Pixel}!b@{b}}
 \index{b@{b}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{b}{b}}
+\doxyparagraph{\texorpdfstring{b}{b}}
 {\footnotesize\ttfamily int Pixel\+::b\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -513,7 +513,7 @@ Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+B(), Pixel(), red
 \mbox{\Hypertarget{class_pixel_a73515f179e3c1bd28156e434da111d05}\label{class_pixel_a73515f179e3c1bd28156e434da111d05}} 
 \index{Pixel@{Pixel}!g@{g}}
 \index{g@{g}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{g}{g}}
+\doxyparagraph{\texorpdfstring{g}{g}}
 {\footnotesize\ttfamily int Pixel\+::g\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -532,7 +532,7 @@ Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+G(), Pixel(), red
 \mbox{\Hypertarget{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}\label{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}} 
 \index{Pixel@{Pixel}!r@{r}}
 \index{r@{r}!Pixel@{Pixel}}
-\doxysubsubsection{\texorpdfstring{r}{r}}
+\doxyparagraph{\texorpdfstring{r}{r}}
 {\footnotesize\ttfamily int Pixel\+::r\hspace{0.3cm}{\ttfamily [private]}}
 
 

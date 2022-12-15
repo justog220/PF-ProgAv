@@ -1,4 +1,4 @@
-\let\mypdfximage\pdfximage\def\pdfximage{\immediate\mypdfximage}\documentclass[twoside]{book}
+\let\mypdfximage\pdfximage\def\pdfximage{\immediate\mypdfximage}\documentclass[twoside]{article}
 
 %% moved from doxygen.sty due to workaround for LaTex 2019 version and unmaintained tabu package
 \usepackage{ifthen}
@@ -98,9 +98,6 @@
 %
 \pagestyle{fancyplain}
 %
-\renewcommand{\chaptermark}[1]{%
-  \markboth{#1}{}%
-}
 \renewcommand{\sectionmark}[1]{%
   \markright{\thesection\ #1}%
 }
@@ -165,27 +162,25 @@
 {\large Generado por Doxygen 1.9.1}\\
 \end{center}
 \end{titlepage}
-\clearemptydoublepage
 \pagenumbering{roman}
 \tableofcontents
-\clearemptydoublepage
 \pagenumbering{arabic}
 \hypersetup{pageanchor=true}
 
 %--- Begin generated contents ---
-\chapter{Página principal}
+\doxysection{Página principal}
 \label{index}\hypertarget{index}{}\input{index}
-\chapter{Lista de bugs}
+\doxysection{Lista de bugs}
 \label{bug}
 \Hypertarget{bug}
 \input{bug}
-\chapter{Indice jerárquico}
+\doxysection{Indice jerárquico}
 \input{hierarchy}
-\chapter{Índice de estructura de datos}
+\doxysection{Índice de estructura de datos}
 \input{annotated}
-\chapter{Indice de archivos}
+\doxysection{Indice de archivos}
 \input{files}
-\chapter{Documentación de las estructuras de datos}
+\doxysection{Documentación de las estructuras de datos}
 \input{class_algoritmo_del_pintor}
 \input{class_archivos_a_i_c}
 \input{class_archivos_p_n_m}
@@ -211,7 +206,7 @@
 \input{class_sistema}
 \input{class_tabla_lut}
 \input{class_ventana_de_graficacion}
-\chapter{Documentación de archivos}
+\doxysection{Documentación de archivos}
 \input{algoritmodelpintor_8cpp}
 \input{algoritmodelpintor_8h}
 \input{archivosaic_8cpp}
@@ -259,11 +254,10 @@
 %--- End generated contents ---
 
 % Index
-\backmatter
 \newpage
 \phantomsection
 \clearemptydoublepage
-\addcontentsline{toc}{chapter}{\indexname}
+\addcontentsline{toc}{section}{\indexname}
 \printindex
 
 \end{document}

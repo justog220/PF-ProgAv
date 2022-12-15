@@ -1,0 +1,180 @@
+\hypertarget{class_filtro_pasa_bajos}{}\doxysection{Referencia de la Clase Filtro\+Pasa\+Bajos}
+\label{class_filtro_pasa_bajos}\index{FiltroPasaBajos@{FiltroPasaBajos}}
+
+
+{\ttfamily \#include $<$filtropasabajos.\+h$>$}
+
+Diagrama de herencias de Filtro\+Pasa\+Bajos\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_filtro_pasa_bajos}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_filtro_pasa_bajos_afc656698fc72c1ec398356a27f3fa931}{Filtro\+Pasa\+Bajos}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_filtro_pasa_bajos}{Filtro\+Pasa\+Bajos}} Constructor del objeto \mbox{\hyperlink{class_filtro_pasa_bajos}{Filtro\+Pasa\+Bajos}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imagen}{Imagen}} \mbox{\hyperlink{class_filtro_pasa_bajos_a6e4b4bfbb212a669caf2298f8841dbe6}{aplicar\+Filtro}} (\mbox{\hyperlink{class_imagen}{Imagen}} \&imag) override
+\begin{DoxyCompactList}\small\item\em aplicar\+Filtro MÃ©todo heredado de la case \mbox{\hyperlink{class_filtros}{Filtros}}, redefinido para aplicar el filtro pasa bajos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+
+
+Definición en la línea 16 del archivo filtropasabajos.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_filtro_pasa_bajos_afc656698fc72c1ec398356a27f3fa931}\label{class_filtro_pasa_bajos_afc656698fc72c1ec398356a27f3fa931}} 
+\index{FiltroPasaBajos@{FiltroPasaBajos}!FiltroPasaBajos@{FiltroPasaBajos}}
+\index{FiltroPasaBajos@{FiltroPasaBajos}!FiltroPasaBajos@{FiltroPasaBajos}}
+\doxysubsubsection{\texorpdfstring{FiltroPasaBajos()}{FiltroPasaBajos()}}
+{\footnotesize\ttfamily Filtro\+Pasa\+Bajos\+::\+Filtro\+Pasa\+Bajos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_filtro_pasa_bajos}{Filtro\+Pasa\+Bajos}} Constructor del objeto \mbox{\hyperlink{class_filtro_pasa_bajos}{Filtro\+Pasa\+Bajos}}. 
+
+
+
+Definición en la línea 3 del archivo filtropasabajos.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_filtro_pasa_bajos_a6e4b4bfbb212a669caf2298f8841dbe6}\label{class_filtro_pasa_bajos_a6e4b4bfbb212a669caf2298f8841dbe6}} 
+\index{FiltroPasaBajos@{FiltroPasaBajos}!aplicarFiltro@{aplicarFiltro}}
+\index{aplicarFiltro@{aplicarFiltro}!FiltroPasaBajos@{FiltroPasaBajos}}
+\doxysubsubsection{\texorpdfstring{aplicarFiltro()}{aplicarFiltro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imagen}{Imagen}} Filtro\+Pasa\+Bajos\+::aplicar\+Filtro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} \&}]{imag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+aplicar\+Filtro MÃ©todo heredado de la case \mbox{\hyperlink{class_filtros}{Filtros}}, redefinido para aplicar el filtro pasa bajos. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em imag} & \mbox{\hyperlink{class_imagen}{Imagen}} a la cual se le aplica el filtro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\mbox{\hyperlink{class_imagen}{Imagen}} con el filtro aplicado. 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{class_filtros_a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82}{Filtros}}.
+
+
+
+Definición en la línea 8 del archivo filtropasabajos.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_imagen}{Imagen}} img = imag;}
+\DoxyCodeLine{11     \textcolor{keywordtype}{float} auxR, auxG, auxB;}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_pixel}{Pixel}} pixAux;}
+\DoxyCodeLine{13     \textcolor{keywordtype}{int} columnas = imag.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{14     \textcolor{keywordtype}{int} filas = imag.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}();}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < filas; i++)}
+\DoxyCodeLine{18         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < columnas; j++)}
+\DoxyCodeLine{19         \{}
+\DoxyCodeLine{20             pixAux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{21             auxR = (float)pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()/9;}
+\DoxyCodeLine{22             auxG = (float)pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()/9;}
+\DoxyCodeLine{23             auxB = (float)pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()/9;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25             \textcolor{keywordflow}{if}(imag.\mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{formaParteDeLaImagen}}(i-\/1, j-\/1))}
+\DoxyCodeLine{26             \{}
+\DoxyCodeLine{27                 pixAux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i-\/1, j-\/1);}
+\DoxyCodeLine{28                 auxR += (float)pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()/9;}
+\DoxyCodeLine{29                 auxG += (float)pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()/9;}
+\DoxyCodeLine{30                 auxB += (float)pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()/9;}
+\DoxyCodeLine{31             \}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33             \textcolor{keywordflow}{if}(imag.\mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{formaParteDeLaImagen}}(i-\/1, j))}
+\DoxyCodeLine{34             \{}
+\DoxyCodeLine{35                 pixAux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i-\/1, j);}
+\DoxyCodeLine{36                 auxR += (float)pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()/9;}
+\DoxyCodeLine{37                 auxG += (float)pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()/9;}
+\DoxyCodeLine{38                 auxB += (float)pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()/9;}
+\DoxyCodeLine{39             \}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41             \textcolor{keywordflow}{if}(imag.\mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{formaParteDeLaImagen}}(i-\/1, j+1))}
+\DoxyCodeLine{42             \{}
+\DoxyCodeLine{43                 pixAux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i-\/1, j+1);}
+\DoxyCodeLine{44                 auxR += (float)pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()/9;}
+\DoxyCodeLine{45                 auxG += (float)pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()/9;}
+\DoxyCodeLine{46                 auxB += (float)pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()/9;}
+\DoxyCodeLine{47             \}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49             \textcolor{keywordflow}{if}(imag.\mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{formaParteDeLaImagen}}(i, j+1))}
+\DoxyCodeLine{50             \{}
+\DoxyCodeLine{51                 pixAux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j+1);}
+\DoxyCodeLine{52                 auxR += (float)pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()/9;}
+\DoxyCodeLine{53                 auxG += (float)pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()/9;}
+\DoxyCodeLine{54                 auxB += (float)pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()/9;}
+\DoxyCodeLine{55             \}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57             \textcolor{keywordflow}{if}(imag.\mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{formaParteDeLaImagen}}(i+1, j+1))}
+\DoxyCodeLine{58             \{}
+\DoxyCodeLine{59                 pixAux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i+1, j+1);}
+\DoxyCodeLine{60                 auxR += (float)pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()/9;}
+\DoxyCodeLine{61                 auxG += (float)pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()/9;}
+\DoxyCodeLine{62                 auxB += (float)pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()/9;}
+\DoxyCodeLine{63             \}}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65             \textcolor{keywordflow}{if}(imag.\mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{formaParteDeLaImagen}}(i+1, j))}
+\DoxyCodeLine{66             \{}
+\DoxyCodeLine{67                 pixAux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i+1, j);}
+\DoxyCodeLine{68                 auxR += (float)pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()/9;}
+\DoxyCodeLine{69                 auxG += (float)pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()/9;}
+\DoxyCodeLine{70                 auxB += (float)pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()/9;}
+\DoxyCodeLine{71             \}}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73             \textcolor{keywordflow}{if}(imag.\mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{formaParteDeLaImagen}}(i+1, j-\/1))}
+\DoxyCodeLine{74             \{}
+\DoxyCodeLine{75                 pixAux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i+1, j-\/1);}
+\DoxyCodeLine{76                 auxR += (float)pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()/9;}
+\DoxyCodeLine{77                 auxG += (float)pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()/9;}
+\DoxyCodeLine{78                 auxB += (float)pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()/9;}
+\DoxyCodeLine{79             \}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82             \textcolor{keywordflow}{if}(imag.\mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{formaParteDeLaImagen}}(i, j-\/1))}
+\DoxyCodeLine{83             \{}
+\DoxyCodeLine{84                 pixAux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j-\/1);}
+\DoxyCodeLine{85                 auxR += (float)pixAux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()/9;}
+\DoxyCodeLine{86                 auxG += (float)pixAux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()/9;}
+\DoxyCodeLine{87                 auxB += (float)pixAux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()/9;}
+\DoxyCodeLine{88             \}}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90             pixAux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}((\textcolor{keywordtype}{int})auxR, (int)auxG, (\textcolor{keywordtype}{int})auxB);}
+\DoxyCodeLine{91             img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(i, j, pixAux);}
+\DoxyCodeLine{92         \}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     \textcolor{keywordflow}{return} img;}
+\DoxyCodeLine{95 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Imagen\+::forma\+Parte\+De\+La\+Imagen(), Pixel\+::get\+B(), Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Pixel\+::get\+G(), Imagen\+::get\+Pixel(), Pixel\+::get\+R(), Imagen\+::set\+Pixel() y Pixel\+::set\+Pixel\+RGB().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{filtropasabajos_8h}{filtropasabajos.\+h}}\item 
+\mbox{\hyperlink{filtropasabajos_8cpp}{filtropasabajos.\+cpp}}\end{DoxyCompactItemize}

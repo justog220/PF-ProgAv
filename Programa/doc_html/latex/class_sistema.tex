@@ -1,0 +1,513 @@
+\hypertarget{class_sistema}{}\doxysection{Referencia de la Clase Sistema}
+\label{class_sistema}\index{Sistema@{Sistema}}
+
+
+Clase capaz de ejecutar el sistema de procesamiento de imagenes.  
+
+
+
+
+{\ttfamily \#include $<$sistema.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sistema_a815b07845ef6b03247b239333fe75e28}{Sistema}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sistema}{Sistema}} Constructor de la clase \mbox{\hyperlink{class_sistema}{Sistema}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sistema_a2ce3f1a9fa5c8e988cbf2cbe471fd55a}{ejecutar}} (QApplication $\ast$a)
+\begin{DoxyCompactList}\small\item\em ejecutar MÃ©todo que permite ejecutar el \mbox{\hyperlink{class_sistema}{Sistema}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sistema_a3d21b03b0accde8d77a3b0baea7fad06}{obtener\+Opc\+Dir}} ()
+\begin{DoxyCompactList}\small\item\em obtener\+Opc\+Dir MÃ©todo que permite consultarle al usuario el directorio en el cual se encuentra la \mbox{\hyperlink{class_imagen}{Imagen}} que desea procesar. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sistema_acd5790947da21221e91e603a7bafd0df}{obtener\+Opc\+Arch}} (string ruta)
+\begin{DoxyCompactList}\small\item\em obtener\+Opc\+Arch MÃ©todo que permite conultarle al usuario el archivo que desea procesar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sistema_a7e6d58ec7d28d4f773764353846db680}{iniciar\+Graficacion}} (QApplication $\ast$a, int opc\+Dir, int opc\+Arch)
+\begin{DoxyCompactList}\small\item\em iniciar\+Graficacion MÃ©todo que permite comenzar la graficacion de una \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_sistema_ae421480e9be1cc899b5bece4b57a1940}{recuperar\+Opciones}} ()
+\begin{DoxyCompactList}\small\item\em recuperar\+Opciones MÃ©todo que permite recuperar las opciones de la Ãºltima \mbox{\hyperlink{class_imagen}{Imagen}} graficada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sistema_a6a5ed28b40bb0c15c47b9ed4f56326b1}{mostrar\+Atajos}} ()
+\begin{DoxyCompactList}\small\item\em mostrar\+Atajos MÃ©todo que permite mostrar los atajos de teclado y mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_espacio_de_trabajo}{Espacio\+De\+Trabajo}} \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{esp\+De\+Trabajo}}
+\begin{DoxyCompactList}\small\item\em esp\+De\+Trabajo \mbox{\hyperlink{class_espacio_de_trabajo}{Espacio\+De\+Trabajo}} con el cual trabaja el \mbox{\hyperlink{class_sistema}{Sistema}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ventana_de_graficacion}{Ventana\+De\+Graficacion}} \mbox{\hyperlink{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}{graf}}
+\begin{DoxyCompactList}\small\item\em graf Graficador que utiliza para graficar una \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{no\+Soporto\+Anterior}}
+\begin{DoxyCompactList}\small\item\em no\+Soporto\+Anterior Booleano que indica si el Ãºltimo archivo fue soportado o no. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase capaz de ejecutar el sistema de procesamiento de imagenes. 
+
+Es cappaz de ejecutar las diferentes acciones que son necesarias para el funcionamiento del software. Tiene un espacio de Trabajo y un Graficador \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 24-\/11-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000018}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+
+\end{DoxyWarning}
+
+
+Definición en la línea 21 del archivo sistema.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_sistema_a815b07845ef6b03247b239333fe75e28}\label{class_sistema_a815b07845ef6b03247b239333fe75e28}} 
+\index{Sistema@{Sistema}!Sistema@{Sistema}}
+\index{Sistema@{Sistema}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{Sistema()}{Sistema()}}
+{\footnotesize\ttfamily Sistema\+::\+Sistema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_sistema}{Sistema}} Constructor de la clase \mbox{\hyperlink{class_sistema}{Sistema}}. 
+
+
+
+Definición en la línea 3 del archivo sistema.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{5     \mbox{\hyperlink{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}{graf}}.\mbox{\hyperlink{class_ventana_de_graficacion_a2a9ae220f714ac79319ee89032156ae3}{setEspacio}}(\mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}});}
+\DoxyCodeLine{6 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a esp\+De\+Trabajo, graf y Ventana\+De\+Graficacion\+::set\+Espacio().
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_sistema_a2ce3f1a9fa5c8e988cbf2cbe471fd55a}\label{class_sistema_a2ce3f1a9fa5c8e988cbf2cbe471fd55a}} 
+\index{Sistema@{Sistema}!ejecutar@{ejecutar}}
+\index{ejecutar@{ejecutar}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{ejecutar()}{ejecutar()}}
+{\footnotesize\ttfamily void Sistema\+::ejecutar (\begin{DoxyParamCaption}\item[{QApplication $\ast$}]{a }\end{DoxyParamCaption})}
+
+
+
+ejecutar MÃ©todo que permite ejecutar el \mbox{\hyperlink{class_sistema}{Sistema}}. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em a} & QApplication que se ejecuta. \\
+\hline
+\mbox{\texttt{ out}}  & {\em a} & QApplication que muestra informacion como salida. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 8 del archivo sistema.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_archivos_p_n_m}{ArchivosPNM}} archi;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \mbox{\hyperlink{class_imagen}{Imagen}} img;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     \textcolor{keywordtype}{bool} seGraficoUnaImagen = \textcolor{keyword}{false};}
+\DoxyCodeLine{15     \textcolor{keywordflow}{while}(\textcolor{keyword}{true})}
+\DoxyCodeLine{16     \{}
+\DoxyCodeLine{17         \textcolor{keywordtype}{int} opcDir = \mbox{\hyperlink{class_sistema_a3d21b03b0accde8d77a3b0baea7fad06}{obtenerOpcDir}}();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19         \textcolor{keywordflow}{if}(opcDir == \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a656de37ac8cad97cd647fdebd779b0ed}{getCarpetas}}().size()+1)}
+\DoxyCodeLine{20         \{}
+\DoxyCodeLine{21             vector<int> opciones = \mbox{\hyperlink{class_sistema_ae421480e9be1cc899b5bece4b57a1940}{recuperarOpciones}}();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23             \textcolor{keywordflow}{if}(opciones[0] != -\/10 and opciones[1] != -\/10)}
+\DoxyCodeLine{24             \{}
+\DoxyCodeLine{25                 \mbox{\hyperlink{class_sistema_a6a5ed28b40bb0c15c47b9ed4f56326b1}{mostrarAtajos}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27                 \mbox{\hyperlink{class_sistema_a7e6d58ec7d28d4f773764353846db680}{iniciarGraficacion}}(a, opciones[0], opciones[1]);}
+\DoxyCodeLine{28             \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{29                 \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{30                 system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{31                 cout<<\textcolor{stringliteral}{"{}No se pudo recuperar la ejecuciÃ³n previa dado que no se graficÃ³ ninguna imÃ¡gen.\(\backslash\)n"{}};}
+\DoxyCodeLine{32             \}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcDir == \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a656de37ac8cad97cd647fdebd779b0ed}{getCarpetas}}().size()+2)}
+\DoxyCodeLine{37         \{}
+\DoxyCodeLine{38             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{39         \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{40             \textcolor{keywordtype}{string} ruta = \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a8ba67fb3805b2e366a8d80bee8f2b54e}{getRuta}}(opcDir);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42             \textcolor{keywordtype}{int} opcArch = \mbox{\hyperlink{class_sistema_acd5790947da21221e91e603a7bafd0df}{obtenerOpcArch}}(ruta);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44             \textcolor{keywordflow}{if} (opcArch != -\/1)}
+\DoxyCodeLine{45             \{}
+\DoxyCodeLine{46                 \mbox{\hyperlink{class_sistema_a6a5ed28b40bb0c15c47b9ed4f56326b1}{mostrarAtajos}}();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48                 \mbox{\hyperlink{class_sistema_a7e6d58ec7d28d4f773764353846db680}{iniciarGraficacion}}(a, opcDir, opcArch);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50                 seGraficoUnaImagen = \textcolor{keyword}{true};}
+\DoxyCodeLine{51             \}}
+\DoxyCodeLine{52         \}}
+\DoxyCodeLine{53     \}}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \textcolor{keywordflow}{if} (!seGraficoUnaImagen)}
+\DoxyCodeLine{56         \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_ae0634d1dfd3edea5a29ec14a7ef56649}{llevarRegistro}}(-\/10, -\/10);}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a esp\+De\+Trabajo, Espacio\+De\+Trabajo\+::get\+Carpetas(), Espacio\+De\+Trabajo\+::get\+Ruta(), iniciar\+Graficacion(), Espacio\+De\+Trabajo\+::llevar\+Registro(), mostrar\+Atajos(), no\+Soporto\+Anterior, obtener\+Opc\+Arch(), obtener\+Opc\+Dir() y recuperar\+Opciones().
+
+
+
+Referenciado por main().
+
+\mbox{\Hypertarget{class_sistema_a7e6d58ec7d28d4f773764353846db680}\label{class_sistema_a7e6d58ec7d28d4f773764353846db680}} 
+\index{Sistema@{Sistema}!iniciarGraficacion@{iniciarGraficacion}}
+\index{iniciarGraficacion@{iniciarGraficacion}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{iniciarGraficacion()}{iniciarGraficacion()}}
+{\footnotesize\ttfamily void Sistema\+::iniciar\+Graficacion (\begin{DoxyParamCaption}\item[{QApplication $\ast$}]{a,  }\item[{int}]{opc\+Dir,  }\item[{int}]{opc\+Arch }\end{DoxyParamCaption})}
+
+
+
+iniciar\+Graficacion MÃ©todo que permite comenzar la graficacion de una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em a} & Puntero a la QApplication que se ejecuta. \\
+\hline
+\mbox{\texttt{ out}}  & {\em a} & Se muestra informaciÃ³n con la ejecuciÃ³n de la QApplication. \\
+\hline
+\mbox{\texttt{ in}}  & {\em opc\+Dir} & Directorio seleccionado por el usuario. \\
+\hline
+\mbox{\texttt{ in}}  & {\em opc\+Arch} & Archivo seleccionaod por el usuario. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 131 del archivo sistema.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{132 \{}
+\DoxyCodeLine{133     \mbox{\hyperlink{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}{graf}}.\mbox{\hyperlink{class_ventana_de_graficacion_a0d7b3363ca425030ccfc592874462549}{setOpciones}}(opcDir, opcArch);}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{136         \mbox{\hyperlink{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}{graf}}.\mbox{\hyperlink{class_ventana_de_graficacion_a98cab3ea88696a35561c7257e6b7c790}{cargarImagen}}();}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{138         \mbox{\hyperlink{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}{graf}}.\mbox{\hyperlink{class_ventana_de_graficacion_a77ba6bcbbf535eab89fdae40b7a7bd5c}{setApp}}(a);}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{140         \mbox{\hyperlink{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}{graf}}.show();}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142         \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145         a-\/>exec();}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148     \}  \textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_excepcion_archivo_no_soportado}{ExcepcionArchivoNoSoportado}} \&excepcion) \{}
+\DoxyCodeLine{149         system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{150         a-\/>closeAllWindows();}
+\DoxyCodeLine{151         \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{152         cout<<excepcion.what()<<endl;}
+\DoxyCodeLine{153     \} \textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}} \&excepcion) \{}
+\DoxyCodeLine{154         system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{155         a-\/>closeAllWindows();}
+\DoxyCodeLine{156         \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{157         cout<<excepcion.what()<<endl;}
+\DoxyCodeLine{158     \}}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Ventana\+De\+Graficacion\+::cargar\+Imagen(), graf, no\+Soporto\+Anterior, Ventana\+De\+Graficacion\+::set\+App() y Ventana\+De\+Graficacion\+::set\+Opciones().
+
+
+
+Referenciado por ejecutar().
+
+\mbox{\Hypertarget{class_sistema_a6a5ed28b40bb0c15c47b9ed4f56326b1}\label{class_sistema_a6a5ed28b40bb0c15c47b9ed4f56326b1}} 
+\index{Sistema@{Sistema}!mostrarAtajos@{mostrarAtajos}}
+\index{mostrarAtajos@{mostrarAtajos}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{mostrarAtajos()}{mostrarAtajos()}}
+{\footnotesize\ttfamily void Sistema\+::mostrar\+Atajos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+mostrar\+Atajos MÃ©todo que permite mostrar los atajos de teclado y mouse. 
+
+
+
+Definición en la línea 177 del archivo sistema.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{178 \{}
+\DoxyCodeLine{179     system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{180 }
+\DoxyCodeLine{181     ifstream archi;}
+\DoxyCodeLine{182     archi.open(\textcolor{stringliteral}{"{}lista\_de\_atajos.txt"{}});}
+\DoxyCodeLine{183 }
+\DoxyCodeLine{184     \textcolor{keywordtype}{string} linea;}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186     \textcolor{keywordflow}{if}(!archi.is\_open())}
+\DoxyCodeLine{187     \{}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189         cout<<\textcolor{stringliteral}{"{}No se pudo abrir la lista de atajos"{}};}
+\DoxyCodeLine{190     \}}
+\DoxyCodeLine{191     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{192     \{}
+\DoxyCodeLine{193         \textcolor{keywordflow}{while}(!archi.eof())\{}
+\DoxyCodeLine{194             getline(archi, linea);}
+\DoxyCodeLine{195             cout<<linea<<endl;}
+\DoxyCodeLine{196         \}}
+\DoxyCodeLine{197     \}}
+\DoxyCodeLine{198 }
+\DoxyCodeLine{199 \}}
+
+\end{DoxyCode}
+
+
+Referenciado por ejecutar().
+
+\mbox{\Hypertarget{class_sistema_acd5790947da21221e91e603a7bafd0df}\label{class_sistema_acd5790947da21221e91e603a7bafd0df}} 
+\index{Sistema@{Sistema}!obtenerOpcArch@{obtenerOpcArch}}
+\index{obtenerOpcArch@{obtenerOpcArch}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{obtenerOpcArch()}{obtenerOpcArch()}}
+{\footnotesize\ttfamily int Sistema\+::obtener\+Opc\+Arch (\begin{DoxyParamCaption}\item[{string}]{ruta }\end{DoxyParamCaption})}
+
+
+
+obtener\+Opc\+Arch MÃ©todo que permite conultarle al usuario el archivo que desea procesar. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta} & String con la ruta de la carpeta en la cuÃ¡l se buscan los archivos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Archivo seleccionado por el usuario. 
+\end{DoxyReturn}
+
+
+Definición en la línea 95 del archivo sistema.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{96 \{}
+\DoxyCodeLine{97     system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} opcArch;}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101     vector<string> listaDeArchivos = \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a19bc26e7349a719fb19e4495d2beed6e}{getListaDeArchivos}}(ruta);}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0; i<listaDeArchivos.size(); i++)}
+\DoxyCodeLine{104         cout<<i+1<<\textcolor{stringliteral}{"{}) "{}}<<listaDeArchivos[i]<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{105     cout<<listaDeArchivos.size()+1<<\textcolor{stringliteral}{"{}) Volver a la seleccion de carpetas\(\backslash\)n"{}};}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107     cout<<\textcolor{stringliteral}{"{}Seleccione una opcion: "{}};}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109     cin>>opcArch;}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111     \textcolor{keywordflow}{while}(opcArch < 1 or opcArch > listaDeArchivos.size()+2)}
+\DoxyCodeLine{112     \{}
+\DoxyCodeLine{113         cin.clear();}
+\DoxyCodeLine{114         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{115         cout<<\textcolor{stringliteral}{"{}\(\backslash\)nIngrese una opcion valida: "{}};}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117         cin>>opcArch;}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119     \}}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121     \textcolor{keywordflow}{if} (opcArch == listaDeArchivos.size()+1)}
+\DoxyCodeLine{122     \{}
+\DoxyCodeLine{123         \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{124         \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{125     \}}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128     \textcolor{keywordflow}{return} opcArch;}
+\DoxyCodeLine{129 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a esp\+De\+Trabajo, Espacio\+De\+Trabajo\+::get\+Lista\+De\+Archivos() y no\+Soporto\+Anterior.
+
+
+
+Referenciado por ejecutar().
+
+\mbox{\Hypertarget{class_sistema_a3d21b03b0accde8d77a3b0baea7fad06}\label{class_sistema_a3d21b03b0accde8d77a3b0baea7fad06}} 
+\index{Sistema@{Sistema}!obtenerOpcDir@{obtenerOpcDir}}
+\index{obtenerOpcDir@{obtenerOpcDir}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{obtenerOpcDir()}{obtenerOpcDir()}}
+{\footnotesize\ttfamily int Sistema\+::obtener\+Opc\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+obtener\+Opc\+Dir MÃ©todo que permite consultarle al usuario el directorio en el cual se encuentra la \mbox{\hyperlink{class_imagen}{Imagen}} que desea procesar. 
+
+\begin{DoxyReturn}{Devuelve}
+Directorio o no que eligio el usuario. 
+\end{DoxyReturn}
+
+
+Definición en la línea 61 del archivo sistema.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62 \{}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} == \textcolor{keyword}{false})}
+\DoxyCodeLine{65         system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} opcDir;}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     vector<string> opcCarpetas = \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a656de37ac8cad97cd647fdebd779b0ed}{getCarpetas}}();}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < opcCarpetas.size(); i++)}
+\DoxyCodeLine{72         cout<<i+1<<\textcolor{stringliteral}{"{}) "{}}<<opcCarpetas[i]<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     cout<<opcCarpetas.size()+1<<\textcolor{stringliteral}{"{}) Recuperar ultima ejecucion\(\backslash\)n"{}};}
+\DoxyCodeLine{75     cout<<opcCarpetas.size()+2<<\textcolor{stringliteral}{"{}) Cerrar el programa\(\backslash\)n"{}};}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77     cout<<\textcolor{stringliteral}{"{}Seleccione la opcion: "{}};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     cin>>opcDir;}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     \textcolor{keywordflow}{while}(opcDir < 1 or opcDir > opcCarpetas.size()+2)}
+\DoxyCodeLine{82     \{}
+\DoxyCodeLine{83         cin.clear();}
+\DoxyCodeLine{84         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{85         cout<<\textcolor{stringliteral}{"{}\(\backslash\)nIngrese una opcion valida: "{}};}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87         cin>>opcDir;}
+\DoxyCodeLine{88     \}}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90     \textcolor{keywordflow}{return} opcDir;}
+\DoxyCodeLine{91 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a esp\+De\+Trabajo, Espacio\+De\+Trabajo\+::get\+Carpetas() y no\+Soporto\+Anterior.
+
+
+
+Referenciado por ejecutar().
+
+\mbox{\Hypertarget{class_sistema_ae421480e9be1cc899b5bece4b57a1940}\label{class_sistema_ae421480e9be1cc899b5bece4b57a1940}} 
+\index{Sistema@{Sistema}!recuperarOpciones@{recuperarOpciones}}
+\index{recuperarOpciones@{recuperarOpciones}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{recuperarOpciones()}{recuperarOpciones()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Sistema\+::recuperar\+Opciones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+recuperar\+Opciones MÃ©todo que permite recuperar las opciones de la Ãºltima \mbox{\hyperlink{class_imagen}{Imagen}} graficada. 
+
+\begin{DoxyReturn}{Devuelve}
+Vector de enteros que almacena la opcion del directorio y del archivo. 
+\end{DoxyReturn}
+
+
+Definición en la línea 162 del archivo sistema.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{163 \{}
+\DoxyCodeLine{164     vector<int> dir\_arch(2);}
+\DoxyCodeLine{165     ifstream archi;}
+\DoxyCodeLine{166     archi.open(\textcolor{stringliteral}{"{}registro.txt"{}});}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168     \textcolor{keywordtype}{string} ruta;}
+\DoxyCodeLine{169 }
+\DoxyCodeLine{170     archi>>dir\_arch[0] >> dir\_arch[1];}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{172     archi.close();}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174     \textcolor{keywordflow}{return} dir\_arch;}
+\DoxyCodeLine{175 \}}
+
+\end{DoxyCode}
+
+
+Referenciado por ejecutar().
+
+
+
+\doxysubsection{Documentación de los campos}
+\mbox{\Hypertarget{class_sistema_a7f74f273e84c5c702129f72334155035}\label{class_sistema_a7f74f273e84c5c702129f72334155035}} 
+\index{Sistema@{Sistema}!espDeTrabajo@{espDeTrabajo}}
+\index{espDeTrabajo@{espDeTrabajo}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{espDeTrabajo}{espDeTrabajo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_espacio_de_trabajo}{Espacio\+De\+Trabajo}} Sistema\+::esp\+De\+Trabajo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+esp\+De\+Trabajo \mbox{\hyperlink{class_espacio_de_trabajo}{Espacio\+De\+Trabajo}} con el cual trabaja el \mbox{\hyperlink{class_sistema}{Sistema}}. 
+
+
+
+Definición en la línea 76 del archivo sistema.\+h.
+
+
+
+Referenciado por ejecutar(), obtener\+Opc\+Arch(), obtener\+Opc\+Dir() y Sistema().
+
+\mbox{\Hypertarget{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}\label{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}} 
+\index{Sistema@{Sistema}!graf@{graf}}
+\index{graf@{graf}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{graf}{graf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ventana_de_graficacion}{Ventana\+De\+Graficacion}} Sistema\+::graf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+graf Graficador que utiliza para graficar una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+
+
+Definición en la línea 81 del archivo sistema.\+h.
+
+
+
+Referenciado por iniciar\+Graficacion() y Sistema().
+
+\mbox{\Hypertarget{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}\label{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}} 
+\index{Sistema@{Sistema}!noSoportoAnterior@{noSoportoAnterior}}
+\index{noSoportoAnterior@{noSoportoAnterior}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{noSoportoAnterior}{noSoportoAnterior}}
+{\footnotesize\ttfamily bool Sistema\+::no\+Soporto\+Anterior\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+no\+Soporto\+Anterior Booleano que indica si el Ãºltimo archivo fue soportado o no. 
+
+
+
+Definición en la línea 86 del archivo sistema.\+h.
+
+
+
+Referenciado por ejecutar(), iniciar\+Graficacion(), obtener\+Opc\+Arch() y obtener\+Opc\+Dir().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{sistema_8h}{sistema.\+h}}\item 
+\mbox{\hyperlink{sistema_8cpp}{sistema.\+cpp}}\end{DoxyCompactItemize}

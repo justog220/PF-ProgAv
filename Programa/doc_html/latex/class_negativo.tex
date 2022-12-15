@@ -1,0 +1,137 @@
+\hypertarget{class_negativo}{}\doxysection{Referencia de la Clase Negativo}
+\label{class_negativo}\index{Negativo@{Negativo}}
+
+
+Clase que hereda de la clase \mbox{\hyperlink{class_filtros}{Filtros}} mÃ©todos y los redefine para obtener el negativo de una \mbox{\hyperlink{class_imagen}{Imagen}}.  
+
+
+
+
+{\ttfamily \#include $<$negativo.\+h$>$}
+
+Diagrama de herencias de Negativo\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_negativo}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_negativo_a53192d098dd3a6bcd02d664536aba1ce}{Negativo}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_negativo}{Negativo}} Constructor del objeto \mbox{\hyperlink{class_negativo}{Negativo}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imagen}{Imagen}} \mbox{\hyperlink{class_negativo_a87d1b17da45ad0803033bfd9d43a8266}{aplicar\+Filtro}} (\mbox{\hyperlink{class_imagen}{Imagen}} \&imag) override
+\begin{DoxyCompactList}\small\item\em aplicar\+Filtro MÃ©todo heredado de la case \mbox{\hyperlink{class_filtros}{Filtros}}, redefinido para obtener el negativo de una imagen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que hereda de la clase \mbox{\hyperlink{class_filtros}{Filtros}} mÃ©todos y los redefine para obtener el negativo de una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+Permite obtener el negativo de una \mbox{\hyperlink{class_imagen}{Imagen}}. \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 12-\/12-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000015}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+
+\end{DoxyWarning}
+
+
+Definición en la línea 16 del archivo negativo.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_negativo_a53192d098dd3a6bcd02d664536aba1ce}\label{class_negativo_a53192d098dd3a6bcd02d664536aba1ce}} 
+\index{Negativo@{Negativo}!Negativo@{Negativo}}
+\index{Negativo@{Negativo}!Negativo@{Negativo}}
+\doxysubsubsection{\texorpdfstring{Negativo()}{Negativo()}}
+{\footnotesize\ttfamily Negativo\+::\+Negativo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_negativo}{Negativo}} Constructor del objeto \mbox{\hyperlink{class_negativo}{Negativo}}. 
+
+
+
+Definición en la línea 3 del archivo negativo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_negativo_a87d1b17da45ad0803033bfd9d43a8266}\label{class_negativo_a87d1b17da45ad0803033bfd9d43a8266}} 
+\index{Negativo@{Negativo}!aplicarFiltro@{aplicarFiltro}}
+\index{aplicarFiltro@{aplicarFiltro}!Negativo@{Negativo}}
+\doxysubsubsection{\texorpdfstring{aplicarFiltro()}{aplicarFiltro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imagen}{Imagen}} Negativo\+::aplicar\+Filtro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} \&}]{imag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+aplicar\+Filtro MÃ©todo heredado de la case \mbox{\hyperlink{class_filtros}{Filtros}}, redefinido para obtener el negativo de una imagen. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em imag} & \mbox{\hyperlink{class_imagen}{Imagen}} a la cual se le obtiene el negativo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\mbox{\hyperlink{class_imagen}{Imagen}} que es el negativo de una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{class_filtros_a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82}{Filtros}}.
+
+
+
+Definición en la línea 8 del archivo negativo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \mbox{\hyperlink{class_imagen}{Imagen}} img = imag;}
+\DoxyCodeLine{13     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} difR, difG, difB;}
+\DoxyCodeLine{14     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1; i<img.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/1; i++)}
+\DoxyCodeLine{15         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=1; j<img.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}()-\/1; j++)}
+\DoxyCodeLine{16         \{}
+\DoxyCodeLine{17             pix\_aux = img.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19             difR = img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() -\/ pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21             difG = img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() -\/ pix\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23             difB = img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() -\/ pix\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25             pix\_aux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}(difR, difG, difB);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27             img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(i, j, pix\_aux);}
+\DoxyCodeLine{28         \}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keywordflow}{return} img;}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Pixel\+::get\+B(), Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Pixel\+::get\+G(), Imagen\+::get\+Pixel(), Pixel\+::get\+R(), Imagen\+::get\+Rango(), Imagen\+::set\+Pixel() y Pixel\+::set\+Pixel\+RGB().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{negativo_8h}{negativo.\+h}}\item 
+\mbox{\hyperlink{negativo_8cpp}{negativo.\+cpp}}\end{DoxyCompactItemize}

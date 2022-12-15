@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['main_587',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
-  ['main_2ecpp_588',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['maximafrecuencia_589',['maximaFrecuencia',['../class_graficador_histograma.html#ac34463c6ba909660c4026641d2c134d8',1,'GraficadorHistograma']]],
-  ['moc_5fpredefs_2eh_590',['moc_predefs.h',['../moc__predefs_8h.html',1,'']]],
-  ['mostraratajos_591',['mostrarAtajos',['../class_sistema.html#a6a5ed28b40bb0c15c47b9ed4f56326b1',1,'Sistema']]],
-  ['mousepressevent_592',['mousePressEvent',['../class_ventana_de_graficacion.html#af57dc06f8c175214ff5597e388d46afc',1,'VentanaDeGraficacion']]]
+  ['negativo_153',['Negativo',['../class_negativo.html',1,'Negativo'],['../class_negativo.html#a53192d098dd3a6bcd02d664536aba1ce',1,'Negativo::Negativo()']]],
+  ['negativo_2ecpp_154',['negativo.cpp',['../negativo_8cpp.html',1,'']]],
+  ['negativo_2eh_155',['negativo.h',['../negativo_8h.html',1,'']]],
+  ['nosoportoanterior_156',['noSoportoAnterior',['../class_sistema.html#afae7cfb7e99dbf395ecb30855f3bd2e8',1,'Sistema']]]
 ];

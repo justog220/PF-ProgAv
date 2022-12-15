@@ -1,0 +1,417 @@
+\hypertarget{class_algoritmo_del_pintor}{}\doxysection{Referencia de la Clase Algoritmo\+Del\+Pintor}
+\label{class_algoritmo_del_pintor}\index{AlgoritmoDelPintor@{AlgoritmoDelPintor}}
+
+
+Clase capaz de aplicarle el algoritmo del pintor a una \mbox{\hyperlink{class_imagen}{Imagen}}.  
+
+
+
+
+{\ttfamily \#include $<$algoritmodelpintor.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_algoritmo_del_pintor_a3c24d1efb8f7ac3a31617b6cde6e6e2d}{Algoritmo\+Del\+Pintor}} (\mbox{\hyperlink{class_imagen}{Imagen}} img)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_algoritmo_del_pintor}{Algoritmo\+Del\+Pintor}} Constructor del objeto algoritmo del pintor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imagen}{Imagen}} \mbox{\hyperlink{class_algoritmo_del_pintor_af9d1b2a7a8ca75ccb92c3f280555e947}{aplicar\+Algoritmo}} (int f\+\_\+0, int c\+\_\+0)
+\begin{DoxyCompactList}\small\item\em aplicar\+Algoritmo MÃ©todo que permite aplicar el algoritmo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algoritmo_del_pintor_a22e7dbbc707435aeb00523292d1987aa}{pintar\+Vecinos}} (int f, int c, \mbox{\hyperlink{class_pixel}{Pixel}} pixel\+Comparacion, unsigned int tolerancia)
+\begin{DoxyCompactList}\small\item\em pintar\+Vecinos MÃ©todo privado que permite pintar aquellos \mbox{\hyperlink{class_pixel}{Pixel}} que sean vecinos. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_algoritmo_del_pintor_a90f8c3e2dd27db2a6a6e9abbbe076cbc}{preguntar\+Rango\+De\+Tolerancia}} (int maximo\+\_\+rango\+\_\+imag)
+\begin{DoxyCompactList}\small\item\em preguntar\+Rango\+De\+Tolerancia MÃ©todo que permite preguntarle al usuario el rango de tolerancia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_algoritmo_del_pintor_aded5e3b53cabbc40d07a399b614da5c5}{inicializar\+Matriz\+De\+Analisis}} (int f, int c)
+\begin{DoxyCompactList}\small\item\em inicializar\+Matriz\+De\+Analisis MÃ©todo que permite inicializar el atributo fue\+\_\+analizado. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_algoritmo_del_pintor_a4815326da0502f08c38070030802cb79}{es\+Vecino}} (\mbox{\hyperlink{class_pixel}{Pixel}} pixel\+\_\+pintado, \mbox{\hyperlink{class_pixel}{Pixel}} analisis, unsigned int tolerancia)
+\begin{DoxyCompactList}\small\item\em es\+Vecino MÃ©todo que devuelve si un pixel es vecino de otro o no. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_imagen}{Imagen}} \mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}}
+\item 
+vector$<$ vector$<$ bool $>$ $>$ \mbox{\hyperlink{class_algoritmo_del_pintor_a642bc493f4c315a3f1793c5e82836d2b}{fue\+\_\+analizado}}
+\item 
+vector$<$ \mbox{\hyperlink{struct_posicion}{Posicion}} $>$ \mbox{\hyperlink{class_algoritmo_del_pintor_afc4b3c9dfac6cf72371916fffb51ecf0}{vecinos}} = \{\{-\/1,0\},\{-\/1,1\},\{0,1\},\{1,1\},\{1,0\},\{1,-\/1\},\{0,-\/1\},\{-\/1,-\/1\}\}
+\item 
+int \mbox{\hyperlink{class_algoritmo_del_pintor_adacb2f3c91fb1ed17711c66542a86efa}{profundidad}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase capaz de aplicarle el algoritmo del pintor a una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+A partir de un \mbox{\hyperlink{class_pixel}{Pixel}} inicial, busca los vecinos de este teniendo en cuenta cierta nivel de tolerancia. Habiendo identificado un \mbox{\hyperlink{class_pixel}{Pixel}} como vecino, lo pinta de azul. \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 24-\/11-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+
+\end{DoxyWarning}
+
+
+Definición en la línea 27 del archivo algoritmodelpintor.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_algoritmo_del_pintor_a3c24d1efb8f7ac3a31617b6cde6e6e2d}\label{class_algoritmo_del_pintor_a3c24d1efb8f7ac3a31617b6cde6e6e2d}} 
+\index{AlgoritmoDelPintor@{AlgoritmoDelPintor}!AlgoritmoDelPintor@{AlgoritmoDelPintor}}
+\index{AlgoritmoDelPintor@{AlgoritmoDelPintor}!AlgoritmoDelPintor@{AlgoritmoDelPintor}}
+\doxysubsubsection{\texorpdfstring{AlgoritmoDelPintor()}{AlgoritmoDelPintor()}}
+{\footnotesize\ttfamily Algoritmo\+Del\+Pintor\+::\+Algoritmo\+Del\+Pintor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}}}]{img }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_algoritmo_del_pintor}{Algoritmo\+Del\+Pintor}} Constructor del objeto algoritmo del pintor. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em img} & \mbox{\hyperlink{class_imagen}{Imagen}} sobre la que se desea pintar una regiÃ³n. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 3 del archivo algoritmodelpintor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{5     \mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}} = img;}
+\DoxyCodeLine{6 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a imag.
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_algoritmo_del_pintor_af9d1b2a7a8ca75ccb92c3f280555e947}\label{class_algoritmo_del_pintor_af9d1b2a7a8ca75ccb92c3f280555e947}} 
+\index{AlgoritmoDelPintor@{AlgoritmoDelPintor}!aplicarAlgoritmo@{aplicarAlgoritmo}}
+\index{aplicarAlgoritmo@{aplicarAlgoritmo}!AlgoritmoDelPintor@{AlgoritmoDelPintor}}
+\doxysubsubsection{\texorpdfstring{aplicarAlgoritmo()}{aplicarAlgoritmo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imagen}{Imagen}} Algoritmo\+Del\+Pintor\+::aplicar\+Algoritmo (\begin{DoxyParamCaption}\item[{int}]{f\+\_\+0,  }\item[{int}]{c\+\_\+0 }\end{DoxyParamCaption})}
+
+
+
+aplicar\+Algoritmo MÃ©todo que permite aplicar el algoritmo. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em f\+\_\+0} & Es el valor de la fila desde la cuÃ¡l se desean pintar los vecinos. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c\+\_\+0} & Es el valor de la columna desde la cuÃ¡l se desean pintar los vecinos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve la \mbox{\hyperlink{class_imagen}{Imagen}} a la cual se le han modificado el pixel de inicio y sus vecinos. 
+\end{DoxyReturn}
+
+
+Definición en la línea 8 del archivo algoritmodelpintor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_pixel}{Pixel}} pixel\_inicial = \mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}}.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(f\_0, c\_0);}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \mbox{\hyperlink{class_algoritmo_del_pintor_aded5e3b53cabbc40d07a399b614da5c5}{inicializarMatrizDeAnalisis}}(\mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), \mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}}.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}());}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} rango\_tolerancia = \mbox{\hyperlink{class_algoritmo_del_pintor_a90f8c3e2dd27db2a6a6e9abbbe076cbc}{preguntarRangoDeTolerancia}}(\mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}}.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}());}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \mbox{\hyperlink{class_algoritmo_del_pintor_adacb2f3c91fb1ed17711c66542a86efa}{profundidad}} = 0;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \mbox{\hyperlink{class_algoritmo_del_pintor_a22e7dbbc707435aeb00523292d1987aa}{pintarVecinos}}(f\_0, c\_0, pixel\_inicial, rango\_tolerancia);}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}};}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Imagen\+::get\+Pixel(), Imagen\+::get\+Rango(), imag, inicializar\+Matriz\+De\+Analisis(), pintar\+Vecinos(), preguntar\+Rango\+De\+Tolerancia() y profundidad.
+
+
+
+Referenciado por Ventana\+De\+Graficacion\+::mouse\+Press\+Event().
+
+\mbox{\Hypertarget{class_algoritmo_del_pintor_a4815326da0502f08c38070030802cb79}\label{class_algoritmo_del_pintor_a4815326da0502f08c38070030802cb79}} 
+\index{AlgoritmoDelPintor@{AlgoritmoDelPintor}!esVecino@{esVecino}}
+\index{esVecino@{esVecino}!AlgoritmoDelPintor@{AlgoritmoDelPintor}}
+\doxysubsubsection{\texorpdfstring{esVecino()}{esVecino()}}
+{\footnotesize\ttfamily bool Algoritmo\+Del\+Pintor\+::es\+Vecino (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pixel}{Pixel}}}]{pixel\+\_\+pintado,  }\item[{\mbox{\hyperlink{class_pixel}{Pixel}}}]{analisis,  }\item[{unsigned int}]{tolerancia }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+es\+Vecino MÃ©todo que devuelve si un pixel es vecino de otro o no. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em pixel\+\_\+pintado} & \mbox{\hyperlink{class_pixel}{Pixel}} respecto al cual se compara. \\
+\hline
+\mbox{\texttt{ in}}  & {\em analisis} & \mbox{\hyperlink{class_pixel}{Pixel}} bajo anÃ¡lisis \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Crea el objeto. 
+\end{DoxyReturn}
+
+
+Definición en la línea 66 del archivo algoritmodelpintor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67 \{}
+\DoxyCodeLine{68     \textcolor{keywordtype}{bool} rEnRango = analisis.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}() <= pixel\_pintado.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()+int(tolerancia) and analisis.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}() >= pixel\_pintado.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()-\/ int(tolerancia);}
+\DoxyCodeLine{69     \textcolor{keywordtype}{bool} bEnRango = analisis.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}() <= pixel\_pintado.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()+int(tolerancia) and analisis.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}() >= pixel\_pintado.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()-\/ int(tolerancia);}
+\DoxyCodeLine{70     \textcolor{keywordtype}{bool} gEnRango = analisis.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}() <= pixel\_pintado.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()+int(tolerancia) and analisis.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}() >= pixel\_pintado.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()-\/ int(tolerancia);}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     \textcolor{keywordflow}{if} (rEnRango and gEnRango and bEnRango)\{}
+\DoxyCodeLine{73         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{74     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{75         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{76     \}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Pixel\+::get\+B(), Pixel\+::get\+G() y Pixel\+::get\+R().
+
+
+
+Referenciado por pintar\+Vecinos().
+
+\mbox{\Hypertarget{class_algoritmo_del_pintor_aded5e3b53cabbc40d07a399b614da5c5}\label{class_algoritmo_del_pintor_aded5e3b53cabbc40d07a399b614da5c5}} 
+\index{AlgoritmoDelPintor@{AlgoritmoDelPintor}!inicializarMatrizDeAnalisis@{inicializarMatrizDeAnalisis}}
+\index{inicializarMatrizDeAnalisis@{inicializarMatrizDeAnalisis}!AlgoritmoDelPintor@{AlgoritmoDelPintor}}
+\doxysubsubsection{\texorpdfstring{inicializarMatrizDeAnalisis()}{inicializarMatrizDeAnalisis()}}
+{\footnotesize\ttfamily void Algoritmo\+Del\+Pintor\+::inicializar\+Matriz\+De\+Analisis (\begin{DoxyParamCaption}\item[{int}]{f,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+inicializar\+Matriz\+De\+Analisis MÃ©todo que permite inicializar el atributo fue\+\_\+analizado. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em f} & NÃºmero de filas que tiene la imÃ¡gen. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & NÃºmero de columnas que tiene la imÃ¡gen. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 59 del archivo algoritmodelpintor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60 \{}
+\DoxyCodeLine{61     vector<vector<bool>> matriz(f, vector<bool> (c, \textcolor{keyword}{false}));}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     \mbox{\hyperlink{class_algoritmo_del_pintor_a642bc493f4c315a3f1793c5e82836d2b}{fue\_analizado}} = matriz;}
+\DoxyCodeLine{64 \}}
+\end{DoxyCode}
+
+
+Hace referencia a fue\+\_\+analizado.
+
+
+
+Referenciado por aplicar\+Algoritmo().
+
+\mbox{\Hypertarget{class_algoritmo_del_pintor_a22e7dbbc707435aeb00523292d1987aa}\label{class_algoritmo_del_pintor_a22e7dbbc707435aeb00523292d1987aa}} 
+\index{AlgoritmoDelPintor@{AlgoritmoDelPintor}!pintarVecinos@{pintarVecinos}}
+\index{pintarVecinos@{pintarVecinos}!AlgoritmoDelPintor@{AlgoritmoDelPintor}}
+\doxysubsubsection{\texorpdfstring{pintarVecinos()}{pintarVecinos()}}
+{\footnotesize\ttfamily void Algoritmo\+Del\+Pintor\+::pintar\+Vecinos (\begin{DoxyParamCaption}\item[{int}]{f,  }\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_pixel}{Pixel}}}]{pixel\+Comparacion,  }\item[{unsigned int}]{tolerancia }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pintar\+Vecinos MÃ©todo privado que permite pintar aquellos \mbox{\hyperlink{class_pixel}{Pixel}} que sean vecinos. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em f} & Fila del \mbox{\hyperlink{class_pixel}{Pixel}} bajo anÃ¡lisis. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & Columna del \mbox{\hyperlink{class_pixel}{Pixel}} bajo anÃ¡lisis \\
+\hline
+\mbox{\texttt{ in}}  & {\em pixel\+Comparacion} & \mbox{\hyperlink{class_pixel}{Pixel}} respecto al cual se analiza si es vecino. \\
+\hline
+\mbox{\texttt{ in}}  & {\em tolerancia} & Rango de tolerancia segun el cual se juzga si es vecino o no. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 23 del archivo algoritmodelpintor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25     ++\mbox{\hyperlink{class_algoritmo_del_pintor_adacb2f3c91fb1ed17711c66542a86efa}{profundidad}};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}}.\mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{formaParteDeLaImagen}}(f, c) and \mbox{\hyperlink{class_algoritmo_del_pintor_adacb2f3c91fb1ed17711c66542a86efa}{profundidad}} < 58100)\{}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_algoritmo_del_pintor_a4815326da0502f08c38070030802cb79}{esVecino}}(pixelComparacion, \mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}}.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(f, c), tolerancia))\{}
+\DoxyCodeLine{30            \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_algoritmo_del_pintor_a642bc493f4c315a3f1793c5e82836d2b}{fue\_analizado}}.at(f).at(c))}
+\DoxyCodeLine{31            \{}
+\DoxyCodeLine{32                 \mbox{\hyperlink{class_algoritmo_del_pintor_a642bc493f4c315a3f1793c5e82836d2b}{fue\_analizado}}[f][c] = \textcolor{keyword}{true};}
+\DoxyCodeLine{33                 \textcolor{keywordflow}{for} ( \textcolor{keywordtype}{int} vecino = 0; vecino < 8; vecino++)\{}
+\DoxyCodeLine{34                     \mbox{\hyperlink{class_algoritmo_del_pintor_a22e7dbbc707435aeb00523292d1987aa}{pintarVecinos}}(f + \mbox{\hyperlink{class_algoritmo_del_pintor_afc4b3c9dfac6cf72371916fffb51ecf0}{vecinos}}[vecino].f, c + \mbox{\hyperlink{class_algoritmo_del_pintor_afc4b3c9dfac6cf72371916fffb51ecf0}{vecinos}}[vecino].c, pixelComparacion, tolerancia);}
+\DoxyCodeLine{35                 \}}
+\DoxyCodeLine{36                 \mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}}.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(f, c, \mbox{\hyperlink{class_pixel}{Pixel}}(0, 0, 255));\}}
+\DoxyCodeLine{37         \}}
+\DoxyCodeLine{38     \}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     -\/-\/\mbox{\hyperlink{class_algoritmo_del_pintor_adacb2f3c91fb1ed17711c66542a86efa}{profundidad}};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a es\+Vecino(), Imagen\+::forma\+Parte\+De\+La\+Imagen(), fue\+\_\+analizado, Imagen\+::get\+Pixel(), imag, profundidad, Imagen\+::set\+Pixel() y vecinos.
+
+
+
+Referenciado por aplicar\+Algoritmo().
+
+\mbox{\Hypertarget{class_algoritmo_del_pintor_a90f8c3e2dd27db2a6a6e9abbbe076cbc}\label{class_algoritmo_del_pintor_a90f8c3e2dd27db2a6a6e9abbbe076cbc}} 
+\index{AlgoritmoDelPintor@{AlgoritmoDelPintor}!preguntarRangoDeTolerancia@{preguntarRangoDeTolerancia}}
+\index{preguntarRangoDeTolerancia@{preguntarRangoDeTolerancia}!AlgoritmoDelPintor@{AlgoritmoDelPintor}}
+\doxysubsubsection{\texorpdfstring{preguntarRangoDeTolerancia()}{preguntarRangoDeTolerancia()}}
+{\footnotesize\ttfamily unsigned int Algoritmo\+Del\+Pintor\+::preguntar\+Rango\+De\+Tolerancia (\begin{DoxyParamCaption}\item[{int}]{maximo\+\_\+rango\+\_\+imag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+preguntar\+Rango\+De\+Tolerancia MÃ©todo que permite preguntarle al usuario el rango de tolerancia. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em maximo\+\_\+rango\+\_\+imag} & El mÃ¡ximo rango de una \mbox{\hyperlink{class_imagen}{Imagen}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve un uint que es el rango de tolerancia. 
+\end{DoxyReturn}
+
+
+Definición en la línea 44 del archivo algoritmodelpintor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{}
+\DoxyCodeLine{46     \textcolor{keywordtype}{int} tolerancia;}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese el rango de tolerancia que desea considerar: "{}};}
+\DoxyCodeLine{49     cin>>tolerancia;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{keywordflow}{while}(tolerancia < 0 or tolerancia > maximo\_rango\_imag)\{}
+\DoxyCodeLine{52         cout << \textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese un valor de tolerancia dentro del rango admitido por la imagen [0, "{}}<<maximo\_rango\_imag<<\textcolor{stringliteral}{"{}]: "{}};}
+\DoxyCodeLine{53         cin>>tolerancia;}
+\DoxyCodeLine{54     \}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{keywordflow}{return} tolerancia;}
+\DoxyCodeLine{57 \}}
+
+\end{DoxyCode}
+
+
+Referenciado por aplicar\+Algoritmo().
+
+
+
+\doxysubsection{Documentación de los campos}
+\mbox{\Hypertarget{class_algoritmo_del_pintor_a642bc493f4c315a3f1793c5e82836d2b}\label{class_algoritmo_del_pintor_a642bc493f4c315a3f1793c5e82836d2b}} 
+\index{AlgoritmoDelPintor@{AlgoritmoDelPintor}!fue\_analizado@{fue\_analizado}}
+\index{fue\_analizado@{fue\_analizado}!AlgoritmoDelPintor@{AlgoritmoDelPintor}}
+\doxysubsubsection{\texorpdfstring{fue\_analizado}{fue\_analizado}}
+{\footnotesize\ttfamily vector$<$vector$<$bool$>$ $>$ Algoritmo\+Del\+Pintor\+::fue\+\_\+analizado\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em fue\+\_\+analizado} & Matriz de booleanos del tamaÃ±o de imag, cada elemento representa un \mbox{\hyperlink{class_pixel}{Pixel}} de la \mbox{\hyperlink{class_imagen}{Imagen}} y el booleano almacenado tiene cierto valor dependiendo de si fue analizado o no. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 73 del archivo algoritmodelpintor.\+h.
+
+
+
+Referenciado por inicializar\+Matriz\+De\+Analisis() y pintar\+Vecinos().
+
+\mbox{\Hypertarget{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}\label{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}} 
+\index{AlgoritmoDelPintor@{AlgoritmoDelPintor}!imag@{imag}}
+\index{imag@{imag}!AlgoritmoDelPintor@{AlgoritmoDelPintor}}
+\doxysubsubsection{\texorpdfstring{imag}{imag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imagen}{Imagen}} Algoritmo\+Del\+Pintor\+::imag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em imag} & \mbox{\hyperlink{class_imagen}{Imagen}} sobre la cual se aplica el algoritmo. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 50 del archivo algoritmodelpintor.\+h.
+
+
+
+Referenciado por Algoritmo\+Del\+Pintor(), aplicar\+Algoritmo() y pintar\+Vecinos().
+
+\mbox{\Hypertarget{class_algoritmo_del_pintor_adacb2f3c91fb1ed17711c66542a86efa}\label{class_algoritmo_del_pintor_adacb2f3c91fb1ed17711c66542a86efa}} 
+\index{AlgoritmoDelPintor@{AlgoritmoDelPintor}!profundidad@{profundidad}}
+\index{profundidad@{profundidad}!AlgoritmoDelPintor@{AlgoritmoDelPintor}}
+\doxysubsubsection{\texorpdfstring{profundidad}{profundidad}}
+{\footnotesize\ttfamily int Algoritmo\+Del\+Pintor\+::profundidad\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em profundidad} & Profundidad de la llamada al mÃ©todo recursiva. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 103 del archivo algoritmodelpintor.\+h.
+
+
+
+Referenciado por aplicar\+Algoritmo() y pintar\+Vecinos().
+
+\mbox{\Hypertarget{class_algoritmo_del_pintor_afc4b3c9dfac6cf72371916fffb51ecf0}\label{class_algoritmo_del_pintor_afc4b3c9dfac6cf72371916fffb51ecf0}} 
+\index{AlgoritmoDelPintor@{AlgoritmoDelPintor}!vecinos@{vecinos}}
+\index{vecinos@{vecinos}!AlgoritmoDelPintor@{AlgoritmoDelPintor}}
+\doxysubsubsection{\texorpdfstring{vecinos}{vecinos}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{struct_posicion}{Posicion}} $>$ Algoritmo\+Del\+Pintor\+::vecinos = \{\{-\/1,0\},\{-\/1,1\},\{0,1\},\{1,1\},\{1,0\},\{1,-\/1\},\{0,-\/1\},\{-\/1,-\/1\}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em vecinos} & Vector de Posiciones, que representa la de los vecinos. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 98 del archivo algoritmodelpintor.\+h.
+
+
+
+Referenciado por pintar\+Vecinos().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{algoritmodelpintor_8h}{algoritmodelpintor.\+h}}\item 
+\mbox{\hyperlink{algoritmodelpintor_8cpp}{algoritmodelpintor.\+cpp}}\end{DoxyCompactItemize}

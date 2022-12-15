@@ -219,7 +219,7 @@ Métodos públicos</h2></td></tr>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">float</span> acumuladorR = 0;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">float</span> acumuladorG = 0;</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordtype">float</span> acumuladorB = 0;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="tst__ei__autotest_8cpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> nivel = 0; nivel &lt; frecuenciasR.size(); nivel ++)</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">for</span>(uint nivel = 0; nivel &lt; frecuenciasR.size(); nivel ++)</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    {</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        acumuladorR += pow((nivel - promedios.at(0)), 2) * frecuenciasR[nivel];</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        acumuladorG += pow((nivel - promedios.at(1)), 2) * frecuenciasG[nivel];</div>
@@ -237,7 +237,6 @@ Métodos públicos</h2></td></tr>
 <div class="ttc" id="aclass_procesador_estadistico_html_ab89524875bd7094f966672761a597a8e"><div class="ttname"><a href="class_procesador_estadistico.html#ab89524875bd7094f966672761a597a8e">ProcesadorEstadistico::devuelveFrecuenciaB</a></div><div class="ttdeci">vector&lt; int &gt; devuelveFrecuenciaB(Imagen &amp;img)</div><div class="ttdoc">devuelveFrecuenciaB Devuelve la frecuencia de los distintos niveles de B</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00050">procesadorestadistico.cpp:50</a></div></div>
 <div class="ttc" id="aclass_procesador_estadistico_html_ad3743c1b10e04d9f79096e1af3e82ba2"><div class="ttname"><a href="class_procesador_estadistico.html#ad3743c1b10e04d9f79096e1af3e82ba2">ProcesadorEstadistico::devuelveFrecuenciaG</a></div><div class="ttdeci">vector&lt; int &gt; devuelveFrecuenciaG(Imagen &amp;img)</div><div class="ttdoc">devuelveFrecuenciaG Devuelve la frecuencia de los distintos niveles de G.</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00030">procesadorestadistico.cpp:30</a></div></div>
 <div class="ttc" id="aclass_procesador_estadistico_html_af0aeba05688407d40254efe57ba8b418"><div class="ttname"><a href="class_procesador_estadistico.html#af0aeba05688407d40254efe57ba8b418">ProcesadorEstadistico::devolverPromedioRGB</a></div><div class="ttdeci">vector&lt; float &gt; devolverPromedioRGB(Imagen &amp;img)</div><div class="ttdoc">devolverPromedioRGB MÃ©todo que devuelve el promedio de la intensidad de R, G y B en una Imagen</div><div class="ttdef"><b>Definition:</b> <a href="procesadorestadistico_8cpp_source.html#l00259">procesadorestadistico.cpp:259</a></div></div>
-<div class="ttc" id="atst__ei__autotest_8cpp_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="tst__ei__autotest_8cpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition:</b> <a href="tst__ei__autotest_8cpp_source.html#l00011">tst_ei_autotest.cpp:11</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Hace referencia a <a class="el" href="procesadorestadistico_8cpp_source.html#l00259">devolverPromedioRGB()</a>, <a class="el" href="procesadorestadistico_8cpp_source.html#l00050">devuelveFrecuenciaB()</a>, <a class="el" href="procesadorestadistico_8cpp_source.html#l00030">devuelveFrecuenciaG()</a>, <a class="el" href="procesadorestadistico_8cpp_source.html#l00010">devuelveFrecuenciaR()</a> y <a class="el" href="imagen_8cpp_source.html#l00099">Imagen::getNroPixeles()</a>.</p>
 
@@ -279,7 +278,7 @@ Métodos públicos</h2></td></tr>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    vector&lt;int&gt; promedios;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> aux;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="tst__ei__autotest_8cpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> nivel = 0; nivel &lt; frecuenciaR.size(); nivel++)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">for</span>(uint nivel = 0; nivel &lt; frecuenciaR.size(); nivel++)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        aux = frecuenciaR[nivel] + frecuenciaG[nivel] + frecuenciaB[nivel];</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        promedios.push_back(aux/3);</div>
@@ -337,7 +336,7 @@ Métodos públicos</h2></td></tr>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">//    return (mayor+menor)/2;</span></div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="tst__ei__autotest_8cpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> acumulador = 0, pixeles = 0;<span class="comment">//(img-&gt;getFilas()*img-&gt;getColumnas());</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    uint acumulador = 0, pixeles = 0;<span class="comment">//(img-&gt;getFilas()*img-&gt;getColumnas());</span></div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;img.<a class="code" href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">getFilas</a>(); i++)</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;img.<a class="code" href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">getColumnas</a>(); j++)</div>
@@ -353,8 +352,6 @@ Métodos públicos</h2></td></tr>
 <div class="ttc" id="aclass_pixel_html_ae9494a22629e331242fd1e7508743655"><div class="ttname"><a href="class_pixel.html#ae9494a22629e331242fd1e7508743655">Pixel::getIntensidad</a></div><div class="ttdeci">int getIntensidad()</div><div class="ttdoc">getIntensidad Devuelve la intensidad del Pixel, si es de intensidades.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00059">pixel.cpp:59</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Hace referencia a <a class="el" href="imagen_8cpp_source.html#l00052">Imagen::getColumnas()</a>, <a class="el" href="imagen_8cpp_source.html#l00047">Imagen::getFilas()</a>, <a class="el" href="pixel_8cpp_source.html#l00059">Pixel::getIntensidad()</a> y <a class="el" href="imagen_8cpp_source.html#l00022">Imagen::getPixel()</a>.</p>
-
-<p class="reference">Referenciado por <a class="el" href="tst__ei__autotest_8cpp_source.html#l00486">EI_AutoTest::getIntensidadMediaYLocalLuegoDeSuavizado01()</a>.</p>
 
 </div>
 </div>
@@ -394,7 +391,7 @@ Métodos públicos</h2></td></tr>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordtype">float</span> acumuladorR = 0;</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordtype">float</span> acumuladorG = 0;</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordtype">float</span> acumuladorB = 0;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="tst__ei__autotest_8cpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> nivel = 0; nivel &lt; frecuenciasR.size(); nivel ++)</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">for</span>(uint nivel = 0; nivel &lt; frecuenciasR.size(); nivel ++)</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    {</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        acumuladorR += (frecuenciasR[nivel]*nivel);</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        acumuladorG += (frecuenciasG[nivel]*nivel);</div>
@@ -597,8 +594,6 @@ Métodos públicos</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">Hace referencia a <a class="el" href="procesadorestadistico_8cpp_source.html#l00010">devuelveFrecuenciaR()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="tst__ei__autotest_8cpp_source.html#l00418">EI_AutoTest::getPixelGrisMasFrecuenteYSuCantidad01()</a>.</p>
-
 </div>
 </div>
 <a id="a069647af14c5007468ba4ba715eca6f2"></a>
@@ -649,7 +644,7 @@ Métodos públicos</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">Hace referencia a <a class="el" href="imagen_8cpp_source.html#l00052">Imagen::getColumnas()</a>, <a class="el" href="imagen_8cpp_source.html#l00047">Imagen::getFilas()</a>, <a class="el" href="imagen_8cpp_source.html#l00022">Imagen::getPixel()</a>, <a class="el" href="pixel_8cpp_source.html#l00044">Pixel::getR()</a> y <a class="el" href="imagen_8cpp_source.html#l00057">Imagen::getRango()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="procesadorestadistico_8cpp_source.html#l00284">devolverDesviacionEstandarRGB()</a>, <a class="el" href="procesadorestadistico_8cpp_source.html#l00074">devolverFrecuenciaPromedio()</a>, <a class="el" href="procesadorestadistico_8cpp_source.html#l00259">devolverPromedioRGB()</a>, <a class="el" href="procesadorestadistico_8cpp_source.html#l00069">devuelveFrecuenciaIntensidad()</a>, <a class="el" href="procesadorestadistico_8cpp_source.html#l00092">devuelveRMasFrecuente()</a>, <a class="el" href="tst__ei__autotest_8cpp_source.html#l00452">EI_AutoTest::getPixelColorMasFrecuenteYSuCantidad01()</a> y <a class="el" href="graficadorhistograma_8cpp_source.html#l00004">GraficadorHistograma::GraficadorHistograma()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="procesadorestadistico_8cpp_source.html#l00284">devolverDesviacionEstandarRGB()</a>, <a class="el" href="procesadorestadistico_8cpp_source.html#l00074">devolverFrecuenciaPromedio()</a>, <a class="el" href="procesadorestadistico_8cpp_source.html#l00259">devolverPromedioRGB()</a>, <a class="el" href="procesadorestadistico_8cpp_source.html#l00069">devuelveFrecuenciaIntensidad()</a>, <a class="el" href="procesadorestadistico_8cpp_source.html#l00092">devuelveRMasFrecuente()</a> y <a class="el" href="graficadorhistograma_8cpp_source.html#l00004">GraficadorHistograma::GraficadorHistograma()</a>.</p>
 
 </div>
 </div>
@@ -731,8 +726,6 @@ Métodos públicos</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">Hace referencia a <a class="el" href="procesadorestadistico_8cpp_source.html#l00092">devuelveRMasFrecuente()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="tst__ei__autotest_8cpp_source.html#l00418">EI_AutoTest::getPixelGrisMasFrecuenteYSuCantidad01()</a>.</p>
-
 </div>
 </div>
 <a id="aa98ee4c6275a1ff66aa720e5b842a19f"></a>
@@ -777,7 +770,7 @@ Métodos públicos</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">Hace referencia a <a class="el" href="procesadorestadistico_8cpp_source.html#l00010">devuelveFrecuenciaR()</a>.</p>
 
-<p class="reference">Referenciado por <a class="el" href="procesadorestadistico_8cpp_source.html#l00136">devuelveIntensidadMasFrecuente()</a>, <a class="el" href="tst__ei__autotest_8cpp_source.html#l00452">EI_AutoTest::getPixelColorMasFrecuenteYSuCantidad01()</a> y <a class="el" href="procesadorestadistico_8cpp_source.html#l00242">informarDatosEstadisticos()</a>.</p>
+<p class="reference">Referenciado por <a class="el" href="procesadorestadistico_8cpp_source.html#l00136">devuelveIntensidadMasFrecuente()</a> y <a class="el" href="procesadorestadistico_8cpp_source.html#l00242">informarDatosEstadisticos()</a>.</p>
 
 </div>
 </div>
@@ -1006,7 +999,7 @@ Métodos públicos</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_procesador_estadistico.html">ProcesadorEstadistico</a></li>
-    <li class="footer">Generado el Miércoles, 14 de Diciembre de 2022 19:19:24 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Jueves, 15 de Diciembre de 2022 16:23:03 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

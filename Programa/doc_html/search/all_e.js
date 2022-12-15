@@ -1,9 +1,17 @@
 var searchData=
 [
-  ['obteneropcarch_597',['obtenerOpcArch',['../class_sistema.html#acd5790947da21221e91e603a7bafd0df',1,'Sistema']]],
-  ['obteneropcdir_598',['obtenerOpcDir',['../class_sistema.html#a3d21b03b0accde8d77a3b0baea7fad06',1,'Sistema']]],
-  ['obtenerpuntobinarizacion_599',['obtenerPuntoBinarizacion',['../class_binarizado.html#a5adc370c96c8d0122a233d27bc84b475',1,'Binarizado']]],
-  ['obtienerutaguardado_600',['obtieneRutaGuardado',['../class_archivos_a_i_c.html#a35f900f9c3eb931e0f17cd82a6c699e1',1,'ArchivosAIC::obtieneRutaGuardado()'],['../class_archivos_p_n_m.html#ab18c2f63835fa6482204ca1d55783c53',1,'ArchivosPNM::obtieneRutaGuardado()']]],
-  ['opcarch_601',['opcArch',['../class_ventana_de_graficacion.html#a08d8e9f6cc2414e2f3f82d8a5e57f74d',1,'VentanaDeGraficacion']]],
-  ['opcdir_602',['opcDir',['../class_ventana_de_graficacion.html#ae39f47c78d1e0089c6a35e889999d51b',1,'VentanaDeGraficacion']]]
+  ['pagina_5fprincipal_2eh_163',['pagina_principal.h',['../pagina__principal_8h.html',1,'']]],
+  ['paintgl_164',['paintGL',['../class_graficador_histograma.html#a840da15e6339fcaf13547cb188458671',1,'GraficadorHistograma::paintGL()'],['../class_ventana_de_graficacion.html#ae9cad487723447a039460f4fdd51ed44',1,'VentanaDeGraficacion::paintGL()']]],
+  ['pintarvecinos_165',['pintarVecinos',['../class_algoritmo_del_pintor.html#a22e7dbbc707435aeb00523292d1987aa',1,'AlgoritmoDelPintor']]],
+  ['pixel_166',['Pixel',['../class_pixel.html',1,'Pixel'],['../class_pixel.html#a49bf81f6c49e9ac9a963ffcbf4e03576',1,'Pixel::Pixel(int red, int green, int blue)'],['../class_pixel.html#a27ad99a2f705e635c42d242d530d4756',1,'Pixel::Pixel()']]],
+  ['pixel_2ecpp_167',['pixel.cpp',['../pixel_8cpp.html',1,'']]],
+  ['pixel_2eh_168',['pixel.h',['../pixel_8h.html',1,'']]],
+  ['posicion_169',['Posicion',['../struct_posicion.html',1,'']]],
+  ['preguntarrangodetolerancia_170',['preguntarRangoDeTolerancia',['../class_algoritmo_del_pintor.html#a90f8c3e2dd27db2a6a6e9abbbe076cbc',1,'AlgoritmoDelPintor']]],
+  ['procesadorestad_171',['procesadorEstad',['../class_graficador_histograma.html#a2f0fb1fe6c5afef5f7793aeb6e3455d7',1,'GraficadorHistograma']]],
+  ['procesadorestadistico_172',['ProcesadorEstadistico',['../class_procesador_estadistico.html',1,'ProcesadorEstadistico'],['../class_procesador_estadistico.html#aa6a9357c623868ceec93f2f32dc33a67',1,'ProcesadorEstadistico::ProcesadorEstadistico()']]],
+  ['procesadorestadistico_2ecpp_173',['procesadorestadistico.cpp',['../procesadorestadistico_8cpp.html',1,'']]],
+  ['procesadorestadistico_2eh_174',['procesadorestadistico.h',['../procesadorestadistico_8h.html',1,'']]],
+  ['profundidad_175',['profundidad',['../class_algoritmo_del_pintor.html#adacb2f3c91fb1ed17711c66542a86efa',1,'AlgoritmoDelPintor']]],
+  ['pseudocolorear_176',['pseudoColorear',['../class_tabla_lut.html#a90edcfa89eaf8f169dda3cec3692915c',1,'TablaLut']]]
 ];

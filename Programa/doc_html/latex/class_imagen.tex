@@ -1,0 +1,863 @@
+\hypertarget{class_imagen}{}\doxysection{Referencia de la Clase Imagen}
+\label{class_imagen}\index{Imagen@{Imagen}}
+
+
+Permite la representacion de una imagen a partir de un arreglo de Pixeles.  
+
+
+
+
+{\ttfamily \#include $<$imagen.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_imagen_ab2e649aa7a105155c7bfdb846abf0528}{Imagen}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_imagen}{Imagen}} Constructor del objeto \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imagen_a310a7ee241a8c546a9d5345937a9f01f}{set\+Tamanio}} ()
+\begin{DoxyCompactList}\small\item\em set\+Tamanio MÃ©todo que permite cambiar el tamaÃ±o de una imÃ¡gen cambia el valor de las columnas y filas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{set\+Pixel}} (int f, int c, \mbox{\hyperlink{class_pixel}{Pixel}} pixel\+Nuevo)
+\begin{DoxyCompactList}\small\item\em set\+Pixel MÃ©todo que permite modificar un \mbox{\hyperlink{class_pixel}{Pixel}} de la imÃ¡gen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pixel}{Pixel}} \mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{get\+Pixel}} (int f, int c)
+\begin{DoxyCompactList}\small\item\em get\+Pixel MÃ©todo que permite devolver un \mbox{\hyperlink{class_pixel}{Pixel}} de la imÃ¡gen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imagen_a745584efb94c3a60c7d77017b2bfb512}{set\+Filas}} (int f)
+\begin{DoxyCompactList}\small\item\em set\+Filas MÃ©todo que permite establecer el nÃºmero de filas de la imÃ¡gen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imagen_a2f484fcbef63dfa2fe6c2ee418a7d856}{set\+Columnas}} (int c)
+\begin{DoxyCompactList}\small\item\em set\+Columnas MÃ©todo que permite establecer el nÃºmero de columnas de la imÃ¡gen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imagen_ac6be498c1eadda6e7a5bf603c7ababc3}{set\+Rango}} (int valor)
+\begin{DoxyCompactList}\small\item\em set\+Rango Define el rango leÃ­do de la imÃ¡gen, para luego graficarla correctamente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imagen_aae632c4cd001e04228aad5bf06599818}{set\+Identificador}} (string id)
+\begin{DoxyCompactList}\small\item\em set\+Identificador Permite establecer el identificador de la \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{get\+Filas}} ()
+\begin{DoxyCompactList}\small\item\em get\+Filas Se utiliza para conocer el nÃºmero de filas de la imÃ¡gen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{get\+Columnas}} ()
+\begin{DoxyCompactList}\small\item\em get\+Columnas Se utiliza para conocer el nÃºmero de columnas de la imÃ¡gen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{get\+Rango}} ()
+\begin{DoxyCompactList}\small\item\em get\+Rango Se utiliza para conocer el rango de los pÃ­xeles de la imÃ¡gen. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{get\+Identificador}} ()
+\begin{DoxyCompactList}\small\item\em get\+Identificador Devuelve el identificador de la \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{forma\+Parte\+De\+La\+Imagen}} (int f, int c)
+\begin{DoxyCompactList}\small\item\em forma\+Parte\+De\+La\+Imagen Devuelve si una coordenada (f, c) estÃ¡ dentro de la \mbox{\hyperlink{class_imagen}{Imagen}} o no. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_imagen_a58c23a8f080935956c81dd2f5e24ca2a}{el\+Pixel\+Es\+Esquina}} (int f, int c)
+\begin{DoxyCompactList}\small\item\em el\+Pixel\+Es\+Esquina Devuelve si un \mbox{\hyperlink{class_pixel}{Pixel}} es esquina o no \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imagen_a166b16c639448c813f764b79ae9d3765}{borrar\+Imagen}} ()
+\begin{DoxyCompactList}\small\item\em borrar\+Imagen MÃ©todo que permite vaciar el arreglo de \mbox{\hyperlink{class_pixel}{Pixel}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_imagen_ae76fc902a7063373d645693be2a3fd67}{es\+De\+Intensidades}} ()
+\begin{DoxyCompactList}\small\item\em es\+De\+Intensidades Devuelve si una imagen es de intensidades o no. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_imagen_a80c236f9d60b2ed6776aece3aaf88bcc}{get\+Nro\+Pixeles}} ()
+\begin{DoxyCompactList}\small\item\em get\+Nro\+Pixeles Devuelve el nÃºmero de \mbox{\hyperlink{class_pixel}{Pixel}} de una \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_imagen_a9863c0ebb50aeb19f5dc4d7906ed47d6}{get\+Informacion}} ()
+\begin{DoxyCompactList}\small\item\em get\+Informacion Devuelve la informaciÃ³n de la \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imagen_affda44cc73f0a8bf8cc7dc1021e47f25}{set\+Informacion}} (string value)
+\begin{DoxyCompactList}\small\item\em set\+Informacion Establece la informaciÃ³n de la \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ \mbox{\hyperlink{class_pixel}{Pixel}} $>$ $>$ \mbox{\hyperlink{class_imagen_a3253ba68ee7bba91e57b634a85047404}{imag}}
+\item 
+int \mbox{\hyperlink{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}}
+\item 
+int \mbox{\hyperlink{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}{columnas}}
+\item 
+int \mbox{\hyperlink{class_imagen_ae5b702987b1960f5a3ab6fc20e25cca0}{rango}}
+\item 
+string \mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}}
+\item 
+string \mbox{\hyperlink{class_imagen_a27a72bf1ea6c01a6a4c3fd6ca3bc5264}{informacion}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Permite la representacion de una imagen a partir de un arreglo de Pixeles. 
+
+Es un arreglo bidimensional de Pixeles. Conoce sus pixeles, su tamaÃ±o y el rango de sus pixeles. Puede cambiar su tamaÃ±o o sus pixeles y puede informar su tamaÃ±o y un pixel en espeifico. $\ast$ \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 10-\/09-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000014}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+Debe evitarse realizar muchas instancias de ella porque se requiere de mucha memoria 
+\end{DoxyWarning}
+
+
+Definición en la línea 22 del archivo imagen.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_imagen_ab2e649aa7a105155c7bfdb846abf0528}\label{class_imagen_ab2e649aa7a105155c7bfdb846abf0528}} 
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{Imagen()}{Imagen()}}
+{\footnotesize\ttfamily Imagen\+::\+Imagen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_imagen}{Imagen}} Constructor del objeto \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+
+
+Definición en la línea 3 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_imagen_a166b16c639448c813f764b79ae9d3765}\label{class_imagen_a166b16c639448c813f764b79ae9d3765}} 
+\index{Imagen@{Imagen}!borrarImagen@{borrarImagen}}
+\index{borrarImagen@{borrarImagen}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{borrarImagen()}{borrarImagen()}}
+{\footnotesize\ttfamily void Imagen\+::borrar\+Imagen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+borrar\+Imagen MÃ©todo que permite vaciar el arreglo de \mbox{\hyperlink{class_pixel}{Pixel}}. 
+
+
+
+Definición en la línea 89 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{90 \{}
+\DoxyCodeLine{91     \mbox{\hyperlink{class_imagen_a3253ba68ee7bba91e57b634a85047404}{imag}}.clear();}
+\DoxyCodeLine{92 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a imag.
+
+
+
+Referenciado por Ventana\+De\+Graficacion\+::cargar\+Imagen().
+
+\mbox{\Hypertarget{class_imagen_a58c23a8f080935956c81dd2f5e24ca2a}\label{class_imagen_a58c23a8f080935956c81dd2f5e24ca2a}} 
+\index{Imagen@{Imagen}!elPixelEsEsquina@{elPixelEsEsquina}}
+\index{elPixelEsEsquina@{elPixelEsEsquina}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{elPixelEsEsquina()}{elPixelEsEsquina()}}
+{\footnotesize\ttfamily bool Imagen\+::el\+Pixel\+Es\+Esquina (\begin{DoxyParamCaption}\item[{int}]{f,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+el\+Pixel\+Es\+Esquina Devuelve si un \mbox{\hyperlink{class_pixel}{Pixel}} es esquina o no 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em f} & Valor de la fila. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & Valor de la columna. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+bool que indica si es esquina o no. 
+\end{DoxyReturn}
+
+
+Definición en la línea 72 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73 \{}
+\DoxyCodeLine{74     \textcolor{keywordtype}{bool} esEsquina = \textcolor{keyword}{false};}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \textcolor{keywordflow}{if} (f == 0 and c == 0)\{}
+\DoxyCodeLine{77         esEsquina = \textcolor{keyword}{true};}
+\DoxyCodeLine{78     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (f == 0 and c == \mbox{\hyperlink{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}{columnas}}-\/1) \{}
+\DoxyCodeLine{79         esEsquina = \textcolor{keyword}{true};}
+\DoxyCodeLine{80     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (f == \mbox{\hyperlink{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}}-\/1 and c == 0)\{}
+\DoxyCodeLine{81         esEsquina = \textcolor{keyword}{true};}
+\DoxyCodeLine{82     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (f == \mbox{\hyperlink{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}}-\/1 and c == \mbox{\hyperlink{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}{columnas}}-\/1)\{}
+\DoxyCodeLine{83         esEsquina = \textcolor{keyword}{true};}
+\DoxyCodeLine{84     \}}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86     \textcolor{keywordflow}{return} esEsquina;}
+\DoxyCodeLine{87 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a columnas y filas.
+
+\mbox{\Hypertarget{class_imagen_ae76fc902a7063373d645693be2a3fd67}\label{class_imagen_ae76fc902a7063373d645693be2a3fd67}} 
+\index{Imagen@{Imagen}!esDeIntensidades@{esDeIntensidades}}
+\index{esDeIntensidades@{esDeIntensidades}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{esDeIntensidades()}{esDeIntensidades()}}
+{\footnotesize\ttfamily bool Imagen\+::es\+De\+Intensidades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+es\+De\+Intensidades Devuelve si una imagen es de intensidades o no. 
+
+\begin{DoxyReturn}{Devuelve}
+bool que indica si una \mbox{\hyperlink{class_imagen}{Imagen}} es de intensidades o no. 
+\end{DoxyReturn}
+
+
+Definición en la línea 94 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95 \{}
+\DoxyCodeLine{96     \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}} == \textcolor{stringliteral}{"{}P1"{}} or \mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}} == \textcolor{stringliteral}{"{}P2"{}} or \mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}} == \textcolor{stringliteral}{"{}P4"{}} or \mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}} == \textcolor{stringliteral}{"{}P5"{}});}
+\DoxyCodeLine{97 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a identificador.
+
+\mbox{\Hypertarget{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}\label{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}} 
+\index{Imagen@{Imagen}!formaParteDeLaImagen@{formaParteDeLaImagen}}
+\index{formaParteDeLaImagen@{formaParteDeLaImagen}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{formaParteDeLaImagen()}{formaParteDeLaImagen()}}
+{\footnotesize\ttfamily bool Imagen\+::forma\+Parte\+De\+La\+Imagen (\begin{DoxyParamCaption}\item[{int}]{f,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+forma\+Parte\+De\+La\+Imagen Devuelve si una coordenada (f, c) estÃ¡ dentro de la \mbox{\hyperlink{class_imagen}{Imagen}} o no. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em f} & Valor de la fila. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & Valor de la columna. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+bool que indica si forma parte de la \mbox{\hyperlink{class_imagen}{Imagen}} o no. 
+\end{DoxyReturn}
+
+
+Definición en la línea 67 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68 \{}
+\DoxyCodeLine{69     \textcolor{keywordflow}{return} (f >= 0 and f < filas and c >= 0 and c < \mbox{\hyperlink{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}{columnas}});}
+\DoxyCodeLine{70 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a columnas.
+
+
+
+Referenciado por Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::aplicar\+Filtro(), Filtro\+Pasa\+Bajos\+::aplicar\+Filtro() y Algoritmo\+Del\+Pintor\+::pintar\+Vecinos().
+
+\mbox{\Hypertarget{class_imagen_a85f488958dd299a2c751efe5f390bf08}\label{class_imagen_a85f488958dd299a2c751efe5f390bf08}} 
+\index{Imagen@{Imagen}!getColumnas@{getColumnas}}
+\index{getColumnas@{getColumnas}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{getColumnas()}{getColumnas()}}
+{\footnotesize\ttfamily int Imagen\+::get\+Columnas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Columnas Se utiliza para conocer el nÃºmero de columnas de la imÃ¡gen. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve un entero de 4 bytes que representa el nÃºmero de filas de la imÃ¡gen. 
+\end{DoxyReturn}
+
+
+Definición en la línea 52 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53 \{}
+\DoxyCodeLine{54     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}{columnas}};}
+\DoxyCodeLine{55 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a columnas.
+
+
+
+Referenciado por Algoritmo\+Del\+Pintor\+::aplicar\+Algoritmo(), Contraste\+::aplicar\+Filtro(), Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::aplicar\+Filtro(), Filtro\+Pasa\+Bajos\+::aplicar\+Filtro(), Negativo\+::aplicar\+Filtro(), Binarizado\+::aplicar\+Filtro(), Brillo\+::aumentar\+Brillo(), Procesador\+Estadistico\+::devolver\+Intensidad\+Media(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+B(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+G(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+R(), Archivos\+PNM\+::escribe\+Encabezado(), Archivos\+PNM\+::escribe\+P1(), Archivos\+PNM\+::escribe\+P2(), Archivos\+PNM\+::escribe\+P3(), Archivos\+PNM\+::escribe\+P4(), Archivos\+PNM\+::escribe\+P5(), Archivos\+PNM\+::escribe\+P6(), Archivos\+AIC\+::escribir\+Pixeles(), Ventana\+De\+Graficacion\+::graficar\+Imagen(), Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+B(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+G(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+R(), Archivos\+AIC\+::leer(), Ventana\+De\+Graficacion\+::paint\+GL() y Brillo\+::reducir\+Brillo().
+
+\mbox{\Hypertarget{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}\label{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}} 
+\index{Imagen@{Imagen}!getFilas@{getFilas}}
+\index{getFilas@{getFilas}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{getFilas()}{getFilas()}}
+{\footnotesize\ttfamily int Imagen\+::get\+Filas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Filas Se utiliza para conocer el nÃºmero de filas de la imÃ¡gen. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve un entero de 4 bytes que representa el nÃºmero de filas de la imÃ¡gen. 
+\end{DoxyReturn}
+
+
+Definición en la línea 47 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48 \{}
+\DoxyCodeLine{49     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}};}
+\DoxyCodeLine{50 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a filas.
+
+
+
+Referenciado por Algoritmo\+Del\+Pintor\+::aplicar\+Algoritmo(), Contraste\+::aplicar\+Filtro(), Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::aplicar\+Filtro(), Filtro\+Pasa\+Bajos\+::aplicar\+Filtro(), Negativo\+::aplicar\+Filtro(), Binarizado\+::aplicar\+Filtro(), Brillo\+::aumentar\+Brillo(), Procesador\+Estadistico\+::devolver\+Intensidad\+Media(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+B(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+G(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+R(), Archivos\+PNM\+::escribe\+Encabezado(), Archivos\+PNM\+::escribe\+P1(), Archivos\+PNM\+::escribe\+P2(), Archivos\+PNM\+::escribe\+P3(), Archivos\+PNM\+::escribe\+P4(), Archivos\+PNM\+::escribe\+P5(), Archivos\+PNM\+::escribe\+P6(), Archivos\+AIC\+::escribir\+Pixeles(), Ventana\+De\+Graficacion\+::graficar\+Imagen(), Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+B(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+G(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+R(), Archivos\+AIC\+::leer(), Ventana\+De\+Graficacion\+::mouse\+Press\+Event(), Ventana\+De\+Graficacion\+::paint\+GL() y Brillo\+::reducir\+Brillo().
+
+\mbox{\Hypertarget{class_imagen_ab28b3e13c672139eada95427623a5828}\label{class_imagen_ab28b3e13c672139eada95427623a5828}} 
+\index{Imagen@{Imagen}!getIdentificador@{getIdentificador}}
+\index{getIdentificador@{getIdentificador}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{getIdentificador()}{getIdentificador()}}
+{\footnotesize\ttfamily string Imagen\+::get\+Identificador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Identificador Devuelve el identificador de la \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+\begin{DoxyReturn}{Devuelve}
+string que representa el identificado de la \mbox{\hyperlink{class_imagen}{Imagen}}. 
+\end{DoxyReturn}
+
+
+Definición en la línea 62 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63 \{}
+\DoxyCodeLine{64     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}};}
+\DoxyCodeLine{65 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a identificador.
+
+
+
+Referenciado por Archivos\+PNM\+::escribe\+Encabezado(), Archivos\+AIC\+::escribir\+Encabezado(), Archivos\+PNM\+::guardar(), Espacio\+De\+Trabajo\+::guardar\+Imagen() y Binarizado\+::se\+Puede\+Binarizar().
+
+\mbox{\Hypertarget{class_imagen_a9863c0ebb50aeb19f5dc4d7906ed47d6}\label{class_imagen_a9863c0ebb50aeb19f5dc4d7906ed47d6}} 
+\index{Imagen@{Imagen}!getInformacion@{getInformacion}}
+\index{getInformacion@{getInformacion}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{getInformacion()}{getInformacion()}}
+{\footnotesize\ttfamily string Imagen\+::get\+Informacion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Informacion Devuelve la informaciÃ³n de la \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+\begin{DoxyReturn}{Devuelve}
+InformaciÃ³n de la \mbox{\hyperlink{class_imagen}{Imagen}}. 
+\end{DoxyReturn}
+
+
+Definición en la línea 104 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{105 \{}
+\DoxyCodeLine{106     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_imagen_a27a72bf1ea6c01a6a4c3fd6ca3bc5264}{informacion}};}
+\DoxyCodeLine{107 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a informacion.
+
+
+
+Referenciado por Archivos\+PNM\+::escribe\+Encabezado() y Archivos\+AIC\+::escribir\+Encabezado().
+
+\mbox{\Hypertarget{class_imagen_a80c236f9d60b2ed6776aece3aaf88bcc}\label{class_imagen_a80c236f9d60b2ed6776aece3aaf88bcc}} 
+\index{Imagen@{Imagen}!getNroPixeles@{getNroPixeles}}
+\index{getNroPixeles@{getNroPixeles}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{getNroPixeles()}{getNroPixeles()}}
+{\footnotesize\ttfamily int Imagen\+::get\+Nro\+Pixeles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Nro\+Pixeles Devuelve el nÃºmero de \mbox{\hyperlink{class_pixel}{Pixel}} de una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+\begin{DoxyReturn}{Devuelve}
+NÃºmero de pixeles. 
+\end{DoxyReturn}
+
+
+Definición en la línea 99 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100 \{}
+\DoxyCodeLine{101     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}}*\mbox{\hyperlink{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}{columnas}};}
+\DoxyCodeLine{102 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a columnas y filas.
+
+
+
+Referenciado por Procesador\+Estadistico\+::devolver\+Desviacion\+Estandar\+RGB() y Procesador\+Estadistico\+::devolver\+Promedio\+RGB().
+
+\mbox{\Hypertarget{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}\label{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}} 
+\index{Imagen@{Imagen}!getPixel@{getPixel}}
+\index{getPixel@{getPixel}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{getPixel()}{getPixel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pixel}{Pixel}} Imagen\+::get\+Pixel (\begin{DoxyParamCaption}\item[{int}]{f,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+get\+Pixel MÃ©todo que permite devolver un \mbox{\hyperlink{class_pixel}{Pixel}} de la imÃ¡gen. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em f} & Es el valor de la fila de la cual se devuelve el \mbox{\hyperlink{class_pixel}{Pixel}}. c Es el valor de la columna de la cual se devuelve el \mbox{\hyperlink{class_pixel}{Pixel}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve un objeto de tipo \mbox{\hyperlink{class_pixel}{Pixel}}. 
+\end{DoxyReturn}
+
+
+Definición en la línea 22 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_imagen_a3253ba68ee7bba91e57b634a85047404}{imag}}[f][c];}
+\DoxyCodeLine{25 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a imag.
+
+
+
+Referenciado por Algoritmo\+Del\+Pintor\+::aplicar\+Algoritmo(), Contraste\+::aplicar\+Filtro(), Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::aplicar\+Filtro(), Filtro\+Pasa\+Bajos\+::aplicar\+Filtro(), Negativo\+::aplicar\+Filtro(), Binarizado\+::aplicar\+Filtro(), Brillo\+::aumentar\+Brillo(), Procesador\+Estadistico\+::devolver\+Intensidad\+Media(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+B(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+G(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+R(), Archivos\+PNM\+::escribe\+P1(), Archivos\+PNM\+::escribe\+P2(), Archivos\+PNM\+::escribe\+P3(), Archivos\+PNM\+::escribe\+P4(), Archivos\+PNM\+::escribe\+P5(), Archivos\+PNM\+::escribe\+P6(), Archivos\+AIC\+::escribir\+Pixeles(), Ventana\+De\+Graficacion\+::graficar\+Imagen(), Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+B(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+G(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+R(), Algoritmo\+Del\+Pintor\+::pintar\+Vecinos() y Brillo\+::reducir\+Brillo().
+
+\mbox{\Hypertarget{class_imagen_ab65e8f269da32338d3f2048407e63870}\label{class_imagen_ab65e8f269da32338d3f2048407e63870}} 
+\index{Imagen@{Imagen}!getRango@{getRango}}
+\index{getRango@{getRango}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{getRango()}{getRango()}}
+{\footnotesize\ttfamily int Imagen\+::get\+Rango (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Rango Se utiliza para conocer el rango de los pÃ­xeles de la imÃ¡gen. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve un entero de 4 bytes que representa el rango. 
+\end{DoxyReturn}
+
+
+Definición en la línea 57 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58 \{}
+\DoxyCodeLine{59     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_imagen_ae5b702987b1960f5a3ab6fc20e25cca0}{rango}};}
+\DoxyCodeLine{60 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a rango.
+
+
+
+Referenciado por Algoritmo\+Del\+Pintor\+::aplicar\+Algoritmo(), Contraste\+::aplicar\+Filtro(), Negativo\+::aplicar\+Filtro(), Binarizado\+::aplicar\+Filtro(), Brillo\+::aumentar\+Brillo(), Brillo\+::consultar\+Diferencia(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+B(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+G(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+R(), Archivos\+PNM\+::escribe\+Encabezado(), Ventana\+De\+Graficacion\+::graficar\+Imagen(), Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada(), Archivos\+PNM\+::leer() y Binarizado\+::obtener\+Punto\+Binarizacion().
+
+\mbox{\Hypertarget{class_imagen_a2f484fcbef63dfa2fe6c2ee418a7d856}\label{class_imagen_a2f484fcbef63dfa2fe6c2ee418a7d856}} 
+\index{Imagen@{Imagen}!setColumnas@{setColumnas}}
+\index{setColumnas@{setColumnas}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{setColumnas()}{setColumnas()}}
+{\footnotesize\ttfamily void Imagen\+::set\+Columnas (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+set\+Columnas MÃ©todo que permite establecer el nÃºmero de columnas de la imÃ¡gen. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em c} & Es la cantidad de columnas que se busca establecer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+No devuelve nada, solo modifica los parÃ¡metros. 
+\end{DoxyReturn}
+
+
+Definición en la línea 32 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33 \{}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}{columnas}}=c;}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a columnas.
+
+
+
+Referenciado por Archivos\+AIC\+::leer() y Archivos\+PNM\+::leer().
+
+\mbox{\Hypertarget{class_imagen_a745584efb94c3a60c7d77017b2bfb512}\label{class_imagen_a745584efb94c3a60c7d77017b2bfb512}} 
+\index{Imagen@{Imagen}!setFilas@{setFilas}}
+\index{setFilas@{setFilas}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{setFilas()}{setFilas()}}
+{\footnotesize\ttfamily void Imagen\+::set\+Filas (\begin{DoxyParamCaption}\item[{int}]{f }\end{DoxyParamCaption})}
+
+
+
+set\+Filas MÃ©todo que permite establecer el nÃºmero de filas de la imÃ¡gen. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em f} & Es la cantidad de filas que se busca establecer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+No devuelve nada, solo modifica los parÃ¡metros. 
+\end{DoxyReturn}
+
+
+Definición en la línea 27 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28 \{}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}}=f;}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a filas.
+
+
+
+Referenciado por Archivos\+AIC\+::leer() y Archivos\+PNM\+::leer().
+
+\mbox{\Hypertarget{class_imagen_aae632c4cd001e04228aad5bf06599818}\label{class_imagen_aae632c4cd001e04228aad5bf06599818}} 
+\index{Imagen@{Imagen}!setIdentificador@{setIdentificador}}
+\index{setIdentificador@{setIdentificador}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{setIdentificador()}{setIdentificador()}}
+{\footnotesize\ttfamily void Imagen\+::set\+Identificador (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+set\+Identificador Permite establecer el identificador de la \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em id} & Nuevo identificador de la \mbox{\hyperlink{class_imagen}{Imagen}}. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 42 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43 \{}
+\DoxyCodeLine{44     \mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}} = id;}
+\DoxyCodeLine{45 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a identificador.
+
+
+
+Referenciado por Archivos\+AIC\+::leer() y Archivos\+PNM\+::leer().
+
+\mbox{\Hypertarget{class_imagen_affda44cc73f0a8bf8cc7dc1021e47f25}\label{class_imagen_affda44cc73f0a8bf8cc7dc1021e47f25}} 
+\index{Imagen@{Imagen}!setInformacion@{setInformacion}}
+\index{setInformacion@{setInformacion}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{setInformacion()}{setInformacion()}}
+{\footnotesize\ttfamily void Imagen\+::set\+Informacion (\begin{DoxyParamCaption}\item[{string}]{value }\end{DoxyParamCaption})}
+
+
+
+set\+Informacion Establece la informaciÃ³n de la \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em value} & Nueva informaciÃ³n de la \mbox{\hyperlink{class_imagen}{Imagen}}. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 109 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{110 \{}
+\DoxyCodeLine{111     \mbox{\hyperlink{class_imagen_a27a72bf1ea6c01a6a4c3fd6ca3bc5264}{informacion}} = value;}
+\DoxyCodeLine{112 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a informacion.
+
+
+
+Referenciado por Archivos\+AIC\+::leer() y Archivos\+PNM\+::leer().
+
+\mbox{\Hypertarget{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}\label{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}} 
+\index{Imagen@{Imagen}!setPixel@{setPixel}}
+\index{setPixel@{setPixel}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{setPixel()}{setPixel()}}
+{\footnotesize\ttfamily void Imagen\+::set\+Pixel (\begin{DoxyParamCaption}\item[{int}]{f,  }\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_pixel}{Pixel}}}]{pixel\+Nuevo }\end{DoxyParamCaption})}
+
+
+
+set\+Pixel MÃ©todo que permite modificar un \mbox{\hyperlink{class_pixel}{Pixel}} de la imÃ¡gen. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em f} & Es el valor de la fila en la cual se modifica el \mbox{\hyperlink{class_pixel}{Pixel}}. c Es el valor de la columna en la cual se modifica el \mbox{\hyperlink{class_pixel}{Pixel}}. pixel\+Nuevo Se pasa como parÃ¡metro un objeto \mbox{\hyperlink{class_pixel}{Pixel}} que serÃ¡ el nuevo en la posicion indicada por f y c. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+No devuelve nada, solo modifica los parÃ¡metros. 
+\end{DoxyReturn}
+
+
+Definición en la línea 17 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_imagen_a3253ba68ee7bba91e57b634a85047404}{imag}}[f][c]=pixelNuevo;}
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a imag.
+
+
+
+Referenciado por Contraste\+::aplicar\+Filtro(), Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::aplicar\+Filtro(), Filtro\+Pasa\+Bajos\+::aplicar\+Filtro(), Negativo\+::aplicar\+Filtro(), Binarizado\+::aplicar\+Filtro(), Brillo\+::aumentar\+Brillo(), Archivos\+AIC\+::leer(), Archivos\+PNM\+::leer(), Algoritmo\+Del\+Pintor\+::pintar\+Vecinos() y Brillo\+::reducir\+Brillo().
+
+\mbox{\Hypertarget{class_imagen_ac6be498c1eadda6e7a5bf603c7ababc3}\label{class_imagen_ac6be498c1eadda6e7a5bf603c7ababc3}} 
+\index{Imagen@{Imagen}!setRango@{setRango}}
+\index{setRango@{setRango}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{setRango()}{setRango()}}
+{\footnotesize\ttfamily void Imagen\+::set\+Rango (\begin{DoxyParamCaption}\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+set\+Rango Define el rango leÃ­do de la imÃ¡gen, para luego graficarla correctamente. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em valor} & Es el valor de rango a establecer. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 37 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38 \{}
+\DoxyCodeLine{39     \mbox{\hyperlink{class_imagen_ae5b702987b1960f5a3ab6fc20e25cca0}{rango}} = valor;}
+\DoxyCodeLine{40 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a rango.
+
+
+
+Referenciado por Archivos\+AIC\+::leer() y Archivos\+PNM\+::leer().
+
+\mbox{\Hypertarget{class_imagen_a310a7ee241a8c546a9d5345937a9f01f}\label{class_imagen_a310a7ee241a8c546a9d5345937a9f01f}} 
+\index{Imagen@{Imagen}!setTamanio@{setTamanio}}
+\index{setTamanio@{setTamanio}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{setTamanio()}{setTamanio()}}
+{\footnotesize\ttfamily void Imagen\+::set\+Tamanio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set\+Tamanio MÃ©todo que permite cambiar el tamaÃ±o de una imÃ¡gen cambia el valor de las columnas y filas. 
+
+\begin{DoxyReturn}{Devuelve}
+No devuelve nada, solo modifica los parÃ¡metros. 
+\end{DoxyReturn}
+
+
+Definición en la línea 8 del archivo imagen.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_imagen_a3253ba68ee7bba91e57b634a85047404}{imag}}.resize(\mbox{\hyperlink{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}});}
+\DoxyCodeLine{11     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\mbox{\hyperlink{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}}; i++)}
+\DoxyCodeLine{12     \{}
+\DoxyCodeLine{13         \mbox{\hyperlink{class_imagen_a3253ba68ee7bba91e57b634a85047404}{imag}}[i].resize(\mbox{\hyperlink{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}{columnas}});}
+\DoxyCodeLine{14     \}}
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a columnas, filas y imag.
+
+
+
+Referenciado por Archivos\+AIC\+::leer() y Archivos\+PNM\+::leer().
+
+
+
+\doxysubsection{Documentación de los campos}
+\mbox{\Hypertarget{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}\label{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}} 
+\index{Imagen@{Imagen}!columnas@{columnas}}
+\index{columnas@{columnas}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{columnas}{columnas}}
+{\footnotesize\ttfamily int Imagen\+::columnas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em columnas} & Atributo que representa la cantidad de columnas de Pixeles que tiene la imÃ¡gen. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 164 del archivo imagen.\+h.
+
+
+
+Referenciado por el\+Pixel\+Es\+Esquina(), forma\+Parte\+De\+La\+Imagen(), get\+Columnas(), get\+Nro\+Pixeles(), set\+Columnas() y set\+Tamanio().
+
+\mbox{\Hypertarget{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}\label{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}} 
+\index{Imagen@{Imagen}!filas@{filas}}
+\index{filas@{filas}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{filas}{filas}}
+{\footnotesize\ttfamily int Imagen\+::filas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em filas} & Atributo que representa la cantidad de filas de Pixeles que tiene la imÃ¡gen. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 160 del archivo imagen.\+h.
+
+
+
+Referenciado por el\+Pixel\+Es\+Esquina(), get\+Filas(), get\+Nro\+Pixeles(), set\+Filas() y set\+Tamanio().
+
+\mbox{\Hypertarget{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}\label{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}} 
+\index{Imagen@{Imagen}!identificador@{identificador}}
+\index{identificador@{identificador}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{identificador}{identificador}}
+{\footnotesize\ttfamily string Imagen\+::identificador\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em identificador} & Identificador de la \mbox{\hyperlink{class_imagen}{Imagen}}. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 173 del archivo imagen.\+h.
+
+
+
+Referenciado por es\+De\+Intensidades(), get\+Identificador() y set\+Identificador().
+
+\mbox{\Hypertarget{class_imagen_a3253ba68ee7bba91e57b634a85047404}\label{class_imagen_a3253ba68ee7bba91e57b634a85047404}} 
+\index{Imagen@{Imagen}!imag@{imag}}
+\index{imag@{imag}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{imag}{imag}}
+{\footnotesize\ttfamily vector$<$vector$<$\mbox{\hyperlink{class_pixel}{Pixel}}$>$ $>$ Imagen\+::imag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em imag} & Es la imÃ¡gen que se busca graficar.~\newline
+~\newline
+ Es un arreglo bidimensional de Pixeles, cuyo tamaÃ±o estarÃ¡ dado por el nÃºmero de filas y columnas leÃ­dos de la imÃ¡gen. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 156 del archivo imagen.\+h.
+
+
+
+Referenciado por borrar\+Imagen(), get\+Pixel(), set\+Pixel() y set\+Tamanio().
+
+\mbox{\Hypertarget{class_imagen_a27a72bf1ea6c01a6a4c3fd6ca3bc5264}\label{class_imagen_a27a72bf1ea6c01a6a4c3fd6ca3bc5264}} 
+\index{Imagen@{Imagen}!informacion@{informacion}}
+\index{informacion@{informacion}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{informacion}{informacion}}
+{\footnotesize\ttfamily string Imagen\+::informacion\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em informacion} & InformaciÃ³n de la \mbox{\hyperlink{class_imagen}{Imagen}}. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 178 del archivo imagen.\+h.
+
+
+
+Referenciado por get\+Informacion() y set\+Informacion().
+
+\mbox{\Hypertarget{class_imagen_ae5b702987b1960f5a3ab6fc20e25cca0}\label{class_imagen_ae5b702987b1960f5a3ab6fc20e25cca0}} 
+\index{Imagen@{Imagen}!rango@{rango}}
+\index{rango@{rango}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{rango}{rango}}
+{\footnotesize\ttfamily int Imagen\+::rango\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em rango} & Atributo que almacena el valor del rango de la imÃ¡gen . \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 168 del archivo imagen.\+h.
+
+
+
+Referenciado por get\+Rango() y set\+Rango().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{imagen_8h}{imagen.\+h}}\item 
+\mbox{\hyperlink{imagen_8cpp}{imagen.\+cpp}}\end{DoxyCompactItemize}

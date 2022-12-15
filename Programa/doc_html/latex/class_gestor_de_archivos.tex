@@ -1,0 +1,104 @@
+\hypertarget{class_gestor_de_archivos}{}\doxysection{Referencia de la Clase Gestor\+De\+Archivos}
+\label{class_gestor_de_archivos}\index{GestorDeArchivos@{GestorDeArchivos}}
+
+
+Clase abstracta de la cual heredan metodos para leer y escribir archivos otras clases.  
+
+
+
+
+{\ttfamily \#include $<$gestordearchivos.\+h$>$}
+
+Diagrama de herencias de Gestor\+De\+Archivos\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gestor_de_archivos}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_imagen}{Imagen}} \mbox{\hyperlink{class_gestor_de_archivos_a656468aebffd8ad9f68723f6c8abf69f}{leer}} (string ruta)=0
+\begin{DoxyCompactList}\small\item\em leer MÃ©todo virtual que al ser redefinido permite leer una \mbox{\hyperlink{class_imagen}{Imagen}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gestor_de_archivos_ad2f950c7c54f9883b7863b9afe076cda}{guardar}} (\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img)=0
+\begin{DoxyCompactList}\small\item\em guardar MÃ©todo virtual que al ser redefinido permite guardar una \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase abstracta de la cual heredan metodos para leer y escribir archivos otras clases. 
+
+Virtualiza metodos para leer y escribir archivos, que luego serÃ¡n utilizados por sus clases hijas. \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 10-\/09-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000012}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+
+\end{DoxyWarning}
+
+
+Definición en la línea 22 del archivo gestordearchivos.\+h.
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_gestor_de_archivos_ad2f950c7c54f9883b7863b9afe076cda}\label{class_gestor_de_archivos_ad2f950c7c54f9883b7863b9afe076cda}} 
+\index{GestorDeArchivos@{GestorDeArchivos}!guardar@{guardar}}
+\index{guardar@{guardar}!GestorDeArchivos@{GestorDeArchivos}}
+\doxysubsubsection{\texorpdfstring{guardar()}{guardar()}}
+{\footnotesize\ttfamily virtual void Gestor\+De\+Archivos\+::guardar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+guardar MÃ©todo virtual que al ser redefinido permite guardar una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em img} & \mbox{\hyperlink{class_imagen}{Imagen}} que se desea guardar. \\
+\hline
+\end{DoxyParams}
+
+
+Implementado en \mbox{\hyperlink{class_archivos_p_n_m_ae0fbeb8d709ae2ae527a6aaa76e53386}{Archivos\+PNM}} y \mbox{\hyperlink{class_archivos_a_i_c_acd84997137f85c271856a3d4108986bf}{Archivos\+AIC}}.
+
+
+
+Referenciado por Espacio\+De\+Trabajo\+::guardar\+Imagen().
+
+\mbox{\Hypertarget{class_gestor_de_archivos_a656468aebffd8ad9f68723f6c8abf69f}\label{class_gestor_de_archivos_a656468aebffd8ad9f68723f6c8abf69f}} 
+\index{GestorDeArchivos@{GestorDeArchivos}!leer@{leer}}
+\index{leer@{leer}!GestorDeArchivos@{GestorDeArchivos}}
+\doxysubsubsection{\texorpdfstring{leer()}{leer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_imagen}{Imagen}} Gestor\+De\+Archivos\+::leer (\begin{DoxyParamCaption}\item[{string}]{ruta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+leer MÃ©todo virtual que al ser redefinido permite leer una \mbox{\hyperlink{class_imagen}{Imagen}} 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta} & Ruta donde estÃ¡ almacenada la \mbox{\hyperlink{class_imagen}{Imagen}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\mbox{\hyperlink{class_imagen}{Imagen}} leÃ­da. 
+\end{DoxyReturn}
+
+
+Implementado en \mbox{\hyperlink{class_archivos_p_n_m_a5ae7d9ed0f791ed5c4f841b7c12656bf}{Archivos\+PNM}} y \mbox{\hyperlink{class_archivos_a_i_c_a39a61108e840cec24b4b39a8cbf071df}{Archivos\+AIC}}.
+
+
+
+Referenciado por Ventana\+De\+Graficacion\+::cargar\+Imagen() y Ventana\+De\+Graficacion\+::recuperar\+Imagen().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{gestordearchivos_8h}{gestordearchivos.\+h}}\end{DoxyCompactItemize}

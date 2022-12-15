@@ -1,0 +1,920 @@
+\hypertarget{class_archivos_p_n_m}{}\doxysection{Referencia de la Clase Archivos\+PNM}
+\label{class_archivos_p_n_m}\index{ArchivosPNM@{ArchivosPNM}}
+
+
+Clase capaz de gestionar los diferentes tipos de archivos PNM.  
+
+
+
+
+{\ttfamily \#include $<$archivospnm.\+h$>$}
+
+Diagrama de herencias de Archivos\+PNM\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_archivos_p_n_m}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_archivos_p_n_m_accebc41f3d1d9e7c3dc850d19bb8ca97}{Archivos\+PNM}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_archivos_p_n_m}{Archivos\+PNM}} Constructor del objeto \mbox{\hyperlink{class_archivos_p_n_m}{Archivos\+PNM}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imagen}{Imagen}} \mbox{\hyperlink{class_archivos_p_n_m_a5ae7d9ed0f791ed5c4f841b7c12656bf}{leer}} (string ruta) override
+\begin{DoxyCompactList}\small\item\em leer Se redefine el metodo heredado de \mbox{\hyperlink{class_gestor_de_archivos}{Gestor\+De\+Archivos}} y que permite leer imÃ¡genes de un archivo PNM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_archivos_p_n_m_ae0fbeb8d709ae2ae527a6aaa76e53386}{guardar}} (\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img) override
+\begin{DoxyCompactList}\small\item\em guardar Se redefine el mÃ©todo heredado de \mbox{\hyperlink{class_gestor_de_archivos}{Gestor\+De\+Archivos}} y que permite guardar imÃ¡genes en formato PNM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_archivos_p_n_m_ab18c2f63835fa6482204ca1d55783c53}{obtiene\+Ruta\+Guardado}} (string id\+Imagen)
+\begin{DoxyCompactList}\small\item\em obtiene\+Ruta\+Guardado MÃ©todo privado auxiliar para el guardado de una imÃ¡gen, permite consultarle al usuario el nombre, y por lo tanto la ruta en la que se guarda. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_archivos_p_n_m_ad4643cce67487d8f015f0ac6e2bd1156}{escribe\+Encabezado}} (\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em escribe\+Encabezado MÃ©todo protegido auxiliar para el guardado de una imÃ¡gen, permite escribir el encabezado de un archivo PNM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_archivos_p_n_m_a1bb26b0901114866da19db7bf23c8825}{escribe\+P1}} (string ruta\+Escritura, \mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em escribe\+P1 MÃ©todo protegido auxiliar para el guardado de una imÃ¡gen, permite escribir una imÃ¡gen, cuyo identificador es P1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_archivos_p_n_m_ac2005789de82eea06ec15cce630ec68b}{escribe\+P2}} (string ruta\+Escritura, \mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em escribe\+P1 MÃ©todo protegido auxiliar para el guardado de una imÃ¡gen, permite escribir una imÃ¡gen, cuyo identificador es P2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_archivos_p_n_m_a3067dc6900e9f8cd62c813a64953d2f1}{escribe\+P3}} (string ruta\+Escritura, \mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em escribe\+P1 MÃ©todo protegido auxiliar para el guardado de una imÃ¡gen, permite escribir una imÃ¡gen, cuyo identificador es P3. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_archivos_p_n_m_a2b19442f76eb7b58a2a42ba82be7c511}{escribe\+P4}} (string ruta\+Escritura, \mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em escribe\+P1 MÃ©todo protegido auxiliar para el guardado de una imÃ¡gen, permite escribir una imÃ¡gen, cuyo identificador es P4. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_archivos_p_n_m_ab091b820a7e61822d5ef2715714469c6}{escribe\+P5}} (string ruta\+Escritura, \mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em escribe\+P1 MÃ©todo protegido auxiliar para el guardado de una imÃ¡gen, permite escribir una imÃ¡gen, cuyo identificador es P5. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_archivos_p_n_m_a2b0e12a9a30907af139040aad4d2a838}{escribe\+P6}} (string ruta\+Escritura, \mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em escribe\+P1 MÃ©todo protegido auxiliar para el guardado de una imÃ¡gen, permite escribir una imÃ¡gen, cuyo identificador es P6. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+fstream \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}
+\item 
+string \mbox{\hyperlink{class_archivos_p_n_m_add99f5595bf7c7af37ee9a89827ec7b5}{identificador}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase capaz de gestionar los diferentes tipos de archivos PNM. 
+
+Hereda de \mbox{\hyperlink{class_gestor_de_archivos}{Gestor\+De\+Archivos}} la capacidad de leer un archivo y de guardar otro. Tiene un archivo y almacena el identificador del tipo de archivo una vez que fue leido. \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 10-\/09-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000003}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+
+\end{DoxyWarning}
+
+
+Definición en la línea 17 del archivo archivospnm.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_archivos_p_n_m_accebc41f3d1d9e7c3dc850d19bb8ca97}\label{class_archivos_p_n_m_accebc41f3d1d9e7c3dc850d19bb8ca97}} 
+\index{ArchivosPNM@{ArchivosPNM}!ArchivosPNM@{ArchivosPNM}}
+\index{ArchivosPNM@{ArchivosPNM}!ArchivosPNM@{ArchivosPNM}}
+\doxysubsubsection{\texorpdfstring{ArchivosPNM()}{ArchivosPNM()}}
+{\footnotesize\ttfamily Archivos\+PNM\+::\+Archivos\+PNM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_archivos_p_n_m}{Archivos\+PNM}} Constructor del objeto \mbox{\hyperlink{class_archivos_p_n_m}{Archivos\+PNM}}. 
+
+
+
+Definición en la línea 3 del archivo archivospnm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_archivos_p_n_m_ad4643cce67487d8f015f0ac6e2bd1156}\label{class_archivos_p_n_m_ad4643cce67487d8f015f0ac6e2bd1156}} 
+\index{ArchivosPNM@{ArchivosPNM}!escribeEncabezado@{escribeEncabezado}}
+\index{escribeEncabezado@{escribeEncabezado}!ArchivosPNM@{ArchivosPNM}}
+\doxysubsubsection{\texorpdfstring{escribeEncabezado()}{escribeEncabezado()}}
+{\footnotesize\ttfamily void Archivos\+PNM\+::escribe\+Encabezado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+escribe\+Encabezado MÃ©todo protegido auxiliar para el guardado de una imÃ¡gen, permite escribir el encabezado de un archivo PNM. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta\+Escritura} & Ruta en la que se almacena la imÃ¡gen. \\
+\hline
+\mbox{\texttt{ in}}  & {\em img} & \mbox{\hyperlink{class_imagen}{Imagen}} por referencia, es la que se almacena. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 259 del archivo archivospnm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{260 \{}
+\DoxyCodeLine{261     \textcolor{keywordtype}{string} \textcolor{keywordtype}{id} = img-\/>\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}();}
+\DoxyCodeLine{262 }
+\DoxyCodeLine{263     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<\textcolor{keywordtype}{id}<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{264 }
+\DoxyCodeLine{265     \textcolor{keywordtype}{char} num\_id;}
+\DoxyCodeLine{266     num\_id=\textcolor{keywordtype}{id}[1];}
+\DoxyCodeLine{267 }
+\DoxyCodeLine{268     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<img-\/>\mbox{\hyperlink{class_imagen_a9863c0ebb50aeb19f5dc4d7906ed47d6}{getInformacion}}()<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{269 }
+\DoxyCodeLine{270     \textcolor{keywordtype}{int} filas\_aux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnas\_aux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{271 }
+\DoxyCodeLine{272     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<columnas\_aux<<\textcolor{stringliteral}{"{} "{}}<<filas\_aux<<endl;}
+\DoxyCodeLine{273 }
+\DoxyCodeLine{274     \textcolor{keywordflow}{if}(num\_id!=1 and num\_id!=4)}
+\DoxyCodeLine{275     \{}
+\DoxyCodeLine{276         \textcolor{keywordtype}{int} rango\_aux = img-\/>\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}();}
+\DoxyCodeLine{277         \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<rango\_aux<<endl;}
+\DoxyCodeLine{278     \}}
+\DoxyCodeLine{279 }
+\DoxyCodeLine{280     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{281 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a archi, Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Imagen\+::get\+Identificador(), Imagen\+::get\+Informacion() y Imagen\+::get\+Rango().
+
+
+
+Referenciado por guardar().
+
+\mbox{\Hypertarget{class_archivos_p_n_m_a1bb26b0901114866da19db7bf23c8825}\label{class_archivos_p_n_m_a1bb26b0901114866da19db7bf23c8825}} 
+\index{ArchivosPNM@{ArchivosPNM}!escribeP1@{escribeP1}}
+\index{escribeP1@{escribeP1}!ArchivosPNM@{ArchivosPNM}}
+\doxysubsubsection{\texorpdfstring{escribeP1()}{escribeP1()}}
+{\footnotesize\ttfamily void Archivos\+PNM\+::escribe\+P1 (\begin{DoxyParamCaption}\item[{string}]{ruta\+Escritura,  }\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+escribe\+P1 MÃ©todo protegido auxiliar para el guardado de una imÃ¡gen, permite escribir una imÃ¡gen, cuyo identificador es P1. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta\+Escritura} & Ruta en la que se almacena la imÃ¡gen. \\
+\hline
+\mbox{\texttt{ in}}  & {\em img} & \mbox{\hyperlink{class_imagen}{Imagen}} por referencia, es la que se almacena. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 283 del archivo archivospnm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{284 \{}
+\DoxyCodeLine{285     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(rutaEscritura, ios::out | ios::app);}
+\DoxyCodeLine{286 }
+\DoxyCodeLine{287     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{288 }
+\DoxyCodeLine{289     \textcolor{keywordtype}{int} intEscala;}
+\DoxyCodeLine{290 }
+\DoxyCodeLine{291     \textcolor{keywordtype}{int} filas\_aux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnas\_aux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{292 }
+\DoxyCodeLine{293     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<filas\_aux; i++)}
+\DoxyCodeLine{294     \{}
+\DoxyCodeLine{295         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<columnas\_aux; j++)}
+\DoxyCodeLine{296         \{}
+\DoxyCodeLine{297           pix\_aux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{298           intEscala = pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
+\DoxyCodeLine{299           \textcolor{keywordflow}{if}(intEscala == 1)}
+\DoxyCodeLine{300               intEscala = 0;}
+\DoxyCodeLine{301           \textcolor{keywordflow}{else}}
+\DoxyCodeLine{302               intEscala = 1;}
+\DoxyCodeLine{303           \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<intEscala<<\textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{304         \}}
+\DoxyCodeLine{305         \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{306     \}}
+\DoxyCodeLine{307     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{308 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a archi, Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Imagen\+::get\+Pixel() y Pixel\+::get\+R().
+
+
+
+Referenciado por guardar().
+
+\mbox{\Hypertarget{class_archivos_p_n_m_ac2005789de82eea06ec15cce630ec68b}\label{class_archivos_p_n_m_ac2005789de82eea06ec15cce630ec68b}} 
+\index{ArchivosPNM@{ArchivosPNM}!escribeP2@{escribeP2}}
+\index{escribeP2@{escribeP2}!ArchivosPNM@{ArchivosPNM}}
+\doxysubsubsection{\texorpdfstring{escribeP2()}{escribeP2()}}
+{\footnotesize\ttfamily void Archivos\+PNM\+::escribe\+P2 (\begin{DoxyParamCaption}\item[{string}]{ruta\+Escritura,  }\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+escribe\+P1 MÃ©todo protegido auxiliar para el guardado de una imÃ¡gen, permite escribir una imÃ¡gen, cuyo identificador es P2. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta\+Escritura} & Ruta en la que se almacena la imÃ¡gen. \\
+\hline
+\mbox{\texttt{ in}}  & {\em img} & \mbox{\hyperlink{class_imagen}{Imagen}} por referencia, es la que se almacena. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 310 del archivo archivospnm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{311 \{}
+\DoxyCodeLine{312     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(rutaEscritura, ios::out | ios::app);}
+\DoxyCodeLine{313 }
+\DoxyCodeLine{314     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{315 }
+\DoxyCodeLine{316     \textcolor{keywordtype}{int} intEscala;}
+\DoxyCodeLine{317 }
+\DoxyCodeLine{318     \textcolor{keywordtype}{int} filas\_aux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnas\_aux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{319 }
+\DoxyCodeLine{320     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<filas\_aux; i++)}
+\DoxyCodeLine{321     \{}
+\DoxyCodeLine{322         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<columnas\_aux; j++)}
+\DoxyCodeLine{323         \{}
+\DoxyCodeLine{324            pix\_aux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{325            intEscala = pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
+\DoxyCodeLine{326            \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<intEscala<<\textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{327         \}}
+\DoxyCodeLine{328         \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<endl;}
+\DoxyCodeLine{329     \}}
+\DoxyCodeLine{330     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{331 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a archi, Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Imagen\+::get\+Pixel() y Pixel\+::get\+R().
+
+
+
+Referenciado por guardar().
+
+\mbox{\Hypertarget{class_archivos_p_n_m_a3067dc6900e9f8cd62c813a64953d2f1}\label{class_archivos_p_n_m_a3067dc6900e9f8cd62c813a64953d2f1}} 
+\index{ArchivosPNM@{ArchivosPNM}!escribeP3@{escribeP3}}
+\index{escribeP3@{escribeP3}!ArchivosPNM@{ArchivosPNM}}
+\doxysubsubsection{\texorpdfstring{escribeP3()}{escribeP3()}}
+{\footnotesize\ttfamily void Archivos\+PNM\+::escribe\+P3 (\begin{DoxyParamCaption}\item[{string}]{ruta\+Escritura,  }\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+escribe\+P1 MÃ©todo protegido auxiliar para el guardado de una imÃ¡gen, permite escribir una imÃ¡gen, cuyo identificador es P3. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta\+Escritura} & Ruta en la que se almacena la imÃ¡gen. \\
+\hline
+\mbox{\texttt{ in}}  & {\em img} & \mbox{\hyperlink{class_imagen}{Imagen}} por referencia, es la que se almacena. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 333 del archivo archivospnm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{334 \{}
+\DoxyCodeLine{335     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(rutaEscritura, ios::out | ios::app);}
+\DoxyCodeLine{336 }
+\DoxyCodeLine{337     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{338 }
+\DoxyCodeLine{339     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} r, g, b;}
+\DoxyCodeLine{340 }
+\DoxyCodeLine{341     \textcolor{keywordtype}{int} filas\_aux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnas\_aux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{342 }
+\DoxyCodeLine{343     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{344     \{}
+\DoxyCodeLine{345         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{346         \{}
+\DoxyCodeLine{347             pix\_aux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{348             r = pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
+\DoxyCodeLine{349             g = pix\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}();}
+\DoxyCodeLine{350             b = pix\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}();}
+\DoxyCodeLine{351             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<r<<g<<b;}
+\DoxyCodeLine{352         \}}
+\DoxyCodeLine{353         \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}<<endl;}
+\DoxyCodeLine{354     \}}
+\DoxyCodeLine{355     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{356 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a archi, Pixel\+::get\+B(), Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Pixel\+::get\+G(), Imagen\+::get\+Pixel() y Pixel\+::get\+R().
+
+
+
+Referenciado por guardar().
+
+\mbox{\Hypertarget{class_archivos_p_n_m_a2b19442f76eb7b58a2a42ba82be7c511}\label{class_archivos_p_n_m_a2b19442f76eb7b58a2a42ba82be7c511}} 
+\index{ArchivosPNM@{ArchivosPNM}!escribeP4@{escribeP4}}
+\index{escribeP4@{escribeP4}!ArchivosPNM@{ArchivosPNM}}
+\doxysubsubsection{\texorpdfstring{escribeP4()}{escribeP4()}}
+{\footnotesize\ttfamily void Archivos\+PNM\+::escribe\+P4 (\begin{DoxyParamCaption}\item[{string}]{ruta\+Escritura,  }\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+escribe\+P1 MÃ©todo protegido auxiliar para el guardado de una imÃ¡gen, permite escribir una imÃ¡gen, cuyo identificador es P4. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta\+Escritura} & Ruta en la que se almacena la imÃ¡gen. \\
+\hline
+\mbox{\texttt{ in}}  & {\em img} & \mbox{\hyperlink{class_imagen}{Imagen}} por referencia, es la que se almacena. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 358 del archivo archivospnm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{359 \{}
+\DoxyCodeLine{360     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(rutaEscritura, ios::out | ios::binary |ios::app);}
+\DoxyCodeLine{361 }
+\DoxyCodeLine{362     \textcolor{keywordtype}{int} filas\_aux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnas\_aux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{363 }
+\DoxyCodeLine{364     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} escala;}
+\DoxyCodeLine{365 }
+\DoxyCodeLine{366     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{367 }
+\DoxyCodeLine{368     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{369     \{}
+\DoxyCodeLine{370         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{371         \{}
+\DoxyCodeLine{372             pix\_aux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{373             escala = pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
+\DoxyCodeLine{374             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.write((\textcolor{keywordtype}{char}*)\&escala, \textcolor{keyword}{sizeof}(escala));}
+\DoxyCodeLine{375         \}}
+\DoxyCodeLine{376     \}}
+\DoxyCodeLine{377     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{378 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a archi, Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Imagen\+::get\+Pixel() y Pixel\+::get\+R().
+
+
+
+Referenciado por guardar().
+
+\mbox{\Hypertarget{class_archivos_p_n_m_ab091b820a7e61822d5ef2715714469c6}\label{class_archivos_p_n_m_ab091b820a7e61822d5ef2715714469c6}} 
+\index{ArchivosPNM@{ArchivosPNM}!escribeP5@{escribeP5}}
+\index{escribeP5@{escribeP5}!ArchivosPNM@{ArchivosPNM}}
+\doxysubsubsection{\texorpdfstring{escribeP5()}{escribeP5()}}
+{\footnotesize\ttfamily void Archivos\+PNM\+::escribe\+P5 (\begin{DoxyParamCaption}\item[{string}]{ruta\+Escritura,  }\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+escribe\+P1 MÃ©todo protegido auxiliar para el guardado de una imÃ¡gen, permite escribir una imÃ¡gen, cuyo identificador es P5. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta\+Escritura} & Ruta en la que se almacena la imÃ¡gen. \\
+\hline
+\mbox{\texttt{ in}}  & {\em img} & \mbox{\hyperlink{class_imagen}{Imagen}} por referencia, es la que se almacena. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 380 del archivo archivospnm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{381 \{}
+\DoxyCodeLine{382     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(rutaEscritura, ios::out | ios::binary |ios::app);}
+\DoxyCodeLine{383 }
+\DoxyCodeLine{384     \textcolor{keywordtype}{int} filas\_aux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnas\_aux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{385 }
+\DoxyCodeLine{386     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} escala;}
+\DoxyCodeLine{387 }
+\DoxyCodeLine{388     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{389 }
+\DoxyCodeLine{390     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<filas\_aux; i++)}
+\DoxyCodeLine{391     \{}
+\DoxyCodeLine{392         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<columnas\_aux; j++)}
+\DoxyCodeLine{393         \{}
+\DoxyCodeLine{394             pix\_aux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{395 }
+\DoxyCodeLine{396             escala = (\textcolor{keywordtype}{unsigned} char)pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
+\DoxyCodeLine{397 }
+\DoxyCodeLine{398             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.write((\textcolor{keywordtype}{char}*)\&(escala), \textcolor{keyword}{sizeof}(escala));}
+\DoxyCodeLine{399         \}}
+\DoxyCodeLine{400     \}}
+\DoxyCodeLine{401 }
+\DoxyCodeLine{402     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{403 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a archi, Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Imagen\+::get\+Pixel() y Pixel\+::get\+R().
+
+
+
+Referenciado por guardar().
+
+\mbox{\Hypertarget{class_archivos_p_n_m_a2b0e12a9a30907af139040aad4d2a838}\label{class_archivos_p_n_m_a2b0e12a9a30907af139040aad4d2a838}} 
+\index{ArchivosPNM@{ArchivosPNM}!escribeP6@{escribeP6}}
+\index{escribeP6@{escribeP6}!ArchivosPNM@{ArchivosPNM}}
+\doxysubsubsection{\texorpdfstring{escribeP6()}{escribeP6()}}
+{\footnotesize\ttfamily void Archivos\+PNM\+::escribe\+P6 (\begin{DoxyParamCaption}\item[{string}]{ruta\+Escritura,  }\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+escribe\+P1 MÃ©todo protegido auxiliar para el guardado de una imÃ¡gen, permite escribir una imÃ¡gen, cuyo identificador es P6. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta\+Escritura} & Ruta en la que se almacena la imÃ¡gen. \\
+\hline
+\mbox{\texttt{ in}}  & {\em img} & \mbox{\hyperlink{class_imagen}{Imagen}} por referencia, es la que se almacena. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 405 del archivo archivospnm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{406 \{}
+\DoxyCodeLine{407     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(rutaEscritura, ios::out | ios::binary | ios::app);}
+\DoxyCodeLine{408 }
+\DoxyCodeLine{409     \textcolor{keywordtype}{int} filas\_aux = img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(), columnas\_aux = img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}();}
+\DoxyCodeLine{410 }
+\DoxyCodeLine{411     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} r, g, b;}
+\DoxyCodeLine{412 }
+\DoxyCodeLine{413     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{414 }
+\DoxyCodeLine{415     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<filas\_aux; i++)}
+\DoxyCodeLine{416     \{}
+\DoxyCodeLine{417         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<columnas\_aux; j++)}
+\DoxyCodeLine{418         \{}
+\DoxyCodeLine{419 }
+\DoxyCodeLine{420             pix\_aux = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{421 }
+\DoxyCodeLine{422             r = (\textcolor{keywordtype}{unsigned} char)pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}();}
+\DoxyCodeLine{423 }
+\DoxyCodeLine{424             g = (\textcolor{keywordtype}{unsigned} char)pix\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}();}
+\DoxyCodeLine{425 }
+\DoxyCodeLine{426             b = (\textcolor{keywordtype}{unsigned} char)pix\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}();}
+\DoxyCodeLine{427 }
+\DoxyCodeLine{428             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.write((\textcolor{keywordtype}{char}*)\&r, \textcolor{keyword}{sizeof}(r));}
+\DoxyCodeLine{429 }
+\DoxyCodeLine{430             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.write((\textcolor{keywordtype}{char}*)\&g, \textcolor{keyword}{sizeof}(g));}
+\DoxyCodeLine{431 }
+\DoxyCodeLine{432             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.write((\textcolor{keywordtype}{char}*)\&b, \textcolor{keyword}{sizeof}(b));}
+\DoxyCodeLine{433         \}}
+\DoxyCodeLine{434     \}}
+\DoxyCodeLine{435     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{436 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a archi, Pixel\+::get\+B(), Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Pixel\+::get\+G(), Imagen\+::get\+Pixel() y Pixel\+::get\+R().
+
+
+
+Referenciado por guardar().
+
+\mbox{\Hypertarget{class_archivos_p_n_m_ae0fbeb8d709ae2ae527a6aaa76e53386}\label{class_archivos_p_n_m_ae0fbeb8d709ae2ae527a6aaa76e53386}} 
+\index{ArchivosPNM@{ArchivosPNM}!guardar@{guardar}}
+\index{guardar@{guardar}!ArchivosPNM@{ArchivosPNM}}
+\doxysubsubsection{\texorpdfstring{guardar()}{guardar()}}
+{\footnotesize\ttfamily void Archivos\+PNM\+::guardar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+guardar Se redefine el mÃ©todo heredado de \mbox{\hyperlink{class_gestor_de_archivos}{Gestor\+De\+Archivos}} y que permite guardar imÃ¡genes en formato PNM. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em img} & Puntero a un objeto ImÃ¡gen que es la imÃ¡gen a guardar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+No devuelve nada, solo modifica los parÃ¡metros. 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{class_gestor_de_archivos_ad2f950c7c54f9883b7863b9afe076cda}{Gestor\+De\+Archivos}}.
+
+
+
+Definición en la línea 215 del archivo archivospnm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{216 \{}
+\DoxyCodeLine{217     \textcolor{keywordtype}{string} \textcolor{keywordtype}{id} = img-\/>\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}();}
+\DoxyCodeLine{218 }
+\DoxyCodeLine{219     \textcolor{keywordtype}{string} rutaGuardado = \mbox{\hyperlink{class_archivos_p_n_m_ab18c2f63835fa6482204ca1d55783c53}{obtieneRutaGuardado}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{220 }
+\DoxyCodeLine{221 }
+\DoxyCodeLine{222     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(rutaGuardado, ios::out);}
+\DoxyCodeLine{223 }
+\DoxyCodeLine{224     \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.is\_open())\{}
+\DoxyCodeLine{225         cout<<\textcolor{stringliteral}{"{}Error al abrir la imagen."{}}<<endl;}
+\DoxyCodeLine{226         cout<<rutaGuardado;}
+\DoxyCodeLine{227     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{228 }
+\DoxyCodeLine{229         \mbox{\hyperlink{class_archivos_p_n_m_ad4643cce67487d8f015f0ac6e2bd1156}{escribeEncabezado}}(img);}
+\DoxyCodeLine{230 }
+\DoxyCodeLine{231         \textcolor{keywordflow}{switch}(\textcolor{keywordtype}{id}[1])}
+\DoxyCodeLine{232         \{}
+\DoxyCodeLine{233         \textcolor{keywordflow}{case} \textcolor{charliteral}{'1'}:}
+\DoxyCodeLine{234             \mbox{\hyperlink{class_archivos_p_n_m_a1bb26b0901114866da19db7bf23c8825}{escribeP1}}(rutaGuardado, img);}
+\DoxyCodeLine{235             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{236         \textcolor{keywordflow}{case} \textcolor{charliteral}{'2'}:}
+\DoxyCodeLine{237             \mbox{\hyperlink{class_archivos_p_n_m_ac2005789de82eea06ec15cce630ec68b}{escribeP2}}(rutaGuardado, img);}
+\DoxyCodeLine{238             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{239         \textcolor{keywordflow}{case} \textcolor{charliteral}{'3'}:}
+\DoxyCodeLine{240             \mbox{\hyperlink{class_archivos_p_n_m_a3067dc6900e9f8cd62c813a64953d2f1}{escribeP3}}(rutaGuardado, img);}
+\DoxyCodeLine{241             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{242         \textcolor{keywordflow}{case} \textcolor{charliteral}{'4'}:}
+\DoxyCodeLine{243             \mbox{\hyperlink{class_archivos_p_n_m_a2b19442f76eb7b58a2a42ba82be7c511}{escribeP4}}(rutaGuardado, img);}
+\DoxyCodeLine{244             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{245         \textcolor{keywordflow}{case} \textcolor{charliteral}{'5'}:}
+\DoxyCodeLine{246             \mbox{\hyperlink{class_archivos_p_n_m_ab091b820a7e61822d5ef2715714469c6}{escribeP5}}(rutaGuardado, img);}
+\DoxyCodeLine{247             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{248         \textcolor{keywordflow}{case} \textcolor{charliteral}{'6'}:}
+\DoxyCodeLine{249             \mbox{\hyperlink{class_archivos_p_n_m_a2b0e12a9a30907af139040aad4d2a838}{escribeP6}}(rutaGuardado, img);}
+\DoxyCodeLine{250             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{251         \}}
+\DoxyCodeLine{252 }
+\DoxyCodeLine{253     \}}
+\DoxyCodeLine{254 }
+\DoxyCodeLine{255 }
+\DoxyCodeLine{256 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a archi, escribe\+Encabezado(), escribe\+P1(), escribe\+P2(), escribe\+P3(), escribe\+P4(), escribe\+P5(), escribe\+P6(), Imagen\+::get\+Identificador() y obtiene\+Ruta\+Guardado().
+
+\mbox{\Hypertarget{class_archivos_p_n_m_a5ae7d9ed0f791ed5c4f841b7c12656bf}\label{class_archivos_p_n_m_a5ae7d9ed0f791ed5c4f841b7c12656bf}} 
+\index{ArchivosPNM@{ArchivosPNM}!leer@{leer}}
+\index{leer@{leer}!ArchivosPNM@{ArchivosPNM}}
+\doxysubsubsection{\texorpdfstring{leer()}{leer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imagen}{Imagen}} Archivos\+PNM\+::leer (\begin{DoxyParamCaption}\item[{string}]{ruta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+leer Se redefine el metodo heredado de \mbox{\hyperlink{class_gestor_de_archivos}{Gestor\+De\+Archivos}} y que permite leer imÃ¡genes de un archivo PNM. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta} & String, es la ruta desde la cuÃ¡l se desea leer una imÃ¡gen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve un objeto de tipo ImÃ¡gen. 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{class_gestor_de_archivos_a656468aebffd8ad9f68723f6c8abf69f}{Gestor\+De\+Archivos}}.
+
+
+
+Definición en la línea 8 del archivo archivospnm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_imagen}{Imagen}} img;}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(ruta, ios::in);}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.is\_open())\{}
+\DoxyCodeLine{14         cout<<\textcolor{stringliteral}{"{}Error al abrir la imagen."{}}<<endl;}
+\DoxyCodeLine{15         cout<<ruta;}
+\DoxyCodeLine{16     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{17         getline(\mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}, \mbox{\hyperlink{class_archivos_p_n_m_add99f5595bf7c7af37ee9a89827ec7b5}{identificador}});}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19         img.\mbox{\hyperlink{class_imagen_aae632c4cd001e04228aad5bf06599818}{setIdentificador}}(\mbox{\hyperlink{class_archivos_p_n_m_add99f5595bf7c7af37ee9a89827ec7b5}{identificador}});}
+\DoxyCodeLine{20         \textcolor{keywordtype}{char} num\_id;}
+\DoxyCodeLine{21         num\_id=\mbox{\hyperlink{class_archivos_p_n_m_add99f5595bf7c7af37ee9a89827ec7b5}{identificador}}[1];}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23         \textcolor{keywordtype}{string} comentario;}
+\DoxyCodeLine{24         \textcolor{keywordtype}{int} filas\_aux, columnas\_aux;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26         \textcolor{keywordtype}{int} contador\_pixeles = 0;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \textcolor{keywordtype}{int} pos\_com = \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.tellg();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         getline(\mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}, comentario);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32         \textcolor{keywordflow}{if}(comentario[0] != \textcolor{charliteral}{'\#'} and comentario[0] != \textcolor{charliteral}{'\(\backslash\)n'})}
+\DoxyCodeLine{33         \{}
+\DoxyCodeLine{34             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.seekg(pos\_com);}
+\DoxyCodeLine{35         \}\textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{36             img.\mbox{\hyperlink{class_imagen_affda44cc73f0a8bf8cc7dc1021e47f25}{setInformacion}}(comentario);}
+\DoxyCodeLine{37         \}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39         \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}>>columnas\_aux>>filas\_aux;}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41         \textcolor{keywordflow}{if} (columnas\_aux == 0 or filas\_aux == 0)}
+\DoxyCodeLine{42             \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44         img.\mbox{\hyperlink{class_imagen_a745584efb94c3a60c7d77017b2bfb512}{setFilas}}(filas\_aux);}
+\DoxyCodeLine{45         img.\mbox{\hyperlink{class_imagen_a2f484fcbef63dfa2fe6c2ee418a7d856}{setColumnas}}(columnas\_aux);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47         img.\mbox{\hyperlink{class_imagen_a310a7ee241a8c546a9d5345937a9f01f}{setTamanio}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50         \textcolor{keywordtype}{int} rango\_aux;}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52         \textcolor{keywordflow}{if}(num\_id!=1 and num\_id!=4)}
+\DoxyCodeLine{53         \{}
+\DoxyCodeLine{54             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}>>rango\_aux;}
+\DoxyCodeLine{55             img.\mbox{\hyperlink{class_imagen_ac6be498c1eadda6e7a5bf603c7ababc3}{setRango}}(rango\_aux);}
+\DoxyCodeLine{56         \}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58         \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60         \textcolor{keywordtype}{string} linea;}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} r, g, b;}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65         \textcolor{keywordtype}{int} intEscala;}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67         \textcolor{keywordtype}{int} pos\_final;}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69         \textcolor{keywordflow}{switch}(num\_id)}
+\DoxyCodeLine{70         \{}
+\DoxyCodeLine{71         \textcolor{keywordflow}{case} \textcolor{charliteral}{'1'}:}
+\DoxyCodeLine{72             img.\mbox{\hyperlink{class_imagen_ac6be498c1eadda6e7a5bf603c7ababc3}{setRango}}(1);}
+\DoxyCodeLine{73             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{74             \{}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{76                 \{}
+\DoxyCodeLine{77                   \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}>>intEscala;}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79                   \textcolor{keywordflow}{if}((\textcolor{keywordtype}{int})intEscala>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
+\DoxyCodeLine{80                       \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82                   pix\_aux.\mbox{\hyperlink{class_pixel_ab624ff85be3e3d7b6d5f3e139300c1ef}{setPixelMonocr}}((\textcolor{keywordtype}{int})intEscala);}
+\DoxyCodeLine{83                   img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(j, i, pix\_aux);}
+\DoxyCodeLine{84                   contador\_pixeles++;}
+\DoxyCodeLine{85                 \}}
+\DoxyCodeLine{86             \}}
+\DoxyCodeLine{87             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{88             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{89         \textcolor{keywordflow}{case} \textcolor{charliteral}{'2'}:}
+\DoxyCodeLine{90             getline(\mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}, linea,\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{91             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{92             \{}
+\DoxyCodeLine{93                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{94                 \{}
+\DoxyCodeLine{95                    \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}>>intEscala;}
+\DoxyCodeLine{96                    \textcolor{keywordflow}{if}((\textcolor{keywordtype}{int})intEscala>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
+\DoxyCodeLine{97                        \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{98                    pix\_aux.\mbox{\hyperlink{class_pixel_affd7e85713e18281b51e0e676485f704}{setPixelEscala}}((\textcolor{keywordtype}{int})intEscala);}
+\DoxyCodeLine{99                    img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(j, i, pix\_aux);}
+\DoxyCodeLine{100                    contador\_pixeles++;}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102                 \}}
+\DoxyCodeLine{103             \}}
+\DoxyCodeLine{104             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{105             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{106         \textcolor{keywordflow}{case} \textcolor{charliteral}{'3'}:}
+\DoxyCodeLine{107             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{108             \{}
+\DoxyCodeLine{109                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{110                 \{}
+\DoxyCodeLine{111                     \textcolor{keywordtype}{int} R, G, B;}
+\DoxyCodeLine{112                     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}>>R>>G>>B;}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114                     \textcolor{keywordflow}{if}(R>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() or G>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() or B>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
+\DoxyCodeLine{115                         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{116                     pix\_aux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}(R, G, B);}
+\DoxyCodeLine{117                     img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(j, i, pix\_aux);}
+\DoxyCodeLine{118                     contador\_pixeles++;}
+\DoxyCodeLine{119                 \}}
+\DoxyCodeLine{120             \}}
+\DoxyCodeLine{121             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{122             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{123         \textcolor{keywordflow}{case} \textcolor{charliteral}{'4'}:}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{126             \{}
+\DoxyCodeLine{127                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{128                 \{}
+\DoxyCodeLine{129                     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.read((\textcolor{keywordtype}{char}*)\&r, \textcolor{keyword}{sizeof}(r));}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131                     \textcolor{keywordflow}{if}((\textcolor{keywordtype}{int})r>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
+\DoxyCodeLine{132                         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134                     pix\_aux.\mbox{\hyperlink{class_pixel_ab624ff85be3e3d7b6d5f3e139300c1ef}{setPixelMonocr}}((\textcolor{keywordtype}{int})r);}
+\DoxyCodeLine{135                     img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(j, i, pix\_aux);}
+\DoxyCodeLine{136                     contador\_pixeles++;}
+\DoxyCodeLine{137                 \}}
+\DoxyCodeLine{138             \}}
+\DoxyCodeLine{139             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{140             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{141         \textcolor{keywordflow}{case} \textcolor{charliteral}{'5'}:}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144             getline(\mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}, linea, \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146             pos\_final = \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.tellg();}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{149             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(ruta, ios::in | ios::binary);}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.seekg(pos\_final);}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{154             \{}
+\DoxyCodeLine{155                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{156                 \{}
+\DoxyCodeLine{157                     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.read((\textcolor{keywordtype}{char}*)\&r, \textcolor{keyword}{sizeof}(r));}
+\DoxyCodeLine{158 }
+\DoxyCodeLine{159                     \textcolor{keywordflow}{if}((\textcolor{keywordtype}{int})r>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
+\DoxyCodeLine{160                         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{161 }
+\DoxyCodeLine{162                     pix\_aux.\mbox{\hyperlink{class_pixel_affd7e85713e18281b51e0e676485f704}{setPixelEscala}}((\textcolor{keywordtype}{int})r);}
+\DoxyCodeLine{163                     img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(j, i, pix\_aux);}
+\DoxyCodeLine{164                     contador\_pixeles++;}
+\DoxyCodeLine{165                 \}}
+\DoxyCodeLine{166             \}}
+\DoxyCodeLine{167             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{168             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{169         \textcolor{keywordflow}{case} \textcolor{charliteral}{'6'}:}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{171 }
+\DoxyCodeLine{172             getline(\mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}, linea, \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174             pos\_final = \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.tellg();}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{177             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.open(ruta, ios::in | ios::binary);}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.seekg(pos\_final);}
+\DoxyCodeLine{180 }
+\DoxyCodeLine{181             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<filas\_aux; j++)}
+\DoxyCodeLine{182             \{}
+\DoxyCodeLine{183                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<columnas\_aux; i++)}
+\DoxyCodeLine{184                 \{}
+\DoxyCodeLine{185                     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.read((\textcolor{keywordtype}{char}*)\&r, \textcolor{keyword}{sizeof}(r));}
+\DoxyCodeLine{186 }
+\DoxyCodeLine{187                     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.read((\textcolor{keywordtype}{char}*)\&g, \textcolor{keyword}{sizeof}(g));}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189                     \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.read((\textcolor{keywordtype}{char}*)\&b, \textcolor{keyword}{sizeof}(b));}
+\DoxyCodeLine{190 }
+\DoxyCodeLine{191                     \textcolor{keywordflow}{if}((\textcolor{keywordtype}{int})r>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() or (\textcolor{keywordtype}{int})g>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() or (\textcolor{keywordtype}{int})b>img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
+\DoxyCodeLine{192                         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194                     pix\_aux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}((\textcolor{keywordtype}{int})r, (\textcolor{keywordtype}{int})g, (\textcolor{keywordtype}{int})b);}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196                     img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(j, i, pix\_aux);}
+\DoxyCodeLine{197                     contador\_pixeles++;}
+\DoxyCodeLine{198                     \}}
+\DoxyCodeLine{199                 \}}
+\DoxyCodeLine{200 }
+\DoxyCodeLine{201             \mbox{\hyperlink{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}{archi}}.close();}
+\DoxyCodeLine{202 }
+\DoxyCodeLine{203             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205 }
+\DoxyCodeLine{206         \}}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208         \textcolor{keywordflow}{if}(contador\_pixeles != filas\_aux*columnas\_aux)}
+\DoxyCodeLine{209             \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{210 }
+\DoxyCodeLine{211     \}}
+\DoxyCodeLine{212     \textcolor{keywordflow}{return} img;}
+\DoxyCodeLine{213 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a archi, Imagen\+::get\+Rango(), identificador, Imagen\+::set\+Columnas(), Imagen\+::set\+Filas(), Imagen\+::set\+Identificador(), Imagen\+::set\+Informacion(), Imagen\+::set\+Pixel(), Pixel\+::set\+Pixel\+Escala(), Pixel\+::set\+Pixel\+Monocr(), Pixel\+::set\+Pixel\+RGB(), Imagen\+::set\+Rango() y Imagen\+::set\+Tamanio().
+
+\mbox{\Hypertarget{class_archivos_p_n_m_ab18c2f63835fa6482204ca1d55783c53}\label{class_archivos_p_n_m_ab18c2f63835fa6482204ca1d55783c53}} 
+\index{ArchivosPNM@{ArchivosPNM}!obtieneRutaGuardado@{obtieneRutaGuardado}}
+\index{obtieneRutaGuardado@{obtieneRutaGuardado}!ArchivosPNM@{ArchivosPNM}}
+\doxysubsubsection{\texorpdfstring{obtieneRutaGuardado()}{obtieneRutaGuardado()}}
+{\footnotesize\ttfamily string Archivos\+PNM\+::obtiene\+Ruta\+Guardado (\begin{DoxyParamCaption}\item[{string}]{id\+Imagen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+obtiene\+Ruta\+Guardado MÃ©todo privado auxiliar para el guardado de una imÃ¡gen, permite consultarle al usuario el nombre, y por lo tanto la ruta en la que se guarda. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em id\+Imagen} & Identificador de la imÃ¡gen a guardar para determinar su extensiÃ³n. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+String que representa la ruta en la que se guardarÃ¡. 
+\end{DoxyReturn}
+
+
+Definición en la línea 438 del archivo archivospnm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{439 \{}
+\DoxyCodeLine{440     \textcolor{keywordtype}{string} rutaGuardado = \textcolor{stringliteral}{"{}./Imagenes/Imagenes\_guardadas/"{}}, nombre;}
+\DoxyCodeLine{441     cout<<\textcolor{stringliteral}{"{}\(\backslash\)t  Ingrese nombre con el que desea guardar la imÃ¡gen. (No utilice '/')\(\backslash\)n\(\backslash\)t\(\backslash\)t>"{}};}
+\DoxyCodeLine{442     cin>>nombre;}
+\DoxyCodeLine{443 }
+\DoxyCodeLine{444     \textcolor{keywordflow}{switch}(idImagen[1])}
+\DoxyCodeLine{445     \{}
+\DoxyCodeLine{446     \textcolor{keywordflow}{case} \textcolor{charliteral}{'1'}:}
+\DoxyCodeLine{447         nombre = nombre + \textcolor{stringliteral}{"{}.pbm"{}};}
+\DoxyCodeLine{448         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{449     \textcolor{keywordflow}{case} \textcolor{charliteral}{'2'}:}
+\DoxyCodeLine{450         nombre = nombre + \textcolor{stringliteral}{"{}.pgm"{}};}
+\DoxyCodeLine{451         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{452     \textcolor{keywordflow}{case} \textcolor{charliteral}{'3'}:}
+\DoxyCodeLine{453         nombre = nombre + \textcolor{stringliteral}{"{}.ppm"{}};}
+\DoxyCodeLine{454         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{455     \textcolor{keywordflow}{case} \textcolor{charliteral}{'4'}:}
+\DoxyCodeLine{456         nombre = nombre + \textcolor{stringliteral}{"{}.pbm"{}};}
+\DoxyCodeLine{457         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{458     \textcolor{keywordflow}{case} \textcolor{charliteral}{'5'}:}
+\DoxyCodeLine{459         nombre = nombre + \textcolor{stringliteral}{"{}.pgm"{}};}
+\DoxyCodeLine{460         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{461     \textcolor{keywordflow}{case} \textcolor{charliteral}{'6'}:}
+\DoxyCodeLine{462         nombre = nombre + \textcolor{stringliteral}{"{}.ppm"{}};}
+\DoxyCodeLine{463         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{464     \}}
+\DoxyCodeLine{465 }
+\DoxyCodeLine{466     rutaGuardado = rutaGuardado + nombre;}
+\DoxyCodeLine{467 }
+\DoxyCodeLine{468     \textcolor{keywordflow}{return} rutaGuardado;}
+\DoxyCodeLine{469 \}}
+
+\end{DoxyCode}
+
+
+Referenciado por guardar().
+
+
+
+\doxysubsection{Documentación de los campos}
+\mbox{\Hypertarget{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}\label{class_archivos_p_n_m_a87b39a9e915743d94732794e3bb78dd7}} 
+\index{ArchivosPNM@{ArchivosPNM}!archi@{archi}}
+\index{archi@{archi}!ArchivosPNM@{ArchivosPNM}}
+\doxysubsubsection{\texorpdfstring{archi}{archi}}
+{\footnotesize\ttfamily fstream Archivos\+PNM\+::archi\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em archi} & Archivo de entrada o sÃ¡lida de tipo PNM. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 45 del archivo archivospnm.\+h.
+
+
+
+Referenciado por escribe\+Encabezado(), escribe\+P1(), escribe\+P2(), escribe\+P3(), escribe\+P4(), escribe\+P5(), escribe\+P6(), guardar() y leer().
+
+\mbox{\Hypertarget{class_archivos_p_n_m_add99f5595bf7c7af37ee9a89827ec7b5}\label{class_archivos_p_n_m_add99f5595bf7c7af37ee9a89827ec7b5}} 
+\index{ArchivosPNM@{ArchivosPNM}!identificador@{identificador}}
+\index{identificador@{identificador}!ArchivosPNM@{ArchivosPNM}}
+\doxysubsubsection{\texorpdfstring{identificador}{identificador}}
+{\footnotesize\ttfamily string Archivos\+PNM\+::identificador\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em identificador} & ParÃ¡metro que almacena el identificador del archivo. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 50 del archivo archivospnm.\+h.
+
+
+
+Referenciado por leer().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{archivospnm_8h}{archivospnm.\+h}}\item 
+\mbox{\hyperlink{archivospnm_8cpp}{archivospnm.\+cpp}}\end{DoxyCompactItemize}

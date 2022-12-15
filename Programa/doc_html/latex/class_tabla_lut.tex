@@ -1,0 +1,221 @@
+\hypertarget{class_tabla_lut}{}\doxysection{Referencia de la Clase Tabla\+Lut}
+\label{class_tabla_lut}\index{TablaLut@{TablaLut}}
+
+
+Clase que permite representar una \mbox{\hyperlink{class_imagen}{Imagen}} pseudocolreada con una tabla LUT.  
+
+
+
+
+{\ttfamily \#include $<$tablalut.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tabla_lut_adba06df909c1e78deef96aac0f26eea1}{Tabla\+Lut}} (int opcion)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_tabla_lut}{Tabla\+Lut}} Constructor de \mbox{\hyperlink{class_tabla_lut}{Tabla\+Lut}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pixel}{Pixel}} \mbox{\hyperlink{class_tabla_lut_a90edcfa89eaf8f169dda3cec3692915c}{pseudo\+Colorear}} (int intensidad)
+\begin{DoxyCompactList}\small\item\em pseudo\+Colorear MÃ©todo que permite a partir de la intensidad de un \mbox{\hyperlink{class_pixel}{Pixel}} devolver el \mbox{\hyperlink{class_pixel}{Pixel}} con el cuÃ¡l debe representarse \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tabla_lut_a12354aac4305cfcb905cc602aa5a69cf}{cargar\+LUT}} (int opc)
+\begin{DoxyCompactList}\small\item\em cargar\+LUT MÃ©todo que permite cargar la tabla LUT desde un archivo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_tabla_lut_a3b70ad7546c97d257172e448b10aebc4}{luts}} = \{\char`\"{}./grupo\+\_\+luts/glow.\+lut\char`\"{}, \char`\"{}./grupo\+\_\+luts/Turbo.\+lut\char`\"{}\}
+\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\+\_\+conversion}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que permite representar una \mbox{\hyperlink{class_imagen}{Imagen}} pseudocolreada con una tabla LUT. 
+
+Obtiene un nivel de intensidad, y en base a esto, devuelve el \mbox{\hyperlink{class_pixel}{Pixel}} con el cual debe ser representado. \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 24-\/11-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000019}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+
+\end{DoxyWarning}
+
+
+Definición en la línea 22 del archivo tablalut.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_tabla_lut_adba06df909c1e78deef96aac0f26eea1}\label{class_tabla_lut_adba06df909c1e78deef96aac0f26eea1}} 
+\index{TablaLut@{TablaLut}!TablaLut@{TablaLut}}
+\index{TablaLut@{TablaLut}!TablaLut@{TablaLut}}
+\doxysubsubsection{\texorpdfstring{TablaLut()}{TablaLut()}}
+{\footnotesize\ttfamily Tabla\+Lut\+::\+Tabla\+Lut (\begin{DoxyParamCaption}\item[{int}]{opcion }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_tabla_lut}{Tabla\+Lut}} Constructor de \mbox{\hyperlink{class_tabla_lut}{Tabla\+Lut}}. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em opcion} & LUT q desea utilizarse. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 3 del archivo tablalut.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{5     \mbox{\hyperlink{class_tabla_lut_a12354aac4305cfcb905cc602aa5a69cf}{cargarLUT}}(opcion);}
+\DoxyCodeLine{6 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a cargar\+LUT().
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_tabla_lut_a12354aac4305cfcb905cc602aa5a69cf}\label{class_tabla_lut_a12354aac4305cfcb905cc602aa5a69cf}} 
+\index{TablaLut@{TablaLut}!cargarLUT@{cargarLUT}}
+\index{cargarLUT@{cargarLUT}!TablaLut@{TablaLut}}
+\doxysubsubsection{\texorpdfstring{cargarLUT()}{cargarLUT()}}
+{\footnotesize\ttfamily void Tabla\+Lut\+::cargar\+LUT (\begin{DoxyParamCaption}\item[{int}]{opc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+cargar\+LUT MÃ©todo que permite cargar la tabla LUT desde un archivo. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em opc} & LUT que se desea utilizar. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 13 del archivo tablalut.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}.resize(256);}
+\DoxyCodeLine{16     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}.size(); i++)}
+\DoxyCodeLine{17          \mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[i].resize(4);}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     ifstream lut;}
+\DoxyCodeLine{20     lut.open(\mbox{\hyperlink{class_tabla_lut_a3b70ad7546c97d257172e448b10aebc4}{luts}}[opc-\/1]);}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \textcolor{keywordtype}{string} linea;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     getline(lut, linea);}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}.size(); i++)\{}
+\DoxyCodeLine{27         lut>>\mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[i][0]>>\mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[i][1]>>\mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[i][2]>>\mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[i][3];}
+\DoxyCodeLine{28     \}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a luts y tabla\+\_\+conversion.
+
+
+
+Referenciado por Tabla\+Lut().
+
+\mbox{\Hypertarget{class_tabla_lut_a90edcfa89eaf8f169dda3cec3692915c}\label{class_tabla_lut_a90edcfa89eaf8f169dda3cec3692915c}} 
+\index{TablaLut@{TablaLut}!pseudoColorear@{pseudoColorear}}
+\index{pseudoColorear@{pseudoColorear}!TablaLut@{TablaLut}}
+\doxysubsubsection{\texorpdfstring{pseudoColorear()}{pseudoColorear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pixel}{Pixel}} Tabla\+Lut\+::pseudo\+Colorear (\begin{DoxyParamCaption}\item[{int}]{intensidad }\end{DoxyParamCaption})}
+
+
+
+pseudo\+Colorear MÃ©todo que permite a partir de la intensidad de un \mbox{\hyperlink{class_pixel}{Pixel}} devolver el \mbox{\hyperlink{class_pixel}{Pixel}} con el cuÃ¡l debe representarse 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em intensidad} & Intensidad de un \mbox{\hyperlink{class_pixel}{Pixel}} que se desea pseudocolorear. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\mbox{\hyperlink{class_pixel}{Pixel}} pseudocoloreado a travÃ©s de una intensidad. 
+\end{DoxyReturn}
+
+
+Definición en la línea 8 del archivo tablalut.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pixel}{Pixel}}(\mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[intensidad][1], \mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[intensidad][2], \mbox{\hyperlink{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}{tabla\_conversion}}[intensidad][3]);}
+\DoxyCodeLine{11 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a tabla\+\_\+conversion.
+
+
+
+Referenciado por Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada().
+
+
+
+\doxysubsection{Documentación de los campos}
+\mbox{\Hypertarget{class_tabla_lut_a3b70ad7546c97d257172e448b10aebc4}\label{class_tabla_lut_a3b70ad7546c97d257172e448b10aebc4}} 
+\index{TablaLut@{TablaLut}!luts@{luts}}
+\index{luts@{luts}!TablaLut@{TablaLut}}
+\doxysubsubsection{\texorpdfstring{luts}{luts}}
+{\footnotesize\ttfamily vector$<$string$>$ Tabla\+Lut\+::luts = \{\char`\"{}./grupo\+\_\+luts/glow.\+lut\char`\"{}, \char`\"{}./grupo\+\_\+luts/Turbo.\+lut\char`\"{}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Vector} & de strings que almacena las rutas de las tablas LUT manejadas por el software. La posicion de las rutas esta dada por la opcion del constructor -\/ 1. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 44 del archivo tablalut.\+h.
+
+
+
+Referenciado por cargar\+LUT().
+
+\mbox{\Hypertarget{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}\label{class_tabla_lut_aeb49ebf50266bc1623cc9195ea63f260}} 
+\index{TablaLut@{TablaLut}!tabla\_conversion@{tabla\_conversion}}
+\index{tabla\_conversion@{tabla\_conversion}!TablaLut@{TablaLut}}
+\doxysubsubsection{\texorpdfstring{tabla\_conversion}{tabla\_conversion}}
+{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ Tabla\+Lut\+::tabla\+\_\+conversion\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em tabla\+\_\+conversion} & Vector de enteros que representa la tabla de conversion\mbox{[}i\mbox{]}\mbox{[}j\mbox{]} donde i representa la intensidad que se desea pseudocolorear y j toma distintos valores, 1 si es R, 2 si es G y 3 si es B. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 50 del archivo tablalut.\+h.
+
+
+
+Referenciado por cargar\+LUT() y pseudo\+Colorear().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tablalut_8h}{tablalut.\+h}}\item 
+\mbox{\hyperlink{tablalut_8cpp}{tablalut.\+cpp}}\end{DoxyCompactItemize}

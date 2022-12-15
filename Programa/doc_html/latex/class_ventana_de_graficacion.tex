@@ -1,0 +1,1073 @@
+\hypertarget{class_ventana_de_graficacion}{}\doxysection{Referencia de la Clase Ventana\+De\+Graficacion}
+\label{class_ventana_de_graficacion}\index{VentanaDeGraficacion@{VentanaDeGraficacion}}
+
+
+Clase encargada de mostrar por pantalla una imagen y responder a eventos.  
+
+
+
+
+{\ttfamily \#include $<$ventanadegraficacion.\+h$>$}
+
+Diagrama de herencias de Ventana\+De\+Graficacion\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ventana_de_graficacion}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ventana_de_graficacion_a77cc257b3adce4c8729e9ed7f934c343}{Ventana\+De\+Graficacion}} ()
+\begin{DoxyCompactList}\small\item\em Graficador Constructor del objeto Graficador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ventana_de_graficacion_ac206af6a2bc5d7a4dd4b56c4fcf90568}{initialize\+GL}} ()
+\begin{DoxyCompactList}\small\item\em initialize\+GL Inicializa los recursos necesarios para utilizar Open\+GL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ventana_de_graficacion_a646acbbf9d0372421c6c87d33ebf3f6e}{resize\+GL}} (int p\+Ancho, int p\+Alto)
+\begin{DoxyCompactList}\small\item\em resize\+GL Se modifica el tamaÃ±o cuando se modifica el tamaÃ±o de la ventana. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ventana_de_graficacion_ae9cad487723447a039460f4fdd51ed44}{paint\+GL}} ()
+\begin{DoxyCompactList}\small\item\em paint\+GL Permite graficar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ventana_de_graficacion_af92839b232d70a97b25112a6dc417ac6}{graficar\+Imagen}} ()
+\begin{DoxyCompactList}\small\item\em graficar\+Imagen Permite la representacion de una \mbox{\hyperlink{class_imagen}{Imagen}}, haciendo uso de la librerÃ­a Open\+GL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ventana_de_graficacion_ac354f0f2e84ddbcc5fa2e302ee8f7161}{graficar\+Imagen\+Pseudocoloreada}} (int opc)
+\begin{DoxyCompactList}\small\item\em graficar\+Imagen\+Pseudocoloreada Permite la representaciÃ³n de una \mbox{\hyperlink{class_imagen}{Imagen}}, haciendo uso de la librerÃ­a Open\+GL, pseudocoloreandola con una tabla LUT. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ventana_de_graficacion_a98cab3ea88696a35561c7257e6b7c790}{cargar\+Imagen}} ()
+\begin{DoxyCompactList}\small\item\em cargar\+Imagen Permite cargar una \mbox{\hyperlink{class_imagen}{Imagen}} al Graficador \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ventana_de_graficacion_a50a2edf0dd5a4381eb8254153b116a56}{recuperar\+Imagen}} (string ruta)
+\begin{DoxyCompactList}\small\item\em recuperar\+Imagen Permite cargar una \mbox{\hyperlink{class_imagen}{Imagen}} a partir de una ruta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ventana_de_graficacion_a2a9ae220f714ac79319ee89032156ae3}{set\+Espacio}} (\mbox{\hyperlink{class_espacio_de_trabajo}{Espacio\+De\+Trabajo}} \&esp)
+\begin{DoxyCompactList}\small\item\em set\+Espacio Permite asociarle un espacio de trabajo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ventana_de_graficacion_a0d7b3363ca425030ccfc592874462549}{set\+Opciones}} (int \mbox{\hyperlink{class_ventana_de_graficacion_ae39f47c78d1e0089c6a35e889999d51b}{opc\+Dir}}, int \mbox{\hyperlink{class_ventana_de_graficacion_a08d8e9f6cc2414e2f3f82d8a5e57f74d}{opc\+Arch}})
+\begin{DoxyCompactList}\small\item\em set\+Opciones MÃ©todo que permite establecer las opciones de directorio y archivo que eligiÃ³ el usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ventana_de_graficacion_a3fe8db28a816932fce3b39405fbd06f5}{graficar\+Histograma}} ()
+\begin{DoxyCompactList}\small\item\em graficar\+Histograma MÃ©todo que permite graficar el Histograma de una \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ventana_de_graficacion_a77ba6bcbbf535eab89fdae40b7a7bd5c}{set\+App}} (QApplication $\ast$app)
+\begin{DoxyCompactList}\small\item\em set\+\_\+app MÃ©todo que permite asociar una QApplication. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ventana_de_graficacion_a384bc719c44d9ef95e10389e9aa8f8d1}{key\+Press\+Event}} (QKey\+Event $\ast$event) override
+\begin{DoxyCompactList}\small\item\em key\+Press\+Event MÃ©todo heredado que permite captar y responder a un evento de teclado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ventana_de_graficacion_af57dc06f8c175214ff5597e388d46afc}{mouse\+Press\+Event}} (QMouse\+Event $\ast$event) override
+\begin{DoxyCompactList}\small\item\em mouse\+Press\+Event MÃ©todo heredado que permite captar y responde a un evento de mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_ventana_de_graficacion_ae39f47c78d1e0089c6a35e889999d51b}{opc\+Dir}}
+\item 
+int \mbox{\hyperlink{class_ventana_de_graficacion_a08d8e9f6cc2414e2f3f82d8a5e57f74d}{opc\+Arch}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_ventana_de_graficacion_a8c7d6a6c6d0f3a90c5dff22d1f3e8801}{anchoV}}
+\item 
+int \mbox{\hyperlink{class_ventana_de_graficacion_ab8e415cbdff0a5423dd32fa93577d6fc}{altoV}}
+\item 
+float \mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}}
+\item 
+float \mbox{\hyperlink{class_ventana_de_graficacion_a09b97bb7c5647c56b63fdc351c45bfa1}{desplx}}
+\item 
+float \mbox{\hyperlink{class_ventana_de_graficacion_acd503a7003d7a14c00fcae6178b15c0a}{desply}}
+\item 
+\mbox{\hyperlink{class_imagen}{Imagen}} \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}
+\item 
+\mbox{\hyperlink{class_espacio_de_trabajo}{Espacio\+De\+Trabajo}} $\ast$ \mbox{\hyperlink{class_ventana_de_graficacion_a21dcefa549bc1618476a1c156536b7bc}{espacio}}
+\item 
+QApplication $\ast$ \mbox{\hyperlink{class_ventana_de_graficacion_a6edb764d43c8f46bbdca40a611babace}{appl}}
+\item 
+bool \mbox{\hyperlink{class_ventana_de_graficacion_ac8972961b78010bf28c002c73fe9b7a2}{se\+Grafica\+Pseudocoloreada}} = false
+\item 
+uint \mbox{\hyperlink{class_ventana_de_graficacion_ac3bcbd57599467c3639088ddb7546f4d}{tabla\+De\+Pseudocoloreo}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase encargada de mostrar por pantalla una imagen y responder a eventos. 
+
+Tiene una imagen, la cual es capaz de cargar. Conoce el ancho y alto de la ventana y la escala utilizada. Se asocia con un espacio de trabajo para conocer distintas rutas y archivos. Por otro lado, es capaz de responder ante distintos eventos de mouse y teclado. \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 24-\/11-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000020}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+
+\end{DoxyWarning}
+
+
+Definición en la línea 42 del archivo ventanadegraficacion.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_ventana_de_graficacion_a77cc257b3adce4c8729e9ed7f934c343}\label{class_ventana_de_graficacion_a77cc257b3adce4c8729e9ed7f934c343}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{VentanaDeGraficacion()}{VentanaDeGraficacion()}}
+{\footnotesize\ttfamily Ventana\+De\+Graficacion\+::\+Ventana\+De\+Graficacion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Graficador Constructor del objeto Graficador. 
+
+
+
+Definición en la línea 5 del archivo ventanadegraficacion.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_ventana_de_graficacion_a98cab3ea88696a35561c7257e6b7c790}\label{class_ventana_de_graficacion_a98cab3ea88696a35561c7257e6b7c790}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!cargarImagen@{cargarImagen}}
+\index{cargarImagen@{cargarImagen}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{cargarImagen()}{cargarImagen()}}
+{\footnotesize\ttfamily void Ventana\+De\+Graficacion\+::cargar\+Imagen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+cargar\+Imagen Permite cargar una \mbox{\hyperlink{class_imagen}{Imagen}} al Graficador 
+
+
+
+Definición en la línea 126 del archivo ventanadegraficacion.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{127 \{}
+\DoxyCodeLine{128     \textcolor{keywordtype}{string} ruta = \mbox{\hyperlink{class_ventana_de_graficacion_a21dcefa549bc1618476a1c156536b7bc}{espacio}}-\/>\mbox{\hyperlink{class_espacio_de_trabajo_a8ba67fb3805b2e366a8d80bee8f2b54e}{getRuta}}(\mbox{\hyperlink{class_ventana_de_graficacion_ae39f47c78d1e0089c6a35e889999d51b}{opcDir}}, \mbox{\hyperlink{class_ventana_de_graficacion_a08d8e9f6cc2414e2f3f82d8a5e57f74d}{opcArch}});}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130     \mbox{\hyperlink{class_gestor_de_archivos}{GestorDeArchivos}}* archi;}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{132     \textcolor{keywordtype}{string} extension = \mbox{\hyperlink{class_ventana_de_graficacion_a21dcefa549bc1618476a1c156536b7bc}{espacio}}-\/>\mbox{\hyperlink{class_espacio_de_trabajo_a86a46ccd8e919fff8a4758ac37da5730}{getPNMoAIC}}(ruta);}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134     \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_a166b16c639448c813f764b79ae9d3765}{borrarImagen}}();}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136     \textcolor{keywordflow}{if}(extension == \textcolor{stringliteral}{"{}pnm"{}})}
+\DoxyCodeLine{137         archi = \textcolor{keyword}{new} \mbox{\hyperlink{class_archivos_p_n_m}{ArchivosPNM}};}
+\DoxyCodeLine{138     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{139         archi = \textcolor{keyword}{new} \mbox{\hyperlink{class_archivos_a_i_c}{ArchivosAIC}};}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{141     \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}} = archi-\/>\mbox{\hyperlink{class_gestor_de_archivos_a656468aebffd8ad9f68723f6c8abf69f}{leer}}(ruta);}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144     \mbox{\hyperlink{class_ventana_de_graficacion_a21dcefa549bc1618476a1c156536b7bc}{espacio}}-\/>\mbox{\hyperlink{class_espacio_de_trabajo_ae0634d1dfd3edea5a29ec14a7ef56649}{llevarRegistro}}(\mbox{\hyperlink{class_ventana_de_graficacion_ae39f47c78d1e0089c6a35e889999d51b}{opcDir}}, \mbox{\hyperlink{class_ventana_de_graficacion_a08d8e9f6cc2414e2f3f82d8a5e57f74d}{opcArch}});}
+\DoxyCodeLine{145 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Imagen\+::borrar\+Imagen(), espacio, Espacio\+De\+Trabajo\+::get\+PNMo\+AIC(), Espacio\+De\+Trabajo\+::get\+Ruta(), imagen, Gestor\+De\+Archivos\+::leer(), Espacio\+De\+Trabajo\+::llevar\+Registro(), opc\+Arch y opc\+Dir.
+
+
+
+Referenciado por Sistema\+::iniciar\+Graficacion() y key\+Press\+Event().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_a3fe8db28a816932fce3b39405fbd06f5}\label{class_ventana_de_graficacion_a3fe8db28a816932fce3b39405fbd06f5}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!graficarHistograma@{graficarHistograma}}
+\index{graficarHistograma@{graficarHistograma}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{graficarHistograma()}{graficarHistograma()}}
+{\footnotesize\ttfamily void Ventana\+De\+Graficacion\+::graficar\+Histograma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+graficar\+Histograma MÃ©todo que permite graficar el Histograma de una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+
+
+Definición en la línea 168 del archivo ventanadegraficacion.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{169 \{}
+\DoxyCodeLine{170     \mbox{\hyperlink{class_procesador_estadistico}{ProcesadorEstadistico}} proce;}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{172     proce.\mbox{\hyperlink{class_procesador_estadistico_a331c39e9cfa2711dfb4419ef15b20eb3}{informarDatosEstadisticos}}(\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}});}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174     \mbox{\hyperlink{class_graficador_histograma}{GraficadorHistograma}}* grafHistograma;}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176     grafHistograma = \textcolor{keyword}{new} \mbox{\hyperlink{class_graficador_histograma}{GraficadorHistograma}}(\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}});}
+\DoxyCodeLine{177 }
+\DoxyCodeLine{178     grafHistograma-\/>\mbox{\hyperlink{class_graficador_histograma_a0fea2467b8ee53bc9ef00cab14eee93f}{graficarHistograma}}();}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{180     grafHistograma-\/>show();}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{182 \textcolor{comment}{//    appl-\/>exec();}}
+\DoxyCodeLine{183 }
+\DoxyCodeLine{184 }
+\DoxyCodeLine{185 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Graficador\+Histograma\+::graficar\+Histograma(), imagen y Procesador\+Estadistico\+::informar\+Datos\+Estadisticos().
+
+
+
+Referenciado por key\+Press\+Event().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_af92839b232d70a97b25112a6dc417ac6}\label{class_ventana_de_graficacion_af92839b232d70a97b25112a6dc417ac6}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!graficarImagen@{graficarImagen}}
+\index{graficarImagen@{graficarImagen}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{graficarImagen()}{graficarImagen()}}
+{\footnotesize\ttfamily void Ventana\+De\+Graficacion\+::graficar\+Imagen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+graficar\+Imagen Permite la representacion de una \mbox{\hyperlink{class_imagen}{Imagen}}, haciendo uso de la librerÃ­a Open\+GL. 
+
+
+
+Definición en la línea 67 del archivo ventanadegraficacion.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68 \{}
+\DoxyCodeLine{69     \mbox{\hyperlink{class_pixel}{Pixel}} pixel\_aux;}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     glPushMatrix();}
+\DoxyCodeLine{72     glTranslatef(\mbox{\hyperlink{class_ventana_de_graficacion_a09b97bb7c5647c56b63fdc351c45bfa1}{desplx}}, \mbox{\hyperlink{class_ventana_de_graficacion_acd503a7003d7a14c00fcae6178b15c0a}{desply}}, 0.0f);}
+\DoxyCodeLine{73     glScalef(\mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}}, \mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}}, 1.0f);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     glBegin(GL\_QUADS);}
+\DoxyCodeLine{76         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} fil=0; fil<\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(); fil++)}
+\DoxyCodeLine{77         \{}
+\DoxyCodeLine{78            \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} col=0; col<\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}(); col++)}
+\DoxyCodeLine{79            \{}
+\DoxyCodeLine{80                pixel\_aux = \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fil, col);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82                glColor3f((\textcolor{keywordtype}{float})pixel\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()/\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}(), (\textcolor{keywordtype}{float})pixel\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()/\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}(), (\textcolor{keywordtype}{float})pixel\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()/\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}());}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84                glVertex3i(col, \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/fil, 0);}
+\DoxyCodeLine{85                glVertex3i(col, \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/(fil+1), 0);}
+\DoxyCodeLine{86                glVertex3i(col+1, \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/(fil+1), 0);}
+\DoxyCodeLine{87                glVertex3i(col+1, \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/fil, 0);}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89            \}}
+\DoxyCodeLine{90         \}}
+\DoxyCodeLine{91         glEnd();}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93         glPopMatrix();}
+\DoxyCodeLine{94 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a desplx, desply, escala, Pixel\+::get\+B(), Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Pixel\+::get\+G(), Imagen\+::get\+Pixel(), Pixel\+::get\+R(), Imagen\+::get\+Rango() y imagen.
+
+
+
+Referenciado por paint\+GL().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_ac354f0f2e84ddbcc5fa2e302ee8f7161}\label{class_ventana_de_graficacion_ac354f0f2e84ddbcc5fa2e302ee8f7161}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!graficarImagenPseudocoloreada@{graficarImagenPseudocoloreada}}
+\index{graficarImagenPseudocoloreada@{graficarImagenPseudocoloreada}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{graficarImagenPseudocoloreada()}{graficarImagenPseudocoloreada()}}
+{\footnotesize\ttfamily void Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada (\begin{DoxyParamCaption}\item[{int}]{opc }\end{DoxyParamCaption})}
+
+
+
+graficar\+Imagen\+Pseudocoloreada Permite la representaciÃ³n de una \mbox{\hyperlink{class_imagen}{Imagen}}, haciendo uso de la librerÃ­a Open\+GL, pseudocoloreandola con una tabla LUT. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em opc} & Tabla LUT que se desea usar. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 96 del archivo ventanadegraficacion.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{97 \{}
+\DoxyCodeLine{98     \mbox{\hyperlink{class_pixel}{Pixel}} pixel\_aux;}
+\DoxyCodeLine{99     \mbox{\hyperlink{class_tabla_lut}{TablaLut}} tabla(opc);}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101     glPushMatrix();}
+\DoxyCodeLine{102     glTranslatef(\mbox{\hyperlink{class_ventana_de_graficacion_a09b97bb7c5647c56b63fdc351c45bfa1}{desplx}}, \mbox{\hyperlink{class_ventana_de_graficacion_acd503a7003d7a14c00fcae6178b15c0a}{desply}}, 0.0f);}
+\DoxyCodeLine{103     glScalef(\mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}}, \mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}}, 1.0f);}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105     glBegin(GL\_QUADS);}
+\DoxyCodeLine{106         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} fil=0; fil<\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(); fil++)}
+\DoxyCodeLine{107         \{}
+\DoxyCodeLine{108            \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} col=0; col<\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}(); col++)}
+\DoxyCodeLine{109            \{}
+\DoxyCodeLine{110                pixel\_aux = tabla.pseudoColorear(\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fil, col).\mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{getIntensidad}}());}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112                glColor3f((\textcolor{keywordtype}{float})pixel\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}()/\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}(), (\textcolor{keywordtype}{float})pixel\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}()/\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}(), (\textcolor{keywordtype}{float})pixel\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}()/\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}());}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114                glVertex3i(col, \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/fil, 0);}
+\DoxyCodeLine{115                glVertex3i(col, \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/(fil+1), 0);}
+\DoxyCodeLine{116                glVertex3i(col+1, \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/(fil+1), 0);}
+\DoxyCodeLine{117                glVertex3i(col+1, \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/fil, 0);}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119            \}}
+\DoxyCodeLine{120         \}}
+\DoxyCodeLine{121         glEnd();}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123         glPopMatrix();}
+\DoxyCodeLine{124 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a desplx, desply, escala, Pixel\+::get\+B(), Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Pixel\+::get\+G(), Pixel\+::get\+Intensidad(), Imagen\+::get\+Pixel(), Pixel\+::get\+R(), Imagen\+::get\+Rango(), imagen y Tabla\+Lut\+::pseudo\+Colorear().
+
+
+
+Referenciado por paint\+GL().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_ac206af6a2bc5d7a4dd4b56c4fcf90568}\label{class_ventana_de_graficacion_ac206af6a2bc5d7a4dd4b56c4fcf90568}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!initializeGL@{initializeGL}}
+\index{initializeGL@{initializeGL}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{initializeGL()}{initializeGL()}}
+{\footnotesize\ttfamily void Ventana\+De\+Graficacion\+::initialize\+GL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+initialize\+GL Inicializa los recursos necesarios para utilizar Open\+GL. 
+
+
+
+Definición en la línea 11 del archivo ventanadegraficacion.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     initializeOpenGLFunctions();}
+\DoxyCodeLine{15     glClearColor(1.0f,1.0f,1.0f,1.0f);}
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ventana_de_graficacion_a384bc719c44d9ef95e10389e9aa8f8d1}\label{class_ventana_de_graficacion_a384bc719c44d9ef95e10389e9aa8f8d1}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!keyPressEvent@{keyPressEvent}}
+\index{keyPressEvent@{keyPressEvent}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{keyPressEvent()}{keyPressEvent()}}
+{\footnotesize\ttfamily void Ventana\+De\+Graficacion\+::key\+Press\+Event (\begin{DoxyParamCaption}\item[{QKey\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+key\+Press\+Event MÃ©todo heredado que permite captar y responder a un evento de teclado. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em event} & Evento que es captado. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 198 del archivo ventanadegraficacion.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{199 \{}
+\DoxyCodeLine{200     \mbox{\hyperlink{class_filtros}{Filtros}}* filtros;}
+\DoxyCodeLine{201     \textcolor{keywordtype}{bool} flecha\_derecha = \textcolor{keyword}{event}-\/>key() == Qt::Key\_Right;}
+\DoxyCodeLine{202     \textcolor{keywordtype}{bool} ctrl = \textcolor{keyword}{event}-\/>modifiers() \& Qt::ControlModifier;}
+\DoxyCodeLine{203     \textcolor{keywordtype}{bool} flecha\_izquierda = \textcolor{keyword}{event}-\/>key() == Qt::Key\_Left;;}
+\DoxyCodeLine{204     \textcolor{keywordtype}{bool} h = \textcolor{keyword}{event}-\/>key() == Qt::Key\_H;}
+\DoxyCodeLine{205     \textcolor{keywordtype}{bool} g = \textcolor{keyword}{event}-\/>key() == Qt::Key\_G;}
+\DoxyCodeLine{206     \textcolor{keywordtype}{bool} s = \textcolor{keyword}{event}-\/>key() == Qt::Key\_S;}
+\DoxyCodeLine{207     \textcolor{keywordtype}{bool} m = \textcolor{keyword}{event}-\/>key() == Qt::Key\_M;}
+\DoxyCodeLine{208     \textcolor{keywordtype}{bool} c = \textcolor{keyword}{event}-\/>key() == Qt::Key\_C;}
+\DoxyCodeLine{209     \textcolor{keywordtype}{bool} b = \textcolor{keyword}{event}-\/>key() == Qt::Key\_B;}
+\DoxyCodeLine{210     \textcolor{keywordtype}{bool} n = \textcolor{keyword}{event}-\/>key() == Qt::Key\_N;}
+\DoxyCodeLine{211     \textcolor{keywordtype}{bool} a = \textcolor{keyword}{event}-\/>key() == Qt::Key\_A;}
+\DoxyCodeLine{212     \textcolor{keywordtype}{bool} mas = \textcolor{keyword}{event}-\/>key() == Qt::Key\_Plus;}
+\DoxyCodeLine{213     \textcolor{keywordtype}{bool} menos = \textcolor{keyword}{event}-\/>key() == Qt::Key\_Minus;}
+\DoxyCodeLine{214     \textcolor{keywordtype}{bool} uno = \textcolor{keyword}{event}-\/>key() == Qt::Key\_1;}
+\DoxyCodeLine{215     \textcolor{keywordtype}{bool} dos = \textcolor{keyword}{event}-\/>key() == Qt::Key\_2;}
+\DoxyCodeLine{216 }
+\DoxyCodeLine{217     \textcolor{keywordflow}{if}(ctrl and flecha\_derecha)}
+\DoxyCodeLine{218     \{}
+\DoxyCodeLine{219         \mbox{\hyperlink{class_ventana_de_graficacion_a08d8e9f6cc2414e2f3f82d8a5e57f74d}{opcArch}}++;}
+\DoxyCodeLine{220         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_ventana_de_graficacion_a08d8e9f6cc2414e2f3f82d8a5e57f74d}{opcArch}} > \mbox{\hyperlink{class_ventana_de_graficacion_a21dcefa549bc1618476a1c156536b7bc}{espacio}}-\/>\mbox{\hyperlink{class_espacio_de_trabajo_a45307e1544c7fd91e19274b9d9e983c2}{getNroArchivos}}())}
+\DoxyCodeLine{221             \mbox{\hyperlink{class_ventana_de_graficacion_a08d8e9f6cc2414e2f3f82d8a5e57f74d}{opcArch}} = 1;}
+\DoxyCodeLine{222         cout<<\textcolor{stringliteral}{"{}Ctrl + -\/>: Mostrar imagen siguiente.\(\backslash\)n"{}};}
+\DoxyCodeLine{223         cout.flush();}
+\DoxyCodeLine{224         \mbox{\hyperlink{class_ventana_de_graficacion_a98cab3ea88696a35561c7257e6b7c790}{cargarImagen}}();}
+\DoxyCodeLine{225         repaint();}
+\DoxyCodeLine{226     \}}
+\DoxyCodeLine{227 }
+\DoxyCodeLine{228     \textcolor{keywordflow}{if}(ctrl and flecha\_izquierda)}
+\DoxyCodeLine{229     \{}
+\DoxyCodeLine{230         \mbox{\hyperlink{class_ventana_de_graficacion_a08d8e9f6cc2414e2f3f82d8a5e57f74d}{opcArch}}-\/-\/;}
+\DoxyCodeLine{231         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_ventana_de_graficacion_a08d8e9f6cc2414e2f3f82d8a5e57f74d}{opcArch}} == 0)}
+\DoxyCodeLine{232             \mbox{\hyperlink{class_ventana_de_graficacion_a08d8e9f6cc2414e2f3f82d8a5e57f74d}{opcArch}} = \mbox{\hyperlink{class_ventana_de_graficacion_a21dcefa549bc1618476a1c156536b7bc}{espacio}}-\/>\mbox{\hyperlink{class_espacio_de_trabajo_a45307e1544c7fd91e19274b9d9e983c2}{getNroArchivos}}();}
+\DoxyCodeLine{233         cout<<\textcolor{stringliteral}{"{}Ctrl + <-\/: Mostrar imagen anterior.\(\backslash\)n"{}};}
+\DoxyCodeLine{234         cout.flush();}
+\DoxyCodeLine{235         \mbox{\hyperlink{class_ventana_de_graficacion_a98cab3ea88696a35561c7257e6b7c790}{cargarImagen}}();}
+\DoxyCodeLine{236         repaint();}
+\DoxyCodeLine{237     \}}
+\DoxyCodeLine{238 }
+\DoxyCodeLine{239     \textcolor{keywordflow}{if}(ctrl and mas)}
+\DoxyCodeLine{240     \{}
+\DoxyCodeLine{241         filtros = \textcolor{keyword}{new} \mbox{\hyperlink{class_brillo}{Brillo}}(1);}
+\DoxyCodeLine{242         cout<<\textcolor{stringliteral}{"{}Ctrl + '+': Aumentar brillo.\(\backslash\)n"{}};}
+\DoxyCodeLine{243         cout.flush();}
+\DoxyCodeLine{244         \mbox{\hyperlink{class_ventana_de_graficacion_a6edb764d43c8f46bbdca40a611babace}{appl}}-\/>closeAllWindows();}
+\DoxyCodeLine{245         \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}} = filtros-\/>\mbox{\hyperlink{class_filtros_a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82}{aplicarFiltro}}(\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}});}
+\DoxyCodeLine{246         show();}
+\DoxyCodeLine{247         repaint();}
+\DoxyCodeLine{248     \}}
+\DoxyCodeLine{249 }
+\DoxyCodeLine{250     \textcolor{keywordflow}{if}(ctrl and menos)}
+\DoxyCodeLine{251     \{}
+\DoxyCodeLine{252         filtros = \textcolor{keyword}{new} \mbox{\hyperlink{class_brillo}{Brillo}}(2);}
+\DoxyCodeLine{253         cout<<\textcolor{stringliteral}{"{}Ctrl + '-\/': Reducir brillo.\(\backslash\)n"{}};}
+\DoxyCodeLine{254         cout.flush();}
+\DoxyCodeLine{255 \textcolor{comment}{//        appl-\/>closeAllWindows();}}
+\DoxyCodeLine{256         this-\/>close();}
+\DoxyCodeLine{257         \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}} = filtros-\/>\mbox{\hyperlink{class_filtros_a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82}{aplicarFiltro}}(\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}});}
+\DoxyCodeLine{258         show();}
+\DoxyCodeLine{259         repaint();}
+\DoxyCodeLine{260     \}}
+\DoxyCodeLine{261 }
+\DoxyCodeLine{262     \textcolor{keywordflow}{if}(ctrl and c)}
+\DoxyCodeLine{263     \{}
+\DoxyCodeLine{264         filtros = \textcolor{keyword}{new} \mbox{\hyperlink{class_contraste}{Contraste}};}
+\DoxyCodeLine{265         cout<<\textcolor{stringliteral}{"{}Ctrl + c: Ajuste de contraste.\(\backslash\)n"{}};}
+\DoxyCodeLine{266         cout.flush();}
+\DoxyCodeLine{267         \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}} = filtros-\/>\mbox{\hyperlink{class_filtros_a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82}{aplicarFiltro}}(\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}});}
+\DoxyCodeLine{268         repaint();}
+\DoxyCodeLine{269     \}}
+\DoxyCodeLine{270 }
+\DoxyCodeLine{271     \textcolor{keywordflow}{if}(ctrl and s)}
+\DoxyCodeLine{272     \{}
+\DoxyCodeLine{273         filtros = \textcolor{keyword}{new} \mbox{\hyperlink{class_filtro_pasa_bajos}{FiltroPasaBajos}};}
+\DoxyCodeLine{274         cout<<\textcolor{stringliteral}{"{}Ctrl + s: Aplica filtro pasa bajos.\(\backslash\)n"{}};}
+\DoxyCodeLine{275         cout.flush();}
+\DoxyCodeLine{276         \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}} = filtros-\/>\mbox{\hyperlink{class_filtros_a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82}{aplicarFiltro}}(\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}});}
+\DoxyCodeLine{277         repaint();}
+\DoxyCodeLine{278 }
+\DoxyCodeLine{279     \}}
+\DoxyCodeLine{280 }
+\DoxyCodeLine{281     \textcolor{keywordflow}{if}(ctrl and a)}
+\DoxyCodeLine{282     \{}
+\DoxyCodeLine{283         filtros = \textcolor{keyword}{new} \mbox{\hyperlink{class_filtro_pasa_altos}{FiltroPasaAltos}};}
+\DoxyCodeLine{284         cout<<\textcolor{stringliteral}{"{}Ctrl + a: Aplicar filtro pasa altos.\(\backslash\)n"{}};}
+\DoxyCodeLine{285         cout.flush();}
+\DoxyCodeLine{286         \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}} = filtros-\/>\mbox{\hyperlink{class_filtros_a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82}{aplicarFiltro}}(\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}});}
+\DoxyCodeLine{287         repaint();}
+\DoxyCodeLine{288     \}}
+\DoxyCodeLine{289 }
+\DoxyCodeLine{290     \textcolor{keywordflow}{if}(ctrl and n)}
+\DoxyCodeLine{291     \{}
+\DoxyCodeLine{292         filtros = \textcolor{keyword}{new} \mbox{\hyperlink{class_negativo}{Negativo}};}
+\DoxyCodeLine{293         cout<<\textcolor{stringliteral}{"{}Ctrl + n: Aplica negativo.\(\backslash\)n"{}};}
+\DoxyCodeLine{294         cout.flush();}
+\DoxyCodeLine{295         \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}} = filtros-\/>\mbox{\hyperlink{class_filtros_a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82}{aplicarFiltro}}(\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}});}
+\DoxyCodeLine{296         repaint();}
+\DoxyCodeLine{297     \}}
+\DoxyCodeLine{298 }
+\DoxyCodeLine{299     \textcolor{keywordflow}{if}(ctrl and g)}
+\DoxyCodeLine{300     \{}
+\DoxyCodeLine{301         cout<<\textcolor{stringliteral}{"{}Ctrl + g: Guardar imagen.\(\backslash\)n"{}};}
+\DoxyCodeLine{302         cout.flush();}
+\DoxyCodeLine{303         \textcolor{keywordtype}{string} ruta = \mbox{\hyperlink{class_ventana_de_graficacion_a21dcefa549bc1618476a1c156536b7bc}{espacio}}-\/>\mbox{\hyperlink{class_espacio_de_trabajo_a8ba67fb3805b2e366a8d80bee8f2b54e}{getRuta}}(\mbox{\hyperlink{class_ventana_de_graficacion_ae39f47c78d1e0089c6a35e889999d51b}{opcDir}}, \mbox{\hyperlink{class_ventana_de_graficacion_a08d8e9f6cc2414e2f3f82d8a5e57f74d}{opcArch}});}
+\DoxyCodeLine{304 }
+\DoxyCodeLine{305         \mbox{\hyperlink{class_ventana_de_graficacion_a21dcefa549bc1618476a1c156536b7bc}{espacio}}-\/>\mbox{\hyperlink{class_espacio_de_trabajo_a7cfdd9079dd7c92c2c66c7eb4c47225f}{guardarImagen}}(\&\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}});}
+\DoxyCodeLine{306 }
+\DoxyCodeLine{307         \mbox{\hyperlink{class_ventana_de_graficacion_a6edb764d43c8f46bbdca40a611babace}{appl}}-\/>closeAllWindows();}
+\DoxyCodeLine{308     \}}
+\DoxyCodeLine{309 }
+\DoxyCodeLine{310     \textcolor{keywordflow}{if}(ctrl and h)}
+\DoxyCodeLine{311     \{}
+\DoxyCodeLine{312         cout<<\textcolor{stringliteral}{"{}Ctrl + h: Graficar histograma.\(\backslash\)n"{}};}
+\DoxyCodeLine{313         cout.flush();}
+\DoxyCodeLine{314         \mbox{\hyperlink{class_ventana_de_graficacion_a3fe8db28a816932fce3b39405fbd06f5}{graficarHistograma}}();}
+\DoxyCodeLine{315 }
+\DoxyCodeLine{316     \}}
+\DoxyCodeLine{317 }
+\DoxyCodeLine{318     \textcolor{keywordflow}{if}(ctrl and m)}
+\DoxyCodeLine{319     \{}
+\DoxyCodeLine{320         filtros = \textcolor{keyword}{new} \mbox{\hyperlink{class_filtro_mediana}{FiltroMediana}};}
+\DoxyCodeLine{321         cout<<\textcolor{stringliteral}{"{}Ctrl + m: Aplica filtro de mediana.\(\backslash\)n"{}};}
+\DoxyCodeLine{322         cout.flush();}
+\DoxyCodeLine{323         \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}} = filtros-\/>\mbox{\hyperlink{class_filtros_a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82}{aplicarFiltro}}(\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}});}
+\DoxyCodeLine{324         repaint();}
+\DoxyCodeLine{325     \}}
+\DoxyCodeLine{326 }
+\DoxyCodeLine{327     \textcolor{keywordflow}{if} (ctrl and uno)}
+\DoxyCodeLine{328     \{}
+\DoxyCodeLine{329         cout<<\textcolor{stringliteral}{"{}Ctrl + 1: Se pseudocolorea con glow.lut\(\backslash\)n"{}};}
+\DoxyCodeLine{330         cout.flush();}
+\DoxyCodeLine{331         \mbox{\hyperlink{class_ventana_de_graficacion_ac8972961b78010bf28c002c73fe9b7a2}{seGraficaPseudocoloreada}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{332         \mbox{\hyperlink{class_ventana_de_graficacion_ac3bcbd57599467c3639088ddb7546f4d}{tablaDePseudocoloreo}} = 1;}
+\DoxyCodeLine{333         repaint();}
+\DoxyCodeLine{334         \mbox{\hyperlink{class_ventana_de_graficacion_ac8972961b78010bf28c002c73fe9b7a2}{seGraficaPseudocoloreada}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{335         \mbox{\hyperlink{class_ventana_de_graficacion_ac3bcbd57599467c3639088ddb7546f4d}{tablaDePseudocoloreo}} = 0;}
+\DoxyCodeLine{336     \}}
+\DoxyCodeLine{337 }
+\DoxyCodeLine{338     \textcolor{keywordflow}{if} (ctrl and dos)}
+\DoxyCodeLine{339     \{}
+\DoxyCodeLine{340         cout<<\textcolor{stringliteral}{"{}Ctrl + 2: Se pseudocolorea con Turbo.lut\(\backslash\)n"{}};}
+\DoxyCodeLine{341         \mbox{\hyperlink{class_ventana_de_graficacion_ac8972961b78010bf28c002c73fe9b7a2}{seGraficaPseudocoloreada}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{342         \mbox{\hyperlink{class_ventana_de_graficacion_ac3bcbd57599467c3639088ddb7546f4d}{tablaDePseudocoloreo}} = 2;}
+\DoxyCodeLine{343         repaint();}
+\DoxyCodeLine{344         \mbox{\hyperlink{class_ventana_de_graficacion_ac8972961b78010bf28c002c73fe9b7a2}{seGraficaPseudocoloreada}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{345         \mbox{\hyperlink{class_ventana_de_graficacion_ac3bcbd57599467c3639088ddb7546f4d}{tablaDePseudocoloreo}} = 0;}
+\DoxyCodeLine{346     \}}
+\DoxyCodeLine{347 }
+\DoxyCodeLine{348     \textcolor{keywordflow}{if} (ctrl and b)}
+\DoxyCodeLine{349     \{}
+\DoxyCodeLine{350         filtros = \textcolor{keyword}{new} \mbox{\hyperlink{class_binarizado}{Binarizado}};}
+\DoxyCodeLine{351         cout<<\textcolor{stringliteral}{"{}Ctrl + b: Se binariza la Imagen\(\backslash\)n"{}};}
+\DoxyCodeLine{352         \mbox{\hyperlink{class_ventana_de_graficacion_a6edb764d43c8f46bbdca40a611babace}{appl}}-\/>closeAllWindows();}
+\DoxyCodeLine{353         \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}} = filtros-\/>\mbox{\hyperlink{class_filtros_a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82}{aplicarFiltro}}(\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}});}
+\DoxyCodeLine{354         show();}
+\DoxyCodeLine{355         repaint();}
+\DoxyCodeLine{356     \}}
+\DoxyCodeLine{357 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Filtros\+::aplicar\+Filtro(), appl, cargar\+Imagen(), espacio, Espacio\+De\+Trabajo\+::get\+Nro\+Archivos(), Espacio\+De\+Trabajo\+::get\+Ruta(), graficar\+Histograma(), Espacio\+De\+Trabajo\+::guardar\+Imagen(), imagen, opc\+Arch, opc\+Dir, se\+Grafica\+Pseudocoloreada y tabla\+De\+Pseudocoloreo.
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_af57dc06f8c175214ff5597e388d46afc}\label{class_ventana_de_graficacion_af57dc06f8c175214ff5597e388d46afc}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Ventana\+De\+Graficacion\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+mouse\+Press\+Event MÃ©todo heredado que permite captar y responde a un evento de mouse. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em event} & Evento captado. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 359 del archivo ventanadegraficacion.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{360 \{}
+\DoxyCodeLine{361     \textcolor{keywordtype}{bool} click\_izq = \textcolor{keyword}{event}-\/>button() == Qt::LeftButton;}
+\DoxyCodeLine{362     \textcolor{keywordtype}{bool} ctrl = \textcolor{keyword}{event}-\/>modifiers() == Qt::ControlModifier;}
+\DoxyCodeLine{363 }
+\DoxyCodeLine{364     \textcolor{keywordflow}{if}(ctrl and click\_izq)}
+\DoxyCodeLine{365     \{}
+\DoxyCodeLine{366 }
+\DoxyCodeLine{367         cout<<\textcolor{stringliteral}{"{}ctrl + Clic Izquierdo: Se aplica algoritmo del pintor.\(\backslash\)n"{}};}
+\DoxyCodeLine{368         cout.flush();}
+\DoxyCodeLine{369 }
+\DoxyCodeLine{370         \textcolor{keywordtype}{int} f = \mbox{\hyperlink{class_ventana_de_graficacion_ab8e415cbdff0a5423dd32fa93577d6fc}{altoV}} -\/ ( QCursor::pos().y() -\/ this-\/>pos().y()) + 35;}
+\DoxyCodeLine{371         \textcolor{keywordtype}{int} c = QCursor::pos().x() -\/ this-\/>pos().x();}
+\DoxyCodeLine{372 }
+\DoxyCodeLine{373         c = c/\mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}};}
+\DoxyCodeLine{374         f = f -\/ \mbox{\hyperlink{class_ventana_de_graficacion_acd503a7003d7a14c00fcae6178b15c0a}{desply}};}
+\DoxyCodeLine{375         f = f/\mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}};}
+\DoxyCodeLine{376 }
+\DoxyCodeLine{377         f = \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/1-\/f;}
+\DoxyCodeLine{378 }
+\DoxyCodeLine{379         \mbox{\hyperlink{class_algoritmo_del_pintor}{AlgoritmoDelPintor}} algoritmo\_del\_pintor(\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}});}
+\DoxyCodeLine{380         \mbox{\hyperlink{class_ventana_de_graficacion_a6edb764d43c8f46bbdca40a611babace}{appl}}-\/>closeAllWindows();}
+\DoxyCodeLine{381         \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}} = algoritmo\_del\_pintor.aplicarAlgoritmo(f, c);}
+\DoxyCodeLine{382         show();}
+\DoxyCodeLine{383         repaint();}
+\DoxyCodeLine{384 }
+\DoxyCodeLine{385     \}}
+\DoxyCodeLine{386 }
+\DoxyCodeLine{387 }
+\DoxyCodeLine{388 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a altoV, Algoritmo\+Del\+Pintor\+::aplicar\+Algoritmo(), appl, desply, escala, Imagen\+::get\+Filas() y imagen.
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_ae9cad487723447a039460f4fdd51ed44}\label{class_ventana_de_graficacion_ae9cad487723447a039460f4fdd51ed44}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!paintGL@{paintGL}}
+\index{paintGL@{paintGL}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{paintGL()}{paintGL()}}
+{\footnotesize\ttfamily void Ventana\+De\+Graficacion\+::paint\+GL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+paint\+GL Permite graficar. 
+
+
+
+Definición en la línea 37 del archivo ventanadegraficacion.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38 \{}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     glClear(GL\_COLOR\_BUFFER\_BIT | GL\_DEPTH\_BUFFER\_BIT);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keywordtype}{float} relAncho = ((float)width())  / ((\textcolor{keywordtype}{float})\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}());}
+\DoxyCodeLine{43     \textcolor{keywordtype}{float} relAlto  = ((float)height()) / ((\textcolor{keywordtype}{float})\mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}());}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}} = 1.0f;}
+\DoxyCodeLine{46     \mbox{\hyperlink{class_ventana_de_graficacion_a09b97bb7c5647c56b63fdc351c45bfa1}{desplx}} = 0.0f;}
+\DoxyCodeLine{47     \mbox{\hyperlink{class_ventana_de_graficacion_acd503a7003d7a14c00fcae6178b15c0a}{desply}} = 0.0f;}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keywordflow}{if}(relAncho < relAlto)}
+\DoxyCodeLine{50     \{}
+\DoxyCodeLine{51         \mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}} = relAncho;}
+\DoxyCodeLine{52         \mbox{\hyperlink{class_ventana_de_graficacion_acd503a7003d7a14c00fcae6178b15c0a}{desply}} = (height() -\/ \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()*\mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}})*0.5f;}
+\DoxyCodeLine{53     \}}
+\DoxyCodeLine{54     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{55     \{}
+\DoxyCodeLine{56         \mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}} = relAlto;}
+\DoxyCodeLine{57         \mbox{\hyperlink{class_ventana_de_graficacion_a09b97bb7c5647c56b63fdc351c45bfa1}{desplx}} = (width() -\/ \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}}.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}()*\mbox{\hyperlink{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}{escala}})*0.5f;}
+\DoxyCodeLine{58     \}}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_ventana_de_graficacion_ac8972961b78010bf28c002c73fe9b7a2}{seGraficaPseudocoloreada}})}
+\DoxyCodeLine{61         \mbox{\hyperlink{class_ventana_de_graficacion_af92839b232d70a97b25112a6dc417ac6}{graficarImagen}}();}
+\DoxyCodeLine{62     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{63         \mbox{\hyperlink{class_ventana_de_graficacion_ac354f0f2e84ddbcc5fa2e302ee8f7161}{graficarImagenPseudocoloreada}}(\mbox{\hyperlink{class_ventana_de_graficacion_ac3bcbd57599467c3639088ddb7546f4d}{tablaDePseudocoloreo}});}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a desplx, desply, escala, Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), graficar\+Imagen(), graficar\+Imagen\+Pseudocoloreada(), imagen, se\+Grafica\+Pseudocoloreada y tabla\+De\+Pseudocoloreo.
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_a50a2edf0dd5a4381eb8254153b116a56}\label{class_ventana_de_graficacion_a50a2edf0dd5a4381eb8254153b116a56}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!recuperarImagen@{recuperarImagen}}
+\index{recuperarImagen@{recuperarImagen}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{recuperarImagen()}{recuperarImagen()}}
+{\footnotesize\ttfamily void Ventana\+De\+Graficacion\+::recuperar\+Imagen (\begin{DoxyParamCaption}\item[{string}]{ruta }\end{DoxyParamCaption})}
+
+
+
+recuperar\+Imagen Permite cargar una \mbox{\hyperlink{class_imagen}{Imagen}} a partir de una ruta. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta} & String que es la ruta de la cual se recupera una \mbox{\hyperlink{class_imagen}{Imagen}}. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 147 del archivo ventanadegraficacion.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{148 \{}
+\DoxyCodeLine{149     \mbox{\hyperlink{class_gestor_de_archivos}{GestorDeArchivos}}* archi;}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151     \textcolor{keywordtype}{string} extension = \mbox{\hyperlink{class_ventana_de_graficacion_a21dcefa549bc1618476a1c156536b7bc}{espacio}}-\/>\mbox{\hyperlink{class_espacio_de_trabajo_a86a46ccd8e919fff8a4758ac37da5730}{getPNMoAIC}}(ruta);}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153     \textcolor{keywordflow}{if}(extension == \textcolor{stringliteral}{"{}pnm"{}})}
+\DoxyCodeLine{154         archi = \textcolor{keyword}{new} \mbox{\hyperlink{class_archivos_p_n_m}{ArchivosPNM}};}
+\DoxyCodeLine{155     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{156         archi = \textcolor{keyword}{new} \mbox{\hyperlink{class_archivos_a_i_c}{ArchivosAIC}};}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158     \mbox{\hyperlink{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}{imagen}} = archi-\/>\mbox{\hyperlink{class_gestor_de_archivos_a656468aebffd8ad9f68723f6c8abf69f}{leer}}(ruta);}
+\DoxyCodeLine{159 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a espacio, Espacio\+De\+Trabajo\+::get\+PNMo\+AIC(), imagen y Gestor\+De\+Archivos\+::leer().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_a646acbbf9d0372421c6c87d33ebf3f6e}\label{class_ventana_de_graficacion_a646acbbf9d0372421c6c87d33ebf3f6e}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!resizeGL@{resizeGL}}
+\index{resizeGL@{resizeGL}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{resizeGL()}{resizeGL()}}
+{\footnotesize\ttfamily void Ventana\+De\+Graficacion\+::resize\+GL (\begin{DoxyParamCaption}\item[{int}]{p\+Ancho,  }\item[{int}]{p\+Alto }\end{DoxyParamCaption})}
+
+
+
+resize\+GL Se modifica el tamaÃ±o cuando se modifica el tamaÃ±o de la ventana. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em p\+Ancho} & Nuevo ancho. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Alto} & Nuevo alto. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 18 del archivo ventanadegraficacion.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_ventana_de_graficacion_ab8e415cbdff0a5423dd32fa93577d6fc}{altoV}} = pAlto;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \mbox{\hyperlink{class_ventana_de_graficacion_a8c7d6a6c6d0f3a90c5dff22d1f3e8801}{anchoV}} = pAncho;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     glViewport(0, 0, \mbox{\hyperlink{class_ventana_de_graficacion_a8c7d6a6c6d0f3a90c5dff22d1f3e8801}{anchoV}}, \mbox{\hyperlink{class_ventana_de_graficacion_ab8e415cbdff0a5423dd32fa93577d6fc}{altoV}});}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     glMatrixMode(GL\_PROJECTION);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     glLoadIdentity();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     glOrtho(0, width(), 0, height(), -\/1, 1);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     glMatrixMode(GL\_MODELVIEW);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     glLoadIdentity();}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a altoV y anchoV.
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_a77ba6bcbbf535eab89fdae40b7a7bd5c}\label{class_ventana_de_graficacion_a77ba6bcbbf535eab89fdae40b7a7bd5c}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!setApp@{setApp}}
+\index{setApp@{setApp}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{setApp()}{setApp()}}
+{\footnotesize\ttfamily void Ventana\+De\+Graficacion\+::set\+App (\begin{DoxyParamCaption}\item[{QApplication $\ast$}]{app }\end{DoxyParamCaption})}
+
+
+
+set\+\_\+app MÃ©todo que permite asociar una QApplication. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em app} & Puntero a QApplication que se asocia. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 187 del archivo ventanadegraficacion.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{188 \{}
+\DoxyCodeLine{189     \mbox{\hyperlink{class_ventana_de_graficacion_a6edb764d43c8f46bbdca40a611babace}{appl}} = app;}
+\DoxyCodeLine{190 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a appl.
+
+
+
+Referenciado por Sistema\+::iniciar\+Graficacion().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_a2a9ae220f714ac79319ee89032156ae3}\label{class_ventana_de_graficacion_a2a9ae220f714ac79319ee89032156ae3}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!setEspacio@{setEspacio}}
+\index{setEspacio@{setEspacio}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{setEspacio()}{setEspacio()}}
+{\footnotesize\ttfamily void Ventana\+De\+Graficacion\+::set\+Espacio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_espacio_de_trabajo}{Espacio\+De\+Trabajo}} \&}]{esp }\end{DoxyParamCaption})}
+
+
+
+set\+Espacio Permite asociarle un espacio de trabajo. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em esp} & \mbox{\hyperlink{class_espacio_de_trabajo}{Espacio\+De\+Trabajo}} que se asocia. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 192 del archivo ventanadegraficacion.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{193 \{}
+\DoxyCodeLine{194     \mbox{\hyperlink{class_ventana_de_graficacion_a21dcefa549bc1618476a1c156536b7bc}{espacio}} = \&esp;}
+\DoxyCodeLine{195 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a espacio.
+
+
+
+Referenciado por Sistema\+::\+Sistema().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_a0d7b3363ca425030ccfc592874462549}\label{class_ventana_de_graficacion_a0d7b3363ca425030ccfc592874462549}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!setOpciones@{setOpciones}}
+\index{setOpciones@{setOpciones}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{setOpciones()}{setOpciones()}}
+{\footnotesize\ttfamily void Ventana\+De\+Graficacion\+::set\+Opciones (\begin{DoxyParamCaption}\item[{int}]{opc\+Dir,  }\item[{int}]{opc\+Arch }\end{DoxyParamCaption})}
+
+
+
+set\+Opciones MÃ©todo que permite establecer las opciones de directorio y archivo que eligiÃ³ el usuario. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em opc\+Dir} & Opcion de Directorio. \\
+\hline
+\mbox{\texttt{ in}}  & {\em opc\+Arch} & Opcion de Archivo. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 161 del archivo ventanadegraficacion.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162 \{}
+\DoxyCodeLine{163     \mbox{\hyperlink{class_ventana_de_graficacion_ae39f47c78d1e0089c6a35e889999d51b}{opcDir}} = dir;}
+\DoxyCodeLine{164 }
+\DoxyCodeLine{165     \mbox{\hyperlink{class_ventana_de_graficacion_a08d8e9f6cc2414e2f3f82d8a5e57f74d}{opcArch}} = arch;}
+\DoxyCodeLine{166 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a opc\+Arch y opc\+Dir.
+
+
+
+Referenciado por Sistema\+::iniciar\+Graficacion().
+
+
+
+\doxysubsection{Documentación de los campos}
+\mbox{\Hypertarget{class_ventana_de_graficacion_ab8e415cbdff0a5423dd32fa93577d6fc}\label{class_ventana_de_graficacion_ab8e415cbdff0a5423dd32fa93577d6fc}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!altoV@{altoV}}
+\index{altoV@{altoV}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{altoV}{altoV}}
+{\footnotesize\ttfamily int Ventana\+De\+Graficacion\+::altoV\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em altoV} & Alto de la ventana. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 125 del archivo ventanadegraficacion.\+h.
+
+
+
+Referenciado por mouse\+Press\+Event() y resize\+GL().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_a8c7d6a6c6d0f3a90c5dff22d1f3e8801}\label{class_ventana_de_graficacion_a8c7d6a6c6d0f3a90c5dff22d1f3e8801}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!anchoV@{anchoV}}
+\index{anchoV@{anchoV}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{anchoV}{anchoV}}
+{\footnotesize\ttfamily int Ventana\+De\+Graficacion\+::anchoV\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em anchoV} & Ancho de la ventana. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 120 del archivo ventanadegraficacion.\+h.
+
+
+
+Referenciado por resize\+GL().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_a6edb764d43c8f46bbdca40a611babace}\label{class_ventana_de_graficacion_a6edb764d43c8f46bbdca40a611babace}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!appl@{appl}}
+\index{appl@{appl}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{appl}{appl}}
+{\footnotesize\ttfamily QApplication$\ast$ Ventana\+De\+Graficacion\+::appl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em appl} & QApplication asociada. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 156 del archivo ventanadegraficacion.\+h.
+
+
+
+Referenciado por key\+Press\+Event(), mouse\+Press\+Event() y set\+App().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_a09b97bb7c5647c56b63fdc351c45bfa1}\label{class_ventana_de_graficacion_a09b97bb7c5647c56b63fdc351c45bfa1}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!desplx@{desplx}}
+\index{desplx@{desplx}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{desplx}{desplx}}
+{\footnotesize\ttfamily float Ventana\+De\+Graficacion\+::desplx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em desplx} & Desplazamiento en x de la imagen. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 136 del archivo ventanadegraficacion.\+h.
+
+
+
+Referenciado por graficar\+Imagen(), graficar\+Imagen\+Pseudocoloreada() y paint\+GL().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_acd503a7003d7a14c00fcae6178b15c0a}\label{class_ventana_de_graficacion_acd503a7003d7a14c00fcae6178b15c0a}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!desply@{desply}}
+\index{desply@{desply}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{desply}{desply}}
+{\footnotesize\ttfamily float Ventana\+De\+Graficacion\+::desply\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em desply} & Desplazamiento en y de la imagen. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 141 del archivo ventanadegraficacion.\+h.
+
+
+
+Referenciado por graficar\+Imagen(), graficar\+Imagen\+Pseudocoloreada(), mouse\+Press\+Event() y paint\+GL().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}\label{class_ventana_de_graficacion_a028fb2c186d2f50a7b17dda794eb3f89}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!escala@{escala}}
+\index{escala@{escala}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{escala}{escala}}
+{\footnotesize\ttfamily float Ventana\+De\+Graficacion\+::escala\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em escala} & Escalado de la imagen para su representaciÃ³n en la ventana. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 131 del archivo ventanadegraficacion.\+h.
+
+
+
+Referenciado por graficar\+Imagen(), graficar\+Imagen\+Pseudocoloreada(), mouse\+Press\+Event() y paint\+GL().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_a21dcefa549bc1618476a1c156536b7bc}\label{class_ventana_de_graficacion_a21dcefa549bc1618476a1c156536b7bc}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!espacio@{espacio}}
+\index{espacio@{espacio}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{espacio}{espacio}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_espacio_de_trabajo}{Espacio\+De\+Trabajo}}$\ast$ Ventana\+De\+Graficacion\+::espacio\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em espacio} & \mbox{\hyperlink{class_espacio_de_trabajo}{Espacio\+De\+Trabajo}} asociado. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 151 del archivo ventanadegraficacion.\+h.
+
+
+
+Referenciado por cargar\+Imagen(), key\+Press\+Event(), recuperar\+Imagen() y set\+Espacio().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}\label{class_ventana_de_graficacion_afcd896ca9a84b65788c73424dc6afdbf}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!imagen@{imagen}}
+\index{imagen@{imagen}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{imagen}{imagen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imagen}{Imagen}} Ventana\+De\+Graficacion\+::imagen\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em imagen} & \mbox{\hyperlink{class_imagen}{Imagen}} que se grafica. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 146 del archivo ventanadegraficacion.\+h.
+
+
+
+Referenciado por cargar\+Imagen(), graficar\+Histograma(), graficar\+Imagen(), graficar\+Imagen\+Pseudocoloreada(), key\+Press\+Event(), mouse\+Press\+Event(), paint\+GL() y recuperar\+Imagen().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_a08d8e9f6cc2414e2f3f82d8a5e57f74d}\label{class_ventana_de_graficacion_a08d8e9f6cc2414e2f3f82d8a5e57f74d}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!opcArch@{opcArch}}
+\index{opcArch@{opcArch}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{opcArch}{opcArch}}
+{\footnotesize\ttfamily int Ventana\+De\+Graficacion\+::opc\+Arch\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em opc\+Arch} & Archivo elegido por el usuario. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 191 del archivo ventanadegraficacion.\+h.
+
+
+
+Referenciado por cargar\+Imagen(), key\+Press\+Event() y set\+Opciones().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_ae39f47c78d1e0089c6a35e889999d51b}\label{class_ventana_de_graficacion_ae39f47c78d1e0089c6a35e889999d51b}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!opcDir@{opcDir}}
+\index{opcDir@{opcDir}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{opcDir}{opcDir}}
+{\footnotesize\ttfamily int Ventana\+De\+Graficacion\+::opc\+Dir\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em opc\+Dir} & Directorio elegido por el usuario. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 186 del archivo ventanadegraficacion.\+h.
+
+
+
+Referenciado por cargar\+Imagen(), key\+Press\+Event() y set\+Opciones().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_ac8972961b78010bf28c002c73fe9b7a2}\label{class_ventana_de_graficacion_ac8972961b78010bf28c002c73fe9b7a2}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!seGraficaPseudocoloreada@{seGraficaPseudocoloreada}}
+\index{seGraficaPseudocoloreada@{seGraficaPseudocoloreada}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{seGraficaPseudocoloreada}{seGraficaPseudocoloreada}}
+{\footnotesize\ttfamily bool Ventana\+De\+Graficacion\+::se\+Grafica\+Pseudocoloreada = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em se\+Grafica\+Pseudocoloreada} & Bool que indica si la imagen se grafica pseudocoloreada o no. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 162 del archivo ventanadegraficacion.\+h.
+
+
+
+Referenciado por key\+Press\+Event() y paint\+GL().
+
+\mbox{\Hypertarget{class_ventana_de_graficacion_ac3bcbd57599467c3639088ddb7546f4d}\label{class_ventana_de_graficacion_ac3bcbd57599467c3639088ddb7546f4d}} 
+\index{VentanaDeGraficacion@{VentanaDeGraficacion}!tablaDePseudocoloreo@{tablaDePseudocoloreo}}
+\index{tablaDePseudocoloreo@{tablaDePseudocoloreo}!VentanaDeGraficacion@{VentanaDeGraficacion}}
+\doxysubsubsection{\texorpdfstring{tablaDePseudocoloreo}{tablaDePseudocoloreo}}
+{\footnotesize\ttfamily uint Ventana\+De\+Graficacion\+::tabla\+De\+Pseudocoloreo = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em tabla\+De\+Pseudocoloreo} & uint que indica la tabla de pseudocoloreado que se utiliza, si no se utilza ninguna toma valor cero. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 168 del archivo ventanadegraficacion.\+h.
+
+
+
+Referenciado por key\+Press\+Event() y paint\+GL().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ventanadegraficacion_8h}{ventanadegraficacion.\+h}}\item 
+\mbox{\hyperlink{ventanadegraficacion_8cpp}{ventanadegraficacion.\+cpp}}\end{DoxyCompactItemize}

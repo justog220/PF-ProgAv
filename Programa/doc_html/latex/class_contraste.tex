@@ -1,0 +1,133 @@
+\hypertarget{class_contraste}{}\doxysection{Referencia de la Clase Contraste}
+\label{class_contraste}\index{Contraste@{Contraste}}
+
+
+Clase que hereda de la clase \mbox{\hyperlink{class_filtros}{Filtros}} mÃ©todos y los redefine para corregir el contraste de una \mbox{\hyperlink{class_imagen}{Imagen}}.  
+
+
+
+
+{\ttfamily \#include $<$contraste.\+h$>$}
+
+Diagrama de herencias de Contraste\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_contraste}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_contraste_a66d0fb81a88464d31869f0c230839949}{Contraste}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_contraste}{Contraste}} Constructor del objeto \mbox{\hyperlink{class_contraste}{Contraste}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imagen}{Imagen}} \mbox{\hyperlink{class_contraste_a851acd4d326eb08f3569b9354f66e377}{aplicar\+Filtro}} (\mbox{\hyperlink{class_imagen}{Imagen}} \&imag) override
+\begin{DoxyCompactList}\small\item\em aplicar\+Filtro MÃ©todo heredado de la case \mbox{\hyperlink{class_filtros}{Filtros}}, redefinido para la correcciÃ³n del contraste. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que hereda de la clase \mbox{\hyperlink{class_filtros}{Filtros}} mÃ©todos y los redefine para corregir el contraste de una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+Corrige el contraste de una \mbox{\hyperlink{class_imagen}{Imagen}}. \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 12-\/12-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000006}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+
+\end{DoxyWarning}
+
+
+Definición en la línea 16 del archivo contraste.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_contraste_a66d0fb81a88464d31869f0c230839949}\label{class_contraste_a66d0fb81a88464d31869f0c230839949}} 
+\index{Contraste@{Contraste}!Contraste@{Contraste}}
+\index{Contraste@{Contraste}!Contraste@{Contraste}}
+\doxysubsubsection{\texorpdfstring{Contraste()}{Contraste()}}
+{\footnotesize\ttfamily Contraste\+::\+Contraste (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_contraste}{Contraste}} Constructor del objeto \mbox{\hyperlink{class_contraste}{Contraste}}. 
+
+
+
+Definición en la línea 3 del archivo contraste.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_contraste_a851acd4d326eb08f3569b9354f66e377}\label{class_contraste_a851acd4d326eb08f3569b9354f66e377}} 
+\index{Contraste@{Contraste}!aplicarFiltro@{aplicarFiltro}}
+\index{aplicarFiltro@{aplicarFiltro}!Contraste@{Contraste}}
+\doxysubsubsection{\texorpdfstring{aplicarFiltro()}{aplicarFiltro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imagen}{Imagen}} Contraste\+::aplicar\+Filtro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} \&}]{imag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+aplicar\+Filtro MÃ©todo heredado de la case \mbox{\hyperlink{class_filtros}{Filtros}}, redefinido para la correcciÃ³n del contraste. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em imag} & \mbox{\hyperlink{class_imagen}{Imagen}} a la cual se le aplica la correciÃ³n de contraste. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\mbox{\hyperlink{class_imagen}{Imagen}} con la correciÃ³n de contraste aplicada. 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{class_filtros_a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82}{Filtros}}.
+
+
+
+Definición en la línea 8 del archivo contraste.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_procesador_estadistico}{ProcesadorEstadistico}} proce;}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     vector<int> maximo\_minimo\_R = proce.\mbox{\hyperlink{class_procesador_estadistico_a23eb4e684acd34b3a36a443257bb886b}{hallarMaximoMinimoR}}(imag);}
+\DoxyCodeLine{14     vector<int> maximo\_minimo\_G = proce.\mbox{\hyperlink{class_procesador_estadistico_a1c525a96a0d7de0bb47531f4505e17f3}{hallarMaximoMinimoG}}(imag);}
+\DoxyCodeLine{15     vector<int> maximo\_minimo\_B = proce.\mbox{\hyperlink{class_procesador_estadistico_a09a20392b98f5ca7b99e9aa3025c4237}{hallarMaximoMinimoB}}(imag);}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<imag.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(); i++)}
+\DoxyCodeLine{18         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<imag.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}(); j++)}
+\DoxyCodeLine{19         \{}
+\DoxyCodeLine{20             pix\_aux = imag.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i,j);}
+\DoxyCodeLine{21             pix\_aux.\mbox{\hyperlink{class_pixel_a9dde3af38cd1ba92d0cf210847f5f00f}{ajusteContraste}}(maximo\_minimo\_R, maximo\_minimo\_G, maximo\_minimo\_B, imag.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}());}
+\DoxyCodeLine{22             imag.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(i, j, pix\_aux);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24         \}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordflow}{return} imag;}
+\DoxyCodeLine{27 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Pixel\+::ajuste\+Contraste(), Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Imagen\+::get\+Pixel(), Imagen\+::get\+Rango(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+B(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+G(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+R() y Imagen\+::set\+Pixel().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{contraste_8h}{contraste.\+h}}\item 
+\mbox{\hyperlink{contraste_8cpp}{contraste.\+cpp}}\end{DoxyCompactItemize}

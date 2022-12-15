@@ -1,11 +1,14 @@
 var searchData=
 [
-  ['b_444',['b',['../class_pixel.html#a94b067f3c79425c953631f7bf1c7536c',1,'Pixel']]],
-  ['binarizado_445',['Binarizado',['../class_binarizado.html',1,'Binarizado'],['../class_binarizado.html#ab8e32338414684209aeb653e8cb2b114',1,'Binarizado::Binarizado()']]],
-  ['binarizado_2ecpp_446',['binarizado.cpp',['../binarizado_8cpp.html',1,'']]],
-  ['binarizado_2eh_447',['binarizado.h',['../binarizado_8h.html',1,'']]],
-  ['borrarimagen_448',['borrarImagen',['../class_imagen.html#a166b16c639448c813f764b79ae9d3765',1,'Imagen']]],
-  ['brillo_449',['Brillo',['../class_brillo.html',1,'Brillo'],['../class_brillo.html#a0629ffb7ad2c72be692525e3c765f86b',1,'Brillo::Brillo()']]],
-  ['brillo_2ecpp_450',['brillo.cpp',['../brillo_8cpp.html',1,'']]],
-  ['brillo_2eh_451',['brillo.h',['../brillo_8h.html',1,'']]]
+  ['c_25',['c',['../struct_posicion.html#a73c654ebc7c9802adb2f30f737f2fe5d',1,'Posicion']]],
+  ['cambiaopcion_26',['cambiaOpcion',['../class_brillo.html#a02c1ce6960082cc2e900af8f22fae325',1,'Brillo']]],
+  ['cargarcarpetas_27',['cargarCarpetas',['../class_espacio_de_trabajo.html#abc26ff85c54257a6073ee312fc0442e5',1,'EspacioDeTrabajo']]],
+  ['cargarimagen_28',['cargarImagen',['../class_ventana_de_graficacion.html#a98cab3ea88696a35561c7257e6b7c790',1,'VentanaDeGraficacion']]],
+  ['cargarlut_29',['cargarLUT',['../class_tabla_lut.html#a12354aac4305cfcb905cc602aa5a69cf',1,'TablaLut']]],
+  ['carpetas_30',['carpetas',['../class_espacio_de_trabajo.html#abeb782ad9ad7c8ffe0213df5055047cd',1,'EspacioDeTrabajo']]],
+  ['columnas_31',['columnas',['../class_imagen.html#af63de0598ca965ab3a30b54ee7e2cedc',1,'Imagen']]],
+  ['consultardiferencia_32',['consultarDiferencia',['../class_brillo.html#aed5bf732f20f221e5d1ffbd704594cfc',1,'Brillo']]],
+  ['contraste_33',['Contraste',['../class_contraste.html',1,'Contraste'],['../class_contraste.html#a66d0fb81a88464d31869f0c230839949',1,'Contraste::Contraste()']]],
+  ['contraste_2ecpp_34',['contraste.cpp',['../contraste_8cpp.html',1,'']]],
+  ['contraste_2eh_35',['contraste.h',['../contraste_8h.html',1,'']]]
 ];

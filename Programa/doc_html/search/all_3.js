@@ -1,14 +1,18 @@
 var searchData=
 [
-  ['c_452',['c',['../struct_posicion.html#a73c654ebc7c9802adb2f30f737f2fe5d',1,'Posicion']]],
-  ['cambiaopcion_453',['cambiaOpcion',['../class_brillo.html#a02c1ce6960082cc2e900af8f22fae325',1,'Brillo']]],
-  ['cargarcarpetas_454',['cargarCarpetas',['../class_espacio_de_trabajo.html#abc26ff85c54257a6073ee312fc0442e5',1,'EspacioDeTrabajo']]],
-  ['cargarimagen_455',['cargarImagen',['../class_ventana_de_graficacion.html#a98cab3ea88696a35561c7257e6b7c790',1,'VentanaDeGraficacion']]],
-  ['cargarlut_456',['cargarLUT',['../class_tabla_lut.html#a12354aac4305cfcb905cc602aa5a69cf',1,'TablaLut']]],
-  ['carpetas_457',['carpetas',['../class_espacio_de_trabajo.html#abeb782ad9ad7c8ffe0213df5055047cd',1,'EspacioDeTrabajo']]],
-  ['columnas_458',['columnas',['../class_imagen.html#af63de0598ca965ab3a30b54ee7e2cedc',1,'Imagen']]],
-  ['consultardiferencia_459',['consultarDiferencia',['../class_brillo.html#aed5bf732f20f221e5d1ffbd704594cfc',1,'Brillo']]],
-  ['contraste_460',['Contraste',['../class_contraste.html',1,'Contraste'],['../class_contraste.html#a66d0fb81a88464d31869f0c230839949',1,'Contraste::Contraste()']]],
-  ['contraste_2ecpp_461',['contraste.cpp',['../contraste_8cpp.html',1,'']]],
-  ['contraste_2eh_462',['contraste.h',['../contraste_8h.html',1,'']]]
+  ['desplx_36',['desplx',['../class_ventana_de_graficacion.html#a09b97bb7c5647c56b63fdc351c45bfa1',1,'VentanaDeGraficacion::desplx()'],['../class_graficador_histograma.html#abee8871a0b6d725d531d3e11dee7c664',1,'GraficadorHistograma::desplx()']]],
+  ['desply_37',['desply',['../class_graficador_histograma.html#a18e87d851c068bfa6fc6f073071cbee7',1,'GraficadorHistograma::desply()'],['../class_ventana_de_graficacion.html#acd503a7003d7a14c00fcae6178b15c0a',1,'VentanaDeGraficacion::desply()']]],
+  ['devolverdesviacionestandarrgb_38',['devolverDesviacionEstandarRGB',['../class_procesador_estadistico.html#a8a6e326b6e33432262752744c2a67b77',1,'ProcesadorEstadistico']]],
+  ['devolverfrecuenciapromedio_39',['devolverFrecuenciaPromedio',['../class_procesador_estadistico.html#a2d8c559ae72462c0b215978c1f0bd088',1,'ProcesadorEstadistico']]],
+  ['devolverintensidadmedia_40',['devolverIntensidadMedia',['../class_procesador_estadistico.html#a887f9779ecec3a09b024129995abd59e',1,'ProcesadorEstadistico']]],
+  ['devolverpromediorgb_41',['devolverPromedioRGB',['../class_procesador_estadistico.html#af0aeba05688407d40254efe57ba8b418',1,'ProcesadorEstadistico']]],
+  ['devuelvebmasfrecuente_42',['devuelveBMasFrecuente',['../class_procesador_estadistico.html#ab5bcc0e6499b06fe6a9a580432f6a0b9',1,'ProcesadorEstadistico']]],
+  ['devuelvefrecuenciab_43',['devuelveFrecuenciaB',['../class_procesador_estadistico.html#ab89524875bd7094f966672761a597a8e',1,'ProcesadorEstadistico']]],
+  ['devuelvefrecuenciag_44',['devuelveFrecuenciaG',['../class_procesador_estadistico.html#ad3743c1b10e04d9f79096e1af3e82ba2',1,'ProcesadorEstadistico']]],
+  ['devuelvefrecuenciaintensidad_45',['devuelveFrecuenciaIntensidad',['../class_procesador_estadistico.html#a08860c60ac977b6c777f9423e281b326',1,'ProcesadorEstadistico']]],
+  ['devuelvefrecuenciar_46',['devuelveFrecuenciaR',['../class_procesador_estadistico.html#a069647af14c5007468ba4ba715eca6f2',1,'ProcesadorEstadistico']]],
+  ['devuelvegmasfrecuente_47',['devuelveGMasFrecuente',['../class_procesador_estadistico.html#acbfe2c4d56a3ebd82bab641ae348e822',1,'ProcesadorEstadistico']]],
+  ['devuelveintensidadmasfrecuente_48',['devuelveIntensidadMasFrecuente',['../class_procesador_estadistico.html#ab2eca08c6e29b4aaa68aedaea4476ab8',1,'ProcesadorEstadistico']]],
+  ['devuelvermasfrecuente_49',['devuelveRMasFrecuente',['../class_procesador_estadistico.html#aa98ee4c6275a1ff66aa720e5b842a19f',1,'ProcesadorEstadistico']]],
+  ['diferencia_50',['diferencia',['../class_brillo.html#a2c892778cd949ab42c8be9fe607f7a14',1,'Brillo']]]
 ];

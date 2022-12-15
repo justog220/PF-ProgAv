@@ -1,0 +1,487 @@
+\hypertarget{class_archivos_a_i_c}{}\doxysection{Referencia de la Clase Archivos\+AIC}
+\label{class_archivos_a_i_c}\index{ArchivosAIC@{ArchivosAIC}}
+
+
+Clase capaz de gestionar los diferentes tipos de archivos AIC.  
+
+
+
+
+{\ttfamily \#include $<$archivosaic.\+h$>$}
+
+Diagrama de herencias de Archivos\+AIC\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_archivos_a_i_c}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_archivos_a_i_c_aa2f1498c3b0cdf84698ca51a1f279058}{Archivos\+AIC}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_archivos_a_i_c}{Archivos\+AIC}} Constructor del objeto \mbox{\hyperlink{class_archivos_a_i_c}{Archivos\+AIC}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imagen}{Imagen}} \mbox{\hyperlink{class_archivos_a_i_c_a39a61108e840cec24b4b39a8cbf071df}{leer}} (string ruta) override
+\begin{DoxyCompactList}\small\item\em leer Se redefine el metodo heredado de \mbox{\hyperlink{class_gestor_de_archivos}{Gestor\+De\+Archivos}} y que permite leer imÃ¡genes de un archivo AIC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_archivos_a_i_c_acd84997137f85c271856a3d4108986bf}{guardar}} (\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img) override
+\begin{DoxyCompactList}\small\item\em guardar Se redefine el mÃ©todo heredado de \mbox{\hyperlink{class_gestor_de_archivos}{Gestor\+De\+Archivos}} y que permite guardar imÃ¡genes en formato AIC. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_archivos_a_i_c_a35f900f9c3eb931e0f17cd82a6c699e1}{obtiene\+Ruta\+Guardado}} ()
+\begin{DoxyCompactList}\small\item\em obtiene\+Ruta\+Guardado MÃ©todo que permite obtener del usuario la ruta donde se guardarÃ¡ la imÃ¡gen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_archivos_a_i_c_a4027b286d7468c710d0489ce21f47a00}{escribir\+Encabezado}} (\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em escribir\+Encabezado MÃ©todo privado que escribe el encabezado (Identificador + Info) de una \mbox{\hyperlink{class_imagen}{Imagen}} al ser guardada \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_archivos_a_i_c_a948b328f345c26b8c6784f5c496e4c13}{escribir\+Pixeles}} (\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img, string ruta)
+\begin{DoxyCompactList}\small\item\em escribir\+Pixeles MÃ©todo privado que escribe los \mbox{\hyperlink{class_pixel}{Pixel}} de la \mbox{\hyperlink{class_imagen}{Imagen}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+fstream \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}
+\item 
+string \mbox{\hyperlink{class_archivos_a_i_c_ab2c2c0b495012e23718e6161cbc17629}{identificador}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase capaz de gestionar los diferentes tipos de archivos AIC. 
+
+Hereda de \mbox{\hyperlink{class_gestor_de_archivos}{Gestor\+De\+Archivos}} la capacidad de leer un archivo y de guardar otro. Tiene un archivo y almacena el identificador del tipo de archivo una vez que fue leido. \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 10-\/09-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000002}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+
+\end{DoxyWarning}
+
+
+Definición en la línea 19 del archivo archivosaic.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_archivos_a_i_c_aa2f1498c3b0cdf84698ca51a1f279058}\label{class_archivos_a_i_c_aa2f1498c3b0cdf84698ca51a1f279058}} 
+\index{ArchivosAIC@{ArchivosAIC}!ArchivosAIC@{ArchivosAIC}}
+\index{ArchivosAIC@{ArchivosAIC}!ArchivosAIC@{ArchivosAIC}}
+\doxysubsubsection{\texorpdfstring{ArchivosAIC()}{ArchivosAIC()}}
+{\footnotesize\ttfamily Archivos\+AIC\+::\+Archivos\+AIC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_archivos_a_i_c}{Archivos\+AIC}} Constructor del objeto \mbox{\hyperlink{class_archivos_a_i_c}{Archivos\+AIC}}. 
+
+
+
+Definición en la línea 4 del archivo archivosaic.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5 \{}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_archivos_a_i_c_a4027b286d7468c710d0489ce21f47a00}\label{class_archivos_a_i_c_a4027b286d7468c710d0489ce21f47a00}} 
+\index{ArchivosAIC@{ArchivosAIC}!escribirEncabezado@{escribirEncabezado}}
+\index{escribirEncabezado@{escribirEncabezado}!ArchivosAIC@{ArchivosAIC}}
+\doxysubsubsection{\texorpdfstring{escribirEncabezado()}{escribirEncabezado()}}
+{\footnotesize\ttfamily void Archivos\+AIC\+::escribir\+Encabezado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+escribir\+Encabezado MÃ©todo privado que escribe el encabezado (Identificador + Info) de una \mbox{\hyperlink{class_imagen}{Imagen}} al ser guardada 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em img} & Puntero a la \mbox{\hyperlink{class_imagen}{Imagen}} guardada. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 203 del archivo archivosaic.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{204 \{}
+\DoxyCodeLine{205     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<img-\/>\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}()<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{206     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<img-\/>\mbox{\hyperlink{class_imagen_a9863c0ebb50aeb19f5dc4d7906ed47d6}{getInformacion}}()<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.close();}
+\DoxyCodeLine{209 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a archi, Imagen\+::get\+Identificador() y Imagen\+::get\+Informacion().
+
+
+
+Referenciado por guardar().
+
+\mbox{\Hypertarget{class_archivos_a_i_c_a948b328f345c26b8c6784f5c496e4c13}\label{class_archivos_a_i_c_a948b328f345c26b8c6784f5c496e4c13}} 
+\index{ArchivosAIC@{ArchivosAIC}!escribirPixeles@{escribirPixeles}}
+\index{escribirPixeles@{escribirPixeles}!ArchivosAIC@{ArchivosAIC}}
+\doxysubsubsection{\texorpdfstring{escribirPixeles()}{escribirPixeles()}}
+{\footnotesize\ttfamily void Archivos\+AIC\+::escribir\+Pixeles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img,  }\item[{string}]{ruta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+escribir\+Pixeles MÃ©todo privado que escribe los \mbox{\hyperlink{class_pixel}{Pixel}} de la \mbox{\hyperlink{class_imagen}{Imagen}} 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em img} & Puntero a la \mbox{\hyperlink{class_imagen}{Imagen}} guardada. \\
+\hline
+\mbox{\texttt{ in}}  & {\em ruta} & Ruta de guardado. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 163 del archivo archivosaic.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{164 \{}
+\DoxyCodeLine{165     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.open(ruta, ios::out | ios::app);}
+\DoxyCodeLine{166 }
+\DoxyCodeLine{167     \textcolor{keywordtype}{int} nivelDeGris, cantidadQueSeRepite, intensidadAnterior, acumuladorColumnas;}
+\DoxyCodeLine{168 }
+\DoxyCodeLine{169     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} fila = 0; fila < img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(); fila++)}
+\DoxyCodeLine{170     \{}
+\DoxyCodeLine{171         acumuladorColumnas = 0;}
+\DoxyCodeLine{172         intensidadAnterior = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, 0).\mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{getIntensidad}}();}
+\DoxyCodeLine{173         cantidadQueSeRepite = 0;}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} columna = 0; columna < img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}(); columna++)}
+\DoxyCodeLine{176         \{}
+\DoxyCodeLine{177             \textcolor{keywordflow}{if} (img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, columna).\mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{getIntensidad}}() != intensidadAnterior)}
+\DoxyCodeLine{178             \{}
+\DoxyCodeLine{179                 \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<nivelDeGris<<\textcolor{stringliteral}{"{} "{}}<<cantidadQueSeRepite<<\textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{180                 acumuladorColumnas += cantidadQueSeRepite;}
+\DoxyCodeLine{181                 nivelDeGris = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, columna).\mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{getIntensidad}}();}
+\DoxyCodeLine{182                 intensidadAnterior = nivelDeGris;}
+\DoxyCodeLine{183                 cantidadQueSeRepite = 1;}
+\DoxyCodeLine{184             \}}
+\DoxyCodeLine{185             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{186             \{}
+\DoxyCodeLine{187                 nivelDeGris = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, columna).\mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{getIntensidad}}();}
+\DoxyCodeLine{188                 cantidadQueSeRepite += 1;}
+\DoxyCodeLine{189             \}}
+\DoxyCodeLine{190         \}}
+\DoxyCodeLine{191         \textcolor{keywordflow}{if} (acumuladorColumnas != img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}())}
+\DoxyCodeLine{192         \{}
+\DoxyCodeLine{193             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<nivelDeGris<<\textcolor{stringliteral}{"{} "{}}<<cantidadQueSeRepite;}
+\DoxyCodeLine{194         \}}
+\DoxyCodeLine{195         \textcolor{keywordflow}{if} (fila != img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/1)}
+\DoxyCodeLine{196             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{197     \}}
+\DoxyCodeLine{198 }
+\DoxyCodeLine{199     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.close();}
+\DoxyCodeLine{200 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a archi, Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Pixel\+::get\+Intensidad() y Imagen\+::get\+Pixel().
+
+
+
+Referenciado por guardar().
+
+\mbox{\Hypertarget{class_archivos_a_i_c_acd84997137f85c271856a3d4108986bf}\label{class_archivos_a_i_c_acd84997137f85c271856a3d4108986bf}} 
+\index{ArchivosAIC@{ArchivosAIC}!guardar@{guardar}}
+\index{guardar@{guardar}!ArchivosAIC@{ArchivosAIC}}
+\doxysubsubsection{\texorpdfstring{guardar()}{guardar()}}
+{\footnotesize\ttfamily void Archivos\+AIC\+::guardar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+guardar Se redefine el mÃ©todo heredado de \mbox{\hyperlink{class_gestor_de_archivos}{Gestor\+De\+Archivos}} y que permite guardar imÃ¡genes en formato AIC. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em img} & Puntero a un objeto ImÃ¡gen que es la imÃ¡gen a guardar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+No devuelve nada, solo modifica los parÃ¡metros. 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{class_gestor_de_archivos_ad2f950c7c54f9883b7863b9afe076cda}{Gestor\+De\+Archivos}}.
+
+
+
+Definición en la línea 139 del archivo archivosaic.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{140 \{}
+\DoxyCodeLine{141     \textcolor{keywordtype}{string} ruta = \mbox{\hyperlink{class_archivos_a_i_c_a35f900f9c3eb931e0f17cd82a6c699e1}{obtieneRutaGuardado}}();}
+\DoxyCodeLine{142     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.open(ruta, ios::out);}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144     \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.is\_open())}
+\DoxyCodeLine{145     \{}
+\DoxyCodeLine{146         cout<<\textcolor{stringliteral}{"{}No se pudo abrir el archivo."{}};}
+\DoxyCodeLine{147     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{148         \mbox{\hyperlink{class_archivos_a_i_c_a4027b286d7468c710d0489ce21f47a00}{escribirEncabezado}}(img);}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150         \mbox{\hyperlink{class_archivos_a_i_c_a948b328f345c26b8c6784f5c496e4c13}{escribirPixeles}}(img, ruta);}
+\DoxyCodeLine{151     \}}
+\DoxyCodeLine{152 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a archi, escribir\+Encabezado(), escribir\+Pixeles() y obtiene\+Ruta\+Guardado().
+
+\mbox{\Hypertarget{class_archivos_a_i_c_a39a61108e840cec24b4b39a8cbf071df}\label{class_archivos_a_i_c_a39a61108e840cec24b4b39a8cbf071df}} 
+\index{ArchivosAIC@{ArchivosAIC}!leer@{leer}}
+\index{leer@{leer}!ArchivosAIC@{ArchivosAIC}}
+\doxysubsubsection{\texorpdfstring{leer()}{leer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imagen}{Imagen}} Archivos\+AIC\+::leer (\begin{DoxyParamCaption}\item[{string}]{ruta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+leer Se redefine el metodo heredado de \mbox{\hyperlink{class_gestor_de_archivos}{Gestor\+De\+Archivos}} y que permite leer imÃ¡genes de un archivo AIC. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta} & String, es la ruta desde la cuÃ¡l se desea leer una imÃ¡gen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve un objeto de tipo ImÃ¡gen. 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{class_gestor_de_archivos_a656468aebffd8ad9f68723f6c8abf69f}{Gestor\+De\+Archivos}}.
+
+
+
+Definición en la línea 9 del archivo archivosaic.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \mbox{\hyperlink{class_imagen}{Imagen}} img;}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.open(ruta, ios::in);}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.is\_open())\{}
+\DoxyCodeLine{17         cout<<\textcolor{stringliteral}{"{}Error al abrir la imagen."{}}<<endl;}
+\DoxyCodeLine{18         cout<<ruta;}
+\DoxyCodeLine{19     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{20         \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{21             \textcolor{keywordtype}{string} linea;}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23             getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25             \mbox{\hyperlink{class_archivos_a_i_c_ab2c2c0b495012e23718e6161cbc17629}{identificador}} = linea.substr(0, 3);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27             img.\mbox{\hyperlink{class_imagen_aae632c4cd001e04228aad5bf06599818}{setIdentificador}}(\mbox{\hyperlink{class_archivos_a_i_c_ab2c2c0b495012e23718e6161cbc17629}{identificador}});}
+\DoxyCodeLine{28             getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30             \textcolor{keywordtype}{int} auxPosicion = 0;}
+\DoxyCodeLine{31             \textcolor{keywordflow}{while}(linea[0]==\textcolor{charliteral}{'\#'})}
+\DoxyCodeLine{32             \{}
+\DoxyCodeLine{33                 img.\mbox{\hyperlink{class_imagen_affda44cc73f0a8bf8cc7dc1021e47f25}{setInformacion}}(linea);}
+\DoxyCodeLine{34                  auxPosicion = \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.tellg();}
+\DoxyCodeLine{35                 getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea);}
+\DoxyCodeLine{36             \}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38             \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.seekg(auxPosicion);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} filas = 0;}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} acumuladorColumnas = 0;}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47             \textcolor{keywordtype}{bool} seGuardoColumnas = \textcolor{keyword}{false};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49             vector<int> datosLinea;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51             \textcolor{keywordflow}{while}(!\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.eof())}
+\DoxyCodeLine{52             \{}
+\DoxyCodeLine{53                 getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55                 \textcolor{keywordflow}{if}(!seGuardoColumnas)}
+\DoxyCodeLine{56                 \{}
+\DoxyCodeLine{57                     \textcolor{keywordtype}{int} tamanio = linea.length();}
+\DoxyCodeLine{58                     \textcolor{keywordtype}{char} linea\_char[tamanio];}
+\DoxyCodeLine{59                     strcpy(linea\_char, linea.c\_str());}
+\DoxyCodeLine{60                     \textcolor{keywordtype}{char} *split;}
+\DoxyCodeLine{61                     split = strtok(linea\_char, \textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{62                     \textcolor{keywordflow}{while} (split != NULL)}
+\DoxyCodeLine{63                       \{}
+\DoxyCodeLine{64                         datosLinea.push\_back(stoi(split));}
+\DoxyCodeLine{65                         split = strtok (NULL, \textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{66                       \}}
+\DoxyCodeLine{67                     \textcolor{keywordflow}{for}(uint i=0; i < datosLinea.size(); i++)}
+\DoxyCodeLine{68                         \textcolor{keywordflow}{if} ((i+1)\%2 == 0)}
+\DoxyCodeLine{69                             acumuladorColumnas += datosLinea[i];}
+\DoxyCodeLine{70                     seGuardoColumnas = \textcolor{keyword}{true};}
+\DoxyCodeLine{71                 \}}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73                 ++filas;}
+\DoxyCodeLine{74             \}}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76             img.\mbox{\hyperlink{class_imagen_a745584efb94c3a60c7d77017b2bfb512}{setFilas}}(filas);}
+\DoxyCodeLine{77             img.\mbox{\hyperlink{class_imagen_a2f484fcbef63dfa2fe6c2ee418a7d856}{setColumnas}}(acumuladorColumnas);}
+\DoxyCodeLine{78             img.\mbox{\hyperlink{class_imagen_a310a7ee241a8c546a9d5345937a9f01f}{setTamanio}}();}
+\DoxyCodeLine{79             img.\mbox{\hyperlink{class_imagen_ac6be498c1eadda6e7a5bf603c7ababc3}{setRango}}(255);}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.close();}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.open(ruta, ios::in);}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.seekg(auxPosicion);}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87             filas = 0;}
+\DoxyCodeLine{88             acumuladorColumnas = 0;}
+\DoxyCodeLine{89             \textcolor{keywordtype}{int} nivelDeGris, cantidadRepite;}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91             \mbox{\hyperlink{class_pixel}{Pixel}} pixelAux;}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93             \textcolor{keywordtype}{int} contadorPixeles = 0;}
+\DoxyCodeLine{94             \textcolor{keywordflow}{while}(getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea))}
+\DoxyCodeLine{95             \{}
+\DoxyCodeLine{96                 datosLinea.clear();}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98                 acumuladorColumnas = 0;}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100                 \textcolor{keywordtype}{int} tamanio = linea.length();}
+\DoxyCodeLine{101                 \textcolor{keywordtype}{char} linea\_char[tamanio];}
+\DoxyCodeLine{102                 strcpy(linea\_char, linea.c\_str());}
+\DoxyCodeLine{103                 \textcolor{keywordtype}{char} *split;}
+\DoxyCodeLine{104                 split = strtok(linea\_char, \textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{105                 \textcolor{keywordflow}{while} (split != NULL)}
+\DoxyCodeLine{106                   \{}
+\DoxyCodeLine{107                     datosLinea.push\_back(stoi(split));}
+\DoxyCodeLine{108                     split = strtok (NULL, \textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{109                   \}}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111                 \textcolor{keywordflow}{for}(uint i = 0; i < datosLinea.size(); i = i+2)}
+\DoxyCodeLine{112                 \{}
+\DoxyCodeLine{113                     nivelDeGris = datosLinea.at(i);}
+\DoxyCodeLine{114                     cantidadRepite = datosLinea.at(i+1);}
+\DoxyCodeLine{115                     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna = 0; columna < cantidadRepite; columna++)}
+\DoxyCodeLine{116                     \{}
+\DoxyCodeLine{117                         pixelAux.\mbox{\hyperlink{class_pixel_affd7e85713e18281b51e0e676485f704}{setPixelEscala}}(nivelDeGris);}
+\DoxyCodeLine{118                         img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(filas, columna+acumuladorColumnas, pixelAux);}
+\DoxyCodeLine{119                         contadorPixeles += 1;}
+\DoxyCodeLine{120                     \}}
+\DoxyCodeLine{121                     acumuladorColumnas += cantidadRepite;}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124                 \}}
+\DoxyCodeLine{125                 ++filas;}
+\DoxyCodeLine{126             \}}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128             \textcolor{keywordflow}{if} (contadorPixeles != img.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()*img.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}())}
+\DoxyCodeLine{129                 \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131             \textcolor{keywordflow}{return} img;}
+\DoxyCodeLine{132     \} \textcolor{keywordflow}{catch}(exception)\{}
+\DoxyCodeLine{133         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{134     \}}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136     \}}
+\DoxyCodeLine{137 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a archi, Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), identificador, Imagen\+::set\+Columnas(), Imagen\+::set\+Filas(), Imagen\+::set\+Identificador(), Imagen\+::set\+Informacion(), Imagen\+::set\+Pixel(), Pixel\+::set\+Pixel\+Escala(), Imagen\+::set\+Rango() y Imagen\+::set\+Tamanio().
+
+\mbox{\Hypertarget{class_archivos_a_i_c_a35f900f9c3eb931e0f17cd82a6c699e1}\label{class_archivos_a_i_c_a35f900f9c3eb931e0f17cd82a6c699e1}} 
+\index{ArchivosAIC@{ArchivosAIC}!obtieneRutaGuardado@{obtieneRutaGuardado}}
+\index{obtieneRutaGuardado@{obtieneRutaGuardado}!ArchivosAIC@{ArchivosAIC}}
+\doxysubsubsection{\texorpdfstring{obtieneRutaGuardado()}{obtieneRutaGuardado()}}
+{\footnotesize\ttfamily string Archivos\+AIC\+::obtiene\+Ruta\+Guardado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+obtiene\+Ruta\+Guardado MÃ©todo que permite obtener del usuario la ruta donde se guardarÃ¡ la imÃ¡gen. 
+
+\begin{DoxyReturn}{Devuelve}
+Ruta donde se guardarÃ¡ la \mbox{\hyperlink{class_imagen}{Imagen}}. 
+\end{DoxyReturn}
+
+
+Definición en la línea 154 del archivo archivosaic.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{155 \{}
+\DoxyCodeLine{156     \textcolor{keywordtype}{string} rutaGuardado = \textcolor{stringliteral}{"{}./Imagenes/Imagenes\_guardadas/"{}}, nombre;}
+\DoxyCodeLine{157     cout<<\textcolor{stringliteral}{"{}\(\backslash\)t  Ingrese nombre con el que desea guardar la imÃ¡gen. (No utilice '/')\(\backslash\)n\(\backslash\)t\(\backslash\)t>"{}};}
+\DoxyCodeLine{158     cin>>nombre;}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160     \textcolor{keywordflow}{return} rutaGuardado+nombre+\textcolor{stringliteral}{"{}.aic"{}};}
+\DoxyCodeLine{161 \}}
+
+\end{DoxyCode}
+
+
+Referenciado por guardar().
+
+
+
+\doxysubsection{Documentación de los campos}
+\mbox{\Hypertarget{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}\label{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}} 
+\index{ArchivosAIC@{ArchivosAIC}!archi@{archi}}
+\index{archi@{archi}!ArchivosAIC@{ArchivosAIC}}
+\doxysubsubsection{\texorpdfstring{archi}{archi}}
+{\footnotesize\ttfamily fstream Archivos\+AIC\+::archi\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em archi} & Archivo de entrada o salida de tipo AIC. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 47 del archivo archivosaic.\+h.
+
+
+
+Referenciado por escribir\+Encabezado(), escribir\+Pixeles(), guardar() y leer().
+
+\mbox{\Hypertarget{class_archivos_a_i_c_ab2c2c0b495012e23718e6161cbc17629}\label{class_archivos_a_i_c_ab2c2c0b495012e23718e6161cbc17629}} 
+\index{ArchivosAIC@{ArchivosAIC}!identificador@{identificador}}
+\index{identificador@{identificador}!ArchivosAIC@{ArchivosAIC}}
+\doxysubsubsection{\texorpdfstring{identificador}{identificador}}
+{\footnotesize\ttfamily string Archivos\+AIC\+::identificador\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em identificador} & Identificador del archivo, indica como leerlo o guardarlo. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 52 del archivo archivosaic.\+h.
+
+
+
+Referenciado por leer().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{archivosaic_8h}{archivosaic.\+h}}\item 
+\mbox{\hyperlink{archivosaic_8cpp}{archivosaic.\+cpp}}\end{DoxyCompactItemize}

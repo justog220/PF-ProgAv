@@ -1,0 +1,439 @@
+\hypertarget{class_brillo}{}\doxysection{Referencia de la Clase Brillo}
+\label{class_brillo}\index{Brillo@{Brillo}}
+
+
+Clase que hereda de la clase \mbox{\hyperlink{class_filtros}{Filtros}} mÃ©todos y los redefine para aumentar o reducir el brillo de una \mbox{\hyperlink{class_imagen}{Imagen}}.  
+
+
+
+
+{\ttfamily \#include $<$brillo.\+h$>$}
+
+Diagrama de herencias de Brillo\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_brillo}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_brillo_a0629ffb7ad2c72be692525e3c765f86b}{Brillo}} (int opc)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_brillo}{Brillo}} Constructor del objeto \mbox{\hyperlink{class_brillo}{Brillo}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imagen}{Imagen}} \mbox{\hyperlink{class_brillo_ae30ffa21b6e3b28c8450d292826c1668}{aplicar\+Filtro}} (\mbox{\hyperlink{class_imagen}{Imagen}} \&imagen) override
+\begin{DoxyCompactList}\small\item\em aplicar\+Filtro MÃ©todo heredado de la case \mbox{\hyperlink{class_filtros}{Filtros}}, redefinido para la modificaciÃ³n del brillo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_brillo_ab9e983182a225554b56ad7ac8376bef8}{aumentar\+Brillo}} (\mbox{\hyperlink{class_imagen}{Imagen}} \&imagen)
+\begin{DoxyCompactList}\small\item\em aumentar\+Brillo MÃ©todo que permite aumentar el brillo de una \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_brillo_ac12ad6683780291a8b7d0c31a4fd0e9e}{reducir\+Brillo}} (\mbox{\hyperlink{class_imagen}{Imagen}} \&imagen)
+\begin{DoxyCompactList}\small\item\em reducir\+Brillo MÃ©todo que permite reducir el brillo de una \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_brillo_a02c1ce6960082cc2e900af8f22fae325}{cambia\+Opcion}} ()
+\begin{DoxyCompactList}\small\item\em cambia\+Opcion MÃ©todo que permite cambiar entre aumentar o reducir el brillo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_brillo_aed5bf732f20f221e5d1ffbd704594cfc}{consultar\+Diferencia}} (\mbox{\hyperlink{class_imagen}{Imagen}} \&imagen)
+\begin{DoxyCompactList}\small\item\em consultar\+Diferencia MÃ©todo privado que permite obtener la diferencia en la que se modifica el brillo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}}
+\item 
+bool \mbox{\hyperlink{class_brillo_a04f55effcd4ea3741f237d952efe8ea7}{se\+Aumenta}}
+\item 
+bool \mbox{\hyperlink{class_brillo_ace1446060d6299777425fb067e7efebe}{se\+Reduce}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que hereda de la clase \mbox{\hyperlink{class_filtros}{Filtros}} mÃ©todos y los redefine para aumentar o reducir el brillo de una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+Obtiene una \mbox{\hyperlink{class_imagen}{Imagen}} y le aumenta el brillo o lo reduce segun quiera el usuario con una diferencia indicada, por defecto 50. \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 12-\/12-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000005}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+
+\end{DoxyWarning}
+
+
+Definición en la línea 17 del archivo brillo.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_brillo_a0629ffb7ad2c72be692525e3c765f86b}\label{class_brillo_a0629ffb7ad2c72be692525e3c765f86b}} 
+\index{Brillo@{Brillo}!Brillo@{Brillo}}
+\index{Brillo@{Brillo}!Brillo@{Brillo}}
+\doxysubsubsection{\texorpdfstring{Brillo()}{Brillo()}}
+{\footnotesize\ttfamily Brillo\+::\+Brillo (\begin{DoxyParamCaption}\item[{int}]{opc }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_brillo}{Brillo}} Constructor del objeto \mbox{\hyperlink{class_brillo}{Brillo}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em opc} & OpciÃ³n que indica si se aumenta o si se reduce el brillo, 1 si aumenta y 2 si se reduce. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 5 del archivo brillo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     \textcolor{keywordflow}{if}(opc == 1)}
+\DoxyCodeLine{8     \{}
+\DoxyCodeLine{9         \mbox{\hyperlink{class_brillo_a04f55effcd4ea3741f237d952efe8ea7}{seAumenta}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{10         \mbox{\hyperlink{class_brillo_ace1446060d6299777425fb067e7efebe}{seReduce}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{11     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opc == 2)}
+\DoxyCodeLine{12     \{}
+\DoxyCodeLine{13         \mbox{\hyperlink{class_brillo_a04f55effcd4ea3741f237d952efe8ea7}{seAumenta}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{14         \mbox{\hyperlink{class_brillo_ace1446060d6299777425fb067e7efebe}{seReduce}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{15     \}}
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a se\+Aumenta y se\+Reduce.
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_brillo_ae30ffa21b6e3b28c8450d292826c1668}\label{class_brillo_ae30ffa21b6e3b28c8450d292826c1668}} 
+\index{Brillo@{Brillo}!aplicarFiltro@{aplicarFiltro}}
+\index{aplicarFiltro@{aplicarFiltro}!Brillo@{Brillo}}
+\doxysubsubsection{\texorpdfstring{aplicarFiltro()}{aplicarFiltro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imagen}{Imagen}} Brillo\+::aplicar\+Filtro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} \&}]{imagen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+aplicar\+Filtro MÃ©todo heredado de la case \mbox{\hyperlink{class_filtros}{Filtros}}, redefinido para la modificaciÃ³n del brillo. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em imagen} & \mbox{\hyperlink{class_imagen}{Imagen}} a la cuÃ¡l se le desea aplicar el filtro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve la \mbox{\hyperlink{class_imagen}{Imagen}} con el filtro aplicado. 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{class_filtros_a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82}{Filtros}}.
+
+
+
+Definición en la línea 18 del archivo brillo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_brillo_a04f55effcd4ea3741f237d952efe8ea7}{seAumenta}})}
+\DoxyCodeLine{21         \mbox{\hyperlink{class_brillo_ab9e983182a225554b56ad7ac8376bef8}{aumentarBrillo}}(imagen);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_brillo_ace1446060d6299777425fb067e7efebe}{seReduce}})}
+\DoxyCodeLine{24         \mbox{\hyperlink{class_brillo_ac12ad6683780291a8b7d0c31a4fd0e9e}{reducirBrillo}}(imagen);}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordflow}{return} imagen;}
+\DoxyCodeLine{27 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a aumentar\+Brillo(), reducir\+Brillo(), se\+Aumenta y se\+Reduce.
+
+\mbox{\Hypertarget{class_brillo_ab9e983182a225554b56ad7ac8376bef8}\label{class_brillo_ab9e983182a225554b56ad7ac8376bef8}} 
+\index{Brillo@{Brillo}!aumentarBrillo@{aumentarBrillo}}
+\index{aumentarBrillo@{aumentarBrillo}!Brillo@{Brillo}}
+\doxysubsubsection{\texorpdfstring{aumentarBrillo()}{aumentarBrillo()}}
+{\footnotesize\ttfamily void Brillo\+::aumentar\+Brillo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} \&}]{imagen }\end{DoxyParamCaption})}
+
+
+
+aumentar\+Brillo MÃ©todo que permite aumentar el brillo de una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em imagen} & \mbox{\hyperlink{class_imagen}{Imagen}} a la cual se le desea aplicar el filtro. \\
+\hline
+\mbox{\texttt{ out}}  & {\em imagen} & Se modifica la \mbox{\hyperlink{class_imagen}{Imagen}}. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 29 del archivo brillo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30 \{}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_brillo_aed5bf732f20f221e5d1ffbd704594cfc}{consultarDiferencia}}(imagen);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{int} auxR, auxG, auxB;}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < imagen.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(); i++)}
+\DoxyCodeLine{37         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < imagen.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}(); j++)}
+\DoxyCodeLine{38         \{}
+\DoxyCodeLine{39             pix\_aux = imagen.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{40             auxR = pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}() + \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
+\DoxyCodeLine{41             \textcolor{keywordflow}{if}(auxR > imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
+\DoxyCodeLine{42                 auxR = imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44             auxG = pix\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}() + \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
+\DoxyCodeLine{45             \textcolor{keywordflow}{if}(auxG > imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
+\DoxyCodeLine{46                 auxG = imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48             auxB = pix\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}() + \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
+\DoxyCodeLine{49             \textcolor{keywordflow}{if}(auxB > imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
+\DoxyCodeLine{50                 auxB = imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}();}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52             pix\_aux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}(auxR, auxG, auxB);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54             imagen.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(i, j, pix\_aux);}
+\DoxyCodeLine{55         \}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a consultar\+Diferencia(), diferencia, Pixel\+::get\+B(), Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Pixel\+::get\+G(), Imagen\+::get\+Pixel(), Pixel\+::get\+R(), Imagen\+::get\+Rango(), Imagen\+::set\+Pixel() y Pixel\+::set\+Pixel\+RGB().
+
+
+
+Referenciado por aplicar\+Filtro().
+
+\mbox{\Hypertarget{class_brillo_a02c1ce6960082cc2e900af8f22fae325}\label{class_brillo_a02c1ce6960082cc2e900af8f22fae325}} 
+\index{Brillo@{Brillo}!cambiaOpcion@{cambiaOpcion}}
+\index{cambiaOpcion@{cambiaOpcion}!Brillo@{Brillo}}
+\doxysubsubsection{\texorpdfstring{cambiaOpcion()}{cambiaOpcion()}}
+{\footnotesize\ttfamily void Brillo\+::cambia\+Opcion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+cambia\+Opcion MÃ©todo que permite cambiar entre aumentar o reducir el brillo. 
+
+
+
+Definición en la línea 88 del archivo brillo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{89 \{}
+\DoxyCodeLine{90     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_brillo_a04f55effcd4ea3741f237d952efe8ea7}{seAumenta}})}
+\DoxyCodeLine{91     \{}
+\DoxyCodeLine{92         \mbox{\hyperlink{class_brillo_a04f55effcd4ea3741f237d952efe8ea7}{seAumenta}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{93         \mbox{\hyperlink{class_brillo_ace1446060d6299777425fb067e7efebe}{seReduce}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{94     \}\textcolor{keywordflow}{else}}
+\DoxyCodeLine{95     \{}
+\DoxyCodeLine{96         \mbox{\hyperlink{class_brillo_a04f55effcd4ea3741f237d952efe8ea7}{seAumenta}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{97         \mbox{\hyperlink{class_brillo_ace1446060d6299777425fb067e7efebe}{seReduce}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{98     \}}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a se\+Aumenta y se\+Reduce.
+
+\mbox{\Hypertarget{class_brillo_aed5bf732f20f221e5d1ffbd704594cfc}\label{class_brillo_aed5bf732f20f221e5d1ffbd704594cfc}} 
+\index{Brillo@{Brillo}!consultarDiferencia@{consultarDiferencia}}
+\index{consultarDiferencia@{consultarDiferencia}!Brillo@{Brillo}}
+\doxysubsubsection{\texorpdfstring{consultarDiferencia()}{consultarDiferencia()}}
+{\footnotesize\ttfamily void Brillo\+::consultar\+Diferencia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} \&}]{imagen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+consultar\+Diferencia MÃ©todo privado que permite obtener la diferencia en la que se modifica el brillo. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em imagen} & \mbox{\hyperlink{class_imagen}{Imagen}} de la cual se modifica el brillo. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 101 del archivo brillo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{102 \{}
+\DoxyCodeLine{103     \textcolor{keywordtype}{char} opc;}
+\DoxyCodeLine{104     cout<<\textcolor{stringliteral}{"{}\(\backslash\)tÂ¿Desea especificar cuanto aumentar/reducir?\(\backslash\)n\(\backslash\)t|\_\_[S]i\(\backslash\)n\(\backslash\)t|\_\_[N]o\(\backslash\)n\(\backslash\)t\(\backslash\)t>>"{}};}
+\DoxyCodeLine{105     cout.flush();}
+\DoxyCodeLine{106     cin>>opc;}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108     opc = toupper(opc);}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110     \textcolor{keywordflow}{while}(opc != \textcolor{charliteral}{'N'} and opc != \textcolor{charliteral}{'S'})}
+\DoxyCodeLine{111     \{}
+\DoxyCodeLine{112         cin.clear();}
+\DoxyCodeLine{113         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{114         cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese una opcion vÃ¡lida: "{}};}
+\DoxyCodeLine{115         cin>>opc;}
+\DoxyCodeLine{116         opc = toupper(opc);}
+\DoxyCodeLine{117     \}}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119     \textcolor{keywordflow}{if}(opc == \textcolor{charliteral}{'N'})}
+\DoxyCodeLine{120         \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}} = 50;}
+\DoxyCodeLine{121     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{122     \{}
+\DoxyCodeLine{123         \textcolor{keywordtype}{int} cantidad;}
+\DoxyCodeLine{124         \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}} = -\/1;}
+\DoxyCodeLine{125         \textcolor{keywordflow}{while}(diferencia <= 0 or diferencia >= imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
+\DoxyCodeLine{126         \{}
+\DoxyCodeLine{127             cin.clear();}
+\DoxyCodeLine{128             cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{129             cout<<\textcolor{stringliteral}{"{}\(\backslash\)tIngrese una cantidad dentro del rango [0, "{}}<<imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}()<<\textcolor{stringliteral}{"{}]: "{}};}
+\DoxyCodeLine{130             cout.flush();}
+\DoxyCodeLine{131             cin>>cantidad;}
+\DoxyCodeLine{132             \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}} = cantidad;}
+\DoxyCodeLine{133         \}}
+\DoxyCodeLine{134     \}}
+\DoxyCodeLine{135 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a diferencia y Imagen\+::get\+Rango().
+
+
+
+Referenciado por aumentar\+Brillo() y reducir\+Brillo().
+
+\mbox{\Hypertarget{class_brillo_ac12ad6683780291a8b7d0c31a4fd0e9e}\label{class_brillo_ac12ad6683780291a8b7d0c31a4fd0e9e}} 
+\index{Brillo@{Brillo}!reducirBrillo@{reducirBrillo}}
+\index{reducirBrillo@{reducirBrillo}!Brillo@{Brillo}}
+\doxysubsubsection{\texorpdfstring{reducirBrillo()}{reducirBrillo()}}
+{\footnotesize\ttfamily void Brillo\+::reducir\+Brillo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} \&}]{imagen }\end{DoxyParamCaption})}
+
+
+
+reducir\+Brillo MÃ©todo que permite reducir el brillo de una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em imagen} & \mbox{\hyperlink{class_imagen}{Imagen}} a la cual se le desea aplicar el filtro. \\
+\hline
+\mbox{\texttt{ out}}  & {\em imagen} & Se modifica la \mbox{\hyperlink{class_imagen}{Imagen}}. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 59 del archivo brillo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60 \{}
+\DoxyCodeLine{61     \mbox{\hyperlink{class_brillo_aed5bf732f20f221e5d1ffbd704594cfc}{consultarDiferencia}}(imagen);}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     \textcolor{keywordtype}{int} auxR, auxG, auxB;}
+\DoxyCodeLine{64     \mbox{\hyperlink{class_pixel}{Pixel}} pix\_aux;}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < imagen.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(); i++)}
+\DoxyCodeLine{67         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < imagen.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}(); j++)}
+\DoxyCodeLine{68         \{}
+\DoxyCodeLine{69             pix\_aux = imagen.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j);}
+\DoxyCodeLine{70             auxR = pix\_aux.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}() -\/ \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
+\DoxyCodeLine{71             \textcolor{keywordflow}{if}(auxR < 0)}
+\DoxyCodeLine{72                 auxR = 0;}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74             auxG = pix\_aux.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}() -\/ \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
+\DoxyCodeLine{75             \textcolor{keywordflow}{if}(auxG < 0)}
+\DoxyCodeLine{76                 auxG = 0;}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78             auxB = pix\_aux.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}() -\/ \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
+\DoxyCodeLine{79             \textcolor{keywordflow}{if}(auxB < 0)}
+\DoxyCodeLine{80                 auxB = 0;}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82             pix\_aux.\mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{setPixelRGB}}(auxR, auxG, auxB);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84             imagen.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(i, j, pix\_aux);}
+\DoxyCodeLine{85         \}}
+\DoxyCodeLine{86 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a consultar\+Diferencia(), diferencia, Pixel\+::get\+B(), Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Pixel\+::get\+G(), Imagen\+::get\+Pixel(), Pixel\+::get\+R(), Imagen\+::set\+Pixel() y Pixel\+::set\+Pixel\+RGB().
+
+
+
+Referenciado por aplicar\+Filtro().
+
+
+
+\doxysubsection{Documentación de los campos}
+\mbox{\Hypertarget{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}\label{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}} 
+\index{Brillo@{Brillo}!diferencia@{diferencia}}
+\index{diferencia@{diferencia}!Brillo@{Brillo}}
+\doxysubsubsection{\texorpdfstring{diferencia}{diferencia}}
+{\footnotesize\ttfamily int Brillo\+::diferencia\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em diferencia} & NÃºmero en el cual se aumenta o se reduce el brillo. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 59 del archivo brillo.\+h.
+
+
+
+Referenciado por aumentar\+Brillo(), consultar\+Diferencia() y reducir\+Brillo().
+
+\mbox{\Hypertarget{class_brillo_a04f55effcd4ea3741f237d952efe8ea7}\label{class_brillo_a04f55effcd4ea3741f237d952efe8ea7}} 
+\index{Brillo@{Brillo}!seAumenta@{seAumenta}}
+\index{seAumenta@{seAumenta}!Brillo@{Brillo}}
+\doxysubsubsection{\texorpdfstring{seAumenta}{seAumenta}}
+{\footnotesize\ttfamily bool Brillo\+::se\+Aumenta\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em se\+Aumenta} & Booleano que indica si el brillo se aumenta o no. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 71 del archivo brillo.\+h.
+
+
+
+Referenciado por aplicar\+Filtro(), Brillo() y cambia\+Opcion().
+
+\mbox{\Hypertarget{class_brillo_ace1446060d6299777425fb067e7efebe}\label{class_brillo_ace1446060d6299777425fb067e7efebe}} 
+\index{Brillo@{Brillo}!seReduce@{seReduce}}
+\index{seReduce@{seReduce}!Brillo@{Brillo}}
+\doxysubsubsection{\texorpdfstring{seReduce}{seReduce}}
+{\footnotesize\ttfamily bool Brillo\+::se\+Reduce\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em se\+Reduce} & Booleano que indica si el brillo se reduce o no. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 76 del archivo brillo.\+h.
+
+
+
+Referenciado por aplicar\+Filtro(), Brillo() y cambia\+Opcion().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{brillo_8h}{brillo.\+h}}\item 
+\mbox{\hyperlink{brillo_8cpp}{brillo.\+cpp}}\end{DoxyCompactItemize}

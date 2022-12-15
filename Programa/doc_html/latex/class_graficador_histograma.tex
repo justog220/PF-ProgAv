@@ -1,0 +1,549 @@
+\hypertarget{class_graficador_histograma}{}\doxysection{Referencia de la Clase Graficador\+Histograma}
+\label{class_graficador_histograma}\index{GraficadorHistograma@{GraficadorHistograma}}
+
+
+Clase encargada de mostrar por pantalla el histograma de una \mbox{\hyperlink{class_imagen}{Imagen}}.  
+
+
+
+
+{\ttfamily \#include $<$graficadorhistograma.\+h$>$}
+
+Diagrama de herencias de Graficador\+Histograma\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_graficador_histograma}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_graficador_histograma_a9d8479d16eeda28cea737d95f2777ebc}{Graficador\+Histograma}} (\mbox{\hyperlink{class_imagen}{Imagen}} \&img)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_graficador_histograma}{Graficador\+Histograma}} Constructor del objeto \mbox{\hyperlink{class_graficador_histograma}{Graficador\+Histograma}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graficador_histograma_aa737ae0d4f730366dac67ff310004a8b}{initialize\+GL}} ()
+\begin{DoxyCompactList}\small\item\em initialize\+GL Inicializa los recursos necesarios para utilizar Open\+GL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graficador_histograma_a3e9f50e51ff5d13c6d8b44ffb09ed787}{resize\+GL}} (int p\+Ancho, int p\+Alto)
+\begin{DoxyCompactList}\small\item\em resize\+GL Se modifica el tamaÃ±o cuando se modifica el tamaÃ±o de la ventana. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graficador_histograma_a840da15e6339fcaf13547cb188458671}{paint\+GL}} ()
+\begin{DoxyCompactList}\small\item\em paint\+GL Permite graficar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graficador_histograma_a0fea2467b8ee53bc9ef00cab14eee93f}{graficar\+Histograma}} ()
+\begin{DoxyCompactList}\small\item\em graficar\+Histograma Permite la representaciÃ³n grÃ¡fica del histograma haciendo uso de la librerÃ­a Open\+GL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_imagen}{Imagen}} \mbox{\hyperlink{class_graficador_histograma_a35fea56cbd4e9ca930535771054beb04}{imagen\+Analisis}}
+\item 
+\mbox{\hyperlink{class_procesador_estadistico}{Procesador\+Estadistico}} \mbox{\hyperlink{class_graficador_histograma_a2f0fb1fe6c5afef5f7793aeb6e3455d7}{procesador\+Estad}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_graficador_histograma_a711b33992b1e18171a19e948405d7338}{frecuenciaG}}
+\item 
+int \mbox{\hyperlink{class_graficador_histograma_ac34463c6ba909660c4026641d2c134d8}{maxima\+Frecuencia}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}{frecuenciaB}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_graficador_histograma_a167b2fc6dbe3c919e0f9da215aa5ffc7}{frecuencia\+Promedio}}
+\item 
+int \mbox{\hyperlink{class_graficador_histograma_ae4b91c9e97db4bdd05c06ff7130a259c}{anchoV}}
+\item 
+int \mbox{\hyperlink{class_graficador_histograma_a06ad5e02dca4adbf07381eba085657d6}{altoV}}
+\item 
+float \mbox{\hyperlink{class_graficador_histograma_aaaf8c0ae57525e5fb3f551e371b499de}{escala}}
+\item 
+float \mbox{\hyperlink{class_graficador_histograma_abee8871a0b6d725d531d3e11dee7c664}{desplx}}
+\item 
+float \mbox{\hyperlink{class_graficador_histograma_a18e87d851c068bfa6fc6f073071cbee7}{desply}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase encargada de mostrar por pantalla el histograma de una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+Se construye a partir de las frecuencias de los distintos valores de R, G y B de una \mbox{\hyperlink{class_imagen}{Imagen}} y luego es capaz de graficar el histograma. \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 24-\/11-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000013}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+
+\end{DoxyWarning}
+
+
+Definición en la línea 26 del archivo graficadorhistograma.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_graficador_histograma_a9d8479d16eeda28cea737d95f2777ebc}\label{class_graficador_histograma_a9d8479d16eeda28cea737d95f2777ebc}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!GraficadorHistograma@{GraficadorHistograma}}
+\index{GraficadorHistograma@{GraficadorHistograma}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{GraficadorHistograma()}{GraficadorHistograma()}}
+{\footnotesize\ttfamily Graficador\+Histograma\+::\+Graficador\+Histograma (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} \&}]{img }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_graficador_histograma}{Graficador\+Histograma}} Constructor del objeto \mbox{\hyperlink{class_graficador_histograma}{Graficador\+Histograma}}. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em img} & \mbox{\hyperlink{class_imagen}{Imagen}} de la cual se busca graficar el Histograma. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 4 del archivo graficadorhistograma.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5 \{}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7     \mbox{\hyperlink{class_graficador_histograma_a35fea56cbd4e9ca930535771054beb04}{imagenAnalisis}} = img;}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10     \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}} = \mbox{\hyperlink{class_graficador_histograma_a2f0fb1fe6c5afef5f7793aeb6e3455d7}{procesadorEstad}}.\mbox{\hyperlink{class_procesador_estadistico_a069647af14c5007468ba4ba715eca6f2}{devuelveFrecuenciaR}}(\mbox{\hyperlink{class_graficador_histograma_a35fea56cbd4e9ca930535771054beb04}{imagenAnalisis}});}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_graficador_histograma_a711b33992b1e18171a19e948405d7338}{frecuenciaG}} = \mbox{\hyperlink{class_graficador_histograma_a2f0fb1fe6c5afef5f7793aeb6e3455d7}{procesadorEstad}}.\mbox{\hyperlink{class_procesador_estadistico_ad3743c1b10e04d9f79096e1af3e82ba2}{devuelveFrecuenciaG}}(\mbox{\hyperlink{class_graficador_histograma_a35fea56cbd4e9ca930535771054beb04}{imagenAnalisis}});}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}{frecuenciaB}} = \mbox{\hyperlink{class_graficador_histograma_a2f0fb1fe6c5afef5f7793aeb6e3455d7}{procesadorEstad}}.\mbox{\hyperlink{class_procesador_estadistico_ab89524875bd7094f966672761a597a8e}{devuelveFrecuenciaB}}(\mbox{\hyperlink{class_graficador_histograma_a35fea56cbd4e9ca930535771054beb04}{imagenAnalisis}});}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_graficador_histograma_a167b2fc6dbe3c919e0f9da215aa5ffc7}{frecuenciaPromedio}} = \mbox{\hyperlink{class_graficador_histograma_a2f0fb1fe6c5afef5f7793aeb6e3455d7}{procesadorEstad}}.\mbox{\hyperlink{class_procesador_estadistico_a2d8c559ae72462c0b215978c1f0bd088}{devolverFrecuenciaPromedio}}(\mbox{\hyperlink{class_graficador_histograma_a35fea56cbd4e9ca930535771054beb04}{imagenAnalisis}});}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     vector<int> maximasFrecuencias;}
+\DoxyCodeLine{16     maximasFrecuencias.push\_back(*max\_element(\mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}.begin(), \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}.end()));}
+\DoxyCodeLine{17     maximasFrecuencias.push\_back(*max\_element(\mbox{\hyperlink{class_graficador_histograma_a711b33992b1e18171a19e948405d7338}{frecuenciaG}}.begin(), \mbox{\hyperlink{class_graficador_histograma_a711b33992b1e18171a19e948405d7338}{frecuenciaG}}.end()));}
+\DoxyCodeLine{18     maximasFrecuencias.push\_back(*max\_element(\mbox{\hyperlink{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}{frecuenciaB}}.begin(), \mbox{\hyperlink{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}{frecuenciaB}}.end()));}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \mbox{\hyperlink{class_graficador_histograma_ac34463c6ba909660c4026641d2c134d8}{maximaFrecuencia}} = *max\_element(maximasFrecuencias.begin(), maximasFrecuencias.end());}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Procesador\+Estadistico\+::devolver\+Frecuencia\+Promedio(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+B(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+G(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+R(), frecuenciaB, frecuenciaG, frecuencia\+Promedio, frecuenciaR, imagen\+Analisis, maxima\+Frecuencia y procesador\+Estad.
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_graficador_histograma_a0fea2467b8ee53bc9ef00cab14eee93f}\label{class_graficador_histograma_a0fea2467b8ee53bc9ef00cab14eee93f}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!graficarHistograma@{graficarHistograma}}
+\index{graficarHistograma@{graficarHistograma}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{graficarHistograma()}{graficarHistograma()}}
+{\footnotesize\ttfamily void Graficador\+Histograma\+::graficar\+Histograma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+graficar\+Histograma Permite la representaciÃ³n grÃ¡fica del histograma haciendo uso de la librerÃ­a Open\+GL. 
+
+
+
+Definición en la línea 65 del archivo graficadorhistograma.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66 \{}
+\DoxyCodeLine{67     \textcolor{keywordtype}{char} bandera = \textcolor{charliteral}{'r'};}
+\DoxyCodeLine{68     glPushMatrix();}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     glScalef(width()*1.0f/256.0f, height()*1.0f/\mbox{\hyperlink{class_graficador_histograma_ac34463c6ba909660c4026641d2c134d8}{maximaFrecuencia}}*1.0f, 0.0f);}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73     glBegin(GL\_LINE\_STRIP);}
+\DoxyCodeLine{74         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} nivel = 0; nivel < \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}.size(); nivel++)}
+\DoxyCodeLine{75         \{}
+\DoxyCodeLine{76             glColor4f(1.0f, 0.0f, 0.0f, 0.8f);}
+\DoxyCodeLine{77             glVertex3i(nivel, \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}[nivel], 1);}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79         \}}
+\DoxyCodeLine{80     glEnd();}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     glBegin(GL\_LINE\_STRIP);}
+\DoxyCodeLine{83         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} nivel = 0; nivel < \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}.size(); nivel++)}
+\DoxyCodeLine{84         \{}
+\DoxyCodeLine{85             glColor4f(0.0f, 1.0f, 0.0f, 0.8f);}
+\DoxyCodeLine{86             glVertex3i(nivel, \mbox{\hyperlink{class_graficador_histograma_a711b33992b1e18171a19e948405d7338}{frecuenciaG}}[nivel], 0);}
+\DoxyCodeLine{87         \}}
+\DoxyCodeLine{88     glEnd();}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90     glBegin(GL\_LINE\_STRIP);}
+\DoxyCodeLine{91         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} nivel = 0; nivel < \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}.size(); nivel++)}
+\DoxyCodeLine{92         \{}
+\DoxyCodeLine{93             glColor4f(0.0f, 0.0f, 1.0f, 0.8f);}
+\DoxyCodeLine{94             glVertex3i(nivel, \mbox{\hyperlink{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}{frecuenciaB}}[nivel], -\/1);}
+\DoxyCodeLine{95         \}}
+\DoxyCodeLine{96     glEnd();}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99     glBegin(GL\_LINE\_STRIP);}
+\DoxyCodeLine{100         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} nivel = 0; nivel < \mbox{\hyperlink{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}{frecuenciaR}}.size(); nivel++)}
+\DoxyCodeLine{101         \{}
+\DoxyCodeLine{102             \textcolor{keywordflow}{if}(bandera == \textcolor{charliteral}{'r'})}
+\DoxyCodeLine{103             \{}
+\DoxyCodeLine{104                 glColor4f(1.0f, 0.0f, 0.0f, 0.8f);}
+\DoxyCodeLine{105                 bandera = \textcolor{charliteral}{'g'};}
+\DoxyCodeLine{106             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(bandera == \textcolor{charliteral}{'g'})\{}
+\DoxyCodeLine{107                 glColor4f(0.0f, 1.0f, 0.0f, 0.8f);}
+\DoxyCodeLine{108                 bandera = \textcolor{charliteral}{'b'};}
+\DoxyCodeLine{109             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(bandera == \textcolor{charliteral}{'b'})\{}
+\DoxyCodeLine{110                 glColor4f(0.0f, 0.0f, 1.0f, 0.8f);}
+\DoxyCodeLine{111                 bandera = \textcolor{charliteral}{'r'};}
+\DoxyCodeLine{112             \}}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114             glVertex3i(nivel, \mbox{\hyperlink{class_graficador_histograma_a167b2fc6dbe3c919e0f9da215aa5ffc7}{frecuenciaPromedio}}[nivel], 1);}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116         \}}
+\DoxyCodeLine{117     glEnd();}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119        glPopMatrix();}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a frecuenciaB, frecuenciaG, frecuencia\+Promedio, frecuenciaR y maxima\+Frecuencia.
+
+
+
+Referenciado por Ventana\+De\+Graficacion\+::graficar\+Histograma() y paint\+GL().
+
+\mbox{\Hypertarget{class_graficador_histograma_aa737ae0d4f730366dac67ff310004a8b}\label{class_graficador_histograma_aa737ae0d4f730366dac67ff310004a8b}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!initializeGL@{initializeGL}}
+\index{initializeGL@{initializeGL}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{initializeGL()}{initializeGL()}}
+{\footnotesize\ttfamily void Graficador\+Histograma\+::initialize\+GL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+initialize\+GL Inicializa los recursos necesarios para utilizar Open\+GL. 
+
+
+
+Definición en la línea 23 del archivo graficadorhistograma.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25     initializeOpenGLFunctions();}
+\DoxyCodeLine{26     glClearColor(1.0f,1.0f,1.0f,1.0f);}
+\DoxyCodeLine{27 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_graficador_histograma_a840da15e6339fcaf13547cb188458671}\label{class_graficador_histograma_a840da15e6339fcaf13547cb188458671}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!paintGL@{paintGL}}
+\index{paintGL@{paintGL}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{paintGL()}{paintGL()}}
+{\footnotesize\ttfamily void Graficador\+Histograma\+::paint\+GL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+paint\+GL Permite graficar. 
+
+
+
+Definición en la línea 48 del archivo graficadorhistograma.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49 \{}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     glClear(GL\_COLOR\_BUFFER\_BIT | GL\_DEPTH\_BUFFER\_BIT);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{keywordtype}{float} relAncho = ((float)width())  / ((\textcolor{keywordtype}{float})\mbox{\hyperlink{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}{frecuenciaB}}.size());}
+\DoxyCodeLine{55     \textcolor{keywordtype}{float} relAlto  = ((float)height()) / (\textcolor{keywordtype}{float})\mbox{\hyperlink{class_graficador_histograma_ac34463c6ba909660c4026641d2c134d8}{maximaFrecuencia}};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     \mbox{\hyperlink{class_graficador_histograma_aaaf8c0ae57525e5fb3f551e371b499de}{escala}} = 1.0f;}
+\DoxyCodeLine{58     \mbox{\hyperlink{class_graficador_histograma_abee8871a0b6d725d531d3e11dee7c664}{desplx}} = (width() -\/ \mbox{\hyperlink{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}{frecuenciaB}}.size()*\mbox{\hyperlink{class_graficador_histograma_aaaf8c0ae57525e5fb3f551e371b499de}{escala}})*0.5f;}
+\DoxyCodeLine{59     \mbox{\hyperlink{class_graficador_histograma_a18e87d851c068bfa6fc6f073071cbee7}{desply}} = (height() -\/ \mbox{\hyperlink{class_graficador_histograma_ac34463c6ba909660c4026641d2c134d8}{maximaFrecuencia}}*\mbox{\hyperlink{class_graficador_histograma_aaaf8c0ae57525e5fb3f551e371b499de}{escala}})*0.5f;}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \mbox{\hyperlink{class_graficador_histograma_a0fea2467b8ee53bc9ef00cab14eee93f}{graficarHistograma}}();}
+\DoxyCodeLine{62 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a desplx, desply, escala, frecuenciaB, graficar\+Histograma() y maxima\+Frecuencia.
+
+\mbox{\Hypertarget{class_graficador_histograma_a3e9f50e51ff5d13c6d8b44ffb09ed787}\label{class_graficador_histograma_a3e9f50e51ff5d13c6d8b44ffb09ed787}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!resizeGL@{resizeGL}}
+\index{resizeGL@{resizeGL}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{resizeGL()}{resizeGL()}}
+{\footnotesize\ttfamily void Graficador\+Histograma\+::resize\+GL (\begin{DoxyParamCaption}\item[{int}]{p\+Ancho,  }\item[{int}]{p\+Alto }\end{DoxyParamCaption})}
+
+
+
+resize\+GL Se modifica el tamaÃ±o cuando se modifica el tamaÃ±o de la ventana. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em rango} & Nuevo ancho. \\
+\hline
+\mbox{\texttt{ in}}  & {\em frecuencia} & Nuevo alto. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 29 del archivo graficadorhistograma.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30 \{}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_graficador_histograma_a06ad5e02dca4adbf07381eba085657d6}{altoV}} = pAlto;}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \mbox{\hyperlink{class_graficador_histograma_ae4b91c9e97db4bdd05c06ff7130a259c}{anchoV}} = pAncho;}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     glViewport(0, 0, \mbox{\hyperlink{class_graficador_histograma_ae4b91c9e97db4bdd05c06ff7130a259c}{anchoV}}, \mbox{\hyperlink{class_graficador_histograma_a06ad5e02dca4adbf07381eba085657d6}{altoV}});}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     glMatrixMode(GL\_PROJECTION);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     glLoadIdentity();}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     glOrtho(0, width(), 0, height(), -\/1, 1);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     glMatrixMode(GL\_MODELVIEW);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     glLoadIdentity();}
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a altoV y anchoV.
+
+
+
+\doxysubsection{Documentación de los campos}
+\mbox{\Hypertarget{class_graficador_histograma_a06ad5e02dca4adbf07381eba085657d6}\label{class_graficador_histograma_a06ad5e02dca4adbf07381eba085657d6}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!altoV@{altoV}}
+\index{altoV@{altoV}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{altoV}{altoV}}
+{\footnotesize\ttfamily int Graficador\+Histograma\+::altoV\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em altoV} & Alto de la ventana. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 108 del archivo graficadorhistograma.\+h.
+
+
+
+Referenciado por resize\+GL().
+
+\mbox{\Hypertarget{class_graficador_histograma_ae4b91c9e97db4bdd05c06ff7130a259c}\label{class_graficador_histograma_ae4b91c9e97db4bdd05c06ff7130a259c}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!anchoV@{anchoV}}
+\index{anchoV@{anchoV}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{anchoV}{anchoV}}
+{\footnotesize\ttfamily int Graficador\+Histograma\+::anchoV\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em anchoV} & Ancho de la ventana. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 103 del archivo graficadorhistograma.\+h.
+
+
+
+Referenciado por resize\+GL().
+
+\mbox{\Hypertarget{class_graficador_histograma_abee8871a0b6d725d531d3e11dee7c664}\label{class_graficador_histograma_abee8871a0b6d725d531d3e11dee7c664}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!desplx@{desplx}}
+\index{desplx@{desplx}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{desplx}{desplx}}
+{\footnotesize\ttfamily float Graficador\+Histograma\+::desplx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em desplx} & Atributo que representa cuanto se desplaza en x el histograma en la ventana \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 119 del archivo graficadorhistograma.\+h.
+
+
+
+Referenciado por paint\+GL().
+
+\mbox{\Hypertarget{class_graficador_histograma_a18e87d851c068bfa6fc6f073071cbee7}\label{class_graficador_histograma_a18e87d851c068bfa6fc6f073071cbee7}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!desply@{desply}}
+\index{desply@{desply}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{desply}{desply}}
+{\footnotesize\ttfamily float Graficador\+Histograma\+::desply\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em desply} & Atributo que representa cuanto se desplaza en y el histograma en la ventana \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 124 del archivo graficadorhistograma.\+h.
+
+
+
+Referenciado por paint\+GL().
+
+\mbox{\Hypertarget{class_graficador_histograma_aaaf8c0ae57525e5fb3f551e371b499de}\label{class_graficador_histograma_aaaf8c0ae57525e5fb3f551e371b499de}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!escala@{escala}}
+\index{escala@{escala}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{escala}{escala}}
+{\footnotesize\ttfamily float Graficador\+Histograma\+::escala\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em escala} & Atributo que representa cuanto debe reescalarse para poder ser representada correctamente en la ventana. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 114 del archivo graficadorhistograma.\+h.
+
+
+
+Referenciado por paint\+GL().
+
+\mbox{\Hypertarget{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}\label{class_graficador_histograma_a739cde89f10f6c1d8d3188a5ae11ce2a}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!frecuenciaB@{frecuenciaB}}
+\index{frecuenciaB@{frecuenciaB}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{frecuenciaB}{frecuenciaB}}
+{\footnotesize\ttfamily vector$<$int$>$ Graficador\+Histograma\+::frecuenciaB\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em frecuenciaB} & Vector que representa las frecuencias para los distintos niveles de azul. Cada posiciÃ³n equivale a un nivel de azul y el entero almacenado la frecuencia de este nivel. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 93 del archivo graficadorhistograma.\+h.
+
+
+
+Referenciado por Graficador\+Histograma(), graficar\+Histograma() y paint\+GL().
+
+\mbox{\Hypertarget{class_graficador_histograma_a711b33992b1e18171a19e948405d7338}\label{class_graficador_histograma_a711b33992b1e18171a19e948405d7338}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!frecuenciaG@{frecuenciaG}}
+\index{frecuenciaG@{frecuenciaG}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{frecuenciaG}{frecuenciaG}}
+{\footnotesize\ttfamily vector$<$int$>$ Graficador\+Histograma\+::frecuenciaG\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em frecuenciaG} & Vector que representa las frecuencias para los distintos niveles de verde. Cada posiciÃ³n equivale a un nivel de verde y el entero almacenado la frecuencia de este nivel. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 80 del archivo graficadorhistograma.\+h.
+
+
+
+Referenciado por Graficador\+Histograma() y graficar\+Histograma().
+
+\mbox{\Hypertarget{class_graficador_histograma_a167b2fc6dbe3c919e0f9da215aa5ffc7}\label{class_graficador_histograma_a167b2fc6dbe3c919e0f9da215aa5ffc7}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!frecuenciaPromedio@{frecuenciaPromedio}}
+\index{frecuenciaPromedio@{frecuenciaPromedio}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{frecuenciaPromedio}{frecuenciaPromedio}}
+{\footnotesize\ttfamily vector$<$int$>$ Graficador\+Histograma\+::frecuencia\+Promedio\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em frecuencia\+Promedio} & Vector que representa la frecuencia con la que aparece cada promedio ( (R+\+G+B)/3 ) \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 98 del archivo graficadorhistograma.\+h.
+
+
+
+Referenciado por Graficador\+Histograma() y graficar\+Histograma().
+
+\mbox{\Hypertarget{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}\label{class_graficador_histograma_ab849d0da38d586b876b7c90d1b4c3e4e}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!frecuenciaR@{frecuenciaR}}
+\index{frecuenciaR@{frecuenciaR}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{frecuenciaR}{frecuenciaR}}
+{\footnotesize\ttfamily vector$<$int$>$ Graficador\+Histograma\+::frecuenciaR\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em frecuenciaR} & Vector que representa las frecuencias para los distintos niveles de rojo. Cada posiciÃ³n equivale a un nivel de rojo y el entero almacenado la frecuencia de este nivel. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 73 del archivo graficadorhistograma.\+h.
+
+
+
+Referenciado por Graficador\+Histograma() y graficar\+Histograma().
+
+\mbox{\Hypertarget{class_graficador_histograma_a35fea56cbd4e9ca930535771054beb04}\label{class_graficador_histograma_a35fea56cbd4e9ca930535771054beb04}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!imagenAnalisis@{imagenAnalisis}}
+\index{imagenAnalisis@{imagenAnalisis}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{imagenAnalisis}{imagenAnalisis}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imagen}{Imagen}} Graficador\+Histograma\+::imagen\+Analisis\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em histograma} & \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 64 del archivo graficadorhistograma.\+h.
+
+
+
+Referenciado por Graficador\+Histograma().
+
+\mbox{\Hypertarget{class_graficador_histograma_ac34463c6ba909660c4026641d2c134d8}\label{class_graficador_histograma_ac34463c6ba909660c4026641d2c134d8}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!maximaFrecuencia@{maximaFrecuencia}}
+\index{maximaFrecuencia@{maximaFrecuencia}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{maximaFrecuencia}{maximaFrecuencia}}
+{\footnotesize\ttfamily int Graficador\+Histograma\+::maxima\+Frecuencia\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em maxima\+FrecuenciaR} & Atributo que representa cuantas veces aparece el nivel de mas frecuente, sin importar si corresponde a R, G o B. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 86 del archivo graficadorhistograma.\+h.
+
+
+
+Referenciado por Graficador\+Histograma(), graficar\+Histograma() y paint\+GL().
+
+\mbox{\Hypertarget{class_graficador_histograma_a2f0fb1fe6c5afef5f7793aeb6e3455d7}\label{class_graficador_histograma_a2f0fb1fe6c5afef5f7793aeb6e3455d7}} 
+\index{GraficadorHistograma@{GraficadorHistograma}!procesadorEstad@{procesadorEstad}}
+\index{procesadorEstad@{procesadorEstad}!GraficadorHistograma@{GraficadorHistograma}}
+\doxysubsubsection{\texorpdfstring{procesadorEstad}{procesadorEstad}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_procesador_estadistico}{Procesador\+Estadistico}} Graficador\+Histograma\+::procesador\+Estad\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 66 del archivo graficadorhistograma.\+h.
+
+
+
+Referenciado por Graficador\+Histograma().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{graficadorhistograma_8h}{graficadorhistograma.\+h}}\item 
+\mbox{\hyperlink{graficadorhistograma_8cpp}{graficadorhistograma.\+cpp}}\end{DoxyCompactItemize}

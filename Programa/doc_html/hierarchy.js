@@ -25,9 +25,6 @@ var hierarchy =
     [ "Pixel", "class_pixel.html", null ],
     [ "Posicion", "struct_posicion.html", null ],
     [ "ProcesadorEstadistico", "class_procesador_estadistico.html", null ],
-    [ "QObject", "class_q_object.html", [
-      [ "EI_AutoTest", "class_e_i___auto_test.html", null ]
-    ] ],
     [ "QOpenGLFunctions", "class_q_open_g_l_functions.html", [
       [ "GraficadorHistograma", "class_graficador_histograma.html", null ],
       [ "VentanaDeGraficacion", "class_ventana_de_graficacion.html", null ]

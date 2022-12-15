@@ -1,11 +1,23 @@
 var searchData=
 [
-  ['r_621',['r',['../class_pixel.html#a8bdcc8f589c30333ec3f88d2c26d4e3a',1,'Pixel']]],
-  ['raiz_622',['raiz',['../class_espacio_de_trabajo.html#ae5d04a173d44964e2913c32230260767',1,'EspacioDeTrabajo']]],
-  ['rango_623',['rango',['../class_imagen.html#ae5b702987b1960f5a3ab6fc20e25cca0',1,'Imagen']]],
-  ['readme_2emd_624',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['recuperarimagen_625',['recuperarImagen',['../class_ventana_de_graficacion.html#a50a2edf0dd5a4381eb8254153b116a56',1,'VentanaDeGraficacion']]],
-  ['recuperaropciones_626',['recuperarOpciones',['../class_sistema.html#ae421480e9be1cc899b5bece4b57a1940',1,'Sistema']]],
-  ['reducirbrillo_627',['reducirBrillo',['../class_brillo.html#ac12ad6683780291a8b7d0c31a4fd0e9e',1,'Brillo::reducirBrillo()'],['../class_pixel.html#afc9781cd9b7a54b83e77010ccd40acf9',1,'Pixel::reducirBrillo()']]],
-  ['resizegl_628',['resizeGL',['../class_graficador_histograma.html#a3e9f50e51ff5d13c6d8b44ffb09ed787',1,'GraficadorHistograma::resizeGL()'],['../class_ventana_de_graficacion.html#a646acbbf9d0372421c6c87d33ebf3f6e',1,'VentanaDeGraficacion::resizeGL()']]]
+  ['seaumenta_186',['seAumenta',['../class_brillo.html#a04f55effcd4ea3741f237d952efe8ea7',1,'Brillo']]],
+  ['segraficapseudocoloreada_187',['seGraficaPseudocoloreada',['../class_ventana_de_graficacion.html#ac8972961b78010bf28c002c73fe9b7a2',1,'VentanaDeGraficacion']]],
+  ['sepuedebinarizar_188',['sePuedeBinarizar',['../class_binarizado.html#a3313de80b14374324dcbdbdbcde387cc',1,'Binarizado']]],
+  ['sereduce_189',['seReduce',['../class_brillo.html#ace1446060d6299777425fb067e7efebe',1,'Brillo']]],
+  ['setapp_190',['setApp',['../class_ventana_de_graficacion.html#a77ba6bcbbf535eab89fdae40b7a7bd5c',1,'VentanaDeGraficacion']]],
+  ['setcolumnas_191',['setColumnas',['../class_imagen.html#a2f484fcbef63dfa2fe6c2ee418a7d856',1,'Imagen']]],
+  ['setespacio_192',['setEspacio',['../class_ventana_de_graficacion.html#a2a9ae220f714ac79319ee89032156ae3',1,'VentanaDeGraficacion']]],
+  ['setfilas_193',['setFilas',['../class_imagen.html#a745584efb94c3a60c7d77017b2bfb512',1,'Imagen']]],
+  ['setidentificador_194',['setIdentificador',['../class_imagen.html#aae632c4cd001e04228aad5bf06599818',1,'Imagen']]],
+  ['setinformacion_195',['setInformacion',['../class_imagen.html#affda44cc73f0a8bf8cc7dc1021e47f25',1,'Imagen']]],
+  ['setopciones_196',['setOpciones',['../class_ventana_de_graficacion.html#a0d7b3363ca425030ccfc592874462549',1,'VentanaDeGraficacion']]],
+  ['setpixel_197',['setPixel',['../class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b',1,'Imagen']]],
+  ['setpixelescala_198',['setPixelEscala',['../class_pixel.html#affd7e85713e18281b51e0e676485f704',1,'Pixel']]],
+  ['setpixelmonocr_199',['setPixelMonocr',['../class_pixel.html#ab624ff85be3e3d7b6d5f3e139300c1ef',1,'Pixel']]],
+  ['setpixelrgb_200',['setPixelRGB',['../class_pixel.html#a9c4c2037575b8c94c37e6f947fc2749d',1,'Pixel']]],
+  ['setrango_201',['setRango',['../class_imagen.html#ac6be498c1eadda6e7a5bf603c7ababc3',1,'Imagen']]],
+  ['settamanio_202',['setTamanio',['../class_imagen.html#a310a7ee241a8c546a9d5345937a9f01f',1,'Imagen']]],
+  ['sistema_203',['Sistema',['../class_sistema.html',1,'Sistema'],['../class_sistema.html#a815b07845ef6b03247b239333fe75e28',1,'Sistema::Sistema()']]],
+  ['sistema_2ecpp_204',['sistema.cpp',['../sistema_8cpp.html',1,'']]],
+  ['sistema_2eh_205',['sistema.h',['../sistema_8h.html',1,'']]]
 ];

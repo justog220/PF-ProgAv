@@ -1,0 +1,556 @@
+\hypertarget{class_pixel}{}\doxysection{Referencia de la Clase Pixel}
+\label{class_pixel}\index{Pixel@{Pixel}}
+
+
+Clase que modela un pixel de una imagen.  
+
+
+
+
+{\ttfamily \#include $<$pixel.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pixel_a27ad99a2f705e635c42d242d530d4756}{Pixel}} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \mbox{\hyperlink{class_pixel}{Pixel}} sin darle valor a r, g y b. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pixel_a49bf81f6c49e9ac9a963ffcbf4e03576}{Pixel}} (int red, int green, int blue)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_pixel}{Pixel}} Constructor de la clase \mbox{\hyperlink{class_pixel}{Pixel}} dando valor a r, g y b. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}{set\+Pixel\+RGB}} (int valor\+\_\+r, int valor\+\_\+g, int valor\+\_\+b)
+\begin{DoxyCompactList}\small\item\em set\+Pixel\+RGB MÃ©todo que permite cambiar los valores de R, G y B de un tipo de pixel RGB. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pixel_ab624ff85be3e3d7b6d5f3e139300c1ef}{set\+Pixel\+Monocr}} (int valor)
+\begin{DoxyCompactList}\small\item\em set\+Pixel\+Monocr MÃ©todo que permite establecer los valores de R, G y B de un tipo de pixel monocromÃ¡tico \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pixel_affd7e85713e18281b51e0e676485f704}{set\+Pixel\+Escala}} (int valor)
+\begin{DoxyCompactList}\small\item\em set\+Pixel\+Escala Metodo que permite establecer los valores de R, G y B para un pixel que forme parte de una imÃ¡gen en escala de grises. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}} ()
+\begin{DoxyCompactList}\small\item\em getR Devuelve el valor de R. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}} ()
+\begin{DoxyCompactList}\small\item\em getG Devuelve el valor de G. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}} ()
+\begin{DoxyCompactList}\small\item\em getB Devuelve el valor de B. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{get\+Intensidad}} ()
+\begin{DoxyCompactList}\small\item\em get\+Intensidad Devuelve la intensidad del \mbox{\hyperlink{class_pixel}{Pixel}}, si es de intensidades. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pixel_a4ab3587954826d764eb02b98d8e0f20f}{aumentar\+Brillo}} (int aumento)
+\begin{DoxyCompactList}\small\item\em aumentar\+Brillo MÃ©todo que permite aumentar el brillo de un \mbox{\hyperlink{class_pixel}{Pixel}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pixel_afc9781cd9b7a54b83e77010ccd40acf9}{reducir\+Brillo}} ()
+\begin{DoxyCompactList}\small\item\em reducir\+Brillo MÃ©todo que permite reducir el brillo de un \mbox{\hyperlink{class_pixel}{Pixel}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pixel_a9dde3af38cd1ba92d0cf210847f5f00f}{ajuste\+Contraste}} (vector$<$ int $>$ maximo\+\_\+minimo\+\_\+R, vector$<$ int $>$ maximo\+\_\+minimo\+\_\+G, vector$<$ int $>$ maximo\+\_\+minimo\+\_\+B, int rango)
+\begin{DoxyCompactList}\small\item\em ajuste\+Contraste MÃ©todo que ajusta (R, G, B) para ajustar el contraste de una \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}
+\item 
+int \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}
+\item 
+int \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que modela un pixel de una imagen. 
+
+Representa un pixel de los distintos tipos de imagen, indistintamente si es de intensidades, RGB o monocromatico. Tiene valores enteros para rojo, verde y azul. Puede cambiar estos valores y devolverlos en caso de ser necesario. \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 10-\/09-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+Idealmente deben inicializarse solo para formar parte de la representacion de una imagen. 
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000016}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+
+\end{DoxyWarning}
+
+
+Definición en la línea 22 del archivo pixel.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_pixel_a27ad99a2f705e635c42d242d530d4756}\label{class_pixel_a27ad99a2f705e635c42d242d530d4756}} 
+\index{Pixel@{Pixel}!Pixel@{Pixel}}
+\index{Pixel@{Pixel}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{Pixel()}{Pixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Pixel\+::\+Pixel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \mbox{\hyperlink{class_pixel}{Pixel}} sin darle valor a r, g y b. 
+
+
+
+Definición en la línea 3 del archivo pixel.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_pixel_a49bf81f6c49e9ac9a963ffcbf4e03576}\label{class_pixel_a49bf81f6c49e9ac9a963ffcbf4e03576}} 
+\index{Pixel@{Pixel}!Pixel@{Pixel}}
+\index{Pixel@{Pixel}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{Pixel()}{Pixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Pixel\+::\+Pixel (\begin{DoxyParamCaption}\item[{int}]{red,  }\item[{int}]{green,  }\item[{int}]{blue }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_pixel}{Pixel}} Constructor de la clase \mbox{\hyperlink{class_pixel}{Pixel}} dando valor a r, g y b. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em red} & Valor de R. \\
+\hline
+{\em green} & Valor de G. \\
+\hline
+{\em blue} & Valor de B. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 8 del archivo pixel.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}} = red;}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}} = green;}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}} = blue;}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a b, g y r.
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_pixel_a9dde3af38cd1ba92d0cf210847f5f00f}\label{class_pixel_a9dde3af38cd1ba92d0cf210847f5f00f}} 
+\index{Pixel@{Pixel}!ajusteContraste@{ajusteContraste}}
+\index{ajusteContraste@{ajusteContraste}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{ajusteContraste()}{ajusteContraste()}}
+{\footnotesize\ttfamily void Pixel\+::ajuste\+Contraste (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{maximo\+\_\+minimo\+\_\+R,  }\item[{vector$<$ int $>$}]{maximo\+\_\+minimo\+\_\+G,  }\item[{vector$<$ int $>$}]{maximo\+\_\+minimo\+\_\+B,  }\item[{int}]{rango }\end{DoxyParamCaption})}
+
+
+
+ajuste\+Contraste MÃ©todo que ajusta (R, G, B) para ajustar el contraste de una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em maximo\+\_\+minimo\+\_\+R} & Vector con el valor de mÃ¡ximo y mÃ­nimo de R. \\
+\hline
+\mbox{\texttt{ in}}  & {\em maximo\+\_\+minimo\+\_\+G} & Vector con el valor de mÃ¡ximo y mÃ­nimo de G. \\
+\hline
+\mbox{\texttt{ in}}  & {\em maximo\+\_\+minimo\+\_\+B} & Vector con el valor de mÃ¡ximo y mÃ­nimo de B. \\
+\hline
+\mbox{\texttt{ in}}  & {\em rango} & Valor del rango de una \mbox{\hyperlink{class_imagen}{Imagen}}. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 81 del archivo pixel.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{82 \{}
+\DoxyCodeLine{83     \textcolor{keywordtype}{float} R, G, B;}
+\DoxyCodeLine{84     R = ((float(\mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}})-\/float(maximo\_minimo\_R[1]))/(\textcolor{keywordtype}{float}(maximo\_minimo\_R[0])-\/float(maximo\_minimo\_R[1])));}
+\DoxyCodeLine{85     \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}} = int(R*rango);}
+\DoxyCodeLine{86     G = ((float(\mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}})-\/float(maximo\_minimo\_G[1]))/(\textcolor{keywordtype}{float}(maximo\_minimo\_G[0])-\/float(maximo\_minimo\_G[1])));}
+\DoxyCodeLine{87     \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}} = int(G*rango);}
+\DoxyCodeLine{88     B = ((float(\mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}})-\/float(maximo\_minimo\_B[1]))/(\textcolor{keywordtype}{float}(maximo\_minimo\_B[0])-\/float(maximo\_minimo\_B[1])));}
+\DoxyCodeLine{89     \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}} = int(B*rango);}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a b, g y r.
+
+
+
+Referenciado por Contraste\+::aplicar\+Filtro().
+
+\mbox{\Hypertarget{class_pixel_a4ab3587954826d764eb02b98d8e0f20f}\label{class_pixel_a4ab3587954826d764eb02b98d8e0f20f}} 
+\index{Pixel@{Pixel}!aumentarBrillo@{aumentarBrillo}}
+\index{aumentarBrillo@{aumentarBrillo}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{aumentarBrillo()}{aumentarBrillo()}}
+{\footnotesize\ttfamily void Pixel\+::aumentar\+Brillo (\begin{DoxyParamCaption}\item[{int}]{aumento }\end{DoxyParamCaption})}
+
+
+
+aumentar\+Brillo MÃ©todo que permite aumentar el brillo de un \mbox{\hyperlink{class_pixel}{Pixel}}. 
+
+
+
+Definición en la línea 64 del archivo pixel.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65 \{}
+\DoxyCodeLine{66     \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}} += aumento;}
+\DoxyCodeLine{67     \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}} += aumento;}
+\DoxyCodeLine{68     \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}} += aumento;}
+\DoxyCodeLine{69 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a b, g y r.
+
+\mbox{\Hypertarget{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}\label{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}} 
+\index{Pixel@{Pixel}!getB@{getB}}
+\index{getB@{getB}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{getB()}{getB()}}
+{\footnotesize\ttfamily int Pixel\+::getB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getB Devuelve el valor de B. 
+
+\begin{DoxyReturn}{Devuelve}
+El mÃ©todo retorna como salida de un valor flotante de 8 bytes 
+\end{DoxyReturn}
+
+
+Definición en la línea 54 del archivo pixel.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55 \{}
+\DoxyCodeLine{56     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}};}
+\DoxyCodeLine{57 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a b.
+
+
+
+Referenciado por Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::aplicar\+Filtro(), Filtro\+Pasa\+Bajos\+::aplicar\+Filtro(), Negativo\+::aplicar\+Filtro(), Brillo\+::aumentar\+Brillo(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+B(), Archivos\+PNM\+::escribe\+P3(), Archivos\+PNM\+::escribe\+P6(), Algoritmo\+Del\+Pintor\+::es\+Vecino(), get\+Intensidad(), Ventana\+De\+Graficacion\+::graficar\+Imagen(), Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+B() y Brillo\+::reducir\+Brillo().
+
+\mbox{\Hypertarget{class_pixel_a7d11df716ef5c30421210a7b2d61e697}\label{class_pixel_a7d11df716ef5c30421210a7b2d61e697}} 
+\index{Pixel@{Pixel}!getG@{getG}}
+\index{getG@{getG}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{getG()}{getG()}}
+{\footnotesize\ttfamily int Pixel\+::getG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getG Devuelve el valor de G. 
+
+\begin{DoxyReturn}{Devuelve}
+El mÃ©todo retorna como salida de un valor flotante de 8 bytes 
+\end{DoxyReturn}
+
+
+Definición en la línea 49 del archivo pixel.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50 \{}
+\DoxyCodeLine{51     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}};}
+\DoxyCodeLine{52 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a g.
+
+
+
+Referenciado por Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::aplicar\+Filtro(), Filtro\+Pasa\+Bajos\+::aplicar\+Filtro(), Negativo\+::aplicar\+Filtro(), Brillo\+::aumentar\+Brillo(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+G(), Archivos\+PNM\+::escribe\+P3(), Archivos\+PNM\+::escribe\+P6(), Algoritmo\+Del\+Pintor\+::es\+Vecino(), Ventana\+De\+Graficacion\+::graficar\+Imagen(), Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+G() y Brillo\+::reducir\+Brillo().
+
+\mbox{\Hypertarget{class_pixel_ae9494a22629e331242fd1e7508743655}\label{class_pixel_ae9494a22629e331242fd1e7508743655}} 
+\index{Pixel@{Pixel}!getIntensidad@{getIntensidad}}
+\index{getIntensidad@{getIntensidad}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{getIntensidad()}{getIntensidad()}}
+{\footnotesize\ttfamily int Pixel\+::get\+Intensidad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Intensidad Devuelve la intensidad del \mbox{\hyperlink{class_pixel}{Pixel}}, si es de intensidades. 
+
+\begin{DoxyReturn}{Devuelve}
+Entero que representa la intensidad de un \mbox{\hyperlink{class_pixel}{Pixel}}. 
+\end{DoxyReturn}
+
+
+Definición en la línea 59 del archivo pixel.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60 \{}
+\DoxyCodeLine{61     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}();}
+\DoxyCodeLine{62 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a get\+B().
+
+
+
+Referenciado por Binarizado\+::aplicar\+Filtro(), Procesador\+Estadistico\+::devolver\+Intensidad\+Media(), Archivos\+AIC\+::escribir\+Pixeles() y Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada().
+
+\mbox{\Hypertarget{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}\label{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}} 
+\index{Pixel@{Pixel}!getR@{getR}}
+\index{getR@{getR}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{getR()}{getR()}}
+{\footnotesize\ttfamily int Pixel\+::getR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getR Devuelve el valor de R. 
+
+\begin{DoxyReturn}{Devuelve}
+El mÃ©todo retorna como salida de un valor flotante de 8 bytes 
+\end{DoxyReturn}
+
+
+Definición en la línea 44 del archivo pixel.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{}
+\DoxyCodeLine{46     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}};}
+\DoxyCodeLine{47 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a r.
+
+
+
+Referenciado por Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::aplicar\+Filtro(), Filtro\+Pasa\+Bajos\+::aplicar\+Filtro(), Negativo\+::aplicar\+Filtro(), Brillo\+::aumentar\+Brillo(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+R(), Archivos\+PNM\+::escribe\+P1(), Archivos\+PNM\+::escribe\+P2(), Archivos\+PNM\+::escribe\+P3(), Archivos\+PNM\+::escribe\+P4(), Archivos\+PNM\+::escribe\+P5(), Archivos\+PNM\+::escribe\+P6(), Algoritmo\+Del\+Pintor\+::es\+Vecino(), Ventana\+De\+Graficacion\+::graficar\+Imagen(), Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+R() y Brillo\+::reducir\+Brillo().
+
+\mbox{\Hypertarget{class_pixel_afc9781cd9b7a54b83e77010ccd40acf9}\label{class_pixel_afc9781cd9b7a54b83e77010ccd40acf9}} 
+\index{Pixel@{Pixel}!reducirBrillo@{reducirBrillo}}
+\index{reducirBrillo@{reducirBrillo}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{reducirBrillo()}{reducirBrillo()}}
+{\footnotesize\ttfamily void Pixel\+::reducir\+Brillo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reducir\+Brillo MÃ©todo que permite reducir el brillo de un \mbox{\hyperlink{class_pixel}{Pixel}}. 
+
+
+
+Definición en la línea 71 del archivo pixel.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72 \{}
+\DoxyCodeLine{73     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}>0 and \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}>0 and \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}>0)\{}
+\DoxyCodeLine{74         \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}-\/-\/;}
+\DoxyCodeLine{75         \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}-\/-\/;}
+\DoxyCodeLine{76         \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}-\/-\/;}
+\DoxyCodeLine{77     \}}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a b, g y r.
+
+\mbox{\Hypertarget{class_pixel_affd7e85713e18281b51e0e676485f704}\label{class_pixel_affd7e85713e18281b51e0e676485f704}} 
+\index{Pixel@{Pixel}!setPixelEscala@{setPixelEscala}}
+\index{setPixelEscala@{setPixelEscala}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{setPixelEscala()}{setPixelEscala()}}
+{\footnotesize\ttfamily void Pixel\+::set\+Pixel\+Escala (\begin{DoxyParamCaption}\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+set\+Pixel\+Escala Metodo que permite establecer los valores de R, G y B para un pixel que forme parte de una imÃ¡gen en escala de grises. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em valor} & Es el valor que se establecerÃ¡ en los tres parÃ¡metros. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+No devuelve nada, solo modifica los parÃ¡metros. 
+\end{DoxyReturn}
+
+
+Definición en la línea 37 del archivo pixel.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38 \{}
+\DoxyCodeLine{39     \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}=valor;}
+\DoxyCodeLine{40     \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}=valor;}
+\DoxyCodeLine{41     \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}=valor;}
+\DoxyCodeLine{42 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a b, g y r.
+
+
+
+Referenciado por Archivos\+AIC\+::leer() y Archivos\+PNM\+::leer().
+
+\mbox{\Hypertarget{class_pixel_ab624ff85be3e3d7b6d5f3e139300c1ef}\label{class_pixel_ab624ff85be3e3d7b6d5f3e139300c1ef}} 
+\index{Pixel@{Pixel}!setPixelMonocr@{setPixelMonocr}}
+\index{setPixelMonocr@{setPixelMonocr}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{setPixelMonocr()}{setPixelMonocr()}}
+{\footnotesize\ttfamily void Pixel\+::set\+Pixel\+Monocr (\begin{DoxyParamCaption}\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+set\+Pixel\+Monocr MÃ©todo que permite establecer los valores de R, G y B de un tipo de pixel monocromÃ¡tico 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em valor} & Es el valor que se establecerÃ¡ en los tres parÃ¡metros. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+No devuelve nada, solo modifica los parÃ¡metros. 
+\end{DoxyReturn}
+
+
+Definición en la línea 22 del archivo pixel.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24     \textcolor{keywordflow}{if}(valor == 0)}
+\DoxyCodeLine{25     \{}
+\DoxyCodeLine{26         \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}=1;}
+\DoxyCodeLine{27         \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}=1;}
+\DoxyCodeLine{28         \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}=1;}
+\DoxyCodeLine{29     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{30         \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}=0;}
+\DoxyCodeLine{31         \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}=0;}
+\DoxyCodeLine{32         \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}=0;}
+\DoxyCodeLine{33     \}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a b, g y r.
+
+
+
+Referenciado por Archivos\+PNM\+::leer().
+
+\mbox{\Hypertarget{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}\label{class_pixel_a9c4c2037575b8c94c37e6f947fc2749d}} 
+\index{Pixel@{Pixel}!setPixelRGB@{setPixelRGB}}
+\index{setPixelRGB@{setPixelRGB}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{setPixelRGB()}{setPixelRGB()}}
+{\footnotesize\ttfamily void Pixel\+::set\+Pixel\+RGB (\begin{DoxyParamCaption}\item[{int}]{valor\+\_\+r,  }\item[{int}]{valor\+\_\+g,  }\item[{int}]{valor\+\_\+b }\end{DoxyParamCaption})}
+
+
+
+set\+Pixel\+RGB MÃ©todo que permite cambiar los valores de R, G y B de un tipo de pixel RGB. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em valor\+\_\+r} & Es el valor de R que se quiere establecer. valor\+\_\+g Es el valor de G que se quiere establecer. valor\+\_\+b Es el valor de B que se quiere establecer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+No devuelve nada, solo modifica los parÃ¡metros. 
+\end{DoxyReturn}
+
+
+Definición en la línea 15 del archivo pixel.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}=valor\_r;}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}=valor\_g;}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}=valor\_b;}
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a b, g y r.
+
+
+
+Referenciado por Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::aplicar\+Filtro(), Filtro\+Pasa\+Bajos\+::aplicar\+Filtro(), Negativo\+::aplicar\+Filtro(), Brillo\+::aumentar\+Brillo(), Archivos\+PNM\+::leer() y Brillo\+::reducir\+Brillo().
+
+
+
+\doxysubsection{Documentación de los campos}
+\mbox{\Hypertarget{class_pixel_a94b067f3c79425c953631f7bf1c7536c}\label{class_pixel_a94b067f3c79425c953631f7bf1c7536c}} 
+\index{Pixel@{Pixel}!b@{b}}
+\index{b@{b}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily int Pixel\+::b\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em b} & ParÃ¡metro que almacena el valor de azul. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 119 del archivo pixel.\+h.
+
+
+
+Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+B(), Pixel(), reducir\+Brillo(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
+
+\mbox{\Hypertarget{class_pixel_a73515f179e3c1bd28156e434da111d05}\label{class_pixel_a73515f179e3c1bd28156e434da111d05}} 
+\index{Pixel@{Pixel}!g@{g}}
+\index{g@{g}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily int Pixel\+::g\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em g} & ParÃ¡metro que almacena el valor de verde. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 115 del archivo pixel.\+h.
+
+
+
+Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+G(), Pixel(), reducir\+Brillo(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
+
+\mbox{\Hypertarget{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}\label{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}} 
+\index{Pixel@{Pixel}!r@{r}}
+\index{r@{r}!Pixel@{Pixel}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily int Pixel\+::r\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em r} & ParÃ¡metro que almacena el valor de rojo. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 111 del archivo pixel.\+h.
+
+
+
+Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+R(), Pixel(), reducir\+Brillo(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{pixel_8h}{pixel.\+h}}\item 
+\mbox{\hyperlink{pixel_8cpp}{pixel.\+cpp}}\end{DoxyCompactItemize}

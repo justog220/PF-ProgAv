@@ -1,0 +1,695 @@
+\hypertarget{class_espacio_de_trabajo}{}\doxysection{Referencia de la Clase Espacio\+De\+Trabajo}
+\label{class_espacio_de_trabajo}\index{EspacioDeTrabajo@{EspacioDeTrabajo}}
+
+
+Clase capaz de gestionar donde se encuentran guardados los archivos.  
+
+
+
+
+{\ttfamily \#include $<$espaciodetrabajo.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_espacio_de_trabajo_aabf8692d51b116190f1b0a2292359b46}{Espacio\+De\+Trabajo}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_espacio_de_trabajo}{Espacio\+De\+Trabajo}} Constructor del objeto \mbox{\hyperlink{class_espacio_de_trabajo}{Espacio\+De\+Trabajo}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_espacio_de_trabajo_abc26ff85c54257a6073ee312fc0442e5}{cargar\+Carpetas}} ()
+\begin{DoxyCompactList}\small\item\em cargar\+Carpetas Permite cargar las carpetas conocidas por el espacio de trabajo. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_espacio_de_trabajo_a656de37ac8cad97cd647fdebd779b0ed}{get\+Carpetas}} ()
+\begin{DoxyCompactList}\small\item\em get\+Carpetas Permite obtener la lista de las carpetas conocidas por el espacio de trabajo. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_espacio_de_trabajo_a19bc26e7349a719fb19e4495d2beed6e}{get\+Lista\+De\+Archivos}} (string ruta)
+\begin{DoxyCompactList}\small\item\em get\+Lista\+De\+Archivos Permite obtener la lista de los archivos presentes en cierta ruta. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_espacio_de_trabajo_a8ba67fb3805b2e366a8d80bee8f2b54e}{get\+Ruta}} (int opc\+Dir, int opc\+Arch=-\/8)
+\begin{DoxyCompactList}\small\item\em get\+Ruta Permite devolver la ruta a partir de una ocpion de directorio y una de archivo. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_espacio_de_trabajo_a86a46ccd8e919fff8a4758ac37da5730}{get\+PNMo\+AIC}} (string ruta)
+\begin{DoxyCompactList}\small\item\em get\+PNMo\+AIC Devuelve si un archivo es PNM o AIC. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_espacio_de_trabajo_aa5c2e8e4f36e454e6868a8edc8c9c6b5}{es\+PNM}} (string archivo)
+\begin{DoxyCompactList}\small\item\em es\+PNM Devuelve si un archivo es PNM o no. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_espacio_de_trabajo_af1da4da58b0755973eedc8f67b4c566c}{es\+AIC}} (string archivo)
+\begin{DoxyCompactList}\small\item\em es\+AIC Devuelve si un archivo es AIC o no. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_espacio_de_trabajo_a45307e1544c7fd91e19274b9d9e983c2}{get\+Nro\+Archivos}} ()
+\begin{DoxyCompactList}\small\item\em get\+Nro\+Archivos Devuelve el numero de archivo en el directorio seleccionados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_espacio_de_trabajo_ae0634d1dfd3edea5a29ec14a7ef56649}{llevar\+Registro}} (int opc\+Dir, int opc\+Arch)
+\begin{DoxyCompactList}\small\item\em llevar\+Registro Permite llevar un registro de las imÃ¡genes graficadas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_espacio_de_trabajo_a7cfdd9079dd7c92c2c66c7eb4c47225f}{guardar\+Imagen}} (\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em guardar\+Imagen MÃ©todo auxiliar en el guardado de una imagen. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_espacio_de_trabajo_af6120913aa6cffbcf27be3e54fd66a9c}{get\+Nombre\+Archivo}} (string ruta)
+\begin{DoxyCompactList}\small\item\em get\+Nombre\+Archivo Devuelve el nombre de un archivo a partir de su ruta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_espacio_de_trabajo_ae5d04a173d44964e2913c32230260767}{raiz}} =\char`\"{}./Imagenes/\char`\"{}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_espacio_de_trabajo_abeb782ad9ad7c8ffe0213df5055047cd}{carpetas}}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}{lista\+De\+Archivos}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase capaz de gestionar donde se encuentran guardados los archivos. 
+
+Conoce la raiz de la ruta, las carpetas y es capaz de leer los archivos de una carpeta y almacenar el nombre de ellos en memoria. Es capaz de concatenar cadenas para devolver la ruta de un archivo en especÃ­fico y de devolver el nÃºmero de archivos. \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 10-\/09-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000007}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+
+\end{DoxyWarning}
+
+
+Definición en la línea 26 del archivo espaciodetrabajo.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_espacio_de_trabajo_aabf8692d51b116190f1b0a2292359b46}\label{class_espacio_de_trabajo_aabf8692d51b116190f1b0a2292359b46}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{EspacioDeTrabajo()}{EspacioDeTrabajo()}}
+{\footnotesize\ttfamily Espacio\+De\+Trabajo\+::\+Espacio\+De\+Trabajo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_espacio_de_trabajo}{Espacio\+De\+Trabajo}} Constructor del objeto \mbox{\hyperlink{class_espacio_de_trabajo}{Espacio\+De\+Trabajo}}. 
+
+
+
+Definición en la línea 5 del archivo espaciodetrabajo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7   \mbox{\hyperlink{class_espacio_de_trabajo_abc26ff85c54257a6073ee312fc0442e5}{cargarCarpetas}}();}
+\DoxyCodeLine{8 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a cargar\+Carpetas().
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_espacio_de_trabajo_abc26ff85c54257a6073ee312fc0442e5}\label{class_espacio_de_trabajo_abc26ff85c54257a6073ee312fc0442e5}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!cargarCarpetas@{cargarCarpetas}}
+\index{cargarCarpetas@{cargarCarpetas}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{cargarCarpetas()}{cargarCarpetas()}}
+{\footnotesize\ttfamily void Espacio\+De\+Trabajo\+::cargar\+Carpetas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+cargar\+Carpetas Permite cargar las carpetas conocidas por el espacio de trabajo. 
+
+
+
+Definición en la línea 11 del archivo espaciodetrabajo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_espacio_de_trabajo_abeb782ad9ad7c8ffe0213df5055047cd}{carpetas}}.size()==0)}
+\DoxyCodeLine{14     \{}
+\DoxyCodeLine{15         \mbox{\hyperlink{class_espacio_de_trabajo_abeb782ad9ad7c8ffe0213df5055047cd}{carpetas}}.push\_back(\textcolor{stringliteral}{"{}grupo\_imagenes\_1/"{}});}
+\DoxyCodeLine{16         \mbox{\hyperlink{class_espacio_de_trabajo_abeb782ad9ad7c8ffe0213df5055047cd}{carpetas}}.push\_back(\textcolor{stringliteral}{"{}grupo\_imagenes\_2/"{}});}
+\DoxyCodeLine{17         \mbox{\hyperlink{class_espacio_de_trabajo_abeb782ad9ad7c8ffe0213df5055047cd}{carpetas}}.push\_back(\textcolor{stringliteral}{"{}grupo\_imagenes\_3\_corruptas/"{}});}
+\DoxyCodeLine{18         \mbox{\hyperlink{class_espacio_de_trabajo_abeb782ad9ad7c8ffe0213df5055047cd}{carpetas}}.push\_back(\textcolor{stringliteral}{"{}Imagenes\_guardadas/"{}});}
+\DoxyCodeLine{19     \}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a carpetas.
+
+
+
+Referenciado por Espacio\+De\+Trabajo() y get\+Ruta().
+
+\mbox{\Hypertarget{class_espacio_de_trabajo_af1da4da58b0755973eedc8f67b4c566c}\label{class_espacio_de_trabajo_af1da4da58b0755973eedc8f67b4c566c}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!esAIC@{esAIC}}
+\index{esAIC@{esAIC}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{esAIC()}{esAIC()}}
+{\footnotesize\ttfamily bool Espacio\+De\+Trabajo\+::es\+AIC (\begin{DoxyParamCaption}\item[{string}]{archivo }\end{DoxyParamCaption})}
+
+
+
+es\+AIC Devuelve si un archivo es AIC o no. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em archivo} & Ruta a un archivo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Booleano que indica si es AIC o no. 
+\end{DoxyReturn}
+
+
+Definición en la línea 120 del archivo espaciodetrabajo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{121 \{}
+\DoxyCodeLine{122     \textcolor{keywordtype}{string} extension = archivo.substr(archivo.length()-\/3);}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124     \textcolor{keywordflow}{if}(extension == \textcolor{stringliteral}{"{}aic"{}})}
+\DoxyCodeLine{125         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{126     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{127         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{128 \}}
+
+\end{DoxyCode}
+
+
+Referenciado por get\+PNMo\+AIC().
+
+\mbox{\Hypertarget{class_espacio_de_trabajo_aa5c2e8e4f36e454e6868a8edc8c9c6b5}\label{class_espacio_de_trabajo_aa5c2e8e4f36e454e6868a8edc8c9c6b5}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!esPNM@{esPNM}}
+\index{esPNM@{esPNM}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{esPNM()}{esPNM()}}
+{\footnotesize\ttfamily bool Espacio\+De\+Trabajo\+::es\+PNM (\begin{DoxyParamCaption}\item[{string}]{archivo }\end{DoxyParamCaption})}
+
+
+
+es\+PNM Devuelve si un archivo es PNM o no. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em archivo} & Ruta a un archivo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Booleano que indica si es PNM o no. 
+\end{DoxyReturn}
+
+
+Definición en la línea 110 del archivo espaciodetrabajo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111 \{}
+\DoxyCodeLine{112     \textcolor{keywordtype}{string} extension = archivo.substr(archivo.length()-\/3);}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114     \textcolor{keywordflow}{if}(extension == \textcolor{stringliteral}{"{}pnm"{}} or extension == \textcolor{stringliteral}{"{}pgm"{}} or extension == \textcolor{stringliteral}{"{}ppm"{}} or extension == \textcolor{stringliteral}{"{}pbm"{}})}
+\DoxyCodeLine{115         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{116     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{117         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{118 \}}
+
+\end{DoxyCode}
+
+
+Referenciado por get\+PNMo\+AIC().
+
+\mbox{\Hypertarget{class_espacio_de_trabajo_a656de37ac8cad97cd647fdebd779b0ed}\label{class_espacio_de_trabajo_a656de37ac8cad97cd647fdebd779b0ed}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!getCarpetas@{getCarpetas}}
+\index{getCarpetas@{getCarpetas}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{getCarpetas()}{getCarpetas()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Espacio\+De\+Trabajo\+::get\+Carpetas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Carpetas Permite obtener la lista de las carpetas conocidas por el espacio de trabajo. 
+
+\begin{DoxyReturn}{Devuelve}
+Lista con las carpetas conocidas por el espacio de trabajo. 
+\end{DoxyReturn}
+
+
+Definición en la línea 25 del archivo espaciodetrabajo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_espacio_de_trabajo_abeb782ad9ad7c8ffe0213df5055047cd}{carpetas}};}
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a carpetas.
+
+
+
+Referenciado por Sistema\+::ejecutar() y Sistema\+::obtener\+Opc\+Dir().
+
+\mbox{\Hypertarget{class_espacio_de_trabajo_a19bc26e7349a719fb19e4495d2beed6e}\label{class_espacio_de_trabajo_a19bc26e7349a719fb19e4495d2beed6e}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!getListaDeArchivos@{getListaDeArchivos}}
+\index{getListaDeArchivos@{getListaDeArchivos}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{getListaDeArchivos()}{getListaDeArchivos()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Espacio\+De\+Trabajo\+::get\+Lista\+De\+Archivos (\begin{DoxyParamCaption}\item[{string}]{ruta }\end{DoxyParamCaption})}
+
+
+
+get\+Lista\+De\+Archivos Permite obtener la lista de los archivos presentes en cierta ruta. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta} & Ruta de la cual se desean conocer los archivos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Lista de los archivos presentes en una ruta. 
+\end{DoxyReturn}
+
+
+Definición en la línea 30 del archivo espaciodetrabajo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32     \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}{listaDeArchivos}}.empty())}
+\DoxyCodeLine{33         \mbox{\hyperlink{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}{listaDeArchivos}}.clear();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_espacio_de_trabajo_a45307e1544c7fd91e19274b9d9e983c2}{getNroArchivos}}() == 0)}
+\DoxyCodeLine{36     \{}
+\DoxyCodeLine{37         DIR *dir = opendir(ruta.c\_str());}
+\DoxyCodeLine{38         \textcolor{keywordflow}{if} (dir != NULL)}
+\DoxyCodeLine{39         \{}
+\DoxyCodeLine{40             \textcolor{keywordtype}{string} pto(\textcolor{stringliteral}{"{}."{}}), ptopto(\textcolor{stringliteral}{"{}.."{}});}
+\DoxyCodeLine{41             \textcolor{keyword}{struct }dirent *entry;}
+\DoxyCodeLine{42             \textcolor{keywordflow}{while} ((entry = readdir(dir)) != NULL)}
+\DoxyCodeLine{43             \{}
+\DoxyCodeLine{44                 \textcolor{keywordflow}{if}( entry-\/>d\_name != pto and entry-\/>d\_name != ptopto )}
+\DoxyCodeLine{45                 \{}
+\DoxyCodeLine{46                     \mbox{\hyperlink{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}{listaDeArchivos}}.push\_back(entry-\/>d\_name);}
+\DoxyCodeLine{47                 \}}
+\DoxyCodeLine{48             \}}
+\DoxyCodeLine{49             closedir(dir);}
+\DoxyCodeLine{50         \}}
+\DoxyCodeLine{51     \}}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     sort(\mbox{\hyperlink{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}{listaDeArchivos}}.begin(), \mbox{\hyperlink{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}{listaDeArchivos}}.end());}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}{listaDeArchivos}};}
+\DoxyCodeLine{56 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a get\+Nro\+Archivos() y lista\+De\+Archivos.
+
+
+
+Referenciado por get\+Ruta() y Sistema\+::obtener\+Opc\+Arch().
+
+\mbox{\Hypertarget{class_espacio_de_trabajo_af6120913aa6cffbcf27be3e54fd66a9c}\label{class_espacio_de_trabajo_af6120913aa6cffbcf27be3e54fd66a9c}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!getNombreArchivo@{getNombreArchivo}}
+\index{getNombreArchivo@{getNombreArchivo}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{getNombreArchivo()}{getNombreArchivo()}}
+{\footnotesize\ttfamily string Espacio\+De\+Trabajo\+::get\+Nombre\+Archivo (\begin{DoxyParamCaption}\item[{string}]{ruta }\end{DoxyParamCaption})}
+
+
+
+get\+Nombre\+Archivo Devuelve el nombre de un archivo a partir de su ruta. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta} & Ruta correspondiente al archivo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Nombre del archivo. 
+\end{DoxyReturn}
+
+
+Definición en la línea 217 del archivo espaciodetrabajo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{218 \{}
+\DoxyCodeLine{219     \textcolor{keywordflow}{return} ruta.substr(ruta.rfind(\textcolor{charliteral}{'/'})+1);}
+\DoxyCodeLine{220 }
+\DoxyCodeLine{221 \}}
+
+\end{DoxyCode}
+
+
+Referenciado por get\+PNMo\+AIC().
+
+\mbox{\Hypertarget{class_espacio_de_trabajo_a45307e1544c7fd91e19274b9d9e983c2}\label{class_espacio_de_trabajo_a45307e1544c7fd91e19274b9d9e983c2}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!getNroArchivos@{getNroArchivos}}
+\index{getNroArchivos@{getNroArchivos}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{getNroArchivos()}{getNroArchivos()}}
+{\footnotesize\ttfamily int Espacio\+De\+Trabajo\+::get\+Nro\+Archivos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Nro\+Archivos Devuelve el numero de archivo en el directorio seleccionados. 
+
+\begin{DoxyReturn}{Devuelve}
+int que representa el nÃºmero de archivos en el directorio que selecciono el usuario. 
+\end{DoxyReturn}
+
+
+Definición en la línea 130 del archivo espaciodetrabajo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{131 \{}
+\DoxyCodeLine{132     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}{listaDeArchivos}}.size();}
+\DoxyCodeLine{133 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a lista\+De\+Archivos.
+
+
+
+Referenciado por get\+Lista\+De\+Archivos() y Ventana\+De\+Graficacion\+::key\+Press\+Event().
+
+\mbox{\Hypertarget{class_espacio_de_trabajo_a86a46ccd8e919fff8a4758ac37da5730}\label{class_espacio_de_trabajo_a86a46ccd8e919fff8a4758ac37da5730}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!getPNMoAIC@{getPNMoAIC}}
+\index{getPNMoAIC@{getPNMoAIC}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{getPNMoAIC()}{getPNMoAIC()}}
+{\footnotesize\ttfamily string Espacio\+De\+Trabajo\+::get\+PNMo\+AIC (\begin{DoxyParamCaption}\item[{string}]{ruta }\end{DoxyParamCaption})}
+
+
+
+get\+PNMo\+AIC Devuelve si un archivo es PNM o AIC. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em ruta} & Ruta correspondiente al archivo cuya extension se desea verificar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\char`\"{}pnm\char`\"{} si es pnm o \char`\"{}aic\char`\"{} si es aic. 
+\end{DoxyReturn}
+
+
+Definición en la línea 96 del archivo espaciodetrabajo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{97 \{}
+\DoxyCodeLine{98     \textcolor{keywordtype}{string} nom\_archivo = \mbox{\hyperlink{class_espacio_de_trabajo_af6120913aa6cffbcf27be3e54fd66a9c}{getNombreArchivo}}(ruta);}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_espacio_de_trabajo_aa5c2e8e4f36e454e6868a8edc8c9c6b5}{esPNM}}(nom\_archivo))}
+\DoxyCodeLine{101         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}pnm"{}};}
+\DoxyCodeLine{102     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_espacio_de_trabajo_af1da4da58b0755973eedc8f67b4c566c}{esAIC}}(nom\_archivo))}
+\DoxyCodeLine{103         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}aic"{}};}
+\DoxyCodeLine{104     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{105         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_no_soportado}{ExcepcionArchivoNoSoportado}}();}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a es\+AIC(), es\+PNM() y get\+Nombre\+Archivo().
+
+
+
+Referenciado por Ventana\+De\+Graficacion\+::cargar\+Imagen() y Ventana\+De\+Graficacion\+::recuperar\+Imagen().
+
+\mbox{\Hypertarget{class_espacio_de_trabajo_a8ba67fb3805b2e366a8d80bee8f2b54e}\label{class_espacio_de_trabajo_a8ba67fb3805b2e366a8d80bee8f2b54e}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!getRuta@{getRuta}}
+\index{getRuta@{getRuta}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{getRuta()}{getRuta()}}
+{\footnotesize\ttfamily string Espacio\+De\+Trabajo\+::get\+Ruta (\begin{DoxyParamCaption}\item[{int}]{opc\+Dir,  }\item[{int}]{opc\+Arch = {\ttfamily -\/8} }\end{DoxyParamCaption})}
+
+
+
+get\+Ruta Permite devolver la ruta a partir de una ocpion de directorio y una de archivo. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em opc\+Dir} & Directorio seleccionado. \\
+\hline
+\mbox{\texttt{ in}}  & {\em opc\+Arch} & Archivo seleccionado. Por defecto es -\/8 y si no se especifica se devuelve la ruta hasta un directorio \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Ruta correspondiente a un archivo o directorio. 
+\end{DoxyReturn}
+
+
+Definición en la línea 58 del archivo espaciodetrabajo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59 \{}
+\DoxyCodeLine{60     \mbox{\hyperlink{class_espacio_de_trabajo_abc26ff85c54257a6073ee312fc0442e5}{cargarCarpetas}}();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{string} ruta;}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     ruta = \mbox{\hyperlink{class_espacio_de_trabajo_ae5d04a173d44964e2913c32230260767}{raiz}};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66     \textcolor{keywordflow}{switch}(opcDir)}
+\DoxyCodeLine{67     \{}
+\DoxyCodeLine{68     \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{69         ruta = ruta.append(\mbox{\hyperlink{class_espacio_de_trabajo_abeb782ad9ad7c8ffe0213df5055047cd}{carpetas}}[opcDir-\/1]);}
+\DoxyCodeLine{70         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{71     \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{72         ruta = ruta.append(\mbox{\hyperlink{class_espacio_de_trabajo_abeb782ad9ad7c8ffe0213df5055047cd}{carpetas}}[opcDir-\/1]);}
+\DoxyCodeLine{73         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{74     \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{75         ruta = ruta.append(\mbox{\hyperlink{class_espacio_de_trabajo_abeb782ad9ad7c8ffe0213df5055047cd}{carpetas}}[opcDir-\/1]);}
+\DoxyCodeLine{76         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{77     \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{78         ruta = ruta.append(\mbox{\hyperlink{class_espacio_de_trabajo_abeb782ad9ad7c8ffe0213df5055047cd}{carpetas}}[opcDir-\/1]);}
+\DoxyCodeLine{79         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     \}}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83     \textcolor{keywordflow}{if}(opcArch == -\/8)}
+\DoxyCodeLine{84     \{}
+\DoxyCodeLine{85         \textcolor{keywordflow}{return} ruta;}
+\DoxyCodeLine{86     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{87         \mbox{\hyperlink{class_espacio_de_trabajo_a19bc26e7349a719fb19e4495d2beed6e}{getListaDeArchivos}}(ruta);}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89         ruta.append(\mbox{\hyperlink{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}{listaDeArchivos}}[opcArch-\/1]);}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91         \textcolor{keywordflow}{return} ruta;}
+\DoxyCodeLine{92     \}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a cargar\+Carpetas(), carpetas, get\+Lista\+De\+Archivos(), lista\+De\+Archivos y raiz.
+
+
+
+Referenciado por Ventana\+De\+Graficacion\+::cargar\+Imagen(), Sistema\+::ejecutar() y Ventana\+De\+Graficacion\+::key\+Press\+Event().
+
+\mbox{\Hypertarget{class_espacio_de_trabajo_a7cfdd9079dd7c92c2c66c7eb4c47225f}\label{class_espacio_de_trabajo_a7cfdd9079dd7c92c2c66c7eb4c47225f}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!guardarImagen@{guardarImagen}}
+\index{guardarImagen@{guardarImagen}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{guardarImagen()}{guardarImagen()}}
+{\footnotesize\ttfamily void Espacio\+De\+Trabajo\+::guardar\+Imagen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+
+
+guardar\+Imagen MÃ©todo auxiliar en el guardado de una imagen. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em img} & \mbox{\hyperlink{class_imagen}{Imagen}} guardada. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 143 del archivo espaciodetrabajo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{144 \{}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146     \textcolor{keywordtype}{char} opcFormato;}
+\DoxyCodeLine{147     cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|>[P]NM\(\backslash\)n\(\backslash\)t|>[A]IC\(\backslash\)n\(\backslash\)t  Seleccione el formato de guardado:"{}};}
+\DoxyCodeLine{148     cin>>opcFormato;}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150     opcFormato= toupper(opcFormato);}
+\DoxyCodeLine{151 }
+\DoxyCodeLine{152     \textcolor{keywordflow}{while} (opcFormato != \textcolor{charliteral}{'P'} and opcFormato != \textcolor{charliteral}{'A'}) \{}
+\DoxyCodeLine{153         cout<<\textcolor{stringliteral}{"{}\(\backslash\)t\(\backslash\)t|\_\_Inserte una opcion valida: "{}};}
+\DoxyCodeLine{154         cin>>opcFormato;}
+\DoxyCodeLine{155         opcFormato = toupper(opcFormato);}
+\DoxyCodeLine{156     \}}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158     \textcolor{keywordtype}{bool} estaDeAcuerdo;}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160     \textcolor{keywordflow}{if}(opcFormato == \textcolor{charliteral}{'A'} and img-\/>\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() != \textcolor{stringliteral}{"{}P2"{}} and img-\/>\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() != \textcolor{stringliteral}{"{}P2C"{}} and img-\/>\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() != \textcolor{stringliteral}{"{}P5"{}})}
+\DoxyCodeLine{161     \{}
+\DoxyCodeLine{162         \textcolor{keywordtype}{char} acuerdo;}
+\DoxyCodeLine{163         cout<<\textcolor{stringliteral}{"{}\(\backslash\)nSolo pueden ser almacenadas con formato AIC imÃ¡genes en escala de grises. Se procederÃ¡ a guardar en formato PNM.\(\backslash\)nPresione cualquier tecla para continuar."{}};}
+\DoxyCodeLine{164         cout<<\textcolor{stringliteral}{"{}\(\backslash\)nÂ¿EstÃ¡ de acuerdo?\(\backslash\)n[S]i | [N]o: "{}};}
+\DoxyCodeLine{165         cin>>acuerdo;}
+\DoxyCodeLine{166 }
+\DoxyCodeLine{167         acuerdo = toupper(acuerdo);}
+\DoxyCodeLine{168 }
+\DoxyCodeLine{169         \textcolor{keywordflow}{while} (acuerdo != \textcolor{charliteral}{'S'} and acuerdo != \textcolor{charliteral}{'N'}) \{}
+\DoxyCodeLine{170             cout<<\textcolor{stringliteral}{"{}\(\backslash\)nInserte una opcion valida: "{}};}
+\DoxyCodeLine{171             cin>>acuerdo;}
+\DoxyCodeLine{172             acuerdo = toupper(acuerdo);}
+\DoxyCodeLine{173         \}}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176         \textcolor{keywordflow}{if}(acuerdo == \textcolor{charliteral}{'S'})}
+\DoxyCodeLine{177         \{}
+\DoxyCodeLine{178             estaDeAcuerdo = \textcolor{keyword}{true};}
+\DoxyCodeLine{179             opcFormato = \textcolor{charliteral}{'P'};}
+\DoxyCodeLine{180         \}}
+\DoxyCodeLine{181         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{182             estaDeAcuerdo = \textcolor{keyword}{false};}
+\DoxyCodeLine{183 }
+\DoxyCodeLine{184         \textcolor{keywordflow}{if}(estaDeAcuerdo)}
+\DoxyCodeLine{185         \{}
+\DoxyCodeLine{186             \mbox{\hyperlink{class_gestor_de_archivos}{GestorDeArchivos}}* archi;}
+\DoxyCodeLine{187 }
+\DoxyCodeLine{188             archi = \textcolor{keyword}{new} \mbox{\hyperlink{class_archivos_p_n_m}{ArchivosPNM}};}
+\DoxyCodeLine{189 }
+\DoxyCodeLine{190 }
+\DoxyCodeLine{191             archi-\/>\mbox{\hyperlink{class_gestor_de_archivos_ad2f950c7c54f9883b7863b9afe076cda}{guardar}}(img);}
+\DoxyCodeLine{192         \}\textcolor{keywordflow}{else}}
+\DoxyCodeLine{193         \{}
+\DoxyCodeLine{194             cout<<\textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t|\_\_No se pudo guardar la Imagen."{}};}
+\DoxyCodeLine{195             cout.flush();}
+\DoxyCodeLine{196         \}}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198     \}}
+\DoxyCodeLine{199 }
+\DoxyCodeLine{200     \mbox{\hyperlink{class_gestor_de_archivos}{GestorDeArchivos}} *archi;}
+\DoxyCodeLine{201 }
+\DoxyCodeLine{202     \textcolor{keywordflow}{if}(opcFormato == \textcolor{charliteral}{'A'})}
+\DoxyCodeLine{203     \{}
+\DoxyCodeLine{204         archi = \textcolor{keyword}{new} \mbox{\hyperlink{class_archivos_a_i_c}{ArchivosAIC}};}
+\DoxyCodeLine{205 }
+\DoxyCodeLine{206         archi-\/>\mbox{\hyperlink{class_gestor_de_archivos_ad2f950c7c54f9883b7863b9afe076cda}{guardar}}(img);}
+\DoxyCodeLine{207     \}\textcolor{keywordflow}{else}}
+\DoxyCodeLine{208     \{}
+\DoxyCodeLine{209         archi = \textcolor{keyword}{new} \mbox{\hyperlink{class_archivos_p_n_m}{ArchivosPNM}};}
+\DoxyCodeLine{210 }
+\DoxyCodeLine{211         archi-\/>\mbox{\hyperlink{class_gestor_de_archivos_ad2f950c7c54f9883b7863b9afe076cda}{guardar}}(img);}
+\DoxyCodeLine{212     \}}
+\DoxyCodeLine{213 }
+\DoxyCodeLine{214 }
+\DoxyCodeLine{215 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Imagen\+::get\+Identificador() y Gestor\+De\+Archivos\+::guardar().
+
+
+
+Referenciado por Ventana\+De\+Graficacion\+::key\+Press\+Event().
+
+\mbox{\Hypertarget{class_espacio_de_trabajo_ae0634d1dfd3edea5a29ec14a7ef56649}\label{class_espacio_de_trabajo_ae0634d1dfd3edea5a29ec14a7ef56649}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!llevarRegistro@{llevarRegistro}}
+\index{llevarRegistro@{llevarRegistro}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{llevarRegistro()}{llevarRegistro()}}
+{\footnotesize\ttfamily void Espacio\+De\+Trabajo\+::llevar\+Registro (\begin{DoxyParamCaption}\item[{int}]{opc\+Dir,  }\item[{int}]{opc\+Arch }\end{DoxyParamCaption})}
+
+
+
+llevar\+Registro Permite llevar un registro de las imÃ¡genes graficadas. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em opc\+Dir} & Directorio en el que se encuentra la imagen graficada. \\
+\hline
+\mbox{\texttt{ in}}  & {\em opc\+Arch} & Archvo del directorio que es la imagen graficada. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 135 del archivo espaciodetrabajo.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{136 \{}
+\DoxyCodeLine{137     ofstream registro;}
+\DoxyCodeLine{138     registro.open(\textcolor{stringliteral}{"{}registro.txt"{}});}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{140     registro << opcDir << \textcolor{stringliteral}{"{} "{}} << opcArch;}
+\DoxyCodeLine{141 \}}
+
+\end{DoxyCode}
+
+
+Referenciado por Ventana\+De\+Graficacion\+::cargar\+Imagen() y Sistema\+::ejecutar().
+
+
+
+\doxysubsection{Documentación de los campos}
+\mbox{\Hypertarget{class_espacio_de_trabajo_abeb782ad9ad7c8ffe0213df5055047cd}\label{class_espacio_de_trabajo_abeb782ad9ad7c8ffe0213df5055047cd}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!carpetas@{carpetas}}
+\index{carpetas@{carpetas}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{carpetas}{carpetas}}
+{\footnotesize\ttfamily vector$<$string$>$ Espacio\+De\+Trabajo\+::carpetas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em carpetas} & Lista de carpetas conocidas por el espacio de trabajo. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 117 del archivo espaciodetrabajo.\+h.
+
+
+
+Referenciado por cargar\+Carpetas(), get\+Carpetas() y get\+Ruta().
+
+\mbox{\Hypertarget{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}\label{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!listaDeArchivos@{listaDeArchivos}}
+\index{listaDeArchivos@{listaDeArchivos}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{listaDeArchivos}{listaDeArchivos}}
+{\footnotesize\ttfamily vector$<$string$>$ Espacio\+De\+Trabajo\+::lista\+De\+Archivos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em lista\+De\+Archivos} & Lista de archivos presentes en un directorio. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 122 del archivo espaciodetrabajo.\+h.
+
+
+
+Referenciado por get\+Lista\+De\+Archivos(), get\+Nro\+Archivos() y get\+Ruta().
+
+\mbox{\Hypertarget{class_espacio_de_trabajo_ae5d04a173d44964e2913c32230260767}\label{class_espacio_de_trabajo_ae5d04a173d44964e2913c32230260767}} 
+\index{EspacioDeTrabajo@{EspacioDeTrabajo}!raiz@{raiz}}
+\index{raiz@{raiz}!EspacioDeTrabajo@{EspacioDeTrabajo}}
+\doxysubsubsection{\texorpdfstring{raiz}{raiz}}
+{\footnotesize\ttfamily string Espacio\+De\+Trabajo\+::raiz =\char`\"{}./Imagenes/\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em raiz} & Raiz del espacio de trabajo. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 112 del archivo espaciodetrabajo.\+h.
+
+
+
+Referenciado por get\+Ruta().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{espaciodetrabajo_8h}{espaciodetrabajo.\+h}}\item 
+\mbox{\hyperlink{espaciodetrabajo_8cpp}{espaciodetrabajo.\+cpp}}\end{DoxyCompactItemize}

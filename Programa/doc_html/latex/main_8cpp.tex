@@ -1,0 +1,43 @@
+\hypertarget{main_8cpp}{}\doxysection{Referencia del Archivo main.\+cpp}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$QApplication$>$}\newline
+{\ttfamily \#include \char`\"{}sistema.\+h\char`\"{}}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 5 del archivo main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     QApplication a(argc, argv);}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9     QString nombre = QString::fromStdString(\textcolor{stringliteral}{"{}Software de Procesamiento Digital de ImÃ¡gen"{}});}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11     a.setApplicationName(nombre);}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \mbox{\hyperlink{class_sistema}{Sistema}} sistema;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     sistema.\mbox{\hyperlink{class_sistema_a2ce3f1a9fa5c8e988cbf2cbe471fd55a}{ejecutar}}(\&a);}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{18 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Sistema\+::ejecutar().
+

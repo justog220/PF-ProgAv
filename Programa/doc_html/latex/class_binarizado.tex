@@ -1,0 +1,229 @@
+\hypertarget{class_binarizado}{}\doxysection{Referencia de la Clase Binarizado}
+\label{class_binarizado}\index{Binarizado@{Binarizado}}
+
+
+Clase que hereda de la clase \mbox{\hyperlink{class_filtros}{Filtros}} mÃ©todos y los redefine para binarizar una \mbox{\hyperlink{class_imagen}{Imagen}}.  
+
+
+
+
+{\ttfamily \#include $<$binarizado.\+h$>$}
+
+Diagrama de herencias de Binarizado\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_binarizado}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_binarizado_ab8e32338414684209aeb653e8cb2b114}{Binarizado}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_binarizado}{Binarizado}} Constructor del objeto \mbox{\hyperlink{class_binarizado}{Binarizado}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imagen}{Imagen}} \mbox{\hyperlink{class_binarizado_a6857f07c0bef21a7ebe041653026e4f5}{aplicar\+Filtro}} (\mbox{\hyperlink{class_imagen}{Imagen}} \&imagen) override
+\begin{DoxyCompactList}\small\item\em aplicar\+Filtro MÃ©todo heredado de la case \mbox{\hyperlink{class_filtros}{Filtros}}, redefinido para la aplicaciÃ³n del binarizado de una imagenes de intensidades a partir de un nivel especificado por el usuario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_binarizado_a3313de80b14374324dcbdbdbcde387cc}{se\+Puede\+Binarizar}} (\mbox{\hyperlink{class_imagen}{Imagen}} \&imagen)
+\begin{DoxyCompactList}\small\item\em se\+Puede\+Binarizar EvalÃºa si una \mbox{\hyperlink{class_imagen}{Imagen}} se puede binarizar. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_binarizado_a5adc370c96c8d0122a233d27bc84b475}{obtener\+Punto\+Binarizacion}} (\mbox{\hyperlink{class_imagen}{Imagen}} \&imagen)
+\begin{DoxyCompactList}\small\item\em obtener\+Punto\+Binarizacion Obtiene el nivel a partir del cual binarizar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que hereda de la clase \mbox{\hyperlink{class_filtros}{Filtros}} mÃ©todos y los redefine para binarizar una \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+Obtiene un nivel y a partir de Ã©l binariza una \mbox{\hyperlink{class_imagen}{Imagen}}. \begin{DoxyAuthor}{Autor}
+Justo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Fecha de Ãºltima modificaciÃ³n\+: 12-\/12-\/2022 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000004}{Bug}}]\end{DoxyRefDesc}
+\begin{DoxyWarning}{Atención}
+
+\end{DoxyWarning}
+
+
+Definición en la línea 17 del archivo binarizado.\+h.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_binarizado_ab8e32338414684209aeb653e8cb2b114}\label{class_binarizado_ab8e32338414684209aeb653e8cb2b114}} 
+\index{Binarizado@{Binarizado}!Binarizado@{Binarizado}}
+\index{Binarizado@{Binarizado}!Binarizado@{Binarizado}}
+\doxysubsubsection{\texorpdfstring{Binarizado()}{Binarizado()}}
+{\footnotesize\ttfamily Binarizado\+::\+Binarizado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_binarizado}{Binarizado}} Constructor del objeto \mbox{\hyperlink{class_binarizado}{Binarizado}}. 
+
+
+
+Definición en la línea 3 del archivo binarizado.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_binarizado_a6857f07c0bef21a7ebe041653026e4f5}\label{class_binarizado_a6857f07c0bef21a7ebe041653026e4f5}} 
+\index{Binarizado@{Binarizado}!aplicarFiltro@{aplicarFiltro}}
+\index{aplicarFiltro@{aplicarFiltro}!Binarizado@{Binarizado}}
+\doxysubsubsection{\texorpdfstring{aplicarFiltro()}{aplicarFiltro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imagen}{Imagen}} Binarizado\+::aplicar\+Filtro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} \&}]{imagen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+aplicar\+Filtro MÃ©todo heredado de la case \mbox{\hyperlink{class_filtros}{Filtros}}, redefinido para la aplicaciÃ³n del binarizado de una imagenes de intensidades a partir de un nivel especificado por el usuario. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em imagen} & \mbox{\hyperlink{class_imagen}{Imagen}} que se busca binarizar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\mbox{\hyperlink{class_imagen}{Imagen}} binarizada. 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{class_filtros_a6ba7bcd4d1e42cbf7d0fc1a40b1ecc82}{Filtros}}.
+
+
+
+Definición en la línea 8 del archivo binarizado.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_binarizado_a3313de80b14374324dcbdbdbcde387cc}{sePuedeBinarizar}}(imagen))}
+\DoxyCodeLine{11     \{}
+\DoxyCodeLine{12         cout<<\textcolor{stringliteral}{"{}La imagen no se puede binarizar."{}};}
+\DoxyCodeLine{13     \}\textcolor{keywordflow}{else}}
+\DoxyCodeLine{14     \{}
+\DoxyCodeLine{15         \textcolor{keywordtype}{int} puntoBinarizacion = \mbox{\hyperlink{class_binarizado_a5adc370c96c8d0122a233d27bc84b475}{obtenerPuntoBinarizacion}}(imagen);}
+\DoxyCodeLine{16         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < imagen.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(); i++)}
+\DoxyCodeLine{17             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < imagen.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}(); j++)}
+\DoxyCodeLine{18             \{}
+\DoxyCodeLine{19                 \textcolor{keywordflow}{if}(imagen.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(i, j).\mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{getIntensidad}}() >= puntoBinarizacion)}
+\DoxyCodeLine{20                     imagen.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(i, j, \mbox{\hyperlink{class_pixel}{Pixel}}(imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}(), imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}(), imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}()));}
+\DoxyCodeLine{21                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{22                     imagen.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(i, j, \mbox{\hyperlink{class_pixel}{Pixel}}(0, 0, 0));}
+\DoxyCodeLine{23             \}}
+\DoxyCodeLine{24     \}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordflow}{return} imagen;}
+\DoxyCodeLine{27 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Pixel\+::get\+Intensidad(), Imagen\+::get\+Pixel(), Imagen\+::get\+Rango(), obtener\+Punto\+Binarizacion(), se\+Puede\+Binarizar() y Imagen\+::set\+Pixel().
+
+\mbox{\Hypertarget{class_binarizado_a5adc370c96c8d0122a233d27bc84b475}\label{class_binarizado_a5adc370c96c8d0122a233d27bc84b475}} 
+\index{Binarizado@{Binarizado}!obtenerPuntoBinarizacion@{obtenerPuntoBinarizacion}}
+\index{obtenerPuntoBinarizacion@{obtenerPuntoBinarizacion}!Binarizado@{Binarizado}}
+\doxysubsubsection{\texorpdfstring{obtenerPuntoBinarizacion()}{obtenerPuntoBinarizacion()}}
+{\footnotesize\ttfamily int Binarizado\+::obtener\+Punto\+Binarizacion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} \&}]{imagen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+obtener\+Punto\+Binarizacion Obtiene el nivel a partir del cual binarizar. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em imagen} & \mbox{\hyperlink{class_imagen}{Imagen}} que se busca binarizar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Nivel a partir del que se binariza. 
+\end{DoxyReturn}
+
+
+Definición en la línea 37 del archivo binarizado.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38 \{}
+\DoxyCodeLine{39     \textcolor{keywordtype}{int} punto;}
+\DoxyCodeLine{40     cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese nivel a partir del cual se binariza [0, "{}}<<imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}()<<\textcolor{stringliteral}{"{}]: "{}};}
+\DoxyCodeLine{41     cin>>punto;}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{keywordflow}{while}(punto < 0 or punto > imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() or !cin.good())}
+\DoxyCodeLine{44     \{}
+\DoxyCodeLine{45         cin.clear();}
+\DoxyCodeLine{46         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{47         cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese un nivel vÃ¡lido [0, "{}}<<imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}()<<\textcolor{stringliteral}{"{}]: "{}};}
+\DoxyCodeLine{48         cin>>punto;}
+\DoxyCodeLine{49     \}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{keywordflow}{return} punto;}
+\DoxyCodeLine{52 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Imagen\+::get\+Rango().
+
+
+
+Referenciado por aplicar\+Filtro().
+
+\mbox{\Hypertarget{class_binarizado_a3313de80b14374324dcbdbdbcde387cc}\label{class_binarizado_a3313de80b14374324dcbdbdbcde387cc}} 
+\index{Binarizado@{Binarizado}!sePuedeBinarizar@{sePuedeBinarizar}}
+\index{sePuedeBinarizar@{sePuedeBinarizar}!Binarizado@{Binarizado}}
+\doxysubsubsection{\texorpdfstring{sePuedeBinarizar()}{sePuedeBinarizar()}}
+{\footnotesize\ttfamily bool Binarizado\+::se\+Puede\+Binarizar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} \&}]{imagen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+se\+Puede\+Binarizar EvalÃºa si una \mbox{\hyperlink{class_imagen}{Imagen}} se puede binarizar. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\texttt{ in}}  & {\em imagen} & \mbox{\hyperlink{class_imagen}{Imagen}} que se evalÃºa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Retorna verdadero si se puede binarizar y verdadero en el caso contrario. 
+\end{DoxyReturn}
+
+
+Definición en la línea 29 del archivo binarizado.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30 \{}
+\DoxyCodeLine{31     \textcolor{keywordflow}{if}(imagen.\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() == \textcolor{stringliteral}{"{}P2"{}} or imagen.\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() == \textcolor{stringliteral}{"{}P5"{}})}
+\DoxyCodeLine{32         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{33     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{34         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a Imagen\+::get\+Identificador().
+
+
+
+Referenciado por aplicar\+Filtro().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{binarizado_8h}{binarizado.\+h}}\item 
+\mbox{\hyperlink{binarizado_8cpp}{binarizado.\+cpp}}\end{DoxyCompactItemize}

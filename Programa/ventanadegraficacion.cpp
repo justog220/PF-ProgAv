@@ -377,9 +377,9 @@ void VentanaDeGraficacion::mousePressEvent(QMouseEvent *event)
 
         f = imagen.getFilas()-1-f;
 
-        AlgoritmoDelPintor algoritmo_del_pintor(imagen);
+        AlgoritmoDelPintor algoritmoDelPintor(imagen);
         appl->closeAllWindows();
-        imagen = algoritmo_del_pintor.aplicarAlgoritmo(f, c);
+        imagen = algoritmoDelPintor.aplicarAlgoritmo(f, c);
         show();
         repaint();
 

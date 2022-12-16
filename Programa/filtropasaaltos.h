@@ -1,5 +1,5 @@
 /*!
- *  \class      FiltroMediana
+ *  \class      FiltroPasaAltos
  *  \brief      Clase que hereda de la clase Filtros métodos y los redefine para aplicar el filtro pasa altos sobre una Imagen.
  *  \details    Permite que sobre una Imagen se aplique el filtro de pasa altos.
  *  \author     Justo Garcia

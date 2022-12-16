@@ -3,10 +3,10 @@
 // add necessary includes here
 #include <vector>
 #include <string>
-#include "../../../PF_Garcia/espaciodetrabajo.h"
-#include "../../../PF_Garcia/procesadorestadistico.h"
-#include "../../../PF_Garcia/filtros.h"
-#include "../../../PF_Garcia/filtropasabajos.h"
+#include "../../espaciodetrabajo.h"
+#include "../../procesadorestadistico.h"
+#include "../../filtros.h"
+#include "../../filtropasabajos.h"
 
 typedef unsigned int uint;
 

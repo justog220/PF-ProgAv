@@ -26,7 +26,9 @@ void Pixel::setPixelMonocr(int valor)
         r=1;
         g=1;
         b=1;
-    }else{
+    }
+    else
+    {
         r=0;
         g=0;
         b=0;
@@ -59,23 +61,6 @@ int Pixel::getB()
 int Pixel::getIntensidad()
 {
     return (r+g+b)/3;
-}
-
-void Pixel::aumentarBrillo(int aumento)
-{
-    r += aumento;
-    g += aumento;
-    b += aumento;
-}
-
-void Pixel::reducirBrillo()
-{
-    if (r>0 and g>0 and b>0){
-        r--;
-        g--;
-        b--;
-    }
-
 }
 
 void Pixel::ajusteContraste(vector<int> maximo_minimo_R, vector<int> maximo_minimo_G, vector<int> maximo_minimo_B, int rango)

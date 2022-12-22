@@ -16,5 +16,5 @@ var searchData=
   ['archivospnm_13',['ArchivosPNM',['../class_archivos_p_n_m.html',1,'ArchivosPNM'],['../class_archivos_p_n_m.html#accebc41f3d1d9e7c3dc850d19bb8ca97',1,'ArchivosPNM::ArchivosPNM()']]],
   ['archivospnm_2ecpp_14',['archivospnm.cpp',['../archivospnm_8cpp.html',1,'']]],
   ['archivospnm_2eh_15',['archivospnm.h',['../archivospnm_8h.html',1,'']]],
-  ['aumentarbrillo_16',['aumentarBrillo',['../class_brillo.html#ab9e983182a225554b56ad7ac8376bef8',1,'Brillo::aumentarBrillo()'],['../class_pixel.html#a4ab3587954826d764eb02b98d8e0f20f',1,'Pixel::aumentarBrillo()']]]
+  ['aumentarbrillo_16',['aumentarBrillo',['../class_brillo.html#ab9e983182a225554b56ad7ac8376bef8',1,'Brillo']]]
 ];

@@ -50,7 +50,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_excepcion_archivo_corrupto_8h.html",
-"filtromediana_8cpp_source.html"
+"filtromediana_8h_source.html"
 ];
 
 var SYNCONMSG = 'click en deshabilitar sincronización';

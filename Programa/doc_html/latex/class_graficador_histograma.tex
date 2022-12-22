@@ -184,23 +184,27 @@ Definición en la línea 59 del archivo graficadorhistograma.\+cpp.
 \DoxyCodeLine{97             \{}
 \DoxyCodeLine{98                 glColor4f(1.0f, 0.0f, 0.0f, 0.8f);}
 \DoxyCodeLine{99                 bandera = \textcolor{charliteral}{'g'};}
-\DoxyCodeLine{100             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(bandera == \textcolor{charliteral}{'g'})\{}
-\DoxyCodeLine{101                 glColor4f(0.0f, 1.0f, 0.0f, 0.8f);}
-\DoxyCodeLine{102                 bandera = \textcolor{charliteral}{'b'};}
-\DoxyCodeLine{103             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(bandera == \textcolor{charliteral}{'b'})\{}
-\DoxyCodeLine{104                 glColor4f(0.0f, 0.0f, 1.0f, 0.8f);}
-\DoxyCodeLine{105                 bandera = \textcolor{charliteral}{'r'};}
-\DoxyCodeLine{106             \}}
-\DoxyCodeLine{107 }
-\DoxyCodeLine{108             glVertex3i(nivel, \mbox{\hyperlink{class_graficador_histograma_a167b2fc6dbe3c919e0f9da215aa5ffc7}{frecuenciaPromedio}}[nivel], 1);}
-\DoxyCodeLine{109 }
-\DoxyCodeLine{110         \}}
-\DoxyCodeLine{111     glEnd();}
-\DoxyCodeLine{112 }
-\DoxyCodeLine{113        glPopMatrix();}
-\DoxyCodeLine{114 }
-\DoxyCodeLine{115 }
-\DoxyCodeLine{116 \}}
+\DoxyCodeLine{100             \}}
+\DoxyCodeLine{101             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(bandera == \textcolor{charliteral}{'g'})}
+\DoxyCodeLine{102             \{}
+\DoxyCodeLine{103                 glColor4f(0.0f, 1.0f, 0.0f, 0.8f);}
+\DoxyCodeLine{104                 bandera = \textcolor{charliteral}{'b'};}
+\DoxyCodeLine{105             \}}
+\DoxyCodeLine{106             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(bandera == \textcolor{charliteral}{'b'})}
+\DoxyCodeLine{107             \{}
+\DoxyCodeLine{108                 glColor4f(0.0f, 0.0f, 1.0f, 0.8f);}
+\DoxyCodeLine{109                 bandera = \textcolor{charliteral}{'r'};}
+\DoxyCodeLine{110             \}}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112             glVertex3i(nivel, \mbox{\hyperlink{class_graficador_histograma_a167b2fc6dbe3c919e0f9da215aa5ffc7}{frecuenciaPromedio}}[nivel], 1);}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114         \}}
+\DoxyCodeLine{115     glEnd();}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117        glPopMatrix();}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119 }
+\DoxyCodeLine{120 \}}
 
 \end{DoxyCode}
 

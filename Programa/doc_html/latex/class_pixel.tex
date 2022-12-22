@@ -30,10 +30,6 @@ int \mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}} ()
 \begin{DoxyCompactList}\small\item\em getB Devuelve el valor de B. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{get\+Intensidad}} ()
 \begin{DoxyCompactList}\small\item\em get\+Intensidad Devuelve la intensidad del \mbox{\hyperlink{class_pixel}{Pixel}}, si es de intensidades. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_pixel_a4ab3587954826d764eb02b98d8e0f20f}{aumentar\+Brillo}} (int aumento)
-\begin{DoxyCompactList}\small\item\em aumentar\+Brillo MÃ©todo que permite aumentar el brillo de un \mbox{\hyperlink{class_pixel}{Pixel}}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_pixel_afc9781cd9b7a54b83e77010ccd40acf9}{reducir\+Brillo}} ()
-\begin{DoxyCompactList}\small\item\em reducir\+Brillo MÃ©todo que permite reducir el brillo de un \mbox{\hyperlink{class_pixel}{Pixel}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_pixel_a9dde3af38cd1ba92d0cf210847f5f00f}{ajuste\+Contraste}} (vector$<$ int $>$ maximo\+\_\+minimo\+\_\+R, vector$<$ int $>$ maximo\+\_\+minimo\+\_\+G, vector$<$ int $>$ maximo\+\_\+minimo\+\_\+B, int rango)
 \begin{DoxyCompactList}\small\item\em ajuste\+Contraste MÃ©todo que ajusta (R, G, B) para ajustar el contraste de una \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos privados}
@@ -154,20 +150,20 @@ ajuste\+Contraste MÃ©todo que ajusta (R, G, B) para ajustar el contraste de un
 \end{DoxyParams}
 
 
-Definición en la línea 81 del archivo pixel.\+cpp.
+Definición en la línea 66 del archivo pixel.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{82 \{}
-\DoxyCodeLine{83     \textcolor{keywordtype}{float} R, G, B;}
-\DoxyCodeLine{84     R = ((float(\mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}})-\/float(maximo\_minimo\_R[1]))/(\textcolor{keywordtype}{float}(maximo\_minimo\_R[0])-\/float(maximo\_minimo\_R[1])));}
-\DoxyCodeLine{85     \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}} = int(R*rango);}
-\DoxyCodeLine{86     G = ((float(\mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}})-\/float(maximo\_minimo\_G[1]))/(\textcolor{keywordtype}{float}(maximo\_minimo\_G[0])-\/float(maximo\_minimo\_G[1])));}
-\DoxyCodeLine{87     \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}} = int(G*rango);}
-\DoxyCodeLine{88     B = ((float(\mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}})-\/float(maximo\_minimo\_B[1]))/(\textcolor{keywordtype}{float}(maximo\_minimo\_B[0])-\/float(maximo\_minimo\_B[1])));}
-\DoxyCodeLine{89     \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}} = int(B*rango);}
-\DoxyCodeLine{90 }
-\DoxyCodeLine{91 \}}
+\DoxyCodeLine{67 \{}
+\DoxyCodeLine{68     \textcolor{keywordtype}{float} R, G, B;}
+\DoxyCodeLine{69     R = ((float(\mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}})-\/float(maximo\_minimo\_R[1]))/(\textcolor{keywordtype}{float}(maximo\_minimo\_R[0])-\/float(maximo\_minimo\_R[1])));}
+\DoxyCodeLine{70     \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}} = int(R*rango);}
+\DoxyCodeLine{71     G = ((float(\mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}})-\/float(maximo\_minimo\_G[1]))/(\textcolor{keywordtype}{float}(maximo\_minimo\_G[0])-\/float(maximo\_minimo\_G[1])));}
+\DoxyCodeLine{72     \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}} = int(G*rango);}
+\DoxyCodeLine{73     B = ((float(\mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}})-\/float(maximo\_minimo\_B[1]))/(\textcolor{keywordtype}{float}(maximo\_minimo\_B[0])-\/float(maximo\_minimo\_B[1])));}
+\DoxyCodeLine{74     \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}} = int(B*rango);}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 \}}
 
 \end{DoxyCode}
 
@@ -177,33 +173,6 @@ Hace referencia a b, g y r.
 
 
 Referenciado por Contraste\+::aplicar\+Filtro().
-
-\mbox{\Hypertarget{class_pixel_a4ab3587954826d764eb02b98d8e0f20f}\label{class_pixel_a4ab3587954826d764eb02b98d8e0f20f}} 
-\index{Pixel@{Pixel}!aumentarBrillo@{aumentarBrillo}}
-\index{aumentarBrillo@{aumentarBrillo}!Pixel@{Pixel}}
-\doxyparagraph{\texorpdfstring{aumentarBrillo()}{aumentarBrillo()}}
-{\footnotesize\ttfamily void Pixel\+::aumentar\+Brillo (\begin{DoxyParamCaption}\item[{int}]{aumento }\end{DoxyParamCaption})}
-
-
-
-aumentar\+Brillo MÃ©todo que permite aumentar el brillo de un \mbox{\hyperlink{class_pixel}{Pixel}}. 
-
-
-
-Definición en la línea 64 del archivo pixel.\+cpp.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{65 \{}
-\DoxyCodeLine{66     \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}} += aumento;}
-\DoxyCodeLine{67     \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}} += aumento;}
-\DoxyCodeLine{68     \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}} += aumento;}
-\DoxyCodeLine{69 \}}
-
-\end{DoxyCode}
-
-
-Hace referencia a b, g y r.
 
 \mbox{\Hypertarget{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}\label{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}} 
 \index{Pixel@{Pixel}!getB@{getB}}
@@ -220,13 +189,13 @@ El mÃ©todo retorna como salida de un valor flotante de 8 bytes
 \end{DoxyReturn}
 
 
-Definición en la línea 54 del archivo pixel.\+cpp.
+Definición en la línea 56 del archivo pixel.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{55 \{}
-\DoxyCodeLine{56     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}};}
-\DoxyCodeLine{57 \}}
+\DoxyCodeLine{57 \{}
+\DoxyCodeLine{58     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}};}
+\DoxyCodeLine{59 \}}
 
 \end{DoxyCode}
 
@@ -252,13 +221,13 @@ El mÃ©todo retorna como salida de un valor flotante de 8 bytes
 \end{DoxyReturn}
 
 
-Definición en la línea 49 del archivo pixel.\+cpp.
+Definición en la línea 51 del archivo pixel.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{50 \{}
-\DoxyCodeLine{51     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}};}
-\DoxyCodeLine{52 \}}
+\DoxyCodeLine{52 \{}
+\DoxyCodeLine{53     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}};}
+\DoxyCodeLine{54 \}}
 
 \end{DoxyCode}
 
@@ -284,13 +253,13 @@ Entero que representa la intensidad de un \mbox{\hyperlink{class_pixel}{Pixel}}.
 \end{DoxyReturn}
 
 
-Definición en la línea 59 del archivo pixel.\+cpp.
+Definición en la línea 61 del archivo pixel.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{60 \{}
-\DoxyCodeLine{61     \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}+\mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}+\mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}})/3;}
-\DoxyCodeLine{62 \}}
+\DoxyCodeLine{62 \{}
+\DoxyCodeLine{63     \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}+\mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}+\mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}})/3;}
+\DoxyCodeLine{64 \}}
 
 \end{DoxyCode}
 
@@ -316,13 +285,13 @@ El mÃ©todo retorna como salida de un valor flotante de 8 bytes
 \end{DoxyReturn}
 
 
-Definición en la línea 44 del archivo pixel.\+cpp.
+Definición en la línea 46 del archivo pixel.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{45 \{}
-\DoxyCodeLine{46     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}};}
-\DoxyCodeLine{47 \}}
+\DoxyCodeLine{47 \{}
+\DoxyCodeLine{48     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}};}
+\DoxyCodeLine{49 \}}
 
 \end{DoxyCode}
 
@@ -332,36 +301,6 @@ Hace referencia a r.
 
 
 Referenciado por Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::aplicar\+Filtro(), Filtro\+Pasa\+Bajos\+::aplicar\+Filtro(), Negativo\+::aplicar\+Filtro(), Brillo\+::aumentar\+Brillo(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+R(), Archivos\+PNM\+::escribe\+P1(), Archivos\+PNM\+::escribe\+P2(), Archivos\+PNM\+::escribe\+P3(), Archivos\+PNM\+::escribe\+P4(), Archivos\+PNM\+::escribe\+P5(), Archivos\+PNM\+::escribe\+P6(), Algoritmo\+Del\+Pintor\+::es\+Vecino(), Ventana\+De\+Graficacion\+::graficar\+Imagen(), Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada(), Procesador\+Estadistico\+::hallar\+Maximo\+Minimo\+R() y Brillo\+::reducir\+Brillo().
-
-\mbox{\Hypertarget{class_pixel_afc9781cd9b7a54b83e77010ccd40acf9}\label{class_pixel_afc9781cd9b7a54b83e77010ccd40acf9}} 
-\index{Pixel@{Pixel}!reducirBrillo@{reducirBrillo}}
-\index{reducirBrillo@{reducirBrillo}!Pixel@{Pixel}}
-\doxyparagraph{\texorpdfstring{reducirBrillo()}{reducirBrillo()}}
-{\footnotesize\ttfamily void Pixel\+::reducir\+Brillo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-reducir\+Brillo MÃ©todo que permite reducir el brillo de un \mbox{\hyperlink{class_pixel}{Pixel}}. 
-
-
-
-Definición en la línea 71 del archivo pixel.\+cpp.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{72 \{}
-\DoxyCodeLine{73     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}>0 and \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}>0 and \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}>0)\{}
-\DoxyCodeLine{74         \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}-\/-\/;}
-\DoxyCodeLine{75         \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}-\/-\/;}
-\DoxyCodeLine{76         \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}-\/-\/;}
-\DoxyCodeLine{77     \}}
-\DoxyCodeLine{78 }
-\DoxyCodeLine{79 \}}
-
-\end{DoxyCode}
-
-
-Hace referencia a b, g y r.
 
 \mbox{\Hypertarget{class_pixel_affd7e85713e18281b51e0e676485f704}\label{class_pixel_affd7e85713e18281b51e0e676485f704}} 
 \index{Pixel@{Pixel}!setPixelEscala@{setPixelEscala}}
@@ -383,15 +322,15 @@ No devuelve nada, solo modifica los parÃ¡metros.
 \end{DoxyReturn}
 
 
-Definición en la línea 37 del archivo pixel.\+cpp.
+Definición en la línea 39 del archivo pixel.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{38 \{}
-\DoxyCodeLine{39     \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}=valor;}
-\DoxyCodeLine{40     \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}=valor;}
-\DoxyCodeLine{41     \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}=valor;}
-\DoxyCodeLine{42 \}}
+\DoxyCodeLine{40 \{}
+\DoxyCodeLine{41     \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}=valor;}
+\DoxyCodeLine{42     \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}=valor;}
+\DoxyCodeLine{43     \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}=valor;}
+\DoxyCodeLine{44 \}}
 
 \end{DoxyCode}
 
@@ -432,13 +371,15 @@ Definición en la línea 22 del archivo pixel.\+cpp.
 \DoxyCodeLine{26         \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}=1;}
 \DoxyCodeLine{27         \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}=1;}
 \DoxyCodeLine{28         \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}=1;}
-\DoxyCodeLine{29     \}\textcolor{keywordflow}{else}\{}
-\DoxyCodeLine{30         \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}=0;}
-\DoxyCodeLine{31         \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}=0;}
-\DoxyCodeLine{32         \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}=0;}
-\DoxyCodeLine{33     \}}
-\DoxyCodeLine{34 }
-\DoxyCodeLine{35 \}}
+\DoxyCodeLine{29     \}}
+\DoxyCodeLine{30     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{31     \{}
+\DoxyCodeLine{32         \mbox{\hyperlink{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}{r}}=0;}
+\DoxyCodeLine{33         \mbox{\hyperlink{class_pixel_a73515f179e3c1bd28156e434da111d05}{g}}=0;}
+\DoxyCodeLine{34         \mbox{\hyperlink{class_pixel_a94b067f3c79425c953631f7bf1c7536c}{b}}=0;}
+\DoxyCodeLine{35     \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \}}
 
 \end{DoxyCode}
 
@@ -504,11 +445,11 @@ Referenciado por Filtro\+Mediana\+::aplicar\+Filtro(), Filtro\+Pasa\+Altos\+::ap
 \end{DoxyParams}
 
 
-Definición en la línea 119 del archivo pixel.\+h.
+Definición en la línea 107 del archivo pixel.\+h.
 
 
 
-Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+B(), get\+Intensidad(), Pixel(), reducir\+Brillo(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
+Referenciado por ajuste\+Contraste(), get\+B(), get\+Intensidad(), Pixel(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
 
 \mbox{\Hypertarget{class_pixel_a73515f179e3c1bd28156e434da111d05}\label{class_pixel_a73515f179e3c1bd28156e434da111d05}} 
 \index{Pixel@{Pixel}!g@{g}}
@@ -523,11 +464,11 @@ Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+B(), get\+Intensi
 \end{DoxyParams}
 
 
-Definición en la línea 115 del archivo pixel.\+h.
+Definición en la línea 103 del archivo pixel.\+h.
 
 
 
-Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+G(), get\+Intensidad(), Pixel(), reducir\+Brillo(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
+Referenciado por ajuste\+Contraste(), get\+G(), get\+Intensidad(), Pixel(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
 
 \mbox{\Hypertarget{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}\label{class_pixel_a8bdcc8f589c30333ec3f88d2c26d4e3a}} 
 \index{Pixel@{Pixel}!r@{r}}
@@ -542,11 +483,11 @@ Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+G(), get\+Intensi
 \end{DoxyParams}
 
 
-Definición en la línea 111 del archivo pixel.\+h.
+Definición en la línea 99 del archivo pixel.\+h.
 
 
 
-Referenciado por ajuste\+Contraste(), aumentar\+Brillo(), get\+Intensidad(), get\+R(), Pixel(), reducir\+Brillo(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
+Referenciado por ajuste\+Contraste(), get\+Intensidad(), get\+R(), Pixel(), set\+Pixel\+Escala(), set\+Pixel\+Monocr() y set\+Pixel\+RGB().
 
 
 

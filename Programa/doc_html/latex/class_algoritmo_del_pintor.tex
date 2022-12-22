@@ -168,22 +168,25 @@ Crea el objeto.
 \end{DoxyReturn}
 
 
-Definición en la línea 69 del archivo algoritmodelpintor.\+cpp.
+Definición en la línea 72 del archivo algoritmodelpintor.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{70 \{}
-\DoxyCodeLine{71     \textcolor{keywordtype}{bool} rEnRango = analisis.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}() <= pixelPintado.getR()+int(tolerancia) and analisis.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}() >= pixelPintado.getR()-\/ int(tolerancia);}
-\DoxyCodeLine{72     \textcolor{keywordtype}{bool} bEnRango = analisis.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}() <= pixelPintado.getB()+int(tolerancia) and analisis.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}() >= pixelPintado.getB()-\/ int(tolerancia);}
-\DoxyCodeLine{73     \textcolor{keywordtype}{bool} gEnRango = analisis.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}() <= pixelPintado.getG()+int(tolerancia) and analisis.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}() >= pixelPintado.getG()-\/ int(tolerancia);}
-\DoxyCodeLine{74 }
-\DoxyCodeLine{75     \textcolor{keywordflow}{if} (rEnRango and gEnRango and bEnRango)\{}
-\DoxyCodeLine{76         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
-\DoxyCodeLine{77     \}\textcolor{keywordflow}{else}\{}
-\DoxyCodeLine{78         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{79     \}}
-\DoxyCodeLine{80 }
-\DoxyCodeLine{81 \}}
+\DoxyCodeLine{73 \{}
+\DoxyCodeLine{74     \textcolor{keywordtype}{bool} rEnRango = analisis.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}() <= pixelPintado.getR()+int(tolerancia) and analisis.\mbox{\hyperlink{class_pixel_a1ddae752d300c31889bcabc9ecf4882a}{getR}}() >= pixelPintado.getR()-\/ int(tolerancia);}
+\DoxyCodeLine{75     \textcolor{keywordtype}{bool} bEnRango = analisis.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}() <= pixelPintado.getB()+int(tolerancia) and analisis.\mbox{\hyperlink{class_pixel_a4fe71fb96079d8fa3756cb33b66581a3}{getB}}() >= pixelPintado.getB()-\/ int(tolerancia);}
+\DoxyCodeLine{76     \textcolor{keywordtype}{bool} gEnRango = analisis.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}() <= pixelPintado.getG()+int(tolerancia) and analisis.\mbox{\hyperlink{class_pixel_a7d11df716ef5c30421210a7b2d61e697}{getG}}() >= pixelPintado.getG()-\/ int(tolerancia);}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     \textcolor{keywordflow}{if} (rEnRango and gEnRango and bEnRango)}
+\DoxyCodeLine{79     \{}
+\DoxyCodeLine{80         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{81     \}}
+\DoxyCodeLine{82     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{83     \{}
+\DoxyCodeLine{84         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{85     \}}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87 \}}
 
 \end{DoxyCode}
 
@@ -213,15 +216,15 @@ inicializar\+Matriz\+De\+Analisis MÃ©todo que permite inicializar el atributo 
 \end{DoxyParams}
 
 
-Definición en la línea 62 del archivo algoritmodelpintor.\+cpp.
+Definición en la línea 65 del archivo algoritmodelpintor.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{63 \{}
-\DoxyCodeLine{64     vector<vector<bool>> matriz(f, vector<bool> (c, \textcolor{keyword}{false}));}
-\DoxyCodeLine{65 }
-\DoxyCodeLine{66     \mbox{\hyperlink{class_algoritmo_del_pintor_afd064bfc95600b1411204961aaf88c08}{fueAnalizado}} = matriz;}
-\DoxyCodeLine{67 \}}
+\DoxyCodeLine{66 \{}
+\DoxyCodeLine{67     vector<vector<bool>> matriz(f, vector<bool> (c, \textcolor{keyword}{false}));}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \mbox{\hyperlink{class_algoritmo_del_pintor_afd064bfc95600b1411204961aaf88c08}{fueAnalizado}} = matriz;}
+\DoxyCodeLine{70 \}}
 
 \end{DoxyCode}
 
@@ -264,20 +267,22 @@ Definición en la línea 24 del archivo algoritmodelpintor.\+cpp.
 \DoxyCodeLine{27 }
 \DoxyCodeLine{28     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}}.\mbox{\hyperlink{class_imagen_aa479341bc5a7d72733f1074a9b75ba3b}{formaParteDeLaImagen}}(f, c) and \mbox{\hyperlink{class_algoritmo_del_pintor_adacb2f3c91fb1ed17711c66542a86efa}{profundidad}} < 58100)\{}
 \DoxyCodeLine{29 }
-\DoxyCodeLine{30         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_algoritmo_del_pintor_a4815326da0502f08c38070030802cb79}{esVecino}}(pixelComparacion, \mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}}.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(f, c), tolerancia))\{}
-\DoxyCodeLine{31            \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_algoritmo_del_pintor_afd064bfc95600b1411204961aaf88c08}{fueAnalizado}}.at(f).at(c))}
-\DoxyCodeLine{32            \{}
-\DoxyCodeLine{33                 \mbox{\hyperlink{class_algoritmo_del_pintor_afd064bfc95600b1411204961aaf88c08}{fueAnalizado}}[f][c] = \textcolor{keyword}{true};}
-\DoxyCodeLine{34                 \textcolor{keywordflow}{for} ( \textcolor{keywordtype}{int} vecino = 0; vecino < 8; vecino++)\{}
-\DoxyCodeLine{35                     \mbox{\hyperlink{class_algoritmo_del_pintor_a22e7dbbc707435aeb00523292d1987aa}{pintarVecinos}}(f + \mbox{\hyperlink{class_algoritmo_del_pintor_afc4b3c9dfac6cf72371916fffb51ecf0}{vecinos}}[vecino].f, c + \mbox{\hyperlink{class_algoritmo_del_pintor_afc4b3c9dfac6cf72371916fffb51ecf0}{vecinos}}[vecino].c, pixelComparacion, tolerancia);}
-\DoxyCodeLine{36                 \}}
-\DoxyCodeLine{37                 \mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}}.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(f, c, \mbox{\hyperlink{class_pixel}{Pixel}}(0, 0, 255));\}}
-\DoxyCodeLine{38         \}}
-\DoxyCodeLine{39     \}}
-\DoxyCodeLine{40 }
-\DoxyCodeLine{41     -\/-\/\mbox{\hyperlink{class_algoritmo_del_pintor_adacb2f3c91fb1ed17711c66542a86efa}{profundidad}};}
+\DoxyCodeLine{30         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_algoritmo_del_pintor_a4815326da0502f08c38070030802cb79}{esVecino}}(pixelComparacion, \mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}}.\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(f, c), tolerancia))}
+\DoxyCodeLine{31         \{}
+\DoxyCodeLine{32            \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_algoritmo_del_pintor_afd064bfc95600b1411204961aaf88c08}{fueAnalizado}}.at(f).at(c))}
+\DoxyCodeLine{33            \{}
+\DoxyCodeLine{34                 \mbox{\hyperlink{class_algoritmo_del_pintor_afd064bfc95600b1411204961aaf88c08}{fueAnalizado}}[f][c] = \textcolor{keyword}{true};}
+\DoxyCodeLine{35                 \textcolor{keywordflow}{for} ( \textcolor{keywordtype}{int} vecino = 0; vecino < 8; vecino++)\{}
+\DoxyCodeLine{36                     \mbox{\hyperlink{class_algoritmo_del_pintor_a22e7dbbc707435aeb00523292d1987aa}{pintarVecinos}}(f + \mbox{\hyperlink{class_algoritmo_del_pintor_afc4b3c9dfac6cf72371916fffb51ecf0}{vecinos}}[vecino].f, c + \mbox{\hyperlink{class_algoritmo_del_pintor_afc4b3c9dfac6cf72371916fffb51ecf0}{vecinos}}[vecino].c, pixelComparacion, tolerancia);}
+\DoxyCodeLine{37                 \}}
+\DoxyCodeLine{38                 \mbox{\hyperlink{class_algoritmo_del_pintor_a4767483323984d4dd296d7ad91e02a1d}{imag}}.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(f, c, \mbox{\hyperlink{class_pixel}{Pixel}}(0, 0, 255));}
+\DoxyCodeLine{39            \}}
+\DoxyCodeLine{40         \}}
+\DoxyCodeLine{41     \}}
 \DoxyCodeLine{42 }
-\DoxyCodeLine{43 \}}
+\DoxyCodeLine{43     -\/-\/\mbox{\hyperlink{class_algoritmo_del_pintor_adacb2f3c91fb1ed17711c66542a86efa}{profundidad}};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \}}
 
 \end{DoxyCode}
 
@@ -308,25 +313,26 @@ Devuelve un uint que es el rango de tolerancia.
 \end{DoxyReturn}
 
 
-Definición en la línea 45 del archivo algoritmodelpintor.\+cpp.
+Definición en la línea 47 del archivo algoritmodelpintor.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{46 \{}
-\DoxyCodeLine{47     \textcolor{keywordtype}{int} tolerancia;}
-\DoxyCodeLine{48 }
-\DoxyCodeLine{49     cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese el rango de tolerancia que desea considerar: "{}};}
-\DoxyCodeLine{50     cin>>tolerancia;}
-\DoxyCodeLine{51 }
-\DoxyCodeLine{52     \textcolor{keywordflow}{while}(tolerancia < 0 or tolerancia > maximoRangoImag or !cin.good())\{}
-\DoxyCodeLine{53         cin.clear();}
-\DoxyCodeLine{54         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
-\DoxyCodeLine{55         cout << \textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese un valor de tolerancia dentro del rango admitido por la imagen [0, "{}}<<maximoRangoImag<<\textcolor{stringliteral}{"{}]: "{}};}
-\DoxyCodeLine{56         cin>>tolerancia;}
-\DoxyCodeLine{57     \}}
-\DoxyCodeLine{58 }
-\DoxyCodeLine{59     \textcolor{keywordflow}{return} tolerancia;}
-\DoxyCodeLine{60 \}}
+\DoxyCodeLine{48 \{}
+\DoxyCodeLine{49     \textcolor{keywordtype}{int} tolerancia;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese el rango de tolerancia que desea considerar: "{}};}
+\DoxyCodeLine{52     cin>>tolerancia;}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{keywordflow}{while}(tolerancia < 0 or tolerancia > maximoRangoImag or !cin.good())}
+\DoxyCodeLine{55     \{}
+\DoxyCodeLine{56         cin.clear();}
+\DoxyCodeLine{57         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{58         cout << \textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese un valor de tolerancia dentro del rango admitido por la imagen [0, "{}}<<maximoRangoImag<<\textcolor{stringliteral}{"{}]: "{}};}
+\DoxyCodeLine{59         cin>>tolerancia;}
+\DoxyCodeLine{60     \}}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keywordflow}{return} tolerancia;}
+\DoxyCodeLine{63 \}}
 
 \end{DoxyCode}
 

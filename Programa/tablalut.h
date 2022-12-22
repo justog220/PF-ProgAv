@@ -41,7 +41,10 @@ private:
      * \param Vector de strings que almacena las rutas de las tablas LUT manejadas por el software. La posicion de las
      * rutas esta dada por la opcion del constructor - 1.
      */
-    vector<string> luts = {"./grupo_luts/glow.lut", "./grupo_luts/Turbo.lut"};
+    vector<string> luts = {
+        "./grupo_luts/glow.lut",
+        "./grupo_luts/Turbo.lut"
+    };
 
     /*!
      * \param tabla_conversion Vector de enteros que representa la tabla de conversion[i][j] donde i representa la intensidad

@@ -157,18 +157,18 @@ Booleano que indica si es AIC o no.
 \end{DoxyReturn}
 
 
-Definición en la línea 120 del archivo espaciodetrabajo.\+cpp.
+Definición en la línea 122 del archivo espaciodetrabajo.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{121 \{}
-\DoxyCodeLine{122     \textcolor{keywordtype}{string} extension = archivo.substr(archivo.length()-\/3);}
-\DoxyCodeLine{123 }
-\DoxyCodeLine{124     \textcolor{keywordflow}{if}(extension == \textcolor{stringliteral}{"{}aic"{}})}
-\DoxyCodeLine{125         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
-\DoxyCodeLine{126     \textcolor{keywordflow}{else}}
-\DoxyCodeLine{127         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{128 \}}
+\DoxyCodeLine{123 \{}
+\DoxyCodeLine{124     \textcolor{keywordtype}{string} extension = archivo.substr(archivo.length()-\/3);}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126     \textcolor{keywordflow}{if}(extension == \textcolor{stringliteral}{"{}aic"{}})}
+\DoxyCodeLine{127         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{128     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{129         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{130 \}}
 
 \end{DoxyCode}
 
@@ -195,18 +195,18 @@ Booleano que indica si es PNM o no.
 \end{DoxyReturn}
 
 
-Definición en la línea 110 del archivo espaciodetrabajo.\+cpp.
+Definición en la línea 112 del archivo espaciodetrabajo.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{111 \{}
-\DoxyCodeLine{112     \textcolor{keywordtype}{string} extension = archivo.substr(archivo.length()-\/3);}
-\DoxyCodeLine{113 }
-\DoxyCodeLine{114     \textcolor{keywordflow}{if}(extension == \textcolor{stringliteral}{"{}pnm"{}} or extension == \textcolor{stringliteral}{"{}pgm"{}} or extension == \textcolor{stringliteral}{"{}ppm"{}} or extension == \textcolor{stringliteral}{"{}pbm"{}})}
-\DoxyCodeLine{115         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
-\DoxyCodeLine{116     \textcolor{keywordflow}{else}}
-\DoxyCodeLine{117         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{118 \}}
+\DoxyCodeLine{113 \{}
+\DoxyCodeLine{114     \textcolor{keywordtype}{string} extension = archivo.substr(archivo.length()-\/3);}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116     \textcolor{keywordflow}{if}(extension == \textcolor{stringliteral}{"{}pnm"{}} or extension == \textcolor{stringliteral}{"{}pgm"{}} or extension == \textcolor{stringliteral}{"{}ppm"{}} or extension == \textcolor{stringliteral}{"{}pbm"{}})}
+\DoxyCodeLine{117         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{118     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{119         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{120 \}}
 
 \end{DoxyCode}
 
@@ -325,14 +325,14 @@ Nombre del archivo.
 \end{DoxyReturn}
 
 
-Definición en la línea 217 del archivo espaciodetrabajo.\+cpp.
+Definición en la línea 220 del archivo espaciodetrabajo.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{218 \{}
-\DoxyCodeLine{219     \textcolor{keywordflow}{return} ruta.substr(ruta.rfind(\textcolor{charliteral}{'/'})+1);}
-\DoxyCodeLine{220 }
-\DoxyCodeLine{221 \}}
+\DoxyCodeLine{221 \{}
+\DoxyCodeLine{222     \textcolor{keywordflow}{return} ruta.substr(ruta.rfind(\textcolor{charliteral}{'/'})+1);}
+\DoxyCodeLine{223 }
+\DoxyCodeLine{224 \}}
 
 \end{DoxyCode}
 
@@ -354,13 +354,13 @@ int que representa el nÃºmero de archivos en el directorio que selecciono el u
 \end{DoxyReturn}
 
 
-Definición en la línea 130 del archivo espaciodetrabajo.\+cpp.
+Definición en la línea 132 del archivo espaciodetrabajo.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{131 \{}
-\DoxyCodeLine{132     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}{listaDeArchivos}}.size();}
-\DoxyCodeLine{133 \}}
+\DoxyCodeLine{133 \{}
+\DoxyCodeLine{134     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}{listaDeArchivos}}.size();}
+\DoxyCodeLine{135 \}}
 
 \end{DoxyCode}
 
@@ -391,22 +391,22 @@ get\+PNMo\+AIC Devuelve si un archivo es PNM o AIC.
 \end{DoxyReturn}
 
 
-Definición en la línea 96 del archivo espaciodetrabajo.\+cpp.
+Definición en la línea 98 del archivo espaciodetrabajo.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{97 \{}
-\DoxyCodeLine{98     \textcolor{keywordtype}{string} nom\_archivo = \mbox{\hyperlink{class_espacio_de_trabajo_af6120913aa6cffbcf27be3e54fd66a9c}{getNombreArchivo}}(ruta);}
-\DoxyCodeLine{99 }
-\DoxyCodeLine{100     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_espacio_de_trabajo_aa5c2e8e4f36e454e6868a8edc8c9c6b5}{esPNM}}(nom\_archivo))}
-\DoxyCodeLine{101         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}pnm"{}};}
-\DoxyCodeLine{102     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_espacio_de_trabajo_af1da4da58b0755973eedc8f67b4c566c}{esAIC}}(nom\_archivo))}
-\DoxyCodeLine{103         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}aic"{}};}
-\DoxyCodeLine{104     \textcolor{keywordflow}{else}}
-\DoxyCodeLine{105         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_no_soportado}{ExcepcionArchivoNoSoportado}}();}
-\DoxyCodeLine{106 }
-\DoxyCodeLine{107 }
-\DoxyCodeLine{108 \}}
+\DoxyCodeLine{99 \{}
+\DoxyCodeLine{100     \textcolor{keywordtype}{string} nom\_archivo = \mbox{\hyperlink{class_espacio_de_trabajo_af6120913aa6cffbcf27be3e54fd66a9c}{getNombreArchivo}}(ruta);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_espacio_de_trabajo_aa5c2e8e4f36e454e6868a8edc8c9c6b5}{esPNM}}(nom\_archivo))}
+\DoxyCodeLine{103         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}pnm"{}};}
+\DoxyCodeLine{104     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_espacio_de_trabajo_af1da4da58b0755973eedc8f67b4c566c}{esAIC}}(nom\_archivo))}
+\DoxyCodeLine{105         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}aic"{}};}
+\DoxyCodeLine{106     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{107         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_no_soportado}{ExcepcionArchivoNoSoportado}}();}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110 \}}
 
 \end{DoxyCode}
 
@@ -470,15 +470,17 @@ Definición en la línea 58 del archivo espaciodetrabajo.\+cpp.
 \DoxyCodeLine{83     \textcolor{keywordflow}{if}(opcArch == -\/8)}
 \DoxyCodeLine{84     \{}
 \DoxyCodeLine{85         \textcolor{keywordflow}{return} ruta;}
-\DoxyCodeLine{86     \}\textcolor{keywordflow}{else}\{}
-\DoxyCodeLine{87         \mbox{\hyperlink{class_espacio_de_trabajo_a19bc26e7349a719fb19e4495d2beed6e}{getListaDeArchivos}}(ruta);}
-\DoxyCodeLine{88 }
-\DoxyCodeLine{89         ruta.append(\mbox{\hyperlink{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}{listaDeArchivos}}[opcArch-\/1]);}
+\DoxyCodeLine{86     \}}
+\DoxyCodeLine{87     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{88     \{}
+\DoxyCodeLine{89         \mbox{\hyperlink{class_espacio_de_trabajo_a19bc26e7349a719fb19e4495d2beed6e}{getListaDeArchivos}}(ruta);}
 \DoxyCodeLine{90 }
-\DoxyCodeLine{91         \textcolor{keywordflow}{return} ruta;}
-\DoxyCodeLine{92     \}}
-\DoxyCodeLine{93 }
-\DoxyCodeLine{94 \}}
+\DoxyCodeLine{91         ruta.append(\mbox{\hyperlink{class_espacio_de_trabajo_a3ff0bbdddd884ff3c279f778ce5e443c}{listaDeArchivos}}[opcArch-\/1]);}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93         \textcolor{keywordflow}{return} ruta;}
+\DoxyCodeLine{94     \}}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96 \}}
 
 \end{DoxyCode}
 
@@ -506,82 +508,83 @@ guardar\+Imagen MÃ©todo auxiliar en el guardado de una imagen.
 \end{DoxyParams}
 
 
-Definición en la línea 143 del archivo espaciodetrabajo.\+cpp.
+Definición en la línea 145 del archivo espaciodetrabajo.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{144 \{}
-\DoxyCodeLine{145 }
-\DoxyCodeLine{146     \textcolor{keywordtype}{char} opcFormato;}
-\DoxyCodeLine{147     cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|>[P]NM\(\backslash\)n\(\backslash\)t|>[A]IC\(\backslash\)n\(\backslash\)t  Seleccione el formato de guardado:"{}};}
-\DoxyCodeLine{148     cin>>opcFormato;}
-\DoxyCodeLine{149 }
-\DoxyCodeLine{150     opcFormato= toupper(opcFormato);}
+\DoxyCodeLine{146 \{}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148     \textcolor{keywordtype}{char} opcFormato;}
+\DoxyCodeLine{149     cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|>[P]NM\(\backslash\)n\(\backslash\)t|>[A]IC\(\backslash\)n\(\backslash\)t|>Seleccione el formato de guardado:\(\backslash\)n\(\backslash\)t\(\backslash\)t>"{}};}
+\DoxyCodeLine{150     cin>>opcFormato;}
 \DoxyCodeLine{151 }
-\DoxyCodeLine{152     \textcolor{keywordflow}{while} (opcFormato != \textcolor{charliteral}{'P'} and opcFormato != \textcolor{charliteral}{'A'}) \{}
-\DoxyCodeLine{153         cout<<\textcolor{stringliteral}{"{}\(\backslash\)t\(\backslash\)t|\_\_Inserte una opcion valida: "{}};}
-\DoxyCodeLine{154         cin>>opcFormato;}
-\DoxyCodeLine{155         opcFormato = toupper(opcFormato);}
-\DoxyCodeLine{156     \}}
-\DoxyCodeLine{157 }
-\DoxyCodeLine{158     \textcolor{keywordtype}{bool} estaDeAcuerdo;}
+\DoxyCodeLine{152     opcFormato = toupper(opcFormato);}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154 }
+\DoxyCodeLine{155     \textcolor{keywordflow}{while} ((opcFormato != \textcolor{charliteral}{'P'} and opcFormato != \textcolor{charliteral}{'A'}) )}
+\DoxyCodeLine{156     \{}
+\DoxyCodeLine{157         cin.clear();}
+\DoxyCodeLine{158         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
 \DoxyCodeLine{159 }
-\DoxyCodeLine{160     \textcolor{keywordflow}{if}(opcFormato == \textcolor{charliteral}{'A'} and img-\/>\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() != \textcolor{stringliteral}{"{}P2"{}} and img-\/>\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() != \textcolor{stringliteral}{"{}P2C"{}} and img-\/>\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() != \textcolor{stringliteral}{"{}P5"{}})}
-\DoxyCodeLine{161     \{}
-\DoxyCodeLine{162         \textcolor{keywordtype}{char} acuerdo;}
-\DoxyCodeLine{163         cout<<\textcolor{stringliteral}{"{}\(\backslash\)nSolo pueden ser almacenadas con formato AIC imÃ¡genes en escala de grises. Se procederÃ¡ a guardar en formato PNM.\(\backslash\)nPresione cualquier tecla para continuar."{}};}
-\DoxyCodeLine{164         cout<<\textcolor{stringliteral}{"{}\(\backslash\)nÂ¿EstÃ¡ de acuerdo?\(\backslash\)n[S]i | [N]o: "{}};}
-\DoxyCodeLine{165         cin>>acuerdo;}
+\DoxyCodeLine{160         cout<<\textcolor{stringliteral}{"{}\(\backslash\)t\(\backslash\)t|\_\_Inserte una opcion valida: "{}};}
+\DoxyCodeLine{161         cin>>opcFormato;}
+\DoxyCodeLine{162         opcFormato = toupper(opcFormato);}
+\DoxyCodeLine{163     \}}
+\DoxyCodeLine{164 }
+\DoxyCodeLine{165     \textcolor{keywordtype}{bool} estaDeAcuerdo;}
 \DoxyCodeLine{166 }
-\DoxyCodeLine{167         acuerdo = toupper(acuerdo);}
-\DoxyCodeLine{168 }
-\DoxyCodeLine{169         \textcolor{keywordflow}{while} (acuerdo != \textcolor{charliteral}{'S'} and acuerdo != \textcolor{charliteral}{'N'}) \{}
-\DoxyCodeLine{170             cout<<\textcolor{stringliteral}{"{}\(\backslash\)nInserte una opcion valida: "{}};}
-\DoxyCodeLine{171             cin>>acuerdo;}
-\DoxyCodeLine{172             acuerdo = toupper(acuerdo);}
-\DoxyCodeLine{173         \}}
-\DoxyCodeLine{174 }
+\DoxyCodeLine{167     \textcolor{keywordflow}{if}(opcFormato == \textcolor{charliteral}{'A'} and img-\/>\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() != \textcolor{stringliteral}{"{}P2"{}} and img-\/>\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() != \textcolor{stringliteral}{"{}P2C"{}} and img-\/>\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() != \textcolor{stringliteral}{"{}P5"{}})}
+\DoxyCodeLine{168     \{}
+\DoxyCodeLine{169         \textcolor{keywordtype}{char} acuerdo;}
+\DoxyCodeLine{170         cout<<\textcolor{stringliteral}{"{}\(\backslash\)nSolo pueden ser almacenadas con formato AIC imÃ¡genes en escala de grises. Se procederÃ¡ a guardar en formato PNM.\(\backslash\)nPresione cualquier tecla para continuar."{}};}
+\DoxyCodeLine{171         cout<<\textcolor{stringliteral}{"{}\(\backslash\)nÂ¿EstÃ¡ de acuerdo?\(\backslash\)n[S]i | [N]o:\(\backslash\)n>"{}};}
+\DoxyCodeLine{172         cin>>acuerdo;}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174         acuerdo = toupper(acuerdo);}
 \DoxyCodeLine{175 }
-\DoxyCodeLine{176         \textcolor{keywordflow}{if}(acuerdo == \textcolor{charliteral}{'S'})}
+\DoxyCodeLine{176         \textcolor{keywordflow}{while} (acuerdo != \textcolor{charliteral}{'S'} and acuerdo != \textcolor{charliteral}{'N'})}
 \DoxyCodeLine{177         \{}
-\DoxyCodeLine{178             estaDeAcuerdo = \textcolor{keyword}{true};}
-\DoxyCodeLine{179             opcFormato = \textcolor{charliteral}{'P'};}
-\DoxyCodeLine{180         \}}
-\DoxyCodeLine{181         \textcolor{keywordflow}{else}}
-\DoxyCodeLine{182             estaDeAcuerdo = \textcolor{keyword}{false};}
-\DoxyCodeLine{183 }
-\DoxyCodeLine{184         \textcolor{keywordflow}{if}(estaDeAcuerdo)}
-\DoxyCodeLine{185         \{}
-\DoxyCodeLine{186             \mbox{\hyperlink{class_gestor_de_archivos}{GestorDeArchivos}}* archi;}
-\DoxyCodeLine{187 }
-\DoxyCodeLine{188             archi = \textcolor{keyword}{new} \mbox{\hyperlink{class_archivos_p_n_m}{ArchivosPNM}};}
-\DoxyCodeLine{189 }
-\DoxyCodeLine{190 }
-\DoxyCodeLine{191             archi-\/>\mbox{\hyperlink{class_gestor_de_archivos_ad2f950c7c54f9883b7863b9afe076cda}{guardar}}(img);}
-\DoxyCodeLine{192         \}\textcolor{keywordflow}{else}}
-\DoxyCodeLine{193         \{}
-\DoxyCodeLine{194             cout<<\textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t|\_\_No se pudo guardar la Imagen."{}};}
-\DoxyCodeLine{195             cout.flush();}
-\DoxyCodeLine{196         \}}
-\DoxyCodeLine{197 }
-\DoxyCodeLine{198     \}}
+\DoxyCodeLine{178             cin.clear();}
+\DoxyCodeLine{179             cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{180             cout<<\textcolor{stringliteral}{"{}\(\backslash\)nInserte una opcion valida: "{}};}
+\DoxyCodeLine{181             cin>>acuerdo;}
+\DoxyCodeLine{182             acuerdo = toupper(acuerdo);}
+\DoxyCodeLine{183         \}}
+\DoxyCodeLine{184 }
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186         \textcolor{keywordflow}{if}(acuerdo == \textcolor{charliteral}{'S'})}
+\DoxyCodeLine{187         \{}
+\DoxyCodeLine{188             estaDeAcuerdo = \textcolor{keyword}{true};}
+\DoxyCodeLine{189             opcFormato = \textcolor{charliteral}{'P'};}
+\DoxyCodeLine{190         \}}
+\DoxyCodeLine{191         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{192             estaDeAcuerdo = \textcolor{keyword}{false};}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194         \textcolor{keywordflow}{if}(!estaDeAcuerdo)}
+\DoxyCodeLine{195         \{}
+\DoxyCodeLine{196             cout<<\textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t|\_\_No se pudo guardar la Imagen."{}};}
+\DoxyCodeLine{197             cout.flush();}
+\DoxyCodeLine{198         \}}
 \DoxyCodeLine{199 }
-\DoxyCodeLine{200     \mbox{\hyperlink{class_gestor_de_archivos}{GestorDeArchivos}} *archi;}
+\DoxyCodeLine{200     \}}
 \DoxyCodeLine{201 }
-\DoxyCodeLine{202     \textcolor{keywordflow}{if}(opcFormato == \textcolor{charliteral}{'A'})}
-\DoxyCodeLine{203     \{}
-\DoxyCodeLine{204         archi = \textcolor{keyword}{new} \mbox{\hyperlink{class_archivos_a_i_c}{ArchivosAIC}};}
-\DoxyCodeLine{205 }
-\DoxyCodeLine{206         archi-\/>\mbox{\hyperlink{class_gestor_de_archivos_ad2f950c7c54f9883b7863b9afe076cda}{guardar}}(img);}
-\DoxyCodeLine{207     \}\textcolor{keywordflow}{else}}
-\DoxyCodeLine{208     \{}
-\DoxyCodeLine{209         archi = \textcolor{keyword}{new} \mbox{\hyperlink{class_archivos_p_n_m}{ArchivosPNM}};}
-\DoxyCodeLine{210 }
-\DoxyCodeLine{211         archi-\/>\mbox{\hyperlink{class_gestor_de_archivos_ad2f950c7c54f9883b7863b9afe076cda}{guardar}}(img);}
-\DoxyCodeLine{212     \}}
+\DoxyCodeLine{202     \mbox{\hyperlink{class_gestor_de_archivos}{GestorDeArchivos}} *archi;}
+\DoxyCodeLine{203 }
+\DoxyCodeLine{204     \textcolor{keywordflow}{if}(opcFormato == \textcolor{charliteral}{'A'})}
+\DoxyCodeLine{205     \{}
+\DoxyCodeLine{206         archi = \textcolor{keyword}{new} \mbox{\hyperlink{class_archivos_a_i_c}{ArchivosAIC}};}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208         archi-\/>\mbox{\hyperlink{class_gestor_de_archivos_ad2f950c7c54f9883b7863b9afe076cda}{guardar}}(img);}
+\DoxyCodeLine{209     \}}
+\DoxyCodeLine{210     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{211     \{}
+\DoxyCodeLine{212         archi = \textcolor{keyword}{new} \mbox{\hyperlink{class_archivos_p_n_m}{ArchivosPNM}};}
 \DoxyCodeLine{213 }
-\DoxyCodeLine{214 }
-\DoxyCodeLine{215 \}}
+\DoxyCodeLine{214         archi-\/>\mbox{\hyperlink{class_gestor_de_archivos_ad2f950c7c54f9883b7863b9afe076cda}{guardar}}(img);}
+\DoxyCodeLine{215     \}}
+\DoxyCodeLine{216 }
+\DoxyCodeLine{217 }
+\DoxyCodeLine{218 \}}
 
 \end{DoxyCode}
 
@@ -611,16 +614,16 @@ llevar\+Registro Permite llevar un registro de las imÃ¡genes graficadas.
 \end{DoxyParams}
 
 
-Definición en la línea 135 del archivo espaciodetrabajo.\+cpp.
+Definición en la línea 137 del archivo espaciodetrabajo.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{136 \{}
-\DoxyCodeLine{137     ofstream registro;}
-\DoxyCodeLine{138     registro.open(\textcolor{stringliteral}{"{}registro.txt"{}});}
-\DoxyCodeLine{139 }
-\DoxyCodeLine{140     registro << opcDir << \textcolor{stringliteral}{"{} "{}} << opcArch;}
-\DoxyCodeLine{141 \}}
+\DoxyCodeLine{138 \{}
+\DoxyCodeLine{139     ofstream registro;}
+\DoxyCodeLine{140     registro.open(\textcolor{stringliteral}{"{}registro.txt"{}});}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142     registro << opcDir << \textcolor{stringliteral}{"{} "{}} << opcArch;}
+\DoxyCodeLine{143 \}}
 
 \end{DoxyCode}
 

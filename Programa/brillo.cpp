@@ -100,6 +100,7 @@ void Brillo::cambiaOpcion()
 
 void Brillo::consultarDiferencia(Imagen &imagen)
 {
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
     char opc;
     cout<<"\t¿Desea especificar cuanto aumentar/reducir?\n\t|__[S]i\n\t|__[N]o\n\t\t>>";
     cout.flush();
@@ -120,7 +121,6 @@ void Brillo::consultarDiferencia(Imagen &imagen)
         diferencia = 50;
     else
     {
-        int cantidad;
         diferencia = -1;
         while(diferencia <= 0 or diferencia >= imagen.getRango())
         {
@@ -128,8 +128,7 @@ void Brillo::consultarDiferencia(Imagen &imagen)
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout<<"\t|__Ingrese una cantidad dentro del rango [0, "<<imagen.getRango()<<"]: ";
             cout.flush();
-            cin>>cantidad;
-            diferencia = cantidad;
+            cin>>diferencia;
         }
     }
 }

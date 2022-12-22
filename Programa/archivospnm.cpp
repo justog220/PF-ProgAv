@@ -10,15 +10,16 @@ Imagen ArchivosPNM::leer(string ruta)
     Imagen img;
     archi.open(ruta, ios::in);
 
-    if(!archi.is_open()){
+    if(!archi.is_open())
+    {
         cout<<"Error al abrir la imagen."<<endl;
         cout<<ruta;
-    }else{
+    }
+    else
+    {
         getline(archi, identificador);
 
         img.setIdentificador(identificador);
-        char numId;
-        numId=identificador[1];
 
         string comentario;
         int filasAux, columnasAux;
@@ -46,11 +47,9 @@ Imagen ArchivosPNM::leer(string ruta)
 
         img.setTamanio();
 
-
-        int rangoAux;
-
-        if(numId!=1 and numId!=4)
+        if(identificador[1]!=1 and identificador[1]!=4)
         {
+            int rangoAux;
             archi>>rangoAux;
             img.setRango(rangoAux);
         }
@@ -66,7 +65,7 @@ Imagen ArchivosPNM::leer(string ruta)
 
         int posFinal;
 
-        switch(numId)
+        switch(identificador[1])
         {
         case '1':
             img.setRango(1);
@@ -87,7 +86,6 @@ Imagen ArchivosPNM::leer(string ruta)
             archi.close();
             break;
         case '2':
-            getline(archi, linea,'\n');
             for(int fila=0; fila<filasAux; fila++)
             {
                 for(int columna=0; columna<columnasAux; columna++)
@@ -104,11 +102,11 @@ Imagen ArchivosPNM::leer(string ruta)
             archi.close();
             break;
         case '3':
+            int R, G, B;
             for(int fila=0; fila<filasAux; fila++)
             {
                 for(int columna=0; columna<columnasAux; columna++)
                 {
-                    int R, G, B;
                     archi>>R>>G>>B;
                     if(R>img.getRango() or G>img.getRango() or B>img.getRango())
                         throw ExcepcionArchivoCorrupto();
@@ -121,7 +119,7 @@ Imagen ArchivosPNM::leer(string ruta)
             archi.close();
             break;
         case '4':
-
+            img.setRango(1);
             for(int fila=0; fila<filasAux; fila++)
             {
                 for(int columna=0; columna<columnasAux; columna++)
@@ -139,8 +137,6 @@ Imagen ArchivosPNM::leer(string ruta)
             archi.close();
             break;
         case '5':
-
-
             getline(archi, linea, '\n');
 
             posFinal = archi.tellg();
@@ -224,7 +220,9 @@ void ArchivosPNM::guardar(Imagen *img)
     if(!archi.is_open()){
         cout<<"Error al abrir la imagen."<<endl;
         cout<<rutaGuardado;
-    }else{
+    }
+    else
+    {
 
         escribeEncabezado(img);
 

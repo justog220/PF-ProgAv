@@ -9,7 +9,7 @@ Imagen Binarizado::aplicarFiltro(Imagen &imagen)
 {
     if(!sePuedeBinarizar(imagen))
     {
-        cout<<"La imagen no se puede binarizar.";
+        cout<<"La imagen no se puede binarizar.\n";
     }else
     {
         int puntoBinarizacion = obtenerPuntoBinarizacion(imagen);
@@ -29,10 +29,7 @@ Imagen Binarizado::aplicarFiltro(Imagen &imagen)
 
 bool Binarizado::sePuedeBinarizar(Imagen &imagen)
 {
-    if(imagen.getIdentificador() == "P2" or imagen.getIdentificador() == "P5")
-        return true;
-    else
-        return false;
+   return (imagen.getIdentificador() == "P2" or imagen.getIdentificador() == "P5");
 }
 
 int Binarizado::obtenerPuntoBinarizacion(Imagen &imagen)

@@ -24,7 +24,7 @@ void \mbox{\hyperlink{class_tabla_lut_a12354aac4305cfcb905cc602aa5a69cf}{cargar\
 \doxysubsubsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
-vector$<$ string $>$ \mbox{\hyperlink{class_tabla_lut_a3b70ad7546c97d257172e448b10aebc4}{luts}} = \{\char`\"{}./grupo\+\_\+luts/glow.\+lut\char`\"{}, \char`\"{}./grupo\+\_\+luts/Turbo.\+lut\char`\"{}\}
+vector$<$ string $>$ \mbox{\hyperlink{class_tabla_lut_a3b70ad7546c97d257172e448b10aebc4}{luts}}
 \item 
 vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tabla\+Conversion}}
 \end{DoxyCompactItemize}
@@ -120,11 +120,12 @@ Definición en la línea 13 del archivo tablalut.\+cpp.
 \DoxyCodeLine{23 }
 \DoxyCodeLine{24     getline(lut, linea);}
 \DoxyCodeLine{25 }
-\DoxyCodeLine{26     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}.size(); i++)\{}
-\DoxyCodeLine{27         lut>>\mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[i][0]>>\mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[i][1]>>\mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[i][2]>>\mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[i][3];}
-\DoxyCodeLine{28     \}}
-\DoxyCodeLine{29 }
-\DoxyCodeLine{30 \}}
+\DoxyCodeLine{26     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}.size(); i++)}
+\DoxyCodeLine{27     \{}
+\DoxyCodeLine{28         lut>>\mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[i][0]>>\mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[i][1]>>\mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[i][2]>>\mbox{\hyperlink{class_tabla_lut_a2651e4d318b15104cd257884ac8c58d6}{tablaConversion}}[i][3];}
+\DoxyCodeLine{29     \}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \}}
 
 \end{DoxyCode}
 
@@ -179,8 +180,16 @@ Referenciado por Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada()
 \index{TablaLut@{TablaLut}!luts@{luts}}
 \index{luts@{luts}!TablaLut@{TablaLut}}
 \doxyparagraph{\texorpdfstring{luts}{luts}}
-{\footnotesize\ttfamily vector$<$string$>$ Tabla\+Lut\+::luts = \{\char`\"{}./grupo\+\_\+luts/glow.\+lut\char`\"{}, \char`\"{}./grupo\+\_\+luts/Turbo.\+lut\char`\"{}\}\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily vector$<$string$>$ Tabla\+Lut\+::luts\hspace{0.3cm}{\ttfamily [private]}}
 
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}./grupo\_luts/glow.lut"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}./grupo\_luts/Turbo.lut"{}}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
 
 \begin{DoxyParams}{Parámetros}
 {\em Vector} & de strings que almacena las rutas de las tablas LUT manejadas por el software. La posicion de las rutas esta dada por la opcion del constructor -\/ 1. \\
@@ -207,7 +216,7 @@ Referenciado por cargar\+LUT().
 \end{DoxyParams}
 
 
-Definición en la línea 50 del archivo tablalut.\+h.
+Definición en la línea 53 del archivo tablalut.\+h.
 
 
 

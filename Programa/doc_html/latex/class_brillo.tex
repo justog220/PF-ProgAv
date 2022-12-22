@@ -268,27 +268,27 @@ Definición en la línea 101 del archivo brillo.\+cpp.
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{102 \{}
-\DoxyCodeLine{103     \textcolor{keywordtype}{char} opc;}
-\DoxyCodeLine{104     cout<<\textcolor{stringliteral}{"{}\(\backslash\)tÂ¿Desea especificar cuanto aumentar/reducir?\(\backslash\)n\(\backslash\)t|\_\_[S]i\(\backslash\)n\(\backslash\)t|\_\_[N]o\(\backslash\)n\(\backslash\)t\(\backslash\)t>>"{}};}
-\DoxyCodeLine{105     cout.flush();}
-\DoxyCodeLine{106     cin>>opc;}
-\DoxyCodeLine{107 }
-\DoxyCodeLine{108     opc = toupper(opc);}
-\DoxyCodeLine{109 }
-\DoxyCodeLine{110     \textcolor{keywordflow}{while}(opc != \textcolor{charliteral}{'N'} and opc != \textcolor{charliteral}{'S'})}
-\DoxyCodeLine{111     \{}
-\DoxyCodeLine{112         cin.clear();}
-\DoxyCodeLine{113         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
-\DoxyCodeLine{114         cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese una opcion vÃ¡lida: "{}};}
-\DoxyCodeLine{115         cin>>opc;}
-\DoxyCodeLine{116         opc = toupper(opc);}
-\DoxyCodeLine{117     \}}
-\DoxyCodeLine{118 }
-\DoxyCodeLine{119     \textcolor{keywordflow}{if}(opc == \textcolor{charliteral}{'N'})}
-\DoxyCodeLine{120         \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}} = 50;}
-\DoxyCodeLine{121     \textcolor{keywordflow}{else}}
-\DoxyCodeLine{122     \{}
-\DoxyCodeLine{123         \textcolor{keywordtype}{int} cantidad;}
+\DoxyCodeLine{103     cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{104     \textcolor{keywordtype}{char} opc;}
+\DoxyCodeLine{105     cout<<\textcolor{stringliteral}{"{}\(\backslash\)tÂ¿Desea especificar cuanto aumentar/reducir?\(\backslash\)n\(\backslash\)t|\_\_[S]i\(\backslash\)n\(\backslash\)t|\_\_[N]o\(\backslash\)n\(\backslash\)t\(\backslash\)t>>"{}};}
+\DoxyCodeLine{106     cout.flush();}
+\DoxyCodeLine{107     cin>>opc;}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109     opc = toupper(opc);}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111     \textcolor{keywordflow}{while}(opc != \textcolor{charliteral}{'N'} and opc != \textcolor{charliteral}{'S'})}
+\DoxyCodeLine{112     \{}
+\DoxyCodeLine{113         cin.clear();}
+\DoxyCodeLine{114         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{115         cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese una opcion vÃ¡lida: "{}};}
+\DoxyCodeLine{116         cin>>opc;}
+\DoxyCodeLine{117         opc = toupper(opc);}
+\DoxyCodeLine{118     \}}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{120     \textcolor{keywordflow}{if}(opc == \textcolor{charliteral}{'N'})}
+\DoxyCodeLine{121         \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}} = 50;}
+\DoxyCodeLine{122     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{123     \{}
 \DoxyCodeLine{124         \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}} = -\/1;}
 \DoxyCodeLine{125         \textcolor{keywordflow}{while}(diferencia <= 0 or diferencia >= imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
 \DoxyCodeLine{126         \{}
@@ -296,11 +296,10 @@ Definición en la línea 101 del archivo brillo.\+cpp.
 \DoxyCodeLine{128             cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
 \DoxyCodeLine{129             cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese una cantidad dentro del rango [0, "{}}<<imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}()<<\textcolor{stringliteral}{"{}]: "{}};}
 \DoxyCodeLine{130             cout.flush();}
-\DoxyCodeLine{131             cin>>cantidad;}
-\DoxyCodeLine{132             \mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}} = cantidad;}
-\DoxyCodeLine{133         \}}
-\DoxyCodeLine{134     \}}
-\DoxyCodeLine{135 \}}
+\DoxyCodeLine{131             cin>>\mbox{\hyperlink{class_brillo_a2c892778cd949ab42c8be9fe607f7a14}{diferencia}};}
+\DoxyCodeLine{132         \}}
+\DoxyCodeLine{133     \}}
+\DoxyCodeLine{134 \}}
 
 \end{DoxyCode}
 

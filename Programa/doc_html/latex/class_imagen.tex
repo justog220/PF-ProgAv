@@ -127,13 +127,13 @@ borrar\+Imagen MÃ©todo que permite vaciar el arreglo de \mbox{\hyperlink{class
 
 
 
-Definición en la línea 89 del archivo imagen.\+cpp.
+Definición en la línea 96 del archivo imagen.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{90 \{}
-\DoxyCodeLine{91     \mbox{\hyperlink{class_imagen_a3253ba68ee7bba91e57b634a85047404}{imag}}.clear();}
-\DoxyCodeLine{92 \}}
+\DoxyCodeLine{97 \{}
+\DoxyCodeLine{98     \mbox{\hyperlink{class_imagen_a3253ba68ee7bba91e57b634a85047404}{imag}}.clear();}
+\DoxyCodeLine{99 \}}
 
 \end{DoxyCode}
 
@@ -173,18 +173,25 @@ Definición en la línea 72 del archivo imagen.\+cpp.
 \DoxyCodeLine{73 \{}
 \DoxyCodeLine{74     \textcolor{keywordtype}{bool} esEsquina = \textcolor{keyword}{false};}
 \DoxyCodeLine{75 }
-\DoxyCodeLine{76     \textcolor{keywordflow}{if} (f == 0 and c == 0)\{}
-\DoxyCodeLine{77         esEsquina = \textcolor{keyword}{true};}
-\DoxyCodeLine{78     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (f == 0 and c == \mbox{\hyperlink{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}{columnas}}-\/1) \{}
-\DoxyCodeLine{79         esEsquina = \textcolor{keyword}{true};}
-\DoxyCodeLine{80     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (f == \mbox{\hyperlink{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}}-\/1 and c == 0)\{}
-\DoxyCodeLine{81         esEsquina = \textcolor{keyword}{true};}
-\DoxyCodeLine{82     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (f == \mbox{\hyperlink{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}}-\/1 and c == \mbox{\hyperlink{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}{columnas}}-\/1)\{}
-\DoxyCodeLine{83         esEsquina = \textcolor{keyword}{true};}
-\DoxyCodeLine{84     \}}
-\DoxyCodeLine{85 }
-\DoxyCodeLine{86     \textcolor{keywordflow}{return} esEsquina;}
-\DoxyCodeLine{87 \}}
+\DoxyCodeLine{76     \textcolor{keywordflow}{if} (f == 0 and c == 0)}
+\DoxyCodeLine{77     \{}
+\DoxyCodeLine{78         esEsquina = \textcolor{keyword}{true};}
+\DoxyCodeLine{79     \}}
+\DoxyCodeLine{80     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (f == 0 and c == \mbox{\hyperlink{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}{columnas}}-\/1)}
+\DoxyCodeLine{81     \{}
+\DoxyCodeLine{82         esEsquina = \textcolor{keyword}{true};}
+\DoxyCodeLine{83     \}}
+\DoxyCodeLine{84     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (f == \mbox{\hyperlink{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}}-\/1 and c == 0)}
+\DoxyCodeLine{85     \{}
+\DoxyCodeLine{86         esEsquina = \textcolor{keyword}{true};}
+\DoxyCodeLine{87     \}}
+\DoxyCodeLine{88     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (f == \mbox{\hyperlink{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}}-\/1 and c == \mbox{\hyperlink{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}{columnas}}-\/1)}
+\DoxyCodeLine{89     \{}
+\DoxyCodeLine{90         esEsquina = \textcolor{keyword}{true};}
+\DoxyCodeLine{91     \}}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93     \textcolor{keywordflow}{return} esEsquina;}
+\DoxyCodeLine{94 \}}
 
 \end{DoxyCode}
 
@@ -206,13 +213,13 @@ bool que indica si una \mbox{\hyperlink{class_imagen}{Imagen}} es de intensidade
 \end{DoxyReturn}
 
 
-Definición en la línea 94 del archivo imagen.\+cpp.
+Definición en la línea 101 del archivo imagen.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{95 \{}
-\DoxyCodeLine{96     \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}} == \textcolor{stringliteral}{"{}P1"{}} or \mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}} == \textcolor{stringliteral}{"{}P2"{}} or \mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}} == \textcolor{stringliteral}{"{}P4"{}} or \mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}} == \textcolor{stringliteral}{"{}P5"{}});}
-\DoxyCodeLine{97 \}}
+\DoxyCodeLine{102 \{}
+\DoxyCodeLine{103     \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}} == \textcolor{stringliteral}{"{}P1"{}} or \mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}} == \textcolor{stringliteral}{"{}P2"{}} or \mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}} == \textcolor{stringliteral}{"{}P4"{}} or \mbox{\hyperlink{class_imagen_a3862cbbf0bb7cf8d56c6f5b769806f38}{identificador}} == \textcolor{stringliteral}{"{}P5"{}});}
+\DoxyCodeLine{104 \}}
 
 \end{DoxyCode}
 
@@ -369,13 +376,13 @@ InformaciÃ³n de la \mbox{\hyperlink{class_imagen}{Imagen}}.
 \end{DoxyReturn}
 
 
-Definición en la línea 104 del archivo imagen.\+cpp.
+Definición en la línea 111 del archivo imagen.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{105 \{}
-\DoxyCodeLine{106     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_imagen_a27a72bf1ea6c01a6a4c3fd6ca3bc5264}{informacion}};}
-\DoxyCodeLine{107 \}}
+\DoxyCodeLine{112 \{}
+\DoxyCodeLine{113     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_imagen_a27a72bf1ea6c01a6a4c3fd6ca3bc5264}{informacion}};}
+\DoxyCodeLine{114 \}}
 
 \end{DoxyCode}
 
@@ -401,13 +408,13 @@ NÃºmero de pixeles.
 \end{DoxyReturn}
 
 
-Definición en la línea 99 del archivo imagen.\+cpp.
+Definición en la línea 106 del archivo imagen.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{100 \{}
-\DoxyCodeLine{101     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}}*\mbox{\hyperlink{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}{columnas}};}
-\DoxyCodeLine{102 \}}
+\DoxyCodeLine{107 \{}
+\DoxyCodeLine{108     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_imagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}}*\mbox{\hyperlink{class_imagen_af63de0598ca965ab3a30b54ee7e2cedc}{columnas}};}
+\DoxyCodeLine{109 \}}
 
 \end{DoxyCode}
 
@@ -485,7 +492,7 @@ Hace referencia a rango.
 
 
 
-Referenciado por Algoritmo\+Del\+Pintor\+::aplicar\+Algoritmo(), Contraste\+::aplicar\+Filtro(), Negativo\+::aplicar\+Filtro(), Binarizado\+::aplicar\+Filtro(), Brillo\+::aumentar\+Brillo(), Brillo\+::consultar\+Diferencia(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+B(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+G(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+R(), Archivos\+PNM\+::escribe\+Encabezado(), Ventana\+De\+Graficacion\+::graficar\+Imagen(), Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada(), Archivos\+PNM\+::leer() y Binarizado\+::obtener\+Punto\+Binarizacion().
+Referenciado por Algoritmo\+Del\+Pintor\+::aplicar\+Algoritmo(), Contraste\+::aplicar\+Filtro(), Negativo\+::aplicar\+Filtro(), Binarizado\+::aplicar\+Filtro(), Brillo\+::aumentar\+Brillo(), Brillo\+::consultar\+Diferencia(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+B(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+G(), Procesador\+Estadistico\+::devuelve\+Frecuencia\+R(), Archivos\+PNM\+::escribe\+Encabezado(), Ventana\+De\+Graficacion\+::graficar\+Imagen(), Ventana\+De\+Graficacion\+::graficar\+Imagen\+Pseudocoloreada(), Archivos\+AIC\+::leer(), Archivos\+PNM\+::leer() y Binarizado\+::obtener\+Punto\+Binarizacion().
 
 \mbox{\Hypertarget{class_imagen_a2f484fcbef63dfa2fe6c2ee418a7d856}\label{class_imagen_a2f484fcbef63dfa2fe6c2ee418a7d856}} 
 \index{Imagen@{Imagen}!setColumnas@{setColumnas}}
@@ -612,13 +619,13 @@ set\+Informacion Establece la informaciÃ³n de la \mbox{\hyperlink{class_imagen
 \end{DoxyParams}
 
 
-Definición en la línea 109 del archivo imagen.\+cpp.
+Definición en la línea 116 del archivo imagen.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{110 \{}
-\DoxyCodeLine{111     \mbox{\hyperlink{class_imagen_a27a72bf1ea6c01a6a4c3fd6ca3bc5264}{informacion}} = value;}
-\DoxyCodeLine{112 \}}
+\DoxyCodeLine{117 \{}
+\DoxyCodeLine{118     \mbox{\hyperlink{class_imagen_a27a72bf1ea6c01a6a4c3fd6ca3bc5264}{informacion}} = value;}
+\DoxyCodeLine{119 \}}
 
 \end{DoxyCode}
 

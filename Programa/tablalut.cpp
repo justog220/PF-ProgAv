@@ -23,7 +23,8 @@ void TablaLut::cargarLUT(int opc)
 
     getline(lut, linea);
 
-    for (int i = 0; i < tablaConversion.size(); i++){
+    for (int i = 0; i < tablaConversion.size(); i++)
+    {
         lut>>tablaConversion[i][0]>>tablaConversion[i][1]>>tablaConversion[i][2]>>tablaConversion[i][3];
     }
 

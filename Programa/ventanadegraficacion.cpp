@@ -4,6 +4,7 @@
 
 VentanaDeGraficacion::VentanaDeGraficacion()
 {
+
 }
 
 
@@ -135,8 +136,10 @@ void VentanaDeGraficacion::cargarImagen()
 
     if(extension == "pnm")
         archi = new ArchivosPNM;
-    else
+    else if(extension == "aic")
         archi = new ArchivosAIC;
+    else
+        throw ExcepcionArchivoNoSoportado();
 
     imagen = archi->leer(ruta);
 
@@ -178,10 +181,6 @@ void VentanaDeGraficacion::graficarHistograma()
     grafHistograma->graficarHistograma();
 
     grafHistograma->show();
-
-//    appl->exec();
-
-
 }
 
 void VentanaDeGraficacion::setApp(QApplication *app)
@@ -194,7 +193,6 @@ void VentanaDeGraficacion::setEspacio(EspacioDeTrabajo &esp)
     espacio = &esp;
 }
 
-//NO es necesario que se llame keyPress, lo importante que
 void VentanaDeGraficacion::keyPressEvent(QKeyEvent *event)
 {
     Filtros* filtros;
@@ -245,6 +243,7 @@ void VentanaDeGraficacion::keyPressEvent(QKeyEvent *event)
         imagen = filtros->aplicarFiltro(imagen);
         show();
         repaint();
+        setFocus();
     }
 
     if(ctrl and menos)
@@ -256,6 +255,7 @@ void VentanaDeGraficacion::keyPressEvent(QKeyEvent *event)
         this->close();
         imagen = filtros->aplicarFiltro(imagen);
         show();
+        setFocus();
         repaint();
     }
 
@@ -302,9 +302,9 @@ void VentanaDeGraficacion::keyPressEvent(QKeyEvent *event)
         cout.flush();
         string ruta = espacio->getRuta(opcDir, opcArch);
 
+        appl->closeAllWindows();
         espacio->guardarImagen(&imagen);
 
-        appl->closeAllWindows();
     }
 
     if(ctrl and h)
@@ -328,9 +328,12 @@ void VentanaDeGraficacion::keyPressEvent(QKeyEvent *event)
     {
         cout<<"Ctrl + 1: Se pseudocolorea con glow.lut\n";
         cout.flush();
+
         seGraficaPseudocoloreada = true;
         tablaDePseudocoloreo = 1;
+
         repaint();
+
         seGraficaPseudocoloreada = false;
         tablaDePseudocoloreo = 0;
     }
@@ -338,9 +341,12 @@ void VentanaDeGraficacion::keyPressEvent(QKeyEvent *event)
     if (ctrl and dos)
     {
         cout<<"Ctrl + 2: Se pseudocolorea con Turbo.lut\n";
+
         seGraficaPseudocoloreada = true;
         tablaDePseudocoloreo = 2;
+
         repaint();
+
         seGraficaPseudocoloreada = false;
         tablaDePseudocoloreo = 0;
     }
@@ -352,6 +358,7 @@ void VentanaDeGraficacion::keyPressEvent(QKeyEvent *event)
         appl->closeAllWindows();
         imagen = filtros->aplicarFiltro(imagen);
         show();
+        setFocus();
         repaint();
     }
 }

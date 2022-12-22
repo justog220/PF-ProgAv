@@ -73,13 +73,20 @@ bool Imagen::elPixelEsEsquina(int f, int c)
 {
     bool esEsquina = false;
 
-    if (f == 0 and c == 0){
+    if (f == 0 and c == 0)
+    {
         esEsquina = true;
-    }else if (f == 0 and c == columnas-1) {
+    }
+    else if (f == 0 and c == columnas-1)
+    {
         esEsquina = true;
-    }else if (f == filas-1 and c == 0){
+    }
+    else if (f == filas-1 and c == 0)
+    {
         esEsquina = true;
-    }else if (f == filas-1 and c == columnas-1){
+    }
+    else if (f == filas-1 and c == columnas-1)
+    {
         esEsquina = true;
     }
 

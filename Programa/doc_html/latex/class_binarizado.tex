@@ -110,7 +110,7 @@ Definición en la línea 8 del archivo binarizado.\+cpp.
 \DoxyCodeLine{9 \{}
 \DoxyCodeLine{10     \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_binarizado_a3313de80b14374324dcbdbdbcde387cc}{sePuedeBinarizar}}(imagen))}
 \DoxyCodeLine{11     \{}
-\DoxyCodeLine{12         cout<<\textcolor{stringliteral}{"{}La imagen no se puede binarizar."{}};}
+\DoxyCodeLine{12         cout<<\textcolor{stringliteral}{"{}La imagen no se puede binarizar.\(\backslash\)n"{}};}
 \DoxyCodeLine{13     \}\textcolor{keywordflow}{else}}
 \DoxyCodeLine{14     \{}
 \DoxyCodeLine{15         \textcolor{keywordtype}{int} puntoBinarizacion = \mbox{\hyperlink{class_binarizado_a5adc370c96c8d0122a233d27bc84b475}{obtenerPuntoBinarizacion}}(imagen);}
@@ -153,25 +153,25 @@ Nivel a partir del que se binariza.
 \end{DoxyReturn}
 
 
-Definición en la línea 38 del archivo binarizado.\+cpp.
+Definición en la línea 35 del archivo binarizado.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{39 \{}
-\DoxyCodeLine{40     \textcolor{keywordtype}{int} punto;}
-\DoxyCodeLine{41     cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese nivel a partir del cual se binariza [0, "{}}<<imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}()<<\textcolor{stringliteral}{"{}]: "{}};}
-\DoxyCodeLine{42     cin>>punto;}
-\DoxyCodeLine{43 }
-\DoxyCodeLine{44     \textcolor{keywordflow}{while}(punto < 0 or punto > imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() or !cin.good())}
-\DoxyCodeLine{45     \{}
-\DoxyCodeLine{46         cin.clear();}
-\DoxyCodeLine{47         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
-\DoxyCodeLine{48         cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese un nivel vÃ¡lido [0, "{}}<<imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}()<<\textcolor{stringliteral}{"{}]: "{}};}
-\DoxyCodeLine{49         cin>>punto;}
-\DoxyCodeLine{50     \}}
-\DoxyCodeLine{51 }
-\DoxyCodeLine{52     \textcolor{keywordflow}{return} punto;}
-\DoxyCodeLine{53 \}}
+\DoxyCodeLine{36 \{}
+\DoxyCodeLine{37     \textcolor{keywordtype}{int} punto;}
+\DoxyCodeLine{38     cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese nivel a partir del cual se binariza [0, "{}}<<imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}()<<\textcolor{stringliteral}{"{}]: "{}};}
+\DoxyCodeLine{39     cin>>punto;}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keywordflow}{while}(punto < 0 or punto > imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}() or !cin.good())}
+\DoxyCodeLine{42     \{}
+\DoxyCodeLine{43         cin.clear();}
+\DoxyCodeLine{44         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{45         cout<<\textcolor{stringliteral}{"{}\(\backslash\)t|\_\_Ingrese un nivel vÃ¡lido [0, "{}}<<imagen.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}()<<\textcolor{stringliteral}{"{}]: "{}};}
+\DoxyCodeLine{46         cin>>punto;}
+\DoxyCodeLine{47     \}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keywordflow}{return} punto;}
+\DoxyCodeLine{50 \}}
 
 \end{DoxyCode}
 
@@ -207,11 +207,8 @@ Definición en la línea 30 del archivo binarizado.\+cpp.
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{31 \{}
-\DoxyCodeLine{32     \textcolor{keywordflow}{if}(imagen.\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() == \textcolor{stringliteral}{"{}P2"{}} or imagen.\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() == \textcolor{stringliteral}{"{}P5"{}})}
-\DoxyCodeLine{33         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
-\DoxyCodeLine{34     \textcolor{keywordflow}{else}}
-\DoxyCodeLine{35         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{36 \}}
+\DoxyCodeLine{32    \textcolor{keywordflow}{return} (imagen.\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() == \textcolor{stringliteral}{"{}P2"{}} or imagen.\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}() == \textcolor{stringliteral}{"{}P5"{}});}
+\DoxyCodeLine{33 \}}
 
 \end{DoxyCode}
 

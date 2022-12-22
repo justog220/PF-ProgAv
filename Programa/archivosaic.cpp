@@ -13,10 +13,12 @@ Imagen ArchivosAIC::leer(string ruta)
     Imagen img;
     archi.open(ruta, ios::in);
 
-    if(!archi.is_open()){
+    if(!archi.is_open())
+    {
         cout<<"Error al abrir la imagen."<<endl;
-        cout<<ruta;
-    }else{
+    }
+    else
+    {
         try{
             string linea;
 
@@ -31,7 +33,7 @@ Imagen ArchivosAIC::leer(string ruta)
             while(linea[0]=='#')
             {
                 img.setInformacion(linea);
-                 auxPosicion = archi.tellg();
+                auxPosicion = archi.tellg();
                 getline(archi, linea);
             }
 
@@ -85,7 +87,7 @@ Imagen ArchivosAIC::leer(string ruta)
             archi.seekg(auxPosicion);
 
             filas = 0;
-            acumuladorColumnas = 0;
+
             int nivelDeGris, cantidadRepite;
 
             Pixel pixelAux;
@@ -111,17 +113,21 @@ Imagen ArchivosAIC::leer(string ruta)
                 for(uint i = 0; i < datosLinea.size(); i = i+2)
                 {
                     nivelDeGris = datosLinea.at(i);
+                    if(nivelDeGris > img.getRango())
+                        throw ExcepcionArchivoCorrupto();
+
                     cantidadRepite = datosLinea.at(i+1);
+                    pixelAux.setPixelEscala(nivelDeGris);
                     for(int columna = 0; columna < cantidadRepite; columna++)
                     {
-                        pixelAux.setPixelEscala(nivelDeGris);
                         img.setPixel(filas, columna+acumuladorColumnas, pixelAux);
-                        contadorPixeles += 1;
+                        contadorPixeles++;
                     }
                     acumuladorColumnas += cantidadRepite;
 
 
                 }
+
                 ++filas;
             }
 
@@ -129,9 +135,10 @@ Imagen ArchivosAIC::leer(string ruta)
                 throw ExcepcionArchivoCorrupto();
 
             return img;
-    } catch(exception){
+    }catch(exception)
+        {
         throw ExcepcionArchivoCorrupto();
-    }
+        }
 
     }
 }

@@ -96,7 +96,8 @@ int ProcesadorEstadistico::devuelveRMasFrecuente(Imagen &img)
     int mayor = 0, r = 0;
 
     for(int i = 0; i < frecuenciasR.size(); i++)
-        if (frecuenciasR[i] > mayor){
+        if (frecuenciasR[i] > mayor)
+        {
             r = i;
             mayor = frecuenciasR[i];
         }
@@ -110,7 +111,8 @@ int ProcesadorEstadistico::devuelveGMasFrecuente(Imagen &img)
     int mayor = 0, g = 0;
 
     for(int i = 0; i<frecuenciasG.size(); i++)
-        if (frecuenciasG[i] > mayor){
+        if (frecuenciasG[i] > mayor)
+        {
             g = i;
             mayor = frecuenciasG[i];
         }
@@ -125,7 +127,8 @@ int ProcesadorEstadistico::devuelveBMasFrecuente(Imagen &img)
     int mayor = 0, b = 0;
 
     for(int i = 0; i<frecuenciasB.size(); i++)
-        if (frecuenciasB[i] > mayor){
+        if (frecuenciasB[i] > mayor)
+        {
             b = i;
             mayor = frecuenciasB[i];
         }
@@ -211,22 +214,6 @@ vector<int> ProcesadorEstadistico::hallarMaximoMinimoB(Imagen &img)
 
 int ProcesadorEstadistico::devolverIntensidadMedia(Imagen &img)
 {
-//    vector<int> intensidades = devuelveFrecuenciaIntensidad(img);
-
-//    uint menor, mayor;
-//    bool seGuardoMenor = false;
-
-//    for (int i = 0; i < intensidades.size(); i++)
-//        if (intensidades[i] != 0) {
-//            if (not seGuardoMenor){
-//                menor = i;
-//                seGuardoMenor = true;
-//            }
-//            mayor = i;
-//        }
-
-//    return (mayor+menor)/2;
-
     uint acumulador = 0, pixeles = 0;//(img->getFilas()*img->getColumnas());
 
     for(int i=0; i<img.getFilas(); i++)

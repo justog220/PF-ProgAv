@@ -1,7 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"filtromediana_8cpp_source.html":[3,0,16],
-"filtromediana_8h.html":[3,0,17],
 "filtromediana_8h_source.html":[3,0,17],
 "filtropasaaltos_8cpp.html":[3,0,18],
 "filtropasaaltos_8cpp_source.html":[3,0,18],

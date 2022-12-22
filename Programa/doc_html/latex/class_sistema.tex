@@ -113,56 +113,60 @@ Definición en la línea 8 del archivo sistema.\+cpp.
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{9 \{}
-\DoxyCodeLine{10     \mbox{\hyperlink{class_archivos_p_n_m}{ArchivosPNM}} archi;}
+\DoxyCodeLine{10     \textcolor{keywordtype}{bool} seGraficoUnaImagen = \textcolor{keyword}{false};}
 \DoxyCodeLine{11 }
-\DoxyCodeLine{12     \mbox{\hyperlink{class_imagen}{Imagen}} img;}
-\DoxyCodeLine{13 }
-\DoxyCodeLine{14     \textcolor{keywordtype}{bool} seGraficoUnaImagen = \textcolor{keyword}{false};}
-\DoxyCodeLine{15     \textcolor{keywordflow}{while}(\textcolor{keyword}{true})}
-\DoxyCodeLine{16     \{}
-\DoxyCodeLine{17         \textcolor{keywordtype}{int} opcDir = \mbox{\hyperlink{class_sistema_a3d21b03b0accde8d77a3b0baea7fad06}{obtenerOpcDir}}();}
-\DoxyCodeLine{18 }
-\DoxyCodeLine{19         \textcolor{keywordflow}{if}(opcDir == \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a656de37ac8cad97cd647fdebd779b0ed}{getCarpetas}}().size()+1)}
-\DoxyCodeLine{20         \{}
-\DoxyCodeLine{21             vector<int> opciones = \mbox{\hyperlink{class_sistema_ae421480e9be1cc899b5bece4b57a1940}{recuperarOpciones}}();}
-\DoxyCodeLine{22 }
-\DoxyCodeLine{23             \textcolor{keywordflow}{if}(opciones[0] != -\/10 and opciones[1] != -\/10)}
-\DoxyCodeLine{24             \{}
-\DoxyCodeLine{25                 \mbox{\hyperlink{class_sistema_a6a5ed28b40bb0c15c47b9ed4f56326b1}{mostrarAtajos}}();}
-\DoxyCodeLine{26 }
-\DoxyCodeLine{27                 \mbox{\hyperlink{class_sistema_a7e6d58ec7d28d4f773764353846db680}{iniciarGraficacion}}(a, opciones[0], opciones[1]);}
-\DoxyCodeLine{28             \}\textcolor{keywordflow}{else}\{}
-\DoxyCodeLine{29                 \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{true};}
-\DoxyCodeLine{30                 system(\textcolor{stringliteral}{"{}clear"{}});}
-\DoxyCodeLine{31                 cout<<\textcolor{stringliteral}{"{}No se pudo recuperar la ejecuciÃ³n previa dado que no se graficÃ³ ninguna imÃ¡gen.\(\backslash\)n"{}};}
-\DoxyCodeLine{32             \}}
-\DoxyCodeLine{33 }
+\DoxyCodeLine{12     \textcolor{keywordflow}{while}(\textcolor{keyword}{true})}
+\DoxyCodeLine{13     \{}
+\DoxyCodeLine{14         \textcolor{keywordtype}{int} opcDir = \mbox{\hyperlink{class_sistema_a3d21b03b0accde8d77a3b0baea7fad06}{obtenerOpcDir}}();}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16         \textcolor{keywordflow}{if}(opcDir == \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a656de37ac8cad97cd647fdebd779b0ed}{getCarpetas}}().size()+1)}
+\DoxyCodeLine{17         \{}
+\DoxyCodeLine{18             vector<int> opciones = \mbox{\hyperlink{class_sistema_ae421480e9be1cc899b5bece4b57a1940}{recuperarOpciones}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20             \textcolor{keywordflow}{if}(opciones[0] != -\/10 and opciones[1] != -\/10)}
+\DoxyCodeLine{21             \{}
+\DoxyCodeLine{22                 \mbox{\hyperlink{class_sistema_a6a5ed28b40bb0c15c47b9ed4f56326b1}{mostrarAtajos}}();}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24                 \mbox{\hyperlink{class_sistema_a7e6d58ec7d28d4f773764353846db680}{iniciarGraficacion}}(a, opciones[0], opciones[1]);}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26                 seGraficoUnaImagen = \textcolor{keyword}{true};}
+\DoxyCodeLine{27             \}}
+\DoxyCodeLine{28             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{29             \{}
+\DoxyCodeLine{30                 \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{31                 system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{32                 cout<<\textcolor{stringliteral}{"{}No se pudo recuperar la ejecuciÃ³n previa dado que no se graficÃ³ ninguna imÃ¡gen.\(\backslash\)n"{}};}
+\DoxyCodeLine{33             \}}
 \DoxyCodeLine{34 }
 \DoxyCodeLine{35 }
-\DoxyCodeLine{36         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcDir == \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a656de37ac8cad97cd647fdebd779b0ed}{getCarpetas}}().size()+2)}
-\DoxyCodeLine{37         \{}
-\DoxyCodeLine{38             \textcolor{keywordflow}{break};}
-\DoxyCodeLine{39         \}\textcolor{keywordflow}{else}\{}
-\DoxyCodeLine{40             \textcolor{keywordtype}{string} ruta = \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a8ba67fb3805b2e366a8d80bee8f2b54e}{getRuta}}(opcDir);}
-\DoxyCodeLine{41 }
-\DoxyCodeLine{42             \textcolor{keywordtype}{int} opcArch = \mbox{\hyperlink{class_sistema_acd5790947da21221e91e603a7bafd0df}{obtenerOpcArch}}(ruta);}
-\DoxyCodeLine{43 }
-\DoxyCodeLine{44             \textcolor{keywordflow}{if} (opcArch != -\/1)}
-\DoxyCodeLine{45             \{}
-\DoxyCodeLine{46                 \mbox{\hyperlink{class_sistema_a6a5ed28b40bb0c15c47b9ed4f56326b1}{mostrarAtajos}}();}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37         \}}
+\DoxyCodeLine{38         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(opcDir == \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a656de37ac8cad97cd647fdebd779b0ed}{getCarpetas}}().size()+2)}
+\DoxyCodeLine{39         \{}
+\DoxyCodeLine{40             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{41         \}}
+\DoxyCodeLine{42         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{43         \{}
+\DoxyCodeLine{44             \textcolor{keywordtype}{string} ruta = \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a8ba67fb3805b2e366a8d80bee8f2b54e}{getRuta}}(opcDir);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46             \textcolor{keywordtype}{int} opcArch = \mbox{\hyperlink{class_sistema_acd5790947da21221e91e603a7bafd0df}{obtenerOpcArch}}(ruta);}
 \DoxyCodeLine{47 }
-\DoxyCodeLine{48                 \mbox{\hyperlink{class_sistema_a7e6d58ec7d28d4f773764353846db680}{iniciarGraficacion}}(a, opcDir, opcArch);}
-\DoxyCodeLine{49 }
-\DoxyCodeLine{50                 seGraficoUnaImagen = \textcolor{keyword}{true};}
-\DoxyCodeLine{51             \}}
-\DoxyCodeLine{52         \}}
-\DoxyCodeLine{53     \}}
-\DoxyCodeLine{54 }
-\DoxyCodeLine{55     \textcolor{keywordflow}{if} (!seGraficoUnaImagen)}
-\DoxyCodeLine{56         \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_ae0634d1dfd3edea5a29ec14a7ef56649}{llevarRegistro}}(-\/10, -\/10);}
-\DoxyCodeLine{57 }
+\DoxyCodeLine{48             \textcolor{keywordflow}{if} (opcArch != -\/1)}
+\DoxyCodeLine{49             \{}
+\DoxyCodeLine{50                 \mbox{\hyperlink{class_sistema_a6a5ed28b40bb0c15c47b9ed4f56326b1}{mostrarAtajos}}();}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52                 \mbox{\hyperlink{class_sistema_a7e6d58ec7d28d4f773764353846db680}{iniciarGraficacion}}(a, opcDir, opcArch);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54                 seGraficoUnaImagen = \textcolor{keyword}{true};}
+\DoxyCodeLine{55             \}}
+\DoxyCodeLine{56         \}}
+\DoxyCodeLine{57     \}}
 \DoxyCodeLine{58 }
-\DoxyCodeLine{59 \}}
+\DoxyCodeLine{59     \textcolor{keywordflow}{if} (!seGraficoUnaImagen)}
+\DoxyCodeLine{60         \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_ae0634d1dfd3edea5a29ec14a7ef56649}{llevarRegistro}}(-\/10, -\/10);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \}}
 
 \end{DoxyCode}
 
@@ -196,39 +200,43 @@ iniciar\+Graficacion MÃ©todo que permite comenzar la graficacion de una \mbox{
 \end{DoxyParams}
 
 
-Definición en la línea 131 del archivo sistema.\+cpp.
+Definición en la línea 135 del archivo sistema.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{132 \{}
-\DoxyCodeLine{133     \mbox{\hyperlink{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}{graf}}.\mbox{\hyperlink{class_ventana_de_graficacion_a0d7b3363ca425030ccfc592874462549}{setOpciones}}(opcDir, opcArch);}
-\DoxyCodeLine{134 }
-\DoxyCodeLine{135     \textcolor{keywordflow}{try} \{}
-\DoxyCodeLine{136         \mbox{\hyperlink{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}{graf}}.\mbox{\hyperlink{class_ventana_de_graficacion_a98cab3ea88696a35561c7257e6b7c790}{cargarImagen}}();}
-\DoxyCodeLine{137 }
-\DoxyCodeLine{138         \mbox{\hyperlink{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}{graf}}.\mbox{\hyperlink{class_ventana_de_graficacion_a77ba6bcbbf535eab89fdae40b7a7bd5c}{setApp}}(a);}
-\DoxyCodeLine{139 }
-\DoxyCodeLine{140         \mbox{\hyperlink{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}{graf}}.show();}
-\DoxyCodeLine{141 }
-\DoxyCodeLine{142         \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{false};}
-\DoxyCodeLine{143 }
+\DoxyCodeLine{136 \{}
+\DoxyCodeLine{137     \mbox{\hyperlink{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}{graf}}.\mbox{\hyperlink{class_ventana_de_graficacion_a0d7b3363ca425030ccfc592874462549}{setOpciones}}(opcDir, opcArch);}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139     \textcolor{keywordflow}{try}}
+\DoxyCodeLine{140     \{}
+\DoxyCodeLine{141         \mbox{\hyperlink{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}{graf}}.\mbox{\hyperlink{class_ventana_de_graficacion_a98cab3ea88696a35561c7257e6b7c790}{cargarImagen}}();}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143         \mbox{\hyperlink{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}{graf}}.\mbox{\hyperlink{class_ventana_de_graficacion_a77ba6bcbbf535eab89fdae40b7a7bd5c}{setApp}}(a);}
 \DoxyCodeLine{144 }
-\DoxyCodeLine{145         a-\/>exec();}
+\DoxyCodeLine{145         \mbox{\hyperlink{class_sistema_af7caad92770751ab0b2b75d8dc4743fd}{graf}}.show();}
 \DoxyCodeLine{146 }
-\DoxyCodeLine{147 }
-\DoxyCodeLine{148     \}  \textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_excepcion_archivo_no_soportado}{ExcepcionArchivoNoSoportado}} \&excepcion) \{}
-\DoxyCodeLine{149         system(\textcolor{stringliteral}{"{}clear"{}});}
-\DoxyCodeLine{150         a-\/>closeAllWindows();}
-\DoxyCodeLine{151         \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{true};}
-\DoxyCodeLine{152         cout<<excepcion.what()<<endl;}
-\DoxyCodeLine{153     \} \textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}} \&excepcion) \{}
-\DoxyCodeLine{154         system(\textcolor{stringliteral}{"{}clear"{}});}
-\DoxyCodeLine{155         a-\/>closeAllWindows();}
-\DoxyCodeLine{156         \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{true};}
-\DoxyCodeLine{157         cout<<excepcion.what()<<endl;}
-\DoxyCodeLine{158     \}}
-\DoxyCodeLine{159 }
-\DoxyCodeLine{160 \}}
+\DoxyCodeLine{147         \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149         a-\/>exec();}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151 }
+\DoxyCodeLine{152     \}}
+\DoxyCodeLine{153     \textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_excepcion_archivo_no_soportado}{ExcepcionArchivoNoSoportado}} \&excepcion)}
+\DoxyCodeLine{154     \{}
+\DoxyCodeLine{155         system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{156         a-\/>closeAllWindows();}
+\DoxyCodeLine{157         \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{158         cout<<excepcion.what()<<endl;}
+\DoxyCodeLine{159     \}}
+\DoxyCodeLine{160     \textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}} \&excepcion)}
+\DoxyCodeLine{161     \{}
+\DoxyCodeLine{162         system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{163         a-\/>closeAllWindows();}
+\DoxyCodeLine{164         \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{165         cout<<excepcion.what()<<endl;}
+\DoxyCodeLine{166     \}}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168 \}}
 
 \end{DoxyCode}
 
@@ -251,32 +259,32 @@ mostrar\+Atajos MÃ©todo que permite mostrar los atajos de teclado y mouse.
 
 
 
-Definición en la línea 177 del archivo sistema.\+cpp.
+Definición en la línea 185 del archivo sistema.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{178 \{}
-\DoxyCodeLine{179     system(\textcolor{stringliteral}{"{}clear"{}});}
-\DoxyCodeLine{180 }
-\DoxyCodeLine{181     ifstream archi;}
-\DoxyCodeLine{182     archi.open(\textcolor{stringliteral}{"{}lista\_de\_atajos.txt"{}});}
-\DoxyCodeLine{183 }
-\DoxyCodeLine{184     \textcolor{keywordtype}{string} linea;}
-\DoxyCodeLine{185 }
-\DoxyCodeLine{186     \textcolor{keywordflow}{if}(!archi.is\_open())}
-\DoxyCodeLine{187     \{}
+\DoxyCodeLine{186 \{}
+\DoxyCodeLine{187     system(\textcolor{stringliteral}{"{}clear"{}});}
 \DoxyCodeLine{188 }
-\DoxyCodeLine{189         cout<<\textcolor{stringliteral}{"{}No se pudo abrir la lista de atajos"{}};}
-\DoxyCodeLine{190     \}}
-\DoxyCodeLine{191     \textcolor{keywordflow}{else}}
-\DoxyCodeLine{192     \{}
-\DoxyCodeLine{193         \textcolor{keywordflow}{while}(!archi.eof())\{}
-\DoxyCodeLine{194             getline(archi, linea);}
-\DoxyCodeLine{195             cout<<linea<<endl;}
-\DoxyCodeLine{196         \}}
+\DoxyCodeLine{189     ifstream archi;}
+\DoxyCodeLine{190     archi.open(\textcolor{stringliteral}{"{}lista\_de\_atajos.txt"{}});}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192     \textcolor{keywordtype}{string} linea;}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194     \textcolor{keywordflow}{if}(!archi.is\_open())}
+\DoxyCodeLine{195     \{}
+\DoxyCodeLine{196         cout<<\textcolor{stringliteral}{"{}No se pudo abrir la lista de atajos"{}};}
 \DoxyCodeLine{197     \}}
-\DoxyCodeLine{198 }
-\DoxyCodeLine{199 \}}
+\DoxyCodeLine{198     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{199     \{}
+\DoxyCodeLine{200         \textcolor{keywordflow}{while}(!archi.eof())}
+\DoxyCodeLine{201         \{}
+\DoxyCodeLine{202             getline(archi, linea);}
+\DoxyCodeLine{203             cout<<linea<<endl;}
+\DoxyCodeLine{204         \}}
+\DoxyCodeLine{205     \}}
+\DoxyCodeLine{206 }
+\DoxyCodeLine{207 \}}
 
 \end{DoxyCode}
 
@@ -303,44 +311,44 @@ Archivo seleccionado por el usuario.
 \end{DoxyReturn}
 
 
-Definición en la línea 95 del archivo sistema.\+cpp.
+Definición en la línea 99 del archivo sistema.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{96 \{}
-\DoxyCodeLine{97     system(\textcolor{stringliteral}{"{}clear"{}});}
-\DoxyCodeLine{98 }
-\DoxyCodeLine{99     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} opcArch;}
-\DoxyCodeLine{100 }
-\DoxyCodeLine{101     vector<string> listaDeArchivos = \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a19bc26e7349a719fb19e4495d2beed6e}{getListaDeArchivos}}(ruta);}
+\DoxyCodeLine{100 \{}
+\DoxyCodeLine{101     system(\textcolor{stringliteral}{"{}clear"{}});}
 \DoxyCodeLine{102 }
-\DoxyCodeLine{103     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0; i<listaDeArchivos.size(); i++)}
-\DoxyCodeLine{104         cout<<i+1<<\textcolor{stringliteral}{"{}) "{}}<<listaDeArchivos[i]<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{105     cout<<listaDeArchivos.size()+1<<\textcolor{stringliteral}{"{}) Volver a la seleccion de carpetas\(\backslash\)n"{}};}
+\DoxyCodeLine{103     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} opcArch;}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105     vector<string> listaDeArchivos = \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a19bc26e7349a719fb19e4495d2beed6e}{getListaDeArchivos}}(ruta);}
 \DoxyCodeLine{106 }
-\DoxyCodeLine{107     cout<<\textcolor{stringliteral}{"{}Seleccione una opcion: "{}};}
-\DoxyCodeLine{108 }
-\DoxyCodeLine{109     cin>>opcArch;}
+\DoxyCodeLine{107     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0; i<listaDeArchivos.size(); i++)}
+\DoxyCodeLine{108         cout<<i+1<<\textcolor{stringliteral}{"{}) "{}}<<listaDeArchivos[i]<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{109     cout<<listaDeArchivos.size()+1<<\textcolor{stringliteral}{"{}) Volver a la seleccion de carpetas\(\backslash\)n"{}};}
 \DoxyCodeLine{110 }
-\DoxyCodeLine{111     \textcolor{keywordflow}{while}(opcArch < 1 or opcArch > listaDeArchivos.size()+2)}
-\DoxyCodeLine{112     \{}
-\DoxyCodeLine{113         cin.clear();}
-\DoxyCodeLine{114         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
-\DoxyCodeLine{115         cout<<\textcolor{stringliteral}{"{}\(\backslash\)nIngrese una opcion valida: "{}};}
-\DoxyCodeLine{116 }
-\DoxyCodeLine{117         cin>>opcArch;}
-\DoxyCodeLine{118 }
-\DoxyCodeLine{119     \}}
+\DoxyCodeLine{111     cout<<\textcolor{stringliteral}{"{}Seleccione una opcion: "{}};}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113     cin>>opcArch;}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115     \textcolor{keywordflow}{while}(opcArch < 1 or opcArch > listaDeArchivos.size()+2)}
+\DoxyCodeLine{116     \{}
+\DoxyCodeLine{117         cin.clear();}
+\DoxyCodeLine{118         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{119         cout<<\textcolor{stringliteral}{"{}\(\backslash\)nIngrese una opcion valida: "{}};}
 \DoxyCodeLine{120 }
-\DoxyCodeLine{121     \textcolor{keywordflow}{if} (opcArch == listaDeArchivos.size()+1)}
-\DoxyCodeLine{122     \{}
-\DoxyCodeLine{123         \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{false};}
-\DoxyCodeLine{124         \textcolor{keywordflow}{return} -\/1;}
-\DoxyCodeLine{125     \}}
-\DoxyCodeLine{126 }
-\DoxyCodeLine{127 }
-\DoxyCodeLine{128     \textcolor{keywordflow}{return} opcArch;}
-\DoxyCodeLine{129 \}}
+\DoxyCodeLine{121         cin>>opcArch;}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123     \}}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125     \textcolor{keywordflow}{if} (opcArch == listaDeArchivos.size()+1)}
+\DoxyCodeLine{126     \{}
+\DoxyCodeLine{127         \mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{128         \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{129     \}}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131 }
+\DoxyCodeLine{132     \textcolor{keywordflow}{return} opcArch;}
+\DoxyCodeLine{133 \}}
 
 \end{DoxyCode}
 
@@ -366,40 +374,40 @@ Directorio o no que eligio el usuario.
 \end{DoxyReturn}
 
 
-Definición en la línea 61 del archivo sistema.\+cpp.
+Definición en la línea 65 del archivo sistema.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{62 \{}
-\DoxyCodeLine{63 }
-\DoxyCodeLine{64     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} == \textcolor{keyword}{false})}
-\DoxyCodeLine{65         system(\textcolor{stringliteral}{"{}clear"{}});}
-\DoxyCodeLine{66 }
-\DoxyCodeLine{67     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} opcDir;}
-\DoxyCodeLine{68 }
-\DoxyCodeLine{69     vector<string> opcCarpetas = \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a656de37ac8cad97cd647fdebd779b0ed}{getCarpetas}}();}
+\DoxyCodeLine{66 \{}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_sistema_afae7cfb7e99dbf395ecb30855f3bd2e8}{noSoportoAnterior}} == \textcolor{keyword}{false})}
+\DoxyCodeLine{69         system(\textcolor{stringliteral}{"{}clear"{}});}
 \DoxyCodeLine{70 }
-\DoxyCodeLine{71     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < opcCarpetas.size(); i++)}
-\DoxyCodeLine{72         cout<<i+1<<\textcolor{stringliteral}{"{}) "{}}<<opcCarpetas[i]<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{73 }
-\DoxyCodeLine{74     cout<<opcCarpetas.size()+1<<\textcolor{stringliteral}{"{}) Recuperar ultima ejecucion\(\backslash\)n"{}};}
-\DoxyCodeLine{75     cout<<opcCarpetas.size()+2<<\textcolor{stringliteral}{"{}) Cerrar el programa\(\backslash\)n"{}};}
-\DoxyCodeLine{76 }
-\DoxyCodeLine{77     cout<<\textcolor{stringliteral}{"{}Seleccione la opcion: "{}};}
-\DoxyCodeLine{78 }
-\DoxyCodeLine{79     cin>>opcDir;}
+\DoxyCodeLine{71     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} opcDir;}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73     vector<string> opcCarpetas = \mbox{\hyperlink{class_sistema_a7f74f273e84c5c702129f72334155035}{espDeTrabajo}}.\mbox{\hyperlink{class_espacio_de_trabajo_a656de37ac8cad97cd647fdebd779b0ed}{getCarpetas}}();}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     \textcolor{keywordflow}{for}(uint i = 0; i < opcCarpetas.size(); i++)}
+\DoxyCodeLine{76         cout<<i+1<<\textcolor{stringliteral}{"{}) "{}}<<opcCarpetas[i]<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     cout<<opcCarpetas.size()+1<<\textcolor{stringliteral}{"{}) Recuperar ultima ejecucion\(\backslash\)n"{}};}
+\DoxyCodeLine{79     cout<<opcCarpetas.size()+2<<\textcolor{stringliteral}{"{}) Cerrar el programa\(\backslash\)n"{}};}
 \DoxyCodeLine{80 }
-\DoxyCodeLine{81     \textcolor{keywordflow}{while}(opcDir < 1 or opcDir > opcCarpetas.size()+2)}
-\DoxyCodeLine{82     \{}
-\DoxyCodeLine{83         cin.clear();}
-\DoxyCodeLine{84         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
-\DoxyCodeLine{85         cout<<\textcolor{stringliteral}{"{}\(\backslash\)nIngrese una opcion valida: "{}};}
-\DoxyCodeLine{86 }
-\DoxyCodeLine{87         cin>>opcDir;}
-\DoxyCodeLine{88     \}}
-\DoxyCodeLine{89 }
-\DoxyCodeLine{90     \textcolor{keywordflow}{return} opcDir;}
-\DoxyCodeLine{91 \}}
+\DoxyCodeLine{81     cout<<\textcolor{stringliteral}{"{}Seleccione la opcion: "{}};}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83     cin>>opcDir;}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85     \textcolor{keywordflow}{while}(opcDir < 1 or opcDir > opcCarpetas.size()+2)}
+\DoxyCodeLine{86     \{}
+\DoxyCodeLine{87         cin.clear();}
+\DoxyCodeLine{88         cin.ignore(numeric\_limits<streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{89         cout<<\textcolor{stringliteral}{"{}\(\backslash\)nIngrese una opcion valida: "{}};}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91         cin>>opcDir;}
+\DoxyCodeLine{92     \}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     \textcolor{keywordflow}{return} opcDir;}
+\DoxyCodeLine{95 \}}
 
 \end{DoxyCode}
 
@@ -425,23 +433,23 @@ Vector de enteros que almacena la opcion del directorio y del archivo.
 \end{DoxyReturn}
 
 
-Definición en la línea 162 del archivo sistema.\+cpp.
+Definición en la línea 170 del archivo sistema.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{163 \{}
-\DoxyCodeLine{164     vector<int> dir\_arch(2);}
-\DoxyCodeLine{165     ifstream archi;}
-\DoxyCodeLine{166     archi.open(\textcolor{stringliteral}{"{}registro.txt"{}});}
-\DoxyCodeLine{167 }
-\DoxyCodeLine{168     \textcolor{keywordtype}{string} ruta;}
-\DoxyCodeLine{169 }
-\DoxyCodeLine{170     archi>>dir\_arch[0] >> dir\_arch[1];}
-\DoxyCodeLine{171 }
-\DoxyCodeLine{172     archi.close();}
-\DoxyCodeLine{173 }
-\DoxyCodeLine{174     \textcolor{keywordflow}{return} dir\_arch;}
-\DoxyCodeLine{175 \}}
+\DoxyCodeLine{171 \{}
+\DoxyCodeLine{172     vector<int> dirArch(2);}
+\DoxyCodeLine{173     ifstream archi;}
+\DoxyCodeLine{174     archi.open(\textcolor{stringliteral}{"{}registro.txt"{}});}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176     \textcolor{keywordtype}{string} ruta;}
+\DoxyCodeLine{177 }
+\DoxyCodeLine{178     archi>>dirArch[0] >> dirArch[1];}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{180     archi.close();}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{182     \textcolor{keywordflow}{return} dirArch;}
+\DoxyCodeLine{183 \}}
 
 \end{DoxyCode}
 

@@ -7,11 +7,8 @@ Sistema::Sistema()
 
 void Sistema::ejecutar(QApplication *a)
 {
-    ArchivosPNM archi;
-
-    Imagen img;
-
     bool seGraficoUnaImagen = false;
+
     while(true)
     {
         int opcDir = obtenerOpcDir();
@@ -25,7 +22,11 @@ void Sistema::ejecutar(QApplication *a)
                 mostrarAtajos();
 
                 iniciarGraficacion(a, opciones[0], opciones[1]);
-            }else{
+
+                seGraficoUnaImagen = true;
+            }
+            else
+            {
                 noSoportoAnterior = true;
                 system("clear");
                 cout<<"No se pudo recuperar la ejecución previa dado que no se graficó ninguna imágen.\n";
@@ -33,10 +34,13 @@ void Sistema::ejecutar(QApplication *a)
 
 
 
-        }else if(opcDir == espDeTrabajo.getCarpetas().size()+2)
+        }
+        else if(opcDir == espDeTrabajo.getCarpetas().size()+2)
         {
             break;
-        }else{
+        }
+        else
+        {
             string ruta = espDeTrabajo.getRuta(opcDir);
 
             int opcArch = obtenerOpcArch(ruta);
@@ -68,7 +72,7 @@ int Sistema::obtenerOpcDir()
 
     vector<string> opcCarpetas = espDeTrabajo.getCarpetas();
 
-    for(int i = 0; i < opcCarpetas.size(); i++)
+    for(uint i = 0; i < opcCarpetas.size(); i++)
         cout<<i+1<<") "<<opcCarpetas[i]<<"\n";
 
     cout<<opcCarpetas.size()+1<<") Recuperar ultima ejecucion\n";
@@ -132,7 +136,8 @@ void Sistema::iniciarGraficacion(QApplication *a, int opcDir, int opcArch)
 {
     graf.setOpciones(opcDir, opcArch);
 
-    try {
+    try
+    {
         graf.cargarImagen();
 
         graf.setApp(a);
@@ -141,16 +146,19 @@ void Sistema::iniciarGraficacion(QApplication *a, int opcDir, int opcArch)
 
         noSoportoAnterior = false;
 
-
         a->exec();
 
 
-    }  catch (ExcepcionArchivoNoSoportado &excepcion) {
+    }
+    catch (ExcepcionArchivoNoSoportado &excepcion)
+    {
         system("clear");
         a->closeAllWindows();
         noSoportoAnterior = true;
         cout<<excepcion.what()<<endl;
-    } catch (ExcepcionArchivoCorrupto &excepcion) {
+    }
+    catch (ExcepcionArchivoCorrupto &excepcion)
+    {
         system("clear");
         a->closeAllWindows();
         noSoportoAnterior = true;
@@ -161,17 +169,17 @@ void Sistema::iniciarGraficacion(QApplication *a, int opcDir, int opcArch)
 
 vector<int> Sistema::recuperarOpciones()
 {
-    vector<int> dir_arch(2);
+    vector<int> dirArch(2);
     ifstream archi;
     archi.open("registro.txt");
 
     string ruta;
 
-    archi>>dir_arch[0] >> dir_arch[1];
+    archi>>dirArch[0] >> dirArch[1];
 
     archi.close();
 
-    return dir_arch;
+    return dirArch;
 }
 
 void Sistema::mostrarAtajos()
@@ -185,12 +193,12 @@ void Sistema::mostrarAtajos()
 
     if(!archi.is_open())
     {
-
         cout<<"No se pudo abrir la lista de atajos";
     }
     else
     {
-        while(!archi.eof()){
+        while(!archi.eof())
+        {
             getline(archi, linea);
             cout<<linea<<endl;
         }

@@ -97,10 +97,14 @@ void GraficadorHistograma::graficarHistograma()
             {
                 glColor4f(1.0f, 0.0f, 0.0f, 0.8f);
                 bandera = 'g';
-            }else if(bandera == 'g'){
+            }
+            else if(bandera == 'g')
+            {
                 glColor4f(0.0f, 1.0f, 0.0f, 0.8f);
                 bandera = 'b';
-            }else if(bandera == 'b'){
+            }
+            else if(bandera == 'b')
+            {
                 glColor4f(0.0f, 0.0f, 1.0f, 0.8f);
                 bandera = 'r';
             }

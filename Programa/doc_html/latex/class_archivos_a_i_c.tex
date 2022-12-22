@@ -107,16 +107,16 @@ escribir\+Encabezado MÃ©todo privado que escribe el encabezado (Identificador 
 \end{DoxyParams}
 
 
-Definición en la línea 203 del archivo archivosaic.\+cpp.
+Definición en la línea 210 del archivo archivosaic.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{204 \{}
-\DoxyCodeLine{205     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<img-\/>\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}()<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{206     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<img-\/>\mbox{\hyperlink{class_imagen_a9863c0ebb50aeb19f5dc4d7906ed47d6}{getInformacion}}()<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{207 }
-\DoxyCodeLine{208     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.close();}
-\DoxyCodeLine{209 \}}
+\DoxyCodeLine{211 \{}
+\DoxyCodeLine{212     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<img-\/>\mbox{\hyperlink{class_imagen_ab28b3e13c672139eada95427623a5828}{getIdentificador}}()<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{213     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<img-\/>\mbox{\hyperlink{class_imagen_a9863c0ebb50aeb19f5dc4d7906ed47d6}{getInformacion}}()<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{214 }
+\DoxyCodeLine{215     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.close();}
+\DoxyCodeLine{216 \}}
 
 \end{DoxyCode}
 
@@ -146,47 +146,47 @@ escribir\+Pixeles MÃ©todo privado que escribe los \mbox{\hyperlink{class_pixel
 \end{DoxyParams}
 
 
-Definición en la línea 163 del archivo archivosaic.\+cpp.
+Definición en la línea 170 del archivo archivosaic.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{164 \{}
-\DoxyCodeLine{165     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.open(ruta, ios::out | ios::app);}
-\DoxyCodeLine{166 }
-\DoxyCodeLine{167     \textcolor{keywordtype}{int} nivelDeGris, cantidadQueSeRepite, intensidadAnterior, acumuladorColumnas;}
-\DoxyCodeLine{168 }
-\DoxyCodeLine{169     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} fila = 0; fila < img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(); fila++)}
-\DoxyCodeLine{170     \{}
-\DoxyCodeLine{171         acumuladorColumnas = 0;}
-\DoxyCodeLine{172         intensidadAnterior = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, 0).\mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{getIntensidad}}();}
-\DoxyCodeLine{173         cantidadQueSeRepite = 0;}
-\DoxyCodeLine{174 }
-\DoxyCodeLine{175         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} columna = 0; columna < img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}(); columna++)}
-\DoxyCodeLine{176         \{}
-\DoxyCodeLine{177             \textcolor{keywordflow}{if} (img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, columna).\mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{getIntensidad}}() != intensidadAnterior)}
-\DoxyCodeLine{178             \{}
-\DoxyCodeLine{179                 \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<nivelDeGris<<\textcolor{stringliteral}{"{} "{}}<<cantidadQueSeRepite<<\textcolor{stringliteral}{"{} "{}};}
-\DoxyCodeLine{180                 acumuladorColumnas += cantidadQueSeRepite;}
-\DoxyCodeLine{181                 nivelDeGris = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, columna).\mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{getIntensidad}}();}
-\DoxyCodeLine{182                 intensidadAnterior = nivelDeGris;}
-\DoxyCodeLine{183                 cantidadQueSeRepite = 1;}
-\DoxyCodeLine{184             \}}
-\DoxyCodeLine{185             \textcolor{keywordflow}{else}}
-\DoxyCodeLine{186             \{}
-\DoxyCodeLine{187                 nivelDeGris = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, columna).\mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{getIntensidad}}();}
-\DoxyCodeLine{188                 cantidadQueSeRepite += 1;}
-\DoxyCodeLine{189             \}}
-\DoxyCodeLine{190         \}}
-\DoxyCodeLine{191         \textcolor{keywordflow}{if} (acumuladorColumnas != img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}())}
-\DoxyCodeLine{192         \{}
-\DoxyCodeLine{193             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<nivelDeGris<<\textcolor{stringliteral}{"{} "{}}<<cantidadQueSeRepite;}
-\DoxyCodeLine{194         \}}
-\DoxyCodeLine{195         \textcolor{keywordflow}{if} (fila != img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/1)}
-\DoxyCodeLine{196             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{197     \}}
-\DoxyCodeLine{198 }
-\DoxyCodeLine{199     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.close();}
-\DoxyCodeLine{200 \}}
+\DoxyCodeLine{171 \{}
+\DoxyCodeLine{172     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.open(ruta, ios::out | ios::app);}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174     \textcolor{keywordtype}{int} nivelDeGris, cantidadQueSeRepite, intensidadAnterior, acumuladorColumnas;}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} fila = 0; fila < img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}(); fila++)}
+\DoxyCodeLine{177     \{}
+\DoxyCodeLine{178         acumuladorColumnas = 0;}
+\DoxyCodeLine{179         intensidadAnterior = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, 0).\mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{getIntensidad}}();}
+\DoxyCodeLine{180         cantidadQueSeRepite = 0;}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{182         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} columna = 0; columna < img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}(); columna++)}
+\DoxyCodeLine{183         \{}
+\DoxyCodeLine{184             \textcolor{keywordflow}{if} (img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, columna).\mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{getIntensidad}}() != intensidadAnterior)}
+\DoxyCodeLine{185             \{}
+\DoxyCodeLine{186                 \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<nivelDeGris<<\textcolor{stringliteral}{"{} "{}}<<cantidadQueSeRepite<<\textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{187                 acumuladorColumnas += cantidadQueSeRepite;}
+\DoxyCodeLine{188                 nivelDeGris = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, columna).\mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{getIntensidad}}();}
+\DoxyCodeLine{189                 intensidadAnterior = nivelDeGris;}
+\DoxyCodeLine{190                 cantidadQueSeRepite = 1;}
+\DoxyCodeLine{191             \}}
+\DoxyCodeLine{192             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{193             \{}
+\DoxyCodeLine{194                 nivelDeGris = img-\/>\mbox{\hyperlink{class_imagen_ac9210700a20d35ca768f8c9c11b949a6}{getPixel}}(fila, columna).\mbox{\hyperlink{class_pixel_ae9494a22629e331242fd1e7508743655}{getIntensidad}}();}
+\DoxyCodeLine{195                 cantidadQueSeRepite += 1;}
+\DoxyCodeLine{196             \}}
+\DoxyCodeLine{197         \}}
+\DoxyCodeLine{198         \textcolor{keywordflow}{if} (acumuladorColumnas != img-\/>\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}())}
+\DoxyCodeLine{199         \{}
+\DoxyCodeLine{200             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<nivelDeGris<<\textcolor{stringliteral}{"{} "{}}<<cantidadQueSeRepite;}
+\DoxyCodeLine{201         \}}
+\DoxyCodeLine{202         \textcolor{keywordflow}{if} (fila != img-\/>\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()-\/1)}
+\DoxyCodeLine{203             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{204     \}}
+\DoxyCodeLine{205 }
+\DoxyCodeLine{206     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.close();}
+\DoxyCodeLine{207 \}}
 
 \end{DoxyCode}
 
@@ -221,23 +221,23 @@ Implementa \mbox{\hyperlink{class_gestor_de_archivos_ad2f950c7c54f9883b7863b9afe
 
 
 
-Definición en la línea 139 del archivo archivosaic.\+cpp.
+Definición en la línea 146 del archivo archivosaic.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{140 \{}
-\DoxyCodeLine{141     \textcolor{keywordtype}{string} ruta = \mbox{\hyperlink{class_archivos_a_i_c_a35f900f9c3eb931e0f17cd82a6c699e1}{obtieneRutaGuardado}}();}
-\DoxyCodeLine{142     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.open(ruta, ios::out);}
-\DoxyCodeLine{143 }
-\DoxyCodeLine{144     \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.is\_open())}
-\DoxyCodeLine{145     \{}
-\DoxyCodeLine{146         cout<<\textcolor{stringliteral}{"{}No se pudo abrir el archivo."{}};}
-\DoxyCodeLine{147     \}\textcolor{keywordflow}{else}\{}
-\DoxyCodeLine{148         \mbox{\hyperlink{class_archivos_a_i_c_a4027b286d7468c710d0489ce21f47a00}{escribirEncabezado}}(img);}
-\DoxyCodeLine{149 }
-\DoxyCodeLine{150         \mbox{\hyperlink{class_archivos_a_i_c_a948b328f345c26b8c6784f5c496e4c13}{escribirPixeles}}(img, ruta);}
-\DoxyCodeLine{151     \}}
-\DoxyCodeLine{152 \}}
+\DoxyCodeLine{147 \{}
+\DoxyCodeLine{148     \textcolor{keywordtype}{string} ruta = \mbox{\hyperlink{class_archivos_a_i_c_a35f900f9c3eb931e0f17cd82a6c699e1}{obtieneRutaGuardado}}();}
+\DoxyCodeLine{149     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.open(ruta, ios::out);}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151     \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.is\_open())}
+\DoxyCodeLine{152     \{}
+\DoxyCodeLine{153         cout<<\textcolor{stringliteral}{"{}No se pudo abrir el archivo."{}};}
+\DoxyCodeLine{154     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{155         \mbox{\hyperlink{class_archivos_a_i_c_a4027b286d7468c710d0489ce21f47a00}{escribirEncabezado}}(img);}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157         \mbox{\hyperlink{class_archivos_a_i_c_a948b328f345c26b8c6784f5c496e4c13}{escribirPixeles}}(img, ruta);}
+\DoxyCodeLine{158     \}}
+\DoxyCodeLine{159 \}}
 
 \end{DoxyCode}
 
@@ -278,133 +278,140 @@ Definición en la línea 9 del archivo archivosaic.\+cpp.
 \DoxyCodeLine{13     \mbox{\hyperlink{class_imagen}{Imagen}} img;}
 \DoxyCodeLine{14     \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.open(ruta, ios::in);}
 \DoxyCodeLine{15 }
-\DoxyCodeLine{16     \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.is\_open())\{}
-\DoxyCodeLine{17         cout<<\textcolor{stringliteral}{"{}Error al abrir la imagen."{}}<<endl;}
-\DoxyCodeLine{18         cout<<ruta;}
-\DoxyCodeLine{19     \}\textcolor{keywordflow}{else}\{}
-\DoxyCodeLine{20         \textcolor{keywordflow}{try}\{}
-\DoxyCodeLine{21             \textcolor{keywordtype}{string} linea;}
-\DoxyCodeLine{22 }
-\DoxyCodeLine{23             getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea);}
+\DoxyCodeLine{16     \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.is\_open())}
+\DoxyCodeLine{17     \{}
+\DoxyCodeLine{18         cout<<\textcolor{stringliteral}{"{}Error al abrir la imagen."{}}<<endl;}
+\DoxyCodeLine{19     \}}
+\DoxyCodeLine{20     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{21     \{}
+\DoxyCodeLine{22         \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{23             \textcolor{keywordtype}{string} linea;}
 \DoxyCodeLine{24 }
-\DoxyCodeLine{25             \mbox{\hyperlink{class_archivos_a_i_c_ab2c2c0b495012e23718e6161cbc17629}{identificador}} = linea.substr(0, 3);}
+\DoxyCodeLine{25             getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea);}
 \DoxyCodeLine{26 }
-\DoxyCodeLine{27             img.\mbox{\hyperlink{class_imagen_aae632c4cd001e04228aad5bf06599818}{setIdentificador}}(\mbox{\hyperlink{class_archivos_a_i_c_ab2c2c0b495012e23718e6161cbc17629}{identificador}});}
-\DoxyCodeLine{28             getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea);}
-\DoxyCodeLine{29 }
-\DoxyCodeLine{30             \textcolor{keywordtype}{int} auxPosicion = 0;}
-\DoxyCodeLine{31             \textcolor{keywordflow}{while}(linea[0]==\textcolor{charliteral}{'\#'})}
-\DoxyCodeLine{32             \{}
-\DoxyCodeLine{33                 img.\mbox{\hyperlink{class_imagen_affda44cc73f0a8bf8cc7dc1021e47f25}{setInformacion}}(linea);}
-\DoxyCodeLine{34                  auxPosicion = \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.tellg();}
-\DoxyCodeLine{35                 getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea);}
-\DoxyCodeLine{36             \}}
-\DoxyCodeLine{37 }
-\DoxyCodeLine{38             \mbox{\hyperlink{class_pixel}{Pixel}} pixAux;}
+\DoxyCodeLine{27             \mbox{\hyperlink{class_archivos_a_i_c_ab2c2c0b495012e23718e6161cbc17629}{identificador}} = linea.substr(0, 3);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29             img.\mbox{\hyperlink{class_imagen_aae632c4cd001e04228aad5bf06599818}{setIdentificador}}(\mbox{\hyperlink{class_archivos_a_i_c_ab2c2c0b495012e23718e6161cbc17629}{identificador}});}
+\DoxyCodeLine{30             getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32             \textcolor{keywordtype}{int} auxPosicion = 0;}
+\DoxyCodeLine{33             \textcolor{keywordflow}{while}(linea[0]==\textcolor{charliteral}{'\#'})}
+\DoxyCodeLine{34             \{}
+\DoxyCodeLine{35                 img.\mbox{\hyperlink{class_imagen_affda44cc73f0a8bf8cc7dc1021e47f25}{setInformacion}}(linea);}
+\DoxyCodeLine{36                 auxPosicion = \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.tellg();}
+\DoxyCodeLine{37                 getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea);}
+\DoxyCodeLine{38             \}}
 \DoxyCodeLine{39 }
-\DoxyCodeLine{40 }
-\DoxyCodeLine{41             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.seekg(auxPosicion);}
+\DoxyCodeLine{40             \mbox{\hyperlink{class_pixel}{Pixel}} pixAux;}
+\DoxyCodeLine{41 }
 \DoxyCodeLine{42 }
-\DoxyCodeLine{43             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} filas = 0;}
+\DoxyCodeLine{43             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.seekg(auxPosicion);}
 \DoxyCodeLine{44 }
-\DoxyCodeLine{45             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} acumuladorColumnas = 0;}
+\DoxyCodeLine{45             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} filas = 0;}
 \DoxyCodeLine{46 }
-\DoxyCodeLine{47             \textcolor{keywordtype}{bool} seGuardoColumnas = \textcolor{keyword}{false};}
+\DoxyCodeLine{47             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} acumuladorColumnas = 0;}
 \DoxyCodeLine{48 }
-\DoxyCodeLine{49             vector<int> datosLinea;}
+\DoxyCodeLine{49             \textcolor{keywordtype}{bool} seGuardoColumnas = \textcolor{keyword}{false};}
 \DoxyCodeLine{50 }
-\DoxyCodeLine{51             \textcolor{keywordflow}{while}(!\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.eof())}
-\DoxyCodeLine{52             \{}
-\DoxyCodeLine{53                 getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea);}
-\DoxyCodeLine{54 }
-\DoxyCodeLine{55                 \textcolor{keywordflow}{if}(!seGuardoColumnas)}
-\DoxyCodeLine{56                 \{}
-\DoxyCodeLine{57                     \textcolor{keywordtype}{int} tamanio = linea.length();}
-\DoxyCodeLine{58                     \textcolor{keywordtype}{char} lineaChar[tamanio];}
-\DoxyCodeLine{59                     strcpy(lineaChar, linea.c\_str());}
-\DoxyCodeLine{60                     \textcolor{keywordtype}{char} *split;}
-\DoxyCodeLine{61                     split = strtok(lineaChar, \textcolor{stringliteral}{"{} "{}});}
-\DoxyCodeLine{62                     \textcolor{keywordflow}{while} (split != NULL)}
-\DoxyCodeLine{63                       \{}
-\DoxyCodeLine{64                         datosLinea.push\_back(stoi(split));}
-\DoxyCodeLine{65                         split = strtok (NULL, \textcolor{stringliteral}{"{} "{}});}
-\DoxyCodeLine{66                       \}}
-\DoxyCodeLine{67                     \textcolor{keywordflow}{for}(uint i=0; i < datosLinea.size(); i++)}
-\DoxyCodeLine{68                         \textcolor{keywordflow}{if} ((i+1)\%2 == 0)}
-\DoxyCodeLine{69                             acumuladorColumnas += datosLinea[i];}
-\DoxyCodeLine{70                     seGuardoColumnas = \textcolor{keyword}{true};}
-\DoxyCodeLine{71                 \}}
-\DoxyCodeLine{72 }
-\DoxyCodeLine{73                 ++filas;}
-\DoxyCodeLine{74             \}}
-\DoxyCodeLine{75 }
-\DoxyCodeLine{76             img.\mbox{\hyperlink{class_imagen_a745584efb94c3a60c7d77017b2bfb512}{setFilas}}(filas);}
-\DoxyCodeLine{77             img.\mbox{\hyperlink{class_imagen_a2f484fcbef63dfa2fe6c2ee418a7d856}{setColumnas}}(acumuladorColumnas);}
-\DoxyCodeLine{78             img.\mbox{\hyperlink{class_imagen_a310a7ee241a8c546a9d5345937a9f01f}{setTamanio}}();}
-\DoxyCodeLine{79             img.\mbox{\hyperlink{class_imagen_ac6be498c1eadda6e7a5bf603c7ababc3}{setRango}}(255);}
-\DoxyCodeLine{80 }
-\DoxyCodeLine{81             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.close();}
+\DoxyCodeLine{51             vector<int> datosLinea;}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53             \textcolor{keywordflow}{while}(!\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.eof())}
+\DoxyCodeLine{54             \{}
+\DoxyCodeLine{55                 getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57                 \textcolor{keywordflow}{if}(!seGuardoColumnas)}
+\DoxyCodeLine{58                 \{}
+\DoxyCodeLine{59                     \textcolor{keywordtype}{int} tamanio = linea.length();}
+\DoxyCodeLine{60                     \textcolor{keywordtype}{char} lineaChar[tamanio];}
+\DoxyCodeLine{61                     strcpy(lineaChar, linea.c\_str());}
+\DoxyCodeLine{62                     \textcolor{keywordtype}{char} *split;}
+\DoxyCodeLine{63                     split = strtok(lineaChar, \textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{64                     \textcolor{keywordflow}{while} (split != NULL)}
+\DoxyCodeLine{65                       \{}
+\DoxyCodeLine{66                         datosLinea.push\_back(stoi(split));}
+\DoxyCodeLine{67                         split = strtok (NULL, \textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{68                       \}}
+\DoxyCodeLine{69                     \textcolor{keywordflow}{for}(uint i=0; i < datosLinea.size(); i++)}
+\DoxyCodeLine{70                         \textcolor{keywordflow}{if} ((i+1)\%2 == 0)}
+\DoxyCodeLine{71                             acumuladorColumnas += datosLinea[i];}
+\DoxyCodeLine{72                     seGuardoColumnas = \textcolor{keyword}{true};}
+\DoxyCodeLine{73                 \}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75                 ++filas;}
+\DoxyCodeLine{76             \}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78             img.\mbox{\hyperlink{class_imagen_a745584efb94c3a60c7d77017b2bfb512}{setFilas}}(filas);}
+\DoxyCodeLine{79             img.\mbox{\hyperlink{class_imagen_a2f484fcbef63dfa2fe6c2ee418a7d856}{setColumnas}}(acumuladorColumnas);}
+\DoxyCodeLine{80             img.\mbox{\hyperlink{class_imagen_a310a7ee241a8c546a9d5345937a9f01f}{setTamanio}}();}
+\DoxyCodeLine{81             img.\mbox{\hyperlink{class_imagen_ac6be498c1eadda6e7a5bf603c7ababc3}{setRango}}(255);}
 \DoxyCodeLine{82 }
-\DoxyCodeLine{83             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.open(ruta, ios::in);}
+\DoxyCodeLine{83             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.close();}
 \DoxyCodeLine{84 }
-\DoxyCodeLine{85             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.seekg(auxPosicion);}
+\DoxyCodeLine{85             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.open(ruta, ios::in);}
 \DoxyCodeLine{86 }
-\DoxyCodeLine{87             filas = 0;}
-\DoxyCodeLine{88             acumuladorColumnas = 0;}
-\DoxyCodeLine{89             \textcolor{keywordtype}{int} nivelDeGris, cantidadRepite;}
+\DoxyCodeLine{87             \mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}.seekg(auxPosicion);}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89             filas = 0;}
 \DoxyCodeLine{90 }
-\DoxyCodeLine{91             \mbox{\hyperlink{class_pixel}{Pixel}} pixelAux;}
+\DoxyCodeLine{91             \textcolor{keywordtype}{int} nivelDeGris, cantidadRepite;}
 \DoxyCodeLine{92 }
-\DoxyCodeLine{93             \textcolor{keywordtype}{int} contadorPixeles = 0;}
-\DoxyCodeLine{94             \textcolor{keywordflow}{while}(getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea))}
-\DoxyCodeLine{95             \{}
-\DoxyCodeLine{96                 datosLinea.clear();}
-\DoxyCodeLine{97 }
-\DoxyCodeLine{98                 acumuladorColumnas = 0;}
+\DoxyCodeLine{93             \mbox{\hyperlink{class_pixel}{Pixel}} pixelAux;}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95             \textcolor{keywordtype}{int} contadorPixeles = 0;}
+\DoxyCodeLine{96             \textcolor{keywordflow}{while}(getline(\mbox{\hyperlink{class_archivos_a_i_c_a1450f875c280a2280515e97bc91b7f16}{archi}}, linea))}
+\DoxyCodeLine{97             \{}
+\DoxyCodeLine{98                 datosLinea.clear();}
 \DoxyCodeLine{99 }
-\DoxyCodeLine{100                 \textcolor{keywordtype}{int} tamanio = linea.length();}
-\DoxyCodeLine{101                 \textcolor{keywordtype}{char} lineaChar[tamanio];}
-\DoxyCodeLine{102                 strcpy(lineaChar, linea.c\_str());}
-\DoxyCodeLine{103                 \textcolor{keywordtype}{char} *split;}
-\DoxyCodeLine{104                 split = strtok(lineaChar, \textcolor{stringliteral}{"{} "{}});}
-\DoxyCodeLine{105                 \textcolor{keywordflow}{while} (split != NULL)}
-\DoxyCodeLine{106                   \{}
-\DoxyCodeLine{107                     datosLinea.push\_back(stoi(split));}
-\DoxyCodeLine{108                     split = strtok (NULL, \textcolor{stringliteral}{"{} "{}});}
-\DoxyCodeLine{109                   \}}
-\DoxyCodeLine{110 }
-\DoxyCodeLine{111                 \textcolor{keywordflow}{for}(uint i = 0; i < datosLinea.size(); i = i+2)}
-\DoxyCodeLine{112                 \{}
-\DoxyCodeLine{113                     nivelDeGris = datosLinea.at(i);}
-\DoxyCodeLine{114                     cantidadRepite = datosLinea.at(i+1);}
-\DoxyCodeLine{115                     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna = 0; columna < cantidadRepite; columna++)}
-\DoxyCodeLine{116                     \{}
-\DoxyCodeLine{117                         pixelAux.\mbox{\hyperlink{class_pixel_affd7e85713e18281b51e0e676485f704}{setPixelEscala}}(nivelDeGris);}
-\DoxyCodeLine{118                         img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(filas, columna+acumuladorColumnas, pixelAux);}
-\DoxyCodeLine{119                         contadorPixeles += 1;}
-\DoxyCodeLine{120                     \}}
-\DoxyCodeLine{121                     acumuladorColumnas += cantidadRepite;}
-\DoxyCodeLine{122 }
-\DoxyCodeLine{123 }
-\DoxyCodeLine{124                 \}}
-\DoxyCodeLine{125                 ++filas;}
-\DoxyCodeLine{126             \}}
+\DoxyCodeLine{100                 acumuladorColumnas = 0;}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102                 \textcolor{keywordtype}{int} tamanio = linea.length();}
+\DoxyCodeLine{103                 \textcolor{keywordtype}{char} lineaChar[tamanio];}
+\DoxyCodeLine{104                 strcpy(lineaChar, linea.c\_str());}
+\DoxyCodeLine{105                 \textcolor{keywordtype}{char} *split;}
+\DoxyCodeLine{106                 split = strtok(lineaChar, \textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{107                 \textcolor{keywordflow}{while} (split != NULL)}
+\DoxyCodeLine{108                   \{}
+\DoxyCodeLine{109                     datosLinea.push\_back(stoi(split));}
+\DoxyCodeLine{110                     split = strtok (NULL, \textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{111                   \}}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113                 \textcolor{keywordflow}{for}(uint i = 0; i < datosLinea.size(); i = i+2)}
+\DoxyCodeLine{114                 \{}
+\DoxyCodeLine{115                     nivelDeGris = datosLinea.at(i);}
+\DoxyCodeLine{116                     \textcolor{keywordflow}{if}(nivelDeGris > img.\mbox{\hyperlink{class_imagen_ab65e8f269da32338d3f2048407e63870}{getRango}}())}
+\DoxyCodeLine{117                         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119                     cantidadRepite = datosLinea.at(i+1);}
+\DoxyCodeLine{120                     pixelAux.\mbox{\hyperlink{class_pixel_affd7e85713e18281b51e0e676485f704}{setPixelEscala}}(nivelDeGris);}
+\DoxyCodeLine{121                     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} columna = 0; columna < cantidadRepite; columna++)}
+\DoxyCodeLine{122                     \{}
+\DoxyCodeLine{123                         img.\mbox{\hyperlink{class_imagen_a116c67bb423f0de52bdb2e5c7e9ad29b}{setPixel}}(filas, columna+acumuladorColumnas, pixelAux);}
+\DoxyCodeLine{124                         contadorPixeles++;}
+\DoxyCodeLine{125                     \}}
+\DoxyCodeLine{126                     acumuladorColumnas += cantidadRepite;}
 \DoxyCodeLine{127 }
-\DoxyCodeLine{128             \textcolor{keywordflow}{if} (contadorPixeles != img.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()*img.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}())}
-\DoxyCodeLine{129                 \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129                 \}}
 \DoxyCodeLine{130 }
-\DoxyCodeLine{131             \textcolor{keywordflow}{return} img;}
-\DoxyCodeLine{132     \} \textcolor{keywordflow}{catch}(exception)\{}
-\DoxyCodeLine{133         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
-\DoxyCodeLine{134     \}}
-\DoxyCodeLine{135 }
-\DoxyCodeLine{136     \}}
-\DoxyCodeLine{137 \}}
+\DoxyCodeLine{131                 ++filas;}
+\DoxyCodeLine{132             \}}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134             \textcolor{keywordflow}{if} (contadorPixeles != img.\mbox{\hyperlink{class_imagen_af1f4833ddf4987c3ab0ff9c65d224093}{getFilas}}()*img.\mbox{\hyperlink{class_imagen_a85f488958dd299a2c751efe5f390bf08}{getColumnas}}())}
+\DoxyCodeLine{135                 \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137             \textcolor{keywordflow}{return} img;}
+\DoxyCodeLine{138     \}\textcolor{keywordflow}{catch}(exception)}
+\DoxyCodeLine{139         \{}
+\DoxyCodeLine{140         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_excepcion_archivo_corrupto}{ExcepcionArchivoCorrupto}}();}
+\DoxyCodeLine{141         \}}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143     \}}
+\DoxyCodeLine{144 \}}
 
 \end{DoxyCode}
 
 
-Hace referencia a archi, Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), identificador, Imagen\+::set\+Columnas(), Imagen\+::set\+Filas(), Imagen\+::set\+Identificador(), Imagen\+::set\+Informacion(), Imagen\+::set\+Pixel(), Pixel\+::set\+Pixel\+Escala(), Imagen\+::set\+Rango() y Imagen\+::set\+Tamanio().
+Hace referencia a archi, Imagen\+::get\+Columnas(), Imagen\+::get\+Filas(), Imagen\+::get\+Rango(), identificador, Imagen\+::set\+Columnas(), Imagen\+::set\+Filas(), Imagen\+::set\+Identificador(), Imagen\+::set\+Informacion(), Imagen\+::set\+Pixel(), Pixel\+::set\+Pixel\+Escala(), Imagen\+::set\+Rango() y Imagen\+::set\+Tamanio().
 
 \mbox{\Hypertarget{class_archivos_a_i_c_a35f900f9c3eb931e0f17cd82a6c699e1}\label{class_archivos_a_i_c_a35f900f9c3eb931e0f17cd82a6c699e1}} 
 \index{ArchivosAIC@{ArchivosAIC}!obtieneRutaGuardado@{obtieneRutaGuardado}}
@@ -421,17 +428,17 @@ Ruta donde se guardarÃ¡ la \mbox{\hyperlink{class_imagen}{Imagen}}.
 \end{DoxyReturn}
 
 
-Definición en la línea 154 del archivo archivosaic.\+cpp.
+Definición en la línea 161 del archivo archivosaic.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{155 \{}
-\DoxyCodeLine{156     \textcolor{keywordtype}{string} rutaGuardado = \textcolor{stringliteral}{"{}./Imagenes/Imagenes\_guardadas/"{}}, nombre;}
-\DoxyCodeLine{157     cout<<\textcolor{stringliteral}{"{}\(\backslash\)t  Ingrese nombre con el que desea guardar la imÃ¡gen. (No utilice '/')\(\backslash\)n\(\backslash\)t\(\backslash\)t>"{}};}
-\DoxyCodeLine{158     cin>>nombre;}
-\DoxyCodeLine{159 }
-\DoxyCodeLine{160     \textcolor{keywordflow}{return} rutaGuardado+nombre+\textcolor{stringliteral}{"{}.aic"{}};}
-\DoxyCodeLine{161 \}}
+\DoxyCodeLine{162 \{}
+\DoxyCodeLine{163     \textcolor{keywordtype}{string} rutaGuardado = \textcolor{stringliteral}{"{}./Imagenes/Imagenes\_guardadas/"{}}, nombre;}
+\DoxyCodeLine{164     cout<<\textcolor{stringliteral}{"{}\(\backslash\)t  Ingrese nombre con el que desea guardar la imÃ¡gen. (No utilice '/')\(\backslash\)n\(\backslash\)t\(\backslash\)t>"{}};}
+\DoxyCodeLine{165     cin>>nombre;}
+\DoxyCodeLine{166 }
+\DoxyCodeLine{167     \textcolor{keywordflow}{return} rutaGuardado+nombre+\textcolor{stringliteral}{"{}.aic"{}};}
+\DoxyCodeLine{168 \}}
 
 \end{DoxyCode}
 

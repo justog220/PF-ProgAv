@@ -85,18 +85,6 @@ public:
     int getIntensidad();
 
     /*!
-     * \brief aumentarBrillo Método que permite aumentar el brillo de un
-     * Pixel.
-     */
-    void aumentarBrillo(int aumento);
-
-    /*!
-     * \brief reducirBrillo Método que permite reducir el brillo de
-     * un Pixel.
-     */
-    void reducirBrillo();
-
-    /*!
      * \brief ajusteContraste Método que ajusta (R, G, B) para ajustar el contraste de una Imagen.
      * \param[in] maximo_minimo_R Vector con el valor de máximo y mínimo de R.
      * \param[in] maximo_minimo_G Vector con el valor de máximo y mínimo de G.

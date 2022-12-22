@@ -83,7 +83,9 @@ string EspacioDeTrabajo::getRuta(int opcDir, int opcArch)
     if(opcArch == -8)
     {
         return ruta;
-    }else{
+    }
+    else
+    {
         getListaDeArchivos(ruta);
 
         ruta.append(listaDeArchivos[opcArch-1]);
@@ -144,12 +146,17 @@ void EspacioDeTrabajo::guardarImagen(Imagen *img)
 {
 
     char opcFormato;
-    cout<<"\t|>[P]NM\n\t|>[A]IC\n\t  Seleccione el formato de guardado:";
+    cout<<"\t|>[P]NM\n\t|>[A]IC\n\t|>Seleccione el formato de guardado:\n\t\t>";
     cin>>opcFormato;
 
-    opcFormato= toupper(opcFormato);
+    opcFormato = toupper(opcFormato);
 
-    while (opcFormato != 'P' and opcFormato != 'A') {
+
+    while ((opcFormato != 'P' and opcFormato != 'A') )
+    {
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
         cout<<"\t\t|__Inserte una opcion valida: ";
         cin>>opcFormato;
         opcFormato = toupper(opcFormato);
@@ -161,12 +168,15 @@ void EspacioDeTrabajo::guardarImagen(Imagen *img)
     {
         char acuerdo;
         cout<<"\nSolo pueden ser almacenadas con formato AIC imágenes en escala de grises. Se procederá a guardar en formato PNM.\nPresione cualquier tecla para continuar.";
-        cout<<"\n¿Está de acuerdo?\n[S]i | [N]o: ";
+        cout<<"\n¿Está de acuerdo?\n[S]i | [N]o:\n>";
         cin>>acuerdo;
 
         acuerdo = toupper(acuerdo);
 
-        while (acuerdo != 'S' and acuerdo != 'N') {
+        while (acuerdo != 'S' and acuerdo != 'N')
+        {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout<<"\nInserte una opcion valida: ";
             cin>>acuerdo;
             acuerdo = toupper(acuerdo);
@@ -181,15 +191,7 @@ void EspacioDeTrabajo::guardarImagen(Imagen *img)
         else
             estaDeAcuerdo = false;
 
-        if(estaDeAcuerdo)
-        {
-            GestorDeArchivos* archi;
-
-            archi = new ArchivosPNM;
-
-
-            archi->guardar(img);
-        }else
+        if(!estaDeAcuerdo)
         {
             cout<<"\n\t|__No se pudo guardar la Imagen.";
             cout.flush();
@@ -204,7 +206,8 @@ void EspacioDeTrabajo::guardarImagen(Imagen *img)
         archi = new ArchivosAIC;
 
         archi->guardar(img);
-    }else
+    }
+    else
     {
         archi = new ArchivosPNM;
 

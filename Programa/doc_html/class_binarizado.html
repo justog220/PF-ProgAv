@@ -195,7 +195,7 @@ Métodos privados</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="class_binarizado.html#a3313de80b14374324dcbdbdbcde387cc">sePuedeBinarizar</a>(imagen))</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;La imagen no se puede binarizar.&quot;</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;La imagen no se puede binarizar.\n&quot;</span>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    }<span class="keywordflow">else</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">int</span> puntoBinarizacion = <a class="code" href="class_binarizado.html#a5adc370c96c8d0122a233d27bc84b475">obtenerPuntoBinarizacion</a>(imagen);</div>
@@ -213,16 +213,16 @@ Métodos privados</h2></td></tr>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> imagen;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 <div class="ttc" id="aclass_binarizado_html_a3313de80b14374324dcbdbdbcde387cc"><div class="ttname"><a href="class_binarizado.html#a3313de80b14374324dcbdbdbcde387cc">Binarizado::sePuedeBinarizar</a></div><div class="ttdeci">bool sePuedeBinarizar(Imagen &amp;imagen)</div><div class="ttdoc">sePuedeBinarizar EvalÃºa si una Imagen se puede binarizar.</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00030">binarizado.cpp:30</a></div></div>
-<div class="ttc" id="aclass_binarizado_html_a5adc370c96c8d0122a233d27bc84b475"><div class="ttname"><a href="class_binarizado.html#a5adc370c96c8d0122a233d27bc84b475">Binarizado::obtenerPuntoBinarizacion</a></div><div class="ttdeci">int obtenerPuntoBinarizacion(Imagen &amp;imagen)</div><div class="ttdoc">obtenerPuntoBinarizacion Obtiene el nivel a partir del cual binarizar.</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00038">binarizado.cpp:38</a></div></div>
+<div class="ttc" id="aclass_binarizado_html_a5adc370c96c8d0122a233d27bc84b475"><div class="ttname"><a href="class_binarizado.html#a5adc370c96c8d0122a233d27bc84b475">Binarizado::obtenerPuntoBinarizacion</a></div><div class="ttdeci">int obtenerPuntoBinarizacion(Imagen &amp;imagen)</div><div class="ttdoc">obtenerPuntoBinarizacion Obtiene el nivel a partir del cual binarizar.</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00035">binarizado.cpp:35</a></div></div>
 <div class="ttc" id="aclass_imagen_html_a116c67bb423f0de52bdb2e5c7e9ad29b"><div class="ttname"><a href="class_imagen.html#a116c67bb423f0de52bdb2e5c7e9ad29b">Imagen::setPixel</a></div><div class="ttdeci">void setPixel(int f, int c, Pixel pixelNuevo)</div><div class="ttdoc">setPixel MÃ©todo que permite modificar un Pixel de la imÃ¡gen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00017">imagen.cpp:17</a></div></div>
 <div class="ttc" id="aclass_imagen_html_a85f488958dd299a2c751efe5f390bf08"><div class="ttname"><a href="class_imagen.html#a85f488958dd299a2c751efe5f390bf08">Imagen::getColumnas</a></div><div class="ttdeci">int getColumnas()</div><div class="ttdoc">getColumnas Se utiliza para conocer el nÃºmero de columnas de la imÃ¡gen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00052">imagen.cpp:52</a></div></div>
 <div class="ttc" id="aclass_imagen_html_ab65e8f269da32338d3f2048407e63870"><div class="ttname"><a href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">Imagen::getRango</a></div><div class="ttdeci">int getRango()</div><div class="ttdoc">getRango Se utiliza para conocer el rango de los pÃ­xeles de la imÃ¡gen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00057">imagen.cpp:57</a></div></div>
 <div class="ttc" id="aclass_imagen_html_ac9210700a20d35ca768f8c9c11b949a6"><div class="ttname"><a href="class_imagen.html#ac9210700a20d35ca768f8c9c11b949a6">Imagen::getPixel</a></div><div class="ttdeci">Pixel getPixel(int f, int c)</div><div class="ttdoc">getPixel MÃ©todo que permite devolver un Pixel de la imÃ¡gen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00022">imagen.cpp:22</a></div></div>
 <div class="ttc" id="aclass_imagen_html_af1f4833ddf4987c3ab0ff9c65d224093"><div class="ttname"><a href="class_imagen.html#af1f4833ddf4987c3ab0ff9c65d224093">Imagen::getFilas</a></div><div class="ttdeci">int getFilas()</div><div class="ttdoc">getFilas Se utiliza para conocer el nÃºmero de filas de la imÃ¡gen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00047">imagen.cpp:47</a></div></div>
 <div class="ttc" id="aclass_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">Clase que modela un pixel de una imagen.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00022">pixel.h:23</a></div></div>
-<div class="ttc" id="aclass_pixel_html_ae9494a22629e331242fd1e7508743655"><div class="ttname"><a href="class_pixel.html#ae9494a22629e331242fd1e7508743655">Pixel::getIntensidad</a></div><div class="ttdeci">int getIntensidad()</div><div class="ttdoc">getIntensidad Devuelve la intensidad del Pixel, si es de intensidades.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00059">pixel.cpp:59</a></div></div>
+<div class="ttc" id="aclass_pixel_html_ae9494a22629e331242fd1e7508743655"><div class="ttname"><a href="class_pixel.html#ae9494a22629e331242fd1e7508743655">Pixel::getIntensidad</a></div><div class="ttdeci">int getIntensidad()</div><div class="ttdoc">getIntensidad Devuelve la intensidad del Pixel, si es de intensidades.</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00061">pixel.cpp:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Hace referencia a <a class="el" href="imagen_8cpp_source.html#l00052">Imagen::getColumnas()</a>, <a class="el" href="imagen_8cpp_source.html#l00047">Imagen::getFilas()</a>, <a class="el" href="pixel_8cpp_source.html#l00059">Pixel::getIntensidad()</a>, <a class="el" href="imagen_8cpp_source.html#l00022">Imagen::getPixel()</a>, <a class="el" href="imagen_8cpp_source.html#l00057">Imagen::getRango()</a>, <a class="el" href="binarizado_8cpp_source.html#l00038">obtenerPuntoBinarizacion()</a>, <a class="el" href="binarizado_8cpp_source.html#l00030">sePuedeBinarizar()</a> y <a class="el" href="imagen_8cpp_source.html#l00017">Imagen::setPixel()</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="imagen_8cpp_source.html#l00052">Imagen::getColumnas()</a>, <a class="el" href="imagen_8cpp_source.html#l00047">Imagen::getFilas()</a>, <a class="el" href="pixel_8cpp_source.html#l00061">Pixel::getIntensidad()</a>, <a class="el" href="imagen_8cpp_source.html#l00022">Imagen::getPixel()</a>, <a class="el" href="imagen_8cpp_source.html#l00057">Imagen::getRango()</a>, <a class="el" href="binarizado_8cpp_source.html#l00035">obtenerPuntoBinarizacion()</a>, <a class="el" href="binarizado_8cpp_source.html#l00030">sePuedeBinarizar()</a> y <a class="el" href="imagen_8cpp_source.html#l00017">Imagen::setPixel()</a>.</p>
 
 </div>
 </div>
@@ -259,22 +259,22 @@ Métodos privados</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>Nivel a partir del que se binariza. </dd></dl>
 
-<p class="definition">Definición en la línea <a class="el" href="binarizado_8cpp_source.html#l00038">38</a> del archivo <a class="el" href="binarizado_8cpp_source.html">binarizado.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> punto;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;\t|__Ingrese nivel a partir del cual se binariza [0, &quot;</span>&lt;&lt;imagen.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>()&lt;&lt;<span class="stringliteral">&quot;]: &quot;</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    cin&gt;&gt;punto;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">while</span>(punto &lt; 0 or punto &gt; imagen.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>() or !cin.good())</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        cin.clear();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        cin.ignore(numeric_limits&lt;streamsize&gt;::max(), <span class="charliteral">&#39;\n&#39;</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;\t|__Ingrese un nivel vÃ¡lido [0, &quot;</span>&lt;&lt;imagen.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>()&lt;&lt;<span class="stringliteral">&quot;]: &quot;</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        cin&gt;&gt;punto;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> punto;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<p class="definition">Definición en la línea <a class="el" href="binarizado_8cpp_source.html#l00035">35</a> del archivo <a class="el" href="binarizado_8cpp_source.html">binarizado.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> punto;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;\t|__Ingrese nivel a partir del cual se binariza [0, &quot;</span>&lt;&lt;imagen.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>()&lt;&lt;<span class="stringliteral">&quot;]: &quot;</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    cin&gt;&gt;punto;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">while</span>(punto &lt; 0 or punto &gt; imagen.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>() or !cin.good())</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        cin.clear();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        cin.ignore(numeric_limits&lt;streamsize&gt;::max(), <span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;\t|__Ingrese un nivel vÃ¡lido [0, &quot;</span>&lt;&lt;imagen.<a class="code" href="class_imagen.html#ab65e8f269da32338d3f2048407e63870">getRango</a>()&lt;&lt;<span class="stringliteral">&quot;]: &quot;</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        cin&gt;&gt;punto;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> punto;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Hace referencia a <a class="el" href="imagen_8cpp_source.html#l00057">Imagen::getRango()</a>.</p>
 
@@ -317,11 +317,8 @@ Métodos privados</h2></td></tr>
 
 <p class="definition">Definición en la línea <a class="el" href="binarizado_8cpp_source.html#l00030">30</a> del archivo <a class="el" href="binarizado_8cpp_source.html">binarizado.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span>(imagen.<a class="code" href="class_imagen.html#ab28b3e13c672139eada95427623a5828">getIdentificador</a>() == <span class="stringliteral">&quot;P2&quot;</span> or imagen.<a class="code" href="class_imagen.html#ab28b3e13c672139eada95427623a5828">getIdentificador</a>() == <span class="stringliteral">&quot;P5&quot;</span>)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;   <span class="keywordflow">return</span> (imagen.<a class="code" href="class_imagen.html#ab28b3e13c672139eada95427623a5828">getIdentificador</a>() == <span class="stringliteral">&quot;P2&quot;</span> or imagen.<a class="code" href="class_imagen.html#ab28b3e13c672139eada95427623a5828">getIdentificador</a>() == <span class="stringliteral">&quot;P5&quot;</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 <div class="ttc" id="aclass_imagen_html_ab28b3e13c672139eada95427623a5828"><div class="ttname"><a href="class_imagen.html#ab28b3e13c672139eada95427623a5828">Imagen::getIdentificador</a></div><div class="ttdeci">string getIdentificador()</div><div class="ttdoc">getIdentificador Devuelve el identificador de la Imagen.</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00062">imagen.cpp:62</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Hace referencia a <a class="el" href="imagen_8cpp_source.html#l00062">Imagen::getIdentificador()</a>.</p>
@@ -340,7 +337,7 @@ Métodos privados</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_binarizado.html">Binarizado</a></li>
-    <li class="footer">Generado el Viernes, 16 de Diciembre de 2022 08:42:30 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generado el Miércoles, 21 de Diciembre de 2022 23:35:34 para Software de Procesamiento Digital de Imágenes - Garcia Justo por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
